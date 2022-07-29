@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   inspiration, and the strongest man I've ever known. My father. I love
   you Dad ❤️.`;
   return (
-    <div className="mb-8">
+    <div className="mb-16 md:mb-8">
       <Nav />
       <main className="mx-auto h-full w-full max-w-5xl justify-center px-4 md:mt-32">
         {children}

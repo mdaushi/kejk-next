@@ -33,7 +33,7 @@ export default function Home({ home, writings, apps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className="mt-12 md:mt-0">
         <div className="text-left md:mx-auto md:max-w-xl md:justify-center md:text-center">
           <p className="mb-1 font-bold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
             Karl Emil James Koch
