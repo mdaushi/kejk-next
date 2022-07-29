@@ -12,11 +12,11 @@ const AppCard = ({ title, subtitle, image, link }) => {
     >
       <div className="flex w-full pb-2">
         <Image
-          className="h-max w-full"
+          className="rounded"
+          width={50}
+          height={50}
           src={image}
           alt="Image of the plugin icon"
-          width={300}
-          height={200}
           quality={50}
           objectFit="contain"
           objectPosition="center"
