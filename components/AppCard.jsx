@@ -18,7 +18,7 @@ const AppCard = ({ title, subtitle, image, link }) => {
           src={image}
           alt="Image of the plugin icon"
           quality={50}
-          objectFit="contain"
+          objectFit="cover"
           objectPosition="center"
         />
       </div>
