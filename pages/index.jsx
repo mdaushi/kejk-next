@@ -121,7 +121,7 @@ export async function getStaticProps() {
     query: {
       type: "apps",
     },
-    props: "slug,title,content,metadata",
+    props: "title,content,metadata",
   });
   const apps = await projectData.objects;
 
