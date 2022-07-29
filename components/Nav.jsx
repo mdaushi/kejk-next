@@ -3,8 +3,13 @@ import NavLink from "./NavLink";
 
 const Nav = () => {
   return (
-    <div className="fixed min-h-full w-full md:top-0">
-      <div as="nav" className="bg-neutral-100 dark:bg-neutral-800">
+    <div>
+      {/* <div as="nav" className="bg-neutral-100 dark:bg-neutral-800">
+       */}
+      <div
+        as="nav"
+        className="border-neautral-300 md:border-t-none fixed bottom-0 z-50 mx-auto h-16 w-full flex-none border-t bg-neutral-100 duration-500 dark:border-neutral-600 dark:bg-neutral-800 md:top-0 md:border-none md:bg-white md:dark:bg-black"
+      >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <Image
@@ -15,7 +20,7 @@ const Nav = () => {
               alt="Logo"
             />
             <div className="flex w-full items-center justify-between">
-              <div className="flex flex-shrink-0 items-center"></div>
+              <div className="flex shrink-0 items-center"></div>
               <div className="block">
                 <div className="flex items-baseline space-x-4">
                   <NavLink href="/">

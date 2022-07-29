@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
   return (
     <div className="mb-8">
       <Nav />
-      <main className="mx-auto mt-32 h-full w-full max-w-5xl justify-center">
+      <main className="mx-auto h-full w-full max-w-5xl justify-center px-4 md:mt-32">
         {children}
       </main>
       <div className="flex w-full items-center justify-center px-4 pt-16">
