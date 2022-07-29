@@ -10,9 +10,12 @@ import AppCard from "../components/AppCard";
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
 
+const BUCKET_SLUG = process.env.NEXT_PUBLIC_COSMIC_SLUG;
+const READ_KEY = process.env.NEXT_PUBLIC_COSMIC_READ_KEY;
+
 const bucket = api.bucket({
-  slug: process.env.NEXT_PUBLIC_COSMIC_SLUG,
-  read_key: process.env.NEXT_PUBLIC_COSMIC_READ_KEY,
+  slug: BUCKET_SLUG,
+  read_key: READ_KEY,
 });
 
 export default function Home({ home, writings, apps }) {
