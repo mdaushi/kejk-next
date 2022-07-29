@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { ExternalLinkIcon } from "@heroicons/react/outline"
 
 const AppCard = ({ title, subtitle, image, link }) => {
   return (
@@ -10,7 +11,7 @@ const AppCard = ({ title, subtitle, image, link }) => {
       target="_blank"
       rel="noreferrer"
     >
-      <div className="flex w-full pb-2">
+      <div className="flex w-full items-start justify-center pb-2">
         <Image
           className="rounded"
           width={50}
@@ -21,6 +22,7 @@ const AppCard = ({ title, subtitle, image, link }) => {
           objectFit="cover"
           objectPosition="center"
         />
+        <ExternalLinkIcon className="h-6 w-6 flex-shrink-0 text-neutral-700 dark:text-neutral-200" />
       </div>
       <div className="flex w-full items-center gap-2">
         <headline className="text-md mr-2 block font-bold text-neutral-700 dark:text-neutral-200">

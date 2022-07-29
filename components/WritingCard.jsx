@@ -4,7 +4,7 @@ import { ArrowSmRightIcon } from "@heroicons/react/outline";
 const WritingCard = ({ title, subtitle, link }) => {
   return (
     <a
-      className="rounded-xlp-4 0 group space-y-2 transition-all ease-in-out hover:cursor-pointer
+      className="rounded-xl 0 group space-y-2 transition-all ease-in-out hover:cursor-pointer
     "
       href={link}
       target="_blank"
