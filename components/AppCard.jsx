@@ -11,7 +11,7 @@ const AppCard = ({ title, subtitle, image, link }) => {
       target="_blank"
       rel="noreferrer"
     >
-      <div className="flex w-full items-start justify-center pb-2">
+      <div className="flex w-full items-start justify-between pb-2">
         <Image
           className="rounded"
           width={50}
