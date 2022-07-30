@@ -24,17 +24,40 @@ const bucket = api.bucket({
 
 export default function Home({ home, writings, apps, albums, features }) {
   const metaTitle = "KEJK | Home";
+  const metaImage =
+    "https://imgix.cosmicjs.com/aa1741b0-9c8f-11ec-b20b-ad2fdaf5e1bc-2022meta.png";
+
   return (
     <div
       className={"mx-auto flex max-w-5xl flex-col items-center justify-center"}
     >
       <Head>
         <title>{metaTitle}</title>
+        <meta name="title" content="KEJK" />
         <meta
           name="description"
           content="Designer, developer, writer and musician"
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.plugins.run" />
+        <meta property="og:title" content={metaTitle} />
+        <meta
+          property="og:description"
+          content="A series of simple utility plugins that allow you as a designer or developer to easily manage your day-to-day workflow and improve your efficiencies. All for free."
+        />
+        <meta property="og:image" content={metaImage} />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.plugins.run" />
+        <meta property="twitter:title" content={metaTitle} />
+        <meta
+          property="twitter:description"
+          content="A series of simple utility plugins that allow you as a designer or developer to easily manage your day-to-day workflow and improve your efficiencies. All for free."
+        />
+        <meta property="twitter:image" content={metaImage} />
       </Head>
 
       <main className="mt-12 md:mt-0">
