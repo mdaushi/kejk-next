@@ -21,7 +21,7 @@
   }
 
   a.nav {
-    @apply text-white;
+    @apply text-black dark:text-white;
   }
 
   a.nav[aria-current] {
