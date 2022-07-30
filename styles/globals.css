@@ -12,6 +12,10 @@
     @apply bg-white dark:bg-black;
   }
 
+  h3 {
+    @apply mb-4 pt-8 text-xl font-bold leading-snug text-black dark:text-white;
+  }
+
   a {
     @apply no-underline;
   }
@@ -29,10 +33,52 @@
   }
 
   p {
-    @apply text-neutral-700 dark:text-neutral-300;
+    @apply pb-4 text-neutral-700 dark:text-neutral-300;
+  }
+
+  ul {
+    @apply ml-8 mb-4 list-disc text-gray-700 dark:text-gray-300;
+  }
+
+  ol {
+    @apply ml-8 mb-4 list-decimal text-gray-700 dark:text-gray-300;
+  }
+
+  blockquote {
+    @apply my-4 ml-4 border-l-4 border-neutral-200 italic dark:border-neutral-800;
+  }
+
+  blockquote p {
+    @apply ml-4 text-neutral-500 dark:text-neutral-300;
+  }
+
+  pre {
+    @apply mb-4 w-full overflow-x-scroll whitespace-pre rounded-lg bg-neutral-100 font-mono dark:bg-neutral-800;
+  }
+
+  pre > code {
+    @apply bg-transparent font-mono;
+  }
+
+  code {
+    @apply w-max rounded-lg bg-neutral-100 py-1 px-2 font-mono text-sm text-black dark:bg-neutral-800 dark:text-white;
+  }
+
+  code > span {
+    @apply font-mono;
+  }
+
+  figcaption {
+    @apply mt-2 italic text-neutral-700 dark:text-neutral-400;
   }
 
   * {
     box-sizing: border-box;
+  }
+}
+
+@layer components {
+  img {
+    @apply rounded;
   }
 }

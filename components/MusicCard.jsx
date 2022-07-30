@@ -25,9 +25,9 @@ const MusicCard = ({ title, subtitle, image, link }) => {
         <ExternalLinkIcon className="h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
       </div>
       <div className="flex w-full items-center gap-2">
-        <headline className="text-md mr-2 block font-bold text-neutral-700 dark:text-neutral-200">
+        <header className="text-md mr-2 block font-bold text-neutral-700 dark:text-neutral-200">
           {title}
-        </headline>
+        </header>
       </div>
       <p className="block font-mono text-sm text-neutral-500 dark:text-neutral-400">
         {subtitle}

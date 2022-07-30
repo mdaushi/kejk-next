@@ -11,9 +11,9 @@ const FeatureCard = ({ title, type, link }) => {
       rel="noreferrer"
     >
       <div className="flex w-full items-center justify-between gap-2">
-        <headline className="text-md mr-2 block font-bold text-neutral-700 group-hover:underline group-hover:decoration-teal-500 group-hover:decoration-2 group-hover:underline-offset-4 dark:text-neutral-200">
+        <header className="text-md mr-2 block font-bold text-neutral-700 group-hover:underline group-hover:decoration-teal-500 group-hover:decoration-2 group-hover:underline-offset-4 dark:text-neutral-200">
           {title}
-        </headline>
+        </header>
         <ArrowSmRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
       </div>
       <p className="block text-sm leading-6 text-teal-500 dark:text-teal-400">

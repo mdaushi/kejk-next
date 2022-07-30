@@ -8,6 +8,8 @@ import WritingCard from "../components/WritingCard";
 import AppCard from "../components/AppCard";
 import HeaderView from "../components/HeaderView";
 import FeatureCard from "../components/FeatureCard";
+import AllCapsHeader from "../components/AllCapsHeader";
+import PageHeader from "../components/PageHeader";
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -21,28 +23,38 @@ const bucket = api.bucket({
 });
 
 export default function Home({ home, writings, apps, albums, features }) {
-  const metaTitle = "KEJK | Home";
+  const metaTitle = "Karl Emil James Koch";
+  const metaImage =
+    "https://imgix.cosmicjs.com/aa1741b0-9c8f-11ec-b20b-ad2fdaf5e1bc-2022meta.png";
+  const metaDescription = "Designer, developer, writer and musician";
+  const url = "https://kejk.tech";
+
   return (
     <div
       className={"mx-auto flex max-w-5xl flex-col items-center justify-center"}
     >
       <Head>
         <title>{metaTitle}</title>
-        <meta
-          name="description"
-          content="Designer, developer, writer and musician"
-        />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="title" content={metaTitle} />
+        <meta name="description" content={metaDescription} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={url} />
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:image" content={metaImage} />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={url} />
+        <meta property="twitter:title" content={metaTitle} />
+        <meta property="twitter:description" content={metaDescription} />
+        <meta property="twitter:image" content={metaImage} />
       </Head>
 
       <main className="mt-12 md:mt-0">
         <div className="text-left md:mx-auto md:max-w-xl md:justify-center md:text-center">
-          <p className="mb-1 font-bold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
-            Karl Emil James Koch
-          </p>
-          <h1 className="pb-4 text-4xl font-bold text-gray-700 dark:text-gray-200">
-            {home.title}
-          </h1>
+          <AllCapsHeader>Karl Emil James Koch</AllCapsHeader>
+          <PageHeader>{home.title}</PageHeader>
           <Markdown content={home.metadata.content} className="-mt-8" />
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center space-x-4">
@@ -74,16 +86,18 @@ export default function Home({ home, writings, apps, albums, features }) {
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
           {writings.map((writing) => {
             return (
-              <WritingCard
-                key={writing.id}
-                link={writing.metadata.url}
-                title={writing.title}
-                subtitle={writing.metadata.snippet}
-              />
+              <Link key={writing.id} href={`/thoughts/${writing.slug}`}>
+                <a>
+                  <WritingCard
+                    title={writing.title}
+                    subtitle={writing.metadata.snippet}
+                  />
+                </a>
+              </Link>
             );
           })}
         </div>
-        <HeaderView className="mt-16">Apps and projects</HeaderView>
+        <AllCapsHeader marginTop={16}>Apps and projects</AllCapsHeader>
         <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
           {apps.map((app) => {
             return (
@@ -97,7 +111,7 @@ export default function Home({ home, writings, apps, albums, features }) {
             );
           })}
         </div>
-        <HeaderView className="mt-16">Features</HeaderView>
+        <AllCapsHeader marginTop={16}>Features</AllCapsHeader>
         <div className="mt-4 grid grid-cols-1 gap-8 md:grid-cols-3">
           {features.map((feature) => {
             return (
@@ -110,7 +124,7 @@ export default function Home({ home, writings, apps, albums, features }) {
             );
           })}
         </div>
-        <HeaderView className="mt-16">Albums</HeaderView>
+        <AllCapsHeader marginTop={16}>Albums</AllCapsHeader>
         <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
           {albums.map((album) => {
             return (
