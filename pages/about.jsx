@@ -22,6 +22,7 @@ export default function About({ about, principles }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+      <div>
           <h1 className="pb-4 text-4xl font-bold text-gray-700 dark:text-gray-200">{about.title}</h1>
         <Markdown content={about.metadata.content} />
       </div>
@@ -39,7 +40,8 @@ export default function About({ about, principles }) {
             </div>
           );
         })}
-      </main>
+    </div>
+    </main>
     </div>
   );
 }
