@@ -22,7 +22,7 @@ export default function About({ about, principles }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <HeaderView>{about.title}</HeaderView>
-      <div className="px-4 lg:px-0">
+      <div>
         <Markdown content={about.metadata.content} />
       </div>
       <HeaderView className="mt-16">Principles</HeaderView>
