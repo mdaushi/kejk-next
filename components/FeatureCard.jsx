@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowSmRightIcon } from "@heroicons/react/outline";
 
-const WritingCard = ({ title, subtitle, link }) => {
+const FeatureCard = ({ title, type, link }) => {
   return (
     <a
       className="0 group space-y-2 rounded-xl transition-all ease-in-out hover:cursor-pointer
@@ -10,17 +10,17 @@ const WritingCard = ({ title, subtitle, link }) => {
       target="_blank"
       rel="noreferrer"
     >
-      <div className="flex w-full items-start justify-between gap-2">
+      <div className="flex w-full items-center justify-between gap-2">
         <headline className="text-md mr-2 block font-bold text-neutral-700 group-hover:underline group-hover:decoration-teal-500 group-hover:decoration-2 group-hover:underline-offset-4 dark:text-neutral-200">
           {title}
         </headline>
         <ArrowSmRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
       </div>
-      <p className="block text-sm leading-6 text-neutral-500 dark:text-neutral-400">
-        {subtitle}
+      <p className="block text-sm leading-6 text-teal-500 dark:text-teal-400">
+        {type}
       </p>
     </a>
   );
 };
 
-export default WritingCard;
+export default FeatureCard;
