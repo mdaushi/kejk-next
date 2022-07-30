@@ -16,12 +16,12 @@ const bucket = api.bucket({
 export default function About({ about, principles }) {
   const metaTitle = "KEJK | About";
   return (
-    <div className="mx-auto w-full max-w-3xl">
+    <div className={"mt-12"}>
       <Head>
         <title>{metaTitle}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main className="mx-auto w-full max-w-3xl">
       <div>
           <h1 className="pb-4 text-4xl font-bold text-gray-700 dark:text-gray-200">{about.title}</h1>
         <Markdown content={about.metadata.content} />
