@@ -21,8 +21,8 @@ export default function About({ about, principles }) {
         <title>{metaTitle}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <HeaderView>{about.title}</HeaderView>
-      <div>
+      <main>
+          <h1 className="pb-4 text-4xl font-bold text-gray-700 dark:text-gray-200">{about.title}</h1>
         <Markdown content={about.metadata.content} />
       </div>
       <HeaderView className="mt-16">Principles</HeaderView>
@@ -39,7 +39,7 @@ export default function About({ about, principles }) {
             </div>
           );
         })}
-      </div>
+      </main>
     </div>
   );
 }
