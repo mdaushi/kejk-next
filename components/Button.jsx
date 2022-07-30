@@ -14,7 +14,7 @@ const Button = ({
   return (
     <button
       className={classNames(
-        `bg-${bgColor} text-${textColor} dark:bg-${darkBgColor} dark:text-${darkTextColor} rounded-md border border-${borderColor} dark:border-${darkBorderColor} flex items-center justify-start space-x-2 py-2 px-4 text-sm font-medium transition ease-in-out hover:border-teal-500 md:text-base`
+        `bg-${bgColor} text-${textColor} dark:bg-${darkBgColor} dark:text-${darkTextColor} rounded-md border border-${borderColor} dark:border-${darkBorderColor} flex w-full md:w-max items-center justify-start space-x-2 py-2 px-4 text-sm font-medium transition ease-in-out hover:border-teal-500 md:text-base`
       )}
     >
       {children}
