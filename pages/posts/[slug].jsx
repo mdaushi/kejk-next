@@ -21,7 +21,7 @@ export default function Post({ post }) {
   if (!router.isFallback && !post?.slug) {
     return;
   }
-  const metaTitle = `KEJK | ${post.title}`;
+  const metaTitle = `KEJK | Writing`;
   return (
     <div className={"mt-12"}>
       <Head>
