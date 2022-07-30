@@ -84,7 +84,7 @@ export default function Home({ home, writings, apps, albums, features }) {
           })}
         </div>
         <HeaderView className="mt-16">Apps and projects</HeaderView>
-        <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
+        <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
           {apps.map((app) => {
             return (
               <AppCard
@@ -98,7 +98,7 @@ export default function Home({ home, writings, apps, albums, features }) {
           })}
         </div>
         <HeaderView className="mt-16">Features</HeaderView>
-        <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="mt-4 grid grid-cols-1 gap-8 md:grid-cols-3">
           {features.map((feature) => {
             return (
               <FeatureCard
@@ -111,7 +111,7 @@ export default function Home({ home, writings, apps, albums, features }) {
           })}
         </div>
         <HeaderView className="mt-16">Albums</HeaderView>
-        <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
+        <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
           {albums.map((album) => {
             return (
               <AppCard
