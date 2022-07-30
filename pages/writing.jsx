@@ -30,7 +30,7 @@ export default function Writing({ writings }) {
           <div className="mt-4 grid grid-cols-1 gap-8 md:grid-cols-2">
             {writings.map((writing) => {
               return (
-                <Link key={writing.id} href={`/posts/${writing.slug}`}>
+                <Link key={writing.id} href={`/thoughts/${writing.slug}`}>
                   <a>
                     <WritingCard
                       title={writing.title}
@@ -83,7 +83,7 @@ export async function getStaticProps() {
       author,
     });
     posts.forEach((post) => {
-      const url = `${siteURL}/posts/${post.slug}`;
+      const url = `${siteURL}/thoughts/${post.slug}`;
       feed.addItem({
         title: post.title,
         id: post.id,

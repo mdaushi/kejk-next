@@ -72,7 +72,7 @@ export default function Home({ home, writings, apps, albums, features }) {
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
           {writings.map((writing) => {
             return (
-              <Link key={writing.id} href={`/posts/${writing.slug}`}>
+              <Link key={writing.id} href={`/thoughts/${writing.slug}`}>
                 <a>
                   <WritingCard
                     title={writing.title}
