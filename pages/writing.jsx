@@ -47,7 +47,7 @@ export default function Writing({ writings }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const data = await bucket.getObjects({
     query: {
       type: "writings",
