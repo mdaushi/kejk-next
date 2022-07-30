@@ -1,6 +1,5 @@
 import markdownStyles from "../styles/markdown-styles.module.css";
 import ReactMarkdown from "react-markdown";
-import Image from "next/image";
 import classnames from "classnames";
 
 const components = {
@@ -14,22 +13,6 @@ const components = {
       >
         {a.children}
       </a>
-    );
-  },
-
-  img: (image) => {
-    return (
-      <Image
-        src={image.src}
-        alt={image.alt}
-        width={400}
-        height={300}
-        quality={100}
-        layout="responsive"
-        objectFit="contain"
-        objectPosition="center"
-        className="rounded"
-      />
     );
   },
 };

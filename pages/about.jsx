@@ -1,6 +1,7 @@
 import Head from "next/head";
 import HeaderView from "../components/HeaderView";
 import Markdown from "../components/Markdown";
+import PageHeader from "../components/PageHeader";
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -21,27 +22,27 @@ export default function About({ about, principles }) {
         <title>{metaTitle}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="mx-auto w-full max-w-3xl">
-      <div>
-          <h1 className="pb-4 text-4xl font-bold text-gray-700 dark:text-gray-200">{about.title}</h1>
-        <Markdown content={about.metadata.content} />
-      </div>
-      <HeaderView className="mt-16">Principles</HeaderView>
-      <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
-        {principles.map((principle, idx) => {
-          return (
-            <div
-              key={idx}
-              className="rounded bg-neutral-50 p-3 dark:bg-neutral-900"
-            >
-              <h3 className="text-neutral-700 dark:text-neutral-300">
-                {principle.title}
-              </h3>
-            </div>
-          );
-        })}
-    </div>
-    </main>
+      <main className="mx-auto w-full max-w-5xl">
+        <div>
+          <PageHeader>{about.title}</PageHeader>
+          <Markdown content={about.metadata.content} />
+        </div>
+        <HeaderView className="mt-16">Principles</HeaderView>
+        <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
+          {principles.map((principle, idx) => {
+            return (
+              <div
+                key={idx}
+                className="rounded bg-neutral-50 p-3 dark:bg-neutral-900"
+              >
+                <h3 className="text-neutral-700 dark:text-neutral-300">
+                  {principle.title}
+                </h3>
+              </div>
+            );
+          })}
+        </div>
+      </main>
     </div>
   );
 }
