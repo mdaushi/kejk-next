@@ -33,29 +33,25 @@ export default function Home({ home, writings, apps, albums, features }) {
     >
       <Head>
         <title>{metaTitle}</title>
-        <meta name="title" content="KEJK" />
+        <meta name="title" content={metaTitle} />
         <meta
           name="description"
           content="Designer, developer, writer and musician"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.plugins.run" />
+        <meta property="og:url" content="https://www.kejk.tech" />
         <meta property="og:title" content={metaTitle} />
         <meta
           property="og:description"
-          content="A series of simple utility plugins that allow you as a designer or developer to easily manage your day-to-day workflow and improve your efficiencies. All for free."
+          content="Designer, developer, writer and musician"
         />
         <meta property="og:image" content={metaImage} />
-
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://www.plugins.run" />
+        <meta property="twitter:url" content="https://www.kejk.tech" />
         <meta property="twitter:title" content={metaTitle} />
-        <meta
-          property="twitter:description"
-          content="A series of simple utility plugins that allow you as a designer or developer to easily manage your day-to-day workflow and improve your efficiencies. All for free."
+        <meta property="twitter:description" />
         />
         <meta property="twitter:image" content={metaImage} />
       </Head>
