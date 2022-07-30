@@ -27,6 +27,7 @@ export default function Home({ home, writings, apps, albums, features }) {
   const metaImage =
     "https://imgix.cosmicjs.com/aa1741b0-9c8f-11ec-b20b-ad2fdaf5e1bc-2022meta.png";
   const metaDescription = "Designer, developer, writer and musician";
+  const url = "https://kejk.tech";
 
   return (
     <div
@@ -39,12 +40,12 @@ export default function Home({ home, writings, apps, albums, features }) {
         <meta name="title" content={metaTitle} />
         <meta name="description" content={metaDescription} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.kejk.tech" />
+        <meta property="og:url" content={url} />
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDescription} />
         <meta property="og:image" content={metaImage} />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://www.kejk.tech" />
+        <meta property="twitter:url" content={url} />
         <meta property="twitter:title" content={metaTitle} />
         <meta property="twitter:description" content={metaDescription} />
         <meta property="twitter:image" content={metaImage} />
