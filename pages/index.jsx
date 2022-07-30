@@ -23,9 +23,10 @@ const bucket = api.bucket({
 });
 
 export default function Home({ home, writings, apps, albums, features }) {
-  const metaTitle = "KEJK | Home";
+  const metaTitle = "Karl Emil James Koch";
   const metaImage =
     "https://imgix.cosmicjs.com/aa1741b0-9c8f-11ec-b20b-ad2fdaf5e1bc-2022meta.png";
+  const metaDescription = "Designer, developer, writer and musician";
 
   return (
     <div
@@ -33,26 +34,19 @@ export default function Home({ home, writings, apps, albums, features }) {
     >
       <Head>
         <title>{metaTitle}</title>
-        <meta name="title" content={metaTitle} />
-        <meta
-          name="description"
-          content="Designer, developer, writer and musician"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="title" content={metaTitle} />
+        <meta name="description" content={metaDescription} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.kejk.tech" />
         <meta property="og:title" content={metaTitle} />
-        <meta
-          property="og:description"
-          content="Designer, developer, writer and musician"
-        />
+        <meta property="og:description" content={metaDescription} />
         <meta property="og:image" content={metaImage} />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://www.kejk.tech" />
         <meta property="twitter:title" content={metaTitle} />
-        <meta property="twitter:description" />
-        />
+        <meta property="twitter:description" content={metaDescription} />
         <meta property="twitter:image" content={metaImage} />
       </Head>
 
