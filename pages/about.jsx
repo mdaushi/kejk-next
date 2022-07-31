@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import HeaderView from "../components/HeaderView";
 import Markdown from "../components/Markdown";
 import PageHeader from "../components/PageHeader";
@@ -39,7 +40,9 @@ export default function About({ about, principles }) {
             darkBorderColor="neutral-700"
           >
             <CollectionIcon width={24} height={24} />
-            <a href="/uses">My site stack</a>
+            <Link href="/uses">
+              <a>My site stack</a>
+            </Link>
           </Button>
         </div>
         <HeaderView className="mt-16">Principles</HeaderView>
