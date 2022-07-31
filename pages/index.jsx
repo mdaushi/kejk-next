@@ -127,7 +127,7 @@ export default function Home({ home, writings, apps, albums, features }) {
             );
           })}
         </div>
-        <AllCapsHeader marginTop={16}>Features</AllCapsHeader>
+        <AllCapsHeader marginTop={16}>Recent features</AllCapsHeader>
         <div className="mt-4 grid grid-cols-1 gap-8 md:grid-cols-3">
           {features.map((feature) => {
             return (
