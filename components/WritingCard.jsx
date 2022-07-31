@@ -13,9 +13,9 @@ const WritingCard = ({ title, subtitle }) => {
         </header>
         <ArrowSmRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
       </div>
-      <p className="block text-sm leading-6 text-neutral-500 dark:text-neutral-400">
+      <span className="block text-sm leading-6 text-neutral-500 dark:text-neutral-400">
         {subtitle}
-      </p>
+      </span>
     </div>
   );
 };

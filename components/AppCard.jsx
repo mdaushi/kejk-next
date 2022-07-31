@@ -29,9 +29,9 @@ const AppCard = ({ title, subtitle, image, link }) => {
           {title}
         </header>
       </div>
-      <p className="block font-mono text-sm text-neutral-500 dark:text-neutral-400">
+      <span className="block font-mono text-sm text-neutral-500 dark:text-neutral-400">
         {subtitle}
-      </p>
+      </span>
     </a>
   );
 };
