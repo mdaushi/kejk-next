@@ -25,7 +25,7 @@
   }
 
   a.nav {
-    @apply text-black dark:text-white;
+    @apply text-black decoration-teal-500 decoration-4 underline-offset-[20px] transition ease-in-out hover:text-teal-500 hover:underline dark:text-white;
   }
 
   a.nav[aria-current] {

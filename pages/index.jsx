@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import Button from "../components/Button";
 import { ArrowSmRightIcon, MailIcon, UserIcon } from "@heroicons/react/outline";
@@ -99,13 +98,13 @@ export default function Home({ home, writings, apps, albums, features }) {
           })}
         </div>
         <div className="mt-8">
-        <Button
+          <Button
             bgColor="neutral-100"
             textColor="black"
             borderColor="neutral-200"
             darkBgColor="neutral-800"
             darkTextColor="white"
-          darkBorderColor="neutral-700"
+            darkBorderColor="neutral-700"
           >
             <Link href={"/writing"}>
               <a>More thoughts</a>

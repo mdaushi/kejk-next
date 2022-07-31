@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kejk.tech</id>
     <title>KEJK | Writing</title>
-    <updated>2022-07-30T20:55:44.282Z</updated>
+    <updated>2022-07-31T15:38:43.047Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Karl Emil James Koch</name>
@@ -19,7 +19,7 @@
         <title type="html"><![CDATA[Designing API-first]]></title>
         <id>62e2e0f59f26bd0e6c6b2d3e</id>
         <link href="https://kejk.tech/thoughts/designing-api-first"/>
-        <updated>2022-07-30T19:38:57.020Z</updated>
+        <updated>2022-07-31T10:10:55.577Z</updated>
         <summary type="html"><![CDATA[The power of  visualising your API as part of your design process to align the entire team]]></summary>
         <author>
             <name>Karl Emil James Koch</name>
@@ -36,7 +36,7 @@
         <title type="html"><![CDATA[How to make friends and influence designers]]></title>
         <id>62e2e0f39f26bd0e6c6b2c21</id>
         <link href="https://kejk.tech/thoughts/how-to-make-friends-and-influence-designers"/>
-        <updated>2022-02-17T21:58:39.652Z</updated>
+        <updated>2022-07-31T10:09:49.017Z</updated>
         <summary type="html"><![CDATA[Why every design crit should be presented on slides]]></summary>
         <author>
             <name>Karl Emil James Koch</name>
@@ -53,7 +53,7 @@
         <title type="html"><![CDATA[Design for handshakes not handovers]]></title>
         <id>62e2e0f39f26bd0e6c6b2bf0</id>
         <link href="https://kejk.tech/thoughts/design-for-handshakes-not-handovers"/>
-        <updated>2022-02-14T08:49:49.486Z</updated>
+        <updated>2022-07-31T10:08:54.764Z</updated>
         <summary type="html"><![CDATA[Why it's better to shake hands with your developers, than throw your designs over the fence]]></summary>
         <author>
             <name>Karl Emil James Koch</name>
@@ -87,7 +87,7 @@
         <title type="html"><![CDATA[Rumination, iteration or procrastination]]></title>
         <id>62e2e0f29f26bd0e6c6b2b91</id>
         <link href="https://kejk.tech/thoughts/rumination-iteration-or-procrastination"/>
-        <updated>2022-02-01T08:38:27.330Z</updated>
+        <updated>2022-07-31T10:11:47.880Z</updated>
         <summary type="html"><![CDATA[Knowing when to let an idea go and when to not even go there.]]></summary>
         <author>
             <name>Karl Emil James Koch</name>
@@ -104,7 +104,7 @@
         <title type="html"><![CDATA[Relative seniority]]></title>
         <id>62e2e0f29f26bd0e6c6b2b4c</id>
         <link href="https://kejk.tech/thoughts/relative-seniority"/>
-        <updated>2021-11-21T09:41:53.912Z</updated>
+        <updated>2022-07-31T10:12:15.359Z</updated>
         <summary type="html"><![CDATA[How your title is reflective of your company's stage as well as your level.]]></summary>
         <author>
             <name>Karl Emil James Koch</name>
@@ -121,7 +121,7 @@
         <title type="html"><![CDATA[Polywork: LinkedIn without the Suits]]></title>
         <id>62e2e0f29f26bd0e6c6b2b2c</id>
         <link href="https://kejk.tech/thoughts/polywork-linkedin-without-the-suits"/>
-        <updated>2021-11-25T07:52:17.540Z</updated>
+        <updated>2022-07-31T10:12:45.017Z</updated>
         <summary type="html"><![CDATA[The future of networking is being built in the open.]]></summary>
         <author>
             <name>Karl Emil James Koch</name>
@@ -172,7 +172,7 @@
         <title type="html"><![CDATA[What I've learnt over the past year]]></title>
         <id>62e2e0f29f26bd0e6c6b2b13</id>
         <link href="https://kejk.tech/thoughts/what-ive-learnt-over-the-past-year"/>
-        <updated>2021-06-05T11:34:37.615Z</updated>
+        <updated>2022-07-31T10:14:08.280Z</updated>
         <summary type="html"><![CDATA[Lessons I’ve learnt over the past year.]]></summary>
         <author>
             <name>Karl Emil James Koch</name>

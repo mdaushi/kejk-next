@@ -2,11 +2,10 @@ import Head from "next/head";
 import Link from "next/link";
 import PageHeader from "../../components/PageHeader";
 import { useRouter } from "next/router";
-import Markdown from "../../components/Markdown";
 import TextButton from "../../components/TextButton";
 import AllCapsHeader from "../../components/AllCapsHeader";
 import Moment from "react-moment";
-import { ArrowSmLeftIcon } from "@heroicons/react/outline"; 
+import { ArrowSmLeftIcon } from "@heroicons/react/outline";
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -36,17 +35,14 @@ export default function Post({ post }) {
           <PageHeader>Loading...</PageHeader>
         ) : (
           <>
-          <div className="mb-8 flex justify-start w-full">
-          <TextButton
-            textColor="black"
-            darkTextColor="white"
-          >
-          <ArrowSmLeftIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
-            <Link href={"/writing"}>
-              <a>All thoughts</a>
-            </Link>
-          </TextButton>
-          </div>
+            <div className="group mb-8 flex w-full justify-start">
+              <TextButton textColor="black" darkTextColor="white">
+                <ArrowSmLeftIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
+                <Link href={"/writing"}>
+                  <a>All thoughts</a>
+                </Link>
+              </TextButton>
+            </div>
             <AllCapsHeader>
               <Moment fromNow>{post.modified_at}</Moment>
             </AllCapsHeader>
@@ -54,7 +50,6 @@ export default function Post({ post }) {
             <h2 className="mb-4 text-left text-2xl font-medium text-neutral-700 dark:text-neutral-400 md:text-2xl">
               {post.metadata.snippet}
             </h2>
-            {/* <Markdown content={post.metadata.content} /> */}
             <div dangerouslySetInnerHTML={{ __html: post.content }} />
           </>
         )}

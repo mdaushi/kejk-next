@@ -2,6 +2,8 @@ import Head from "next/head";
 import HeaderView from "../components/HeaderView";
 import Markdown from "../components/Markdown";
 import PageHeader from "../components/PageHeader";
+import Button from "../components/Button";
+import { CollectionIcon } from "@heroicons/react/outline";
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -27,6 +29,19 @@ export default function About({ about, principles }) {
           <PageHeader>{about.title}</PageHeader>
           <Markdown content={about.metadata.content} />
         </div>
+        <div className="mx-auto mt-8 flex w-full justify-center">
+          <Button
+            bgColor="neutral-100"
+            textColor="black"
+            borderColor="neutral-200"
+            darkBgColor="neutral-800"
+            darkTextColor="white"
+            darkBorderColor="neutral-700"
+          >
+            <CollectionIcon width={24} height={24} />
+            <a href="/uses">My site stack</a>
+          </Button>
+        </div>
         <HeaderView className="mt-16">Principles</HeaderView>
         <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
           {principles.map((principle, idx) => {
@@ -35,7 +50,7 @@ export default function About({ about, principles }) {
                 key={idx}
                 className="rounded bg-neutral-50 p-3 dark:bg-neutral-900"
               >
-                <span className="text-neutral-700 dark:text-neutral-300 text-lg font-bold">
+                <span className="text-lg font-bold text-neutral-700 dark:text-neutral-300">
                   {principle.title}
                 </span>
               </div>
