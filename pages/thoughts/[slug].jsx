@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import Markdown from "../../components/Markdown";
 import AllCapsHeader from "../../components/AllCapsHeader";
 import Moment from "react-moment";
+import { ArrowSmLeftIcon } from "@heroicons/react/outline"; 
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
