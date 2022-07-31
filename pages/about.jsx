@@ -35,9 +35,9 @@ export default function About({ about, principles }) {
                 key={idx}
                 className="rounded bg-neutral-50 p-3 dark:bg-neutral-900"
               >
-                <h3 className="text-neutral-700 dark:text-neutral-300">
+                <span className="text-neutral-700 dark:text-neutral-300 text-lg font-bold">
                   {principle.title}
-                </h3>
+                </span>
               </div>
             );
           })}
