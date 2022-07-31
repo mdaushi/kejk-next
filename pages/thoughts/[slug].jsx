@@ -3,6 +3,7 @@ import Link from "next/link";
 import PageHeader from "../../components/PageHeader";
 import { useRouter } from "next/router";
 import Markdown from "../../components/Markdown";
+import Button from "../../components/Button";
 import AllCapsHeader from "../../components/AllCapsHeader";
 import Moment from "react-moment";
 import { ArrowSmLeftIcon } from "@heroicons/react/outline"; 
