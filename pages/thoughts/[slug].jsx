@@ -36,6 +36,7 @@ export default function Post({ post }) {
           <PageHeader>Loading...</PageHeader>
         ) : (
           <>
+          <div className="mb-8">
           <Button
             bgColor="neutral-100"
             textColor="black"
@@ -43,13 +44,13 @@ export default function Post({ post }) {
             darkBgColor="neutral-800"
             darkTextColor="white"
           darkBorderColor="neutral-700"
-          className="w-max"
           >
           <ArrowSmLeftIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
             <Link href={"/writing"}>
               <a>All thoughts</a>
             </Link>
           </Button>
+          </div>
             <AllCapsHeader>
               <Moment fromNow>{post.modified_at}</Moment>
             </AllCapsHeader>
