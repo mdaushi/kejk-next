@@ -3,7 +3,7 @@ import Link from "next/link";
 import PageHeader from "../../components/PageHeader";
 import { useRouter } from "next/router";
 import Markdown from "../../components/Markdown";
-import Button from "../../components/Button";
+import TextButton from "../../components/TextButton";
 import AllCapsHeader from "../../components/AllCapsHeader";
 import Moment from "react-moment";
 import { ArrowSmLeftIcon } from "@heroicons/react/outline"; 
@@ -36,20 +36,16 @@ export default function Post({ post }) {
           <PageHeader>Loading...</PageHeader>
         ) : (
           <>
-          <div className="mb-8">
-          <Button
-            bgColor="neutral-100"
+          <div className="mb-8 flex justify-start w-full">
+          <TextButton
             textColor="black"
-            borderColor="neutral-200"
-            darkBgColor="neutral-800"
             darkTextColor="white"
-          darkBorderColor="neutral-700"
           >
           <ArrowSmLeftIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
             <Link href={"/writing"}>
               <a>All thoughts</a>
             </Link>
-          </Button>
+          </TextButton>
           </div>
             <AllCapsHeader>
               <Moment fromNow>{post.modified_at}</Moment>
