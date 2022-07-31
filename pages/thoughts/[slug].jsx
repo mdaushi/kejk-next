@@ -23,10 +23,10 @@ export default function Post({ post }) {
   if (!router.isFallback && !post?.slug) {
     return;
   }
-  const metaTitle = `KEJK | ${post.title}`;
-  const metaImage = `${post.metadata.hero?.imgix_url}`;
+  const metaTitle = `KEJK | ${post?.title}`;
+  const metaImage = `${post?.metadata.hero.imgix_url}`;
   const metaDescription = "Designer, developer, writer and musician";
-  const url = `https://kejk.tech/${post.slug}`;
+  const url = `https://kejk.tech/${post?.slug}`;
 
   return (
     <div className={"mt-12"}>
