@@ -14,7 +14,7 @@
 }
 
 .markdown h3 {
-  @apply mt-8 mb-2 text-xl font-semibold leading-snug text-neutral-800 dark:text-neutral-200;
+  @apply mt-6 mb-2 text-xl font-semibold leading-snug text-neutral-800 dark:text-neutral-200;
 }
 
 .markdown a {
