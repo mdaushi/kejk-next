@@ -10,6 +10,8 @@ const Nav = () => {
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
+          <Link href="/">
+          <a>
             <Image
               className="rounded-lg"
               height="32px"
@@ -17,6 +19,8 @@ const Nav = () => {
               src="/logo.svg"
               alt="Logo"
             />
+            </a>
+            </Link>
             <div className="flex w-full items-center justify-between">
               <div className="flex shrink-0 items-center"></div>
               <div className="block">
