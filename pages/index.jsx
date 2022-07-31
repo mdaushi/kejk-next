@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "../components/Button";
-import { MailIcon, UserIcon } from "@heroicons/react/outline";
+import { ArrowSmRightIcon, MailIcon, UserIcon } from "@heroicons/react/outline";
 import Markdown from "../components/Markdown";
 import WritingCard from "../components/WritingCard";
 import AppCard from "../components/AppCard";
@@ -83,7 +83,8 @@ export default function Home({ home, writings, apps, albums, features }) {
             </Link>
           </Button>
         </div>
-        <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
+        <AllCapsHeader marginTop={16}>Writing</AllCapsHeader>
+        <div className="mt-4 grid grid-cols-1 gap-8 md:grid-cols-3">
           {writings.map((writing) => {
             return (
               <Link key={writing.id} href={`/thoughts/${writing.slug}`}>
@@ -97,6 +98,19 @@ export default function Home({ home, writings, apps, albums, features }) {
             );
           })}
         </div>
+        <Button
+            bgColor="neutral-100"
+            textColor="black"
+            borderColor="neutral-200"
+            darkBgColor="neutral-800"
+            darkTextColor="white"
+            darkBorderColor="neutral-700"
+          >
+            <Link href={"/writing"}>
+              <a>More thoughts</a>
+            </Link>
+            <ArrowSmRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+          </Button>
         <AllCapsHeader marginTop={16}>Apps and projects</AllCapsHeader>
         <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
           {apps.map((app) => {
