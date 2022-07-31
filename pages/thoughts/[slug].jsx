@@ -23,12 +23,29 @@ export default function Post({ post }) {
   if (!router.isFallback && !post?.slug) {
     return;
   }
-  const metaTitle = `KEJK | Writing`;
+  const metaTitle = `KEJK | ${post.title}`;
+  const metaImage = `${post.metadata.hero?.imgix_url}`;
+  const metaDescription = "Designer, developer, writer and musician";
+  const url = `https://kejk.tech/${post.slug}`;
+
   return (
     <div className={"mt-12"}>
       <Head>
         <title>{metaTitle}</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="title" content={metaTitle} />
+        <meta name="description" content={metaDescription} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={url} />
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:image" content={metaImage} />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={url} />
+        <meta property="twitter:title" content={metaTitle} />
+        <meta property="twitter:description" content={metaDescription} />
+        <meta property="twitter:image" content={metaImage} />
       </Head>
       <main className="mx-auto max-w-3xl">
         {router.isFallback ? (

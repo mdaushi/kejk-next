@@ -25,7 +25,7 @@ const Nav = () => {
             <div className="flex w-full items-center justify-between">
               <div className="flex shrink-0 items-center"></div>
               <div className="block">
-                <div className="flex items-baseline space-x-4">
+                <div className="flex items-center space-x-4">
                   <NavLink href="/">
                     <a className="nav">Home</a>
                   </NavLink>

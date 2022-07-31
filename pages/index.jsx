@@ -22,7 +22,7 @@ const bucket = api.bucket({
 });
 
 export default function Home({ home, writings, apps, albums, features }) {
-  const metaTitle = "Karl Emil James Koch";
+  const metaTitle = "KEJK | Home";
   const metaImage =
     "https://imgix.cosmicjs.com/aa1741b0-9c8f-11ec-b20b-ad2fdaf5e1bc-2022meta.png";
   const metaDescription = "Designer, developer, writer and musician";
