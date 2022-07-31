@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import PageHeader from "../../components/PageHeader";
 import { useRouter } from "next/router";
 import Markdown from "../../components/Markdown";
@@ -33,6 +34,20 @@ export default function Post({ post }) {
           <PageHeader>Loading...</PageHeader>
         ) : (
           <>
+          <Button
+            bgColor="neutral-100"
+            textColor="black"
+            borderColor="neutral-200"
+            darkBgColor="neutral-800"
+            darkTextColor="white"
+          darkBorderColor="neutral-700"
+          className="w-max"
+          >
+          <ArrowSmLeftIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+            <Link href={"/writing"}>
+              <a>All thoughts</a>
+            </Link>
+          </Button>
             <AllCapsHeader>
               <Moment fromNow>{post.modified_at}</Moment>
             </AllCapsHeader>
