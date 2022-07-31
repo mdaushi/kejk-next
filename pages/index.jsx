@@ -98,19 +98,21 @@ export default function Home({ home, writings, apps, albums, features }) {
             );
           })}
         </div>
+        <div className="mt-8">
         <Button
             bgColor="neutral-100"
             textColor="black"
             borderColor="neutral-200"
             darkBgColor="neutral-800"
             darkTextColor="white"
-            darkBorderColor="neutral-700"
+          darkBorderColor="neutral-700"
           >
             <Link href={"/writing"}>
               <a>More thoughts</a>
             </Link>
             <ArrowSmRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
           </Button>
+        </div>
         <AllCapsHeader marginTop={16}>Apps and projects</AllCapsHeader>
         <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
           {apps.map((app) => {
