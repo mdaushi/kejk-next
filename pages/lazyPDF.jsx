@@ -1,3 +1,4 @@
+import Head from "next/head"
 import PageHeader from "../components/PageHeader";
 
 const LazyPDF = () => {
