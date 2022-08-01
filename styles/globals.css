@@ -29,7 +29,7 @@
   }
 
   a.nav[aria-current] {
-    @apply underline decoration-teal-500 decoration-4 underline-offset-[20px] active:underline active:decoration-teal-500 active:decoration-4 active:underline-offset-[20px];
+    @apply underline decoration-teal-500 decoration-4 underline-offset-[20px] active:underline active:decoration-teal-500 active:decoration-4 active:underline-offset-[20px] text-teal-700 dark:text-teal-500;
   }
 
   p {
