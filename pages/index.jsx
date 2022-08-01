@@ -83,7 +83,7 @@ export default function Home({ home, writings, apps, albums, features }) {
           </Button>
         </div>
         <AllCapsHeader marginTop={16}>Writing</AllCapsHeader>
-        <div className="mt-4 grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
           {writings.map((writing) => {
             return (
               <Link key={writing.id} href={`/thoughts/${writing.slug}`}>
