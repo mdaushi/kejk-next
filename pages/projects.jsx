@@ -45,7 +45,7 @@ export default function Projects({ apps, utilities, freelances }) {
       <main>
         <PageHeader>Projects</PageHeader>
         <AllCapsHeader marginTop={8}>Personal</AllCapsHeader>
-        <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
+        <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
           {apps.map((app) => {
             return (
               <AppCard
@@ -72,7 +72,7 @@ export default function Projects({ apps, utilities, freelances }) {
           })}
         </div>
         <AllCapsHeader marginTop={16}>Freelance</AllCapsHeader>
-        <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
+        <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
           {freelances.map((freelance) => {
             return (
               <AppCard
@@ -85,7 +85,7 @@ export default function Projects({ apps, utilities, freelances }) {
             );
           })}
         </div>
-        <div className="mx-auto mt-16 flex w-full justify-center space-x-4">
+        <div className="mx-auto mt-8 md:mt-16 flex w-full justify-center space-x-4">
           <Button
             bgColor="neutral-100"
             textColor="black"

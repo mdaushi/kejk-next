@@ -5,7 +5,7 @@ const AllCapsHeader = ({ children, marginTop }) => {
   return (
     <p
       className={classNames(
-        `mt-${marginTop} mb-1 font-bold uppercase tracking-wide text-neutral-500 dark:text-neutral-400`
+        `mt-${marginTop} md:mb-1 font-bold uppercase tracking-wide text-neutral-500 dark:text-neutral-400`
       )}
     >
       {children}

@@ -113,7 +113,7 @@ export default function Home({ home, writings, apps, albums, features }) {
           </Button>
         </div>
         <AllCapsHeader marginTop={16}>Apps and projects</AllCapsHeader>
-        <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
+        <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
           {apps.map((app) => {
             return (
               <AppCard
@@ -127,7 +127,7 @@ export default function Home({ home, writings, apps, albums, features }) {
           })}
         </div>
         <AllCapsHeader marginTop={16}>Recent features</AllCapsHeader>
-        <div className="mt-4 grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
           {features.map((feature) => {
             return (
               <FeatureCard
@@ -140,7 +140,7 @@ export default function Home({ home, writings, apps, albums, features }) {
           })}
         </div>
         <AllCapsHeader marginTop={16}>Albums</AllCapsHeader>
-        <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
+        <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
           {albums.map((album) => {
             return (
               <AppCard
