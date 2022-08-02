@@ -124,9 +124,9 @@ export default function Post({ post }) {
               <Moment fromNow>{post.modified_at}</Moment>
             </AllCapsHeader>
             <PageHeader>{post.title}</PageHeader>
-            <h2 className="mb-4 text-left text-2xl font-medium text-neutral-700 dark:text-neutral-400 md:text-2xl">
+            {/* <h2 className="mb-4 text-left text-2xl font-medium text-neutral-700 dark:text-neutral-400 md:text-2xl">
               {post.metadata.snippet}
-            </h2>
+            </h2> */}
             <div dangerouslySetInnerHTML={{ __html: post.content }} />
           </>
         )}
