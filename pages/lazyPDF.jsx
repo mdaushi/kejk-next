@@ -79,18 +79,21 @@ const LazyPDF = ({ lazyPDF, lazyDownload }) => {
               </button>
             </a>
           </div>
-          <div className="dark:border-teal- rounded-full border border-teal-800 bg-teal-200 py-1 px-2 text-teal-900">
-            {lazyDownload.metadata.downloads}
-          </div>
-          <div className="w-max">
-            <Image
-              className="rounded-[28px]"
-              width={150}
-              height={150}
-              src={lazyPDF.metadata.icon?.imgix_url}
-              alt="Image of the app icon"
-              quality={100}
-            />
+          <div className="flex flex-col items-center space-y-4">
+            <div className="flex w-max items-center justify-center rounded-full border border-teal-200 bg-teal-50 px-3 py-1 font-mono text-xs font-normal uppercase leading-tight text-teal-700 dark:border-teal-900 dark:bg-teal-900/30 dark:text-teal-200">
+              <ArrowDownIcon className="mr-2 h-3 w-3 text-teal-700  dark:text-teal-200" />
+              {lazyDownload.metadata.downloads}
+            </div>
+            <div className="w-max">
+              <Image
+                className="rounded-[28px]"
+                width={150}
+                height={150}
+                src={lazyPDF.metadata.icon?.imgix_url}
+                alt="Image of the app icon"
+                quality={100}
+              />
+            </div>
           </div>
         </div>
         <div dangerouslySetInnerHTML={{ __html: lazyPDF.content }} />
