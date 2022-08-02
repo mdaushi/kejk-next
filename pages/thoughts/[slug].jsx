@@ -158,7 +158,7 @@ export default function Post({ post }) {
                 {"Copied to clipboard!"}
               </ToastTitle>
               <ToastDescription className="font-mono text-xs text-neutral-600 dark:text-neutral-400">
-                {"https://www.kejk.tech/thoughts/" + post.slug}
+                {"https://www.kejk.tech/thoughts/" + post?.slug}
               </ToastDescription>
             </Toast>
             <ToastViewport className="felx-col w- fixed bottom-0 right-0 z-50 m-0 flex w-auto max-w-screen-sm list-none gap-4 p-6 outline-none" />
