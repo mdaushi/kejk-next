@@ -21,7 +21,14 @@ const bucket = api.bucket({
   read_key: READ_KEY,
 });
 
-export default function Home({ home, writings, apps, albums, features }) {
+export default function Home({
+  home,
+  writings,
+  apps,
+  albums,
+  features,
+  bookmarks,
+}) {
   const metaTitle = "KEJK | Home";
   const metaImage =
     "https://imgix.cosmicjs.com/aa1741b0-9c8f-11ec-b20b-ad2fdaf5e1bc-2022meta.png";
@@ -153,6 +160,39 @@ export default function Home({ home, writings, apps, albums, features }) {
             );
           })}
         </div>
+        <AllCapsHeader marginTop={16}>Bookmarks</AllCapsHeader>
+        <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
+          {bookmarks.map((bookmark) => {
+            return (
+              <a
+                key={bookmark.id}
+                href={`${bookmark.metadata.url}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <WritingCard
+                  title={bookmark.title}
+                  subtitle={bookmark.metadata.snippet}
+                />
+              </a>
+            );
+          })}
+        </div>
+        <div className="mt-8">
+          <Button
+            bgColor="neutral-100"
+            textColor="black"
+            borderColor="neutral-200"
+            darkBgColor="neutral-800"
+            darkTextColor="white"
+            darkBorderColor="neutral-700"
+          >
+            <Link href={"/bookmarks"}>
+              <a>All bookmarks</a>
+            </Link>
+            <ArrowSmRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+          </Button>
+        </div>
       </main>
     </div>
   );
@@ -199,11 +239,20 @@ export async function getStaticProps() {
     props: "slug,title,metadata",
   });
 
+  const bookmarkData = await bucket.getObjects({
+    limit: 3,
+    query: {
+      type: "bookmarks",
+    },
+    props: "slug,title,metadata",
+  });
+
   const home = await data.objects[0];
   const writings = await writingData.objects;
   const apps = await projectData.objects;
   const albums = await albumData.objects;
   const features = await featureData.objects;
+  const bookmarks = await bookmarkData.objects;
 
   return {
     props: {
@@ -212,6 +261,7 @@ export async function getStaticProps() {
       apps,
       albums,
       features,
+      bookmarks,
     },
   };
 }

@@ -16,7 +16,7 @@ const bucket = api.bucket({
   read_key: READ_KEY,
 });
 
-export default function Projects({ apps, utilities, freelances }) {
+export default function Projects({ apps, utilities, clients }) {
   const metaTitle = "KEJK | Projects";
   const metaImage =
     "https://imgix.cosmicjs.com/85d48f80-9cb0-11ec-b20b-ad2fdaf5e1bc-meta-projects.png";
@@ -73,14 +73,14 @@ export default function Projects({ apps, utilities, freelances }) {
         </div>
         <AllCapsHeader marginTop={16}>Clients</AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
-          {freelances.map((freelance) => {
+          {clients.map((client) => {
             return (
               <AppCard
-                key={freelance.id}
-                link={freelance.metadata.url}
-                image={freelance.metadata.cover?.imgix_url}
-                title={freelance.title}
-                subtitle={freelance.metadata.subtitle}
+                key={client.id}
+                link={client.metadata.url}
+                image={client.metadata.cover?.imgix_url}
+                title={client.title}
+                subtitle={client.metadata.subtitle}
               />
             );
           })}
@@ -129,12 +129,12 @@ export async function getStaticProps() {
 
   const apps = await data.objects;
   const utilities = await utilitiesData.objects;
-  const freelances = await freelancesData.objects;
+  const clients = await freelancesData.objects;
   return {
     props: {
       apps,
       utilities,
-      freelances,
+      clients,
     },
   };
 }
