@@ -18,9 +18,7 @@ const AppCard = ({ title, subtitle, image, link }) => {
           height={50}
           src={image}
           alt="Image of the plugin icon"
-          quality={100}
-          objectFit="cover"
-          objectPosition="center"
+          quality={50}
         />
         <ExternalLinkIcon className="h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
       </div>
