@@ -71,6 +71,7 @@ export async function getStaticProps() {
       type: "bookmarks",
     },
     props: "id,slug,title,metadata,published_at",
+    limit: 50,
   });
 
   const bookmarks = await data.objects;
