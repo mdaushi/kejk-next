@@ -1,12 +1,12 @@
 import Head from "next/head";
 import PageHeader from "../components/PageHeader";
-import WritingCard from "../components/WritingCard";
+import BookmarkCard from "../components/BookmarkCard";
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
 
-const BUCKET_SLUG = process.env.NEXT_PUBLIC_COSMIC_SLUG;
-const READ_KEY = process.env.NEXT_PUBLIC_COSMIC_READ_KEY;
+const BUCKET_SLUG = "kemiljk;
+const READ_KEY = uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK;
 
 const bucket = api.bucket({
   slug: BUCKET_SLUG,
@@ -51,9 +51,10 @@ export default function Bookmark({ bookmarks }) {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <WritingCard
+                  <BookmarkCard
                     title={bookmark.title}
                     subtitle={bookmark.metadata.snippet}
+                    date={bookmark.metadata.published}
                   />
                 </a>
               );
@@ -70,7 +71,7 @@ export async function getStaticProps() {
     query: {
       type: "bookmarks",
     },
-    props: "id,slug,title,metadata,published_at",
+    props: "id,slug,title,metadata",
     limit: 50,
   });
 
