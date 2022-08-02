@@ -71,7 +71,7 @@ export default function Projects({ apps, utilities, freelances }) {
             );
           })}
         </div>
-        <AllCapsHeader marginTop={16}>Freelance</AllCapsHeader>
+        <AllCapsHeader marginTop={16}>Clients</AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
           {freelances.map((freelance) => {
             return (
@@ -85,7 +85,7 @@ export default function Projects({ apps, utilities, freelances }) {
             );
           })}
         </div>
-        <div className="mx-auto mt-8 md:mt-16 flex w-full justify-center space-x-4">
+        <div className="mx-auto mt-8 flex w-full justify-center space-x-4 md:mt-16">
           <Button
             bgColor="neutral-100"
             textColor="black"
