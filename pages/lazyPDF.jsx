@@ -15,7 +15,7 @@ const bucket = api.bucket({
   read_key: READ_KEY,
 });
 
-const LazyPDF = ({ lazyPDF }) => {
+const LazyPDF = ({ lazyPDF, lazyDownload }) => {
   const metaTitle = "KEJK | Lazy PDF";
   const metaImage =
     "https://imgix.cosmicjs.com/483f5be0-94eb-11ec-96f2-43bdd99faa64-Lazy-PDF.png";
@@ -79,6 +79,9 @@ const LazyPDF = ({ lazyPDF }) => {
               </button>
             </a>
           </div>
+          <div className="dark:border-teal- rounded-full border border-teal-800 bg-teal-200 py-1 px-2 text-teal-900">
+            {lazyDownload.metadata.downloads}
+          </div>
           <div className="w-max">
             <Image
               className="rounded-[28px]"
@@ -119,10 +122,18 @@ export async function getStaticProps() {
     props: "title,content,metadata",
   });
 
+  const downloads = await bucket.getObject({
+    id: "62e2e0f49f26bd0e6c6b2c62",
+    props: "id,title,metadata",
+  });
+
+  const lazyDownload = await downloads.object;
+
   const lazyPDF = await data.objects[0];
   return {
     props: {
       lazyPDF,
+      lazyDownload,
     },
   };
 }

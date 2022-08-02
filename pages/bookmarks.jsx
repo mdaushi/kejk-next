@@ -5,8 +5,8 @@ import BookmarkCard from "../components/BookmarkCard";
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
 
-const BUCKET_SLUG = "kemiljk;
-const READ_KEY = uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK;
+const BUCKET_SLUG = "kemiljk";
+const READ_KEY = "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK";
 
 const bucket = api.bucket({
   slug: BUCKET_SLUG,
@@ -71,8 +71,9 @@ export async function getStaticProps() {
     query: {
       type: "bookmarks",
     },
-    props: "id,slug,title,metadata",
+    props: "id,slug,title,metadata,created_at",
     limit: 50,
+    sort: "-created_at",
   });
 
   const bookmarks = await data.objects;
