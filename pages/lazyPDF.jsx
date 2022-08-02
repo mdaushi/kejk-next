@@ -26,7 +26,7 @@ const LazyPDF = ({ lazyPDF }) => {
     "https://cdn.cosmicjs.com/27efc530-9722-11ec-8bb7-91577e4f4933-Lazy-PDF.zip";
 
   return (
-    <div className={"mt-12"}>
+    <div className={"mx-auto mt-12 max-w-3xl"}>
       <Head>
         <title>{metaTitle}</title>
         <link rel="icon" href="/favicon.ico" />
@@ -49,25 +49,46 @@ const LazyPDF = ({ lazyPDF }) => {
         <h2 className="mb-4 text-left text-2xl font-medium text-neutral-700 dark:text-neutral-400 md:text-2xl">
           {lazyPDF.metadata.subtitle}
         </h2>
-        <div className="mt-12 inline-flex w-full justify-between">
-          <a href={downloadURL} download>
-            <button
-              className={classNames(
-                `mb-4 flex items-center justify-center space-x-2 rounded-md border border-neutral-200 bg-neutral-100 py-2 px-4 text-sm font-medium text-black transition ease-in-out hover:border-teal-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white md:w-max md:text-base`
-              )}
-            >
-              <ArrowDownIcon className="mr-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
-              Download
-            </button>
-          </a>
-          {/* <Image
-            className="rounded-2xl"
-            width={50}
-            height={50}
-            src={lazyPDF.metadata.icon?.imgix_url}
+        <div className="h-auto w-full max-w-3xl">
+          <Image
+            className="rounded-md"
+            src={lazyPDF.metadata.hero?.imgix_url}
             alt="Image of the app icon"
-            quality={50}
-          /> */}
+            width={1000}
+            height={700}
+            quality={100}
+            layout="responsive"
+            objectFit="cover"
+            objectPosition="center"
+          />
+        </div>
+        <div className="mt-12 flex w-full items-center justify-between">
+          <div className="flex flex-col space-y-4">
+            <div
+              className="flex w-2/3 flex-col"
+              dangerouslySetInnerHTML={{ __html: lazyPDF.metadata.subheader }}
+            />
+            <a href={downloadURL} download>
+              <button
+                className={classNames(
+                  `mb-4 flex items-center justify-center space-x-2 rounded-md border border-neutral-200 bg-neutral-100 py-2 px-4 text-sm font-medium text-black transition ease-in-out hover:border-teal-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white md:w-max md:text-base`
+                )}
+              >
+                <ArrowDownIcon className="mr-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+                Download
+              </button>
+            </a>
+          </div>
+          <div className="w-max">
+            <Image
+              className="rounded-[28px]"
+              width={150}
+              height={150}
+              src={lazyPDF.metadata.icon?.imgix_url}
+              alt="Image of the app icon"
+              quality={100}
+            />
+          </div>
         </div>
         <div dangerouslySetInnerHTML={{ __html: lazyPDF.content }} />
         <div className="mt-12 inline-flex w-full justify-center">
