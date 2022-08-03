@@ -92,12 +92,11 @@ export default function Projects({ apps, utilities, clients }) {
             borderColor="neutral-200"
             darkBgColor="neutral-800"
             darkTextColor="white"
-            darkBorderColor="neutral-700"
+            darkBorderColor="neutral-700" href="mailto:karl@kejk.tech?subject=Let's work together!"
           >
-            <MailIcon width={24} height={24} />
-            <a href="mailto:karl@kejk.tech?subject=Let's work together!">
+            <MailIcon className="mr-2" width={24} height={24} />
               Work with me
-            </a>
+            
           </Button>
         </div>
       </main>

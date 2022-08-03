@@ -16,10 +16,18 @@ const api = Cosmic();
 const BUCKET_SLUG = process.env.NEXT_PUBLIC_COSMIC_SLUG;
 const READ_KEY = process.env.NEXT_PUBLIC_COSMIC_READ_KEY;
 
+const BOOKMARKS_SLUG = "kemiljk";
+const BOOKMARKS_READ_KEY = "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK";
+
 const bucket = api.bucket({
   slug: BUCKET_SLUG,
   read_key: READ_KEY,
 });
+
+const bookmarksBucket = api.bucket({
+  slug: BOOKMARKS_SLUG,
+  read_key: BOOKMARKS_READ_KEY,
+}); 
 
 export default function Home({
   home,
@@ -70,11 +78,13 @@ export default function Home({
             borderColor="neutral-200"
             darkBgColor="neutral-800"
             darkTextColor="white"
-            darkBorderColor="neutral-700"
+          darkBorderColor="neutral-700"
+          href="mailto:karl@kejk.tech?subject=Let's chat!"
           >
-            <MailIcon width={24} height={24} />
-            <a href="mailto:karl@kejk.tech?subject=Let's chat!">Chat to me</a>
+            <MailIcon width={24} height={24} className="mr-2" />
+            Chat to me
           </Button>
+          <Link href={"/about"}>
           <Button
             bgColor="neutral-100"
             textColor="black"
@@ -82,12 +92,13 @@ export default function Home({
             darkBgColor="neutral-800"
             darkTextColor="white"
             darkBorderColor="neutral-700"
+            href="/about"
           >
-            <UserIcon width={24} height={24} />
-            <Link href={"/about"}>
-              <a>More about me</a>
-            </Link>
+            <UserIcon width={24} height={24} className="mr-2" />
+            
+              More about me
           </Button>
+          </Link>
         </div>
         <AllCapsHeader marginTop={16}>Writing</AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -105,6 +116,7 @@ export default function Home({
           })}
         </div>
         <div className="mt-8">
+        <Link href={"/writing"}>
           <Button
             bgColor="neutral-100"
             textColor="black"
@@ -112,12 +124,12 @@ export default function Home({
             darkBgColor="neutral-800"
             darkTextColor="white"
             darkBorderColor="neutral-700"
+            href="/writing"
           >
-            <Link href={"/writing"}>
-              <a>More thoughts</a>
-            </Link>
-            <ArrowSmRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+               More thoughts
+            <ArrowSmRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 ml-2" />
           </Button>
+          </Link>
         </div>
         <AllCapsHeader marginTop={16}>Apps and projects</AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -179,6 +191,7 @@ export default function Home({
           })}
         </div>
         <div className="mt-8">
+        <Link href={"/bookmarks"}>
           <Button
             bgColor="neutral-100"
             textColor="black"
@@ -186,12 +199,12 @@ export default function Home({
             darkBgColor="neutral-800"
             darkTextColor="white"
             darkBorderColor="neutral-700"
+            href="/bookmarks"
           >
-            <Link href={"/bookmarks"}>
-              <a>All bookmarks</a>
-            </Link>
-            <ArrowSmRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+              All bookmarks
+            <ArrowSmRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 ml-2" />
           </Button>
+          </Link>
         </div>
       </main>
     </div>
@@ -239,12 +252,13 @@ export async function getStaticProps() {
     props: "slug,title,metadata",
   });
 
-  const bookmarkData = await bucket.getObjects({
+  const bookmarkData = await bookmarksBucket.getObjects({
     limit: 3,
     query: {
       type: "bookmarks",
     },
-    props: "slug,title,metadata",
+    props: "slug,title,metadata,created_at",
+    sort: "-created_at",
   });
 
   const home = await data.objects[0];
