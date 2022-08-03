@@ -60,6 +60,9 @@ const LazyPDF = ({ lazyPDF, lazyDownload }) => {
             layout="responsive"
             objectFit="cover"
             objectPosition="center"
+            placeholder="blur"
+            blurDataURL={`${lazyPDF.metadata.hero?.imgix_url}?auto=format,compress&q=1&blur=500&w=2`}
+            priority
           />
         </div>
         <div className="mt-12 flex w-full items-center justify-between">
