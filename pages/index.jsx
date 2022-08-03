@@ -64,7 +64,7 @@ export default function Home({
           <Markdown content={home.metadata.content} className="-mt-8" />
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center space-x-4">
-        <a className="py-2 px-4" href="mailto:karl@kejk.tech?subject=Let's chat!">
+        <a href="mailto:karl@kejk.tech?subject=Let's chat!">
           <Button
             bgColor="neutral-100"
             textColor="black"
@@ -77,7 +77,7 @@ export default function Home({
             Chat to me
           </Button>
           </a>
-          <a className="py-2 px-4">
+          <a>
           <Button
             bgColor="neutral-100"
             textColor="black"
@@ -185,7 +185,7 @@ export default function Home({
           })}
         </div>
         <div className="mt-8">
-        <a className="py-2 px-4">
+        <a>
           <Button
             bgColor="neutral-100"
             textColor="black"

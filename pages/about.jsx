@@ -49,7 +49,7 @@ export default function About({ about, principles }) {
           <Markdown content={about.metadata.content} />
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center">
-        <a className="py-2 px-4">
+        <a>
           <Button
             bgColor="neutral-100"
             textColor="black"
