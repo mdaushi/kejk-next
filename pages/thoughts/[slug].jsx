@@ -113,12 +113,14 @@ export default function Post({ post }) {
         ) : (
           <>
             <div className="group mb-8 flex w-full justify-start">
+            <a>
               <TextButton textColor="black" darkTextColor="white">
                 <ArrowSmLeftIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
                 <Link href={"/writing"}>
-                  <a>All thoughts</a>
+                  All thoughts
                 </Link>
               </TextButton>
+              </a>
             </div>
             <AllCapsHeader>
               <Moment fromNow>{post.modified_at}</Moment>

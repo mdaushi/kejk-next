@@ -49,6 +49,7 @@ export default function About({ about, principles }) {
           <Markdown content={about.metadata.content} />
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center">
+        <a className="py-2 px-4">
           <Button
             bgColor="neutral-100"
             textColor="black"
@@ -59,9 +60,10 @@ export default function About({ about, principles }) {
           >
             <CollectionIcon width={24} height={24} />
             <Link href="/uses">
-              <a>My site stack</a>
+              My site stack
             </Link>
           </Button>
+          </a>
         </div>
         <HeaderView className="mt-16">Principles</HeaderView>
         <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">

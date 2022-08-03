@@ -86,6 +86,7 @@ export default function Projects({ apps, utilities, clients }) {
           })}
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center space-x-4 md:mt-16">
+        <a className="px-4 py-2" href="mailto:karl@kejk.tech?subject=Let's work together!">
           <Button
             bgColor="neutral-100"
             textColor="black"
@@ -95,10 +96,10 @@ export default function Projects({ apps, utilities, clients }) {
             darkBorderColor="neutral-700"
           >
             <MailIcon width={24} height={24} />
-            <a href="mailto:karl@kejk.tech?subject=Let's work together!">
               Work with me
-            </a>
+            
           </Button>
+          </a>
         </div>
       </main>
     </div>

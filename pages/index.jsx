@@ -64,6 +64,7 @@ export default function Home({
           <Markdown content={home.metadata.content} className="-mt-8" />
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center space-x-4">
+        <a className="py-2 px-4" href="mailto:karl@kejk.tech?subject=Let's chat!">
           <Button
             bgColor="neutral-100"
             textColor="black"
@@ -73,8 +74,10 @@ export default function Home({
             darkBorderColor="neutral-700"
           >
             <MailIcon width={24} height={24} />
-            <a href="mailto:karl@kejk.tech?subject=Let's chat!">Chat to me</a>
+            Chat to me
           </Button>
+          </a>
+          <a className="py-2 px-4">
           <Button
             bgColor="neutral-100"
             textColor="black"
@@ -85,9 +88,10 @@ export default function Home({
           >
             <UserIcon width={24} height={24} />
             <Link href={"/about"}>
-              <a>More about me</a>
+              More about me
             </Link>
           </Button>
+          </a>
         </div>
         <AllCapsHeader marginTop={16}>Writing</AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -105,6 +109,7 @@ export default function Home({
           })}
         </div>
         <div className="mt-8">
+        <a>
           <Button
             bgColor="neutral-100"
             textColor="black"
@@ -114,10 +119,11 @@ export default function Home({
             darkBorderColor="neutral-700"
           >
             <Link href={"/writing"}>
-              <a>More thoughts</a>
+               More thoughts
             </Link>
             <ArrowSmRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
           </Button>
+          </a>
         </div>
         <AllCapsHeader marginTop={16}>Apps and projects</AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -179,6 +185,7 @@ export default function Home({
           })}
         </div>
         <div className="mt-8">
+        <a className="py-2 px-4">
           <Button
             bgColor="neutral-100"
             textColor="black"
@@ -188,10 +195,11 @@ export default function Home({
             darkBorderColor="neutral-700"
           >
             <Link href={"/bookmarks"}>
-              <a>All bookmarks</a>
+              All bookmarks
             </Link>
             <ArrowSmRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
           </Button>
+          </a>
         </div>
       </main>
     </div>
