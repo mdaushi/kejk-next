@@ -25,8 +25,8 @@ const bucket = api.bucket({
 });
 
 const bookmarksBucket = api.bucket({
-  slug: BOOKMARKS_SLUG
-  read_key: BOOKMARKS_READ_KEY
+  slug: BOOKMARKS_SLUG,
+  read_key: BOOKMARKS_READ_KEY,
 }); 
 
 export default function Home({
