@@ -90,7 +90,6 @@ export default function Home({
               More about me
             </Link>
           </Button>
-          </a>
         </div>
         <AllCapsHeader marginTop={16}>Writing</AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
