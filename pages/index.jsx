@@ -16,10 +16,17 @@ const api = Cosmic();
 const BUCKET_SLUG = process.env.NEXT_PUBLIC_COSMIC_SLUG;
 const READ_KEY = process.env.NEXT_PUBLIC_COSMIC_READ_KEY;
 
+const BOOKMARKS_SLUG = "kemiljk";
+const BOOKMARKS_READ_KEY = "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK";
+
 const bucket = api.bucket({
   slug: BUCKET_SLUG,
   read_key: READ_KEY,
 });
+
+const bookmarksBucket = api.bucket({
+  slug: BOOKMARKS_SLUG
+  read_key: BOOKMARKS_READ_KEY
 
 export default function Home({
   home,
@@ -244,12 +251,13 @@ export async function getStaticProps() {
     props: "slug,title,metadata",
   });
 
-  const bookmarkData = await bucket.getObjects({
+  const bookmarkData = await bookmarksBucket.getObjects({
     limit: 3,
     query: {
       type: "bookmarks",
     },
-    props: "slug,title,metadata",
+    props: "slug,title,metadata,created_at",
+    sort: "-created_at",
   });
 
   const home = await data.objects[0];
