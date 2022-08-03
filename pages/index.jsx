@@ -86,7 +86,7 @@ export default function Home({
             darkBorderColor="neutral-700"
             href="/about"
           >
-            <UserIcon width={24} height={24} />
+            <UserIcon width={24} height={24} className="mr-2" />
             
               More about me
           </Button>
@@ -119,7 +119,7 @@ export default function Home({
             href="/writing"
           >
                More thoughts
-            <ArrowSmRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+            <ArrowSmRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 ml-2" />
           </Button>
           </Link>
         </div>
@@ -194,7 +194,7 @@ export default function Home({
             href="/bookmarks"
           >
               All bookmarks
-            <ArrowSmRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+            <ArrowSmRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 ml-2" />
           </Button>
           </Link>
         </div>

@@ -59,7 +59,7 @@ export default function About({ about, principles }) {
           darkBorderColor="neutral-700"
           href="/uses"
           >
-            <CollectionIcon width={24} height={24} />
+            <CollectionIcon width={24} height={24} className="mr-2" />
               My site stack
           </Button>
           </Link>
