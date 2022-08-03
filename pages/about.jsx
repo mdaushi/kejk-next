@@ -49,21 +49,20 @@ export default function About({ about, principles }) {
           <Markdown content={about.metadata.content} />
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center">
-        <a>
           <Button
             bgColor="neutral-100"
             textColor="black"
             borderColor="neutral-200"
             darkBgColor="neutral-800"
             darkTextColor="white"
-            darkBorderColor="neutral-700"
+          darkBorderColor="neutral-700"
+          href="/uses"
           >
             <CollectionIcon width={24} height={24} />
             <Link href="/uses">
               My site stack
             </Link>
           </Button>
-          </a>
         </div>
         <HeaderView className="mt-16">Principles</HeaderView>
         <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">

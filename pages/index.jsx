@@ -64,20 +64,18 @@ export default function Home({
           <Markdown content={home.metadata.content} className="-mt-8" />
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center space-x-4">
-        <a href="mailto:karl@kejk.tech?subject=Let's chat!">
           <Button
             bgColor="neutral-100"
             textColor="black"
             borderColor="neutral-200"
             darkBgColor="neutral-800"
             darkTextColor="white"
-            darkBorderColor="neutral-700"
+          darkBorderColor="neutral-700"
+          href="mailto:karl@kejk.tech?subject=Let's chat!"
           >
             <MailIcon width={24} height={24} />
             Chat to me
           </Button>
-          </a>
-          <a>
           <Button
             bgColor="neutral-100"
             textColor="black"
@@ -85,6 +83,7 @@ export default function Home({
             darkBgColor="neutral-800"
             darkTextColor="white"
             darkBorderColor="neutral-700"
+            href="/about"
           >
             <UserIcon width={24} height={24} />
             <Link href={"/about"}>
@@ -109,7 +108,6 @@ export default function Home({
           })}
         </div>
         <div className="mt-8">
-        <a>
           <Button
             bgColor="neutral-100"
             textColor="black"
@@ -117,13 +115,13 @@ export default function Home({
             darkBgColor="neutral-800"
             darkTextColor="white"
             darkBorderColor="neutral-700"
+            href="/writing"
           >
             <Link href={"/writing"}>
                More thoughts
             </Link>
             <ArrowSmRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
           </Button>
-          </a>
         </div>
         <AllCapsHeader marginTop={16}>Apps and projects</AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -185,7 +183,6 @@ export default function Home({
           })}
         </div>
         <div className="mt-8">
-        <a>
           <Button
             bgColor="neutral-100"
             textColor="black"
@@ -193,13 +190,13 @@ export default function Home({
             darkBgColor="neutral-800"
             darkTextColor="white"
             darkBorderColor="neutral-700"
+            href="/bookmarks"
           >
             <Link href={"/bookmarks"}>
               All bookmarks
             </Link>
             <ArrowSmRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
           </Button>
-          </a>
         </div>
       </main>
     </div>

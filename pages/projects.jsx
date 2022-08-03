@@ -86,20 +86,18 @@ export default function Projects({ apps, utilities, clients }) {
           })}
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center space-x-4 md:mt-16">
-        <a className="px-4 py-2" href="mailto:karl@kejk.tech?subject=Let's work together!">
           <Button
             bgColor="neutral-100"
             textColor="black"
             borderColor="neutral-200"
             darkBgColor="neutral-800"
             darkTextColor="white"
-            darkBorderColor="neutral-700"
+            darkBorderColor="neutral-700" href="mailto:karl@kejk.tech?subject=Let's work together!"
           >
-            <MailIcon width={24} height={24} />
+            <MailIcon className="mr-2" width={24} height={24} />
               Work with me
             
           </Button>
-          </a>
         </div>
       </main>
     </div>
