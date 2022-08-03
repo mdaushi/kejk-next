@@ -73,9 +73,10 @@ export default function Home({
           darkBorderColor="neutral-700"
           href="mailto:karl@kejk.tech?subject=Let's chat!"
           >
-            <MailIcon width={24} height={24} />
+            <MailIcon width={24} height={24} className="mr-2" />
             Chat to me
           </Button>
+          <Link href={"/about"}>
           <Button
             bgColor="neutral-100"
             textColor="black"
@@ -86,10 +87,10 @@ export default function Home({
             href="/about"
           >
             <UserIcon width={24} height={24} />
-            <Link href={"/about"}>
+            
               More about me
-            </Link>
           </Button>
+          </Link>
         </div>
         <AllCapsHeader marginTop={16}>Writing</AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -107,6 +108,7 @@ export default function Home({
           })}
         </div>
         <div className="mt-8">
+        <Link href={"/writing"}>
           <Button
             bgColor="neutral-100"
             textColor="black"
@@ -116,11 +118,10 @@ export default function Home({
             darkBorderColor="neutral-700"
             href="/writing"
           >
-            <Link href={"/writing"}>
                More thoughts
-            </Link>
             <ArrowSmRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
           </Button>
+          </Link>
         </div>
         <AllCapsHeader marginTop={16}>Apps and projects</AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -182,6 +183,7 @@ export default function Home({
           })}
         </div>
         <div className="mt-8">
+        <Link href={"/bookmarks"}>
           <Button
             bgColor="neutral-100"
             textColor="black"
@@ -191,11 +193,10 @@ export default function Home({
             darkBorderColor="neutral-700"
             href="/bookmarks"
           >
-            <Link href={"/bookmarks"}>
               All bookmarks
-            </Link>
             <ArrowSmRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
           </Button>
+          </Link>
         </div>
       </main>
     </div>
