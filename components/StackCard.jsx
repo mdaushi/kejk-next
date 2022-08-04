@@ -18,6 +18,8 @@ const StackCard = ({ title, subtitle, image, link, tags }) => {
           width={50}
           height={50}
           src={image}
+          placeholder="blur"
+          blurDataURL={`${image}?auto=format,compress&q=1&blur=500&w=2`}
           alt="Image of the software icon"
           quality={50}
         />
