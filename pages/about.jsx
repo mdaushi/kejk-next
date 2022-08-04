@@ -49,19 +49,19 @@ export default function About({ about, principles }) {
           <Markdown content={about.metadata.content} />
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center">
-        <Link href="/uses">
-          <Button
-            bgColor="neutral-100"
-            textColor="black"
-            borderColor="neutral-200"
-            darkBgColor="neutral-800"
-            darkTextColor="white"
-          darkBorderColor="neutral-700"
-          href="/uses"
-          >
-            <CollectionIcon width={24} height={24} className="mr-2" />
+          <Link href="/uses">
+            <Button
+              bgColor="neutral-100"
+              textColor="black"
+              borderColor="neutral-200"
+              darkBgColor="neutral-800"
+              darkTextColor="white"
+              darkBorderColor="neutral-700"
+              href="/uses"
+            >
+              <CollectionIcon width={24} height={24} className="mr-2" />
               My site stack
-          </Button>
+            </Button>
           </Link>
         </div>
         <HeaderView className="mt-16">Principles</HeaderView>
@@ -85,12 +85,11 @@ export default function About({ about, principles }) {
 }
 
 export async function getStaticProps() {
-  const data = await bucket.getObjects({
-    query: {
-      type: "about",
-      slug: "about",
-    },
-    props: "title,content,metadata",
+  const props = ["title", "content", "metadata"];
+
+  const data = await bucket.getObject({
+    id: "62e2e0f19f26bd0e6c6b2ad8",
+    props: props.toString(),
   });
 
   const principlesData = await bucket.getObjects({
@@ -100,7 +99,7 @@ export async function getStaticProps() {
     props: "title",
   });
 
-  const about = await data.objects[0];
+  const about = await data.object;
   const principles = await principlesData.objects;
   return {
     props: {

@@ -27,7 +27,7 @@ const bucket = api.bucket({
 const bookmarksBucket = api.bucket({
   slug: BOOKMARKS_SLUG,
   read_key: BOOKMARKS_READ_KEY,
-}); 
+});
 
 export default function Home({
   home,
@@ -78,26 +78,25 @@ export default function Home({
             borderColor="neutral-200"
             darkBgColor="neutral-800"
             darkTextColor="white"
-          darkBorderColor="neutral-700"
-          href="mailto:karl@kejk.tech?subject=Let's chat!"
+            darkBorderColor="neutral-700"
+            href="mailto:karl@kejk.tech?subject=Let's chat!"
           >
             <MailIcon width={24} height={24} className="mr-2" />
             Chat to me
           </Button>
           <Link href={"/about"}>
-          <Button
-            bgColor="neutral-100"
-            textColor="black"
-            borderColor="neutral-200"
-            darkBgColor="neutral-800"
-            darkTextColor="white"
-            darkBorderColor="neutral-700"
-            href="/about"
-          >
-            <UserIcon width={24} height={24} className="mr-2" />
-            
+            <Button
+              bgColor="neutral-100"
+              textColor="black"
+              borderColor="neutral-200"
+              darkBgColor="neutral-800"
+              darkTextColor="white"
+              darkBorderColor="neutral-700"
+              href="/about"
+            >
+              <UserIcon width={24} height={24} className="mr-2" />
               More about me
-          </Button>
+            </Button>
           </Link>
         </div>
         <AllCapsHeader marginTop={16}>Writing</AllCapsHeader>
@@ -116,19 +115,19 @@ export default function Home({
           })}
         </div>
         <div className="mt-8">
-        <Link href={"/writing"}>
-          <Button
-            bgColor="neutral-100"
-            textColor="black"
-            borderColor="neutral-200"
-            darkBgColor="neutral-800"
-            darkTextColor="white"
-            darkBorderColor="neutral-700"
-            href="/writing"
-          >
-               More thoughts
-            <ArrowSmRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 ml-2" />
-          </Button>
+          <Link href={"/writing"}>
+            <Button
+              bgColor="neutral-100"
+              textColor="black"
+              borderColor="neutral-200"
+              darkBgColor="neutral-800"
+              darkTextColor="white"
+              darkBorderColor="neutral-700"
+              href="/writing"
+            >
+              More thoughts
+              <ArrowSmRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+            </Button>
           </Link>
         </div>
         <AllCapsHeader marginTop={16}>Apps and projects</AllCapsHeader>
@@ -191,19 +190,19 @@ export default function Home({
           })}
         </div>
         <div className="mt-8">
-        <Link href={"/bookmarks"}>
-          <Button
-            bgColor="neutral-100"
-            textColor="black"
-            borderColor="neutral-200"
-            darkBgColor="neutral-800"
-            darkTextColor="white"
-            darkBorderColor="neutral-700"
-            href="/bookmarks"
-          >
+          <Link href={"/bookmarks"}>
+            <Button
+              bgColor="neutral-100"
+              textColor="black"
+              borderColor="neutral-200"
+              darkBgColor="neutral-800"
+              darkTextColor="white"
+              darkBorderColor="neutral-700"
+              href="/bookmarks"
+            >
               All bookmarks
-            <ArrowSmRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 ml-2" />
-          </Button>
+              <ArrowSmRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+            </Button>
           </Link>
         </div>
       </main>
@@ -212,12 +211,11 @@ export default function Home({
 }
 
 export async function getStaticProps() {
-  const data = await bucket.getObjects({
-    query: {
-      type: "home",
-      slug: "home",
-    },
-    props: "title,metadata",
+  const props = ["title", "metadata"];
+
+  const data = await bucket.getObject({
+    id: "62e2e0f39f26bd0e6c6b2bdf",
+    props: props.toString(),
   });
 
   const writingData = await bucket.getObjects({
@@ -261,7 +259,7 @@ export async function getStaticProps() {
     sort: "-created_at",
   });
 
-  const home = await data.objects[0];
+  const home = await data.object;
   const writings = await writingData.objects;
   const apps = await projectData.objects;
   const albums = await albumData.objects;
