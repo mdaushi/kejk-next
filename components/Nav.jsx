@@ -19,6 +19,7 @@ const Nav = () => {
                   width="32px"
                   src="/logo.svg"
                   alt="Logo"
+                  quality={50}
                 />
               </a>
             </Link>
