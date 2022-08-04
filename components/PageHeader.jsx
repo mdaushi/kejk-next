@@ -2,7 +2,7 @@ import React from "react";
 
 const PageHeader = ({ children }) => {
   return (
-    <h1 className="pb-4 text-4xl font-bold text-gray-700 dark:text-gray-200">
+    <h1 className="pb-4 text-4xl font-bold text-neutral-700 dark:text-neutral-200">
       {children}
     </h1>
   );

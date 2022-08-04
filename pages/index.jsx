@@ -5,7 +5,6 @@ import { ArrowSmRightIcon, MailIcon, UserIcon } from "@heroicons/react/outline";
 import Markdown from "../components/Markdown";
 import WritingCard from "../components/WritingCard";
 import AppCard from "../components/AppCard";
-import HeaderView from "../components/HeaderView";
 import FeatureCard from "../components/FeatureCard";
 import AllCapsHeader from "../components/AllCapsHeader";
 import PageHeader from "../components/PageHeader";
@@ -69,7 +68,7 @@ export default function Home({
         <div className="text-left md:mx-auto md:max-w-xl md:justify-center md:text-center">
           <AllCapsHeader>Karl Emil James Koch</AllCapsHeader>
           <PageHeader>{home.title}</PageHeader>
-          <Markdown content={home.metadata.content} className="-mt-8" />
+          <Markdown content={home.metadata.content} />
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center space-x-4">
           <Button

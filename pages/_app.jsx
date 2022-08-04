@@ -1,6 +1,6 @@
+import PlausibleProvider from "next-plausible";
 import Layout from "../components/Layout";
 import "../styles/globals.css";
-import PlausibleProvider from "next-plausible";
 
 function MyApp({ Component, pageProps }) {
   return (
