@@ -249,21 +249,13 @@ export async function getStaticProps() {
     props: "slug,title,metadata",
   });
 
-  const bookmarkData = await bookmarksBucket.getObjects({
-    limit: 3,
-    query: {
-      type: "bookmarks",
-    },
-    props: "slug,title,metadata,created_at",
-    sort: "-created_at",
-  });
+  
 
   const home = await data.object;
   const writings = await writingData.objects;
   const apps = await projectData.objects;
   const albums = await albumData.objects;
   const features = await featureData.objects;
-  const bookmarks = await bookmarkData.objects;
 
   return {
     props: {
@@ -272,6 +264,26 @@ export async function getStaticProps() {
       apps,
       albums,
       features,
+      bookmarks,
+    },
+  };
+}
+
+
+export async function getServerSideProps() {
+const bookmarkData = await bookmarksBucket.getObjects({
+    limit: 3,
+    query: {
+      type: "bookmarks",
+    },
+    props: "slug,title,metadata,created_at",
+    sort: "-created_at",
+  });
+  
+  const bookmarks = await bookmarkData.objects;
+
+return {
+    props: {
       bookmarks,
     },
   };
