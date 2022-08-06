@@ -24,9 +24,9 @@ const Nav = () => {
                 />
               </a>
             </Link>
-            </div>
-            <div className="flex w-full items-center justify-between">
-              <div className="flex shrink-0 items-center"></div>
+          </div>
+            <div className="flex w-full items-center justify-center mx-auto md:mx-0 md:justify-between">
+              <div className="hidden md:flex shrink-0 items-center"></div>
               <div className="block">
                 <div className="flex items-center space-x-4">
                   <NavLink href="/">
