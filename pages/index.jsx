@@ -276,5 +276,6 @@ export async function getStaticProps() {
       features,
       bookmarks,
     },
+    revalidate: 3600,
   };
 }
