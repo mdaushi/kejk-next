@@ -66,7 +66,7 @@ export default function Bookmark({ bookmarks }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const data = await bucket.getObjects({
     query: {
       type: "bookmarks",
