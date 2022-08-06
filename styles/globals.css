@@ -25,7 +25,7 @@
   }
 
   a.nav {
-    @apply py-6 text-black decoration-teal-500 decoration-4 underline-offset-[20px] transition ease-in-out hover:text-teal-600 hover:underline dark:text-white dark:hover:text-teal-500;
+    @apply py-4 md:py-6 text-black decoration-teal-500 decoration-4 underline-offset-[20px] transition ease-in-out hover:text-teal-600 hover:underline dark:text-white dark:hover:text-teal-500;
   }
 
   a.nav[aria-current] {
