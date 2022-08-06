@@ -11,7 +11,8 @@ const Nav = () => {
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-center mx-auto md:justify-between">
-            <Link href="/" className="hidden md:block">
+          <div className="hidden md:block">
+            <Link href="/">
               <a>
                 <Image
                   className="rounded-lg"
@@ -23,6 +24,7 @@ const Nav = () => {
                 />
               </a>
             </Link>
+            </div>
             <div className="flex w-full items-center justify-between">
               <div className="flex shrink-0 items-center"></div>
               <div className="block">
