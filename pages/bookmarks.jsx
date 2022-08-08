@@ -20,6 +20,8 @@ export default function Bookmark({ bookmarks }) {
     return;
   }
 
+  const regex = /.*https:\/\/www.|http:\/\/www.|https:\/\/|http:\/\/|\/.*$/gm;
+
   const metaTitle = "KEJK | Bookmarks";
   const metaImage =
     "https://imgix.cosmicjs.com/d71255b0-10ed-11ed-b476-13ceb56f12f2-image.png";
@@ -53,10 +55,7 @@ export default function Bookmark({ bookmarks }) {
             <PageHeader>Bookmarks</PageHeader>
             <div className="mt-4 grid grid-cols-1 gap-8 md:grid-cols-3">
               {bookmarks.map((bookmark) => {
-                const trimmedURL = bookmark.metadata.url.replace(
-                  /.*https:\/\/www.|http:\/\/www.|https:\/\/|http:\/\/|\/.*$/gm,
-                  ""
-                );
+                const trimmedURL = bookmark.metadata.url.replace(regex, "");
                 return (
                   <a
                     key={bookmark.id}
@@ -81,7 +80,7 @@ export default function Bookmark({ bookmarks }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const data = await bucket.getObjects({
     query: {
       type: "bookmarks",
@@ -97,5 +96,6 @@ export async function getServerSideProps() {
     props: {
       bookmarks,
     },
+    revalidate: 3600,
   };
 }
