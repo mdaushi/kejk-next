@@ -17,7 +17,7 @@ const BookmarkCard = ({ title, subtitle, url, date }) => {
         <span className="flex text-sm leading-6 text-neutral-500 dark:text-neutral-400">
           {subtitle}
         </span>
-        <div className="flex text-sm leading-6 text-neutral-500 dark:text-neutral-400">
+        <div className="flex text-sm leading-6 text-neutral-500 dark:text-neutral-400 pt-4">
           <span className="flex w-full justify-start font-mono text-xs font-light uppercase leading-6 text-neutral-500 dark:text-neutral-400">
             {date}
           </span>
