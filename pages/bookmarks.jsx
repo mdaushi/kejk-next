@@ -1,6 +1,7 @@
 import Head from "next/head";
 import PageHeader from "../components/PageHeader";
 import BookmarkCard from "../components/BookmarkCard";
+import { useRouter } from "next/router";
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -14,6 +15,11 @@ const bucket = api.bucket({
 });
 
 export default function Bookmark({ bookmarks }) {
+  const router = useRouter();
+  if (!router.isFallback && !bookmarks?.length) {
+    return;
+  }
+
   const metaTitle = "KEJK | Bookmarks";
   const metaImage =
     "https://imgix.cosmicjs.com/d71255b0-10ed-11ed-b476-13ceb56f12f2-image.png";
@@ -40,27 +46,31 @@ export default function Bookmark({ bookmarks }) {
         <meta property="twitter:image" content={metaImage} />
       </Head>
       <main>
-        <div className="mx-auto w-full max-w-5xl">
-          <PageHeader>Bookmarks</PageHeader>
-          <div className="mt-4 grid grid-cols-1 gap-8 md:grid-cols-3">
-            {bookmarks.map((bookmark) => {
-              return (
-                <a
-                  key={bookmark.id}
-                  href={`${bookmark.metadata.url}`}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <BookmarkCard
-                    title={bookmark.title}
-                    subtitle={bookmark.metadata.snippet}
-                    date={bookmark.metadata.published}
-                  />
-                </a>
-              );
-            })}
+        {router.isFallback ? (
+          <PageHeader>Loading...</PageHeader>
+        ) : (
+          <div className="mx-auto w-full max-w-5xl">
+            <PageHeader>Bookmarks</PageHeader>
+            <div className="mt-4 grid grid-cols-1 gap-8 md:grid-cols-3">
+              {bookmarks.map((bookmark) => {
+                return (
+                  <a
+                    key={bookmark.id}
+                    href={`${bookmark.metadata.url}`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <BookmarkCard
+                      title={bookmark.title}
+                      subtitle={bookmark.metadata.snippet}
+                      date={bookmark.metadata.published}
+                    />
+                  </a>
+                );
+              })}
+            </div>
           </div>
-        </div>
+        )}
       </main>
     </div>
   );
