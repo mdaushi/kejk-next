@@ -53,6 +53,10 @@ export default function Bookmark({ bookmarks }) {
             <PageHeader>Bookmarks</PageHeader>
             <div className="mt-4 grid grid-cols-1 gap-8 md:grid-cols-3">
               {bookmarks.map((bookmark) => {
+                const trimmedURL = bookmark.metadata.url.replace(
+                  /.*https:\/\/www.|http:\/\/www.|https:\/\/|http:\/\/|\/.*$/gm,
+                  ""
+                );
                 return (
                   <a
                     key={bookmark.id}
@@ -64,6 +68,7 @@ export default function Bookmark({ bookmarks }) {
                       title={bookmark.title}
                       subtitle={bookmark.metadata.snippet}
                       date={bookmark.metadata.published}
+                      url={trimmedURL}
                     />
                   </a>
                 );
