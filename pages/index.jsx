@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Button from "../components/Button";
-import { ArrowSmRightIcon, MailIcon, UserIcon } from "@heroicons/react/outline";
+import { ArrowSmRightIcon, MailIcon, UserIcon, PencilIcon, ViewGridIcon, FlagIcon, MusicNoteIcon, BookmarkIcon } from "@heroicons/react/outline";
 import Markdown from "../components/Markdown";
 import WritingCard from "../components/WritingCard";
 import AppCard from "../components/AppCard";
@@ -98,7 +98,7 @@ export default function Home({
             </Button>
           </Link>
         </div>
-        <AllCapsHeader marginTop={16}>Writing</AllCapsHeader>
+        <AllCapsHeader marginTop={16}><PencilIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />Writing</AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
           {writings.map((writing) => {
             return (
@@ -129,7 +129,7 @@ export default function Home({
             </Button>
           </Link>
         </div>
-        <AllCapsHeader marginTop={16}>Apps and projects</AllCapsHeader>
+        <AllCapsHeader marginTop={16}><ViewGridIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />Apps and projects</AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
           {apps.map((app) => {
             return (
@@ -143,7 +143,7 @@ export default function Home({
             );
           })}
         </div>
-        <AllCapsHeader marginTop={16}>Recent features</AllCapsHeader>
+        <AllCapsHeader marginTop={16}><FlagIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />Recent features</AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
           {features.map((feature) => {
             return (
@@ -156,7 +156,7 @@ export default function Home({
             );
           })}
         </div>
-        <AllCapsHeader marginTop={16}>Albums</AllCapsHeader>
+        <AllCapsHeader marginTop={16}><MusicNoteIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />Albums</AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
           {albums.map((album) => {
             return (
@@ -170,7 +170,7 @@ export default function Home({
             );
           })}
         </div>
-        <AllCapsHeader marginTop={16}>Bookmarks</AllCapsHeader>
+        <AllCapsHeader marginTop={16}><BookmarkIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />Bookmarks</AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
           {bookmarks.map((bookmark) => {
             return (
