@@ -10,6 +10,15 @@ const nextConfig = {
       allowFutureImage: true,
     },
   },
+  async redirects() {
+    return [
+      {
+        source: '/thoughts',
+        destination: '/writing',
+        permanent: true,
+      },
+    ]
+  },
 };
 
 module.exports = nextConfig;
