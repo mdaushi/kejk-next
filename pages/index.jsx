@@ -58,7 +58,7 @@ export default function Home({
     },
     {
      title: "Email",
-     href="mailto:karl@kejk.tech"
+     href: "mailto:karl@kejk.tech"
     },
   ]
 
