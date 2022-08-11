@@ -43,7 +43,7 @@ export default function Home({
   const metaDescription = "Designer, developer, writer and musician";
   const url = "https://kejk.tech";
   
-  const socials = [
+  const socials: [
    {
      title: "Twitter",
      href: "https://www.twitter.com/_kejk"
