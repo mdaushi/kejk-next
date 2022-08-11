@@ -8,6 +8,7 @@ import AppCard from "../components/AppCard";
 import FeatureCard from "../components/FeatureCard";
 import AllCapsHeader from "../components/AllCapsHeader";
 import PageHeader from "../components/PageHeader";
+import SocialLink from "../components/SocialLink;
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -41,6 +42,25 @@ export default function Home({
     "https://imgix.cosmicjs.com/aa1741b0-9c8f-11ec-b20b-ad2fdaf5e1bc-2022meta.png";
   const metaDescription = "Designer, developer, writer and musician";
   const url = "https://kejk.tech";
+  
+  const socials = [
+   {
+     title: "Twitter",
+     href: "https://www.twitter.com/_kejk"
+   },
+   {
+     title: "Figma",
+     href: "https://www.figma.com/@_kejk"
+    },
+    {
+     title: "GitHub",
+     href: "https://github.com/kemiljk/"
+    },
+    {
+     title: "Email",
+     href="mailto:karl@kejk.tech"
+    },
+  ]
 
   return (
     <div
@@ -203,6 +223,13 @@ export default function Home({
               <ArrowSmRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
             </Button>
           </Link>
+        </div>
+        <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
+          {socials.map((social) => { 
+            return (
+              <SocialLink href={social.href}>{social.title}</SocialLink>
+            );
+          })}
         </div>
       </main>
     </div>
