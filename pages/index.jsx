@@ -36,6 +36,7 @@ export default function Home({
   albums,
   features,
   bookmarks,
+  socials,
 }) {
   const metaTitle = "KEJK | Home";
   const metaImage =
