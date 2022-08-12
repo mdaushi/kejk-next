@@ -209,7 +209,7 @@ export default function Home({
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-2">
           {socials.map((social) => { 
             return (
-              <SocialLink href={`${social.metadata.url`} title={social.title} />
+              <SocialLink href={`${social.metadata.url}`} title={social.title} />
             );
           })}
         </div>
