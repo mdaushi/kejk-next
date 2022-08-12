@@ -42,25 +42,6 @@ export default function Home({
     "https://imgix.cosmicjs.com/aa1741b0-9c8f-11ec-b20b-ad2fdaf5e1bc-2022meta.png";
   const metaDescription = "Designer, developer, writer and musician";
   const url = "https://kejk.tech";
-  
-  const socials = [
-   {
-     title: "Twitter",
-     href: "https://www.twitter.com/_kejk"
-   },
-   {
-     title : "Figma",
-     href: "https://www.figma.com/@_kejk"
-    },
-    {
-     title: "GitHub",
-     href : "https://github.com/kemiljk"
-    },
-    {
-     title: "Email",
-     href: "mailto:karl@kejk.tech"
-    }
-  ];
 
   return (
     <div
@@ -285,7 +266,13 @@ export async function getStaticProps() {
     sort: "-created_at",
   });
 
-  
+  const socialData = await bucket.getObjects({
+    limit: 4,
+    query: {
+      type: "socials",
+    },
+    props: "title,metadata",
+  });
 
   const home = await data.object;
   const writings = await writingData.objects;
@@ -293,6 +280,7 @@ export async function getStaticProps() {
   const albums = await albumData.objects;
   const features = await featureData.objects;
   const bookmarks = await bookmarkData.objects;
+  const socials = await socialData.objects;
 
   return {
     props: {
@@ -302,6 +290,7 @@ export async function getStaticProps() {
       albums,
       features,
       bookmarks,
+      socials,
     },
     revalidate: 3600,
   };
