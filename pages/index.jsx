@@ -206,7 +206,7 @@ export default function Home({
             </Button>
           </Link>
         </div>
-        <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div className="mt-8 grid grid-cols-2 gap-8 md:grid-row">
           {socials.map((social) => { 
             return (
               <SocialLink key={social.title} href={`${social.metadata.url}`} title={social.title} />
