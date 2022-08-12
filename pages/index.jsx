@@ -8,7 +8,7 @@ import AppCard from "../components/AppCard";
 import FeatureCard from "../components/FeatureCard";
 import AllCapsHeader from "../components/AllCapsHeader";
 import PageHeader from "../components/PageHeader";
-import SocialLink from "../components/SocialLink;
+import SocialLink from "../components/SocialLink";
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -208,7 +208,7 @@ export default function Home({
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-2">
           {socials.map((social) => { 
             return (
-              <SocialLink href={`${social.metadata.url}`}>{social.title}</SocialLink>
+              <SocialLink href={`${social.metadata.url`} title={social.title} />
             );
           })}
         </div>
