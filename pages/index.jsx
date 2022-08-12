@@ -45,22 +45,22 @@ export default function Home({
   
   const socials = [
    {
-     "title": "Twitter",
-     "href": "https://www.twitter.com/_kejk"
+     title: "Twitter",
+     href: "https://www.twitter.com/_kejk"
    },
    {
-     "title": "Figma",
-     "href": "https://www.figma.com/@_kejk"
+     title : "Figma",
+     href: "https://www.figma.com/@_kejk"
     },
     {
-     "title": "GitHub",
-     "href": "https://github.com/kemiljk/"
+     title: "GitHub",
+     href : "https://github.com/kemiljk"
     },
     {
-     "title": "Email",
-     "href": "mailto:karl@kejk.tech"
+     title: "Email",
+     href: "mailto:karl@kejk.tech"
     }
-  ]
+  ];
 
   return (
     <div
