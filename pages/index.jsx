@@ -206,7 +206,7 @@ export default function Home({
             </Button>
           </Link>
         </div>
-        <div className="mt-8 grid grid-cols-2 gap-8 md:grid-row">
+        <div className="mt-8 flex items-center w-full justify-between md:justify-center md:gap-8">
           {socials.map((social) => { 
             return (
               <SocialLink key={social.title} href={`${social.metadata.url}`} title={social.title} />
