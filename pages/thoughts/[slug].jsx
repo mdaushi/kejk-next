@@ -18,7 +18,7 @@ import Prism from "prismjs";
 import "prismjs/components/prism-jsx.min";
 import "prismjs/components/prism-regex.min";
 import "prismjs/components/prism-json.min";
-import "../../styles/posts-styles.module.css";
+import "../../styles/markdown-styles.module.css";
 
 const VIEWPORT_PADDING = 24;
 
