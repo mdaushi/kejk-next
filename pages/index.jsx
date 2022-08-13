@@ -68,7 +68,7 @@ export default function Home({
 
       <main className="mt-12 md:mt-0">
         <div className="text-left md:mx-auto md:max-w-xl md:justify-center md:text-center">
-          <AllCapsHeader>Karl Emil James Koch</AllCapsHeader>
+          <AllCapsHeader className="md:w-full md:justify-center md:mx-auto">Karl Emil James Koch</AllCapsHeader>
           <PageHeader>{home.title}</PageHeader>
           <Markdown content={home.metadata.content} />
         </div>
@@ -115,7 +115,7 @@ export default function Home({
             );
           })}
         </div>
-        <div className="mt-8">
+        <div className="mx-auto mt-8 flex w-full justify-center">
           <Link href={"/writing"}>
             <Button
               bgColor="neutral-100"
@@ -190,7 +190,7 @@ export default function Home({
             );
           })}
         </div>
-        <div className="mt-8">
+        <div className="mx-auto mt-8 flex w-full justify-center">
           <Link href={"/bookmarks"}>
             <Button
               bgColor="neutral-100"
