@@ -18,7 +18,6 @@ import Prism from "prismjs";
 import "prismjs/components/prism-jsx.min";
 import "prismjs/components/prism-regex.min";
 import "prismjs/components/prism-json.min";
-import "../../styles/markdown-styles.module.css";
 
 const VIEWPORT_PADDING = 24;
 
@@ -137,7 +136,7 @@ export default function Post({ post }) {
               <Moment fromNow>{post.modified_at}</Moment>
             </AllCapsHeader>
             <PageHeader>{post.title}</PageHeader>
-            <div className="markdown" dangerouslySetInnerHTML={{ __html: post.content }} />
+            <div dangerouslySetInnerHTML={{ __html: post.content }} />
           </>
         )}
         <div className="mt-12 flex w-full justify-center">
