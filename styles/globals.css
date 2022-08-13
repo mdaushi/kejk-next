@@ -136,13 +136,12 @@ pre[class*="language-"] {
 .token.namespace {
   @apply text-red-700 dark:text-red-400;
 }
-.token.function-name {
+.token.function-name, .token.tag {
   @apply text-pink-700 dark:text-pink-400;
 }
 .token.boolean,
 .token.function,
-.token.number,
-.token.tag {
+.token.number {
   @apply text-orange-600 dark:text-orange-400;
 }
 .token.class-name,
