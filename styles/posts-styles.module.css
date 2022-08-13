@@ -1,0 +1,3 @@
+a {
+    @apply font-bold text-black underline decoration-teal-500 decoration-2 underline-offset-4 transition ease-in-out hover:text-teal-500 dark:text-white;
+  }
