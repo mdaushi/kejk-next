@@ -44,7 +44,9 @@ export default function Projects({ apps, utilities, clients }) {
       </Head>
       <main>
         <PageHeader>Projects</PageHeader>
-        <AllCapsHeader marginTop={8}>Personal</AllCapsHeader>
+        <AllCapsHeader marginTop={8} justify={"justify-start"}>
+          Personal
+        </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
           {apps.map((app) => {
             return (
@@ -71,7 +73,9 @@ export default function Projects({ apps, utilities, clients }) {
             );
           })}
         </div>
-        <AllCapsHeader marginTop={16}>Clients</AllCapsHeader>
+        <AllCapsHeader marginTop={16} justify={"justify-start"}>
+          Clients
+        </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
           {clients.map((client) => {
             return (
@@ -92,11 +96,11 @@ export default function Projects({ apps, utilities, clients }) {
             borderColor="neutral-200"
             darkBgColor="neutral-800"
             darkTextColor="white"
-            darkBorderColor="neutral-700" href="mailto:karl@kejk.tech?subject=Let's work together!"
+            darkBorderColor="neutral-700"
+            href="mailto:karl@kejk.tech?subject=Let's work together!"
           >
             <MailIcon className="mr-2" width={24} height={24} />
-              Work with me
-            
+            Work with me
           </Button>
         </div>
       </main>

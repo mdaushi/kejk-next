@@ -13,12 +13,12 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/thoughts',
-        destination: '/writing',
+        source: "/thoughts",
+        destination: "/writing",
         permanent: true,
       },
-    ]
+    ];
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;

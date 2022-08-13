@@ -20,7 +20,7 @@ export default function Bookmark({ bookmarks }) {
     return;
   }
 
-  const regex = /.*https:\/\/www.|http:\/\/www.|https:\/\/|http:\/\/|\/.*$/gm;
+  const regex = /.*https:\/\/www\.|http:\/\/www\.|https:\/\/|http:\/\/|\/.*$/gm;
 
   const metaTitle = "KEJK | Bookmarks";
   const metaImage =

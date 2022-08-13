@@ -1,7 +1,16 @@
 import Head from "next/head";
 import Link from "next/link";
 import Button from "../components/Button";
-import { ArrowSmRightIcon, MailIcon, UserIcon, PencilIcon, ViewGridIcon, FlagIcon, MusicNoteIcon, BookmarkIcon } from "@heroicons/react/outline";
+import {
+  ArrowSmRightIcon,
+  MailIcon,
+  UserIcon,
+  PencilIcon,
+  ViewGridIcon,
+  FlagIcon,
+  MusicNoteIcon,
+  BookmarkIcon,
+} from "@heroicons/react/outline";
 import Markdown from "../components/Markdown";
 import WritingCard from "../components/WritingCard";
 import AppCard from "../components/AppCard";
@@ -45,9 +54,7 @@ export default function Home({
   const url = "https://kejk.tech";
 
   return (
-    <div
-      className="mx-auto flex max-w-5xl flex-col items-center justify-center"
-    >
+    <div className="mx-auto flex max-w-5xl flex-col items-center justify-center">
       <Head>
         <title>{metaTitle}</title>
         <link rel="icon" href="/favicon.ico" />
@@ -68,7 +75,12 @@ export default function Home({
 
       <main className="mt-12 md:mt-0">
         <div className="flex flex-col w-full text-left md:mx-auto md:max-w-xl md:justify-center md:text-center">
-          <AllCapsHeader marginTop={0}>Karl Emil James Koch</AllCapsHeader>
+          <AllCapsHeader
+            marginTop={0}
+            justify={"justify-start md:justify-center"}
+          >
+            Karl Emil James Koch
+          </AllCapsHeader>
           <PageHeader>{home.title}</PageHeader>
           <Markdown content={home.metadata.content} />
         </div>
@@ -100,7 +112,10 @@ export default function Home({
             </Button>
           </Link>
         </div>
-        <AllCapsHeader marginTop={16}><PencilIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />Writing</AllCapsHeader>
+        <AllCapsHeader marginTop={16} justify={"justify-start"}>
+          <PencilIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />
+          Writing
+        </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
           {writings.map((writing) => {
             return (
@@ -131,7 +146,10 @@ export default function Home({
             </Button>
           </Link>
         </div>
-        <AllCapsHeader marginTop={16}><ViewGridIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />Apps and projects</AllCapsHeader>
+        <AllCapsHeader marginTop={16} justify={"justify-start"}>
+          <ViewGridIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />
+          Apps and projects
+        </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
           {apps.map((app) => {
             return (
@@ -145,7 +163,10 @@ export default function Home({
             );
           })}
         </div>
-        <AllCapsHeader marginTop={16}><FlagIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />Recent features</AllCapsHeader>
+        <AllCapsHeader marginTop={16} justify={"justify-start"}>
+          <FlagIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />
+          Recent features
+        </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
           {features.map((feature) => {
             return (
@@ -158,7 +179,10 @@ export default function Home({
             );
           })}
         </div>
-        <AllCapsHeader marginTop={16}><MusicNoteIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />Albums</AllCapsHeader>
+        <AllCapsHeader marginTop={16} justify={"justify-start"}>
+          <MusicNoteIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />
+          Albums
+        </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
           {albums.map((album) => {
             return (
@@ -172,7 +196,10 @@ export default function Home({
             );
           })}
         </div>
-        <AllCapsHeader marginTop={16}><BookmarkIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />Bookmarks</AllCapsHeader>
+        <AllCapsHeader marginTop={16} justify={"justify-start"}>
+          <BookmarkIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />
+          Bookmarks
+        </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
           {bookmarks.map((bookmark) => {
             return (
@@ -206,10 +233,14 @@ export default function Home({
             </Button>
           </Link>
         </div>
-        <div className="mt-8 flex items-center w-full justify-between md:justify-center md:gap-8">
-          {socials.map((social) => { 
+        <div className="mt-8 md:mt-16 flex items-center w-full justify-between md:justify-center md:gap-8">
+          {socials.map((social) => {
             return (
-              <SocialLink key={social.title} href={`${social.metadata.url}`} title={social.title} />
+              <SocialLink
+                key={social.title}
+                href={`${social.metadata.url}`}
+                title={social.title}
+              />
             );
           })}
         </div>
@@ -257,7 +288,7 @@ export async function getStaticProps() {
     },
     props: "slug,title,metadata",
   });
-  
+
   const bookmarkData = await bookmarksBucket.getObjects({
     limit: 3,
     query: {

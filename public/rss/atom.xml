@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kejk.tech</id>
     <title>KEJK | Writing</title>
-    <updated>2022-08-13T10:38:41.134Z</updated>
+    <updated>2022-08-13T15:47:18.815Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Karl Emil James Koch</name>
@@ -15,6 +15,23 @@
     <logo>https://kejk.tech/logo.svg</logo>
     <icon>https://kejk.tech/favicon.ico</icon>
     <rights>All rights reserved 2022, Karl Emil James Koch</rights>
+    <entry>
+        <title type="html"><![CDATA[Strip your URLs to super simple domains]]></title>
+        <id>62f786e97502240009ec4d22</id>
+        <link href="https://kejk.tech/thoughts/strip-your-urls-to-super-simple-domains"/>
+        <updated>2022-08-13T15:40:21.289Z</updated>
+        <summary type="html"><![CDATA[Since I’ve been working with frontend code, RegEx (short for Regular Expression) has been a constant and confusing minefield. RegEx has been around since the early 50’s, and with it comes a tonne of power but also a tonne of complexity.]]></summary>
+        <author>
+            <name>Karl Emil James Koch</name>
+            <email>karl@kejk.tech</email>
+            <uri>https://twitter.com/_kejk</uri>
+        </author>
+        <contributor>
+            <name>Karl Emil James Koch</name>
+            <email>karl@kejk.tech</email>
+            <uri>https://twitter.com/_kejk</uri>
+        </contributor>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Designing API-first]]></title>
         <id>62e2e0f59f26bd0e6c6b2d3e</id>

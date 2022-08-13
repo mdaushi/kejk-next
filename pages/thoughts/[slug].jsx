@@ -14,6 +14,8 @@ import {
 } from "@heroicons/react/outline";
 import { styled, keyframes } from "@stitches/react";
 import * as ToastPrimitive from "@radix-ui/react-toast";
+import Prism from "prismjs";
+import "prismjs/components/prism-jsx.min";
 
 const VIEWPORT_PADDING = 24;
 
@@ -79,6 +81,12 @@ export default function Post({ post }) {
     return () => clearTimeout(timerRef.current);
   }, []);
 
+  React.useEffect(() => {
+    if (typeof window !== "undefined") {
+      Prism.highlightAll();
+    }
+  }, []);
+
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return;
@@ -112,23 +120,20 @@ export default function Post({ post }) {
           <PageHeader>Loading...</PageHeader>
         ) : (
           <>
-            <div className="group mb-8 flex w-full justify-start"> 
-            <Link href={"/writing"}>
-            <a>
-              <TextButton textColor="black" darkTextColor="white">
-                <ArrowSmLeftIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
-                  All thoughts
-              </TextButton>
-              </a>
+            <div className="group mb-8 flex w-full justify-start">
+              <Link href={"/writing"}>
+                <a>
+                  <TextButton textColor="black" darkTextColor="white">
+                    <ArrowSmLeftIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
+                    All thoughts
+                  </TextButton>
+                </a>
               </Link>
             </div>
-            <AllCapsHeader>
+            <AllCapsHeader marginTop={0} justify={"justify-start"}>
               <Moment fromNow>{post.modified_at}</Moment>
             </AllCapsHeader>
             <PageHeader>{post.title}</PageHeader>
-            {/* <h2 className="mb-4 text-left text-2xl font-medium text-neutral-700 dark:text-neutral-400 md:text-2xl">
-              {post.metadata.snippet}
-            </h2> */}
             <div dangerouslySetInnerHTML={{ __html: post.content }} />
           </>
         )}

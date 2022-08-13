@@ -4,7 +4,7 @@
         <title>KEJK | Writing</title>
         <link>https://kejk.tech</link>
         <description>Thoughts on design, development and career progression</description>
-        <lastBuildDate>Sat, 13 Aug 2022 10:38:41 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 13 Aug 2022 15:47:18 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -13,6 +13,15 @@
             <link>https://kejk.tech</link>
         </image>
         <copyright>All rights reserved 2022, Karl Emil James Koch</copyright>
+        <item>
+            <title><![CDATA[Strip your URLs to super simple domains]]></title>
+            <link>https://kejk.tech/thoughts/strip-your-urls-to-super-simple-domains</link>
+            <guid>62f786e97502240009ec4d22</guid>
+            <pubDate>Sat, 13 Aug 2022 15:40:21 GMT</pubDate>
+            <description><![CDATA[Since I’ve been working with frontend code, RegEx (short for Regular Expression) has been a constant and confusing minefield. RegEx has been around since the early 50’s, and with it comes a tonne of power but also a tonne of complexity.]]></description>
+            <author>karl@kejk.tech (Karl Emil James Koch)</author>
+            <enclosure url="https://imgix.cosmicjs.com/1cbc0130-1afb-11ed-a845-076c64d3ede5-image.png" length="0" type="image/png"/>
+        </item>
         <item>
             <title><![CDATA[Designing API-first]]></title>
             <link>https://kejk.tech/thoughts/designing-api-first</link>
