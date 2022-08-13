@@ -137,7 +137,7 @@ export default function Post({ post }) {
               <Moment fromNow>{post.modified_at}</Moment>
             </AllCapsHeader>
             <PageHeader>{post.title}</PageHeader>
-            <div dangerouslySetInnerHTML={{ __html: post.content }} />
+            <div className="markdown" dangerouslySetInnerHTML={{ __html: post.content }} />
           </>
         )}
         <div className="mt-12 flex w-full justify-center">
