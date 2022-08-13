@@ -137,7 +137,7 @@ pre[class*="language-"] {
   @apply text-red-700 dark:text-red-400;
 }
 .token.tag {
-  @apply text-indigo-700 dark:text-indigo-400;
+  @apply text-sky-700 dark:text-sky-400;
 }
 .token.function-name {
   @apply text-lime-700 dark:text-lime-400;
