@@ -46,7 +46,7 @@ export default function Home({
 
   return (
     <div
-      className={"mx-auto flex max-w-5xl flex-col items-center justify-center"}
+      className="mx-auto flex max-w-5xl flex-col items-center justify-center"
     >
       <Head>
         <title>{metaTitle}</title>
@@ -67,8 +67,8 @@ export default function Home({
       </Head>
 
       <main className="mt-12 md:mt-0">
-        <div className="text-left md:mx-auto md:max-w-xl md:justify-center md:text-center">
-          <AllCapsHeader className="md:w-full md:justify-center md:mx-auto">Karl Emil James Koch</AllCapsHeader>
+        <div className="flex w-full text-left md:mx-auto md:max-w-xl md:justify-center md:text-center">
+          <AllCapsHeader>Karl Emil James Koch</AllCapsHeader>
           <PageHeader>{home.title}</PageHeader>
           <Markdown content={home.metadata.content} />
         </div>
