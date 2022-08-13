@@ -137,10 +137,10 @@ pre[class*="language-"] {
   @apply text-red-700 dark:text-red-400;
 }
 .token.tag {
-  @apply text-sky-700 dark:text-sky-400;
+  @apply text-lime-600 dark:text-lime-400;
 }
 .token.function-name {
-  @apply text-lime-700 dark:text-lime-400;
+  @apply text-sky-600 dark:text-sky-400;
 }
 .token.boolean,
 .token.function,
