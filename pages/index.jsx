@@ -68,7 +68,7 @@ export default function Home({
 
       <main className="mt-12 md:mt-0">
         <div className="flex flex-col w-full text-left md:mx-auto md:max-w-xl md:justify-center md:text-center">
-          <AllCapsHeader>Karl Emil James Koch</AllCapsHeader>
+          <AllCapsHeader marginTop={0}>Karl Emil James Koch</AllCapsHeader>
           <PageHeader>{home.title}</PageHeader>
           <Markdown content={home.metadata.content} />
         </div>
