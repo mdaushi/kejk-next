@@ -120,7 +120,7 @@ export default function Home({
           {writings.map((writing) => {
             return (
               <Link key={writing.id} href={`/thoughts/${writing.slug}`}>
-                <a>
+                <a className="unstyled">
                   <WritingCard
                     title={writing.title}
                     subtitle={writing.metadata.snippet}
