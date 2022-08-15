@@ -124,7 +124,7 @@ export default function Post({ post }) {
           <>
             <div className="group mb-8 flex w-full justify-start">
               <Link href={"/writing"}>
-                <a>
+                <a className="unstyled">
                   <TextButton textColor="black" darkTextColor="white">
                     <ArrowSmLeftIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
                     All thoughts
