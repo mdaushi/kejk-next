@@ -19,7 +19,7 @@
   }
 
   a {
-    @apply no-underline;
+    @apply font-bold text-black underline decoration-teal-500 decoration-2 underline-offset-4 transition ease-in-out hover:text-teal-500 dark:text-white;
   }
 
   a.inline-link {
@@ -33,11 +33,6 @@
   a.nav[aria-current] {
     @apply py-6 text-teal-700 underline decoration-teal-500 decoration-4 underline-offset-[20px] active:underline active:decoration-teal-500 active:decoration-4 active:underline-offset-[20px] dark:text-teal-500;
   }
-  
-  .post-link > a {
-    @apply font-bold text-black underline decoration-teal-500 decoration-2 underline-offset-4 transition ease-in-out hover:text-teal-500 dark:text-white;
-  }
-
 
   p {
     @apply pb-4 text-neutral-700 dark:text-neutral-300;
