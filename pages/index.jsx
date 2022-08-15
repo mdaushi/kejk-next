@@ -208,6 +208,7 @@ export default function Home({
                 href={`${bookmark.metadata.url}`}
                 target="_blank"
                 rel="noreferrer"
+                className="unstyled"
               >
                 <WritingCard
                   title={bookmark.title}

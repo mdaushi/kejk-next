@@ -6,7 +6,7 @@ import classNames from "classnames";
 const StackCard = ({ title, subtitle, image, link, tags }) => {
   return (
     <a
-      className="flex flex-col justify-between space-y-2 rounded-xl border border-neutral-200 p-4 transition-all ease-in-out hover:cursor-pointer hover:border-teal-600 hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-900
+      className="flex flex-col justify-between space-y-2 rounded-xl border border-neutral-200 p-4 transition-all ease-in-out hover:cursor-pointer hover:border-teal-600 hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-900 unstyled
     "
       href={link}
       target="_blank"

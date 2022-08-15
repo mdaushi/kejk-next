@@ -5,7 +5,7 @@ import { ExternalLinkIcon } from "@heroicons/react/outline";
 const MusicCard = ({ title, subtitle, image, link }) => {
   return (
     <a
-      className="space-y-2 rounded-xl border border-neutral-200 p-4 transition-all ease-in-out hover:cursor-pointer hover:border-teal-600 hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-900
+      className="space-y-2 rounded-xl border border-neutral-200 p-4 transition-all ease-in-out hover:cursor-pointer hover:border-teal-600 hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-900 unstyled
     "
       href={link}
       target="_blank"

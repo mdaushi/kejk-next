@@ -4,7 +4,7 @@ import { ArrowSmRightIcon } from "@heroicons/react/outline";
 const FeatureCard = ({ title, type, link }) => {
   return (
     <a
-      className="0 group space-y-2 rounded-xl transition-all ease-in-out hover:cursor-pointer
+      className="0 group space-y-2 rounded-xl transition-all ease-in-out hover:cursor-pointer unstyled
     "
       href={link}
       target="_blank"

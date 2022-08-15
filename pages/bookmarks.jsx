@@ -62,6 +62,7 @@ export default function Bookmark({ bookmarks }) {
                     href={`${bookmark.metadata.url}`}
                     target="_blank"
                     rel="noreferrer"
+                    className="unstyled"
                   >
                     <BookmarkCard
                       title={bookmark.title}
