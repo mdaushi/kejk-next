@@ -90,12 +90,11 @@ export default function Post({ allPosts, post }) {
     }
   }, []);
 
-  const nextPosts = allPosts.filter((p) => p.slug !== post?.slug);
-
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return;
   }
+
   const metaTitle = `KEJK | ${post?.title}`;
   const metaImage = `${post?.metadata.hero.imgix_url}`;
   const metaDescription = "Designer, developer, writer and musician";
@@ -184,16 +183,18 @@ export default function Post({ allPosts, post }) {
           More to explore
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-2">
-          {nextPosts.map((nextPost) => (
-            <Link key={nextPost.id} href={`/thoughts/${nextPost.slug}`}>
-              <a className="unstyled">
-                <WritingCard
-                  title={nextPost.title}
-                  subtitle={nextPost.metadata.snippet}
-                />
-              </a>
-            </Link>
-          ))}
+          {allPosts
+            .filter((p) => p.slug !== post?.slug)
+            .map((nextPost) => (
+              <Link key={nextPost.id} href={`/thoughts/${nextPost.slug}`}>
+                <a className="unstyled">
+                  <WritingCard
+                    title={nextPost.title}
+                    subtitle={nextPost.metadata.snippet}
+                  />
+                </a>
+              </Link>
+            ))}
         </div>
       </main>
     </div>
