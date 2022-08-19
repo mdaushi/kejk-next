@@ -11,6 +11,10 @@
   }
 
   h3 {
+    @apply mb-4 pt-4 text-2xl font-bold leading-snug text-black dark:text-white;
+  }
+
+  h3 {
     @apply mb-4 pt-8 text-xl font-bold leading-snug text-black dark:text-white;
   }
 
@@ -25,9 +29,9 @@
   a.inline-link {
     @apply font-bold text-black underline decoration-teal-500 decoration-2 underline-offset-4 transition ease-in-out hover:text-teal-500 dark:text-white;
   }
-  
+
   a.unstyled {
-    @apply no-underline font-normal
+    @apply no-underline font-normal;
   }
 
   a.nav {
