@@ -183,20 +183,19 @@ export default function Post({ allPosts, post }) {
           More to explore
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-2">
-          {allPosts
-            .filter((nextPost) =>
-              nextPost !== undefined ? nextPost?.id !== post?.id : null
-            )
-            .map((nextPost) => (
-              <Link key={nextPost.id} href={`/thoughts/${nextPost.slug}`}>
-                <a className="unstyled">
-                  <WritingCard
-                    title={nextPost.title}
-                    subtitle={nextPost.metadata.snippet}
-                  />
-                </a>
-              </Link>
-            ))}
+          {allPosts !== undefined &&
+            allPosts
+              .filter((nextPost) => nextPost?.id !== post?.id)
+              .map((nextPost) => (
+                <Link key={nextPost.id} href={`/thoughts/${nextPost.slug}`}>
+                  <a className="unstyled">
+                    <WritingCard
+                      title={nextPost.title}
+                      subtitle={nextPost.metadata.snippet}
+                    />
+                  </a>
+                </Link>
+              ))}
         </div>
       </main>
     </div>
