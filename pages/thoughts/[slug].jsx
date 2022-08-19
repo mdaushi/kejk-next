@@ -139,7 +139,10 @@ export default function Post({ allPosts, post }) {
               <Moment fromNow>{post.modified_at}</Moment>
             </AllCapsHeader>
             <PageHeader>{post.title}</PageHeader>
-            <div className="post-link" dangerouslySetInnerHTML={{ __html: post.content }} />
+            <div
+              className="post-link"
+              dangerouslySetInnerHTML={{ __html: post.content }}
+            />
           </>
         )}
         <div className="mt-12 flex w-full justify-center">
@@ -183,7 +186,7 @@ export default function Post({ allPosts, post }) {
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-2">
           {nextPosts.map((nextPost) => (
             <Link key={nextPost.id} href={`/thoughts/${nextPost.slug}`}>
-              <a>
+              <a className="unstyled">
                 <WritingCard
                   title={nextPost.title}
                   subtitle={nextPost.metadata.snippet}
