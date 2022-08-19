@@ -134,6 +134,7 @@ export default function Post({ allPosts, post }) {
                 </a>
               </Link>
             </div>
+            <article>
             <AllCapsHeader marginTop={0} justify={"justify-start"}>
               <Moment fromNow>{post.modified_at}</Moment>
             </AllCapsHeader>
@@ -142,6 +143,7 @@ export default function Post({ allPosts, post }) {
               className="post-link"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
+            </article>
           </>
         )}
         <div className="mt-12 flex w-full justify-center">
