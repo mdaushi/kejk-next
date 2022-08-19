@@ -184,7 +184,9 @@ export default function Post({ allPosts, post }) {
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-2">
           {allPosts
-            .filter((nextPost) => nextPost?.id !== post?.id)
+            .filter((nextPost) =>
+              nextPost !== undefined ? nextPost?.id !== post?.id : null
+            )
             .map((nextPost) => (
               <Link key={nextPost.id} href={`/thoughts/${nextPost.slug}`}>
                 <a className="unstyled">
