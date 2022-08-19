@@ -1,10 +1,6 @@
 import classNames from "classnames";
 
-const TextButton = ({
-  textColor,
-  darkTextColor,
-  children,
-}) => {
+const TextButton = ({ textColor, darkTextColor, children }) => {
   return (
     <button
       className={classNames(

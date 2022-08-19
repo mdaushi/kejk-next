@@ -2,13 +2,12 @@ import React from "react";
 import Image from "next/image";
 import { ExternalLinkIcon } from "@heroicons/react/outline";
 
-const AppCard = ({ title, subtitle, image, link, blank }) => {
+const AppCard = ({ title, subtitle, image, link }) => {
   return (
     <a
       className="space-y-2 rounded-xl border border-neutral-200 p-4 transition-all ease-in-out hover:cursor-pointer hover:border-teal-600 hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-900 unstyled
     "
       href={link}
-      target={blank}
       rel="noreferrer"
     >
       <div className="flex w-full items-start justify-between pb-2">

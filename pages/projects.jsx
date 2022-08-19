@@ -113,21 +113,21 @@ export async function getStaticProps() {
     query: {
       type: "apps",
     },
-    props: "slug,title,content,metadata",
+    props: "id,title,metadata",
   });
 
   const utilitiesData = await bucket.getObjects({
     query: {
       type: "utilities",
     },
-    props: "title,metadata",
+    props: "id,title,metadata",
   });
 
   const freelancesData = await bucket.getObjects({
     query: {
       type: "freelances",
     },
-    props: "title,metadata",
+    props: "id,title,metadata",
   });
 
   const apps = await data.objects;

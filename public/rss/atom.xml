@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kejk.tech</id>
     <title>KEJK | Writing</title>
-    <updated>2022-08-19T14:14:29.721Z</updated>
+    <updated>2022-08-19T19:32:21.142Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Karl Emil James Koch</name>
@@ -19,8 +19,8 @@
         <title type="html"><![CDATA[Strip your URLs to super simple domains]]></title>
         <id>62f786e97502240009ec4d22</id>
         <link href="https://kejk.tech/thoughts/strip-your-urls-to-super-simple-domains"/>
-        <updated>2022-08-13T22:24:29.023Z</updated>
-        <summary type="html"><![CDATA[Since I’ve been working with frontend code, RegEx (short for Regular Expression) has been a constant and confusing minefield. RegEx has been around since the early 50’s, and with it comes a tonne of power but also a tonne of complexity.]]></summary>
+        <updated>2022-08-19T14:19:31.653Z</updated>
+        <summary type="html"><![CDATA[RegEx has been around since the 50's, and it's still just as unreadable]]></summary>
         <author>
             <name>Karl Emil James Koch</name>
             <email>karl@kejk.tech</email>

@@ -14,9 +14,9 @@
             "id": "62f786e97502240009ec4d22",
             "url": "https://kejk.tech/thoughts/strip-your-urls-to-super-simple-domains",
             "title": "Strip your URLs to super simple domains",
-            "summary": "Since I’ve been working with frontend code, RegEx (short for Regular Expression) has been a constant and confusing minefield. RegEx has been around since the early 50’s, and with it comes a tonne of power but also a tonne of complexity.",
+            "summary": "RegEx has been around since the 50's, and it's still just as unreadable",
             "image": "https://imgix.cosmicjs.com/1cbc0130-1afb-11ed-a845-076c64d3ede5-image.png",
-            "date_modified": "2022-08-13T22:24:29.023Z",
+            "date_modified": "2022-08-19T14:19:31.653Z",
             "author": {
                 "name": "Karl Emil James Koch",
                 "url": "https://twitter.com/_kejk"
