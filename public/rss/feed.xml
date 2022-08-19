@@ -4,7 +4,7 @@
         <title>KEJK | Writing</title>
         <link>https://kejk.tech</link>
         <description>Thoughts on design, development and career progression</description>
-        <lastBuildDate>Sat, 13 Aug 2022 15:47:18 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Aug 2022 12:58:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -17,7 +17,7 @@
             <title><![CDATA[Strip your URLs to super simple domains]]></title>
             <link>https://kejk.tech/thoughts/strip-your-urls-to-super-simple-domains</link>
             <guid>62f786e97502240009ec4d22</guid>
-            <pubDate>Sat, 13 Aug 2022 15:40:21 GMT</pubDate>
+            <pubDate>Sat, 13 Aug 2022 22:24:29 GMT</pubDate>
             <description><![CDATA[Since I’ve been working with frontend code, RegEx (short for Regular Expression) has been a constant and confusing minefield. RegEx has been around since the early 50’s, and with it comes a tonne of power but also a tonne of complexity.]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/1cbc0130-1afb-11ed-a845-076c64d3ede5-image.png" length="0" type="image/png"/>
@@ -44,7 +44,7 @@
             <title><![CDATA[Design for handshakes not handovers]]></title>
             <link>https://kejk.tech/thoughts/design-for-handshakes-not-handovers</link>
             <guid>62e2e0f39f26bd0e6c6b2bf0</guid>
-            <pubDate>Sun, 31 Jul 2022 10:08:54 GMT</pubDate>
+            <pubDate>Mon, 15 Aug 2022 06:51:16 GMT</pubDate>
             <description><![CDATA[Why it's better to shake hands with your developers, than throw your designs over the fence]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/ce4e34c0-855c-11ec-8e12-4f611a7927fa-Design-for-handshakes-not-handovers2x.png" length="0" type="image/png"/>
@@ -134,7 +134,7 @@
             <title><![CDATA[The power of Cosmic]]></title>
             <link>https://kejk.tech/thoughts/the-power-of-cosmic</link>
             <guid>62e2e0f29f26bd0e6c6b2b0d</guid>
-            <pubDate>Wed, 22 Dec 2021 09:54:19 GMT</pubDate>
+            <pubDate>Mon, 15 Aug 2022 06:48:18 GMT</pubDate>
             <description><![CDATA[Not too long ago I decided to set myself a challenge; create and add new content to my website via a CMS.]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/9fd7bf50-b580-11eb-b5b6-fd115d17c053-The-power-of-Cosmic2x.png" length="0" type="image/png"/>
@@ -143,7 +143,7 @@
             <title><![CDATA[Getting DRY with Figma plugins]]></title>
             <link>https://kejk.tech/thoughts/getting-dry-with-figma-plugins</link>
             <guid>62e2e0f29f26bd0e6c6b2afc</guid>
-            <pubDate>Sat, 15 May 2021 13:23:03 GMT</pubDate>
+            <pubDate>Mon, 15 Aug 2022 06:45:18 GMT</pubDate>
             <description><![CDATA[Solving design problems by building Figma plugins. ]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/aae0c270-b580-11eb-b5b6-fd115d17c053-Getting-DRY-with-Figma-plugins2x.png" length="0" type="image/png"/>
@@ -152,7 +152,7 @@
             <title><![CDATA[What a cult taught me about 'limiting beliefs']]></title>
             <link>https://kejk.tech/thoughts/what-a-cult-taught-me-about-limiting-beliefs</link>
             <guid>62e2e0f29f26bd0e6c6b2af2</guid>
-            <pubDate>Sat, 15 May 2021 13:23:29 GMT</pubDate>
+            <pubDate>Mon, 15 Aug 2022 06:40:49 GMT</pubDate>
             <description><![CDATA[You should never feel like you have no limiting beliefs, but you should always fight to overcome them.]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/b73dbcd0-b580-11eb-b5b6-fd115d17c053-What-a-cult-taught-me-about-limiting-beliefs2x.png" length="0" type="image/png"/>
@@ -224,7 +224,7 @@
             <title><![CDATA[Ten Principles for Good Design]]></title>
             <link>https://kejk.tech/thoughts/ten-principles-for-good-design</link>
             <guid>62e2e0f19f26bd0e6c6b2ac5</guid>
-            <pubDate>Tue, 21 Dec 2021 13:44:16 GMT</pubDate>
+            <pubDate>Mon, 15 Aug 2022 06:18:57 GMT</pubDate>
             <description><![CDATA[I decided to put together a free, multi-device, minimal wallpaper of Ram's ten principles. ]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/3c812f80-b581-11eb-b5b6-fd115d17c053-Ten-Principles-for-Good-Design2x.png" length="0" type="image/png"/>
@@ -233,7 +233,7 @@
             <title><![CDATA[From problem to plugin]]></title>
             <link>https://kejk.tech/thoughts/from-problem-to-plugin</link>
             <guid>62e2e0f19f26bd0e6c6b2ac6</guid>
-            <pubDate>Tue, 21 Dec 2021 13:44:05 GMT</pubDate>
+            <pubDate>Mon, 15 Aug 2022 06:36:00 GMT</pubDate>
             <description><![CDATA[Learning Typescript, the Figma API and solving a real personal problem.]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/2d2992c0-b581-11eb-b5b6-fd115d17c053-From-problem-to-plugin2x.png" length="0" type="image/png"/>
@@ -242,7 +242,7 @@
             <title><![CDATA[‘Users’ are humans]]></title>
             <link>https://kejk.tech/thoughts/why-users-are-humans</link>
             <guid>62e2e0f19f26bd0e6c6b2ac2</guid>
-            <pubDate>Sat, 12 Feb 2022 10:46:32 GMT</pubDate>
+            <pubDate>Mon, 15 Aug 2022 06:15:55 GMT</pubDate>
             <description><![CDATA[Design is about people, and I've been thinking a lot about the problem of the term 'user'.]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/5ff62e70-b581-11eb-b5b6-fd115d17c053-Why-users-are-humans2x.png" length="0" type="image/png"/>

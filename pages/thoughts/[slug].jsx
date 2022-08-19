@@ -18,6 +18,7 @@ import Prism from "prismjs";
 import "prismjs/components/prism-jsx.min";
 import "prismjs/components/prism-regex.min";
 import "prismjs/components/prism-json.min";
+import WritingCard from "../../components/WritingCard";
 
 const VIEWPORT_PADDING = 24;
 
@@ -75,7 +76,7 @@ const bucket = api.bucket({
   read_key: READ_KEY,
 });
 
-export default function Post({ post }) {
+export default function Post({ allPosts, post }) {
   const [open, setOpen] = React.useState(false);
   const timerRef = React.useRef(0);
 
@@ -88,6 +89,8 @@ export default function Post({ post }) {
       Prism.highlightAll();
     }
   }, []);
+
+  const nextPosts = allPosts.filter((p) => p.slug !== post.slug);
 
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
@@ -173,6 +176,22 @@ export default function Post({ post }) {
             <ToastViewport className="felx-col w- fixed bottom-0 right-0 z-50 m-0 flex w-auto max-w-screen-sm list-none gap-4 p-6 outline-none" />
           </ToastProvider>
         </div>
+        <hr className="my-4 border-neutral-300 dark:border-neutral-700" />
+        <AllCapsHeader marginTop={0} justify={"justify-start"}>
+          More to explore
+        </AllCapsHeader>
+        <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-2">
+          {nextPosts.map((nextPost) => (
+            <Link key={nextPost.id} href={`/thoughts/${nextPost.slug}`}>
+              <a>
+                <WritingCard
+                  title={nextPost.title}
+                  subtitle={nextPost.metadata.snippet}
+                />
+              </a>
+            </Link>
+          ))}
+        </div>
       </main>
     </div>
   );
@@ -186,8 +205,18 @@ export async function getStaticProps({ params }) {
     props: "id,slug,content,title,metadata,modified_at",
   });
   const post = await data.objects[0];
+
+  const allWritingData = await bucket.getObjects({
+    query: {
+      type: "writings",
+    },
+    props: "id,slug,content,title,metadata",
+    limit: 4,
+  });
+  const allPosts = await allWritingData.objects;
+
   return {
-    props: { post: post },
+    props: { post, allPosts },
   };
 }
 

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kejk.tech</id>
     <title>KEJK | Writing</title>
-    <updated>2022-08-13T15:47:18.815Z</updated>
+    <updated>2022-08-19T12:58:37.397Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Karl Emil James Koch</name>
@@ -19,7 +19,7 @@
         <title type="html"><![CDATA[Strip your URLs to super simple domains]]></title>
         <id>62f786e97502240009ec4d22</id>
         <link href="https://kejk.tech/thoughts/strip-your-urls-to-super-simple-domains"/>
-        <updated>2022-08-13T15:40:21.289Z</updated>
+        <updated>2022-08-13T22:24:29.023Z</updated>
         <summary type="html"><![CDATA[Since I’ve been working with frontend code, RegEx (short for Regular Expression) has been a constant and confusing minefield. RegEx has been around since the early 50’s, and with it comes a tonne of power but also a tonne of complexity.]]></summary>
         <author>
             <name>Karl Emil James Koch</name>
@@ -70,7 +70,7 @@
         <title type="html"><![CDATA[Design for handshakes not handovers]]></title>
         <id>62e2e0f39f26bd0e6c6b2bf0</id>
         <link href="https://kejk.tech/thoughts/design-for-handshakes-not-handovers"/>
-        <updated>2022-07-31T10:08:54.764Z</updated>
+        <updated>2022-08-15T06:51:16.326Z</updated>
         <summary type="html"><![CDATA[Why it's better to shake hands with your developers, than throw your designs over the fence]]></summary>
         <author>
             <name>Karl Emil James Koch</name>
@@ -240,7 +240,7 @@
         <title type="html"><![CDATA[The power of Cosmic]]></title>
         <id>62e2e0f29f26bd0e6c6b2b0d</id>
         <link href="https://kejk.tech/thoughts/the-power-of-cosmic"/>
-        <updated>2021-12-22T09:54:19.948Z</updated>
+        <updated>2022-08-15T06:48:18.572Z</updated>
         <summary type="html"><![CDATA[Not too long ago I decided to set myself a challenge; create and add new content to my website via a CMS.]]></summary>
         <author>
             <name>Karl Emil James Koch</name>
@@ -257,7 +257,7 @@
         <title type="html"><![CDATA[Getting DRY with Figma plugins]]></title>
         <id>62e2e0f29f26bd0e6c6b2afc</id>
         <link href="https://kejk.tech/thoughts/getting-dry-with-figma-plugins"/>
-        <updated>2021-05-15T13:23:03.218Z</updated>
+        <updated>2022-08-15T06:45:18.057Z</updated>
         <summary type="html"><![CDATA[Solving design problems by building Figma plugins. ]]></summary>
         <author>
             <name>Karl Emil James Koch</name>
@@ -274,7 +274,7 @@
         <title type="html"><![CDATA[What a cult taught me about 'limiting beliefs']]></title>
         <id>62e2e0f29f26bd0e6c6b2af2</id>
         <link href="https://kejk.tech/thoughts/what-a-cult-taught-me-about-limiting-beliefs"/>
-        <updated>2021-05-15T13:23:29.250Z</updated>
+        <updated>2022-08-15T06:40:49.025Z</updated>
         <summary type="html"><![CDATA[You should never feel like you have no limiting beliefs, but you should always fight to overcome them.]]></summary>
         <author>
             <name>Karl Emil James Koch</name>
@@ -410,7 +410,7 @@
         <title type="html"><![CDATA[Ten Principles for Good Design]]></title>
         <id>62e2e0f19f26bd0e6c6b2ac5</id>
         <link href="https://kejk.tech/thoughts/ten-principles-for-good-design"/>
-        <updated>2021-12-21T13:44:16.126Z</updated>
+        <updated>2022-08-15T06:18:57.213Z</updated>
         <summary type="html"><![CDATA[I decided to put together a free, multi-device, minimal wallpaper of Ram's ten principles. ]]></summary>
         <author>
             <name>Karl Emil James Koch</name>
@@ -427,7 +427,7 @@
         <title type="html"><![CDATA[From problem to plugin]]></title>
         <id>62e2e0f19f26bd0e6c6b2ac6</id>
         <link href="https://kejk.tech/thoughts/from-problem-to-plugin"/>
-        <updated>2021-12-21T13:44:05.716Z</updated>
+        <updated>2022-08-15T06:36:00.668Z</updated>
         <summary type="html"><![CDATA[Learning Typescript, the Figma API and solving a real personal problem.]]></summary>
         <author>
             <name>Karl Emil James Koch</name>
@@ -444,7 +444,7 @@
         <title type="html"><![CDATA[‘Users’ are humans]]></title>
         <id>62e2e0f19f26bd0e6c6b2ac2</id>
         <link href="https://kejk.tech/thoughts/why-users-are-humans"/>
-        <updated>2022-02-12T10:46:32.482Z</updated>
+        <updated>2022-08-15T06:15:55.803Z</updated>
         <summary type="html"><![CDATA[Design is about people, and I've been thinking a lot about the problem of the term 'user'.]]></summary>
         <author>
             <name>Karl Emil James Koch</name>

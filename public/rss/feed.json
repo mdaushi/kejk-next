@@ -16,7 +16,7 @@
             "title": "Strip your URLs to super simple domains",
             "summary": "Since I’ve been working with frontend code, RegEx (short for Regular Expression) has been a constant and confusing minefield. RegEx has been around since the early 50’s, and with it comes a tonne of power but also a tonne of complexity.",
             "image": "https://imgix.cosmicjs.com/1cbc0130-1afb-11ed-a845-076c64d3ede5-image.png",
-            "date_modified": "2022-08-13T15:40:21.289Z",
+            "date_modified": "2022-08-13T22:24:29.023Z",
             "author": {
                 "name": "Karl Emil James Koch",
                 "url": "https://twitter.com/_kejk"
@@ -52,7 +52,7 @@
             "title": "Design for handshakes not handovers",
             "summary": "Why it's better to shake hands with your developers, than throw your designs over the fence",
             "image": "https://imgix.cosmicjs.com/ce4e34c0-855c-11ec-8e12-4f611a7927fa-Design-for-handshakes-not-handovers2x.png",
-            "date_modified": "2022-07-31T10:08:54.764Z",
+            "date_modified": "2022-08-15T06:51:16.326Z",
             "author": {
                 "name": "Karl Emil James Koch",
                 "url": "https://twitter.com/_kejk"
@@ -172,7 +172,7 @@
             "title": "The power of Cosmic",
             "summary": "Not too long ago I decided to set myself a challenge; create and add new content to my website via a CMS.",
             "image": "https://imgix.cosmicjs.com/9fd7bf50-b580-11eb-b5b6-fd115d17c053-The-power-of-Cosmic2x.png",
-            "date_modified": "2021-12-22T09:54:19.948Z",
+            "date_modified": "2022-08-15T06:48:18.572Z",
             "author": {
                 "name": "Karl Emil James Koch",
                 "url": "https://twitter.com/_kejk"
@@ -184,7 +184,7 @@
             "title": "Getting DRY with Figma plugins",
             "summary": "Solving design problems by building Figma plugins. ",
             "image": "https://imgix.cosmicjs.com/aae0c270-b580-11eb-b5b6-fd115d17c053-Getting-DRY-with-Figma-plugins2x.png",
-            "date_modified": "2021-05-15T13:23:03.218Z",
+            "date_modified": "2022-08-15T06:45:18.057Z",
             "author": {
                 "name": "Karl Emil James Koch",
                 "url": "https://twitter.com/_kejk"
@@ -196,7 +196,7 @@
             "title": "What a cult taught me about 'limiting beliefs'",
             "summary": "You should never feel like you have no limiting beliefs, but you should always fight to overcome them.",
             "image": "https://imgix.cosmicjs.com/b73dbcd0-b580-11eb-b5b6-fd115d17c053-What-a-cult-taught-me-about-limiting-beliefs2x.png",
-            "date_modified": "2021-05-15T13:23:29.250Z",
+            "date_modified": "2022-08-15T06:40:49.025Z",
             "author": {
                 "name": "Karl Emil James Koch",
                 "url": "https://twitter.com/_kejk"
@@ -292,7 +292,7 @@
             "title": "Ten Principles for Good Design",
             "summary": "I decided to put together a free, multi-device, minimal wallpaper of Ram's ten principles. ",
             "image": "https://imgix.cosmicjs.com/3c812f80-b581-11eb-b5b6-fd115d17c053-Ten-Principles-for-Good-Design2x.png",
-            "date_modified": "2021-12-21T13:44:16.126Z",
+            "date_modified": "2022-08-15T06:18:57.213Z",
             "author": {
                 "name": "Karl Emil James Koch",
                 "url": "https://twitter.com/_kejk"
@@ -304,7 +304,7 @@
             "title": "From problem to plugin",
             "summary": "Learning Typescript, the Figma API and solving a real personal problem.",
             "image": "https://imgix.cosmicjs.com/2d2992c0-b581-11eb-b5b6-fd115d17c053-From-problem-to-plugin2x.png",
-            "date_modified": "2021-12-21T13:44:05.716Z",
+            "date_modified": "2022-08-15T06:36:00.668Z",
             "author": {
                 "name": "Karl Emil James Koch",
                 "url": "https://twitter.com/_kejk"
@@ -316,7 +316,7 @@
             "title": "‘Users’ are humans",
             "summary": "Design is about people, and I've been thinking a lot about the problem of the term 'user'.",
             "image": "https://imgix.cosmicjs.com/5ff62e70-b581-11eb-b5b6-fd115d17c053-Why-users-are-humans2x.png",
-            "date_modified": "2022-02-12T10:46:32.482Z",
+            "date_modified": "2022-08-15T06:15:55.803Z",
             "author": {
                 "name": "Karl Emil James Koch",
                 "url": "https://twitter.com/_kejk"
