@@ -90,7 +90,7 @@ export default function Post({ allPosts, post }) {
     }
   }, []);
 
-  const nextPosts = allPosts.filter((p) => p.slug !== post.slug);
+  const nextPosts = allPosts.filter((p) => p.slug !== post?.slug);
 
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
