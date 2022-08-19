@@ -19,15 +19,19 @@
   }
 
   a {
-    @apply no-underline;
+    @apply font-bold text-black underline decoration-teal-500 decoration-2 underline-offset-4 transition ease-in-out hover:text-teal-500 dark:text-white;
   }
 
   a.inline-link {
     @apply font-bold text-black underline decoration-teal-500 decoration-2 underline-offset-4 transition ease-in-out hover:text-teal-500 dark:text-white;
   }
+  
+  a.unstyled {
+    @apply no-underline font-normal
+  }
 
   a.nav {
-    @apply py-4 text-black decoration-teal-500 decoration-4 underline-offset-[20px] transition ease-in-out hover:text-teal-600 hover:underline dark:text-white dark:hover:text-teal-500 md:py-6;
+    @apply font-normal py-4 no-underline hover:decoration-teal-500 hover:decoration-4 hover:underline-offset-[20px] transition ease-in-out hover:text-teal-600 hover:underline  dark:hover:text-teal-500 md:py-6;
   }
 
   a.nav[aria-current] {

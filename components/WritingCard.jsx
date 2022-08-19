@@ -4,7 +4,7 @@ import { ArrowSmRightIcon } from "@heroicons/react/outline";
 const WritingCard = ({ title, subtitle }) => {
   return (
     <div
-      className="0 group space-y-2 rounded-xl transition-all ease-in-out hover:cursor-pointer
+      className="0 group space-y-2 rounded-xl transition-all ease-in-out hover:cursor-pointer unstyled
     "
     >
       <div className="flex w-full items-start justify-between gap-2">
