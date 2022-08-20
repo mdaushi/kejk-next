@@ -77,7 +77,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
         console.error(err);
       })
       .then(() => {
-        router.replace(router.asPath);
+        getStaticProps();
       });
   };
 
