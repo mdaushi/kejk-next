@@ -52,7 +52,6 @@ const LazyPDF = ({ lazyPDF, stats }) => {
       .editObjectMetafield(params)
       .then((data) => {
         console.log(data)
-        data.revalidate('/lazyPDF')
       })
       .catch((err) => {
         console.error(err);
@@ -71,11 +70,10 @@ const LazyPDF = ({ lazyPDF, stats }) => {
       .editObjectMetafield(params)
       .then((data) => {
         console.log(data)
-        data.revalidate('/lazyPDF')
       })
       .catch((err) => {
         console.error(err);
-      })
+      });
   };
 
   const kFormatter = (num) => {
@@ -212,7 +210,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
 
 export default LazyPDF;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const data = await bucket.getObjects({
     query: {
       type: "lazy-pdf",
