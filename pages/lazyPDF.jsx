@@ -43,7 +43,6 @@ const LazyPDF = ({ lazyPDF, stats }) => {
   const updateDownloads = () => {
     const downloads = stats.metadata.downloads;
     const newDownloads = downloads + 1;
-    console.log(newDownloads);
     const params = {
       id: `62e2e0f49f26bd0e6c6b2c62`,
       key: `downloads`,
@@ -52,7 +51,8 @@ const LazyPDF = ({ lazyPDF, stats }) => {
     bucket
       .editObjectMetafield(params)
       .then((data) => {
-        console.log(data);
+        console.log(data)
+        data.revalidate('/lazyPDF')
       })
       .catch((err) => {
         console.error(err);
@@ -62,7 +62,6 @@ const LazyPDF = ({ lazyPDF, stats }) => {
   const updateLikes = () => {
     const likes = stats.metadata.likes;
     const newLikes = likes + 1;
-    console.log(newLikes);
     const params = {
       id: `62e2e0f49f26bd0e6c6b2c62`,
       key: `likes`,
@@ -71,14 +70,12 @@ const LazyPDF = ({ lazyPDF, stats }) => {
     bucket
       .editObjectMetafield(params)
       .then((data) => {
-        console.log(data);
+        console.log(data)
+        data.revalidate('/lazyPDF')
       })
       .catch((err) => {
         console.error(err);
       })
-      .then(() => {
-        getStaticProps();
-      });
   };
 
   const kFormatter = (num) => {
