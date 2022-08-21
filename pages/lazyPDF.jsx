@@ -135,7 +135,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
         <div className="mt-12 flex w-full items-center justify-between">
           <div className="flex flex-col space-y-4">
             <div
-              className="flex w-2/3 flex-col"
+              className="flex w-full md:w-2/3 flex-col"
               dangerouslySetInnerHTML={{ __html: lazyPDF.metadata.subheader }}
             />
             <a
