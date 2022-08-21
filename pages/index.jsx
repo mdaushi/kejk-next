@@ -76,6 +76,7 @@ export default function Home({
       <main className="mt-12 md:mt-0">
         <div className="flex flex-col w-full text-left md:mx-auto md:max-w-xl md:justify-center md:text-center">
           <AllCapsHeader
+            className="font-mono"
             marginTop={0}
             justify={"justify-start md:justify-center"}
           >
@@ -113,7 +114,7 @@ export default function Home({
           </Link>
         </div>
         <AllCapsHeader marginTop={16} justify={"justify-start"}>
-          <PencilIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />
+          <PencilIcon className="h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />
           Writing
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -147,7 +148,7 @@ export default function Home({
           </Link>
         </div>
         <AllCapsHeader marginTop={16} justify={"justify-start"}>
-          <ViewGridIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />
+          <ViewGridIcon className="h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />
           Apps and projects
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -164,7 +165,7 @@ export default function Home({
           })}
         </div>
         <AllCapsHeader marginTop={16} justify={"justify-start"}>
-          <FlagIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />
+          <FlagIcon className="h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />
           Recent features
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -180,7 +181,7 @@ export default function Home({
           })}
         </div>
         <AllCapsHeader marginTop={16} justify={"justify-start"}>
-          <MusicNoteIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />
+          <MusicNoteIcon className="h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />
           Albums
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -197,7 +198,7 @@ export default function Home({
           })}
         </div>
         <AllCapsHeader marginTop={16} justify={"justify-start"}>
-          <BookmarkIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />
+          <BookmarkIcon className="h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />
           Bookmarks
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
