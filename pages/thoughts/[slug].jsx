@@ -135,14 +135,14 @@ export default function Post({ allPosts, post }) {
               </Link>
             </div>
             <article>
-            <AllCapsHeader marginTop={0} justify={"justify-start"}>
-              <Moment fromNow>{post.modified_at}</Moment>
-            </AllCapsHeader>
-            <PageHeader>{post.title}</PageHeader>
-            <div
-              className="post-link font-serif"
-              dangerouslySetInnerHTML={{ __html: post.content }}
-            />
+              <AllCapsHeader marginTop={0} justify={"justify-start"}>
+                <Moment fromNow>{post.modified_at}</Moment>
+              </AllCapsHeader>
+              <PageHeader>{post.title}</PageHeader>
+              <div
+                className="post-link"
+                dangerouslySetInnerHTML={{ __html: post.content }}
+              />
             </article>
           </>
         )}

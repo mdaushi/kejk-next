@@ -3,6 +3,21 @@
 @tailwind utilities;
 
 @layer base {
+  @font-face {
+    font-family: "Moderat Mono";
+    src: url("../fonts/moderat/moderat-mono-regular-webfont.woff2")
+      format("woff2");
+    font-weight: normal;
+    font-style: mono;
+  }
+
+  @font-face {
+    font-family: "Vickey";
+    src: url("../fonts/vickey/vickeyregular-webfont.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+  }
+
   html,
   body {
     padding: 0;
