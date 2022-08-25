@@ -48,6 +48,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
       key: `downloads`,
       value: newDownloads,
     };
+    stats.metadata.downloads += 1;
     bucket
       .editObjectMetafield(params)
       .then((data) => {
@@ -66,6 +67,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
       key: `likes`,
       value: newLikes,
     };
+    stats.metadata.likes += 1;
     bucket
       .editObjectMetafield(params)
       .then((data) => {
