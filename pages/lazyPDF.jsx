@@ -7,9 +7,14 @@ import {
   ArrowSmLeftIcon,
   HeartIcon,
 } from "@heroicons/react/outline";
+import {
+  HeartIcon as SolidHeartIcon,
+  ArrowDownIcon as SolidArrowDownIcon,
+} from "@heroicons/react/solid";
 import Link from "next/link";
 import TextButton from "../components/TextButton";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -25,6 +30,46 @@ const bucket = api.bucket({
 });
 
 const LazyPDF = ({ lazyPDF, stats }) => {
+  let currentLikes = stats.metadata.likes;
+  let currentDownloads = stats.metadata.downloads;
+  const [likes, setLikes] = useState(currentLikes);
+  const [isLiked, setIsLiked] = useState(false);
+  const [downloads, setDownloads] = useState(currentDownloads);
+  const [isDownloaded, setIsDownloaded] = useState(false);
+
+  useEffect(() => {
+    const params = {
+      id: `62e2e0f49f26bd0e6c6b2c62`,
+      key: `likes`,
+      value: likes,
+    };
+    bucket
+      .editObjectMetafield(params)
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+    console.log(params.value);
+  }, [likes, isLiked]);
+
+  useEffect(() => {
+    const params = {
+      id: `62e2e0f49f26bd0e6c6b2c62`,
+      key: `downloads`,
+      value: downloads,
+    };
+    bucket
+      .editObjectMetafield(params)
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  }, [downloads, isDownloaded]);
+
   const metaTitle = "KEJK | Lazy PDF";
   const metaImage =
     "https://imgix.cosmicjs.com/483f5be0-94eb-11ec-96f2-43bdd99faa64-Lazy-PDF.png";
@@ -40,42 +85,24 @@ const LazyPDF = ({ lazyPDF, stats }) => {
     router.back();
   };
 
-  const updateDownloads = () => {
-    const downloads = stats.metadata.downloads;
-    const newDownloads = downloads + 1;
-    const params = {
-      id: `62e2e0f49f26bd0e6c6b2c62`,
-      key: `downloads`,
-      value: newDownloads,
-    };
-    stats.metadata.downloads += 1;
-    bucket
-      .editObjectMetafield(params)
-      .then((data) => {
-        console.log(data)
-      })
-      .catch((err) => {
-        console.error(err);
-      });
+  const updateLikes = () => {
+    if (!isLiked) {
+      setIsLiked(true);
+      setLikes(likes + 1);
+    } else {
+      setIsLiked(false);
+      setLikes(likes - 1);
+    }
   };
 
-  const updateLikes = () => {
-    const likes = stats.metadata.likes;
-    const newLikes = likes + 1;
-    const params = {
-      id: `62e2e0f49f26bd0e6c6b2c62`,
-      key: `likes`,
-      value: newLikes,
-    };
-    stats.metadata.likes += 1;
-    bucket
-      .editObjectMetafield(params)
-      .then((data) => {
-        console.log(data)
-      })
-      .catch((err) => {
-        console.error(err);
-      });
+  const updateDownloads = () => {
+    if (!isDownloaded) {
+      setIsDownloaded(true);
+      setDownloads(downloads + 1);
+    } else {
+      setIsDownloaded(false);
+      setDownloads(downloads - 1);
+    }
   };
 
   const kFormatter = (num) => {
@@ -163,15 +190,23 @@ const LazyPDF = ({ lazyPDF, stats }) => {
                 className="flex w-max items-center justify-center rounded-full border border-teal-200 bg-teal-50 px-3 py-1 font-mono text-xs font-normal uppercase leading-tight text-teal-700 dark:border-teal-900 dark:bg-teal-900/30 dark:text-teal-200 hover:cursor-pointer"
                 onClick={updateDownloads}
               >
-                <ArrowDownIcon className="mr-2 h-3 w-3 text-teal-700  dark:text-teal-200" />
-                {kFormatter(stats.metadata.downloads)}
+                {!isDownloaded ? (
+                  <ArrowDownIcon className="mr-2 h-3 w-3 text-teal-700  dark:text-teal-200" />
+                ) : (
+                  <SolidArrowDownIcon className="mr-2 h-3 w-3 text-teal-700  dark:text-teal-200" />
+                )}
+                {kFormatter(downloads)}
               </div>
               <div
                 className="flex w-max items-center justify-center rounded-full border border-pink-200 bg-pink-50 px-3 py-1 font-mono text-xs font-normal uppercase leading-tight text-pink-700 dark:border-pink-900 dark:bg-pink-900/30 dark:text-pink-200 hover:cursor-pointer"
                 onClick={updateLikes}
               >
-                <HeartIcon className="mr-2 h-3 w-3 text-pink-700  dark:text-pink-200" />
-                {kFormatter(stats.metadata.likes)}
+                {!isLiked ? (
+                  <HeartIcon className="mr-2 h-3 w-3 text-pink-700  dark:text-pink-200" />
+                ) : (
+                  <SolidHeartIcon className="mr-2 h-3 w-3 text-pink-700  dark:text-pink-200" />
+                )}
+                {kFormatter(likes)}
               </div>
             </div>
             <div className="w-max">
