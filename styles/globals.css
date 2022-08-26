@@ -4,22 +4,6 @@
 
 @layer base {
   @font-face {
-  font-family: "iA Writer Quattro V";
-  font-style: italic;
-  font-weight: 100 900;
-  font-display: optional;
-  src: url("../fonts/iAWriterQuattroV-Italic.ttf") format("ttf");
-  }
-
-  @font-face {
-  font-family: "iA Writer Quattro V";
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: optional;
-  src: url("../fonts/iAWriterQuattroV.ttf") format("ttf");
-  }
-
-  @font-face {
     font-family: "Vickey";
     src: url("../fonts/vickey/vickeyregular-webfont.woff2") format("woff2");
     font-weight: 400;
