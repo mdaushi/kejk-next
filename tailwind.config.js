@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        serif: ["Merriweather", ...defaultTheme.fontFamily.serif
         mono: ["JetBrains Mono", ...defaultTheme.fontFamily.mono],
         display: ["Vickey"],
       },

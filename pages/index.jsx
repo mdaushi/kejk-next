@@ -82,7 +82,7 @@ export default function Home({
           >
             Karl Emil James Koch
           </AllCapsHeader>
-          <PageHeader className="!text-6xl">{home.title}</PageHeader>
+          <PageHeader>{home.title}</PageHeader>
           <Markdown content={home.metadata.content} className="-mt-4" />
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center space-x-4">
