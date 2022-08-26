@@ -13,12 +13,12 @@ export default function Document() {
           rel={"preload"}
           as={"style"}
           href={
-            "https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+            "https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&JetBrains+Mono:ital@0;1&display=swap"
           }
         />
         <link
           href={
-            "https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+            "https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&JetBrains+Mono:ital@0;1&display=swap"
           }
           rel={"stylesheet"}
           media={"print"}
@@ -32,6 +32,20 @@ export default function Document() {
             }
           />
         </noscript>
+        <link
+    rel="preload"
+    href="/fonts/iAWriterQuattroV.ttf"
+    as="font"
+    type="font/ttf"
+    crossOrigin="anonymous"
+  />
+  <link
+    rel="preload"
+    href="/fonts/iAWriterQuattroV-Italic.ttf"
+    as="font"
+    type="font/ttf"
+    crossOrigin="anonymous"
+  />
       </Head>
       <body>
         <Main />

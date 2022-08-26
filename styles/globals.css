@@ -4,12 +4,20 @@
 
 @layer base {
   @font-face {
-    font-family: "Moderat Mono";
-    src: url("../fonts/moderat/moderat-mono-regular-webfont.woff2")
-      format("woff2");
-    font-weight: normal;
-    font-style: mono;
-  }
+  font-family: "iA Writer Quattro V";
+  font-style: italic;
+  font-weight: 100 900; // range of weight
+  font-display: optional;
+  src: url("../fonts/iAWriterQuattroV-Italic.ttf") format("ttf");
+}
+
+  @font-face {
+  font-family: "iA Writer Quattro V";
+  font-style: normal;
+  font-weight: 100 900; // range of weight
+  font-display: optional;
+  src: url("../fonts/iAWriterQuattroV.ttf") format("ttf");
+}
 
   @font-face {
     font-family: "Vickey";
