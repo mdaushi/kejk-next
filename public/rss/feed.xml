@@ -4,7 +4,7 @@
         <title>KEJK | Writing</title>
         <link>https://kejk.tech</link>
         <description>Thoughts on design, development and career progression</description>
-        <lastBuildDate>Thu, 25 Aug 2022 21:34:45 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 27 Aug 2022 13:35:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -13,6 +13,15 @@
             <link>https://kejk.tech</link>
         </image>
         <copyright>All rights reserved 2022, Karl Emil James Koch</copyright>
+        <item>
+            <title><![CDATA[Shift gears and switch careers]]></title>
+            <link>https://kejk.tech/thoughts/shift-gears-switch-careers</link>
+            <guid>630729e21cc4270009346f04</guid>
+            <pubDate>Sat, 27 Aug 2022 09:32:22 GMT</pubDate>
+            <description><![CDATA[I've talked about my history before, but I haven't provided explicit advice about how to make a care…]]></description>
+            <author>karl@kejk.tech (Karl Emil James Koch)</author>
+            <enclosure url="https://imgix.cosmicjs.com/bffbd240-25ea-11ed-b52d-a3f33977cd87-image.png" length="0" type="image/png"/>
+        </item>
         <item>
             <title><![CDATA[Strip your URLs to super simple domains]]></title>
             <link>https://kejk.tech/thoughts/strip-your-urls-to-super-simple-domains</link>
@@ -167,24 +176,6 @@
             <enclosure url="https://imgix.cosmicjs.com/c68fdb50-b580-11eb-b5b6-fd115d17c053-How-music-design-and-code-are-all-the-same2x.png" length="0" type="image/png"/>
         </item>
         <item>
-            <title><![CDATA[Thinking in design-code]]></title>
-            <link>https://kejk.tech/thoughts/thinking-in-design-code</link>
-            <guid>62e2e0f19f26bd0e6c6b2ad9</guid>
-            <pubDate>Tue, 21 Dec 2021 13:42:42 GMT</pubDate>
-            <description><![CDATA[My personal approach on how to think about code from a design perspective and how to implement those changes.]]></description>
-            <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/d60a4250-b580-11eb-b5b6-fd115d17c053-Thinking-in-design-code2x.png" length="0" type="image/png"/>
-        </item>
-        <item>
-            <title><![CDATA[Don’t let your role define you]]></title>
-            <link>https://kejk.tech/thoughts/dont-let-your-role-define-you</link>
-            <guid>62e2e0f19f26bd0e6c6b2ad7</guid>
-            <pubDate>Tue, 21 Dec 2021 13:43:07 GMT</pubDate>
-            <description><![CDATA[A practical guide on how to navigate your career when the path you're heading down isn't the one you truly want.]]></description>
-            <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/04668b90-b581-11eb-b5b6-fd115d17c053-Dont-let-your-role-define-you2x.png" length="0" type="image/png"/>
-        </item>
-        <item>
             <title><![CDATA[Designing in the open]]></title>
             <link>https://kejk.tech/thoughts/designing-in-the-open</link>
             <guid>62e2e0f19f26bd0e6c6b2ad1</guid>
@@ -201,6 +192,15 @@
             <description><![CDATA[How development can be learned through a design lens (and how I've managed to do it). ]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/0f334900-b581-11eb-b5b6-fd115d17c053-Code-as-Design2x.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[Thinking in design-code]]></title>
+            <link>https://kejk.tech/thoughts/thinking-in-design-code</link>
+            <guid>62e2e0f19f26bd0e6c6b2ad9</guid>
+            <pubDate>Tue, 21 Dec 2021 13:42:42 GMT</pubDate>
+            <description><![CDATA[My personal approach on how to think about code from a design perspective and how to implement those changes.]]></description>
+            <author>karl@kejk.tech (Karl Emil James Koch)</author>
+            <enclosure url="https://imgix.cosmicjs.com/d60a4250-b580-11eb-b5b6-fd115d17c053-Thinking-in-design-code2x.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Getting to yes]]></title>
@@ -237,6 +237,15 @@
             <description><![CDATA[Learning Typescript, the Figma API and solving a real personal problem.]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/2d2992c0-b581-11eb-b5b6-fd115d17c053-From-problem-to-plugin2x.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[Don’t let your role define you]]></title>
+            <link>https://kejk.tech/thoughts/dont-let-your-role-define-you</link>
+            <guid>62e2e0f19f26bd0e6c6b2ad7</guid>
+            <pubDate>Tue, 21 Dec 2021 13:43:07 GMT</pubDate>
+            <description><![CDATA[A practical guide on how to navigate your career when the path you're heading down isn't the one you truly want.]]></description>
+            <author>karl@kejk.tech (Karl Emil James Koch)</author>
+            <enclosure url="https://imgix.cosmicjs.com/04668b90-b581-11eb-b5b6-fd115d17c053-Dont-let-your-role-define-you2x.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[‘Users’ are humans]]></title>

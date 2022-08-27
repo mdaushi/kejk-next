@@ -7,7 +7,7 @@ import fs from "fs";
 import { Feed } from "feed";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
-import { MailIcon, StatusOnlineIcon } from "@heroicons/react/outline";
+import { MailIcon, RssIcon } from "@heroicons/react/20/solid";
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -36,6 +36,27 @@ export default function Writing({ writings }) {
   function openModal() {
     setIsOpen(true);
   }
+
+  // the value of the search field
+  const [title, setTitle] = useState("");
+
+  // the search result
+  const [foundPosts, setFoundPosts] = useState(writings);
+
+  const filter = (e) => {
+    const keyword = e.target.value;
+
+    if (keyword !== "") {
+      const results = writings.filter((writing) => {
+        return writing.title.toLowerCase().includes(keyword.toLowerCase());
+      });
+      setFoundPosts(results);
+    } else {
+      setFoundPosts(writings);
+    }
+
+    setTitle(keyword);
+  };
 
   return (
     <div className={"mt-12"}>
@@ -66,7 +87,7 @@ export default function Writing({ writings }) {
                 `mb-4 flex items-center justify-center space-x-2 rounded-md border border-neutral-200 bg-neutral-100 py-2 px-4 text-sm font-medium text-black transition ease-in-out hover:border-teal-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white md:w-max md:text-base`
               )}
             >
-              <StatusOnlineIcon width={20} height={20} className="mr-2" />
+              <RssIcon width={20} height={20} className="mr-2" />
               Subscribe
             </button>
             <>
@@ -164,19 +185,30 @@ export default function Writing({ writings }) {
               </Transition>
             </>
           </div>
+          <input
+            type="search"
+            value={title}
+            onChange={filter}
+            className="p-2 rounded-md w-1/2 bg-gray-100 dark:bg-neutral-800 focus:outline-none focus:outline focus:outline-teal-500 text-neutral-900 dark:text-neutral-300"
+            placeholder="Search for posts"
+          />
           <div className="mt-4 grid grid-cols-1 gap-8 md:grid-cols-2">
-            {writings.map((writing) => {
-              return (
-                <Link key={writing.id} href={`/thoughts/${writing.slug}`}>
-                  <a className="unstyled">
-                    <WritingCard
-                      title={writing.title}
-                      subtitle={writing.metadata.snippet}
-                    />
-                  </a>
-                </Link>
-              );
-            })}
+            {foundPosts && foundPosts.length > 0 ? (
+              foundPosts.map((writing) => {
+                return (
+                  <Link key={writing.id} href={`/thoughts/${writing.slug}`}>
+                    <a className="unstyled">
+                      <WritingCard
+                        title={writing.title}
+                        subtitle={writing.metadata.snippet}
+                      />
+                    </a>
+                  </Link>
+                );
+              })
+            ) : (
+              <h1>No results</h1>
+            )}
           </div>
         </div>
       </main>

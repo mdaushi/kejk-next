@@ -11,6 +11,18 @@
     },
     "items": [
         {
+            "id": "630729e21cc4270009346f04",
+            "url": "https://kejk.tech/thoughts/shift-gears-switch-careers",
+            "title": "Shift gears and switch careers",
+            "summary": "I've talked about my history before, but I haven't provided explicit advice about how to make a care…",
+            "image": "https://imgix.cosmicjs.com/bffbd240-25ea-11ed-b52d-a3f33977cd87-image.png",
+            "date_modified": "2022-08-27T09:32:22.500Z",
+            "author": {
+                "name": "Karl Emil James Koch",
+                "url": "https://twitter.com/_kejk"
+            }
+        },
+        {
             "id": "62f786e97502240009ec4d22",
             "url": "https://kejk.tech/thoughts/strip-your-urls-to-super-simple-domains",
             "title": "Strip your URLs to super simple domains",
@@ -215,30 +227,6 @@
             }
         },
         {
-            "id": "62e2e0f19f26bd0e6c6b2ad9",
-            "url": "https://kejk.tech/thoughts/thinking-in-design-code",
-            "title": "Thinking in design-code",
-            "summary": "My personal approach on how to think about code from a design perspective and how to implement those changes.",
-            "image": "https://imgix.cosmicjs.com/d60a4250-b580-11eb-b5b6-fd115d17c053-Thinking-in-design-code2x.png",
-            "date_modified": "2021-12-21T13:42:42.461Z",
-            "author": {
-                "name": "Karl Emil James Koch",
-                "url": "https://twitter.com/_kejk"
-            }
-        },
-        {
-            "id": "62e2e0f19f26bd0e6c6b2ad7",
-            "url": "https://kejk.tech/thoughts/dont-let-your-role-define-you",
-            "title": "Don’t let your role define you",
-            "summary": "A practical guide on how to navigate your career when the path you're heading down isn't the one you truly want.",
-            "image": "https://imgix.cosmicjs.com/04668b90-b581-11eb-b5b6-fd115d17c053-Dont-let-your-role-define-you2x.png",
-            "date_modified": "2021-12-21T13:43:07.044Z",
-            "author": {
-                "name": "Karl Emil James Koch",
-                "url": "https://twitter.com/_kejk"
-            }
-        },
-        {
             "id": "62e2e0f19f26bd0e6c6b2ad1",
             "url": "https://kejk.tech/thoughts/designing-in-the-open",
             "title": "Designing in the open",
@@ -257,6 +245,18 @@
             "summary": "How development can be learned through a design lens (and how I've managed to do it). ",
             "image": "https://imgix.cosmicjs.com/0f334900-b581-11eb-b5b6-fd115d17c053-Code-as-Design2x.png",
             "date_modified": "2022-02-26T21:46:34.553Z",
+            "author": {
+                "name": "Karl Emil James Koch",
+                "url": "https://twitter.com/_kejk"
+            }
+        },
+        {
+            "id": "62e2e0f19f26bd0e6c6b2ad9",
+            "url": "https://kejk.tech/thoughts/thinking-in-design-code",
+            "title": "Thinking in design-code",
+            "summary": "My personal approach on how to think about code from a design perspective and how to implement those changes.",
+            "image": "https://imgix.cosmicjs.com/d60a4250-b580-11eb-b5b6-fd115d17c053-Thinking-in-design-code2x.png",
+            "date_modified": "2021-12-21T13:42:42.461Z",
             "author": {
                 "name": "Karl Emil James Koch",
                 "url": "https://twitter.com/_kejk"
@@ -305,6 +305,18 @@
             "summary": "Learning Typescript, the Figma API and solving a real personal problem.",
             "image": "https://imgix.cosmicjs.com/2d2992c0-b581-11eb-b5b6-fd115d17c053-From-problem-to-plugin2x.png",
             "date_modified": "2022-08-15T06:36:00.668Z",
+            "author": {
+                "name": "Karl Emil James Koch",
+                "url": "https://twitter.com/_kejk"
+            }
+        },
+        {
+            "id": "62e2e0f19f26bd0e6c6b2ad7",
+            "url": "https://kejk.tech/thoughts/dont-let-your-role-define-you",
+            "title": "Don’t let your role define you",
+            "summary": "A practical guide on how to navigate your career when the path you're heading down isn't the one you truly want.",
+            "image": "https://imgix.cosmicjs.com/04668b90-b581-11eb-b5b6-fd115d17c053-Dont-let-your-role-define-you2x.png",
+            "date_modified": "2021-12-21T13:43:07.044Z",
             "author": {
                 "name": "Karl Emil James Koch",
                 "url": "https://twitter.com/_kejk"

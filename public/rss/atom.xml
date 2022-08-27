@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kejk.tech</id>
     <title>KEJK | Writing</title>
-    <updated>2022-08-25T21:34:45.183Z</updated>
+    <updated>2022-08-27T13:35:43.719Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Karl Emil James Koch</name>
@@ -15,6 +15,23 @@
     <logo>https://kejk.tech/logo.svg</logo>
     <icon>https://kejk.tech/favicon.ico</icon>
     <rights>All rights reserved 2022, Karl Emil James Koch</rights>
+    <entry>
+        <title type="html"><![CDATA[Shift gears and switch careers]]></title>
+        <id>630729e21cc4270009346f04</id>
+        <link href="https://kejk.tech/thoughts/shift-gears-switch-careers"/>
+        <updated>2022-08-27T09:32:22.500Z</updated>
+        <summary type="html"><![CDATA[I've talked about my history before, but I haven't provided explicit advice about how to make a care…]]></summary>
+        <author>
+            <name>Karl Emil James Koch</name>
+            <email>karl@kejk.tech</email>
+            <uri>https://twitter.com/_kejk</uri>
+        </author>
+        <contributor>
+            <name>Karl Emil James Koch</name>
+            <email>karl@kejk.tech</email>
+            <uri>https://twitter.com/_kejk</uri>
+        </contributor>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Strip your URLs to super simple domains]]></title>
         <id>62f786e97502240009ec4d22</id>
@@ -305,40 +322,6 @@
         </contributor>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Thinking in design-code]]></title>
-        <id>62e2e0f19f26bd0e6c6b2ad9</id>
-        <link href="https://kejk.tech/thoughts/thinking-in-design-code"/>
-        <updated>2021-12-21T13:42:42.461Z</updated>
-        <summary type="html"><![CDATA[My personal approach on how to think about code from a design perspective and how to implement those changes.]]></summary>
-        <author>
-            <name>Karl Emil James Koch</name>
-            <email>karl@kejk.tech</email>
-            <uri>https://twitter.com/_kejk</uri>
-        </author>
-        <contributor>
-            <name>Karl Emil James Koch</name>
-            <email>karl@kejk.tech</email>
-            <uri>https://twitter.com/_kejk</uri>
-        </contributor>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Don’t let your role define you]]></title>
-        <id>62e2e0f19f26bd0e6c6b2ad7</id>
-        <link href="https://kejk.tech/thoughts/dont-let-your-role-define-you"/>
-        <updated>2021-12-21T13:43:07.044Z</updated>
-        <summary type="html"><![CDATA[A practical guide on how to navigate your career when the path you're heading down isn't the one you truly want.]]></summary>
-        <author>
-            <name>Karl Emil James Koch</name>
-            <email>karl@kejk.tech</email>
-            <uri>https://twitter.com/_kejk</uri>
-        </author>
-        <contributor>
-            <name>Karl Emil James Koch</name>
-            <email>karl@kejk.tech</email>
-            <uri>https://twitter.com/_kejk</uri>
-        </contributor>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Designing in the open]]></title>
         <id>62e2e0f19f26bd0e6c6b2ad1</id>
         <link href="https://kejk.tech/thoughts/designing-in-the-open"/>
@@ -361,6 +344,23 @@
         <link href="https://kejk.tech/thoughts/code-as-design"/>
         <updated>2022-02-26T21:46:34.553Z</updated>
         <summary type="html"><![CDATA[How development can be learned through a design lens (and how I've managed to do it). ]]></summary>
+        <author>
+            <name>Karl Emil James Koch</name>
+            <email>karl@kejk.tech</email>
+            <uri>https://twitter.com/_kejk</uri>
+        </author>
+        <contributor>
+            <name>Karl Emil James Koch</name>
+            <email>karl@kejk.tech</email>
+            <uri>https://twitter.com/_kejk</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Thinking in design-code]]></title>
+        <id>62e2e0f19f26bd0e6c6b2ad9</id>
+        <link href="https://kejk.tech/thoughts/thinking-in-design-code"/>
+        <updated>2021-12-21T13:42:42.461Z</updated>
+        <summary type="html"><![CDATA[My personal approach on how to think about code from a design perspective and how to implement those changes.]]></summary>
         <author>
             <name>Karl Emil James Koch</name>
             <email>karl@kejk.tech</email>
@@ -429,6 +429,23 @@
         <link href="https://kejk.tech/thoughts/from-problem-to-plugin"/>
         <updated>2022-08-15T06:36:00.668Z</updated>
         <summary type="html"><![CDATA[Learning Typescript, the Figma API and solving a real personal problem.]]></summary>
+        <author>
+            <name>Karl Emil James Koch</name>
+            <email>karl@kejk.tech</email>
+            <uri>https://twitter.com/_kejk</uri>
+        </author>
+        <contributor>
+            <name>Karl Emil James Koch</name>
+            <email>karl@kejk.tech</email>
+            <uri>https://twitter.com/_kejk</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Don’t let your role define you]]></title>
+        <id>62e2e0f19f26bd0e6c6b2ad7</id>
+        <link href="https://kejk.tech/thoughts/dont-let-your-role-define-you"/>
+        <updated>2021-12-21T13:43:07.044Z</updated>
+        <summary type="html"><![CDATA[A practical guide on how to navigate your career when the path you're heading down isn't the one you truly want.]]></summary>
         <author>
             <name>Karl Emil James Koch</name>
             <email>karl@kejk.tech</email>
