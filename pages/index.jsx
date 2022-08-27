@@ -76,7 +76,6 @@ export default function Home({
       <main className="mt-12 md:mt-0">
         <div className="flex flex-col w-full text-left md:mx-auto md:max-w-xl md:justify-center md:text-center">
           <AllCapsHeader
-            className="font-mono"
             marginTop={0}
             justify={"justify-start md:justify-center"}
           >
