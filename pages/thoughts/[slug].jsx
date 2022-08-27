@@ -8,10 +8,10 @@ import AllCapsHeader from "../../components/AllCapsHeader";
 import Moment from "react-moment";
 import classNames from "classnames";
 import {
-  ArrowSmLeftIcon,
+  ArrowLongLeftIcon,
   CheckCircleIcon,
-  LinkIcon,
-} from "@heroicons/react/outline";
+} from "@heroicons/react/24/outline";
+import { LinkIcon } from "@heroicons/react/20/solid";
 import { styled, keyframes } from "@stitches/react";
 import * as ToastPrimitive from "@radix-ui/react-toast";
 import Prism from "prismjs";
@@ -128,7 +128,7 @@ export default function Post({ allPosts, post }) {
               <Link href={"/writing"}>
                 <a className="unstyled">
                   <TextButton textColor="black" darkTextColor="white">
-                    <ArrowSmLeftIcon className="h-6 w-6 mr-2 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
+                    <ArrowLongLeftIcon className="h-6 w-6 mr-2 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
                     All thoughts
                   </TextButton>
                 </a>

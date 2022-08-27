@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowSmRightIcon } from "@heroicons/react/outline";
+import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 
 const FeatureCard = ({ title, type, link }) => {
   return (
@@ -14,7 +14,7 @@ const FeatureCard = ({ title, type, link }) => {
         <header className="text-md mr-2 block font-bold text-neutral-700 group-hover:underline group-hover:decoration-teal-500 group-hover:decoration-2 group-hover:underline-offset-4 dark:text-neutral-200">
           {title}
         </header>
-        <ArrowSmRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+        <ArrowLongRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
       </div>
       <span className="block text-sm leading-6 text-teal-700 dark:text-teal-400">
         {type}

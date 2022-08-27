@@ -2,15 +2,12 @@ import Head from "next/head";
 import Image from "next/image";
 import PageHeader from "../components/PageHeader";
 import classNames from "classnames";
+import { ArrowLongLeftIcon, HeartIcon } from "@heroicons/react/24/outline";
 import {
   ArrowDownIcon,
-  ArrowSmLeftIcon,
-  HeartIcon,
-} from "@heroicons/react/outline";
-import {
   HeartIcon as SolidHeartIcon,
   ArrowDownIcon as SolidArrowDownIcon,
-} from "@heroicons/react/solid";
+} from "@heroicons/react/20/solid";
 import Link from "next/link";
 import TextButton from "../components/TextButton";
 import { useRouter } from "next/router";
@@ -135,7 +132,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
           <Link href={"#"}>
             <a className="unstyled" onClick={goBack}>
               <TextButton textColor="black" darkTextColor="white">
-                <ArrowSmLeftIcon className="h-6 w-6 mr-2 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
+                <ArrowLongLeftIcon className="h-6 w-6 mr-2 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
                 Go back
               </TextButton>
             </a>

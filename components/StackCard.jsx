@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { ExternalLinkIcon } from "@heroicons/react/outline";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import classNames from "classnames";
 
 const StackCard = ({ title, subtitle, image, link, tags }) => {
@@ -23,7 +23,7 @@ const StackCard = ({ title, subtitle, image, link, tags }) => {
           alt="Image of the software icon"
           quality={50}
         />
-        <ExternalLinkIcon className="h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+        <ArrowTopRightOnSquareIcon className="h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
       </div>
       <div className="flex w-full items-center gap-2">
         <header className="text-md mr-2 block font-bold text-neutral-700 dark:text-neutral-200">

@@ -2,15 +2,15 @@ import Head from "next/head";
 import Link from "next/link";
 import Button from "../components/Button";
 import {
-  ArrowSmRightIcon,
-  MailIcon,
+  ArrowLongRightIcon,
+  EnvelopeIcon,
   UserIcon,
   PencilIcon,
-  ViewGridIcon,
+  SquaresPlusIcon,
   FlagIcon,
-  MusicNoteIcon,
+  MusicalNoteIcon,
   BookmarkIcon,
-} from "@heroicons/react/outline";
+} from "@heroicons/react/24/outline";
 import Markdown from "../components/Markdown";
 import WritingCard from "../components/WritingCard";
 import AppCard from "../components/AppCard";
@@ -94,7 +94,7 @@ export default function Home({
             darkBorderColor="neutral-700"
             href="mailto:karl@kejk.tech?subject=Let's chat!"
           >
-            <MailIcon width={24} height={24} className="mr-2" />
+            <EnvelopeIcon width={24} height={24} className="mr-2" />
             Chat to me
           </Button>
           <Link href={"/about"}>
@@ -142,12 +142,12 @@ export default function Home({
               href="/writing"
             >
               More thoughts
-              <ArrowSmRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+              <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
             </Button>
           </Link>
         </div>
         <AllCapsHeader marginTop={16} justify={"justify-start"}>
-          <ViewGridIcon className="h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />
+          <SquaresPlusIcon className="h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />
           Apps and projects
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -180,7 +180,7 @@ export default function Home({
           })}
         </div>
         <AllCapsHeader marginTop={16} justify={"justify-start"}>
-          <MusicNoteIcon className="h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />
+          <MusicalNoteIcon className="h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400 mr-2" />
           Albums
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -230,7 +230,7 @@ export default function Home({
               href="/bookmarks"
             >
               All bookmarks
-              <ArrowSmRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+              <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
             </Button>
           </Link>
         </div>

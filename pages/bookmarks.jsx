@@ -2,6 +2,7 @@ import Head from "next/head";
 import PageHeader from "../components/PageHeader";
 import BookmarkCard from "../components/BookmarkCard";
 import { useRouter } from "next/router";
+import { useState } from "react";
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -15,6 +16,32 @@ const bucket = api.bucket({
 });
 
 export default function Bookmark({ bookmarks }) {
+  // the value of the search field
+  const [title, setTitle] = useState("");
+
+  // the search result
+  const [foundBookmarks, setFoundBookmarks] = useState(bookmarks);
+
+  const filter = (e) => {
+    const keyword = e.target.value;
+
+    if (keyword !== "") {
+      const results = bookmarks.filter((bookmark) => {
+        return (
+          bookmark.title.toLowerCase().includes(keyword.toLowerCase()) ||
+          bookmark.metadata.snippet
+            .toLowerCase()
+            .includes(keyword.toLowerCase())
+        );
+      });
+      setFoundBookmarks(results);
+    } else {
+      setFoundBookmarks(bookmarks);
+    }
+
+    setTitle(keyword);
+  };
+
   const router = useRouter();
   if (!router.isFallback && !bookmarks?.length) {
     return;
@@ -53,26 +80,37 @@ export default function Bookmark({ bookmarks }) {
         ) : (
           <div className="mx-auto w-full max-w-5xl">
             <PageHeader>Bookmarks</PageHeader>
-            <div className="mt-4 grid grid-cols-1 gap-8 md:grid-cols-3">
-              {bookmarks.map((bookmark) => {
-                const trimmedURL = bookmark.metadata.url.replace(regex, "");
-                return (
-                  <a
-                    key={bookmark.id}
-                    href={`${bookmark.metadata.url}`}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="unstyled"
-                  >
-                    <BookmarkCard
-                      title={bookmark.title}
-                      subtitle={bookmark.metadata.snippet}
-                      date={bookmark.metadata.published}
-                      url={trimmedURL}
-                    />
-                  </a>
-                );
-              })}
+            <input
+              type="search"
+              value={title}
+              onChange={filter}
+              className="mt-4 p-2 rounded-md w-full md:w-1/2 bg-gray-100 dark:bg-neutral-800 focus:outline-none focus:outline focus:outline-teal-500 text-neutral-900 dark:text-neutral-300"
+              placeholder="Search for posts"
+            />
+            <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
+              {foundBookmarks && foundBookmarks.length > 0 ? (
+                foundBookmarks.map((bookmark) => {
+                  const trimmedURL = bookmark.metadata.url.replace(regex, "");
+                  return (
+                    <a
+                      key={bookmark.id}
+                      href={`${bookmark.metadata.url}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="unstyled"
+                    >
+                      <BookmarkCard
+                        title={bookmark.title}
+                        subtitle={bookmark.metadata.snippet}
+                        date={bookmark.metadata.published}
+                        url={trimmedURL}
+                      />
+                    </a>
+                  );
+                })
+              ) : (
+                <h1>No results</h1>
+              )}
             </div>
           </div>
         )}

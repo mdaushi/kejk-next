@@ -1,4 +1,4 @@
-import { MailIcon } from "@heroicons/react/outline";
+import { EnvelopeIcon } from "@heroicons/react/20/solid";
 import Head from "next/head";
 import AllCapsHeader from "../components/AllCapsHeader";
 import AppCard from "../components/AppCard";
@@ -99,7 +99,7 @@ export default function Projects({ apps, utilities, clients }) {
             darkBorderColor="neutral-700"
             href="mailto:karl@kejk.tech?subject=Let's work together!"
           >
-            <MailIcon className="mr-2" width={24} height={24} />
+            <EnvelopeIcon className="mr-2" width={16} height={16} />
             Work with me
           </Button>
         </div>
