@@ -31,11 +31,11 @@
   }
 
   a.unstyled {
-    @apply no-underline font-normal;
+    @apply font-normal no-underline;
   }
 
   a.nav {
-    @apply font-normal py-4 no-underline hover:decoration-teal-500 hover:decoration-4 hover:underline-offset-[20px] transition ease-in-out hover:text-teal-600 hover:underline  dark:hover:text-teal-500 md:py-6;
+    @apply py-4 font-normal no-underline transition ease-in-out hover:text-teal-600 hover:underline hover:decoration-teal-500 hover:decoration-4 hover:underline-offset-[20px]  dark:hover:text-teal-500 md:py-6;
   }
 
   a.nav[aria-current] {
@@ -43,7 +43,7 @@
   }
 
   p {
-    @apply pb-4 text-neutral-700 dark:text-neutral-300 leading-relaxed;
+    @apply pb-4 leading-relaxed text-neutral-700 dark:text-neutral-300;
   }
 
   ul {

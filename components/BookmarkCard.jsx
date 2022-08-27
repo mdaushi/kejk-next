@@ -4,7 +4,7 @@ import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 const BookmarkCard = ({ title, subtitle, url, date }) => {
   return (
     <div
-      className="group flex min-h-full flex-col space-y-2 rounded-xl  transition-all ease-in-out hover:cursor-pointer unstyled
+      className="unstyled group flex min-h-full flex-col space-y-2  rounded-xl transition-all ease-in-out hover:cursor-pointer
     "
     >
       <div className="flex h-max w-full items-start justify-between gap-2 ">
@@ -17,7 +17,7 @@ const BookmarkCard = ({ title, subtitle, url, date }) => {
         <span className="flex text-sm leading-6 text-neutral-500 dark:text-neutral-400">
           {subtitle}
         </span>
-        <div className="flex text-sm leading-6 text-neutral-500 dark:text-neutral-400 pt-4">
+        <div className="flex pt-4 text-sm leading-6 text-neutral-500 dark:text-neutral-400">
           <span className="flex w-full justify-start font-mono text-xs font-light uppercase leading-6 text-neutral-500 dark:text-neutral-400">
             {date}
           </span>

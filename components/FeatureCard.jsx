@@ -4,7 +4,7 @@ import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 const FeatureCard = ({ title, type, link }) => {
   return (
     <a
-      className="0 group space-y-2 rounded-xl transition-all ease-in-out hover:cursor-pointer unstyled
+      className="0 unstyled group space-y-2 rounded-xl transition-all ease-in-out hover:cursor-pointer
     "
       href={link}
       target="_blank"

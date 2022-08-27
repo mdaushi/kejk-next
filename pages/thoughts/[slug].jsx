@@ -128,7 +128,7 @@ export default function Post({ allPosts, post }) {
               <Link href={"/writing"}>
                 <a className="unstyled">
                   <TextButton textColor="black" darkTextColor="white">
-                    <ArrowLongLeftIcon className="h-6 w-6 mr-2 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
+                    <ArrowLongLeftIcon className="mr-2 h-6 w-6 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
                     All thoughts
                   </TextButton>
                 </a>

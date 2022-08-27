@@ -132,7 +132,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
           <Link href={"#"}>
             <a className="unstyled" onClick={goBack}>
               <TextButton textColor="black" darkTextColor="white">
-                <ArrowLongLeftIcon className="h-6 w-6 mr-2 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
+                <ArrowLongLeftIcon className="mr-2 h-6 w-6 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
                 Go back
               </TextButton>
             </a>
@@ -161,7 +161,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
         <div className="mt-12 flex w-full items-center justify-between">
           <div className="flex flex-col space-y-4">
             <div
-              className="flex gap-2 w-full md:w-2/3 flex-col"
+              className="flex w-full flex-col gap-2 md:w-2/3"
               dangerouslySetInnerHTML={{ __html: lazyPDF.metadata.subheader }}
             />
             <a
@@ -184,7 +184,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
           <div className="flex flex-col items-center space-y-4">
             <div className="flex items-center space-x-2">
               <div
-                className="flex w-max items-center justify-center rounded-full border border-teal-200 bg-teal-50 px-3 py-1 font-mono text-xs font-normal uppercase leading-tight text-teal-700 dark:border-teal-900 dark:bg-teal-900/30 dark:text-teal-200 hover:cursor-pointer"
+                className="flex w-max items-center justify-center rounded-full border border-teal-200 bg-teal-50 px-3 py-1 font-mono text-xs font-normal uppercase leading-tight text-teal-700 hover:cursor-pointer dark:border-teal-900 dark:bg-teal-900/30 dark:text-teal-200"
                 onClick={updateDownloads}
               >
                 {!isDownloaded ? (
@@ -195,7 +195,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
                 {kFormatter(downloads)}
               </div>
               <div
-                className="flex w-max items-center justify-center rounded-full border border-pink-200 bg-pink-50 px-3 py-1 font-mono text-xs font-normal uppercase leading-tight text-pink-700 dark:border-pink-900 dark:bg-pink-900/30 dark:text-pink-200 hover:cursor-pointer"
+                className="flex w-max items-center justify-center rounded-full border border-pink-200 bg-pink-50 px-3 py-1 font-mono text-xs font-normal uppercase leading-tight text-pink-700 hover:cursor-pointer dark:border-pink-900 dark:bg-pink-900/30 dark:text-pink-200"
                 onClick={updateLikes}
               >
                 {!isLiked ? (

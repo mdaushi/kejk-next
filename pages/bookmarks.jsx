@@ -84,7 +84,7 @@ export default function Bookmark({ bookmarks }) {
               type="search"
               value={title}
               onChange={filter}
-              className="mt-4 p-2 rounded-md w-full md:w-1/2 bg-gray-100 dark:bg-neutral-800 focus:outline-none focus:outline focus:outline-teal-500 text-neutral-900 dark:text-neutral-300"
+              className="mt-4 w-full rounded-md bg-gray-100 p-2 text-neutral-900 focus:outline-none focus:outline focus:outline-teal-500 dark:bg-neutral-800 dark:text-neutral-300 md:w-1/2"
               placeholder="Search for posts"
             />
             <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
