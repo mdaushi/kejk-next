@@ -189,7 +189,7 @@ export default function Writing({ writings }) {
             type="search"
             value={title}
             onChange={filter}
-            className="p-2 rounded-md w-1/2 bg-gray-100 dark:bg-neutral-800 focus:outline-none focus:outline focus:outline-teal-500 text-neutral-900 dark:text-neutral-300"
+            className="p-2 rounded-md w-full md:w-1/2 bg-gray-100 dark:bg-neutral-800 focus:outline-none focus:outline focus:outline-teal-500 text-neutral-900 dark:text-neutral-300"
             placeholder="Search for posts"
           />
           <div className="mt-4 grid grid-cols-1 gap-8 md:grid-cols-2">
