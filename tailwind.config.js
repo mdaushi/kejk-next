@@ -13,7 +13,7 @@ module.exports = {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
         serif: ["Literata", ...defaultTheme.fontFamily.serif],
         mono: ["JetBrains Mono", ...defaultTheme.fontFamily.mono],
-        display: ["Kanit"],
+        display: ["Coda"],
       },
     },
   },
