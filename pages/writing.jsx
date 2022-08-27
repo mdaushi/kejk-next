@@ -7,7 +7,7 @@ import fs from "fs";
 import { Feed } from "feed";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
-import { MailIcon, RssIcon } from "@heroicons/react/20/solid";
+import { EnvelopeIcon, RssIcon } from "@heroicons/react/20/solid";
 import SearchInput from "../components/SearchInput";
 
 const Cosmic = require("cosmicjs");
@@ -157,7 +157,7 @@ export default function Writing({ writings }) {
                                 className="inline-flex items-center justify-center rounded-md border border-transparent bg-teal-600 px-4 py-2 text-sm font-medium text-teal-100 hover:bg-teal-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
                                 onClick={closeModal}
                               >
-                                <MailIcon
+                                <EnvelopeIcon
                                   width={20}
                                   height={20}
                                   className="mr-2 inline-block text-teal-50"
