@@ -4,7 +4,7 @@ import HeaderView from "../components/HeaderView";
 import Markdown from "../components/Markdown";
 import PageHeader from "../components/PageHeader";
 import Button from "../components/Button";
-import { RectangleStackIcon } from "@heroicons/react/24/outline";
+import { RectangleStackIcon } from "@heroicons/react/20/solid";
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -63,7 +63,7 @@ export default function About({ about, principles }) {
               darkBorderColor="neutral-700"
               href="/uses"
             >
-              <RectangleStackIcon width={24} height={24} className="mr-2" />
+              <RectangleStackIcon width={20} height={20} className="mr-2" />
               My site stack
             </Button>
           </Link>

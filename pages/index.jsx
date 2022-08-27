@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
 import Button from "../components/Button";
+import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 import {
-  ArrowLongRightIcon,
   EnvelopeIcon,
   UserIcon,
   PencilIcon,
@@ -10,7 +10,7 @@ import {
   FlagIcon,
   MusicalNoteIcon,
   BookmarkIcon,
-} from "@heroicons/react/24/outline";
+} from "@heroicons/react/20/solid";
 import Markdown from "../components/Markdown";
 import WritingCard from "../components/WritingCard";
 import AppCard from "../components/AppCard";
@@ -94,7 +94,7 @@ export default function Home({
             darkBorderColor="neutral-700"
             href="mailto:karl@kejk.tech?subject=Let's chat!"
           >
-            <EnvelopeIcon width={24} height={24} className="mr-2" />
+            <EnvelopeIcon width={20} height={20} className="mr-2" />
             Chat to me
           </Button>
           <Link href={"/about"}>
@@ -107,7 +107,7 @@ export default function Home({
               darkBorderColor="neutral-700"
               href="/about"
             >
-              <UserIcon width={24} height={24} className="mr-2" />
+              <UserIcon width={20} height={20} className="mr-2" />
               More about me
             </Button>
           </Link>

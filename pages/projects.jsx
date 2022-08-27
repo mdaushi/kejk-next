@@ -99,7 +99,7 @@ export default function Projects({ apps, utilities, clients }) {
             darkBorderColor="neutral-700"
             href="mailto:karl@kejk.tech?subject=Let's work together!"
           >
-            <EnvelopeIcon className="mr-2" width={16} height={16} />
+            <EnvelopeIcon className="mr-2" width={20} height={20} />
             Work with me
           </Button>
         </div>
