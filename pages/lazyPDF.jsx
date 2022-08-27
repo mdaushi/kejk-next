@@ -179,7 +179,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
                 )}
                 id="downloads"
               >
-                <ArrowDownIcon className="mr-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+                <ArrowDownIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
                 Download
               </button>
             </a>
@@ -235,7 +235,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
               )}
               id="downloads"
             >
-              <ArrowDownIcon className="mr-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+              <ArrowDownIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
               Download
             </button>
           </a>
@@ -247,7 +247,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
 
 export default LazyPDF;
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const data = await bucket.getObjects({
     query: {
       type: "lazy-pdf",
