@@ -3,6 +3,7 @@ import PageHeader from "../components/PageHeader";
 import BookmarkCard from "../components/BookmarkCard";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import SearchInput from "../components/SearchInput";
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -80,12 +81,10 @@ export default function Bookmark({ bookmarks }) {
         ) : (
           <div className="mx-auto w-full max-w-5xl">
             <PageHeader>Bookmarks</PageHeader>
-            <input
-              type="search"
+            <SearchInput
               value={title}
               onChange={filter}
-              className="mt-4 w-full rounded-md bg-gray-100 p-2 text-neutral-900 focus:outline-none focus:outline focus:outline-teal-500 dark:bg-neutral-800 dark:text-neutral-300 md:w-1/2"
-              placeholder="Search for posts"
+              placeholder={"Search bookmarks"}
             />
             <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
               {foundBookmarks && foundBookmarks.length > 0 ? (

@@ -8,6 +8,7 @@ import { Feed } from "feed";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import { MailIcon, RssIcon } from "@heroicons/react/20/solid";
+import SearchInput from "../components/SearchInput";
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -188,12 +189,10 @@ export default function Writing({ writings }) {
               </Transition>
             </>
           </div>
-          <input
-            type="search"
+          <SearchInput
             value={title}
             onChange={filter}
-            className="mt-4 w-full rounded-md bg-gray-100 p-2 text-neutral-900 focus:outline-none focus:outline focus:outline-teal-500 dark:bg-neutral-800 dark:text-neutral-300 md:w-1/2"
-            placeholder="Search for posts"
+            placeholder={"Search articles"}
           />
           <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
             {foundPosts && foundPosts.length > 0 ? (
