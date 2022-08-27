@@ -209,7 +209,7 @@ export default function Writing({ writings }) {
                 );
               })
             ) : (
-              <p className="w-full justify-center text-neutral-600 dark:text-neutral-400">No results for <strong>{title}</strong>. Try searching for <em>Design</em>.</p>
+              <p className="w-full justify-center text-neutral-600 dark:text-neutral-400 text-center">No results for <strong>{title}</strong>. Try searching for <em>Design</em>.</p>
             )}
           </div>
         </div>

@@ -108,7 +108,7 @@ export default function Bookmark({ bookmarks }) {
                   );
                 })
               ) : (
-                <p className="w-full justify-center text-neutral-600 dark:text-neutral-400">No results for <strong>{title}</strong>. Try searching for <em>Code</em>.</p>
+                <p className="w-full justify-center text-neutral-600 dark:text-neutral-400 text-center">No results for <strong>{title}</strong>. Try searching for <em>Code</em>.</p>
               )}
             </div>
           </div>
