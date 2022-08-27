@@ -13,12 +13,12 @@ export default function Document() {
           rel={"preload"}
           as={"style"}
           href={
-            "https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&Merriweather:ital,wght@0,400;0,700;1,400;1,700&JetBrains+Mono:ital@0;1&display=swap"
+            "https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&Literata:ital,opsz,wght@0,7..72,400;0,7..72,700;1,7..72,400;1,7..72,700&JetBrains+Mono:ital@0;1&display=swap"
           }
         />
         <link
           href={
-            "https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&Merriweather:ital,wght@0,400;0,700;1,400;1,700&JetBrains+Mono:ital@0;1&display=swap"
+            "https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&Literata:ital,opsz,wght@0,7..72,400;0,7..72,700;1,7..72,400;1,7..72,700&JetBrains+Mono:ital@0;1&display=swap"
           }
           rel={"stylesheet"}
           media={"print"}
@@ -28,7 +28,7 @@ export default function Document() {
           <link
             rel={"stylesheet"}
             href={
-              "https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&Merriweather:ital,wght@0,400;0,700;1,400;1,700&JetBrains+Mono:ital@0;1&display=swap"
+              "https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&Literata:ital,opsz,wght@0,7..72,400;0,7..72,700;1,7..72,400;1,7..72,700&JetBrains+Mono:ital@0;1&display=swap"
             }
           />
         </noscript>
