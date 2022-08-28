@@ -4,6 +4,7 @@ import BookmarkCard from "../components/BookmarkCard";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import SearchInput from "../components/SearchInput";
+import Button from "../components/Button";
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -108,9 +109,24 @@ export default function Bookmark({ bookmarks }) {
                   );
                 })
               ) : (
-                <p className="w-full justify-center text-neutral-600 dark:text-neutral-400 text-center">No results for <strong>{title}</strong>. Try searching for <em>Code</em>.</p>
+                <p className="w-full justify-center text-center text-neutral-600 dark:text-neutral-400">
+                  No results for <strong>{title}</strong>. Try searching for{" "}
+                  <em>Code</em>.
+                </p>
               )}
             </div>
+            {/* <div className="mt-12 flex w-full justify-center">
+              <Button
+                bgColor="bg-white dark:bg-black"
+                textColor="text-black dark:text-white"
+                borderColor="border-neutral-200 dark:border-neutral-700"
+                onClick={() => {
+                  loadMorePosts();
+                }}
+              >
+                Load more...
+              </Button>
+            </div> */}
           </div>
         )}
       </main>
@@ -124,7 +140,7 @@ export async function getStaticProps() {
       type: "bookmarks",
     },
     props: "id,slug,title,metadata,created_at",
-    limit: 50,
+    limit: 63,
     sort: "-created_at",
   });
 

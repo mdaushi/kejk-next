@@ -140,7 +140,7 @@ export default function Post({ allPosts, post }) {
               </AllCapsHeader>
               <PageHeader>{post.title}</PageHeader>
               <div
-                className="post-link"
+                className="inline-link"
                 dangerouslySetInnerHTML={{ __html: post.content }}
               />
             </article>

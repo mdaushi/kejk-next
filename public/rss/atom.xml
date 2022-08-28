@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kejk.tech</id>
     <title>KEJK | Writing</title>
-    <updated>2022-08-27T15:58:14.856Z</updated>
+    <updated>2022-08-28T11:26:45.590Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Karl Emil James Koch</name>
@@ -19,8 +19,8 @@
         <title type="html"><![CDATA[Shift gears and switch careers]]></title>
         <id>630729e21cc4270009346f04</id>
         <link href="https://kejk.tech/thoughts/shift-gears-switch-careers"/>
-        <updated>2022-08-27T09:32:22.500Z</updated>
-        <summary type="html"><![CDATA[I've talked about my history before, but I haven't provided explicit advice about how to make a care…]]></summary>
+        <updated>2022-08-28T07:23:27.122Z</updated>
+        <summary type="html"><![CDATA[I've talked about my history before, but I haven't provided explicit advice about how to switch careers]]></summary>
         <author>
             <name>Karl Emil James Koch</name>
             <email>karl@kejk.tech</email>

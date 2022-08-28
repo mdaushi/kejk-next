@@ -91,12 +91,9 @@ export default function Projects({ apps, utilities, clients }) {
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center space-x-4 md:mt-16">
           <Button
-            bgColor="neutral-100"
-            textColor="black"
-            borderColor="neutral-200"
-            darkBgColor="neutral-800"
-            darkTextColor="white"
-            darkBorderColor="neutral-700"
+            bgColor="bg-neutral-100 dark:bg-neutral-800"
+            textColor="text-black dark:text-white"
+            borderColor="border-neutral-200 dark:border-neutral-700"
             href="mailto:karl@kejk.tech?subject=Let's work together!"
           >
             <EnvelopeIcon className="mr-2" width={20} height={20} />

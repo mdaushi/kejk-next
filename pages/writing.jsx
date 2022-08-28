@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
-import classNames from "classnames";
 import PageHeader from "../components/PageHeader";
 import WritingCard from "../components/WritingCard";
+import Button from "../components/Button";
 import fs from "fs";
 import { Feed } from "feed";
 import { Dialog, Transition } from "@headlessui/react";
@@ -85,15 +85,15 @@ export default function Writing({ writings }) {
         <div className="mx-auto w-full max-w-5xl">
           <div className="flex w-full items-center justify-between">
             <PageHeader>Writing</PageHeader>
-            <button
+            <Button
+              bgColor="bg-white dark:bg-black"
+              textColor="text-black dark:text-white"
+              borderColor="border-neutral-200 dark:border-neutral-700"
               onClick={openModal}
-              className={classNames(
-                `mb-4 flex items-center justify-center space-x-2 rounded-md border border-neutral-200 bg-neutral-100 py-2 px-4 text-sm font-medium text-black transition ease-in-out hover:border-teal-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white md:mb-0 md:w-max md:text-base`
-              )}
             >
               <RssIcon className="mr-2" width={20} height={20} />
               Subscribe
-            </button>
+            </Button>
             <>
               <Transition appear show={isOpen} as={Fragment}>
                 <Dialog as="div" className="relative z-10" onClose={closeModal}>
@@ -209,7 +209,10 @@ export default function Writing({ writings }) {
                 );
               })
             ) : (
-              <p className="w-full justify-center text-neutral-600 dark:text-neutral-400 text-center">No results for <strong>{title}</strong>. Try searching for <em>Design</em>.</p>
+              <p className="w-full justify-center text-center text-neutral-600 dark:text-neutral-400">
+                No results for <strong>{title}</strong>. Try searching for{" "}
+                <em>Design</em>.
+              </p>
             )}
           </div>
         </div>
