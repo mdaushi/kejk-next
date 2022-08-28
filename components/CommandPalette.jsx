@@ -149,14 +149,18 @@ export const CommandPalette = ({
                           <Combobox.Option key={item.id} value={item}>
                             {({ active }) => (
                               <div
-                                className={`cursor-pointer rounded p-3 text-sm transition-all duration-75 ease-in hover:bg-teal-100 dark:hover:bg-teal-900 ${
+                                className={`cursor-pointer rounded p-3 text-sm text-black transition-all duration-75 ease-in hover:bg-teal-200 dark:text-white dark:hover:bg-teal-900 ${
                                   active
-                                    ? "bg-teal-100 dark:bg-teal-900"
+                                    ? "bg-teal-400 dark:bg-teal-800"
                                     : "bg-transparent"
                                 }`}
                               >
                                 {item.title}
-                                <span className=" text-neutral-500">
+                                <span
+                                  className={`text-neutral-500 hover:text-teal-800 dark:text-neutral-400 hover:dark:text-teal-200 ${
+                                    active && "text-teal-800 dark:text-teal-200"
+                                  }`}
+                                >
                                   {" in"}{" "}
                                   {item.type.charAt(0).toUpperCase() +
                                     item.type.slice(1)}
