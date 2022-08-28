@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+
+module.exports = {
   reactStrictMode: false,
   swcMinify: true,
   images: {
@@ -11,6 +12,13 @@ const nextConfig = {
       allowFutureImage: true,
     },
   },
+  webpack: (config) => {
+    // this will override the experiments
+    config.experiments = { ...config.experiments, ...{ topLevelAwait: true } };
+    // this will just update topLevelAwait property of config.experiments
+    // config.experiments.topLevelAwait = true
+    return config;
+  },
   async redirects() {
     return [
       {
@@ -21,5 +29,3 @@ const nextConfig = {
     ];
   },
 };
-
-module.exports = nextConfig;

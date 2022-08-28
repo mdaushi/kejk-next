@@ -106,7 +106,11 @@ export default function Home({
             </Button>
           </Link>
         </div>
-        <AllCapsHeader marginTop={16} justify={"justify-start"}>
+        <AllCapsHeader
+          marginTop={16}
+          justify={"justify-start"}
+          className="items-end"
+        >
           <PencilIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
           Writing
         </AllCapsHeader>
