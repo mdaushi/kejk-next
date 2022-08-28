@@ -45,6 +45,22 @@ const fetchStacksData = await bucket.getObjects({
 });
 const stacksData = fetchStacksData.objects;
 
+const fetchFeaturesData = await bucket.getObjects({
+  query: {
+    type: "features",
+  },
+  props: "id,type,slug,title,metadata",
+});
+const featuresData = fetchFeaturesData.objects;
+
+const fetchAlbumsData = await bucket.getObjects({
+  query: {
+    type: "albums",
+  },
+  props: "id,type,slug,title,metadata",
+});
+const albumsData = fetchAlbumsData.objects;
+
 const contactDetails = [
   {
     title: "Email",
@@ -64,12 +80,23 @@ const contactDetails = [
   },
 ];
 
-const Layout = ({ writings, apps, utilities, contacts, stacks, children }) => {
+const Layout = ({
+  writings,
+  apps,
+  utilities,
+  contacts,
+  stacks,
+  features,
+  albums,
+  children,
+}) => {
   writings = writingData;
   apps = appData;
   utilities = utilitiesData;
   contacts = contactDetails;
   stacks = stacksData;
+  features = featuresData;
+  albums = albumsData;
 
   return (
     <>
@@ -82,6 +109,8 @@ const Layout = ({ writings, apps, utilities, contacts, stacks, children }) => {
             utilities={utilities}
             contacts={contacts}
             stacks={stacks}
+            features={features}
+            albums={albums}
           />
           {children}
         </main>

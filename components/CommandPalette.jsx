@@ -9,6 +9,8 @@ export const CommandPalette = ({
   utilities,
   contacts,
   stacks,
+  features,
+  albums,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [query, setQuery] = useState("");
@@ -56,6 +58,18 @@ export const CommandPalette = ({
       )
     : stacks.slice(0, 4);
 
+  const filteredFeatureItems = query
+    ? features.filter((feature) =>
+        feature.title.toLowerCase().includes(query.toLowerCase())
+      )
+    : features.slice(0, 4);
+
+  const filteredAlbumItems = query
+    ? albums.filter((album) =>
+        album.title.toLowerCase().includes(query.toLowerCase())
+      )
+    : albums.slice(0, 4);
+
   function closeModal() {
     setIsOpen(false);
   }
@@ -96,7 +110,9 @@ export const CommandPalette = ({
                         ? router.push(`/thoughts/${item.slug}`)
                         : item.type === "apps" ||
                           item.type === "utilities" ||
-                          item.type === "software-stacks"
+                          item.type === "software-stacks" ||
+                          item.type === "features" ||
+                          item.type === "albums"
                         ? (window.location.href = `${item.metadata.url}`)
                         : (window.location.href = `${item.url}`);
                     }}
@@ -127,6 +143,8 @@ export const CommandPalette = ({
                           ...filteredUtilityItems,
                           ...filteredContactItems,
                           ...filteredStackItems,
+                          ...filteredFeatureItems,
+                          ...filteredAlbumItems,
                         ].map((item) => (
                           <Combobox.Option key={item.id} value={item}>
                             {({ active }) => (
