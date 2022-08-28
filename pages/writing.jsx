@@ -89,6 +89,7 @@ export default function Writing({ writings }) {
               bgColor="bg-white dark:bg-black"
               textColor="text-black dark:text-white"
               borderColor="border-neutral-200 dark:border-neutral-700"
+              className="mb-4 md:mb-0"
               onClick={openModal}
             >
               <RssIcon className="mr-2" width={20} height={20} />
