@@ -14,6 +14,29 @@ const bucket = api.bucket({
 });
 
 const Layout = ({ writings, children }) => {
+  // async function fetchData() {
+  //   const writingData = await bucket.getObjects({
+  //     limit: 6,
+  //     query: {
+  //       type: "writings",
+  //     },
+  //     props: "slug,title,metadata",
+  //   });
+
+  //   const writings = await writingData.objects;
+
+  //   return {
+  //     props: {
+  //       writings,
+  //     },
+  //   };
+  // }
+
+  // (async () => {
+  //   const data = await fetchData();
+  //   console.log(data.props.writings);
+  // })();
+
   return (
     <>
       <div className="mb-24 md:mb-4 lg:mb-12">
@@ -26,23 +49,5 @@ const Layout = ({ writings, children }) => {
     </>
   );
 };
-
-// export async function getStaticProps() {
-//   const writingData = await bucket.getObjects({
-//     limit: 3,
-//     query: {
-//       type: "writings",
-//     },
-//     props: "slug,title,metadata",
-//   });
-
-//   const writings = await writingData.objects;
-
-//   return {
-//     props: {
-//       writings,
-//     },
-//   };
-// }
 
 export default Layout;

@@ -55,9 +55,9 @@ export const CommandPalette = ({ content }) => {
                       />
                     </div>
                     <Combobox.Options static>
-                      {content.map((item) => {
+                      {content.map((item, idx) => {
                         return (
-                          <Combobox.Option value="1" key={item.id}>
+                          <Combobox.Option key={idx}>
                             {item.title}
                           </Combobox.Option>
                         );
