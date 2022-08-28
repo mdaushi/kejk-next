@@ -86,10 +86,9 @@ export default function Writing({ writings }) {
           <div className="flex w-full items-center justify-between">
             <PageHeader>Writing</PageHeader>
             <Button
-              bgColor="bg-white dark:bg-black"
+              bgColor="bg-white dark:bg-black mb-4 md:mb-0"
               textColor="text-black dark:text-white"
               borderColor="border-neutral-200 dark:border-neutral-700"
-              className="mb-4 md:mb-0"
               onClick={openModal}
             >
               <RssIcon className="mr-2" width={20} height={20} />
