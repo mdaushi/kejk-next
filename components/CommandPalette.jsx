@@ -110,7 +110,7 @@ export const CommandPalette = ({
                         ? router.push(`/thoughts/${item.slug}`)
                         : item.type === "apps" ||
                           item.type === "utilities" ||
-                          item.type === "software-stacks" ||
+                          item.type === "stacks" ||
                           item.type === "features" ||
                           item.type === "albums"
                         ? (window.location.href = `${item.metadata.url}`)
@@ -156,6 +156,11 @@ export const CommandPalette = ({
                                 }`}
                               >
                                 {item.title}
+                                <span className=" text-neutral-500">
+                                  {" in"}{" "}
+                                  {item.type.charAt(0).toUpperCase() +
+                                    item.type.slice(1)}
+                                </span>
                               </div>
                             )}
                           </Combobox.Option>

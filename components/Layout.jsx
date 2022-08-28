@@ -39,7 +39,7 @@ const utilitiesData = fetchUtilitiesData.objects;
 
 const fetchStacksData = await bucket.getObjects({
   query: {
-    type: "software-stacks",
+    type: "stacks",
   },
   props: "id,type,slug,title,metadata",
 });
@@ -63,18 +63,22 @@ const albumsData = fetchAlbumsData.objects;
 
 const contactDetails = [
   {
+    type: "Contacts",
     title: "Email",
     url: "mailto:karl@kejk.tech",
   },
   {
+    type: "Contacts",
     title: "GitHub",
     url: "https://github.com/kemiljk",
   },
   {
+    type: "Contacts",
     title: "Figma",
     url: "https://www.figma.com/@_kejk",
   },
   {
+    type: "Contacts",
     title: "Twitter",
     url: "https://www.twitter.com/_kejk",
   },
