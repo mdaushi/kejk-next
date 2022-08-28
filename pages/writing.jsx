@@ -28,7 +28,7 @@ export default function Writing({ writings }) {
   const metaDescription = "Designer, developer, writer and musician";
   const url = "https://kejk.tech/thoughts";
 
-  let [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
     setIsOpen(false);
