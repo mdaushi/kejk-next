@@ -135,21 +135,21 @@ export const CommandPalette = ({
                     {
                       <Combobox.Options
                         static
-                        className="ml-0 mb-0 max-h-64 list-none space-y-2 overflow-y-auto pt-2"
+                        className="ml-0 mb-0 max-h-64 list-none  overflow-y-auto pt-2"
                       >
                         {[
                           ...filteredWritingItems,
                           ...filteredAppItems,
                           ...filteredUtilityItems,
-                          ...filteredContactItems,
                           ...filteredStackItems,
                           ...filteredFeatureItems,
                           ...filteredAlbumItems,
+                          ...filteredContactItems,
                         ].map((item) => (
                           <Combobox.Option key={item.id} value={item}>
                             {({ active }) => (
                               <div
-                                className={`cursor-pointer rounded p-2 text-sm hover:bg-teal-100 dark:hover:bg-teal-900 ${
+                                className={`cursor-pointer rounded p-3 text-sm transition-all duration-75 ease-in hover:bg-teal-100 dark:hover:bg-teal-900 ${
                                   active
                                     ? "bg-teal-100 dark:bg-teal-900"
                                     : "bg-transparent"
