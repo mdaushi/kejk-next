@@ -101,17 +101,17 @@ const Layout = ({
   return (
     <>
       <div className="mb-24 md:mb-4 lg:mb-12">
+        <CommandPalette
+          writings={writings}
+          apps={apps}
+          utilities={utilities}
+          contacts={contacts}
+          stacks={stacks}
+          features={features}
+          albums={albums}
+        />
         <Nav />
         <main className="mx-auto h-full w-full max-w-5xl justify-center px-4 md:mt-32 md:px-12 lg:px-0">
-          <CommandPalette
-            writings={writings}
-            apps={apps}
-            utilities={utilities}
-            contacts={contacts}
-            stacks={stacks}
-            features={features}
-            albums={albums}
-          />
           {children}
         </main>
       </div>
