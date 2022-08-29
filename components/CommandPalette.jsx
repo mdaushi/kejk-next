@@ -1,6 +1,10 @@
 import { Dialog, Transition, Combobox } from "@headlessui/react";
 import { Fragment, useState, useEffect } from "react";
-import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
+import {
+  ArrowLongRightIcon,
+  MagnifyingGlassIcon,
+  ArrowTopRightOnSquareIcon,
+} from "@heroicons/react/20/solid";
 import { useRouter } from "next/router";
 
 export const CommandPalette = ({
@@ -80,6 +84,17 @@ export const CommandPalette = ({
     ...filteredContactItems,
   ];
 
+  const typeArray = ["apps", "utilities", "stacks", "features", "albums"];
+
+  const internalLinksArray = [
+    "apps",
+    "utilities",
+    "stacks",
+    "features",
+    "albums",
+    "contact",
+  ];
+
   const singular = ["writings", "stacks"];
 
   function closeModal() {
@@ -120,11 +135,7 @@ export const CommandPalette = ({
                       setIsOpen(false);
                       item.type === "writings"
                         ? router.push(`/thoughts/${item.slug}`)
-                        : item.type === "apps" ||
-                          item.type === "utilities" ||
-                          item.type === "stacks" ||
-                          item.type === "features" ||
-                          item.type === "albums"
+                        : typeArray.includes(item.type)
                         ? (window.location.href = `${item.metadata.url}`)
                         : (window.location.href = `${item.url}`);
                     }}
@@ -153,25 +164,38 @@ export const CommandPalette = ({
                           <Combobox.Option key={item.id} value={item}>
                             {({ active }) => (
                               <div
-                                className={`cursor-pointer rounded p-3 text-sm text-black transition-all duration-75 ease-in hover:bg-teal-200 dark:text-white dark:hover:bg-teal-900 ${
+                                className={`flex w-full cursor-pointer items-center justify-between rounded p-3 text-sm text-black transition-all duration-75 ease-in hover:bg-teal-200 dark:text-white dark:hover:bg-teal-900 ${
                                   active
                                     ? "bg-teal-400 dark:bg-teal-800"
                                     : "bg-transparent"
                                 }`}
                               >
-                                {item.title}
-                                <span
-                                  className={`text-neutral-500 hover:text-teal-800 dark:text-neutral-400 hover:dark:text-teal-200 ${
-                                    active && "text-teal-800 dark:text-teal-200"
-                                  }`}
-                                >
-                                  {" in"}{" "}
-                                  {singular.includes(item.type)
-                                    ? item.type.charAt(0).toUpperCase() +
-                                      item.type.slice(1).replace("s", "")
-                                    : item.type.charAt(0).toUpperCase() +
-                                      item.type.slice(1)}
-                                </span>
+                                <div className="flex w-full items-center justify-start space-x-4">
+                                  {item.title}
+                                  <span
+                                    className={`ml-1 text-neutral-500 hover:text-teal-800 dark:text-neutral-400 hover:dark:text-teal-200 ${
+                                      active &&
+                                      "text-teal-800 dark:text-teal-200"
+                                    }`}
+                                  >
+                                    {"in"}{" "}
+                                    {singular.includes(item.type)
+                                      ? item.type.charAt(0).toUpperCase() +
+                                        item.type.slice(1).replace("s", "")
+                                      : item.type.charAt(0).toUpperCase() +
+                                        item.type.slice(1)}
+                                  </span>
+                                </div>
+                                {internalLinksArray.includes(
+                                  item.type.toLowerCase()
+                                ) ? (
+                                  <ArrowTopRightOnSquareIcon
+                                    width={16}
+                                    height={16}
+                                  />
+                                ) : (
+                                  <ArrowLongRightIcon width={16} height={16} />
+                                )}
                               </div>
                             )}
                           </Combobox.Option>
