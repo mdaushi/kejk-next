@@ -70,6 +70,18 @@ export const CommandPalette = ({
       )
     : albums.slice(0, 4);
 
+  const filteredItemsArray = [
+    ...filteredWritingItems,
+    ...filteredAppItems,
+    ...filteredUtilityItems,
+    ...filteredStackItems,
+    ...filteredFeatureItems,
+    ...filteredAlbumItems,
+    ...filteredContactItems,
+  ];
+
+  const singular = ["writings", "stacks"];
+
   function closeModal() {
     setIsOpen(false);
   }
@@ -137,15 +149,7 @@ export const CommandPalette = ({
                         static
                         className="ml-0 mb-0 max-h-64 list-none  overflow-y-auto pt-2"
                       >
-                        {[
-                          ...filteredWritingItems,
-                          ...filteredAppItems,
-                          ...filteredUtilityItems,
-                          ...filteredStackItems,
-                          ...filteredFeatureItems,
-                          ...filteredAlbumItems,
-                          ...filteredContactItems,
-                        ].map((item) => (
+                        {filteredItemsArray.map((item) => (
                           <Combobox.Option key={item.id} value={item}>
                             {({ active }) => (
                               <div
@@ -162,8 +166,11 @@ export const CommandPalette = ({
                                   }`}
                                 >
                                   {" in"}{" "}
-                                  {item.type.charAt(0).toUpperCase() +
-                                    item.type.slice(1)}
+                                  {singular.includes(item.type)
+                                    ? item.type.charAt(0).toUpperCase() +
+                                      item.type.slice(1).replace("s", "")
+                                    : item.type.charAt(0).toUpperCase() +
+                                      item.type.slice(1)}
                                 </span>
                               </div>
                             )}

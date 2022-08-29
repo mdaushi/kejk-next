@@ -63,22 +63,22 @@ const albumsData = fetchAlbumsData.objects;
 
 const contactDetails = [
   {
-    type: "Contacts",
+    type: "Contact",
     title: "Email",
     url: "mailto:karl@kejk.tech",
   },
   {
-    type: "Contacts",
+    type: "Contact",
     title: "GitHub",
     url: "https://github.com/kemiljk",
   },
   {
-    type: "Contacts",
+    type: "Contact",
     title: "Figma",
     url: "https://www.figma.com/@_kejk",
   },
   {
-    type: "Contacts",
+    type: "Contact",
     title: "Twitter",
     url: "https://www.twitter.com/_kejk",
   },
