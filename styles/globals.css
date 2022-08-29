@@ -31,11 +31,11 @@
   }
 
   a.nav {
-    @apply py-4 font-normal text-black no-underline transition ease-in-out hover:text-teal-600 hover:underline hover:decoration-teal-500 hover:decoration-4  hover:underline-offset-[20px] dark:text-white dark:hover:text-teal-500 md:py-6;
+    @apply font-normal text-black no-underline transition ease-in-out hover:text-teal-600 hover:underline hover:decoration-teal-500 hover:decoration-4  hover:underline-offset-[20px] dark:text-white dark:hover:text-teal-500 md:py-6;
   }
 
   a.nav[aria-current] {
-    @apply py-6 text-teal-700 underline decoration-teal-500 decoration-4 underline-offset-[20px] active:underline active:decoration-teal-500 active:decoration-4 active:underline-offset-[20px] dark:text-teal-500;
+    @apply text-teal-700 underline decoration-teal-500 decoration-4 underline-offset-[20px] active:underline active:decoration-teal-500 active:decoration-4 active:underline-offset-[20px] dark:text-teal-500 md:py-6;
   }
 
   p {

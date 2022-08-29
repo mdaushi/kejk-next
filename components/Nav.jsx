@@ -30,11 +30,11 @@ const Nav = () => {
     <div>
       <div
         as="nav"
-        className="border-neautral-300 md:border-t-none fixed bottom-0 z-50 mx-auto h-16 w-full flex-none border-t bg-neutral-100 duration-500 dark:border-neutral-800 dark:bg-neutral-900 md:top-0 md:flex md:items-center md:border-none md:bg-white md:dark:bg-black"
+        className="border-neautral-300 md:border-t-none fixed bottom-0 z-50 mx-auto flex h-16 w-full items-center border-t bg-neutral-100 duration-500 dark:border-neutral-800 dark:bg-neutral-900 md:top-0 md:border-none md:bg-white md:dark:bg-black"
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:w-full lg:px-8">
           <div className="mx-auto flex items-center justify-center md:justify-between">
-            <div className="hidden space-x-2 md:flex md:h-full md:w-full md:items-center">
+            <div className="hidden h-16 space-x-2 md:flex md:h-full md:w-full md:items-center">
               <Link href="/">
                 <a className="pt-1">
                   <Image
