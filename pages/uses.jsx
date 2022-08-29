@@ -63,7 +63,7 @@ export default function Projects({ stacks }) {
 export async function getStaticProps() {
   const data = await bucket.getObjects({
     query: {
-      type: "software-stacks",
+      type: "stacks",
     },
     props: "title,content,metadata",
   });
