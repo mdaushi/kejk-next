@@ -2,18 +2,41 @@ import Image from "next/image";
 import Link from "next/link";
 import NavLink from "./NavLink";
 
+const navItems = [
+  {
+    href: "/",
+    label: "Home",
+  },
+  {
+    href: "/writing",
+    label: "Writing",
+  },
+  {
+    href: "/projects",
+    label: "Projects",
+  },
+  {
+    href: "/bookmarks",
+    label: "Bookmarks",
+  },
+  {
+    href: "/uses",
+    label: "Stack",
+  },
+];
+
 const Nav = () => {
   return (
     <div>
       <div
         as="nav"
-        className="border-neautral-300 md:border-t-none fixed bottom-0 z-50 mx-auto h-16 w-full flex-none border-t bg-neutral-100 duration-500 dark:border-neutral-800 dark:bg-neutral-900 md:top-0 md:border-none md:bg-white md:dark:bg-black"
+        className="border-neautral-300 md:border-t-none fixed bottom-0 z-50 mx-auto h-16 w-full flex-none border-t bg-neutral-100 duration-500 dark:border-neutral-800 dark:bg-neutral-900 md:top-0 md:flex md:items-center md:border-none md:bg-white md:dark:bg-black"
       >
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto flex h-16 items-center justify-center md:justify-between">
-            <div className="hidden md:block">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 md:w-full lg:px-8">
+          <div className="mx-auto flex items-center justify-center md:justify-between">
+            <div className="hidden space-x-2 md:flex md:h-full md:w-full md:items-center">
               <Link href="/">
-                <a>
+                <a className="pt-1">
                   <Image
                     className="rounded-lg"
                     height="32px"
@@ -24,26 +47,23 @@ const Nav = () => {
                   />
                 </a>
               </Link>
+              <p className="w-max pl-2 pb-0 text-sm text-neutral-500 dark:text-neutral-400">
+                {"Press"}
+              </p>
+              <code className="w-max font-mono text-sm ">{"⌘[⌃] + K"}</code>
+              <p className="w-max pb-0 text-sm text-neutral-500 dark:text-neutral-400">
+                {"to find anything"}
+              </p>
             </div>
             <div className="mx-auto flex w-full items-center justify-center md:mx-0 md:justify-between">
               <div className="hidden shrink-0 items-center md:flex"></div>
               <div className="block">
                 <div className="flex items-center space-x-4">
-                  <NavLink href="/">
-                    <a className="nav">Home</a>
-                  </NavLink>
-                  <NavLink href="/writing">
-                    <a className="nav">Writing</a>
-                  </NavLink>
-                  <NavLink href="/projects">
-                    <a className="nav">Projects</a>
-                  </NavLink>
-                  <NavLink href="/bookmarks">
-                    <a className="nav">Bookmarks</a>
-                  </NavLink>
-                  <NavLink href="/uses">
-                    <a className="nav">Stack</a>
-                  </NavLink>
+                  {navItems.map((item, idx) => (
+                    <NavLink href={item.href} key={idx}>
+                      <a className="nav">{item.label}</a>
+                    </NavLink>
+                  ))}
                 </div>
               </div>
             </div>
