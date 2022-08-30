@@ -23,6 +23,7 @@ export const CommandPalette = ({
   useEffect(() => {
     function onKeydown(event) {
       if (event.key === "k" && (event.metaKey || event.ctrlKey)) {
+        event.preventDefault();
         setIsOpen(!isOpen);
       }
     }
