@@ -188,8 +188,8 @@ export default function Post({ allPosts, post }) {
           {allPosts !== undefined &&
             allPosts
               .filter((nextPost) => nextPost?.id !== post?.id)
-              .map((nextPost) => (
-                <Link key={nextPost.id} href={`/thoughts/${nextPost.slug}`}>
+              .map((nextPost, idx) => (
+                <Link key={idx} href={`/thoughts/${nextPost.slug}`}>
                   <a className="unstyled">
                     <WritingCard
                       title={nextPost.title}

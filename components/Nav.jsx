@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import NavLink from "./NavLink";
+import { useEffect, useState, useRef } from "react";
 
 const navItems = [
   {
@@ -26,6 +27,34 @@ const navItems = [
 ];
 
 const Nav = () => {
+  let os = useRef("");
+  let key = useRef("⌘");
+
+  useEffect(() => {
+    function getOS() {
+      const userAgent = window.navigator.userAgent.toLowerCase();
+      const macosPlatforms = /(macintosh|macintel|macppc|mac68k|macos|mac)/i;
+
+      if (macosPlatforms.test(userAgent)) {
+        os.current = "mac";
+      } else {
+        os.current = "windows";
+      }
+    }
+    return getOS;
+  }, []);
+
+  useEffect(() => {
+    function setOS() {
+      if (os.current === "mac") {
+        key.current = "⌘";
+      } else {
+        key.current = "⌃";
+      }
+    }
+    return setOS;
+  }, []);
+
   return (
     <div>
       <div
@@ -51,7 +80,7 @@ const Nav = () => {
                 {"Press"}
               </p>
               <code className="w-max font-mono text-sm text-teal-700 dark:text-teal-300">
-                {"⌘[⌃] + K"}
+                {`${key.current} + K`}
               </code>
               <p className="w-max pb-0 text-sm text-neutral-500 dark:text-neutral-400">
                 {"to find anything"}

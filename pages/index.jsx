@@ -115,9 +115,9 @@ export default function Home({
           Writing
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
-          {writings.map((writing) => {
+          {writings.map((writing, idx) => {
             return (
-              <Link key={writing.id} href={`/thoughts/${writing.slug}`}>
+              <Link key={idx} href={`/thoughts/${writing.slug}`}>
                 <a className="unstyled">
                   <WritingCard
                     title={writing.title}
@@ -146,10 +146,10 @@ export default function Home({
           Apps and projects
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
-          {apps.map((app) => {
+          {apps.map((app, idx) => {
             return (
               <AppCard
-                key={app.id}
+                key={idx}
                 link={app.metadata.url}
                 image={app.metadata.cover.imgix_url}
                 title={app.title}
@@ -163,10 +163,10 @@ export default function Home({
           Recent features
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
-          {features.map((feature) => {
+          {features.map((feature, idx) => {
             return (
               <FeatureCard
-                key={feature.id}
+                key={idx}
                 link={feature.metadata.url}
                 title={feature.title}
                 type={feature.metadata.type}
@@ -179,10 +179,10 @@ export default function Home({
           Albums
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
-          {albums.map((album) => {
+          {albums.map((album, idx) => {
             return (
               <AppCard
-                key={album.id}
+                key={idx}
                 link={album.metadata.url}
                 image={album.metadata.cover.imgix_url}
                 title={album.title}
@@ -196,10 +196,10 @@ export default function Home({
           Bookmarks
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
-          {bookmarks.map((bookmark) => {
+          {bookmarks.map((bookmark, idx) => {
             return (
               <a
-                key={bookmark.id}
+                key={idx}
                 href={`${bookmark.metadata.url}`}
                 target="_blank"
                 rel="noreferrer"
@@ -227,10 +227,10 @@ export default function Home({
           </Link>
         </div>
         <div className="mt-8 flex w-full items-center justify-between md:mt-16 md:justify-center md:gap-8">
-          {socials.map((social) => {
+          {socials.map((social, idx) => {
             return (
               <SocialLink
-                key={social.title}
+                key={idx}
                 href={`${social.metadata.url}`}
                 title={social.title}
               />

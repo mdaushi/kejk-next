@@ -89,11 +89,11 @@ export default function Bookmark({ bookmarks }) {
             />
             <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
               {foundBookmarks && foundBookmarks.length > 0 ? (
-                foundBookmarks.map((bookmark) => {
+                foundBookmarks.map((bookmark, idx) => {
                   const trimmedURL = bookmark.metadata.url.replace(regex, "");
                   return (
                     <a
-                      key={bookmark.id}
+                      key={idx}
                       href={`${bookmark.metadata.url}`}
                       target="_blank"
                       rel="noreferrer"

@@ -160,8 +160,8 @@ export const CommandPalette = ({
                         static
                         className="ml-0 mb-0 max-h-64 list-none  overflow-y-auto pt-2"
                       >
-                        {filteredItemsArray.map((item) => (
-                          <Combobox.Option key={item.id} value={item}>
+                        {filteredItemsArray.map((item, idx) => (
+                          <Combobox.Option key={idx} value={item}>
                             {({ active }) => (
                               <div
                                 className={`flex w-full cursor-pointer items-center justify-between rounded p-3 text-sm text-black transition-all duration-75 ease-in hover:bg-teal-200 dark:text-white dark:hover:bg-teal-900 ${

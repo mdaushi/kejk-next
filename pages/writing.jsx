@@ -196,9 +196,9 @@ export default function Writing({ writings }) {
           />
           <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
             {foundPosts && foundPosts.length > 0 ? (
-              foundPosts.map((writing) => {
+              foundPosts.map((writing, idx) => {
                 return (
-                  <Link key={writing.id} href={`/thoughts/${writing.slug}`}>
+                  <Link key={idx} href={`/thoughts/${writing.slug}`}>
                     <a className="unstyled">
                       <WritingCard
                         title={writing.title}

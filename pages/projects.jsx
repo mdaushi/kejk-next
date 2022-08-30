@@ -48,10 +48,10 @@ export default function Projects({ apps, utilities, clients }) {
           Personal
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
-          {apps.map((app) => {
+          {apps.map((app, idx) => {
             return (
               <AppCard
-                key={app.id}
+                key={idx}
                 link={app.metadata.url}
                 image={app.metadata.cover?.imgix_url}
                 title={app.title}
@@ -61,10 +61,10 @@ export default function Projects({ apps, utilities, clients }) {
           })}
         </div>
         <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
-          {utilities.map((utility) => {
+          {utilities.map((utility, idx) => {
             return (
               <AppCard
-                key={utility.id}
+                key={idx}
                 link={utility.metadata.url}
                 image={utility.metadata.cover?.imgix_url}
                 title={utility.title}
@@ -77,10 +77,10 @@ export default function Projects({ apps, utilities, clients }) {
           Clients
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
-          {clients.map((client) => {
+          {clients.map((client, idx) => {
             return (
               <AppCard
-                key={client.id}
+                key={idx}
                 link={client.metadata.url}
                 image={client.metadata.cover?.imgix_url}
                 title={client.title}

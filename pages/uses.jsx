@@ -42,10 +42,10 @@ export default function Projects({ stacks }) {
       <main>
         <PageHeader>Stack</PageHeader>
         <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {stacks.map((stack) => {
+          {stacks.map((stack, idx) => {
             return (
               <StackCard
-                key={stack.id}
+                key={idx}
                 link={stack.metadata.url}
                 image={stack.metadata.icon.imgix_url}
                 title={stack.title}
