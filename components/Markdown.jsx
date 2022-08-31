@@ -5,12 +5,7 @@ import classnames from "classnames";
 const components = {
   a: (a) => {
     return (
-      <a
-        href={a.href}
-        rel="noopener noreferrer"
-        target="_blank"
-        className="transition-opacity hover:opacity-70"
-      >
+      <a href={a.href} rel="noopener noreferrer" target="_blank">
         {a.children}
       </a>
     );
