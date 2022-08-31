@@ -201,8 +201,12 @@ input[type="search"]::-webkit-search-cancel-button {
   background-size: contain;
 }
 
+.invisible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 ::-webkit-scrollbar {
-  width: 0.5em;
+  @apply w-[0.5em];
 }
 
 ::-webkit-scrollbar-track {
@@ -210,5 +214,5 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply rounded-full bg-neutral-200 dark:bg-neutral-600;
+  @apply w-2 rounded-full bg-neutral-200 dark:bg-neutral-600;
 }
