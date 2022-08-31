@@ -66,7 +66,6 @@ const Nav = () => {
               </p>
               <code className="w-max font-mono text-sm text-teal-700 dark:text-teal-300">
                 {`${key} + K`}
-                {/* {`⌘[⌃] + K`} */}
               </code>
               <p className="w-max pb-0 text-sm text-neutral-500 dark:text-neutral-400">
                 {"to find anything"}
