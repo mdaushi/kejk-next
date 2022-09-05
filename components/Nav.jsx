@@ -44,7 +44,7 @@ const Nav = () => {
     <div>
       <div
         as="nav"
-        className="border-neautral-300 md:border-t-none fixed bottom-0 z-50 mx-auto flex h-16 w-full items-center border-t bg-neutral-100 duration-500 dark:border-neutral-800 dark:bg-neutral-900 md:top-0 md:border-none md:bg-white md:dark:bg-black"
+        className="border-neautral-300 md:border-t-none fixed bottom-0 z-50 mx-auto flex h-16 w-full items-center border-t bg-gray-100 duration-500 dark:border-gray-800 dark:bg-gray-900 md:top-0 md:border-none md:bg-white md:dark:bg-[#0D1116]"
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:w-full lg:px-8">
           <div className="mx-auto flex items-center justify-center md:justify-between">
@@ -61,13 +61,13 @@ const Nav = () => {
                   />
                 </a>
               </Link>
-              <p className="w-max pl-2 pb-0 text-sm text-neutral-500 dark:text-neutral-400">
+              <p className="w-max pl-2 pb-0 text-sm text-gray-500 dark:text-gray-400">
                 {"Press"}
               </p>
               <code className="w-max font-mono text-sm text-teal-700 dark:text-teal-300">
                 {`${key} + K`}
               </code>
-              <p className="w-max pb-0 text-sm text-neutral-500 dark:text-neutral-400">
+              <p className="w-max pb-0 text-sm text-gray-500 dark:text-gray-400">
                 {"to find anything"}
               </p>
             </div>

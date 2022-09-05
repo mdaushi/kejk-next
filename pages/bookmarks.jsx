@@ -109,7 +109,7 @@ export default function Bookmark({ bookmarks }) {
                   );
                 })
               ) : (
-                <p className="w-full justify-center text-center text-neutral-600 dark:text-neutral-400">
+                <p className="w-full justify-center text-center text-gray-600 dark:text-gray-400">
                   No results for <strong>{title}</strong>. Try searching for{" "}
                   <em>Code</em>.
                 </p>
@@ -117,9 +117,9 @@ export default function Bookmark({ bookmarks }) {
             </div>
             {/* <div className="mt-12 flex w-full justify-center">
               <Button
-                bgColor="bg-white dark:bg-black"
+                bgColor="bg-white dark:bg-[#0D1116]"
                 textColor="text-black dark:text-white"
-                borderColor="border-neutral-200 dark:border-neutral-700"
+                borderColor="border-gray-200 dark:border-gray-700"
                 onClick={() => {
                   loadMorePosts();
                 }}

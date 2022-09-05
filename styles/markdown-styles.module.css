@@ -6,15 +6,15 @@
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
-  @apply pt-4 text-neutral-500 dark:text-neutral-300;
+  @apply pt-4 text-gray-500 dark:text-gray-300;
 }
 
 .markdown h2 {
-  @apply mt-4 mb-4 text-2xl font-bold leading-snug text-neutral-700 dark:text-neutral-300;
+  @apply mt-4 mb-4 text-2xl font-bold leading-snug text-gray-700 dark:text-gray-300;
 }
 
 .markdown h3 {
-  @apply mt-4 mb-2 text-xl font-semibold leading-snug text-neutral-800 dark:text-neutral-200;
+  @apply mt-4 mb-2 text-xl font-semibold leading-snug text-gray-800 dark:text-gray-200;
 }
 
 .markdown a {

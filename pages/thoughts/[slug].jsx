@@ -23,18 +23,18 @@ import WritingCard from "../../components/WritingCard";
 const VIEWPORT_PADDING = 24;
 
 const slideIn = keyframes({
-  from: { transform: `translateX(calc(100% + ${VIEWPORT_PADDING}px))` },
-  to: { transform: "translateX(0)" },
+  from: { transform: `trangrayX(calc(100% + ${VIEWPORT_PADDING}px))` },
+  to: { transform: "trangrayX(0)" },
 });
 
 const slideOut = keyframes({
-  from: { transform: "translateX(0)" },
-  to: { transform: `translateX(calc(100% + ${VIEWPORT_PADDING}px))` },
+  from: { transform: "trangrayX(0)" },
+  to: { transform: `trangrayX(calc(100% + ${VIEWPORT_PADDING}px))` },
 });
 
 const swipeOut = keyframes({
-  from: { transform: "translateX(var(--radix-toast-swipe-end-x))" },
-  to: { transform: `translateX(calc(100% + ${VIEWPORT_PADDING}px))` },
+  from: { transform: "trangrayX(var(--radix-toast-swipe-end-x))" },
+  to: { transform: `trangrayX(calc(100% + ${VIEWPORT_PADDING}px))` },
 });
 
 const StyledToast = styled(ToastPrimitive.Root, {
@@ -46,10 +46,10 @@ const StyledToast = styled(ToastPrimitive.Root, {
       animation: `${slideOut} 100ms ease-in`,
     },
     '&[data-swipe="move"]': {
-      transform: "translateX(var(--radix-toast-swipe-move-x))",
+      transform: "trangrayX(var(--radix-toast-swipe-move-x))",
     },
     '&[data-swipe="cancel"]': {
-      transform: "translateX(0)",
+      transform: "trangrayX(0)",
       transition: "transform 200ms ease-out",
     },
     '&[data-swipe="end"]': {
@@ -128,7 +128,7 @@ export default function Post({ allPosts, post }) {
               <Link href={"/writing"}>
                 <a className="unstyled">
                   <TextButton textColor="black" darkTextColor="white">
-                    <ArrowLongLeftIcon className="mr-2 h-6 w-6 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
+                    <ArrowLongLeftIcon className="mr-2 h-6 w-6 flex-shrink-0 text-gray-500 group-hover:text-teal-500 dark:text-gray-400" />
                     All thoughts
                   </TextButton>
                 </a>
@@ -158,29 +158,29 @@ export default function Post({ allPosts, post }) {
                 }, 100);
               }}
               className={classNames(
-                `mb-4 flex items-center justify-center space-x-2 rounded-md border border-neutral-200 bg-neutral-100 py-2 px-4 text-sm font-medium text-black transition ease-in-out hover:border-teal-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white md:w-max md:text-base`
+                `mb-4 flex items-center justify-center space-x-2 rounded-md border border-gray-200 bg-gray-100 py-2 px-4 text-sm font-medium text-black transition ease-in-out hover:border-teal-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white md:w-max md:text-base`
               )}
             >
-              <LinkIcon className="mr-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+              <LinkIcon className="mr-2 h-6 w-6 flex-shrink-0 text-gray-500 dark:text-gray-400" />
               Copy link to clipboard
             </button>
             <Toast
               open={open}
               onOpenChange={setOpen}
-              className="space-y-2 rounded-lg border border-neutral-200 bg-neutral-100 p-4 shadow-lg dark:border-neutral-700 dark:bg-neutral-800"
+              className="space-y-2 rounded-lg border border-gray-200 bg-gray-100 p-4 shadow-lg dark:border-gray-700 dark:bg-gray-800"
             >
               <ToastTitle className="flex items-center text-black dark:text-white">
                 <CheckCircleIcon className="mr-2 h-6 w-6 flex-shrink-0 text-teal-500 dark:text-teal-400" />
                 {"Copied to clipboard!"}
               </ToastTitle>
-              <ToastDescription className="font-mono text-xs text-neutral-600 dark:text-neutral-400">
+              <ToastDescription className="font-mono text-xs text-gray-600 dark:text-gray-400">
                 {"https://www.kejk.tech/thoughts/" + post?.slug}
               </ToastDescription>
             </Toast>
             <ToastViewport className="felx-col w- fixed bottom-0 right-0 z-50 m-0 flex w-auto max-w-screen-sm list-none gap-4 p-6 outline-none" />
           </ToastProvider>
         </div>
-        <hr className="my-4 border-neutral-300 dark:border-neutral-700" />
+        <hr className="my-4 border-gray-300 dark:border-gray-700" />
         <AllCapsHeader marginTop={0} justify={"justify-start"}>
           More to explore
         </AllCapsHeader>
