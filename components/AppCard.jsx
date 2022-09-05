@@ -5,7 +5,7 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 const AppCard = ({ title, subtitle, image, link }) => {
   return (
     <a
-      className="unstyled space-y-2 rounded-xl border border-neutral-200 p-4 transition-all ease-in-out hover:cursor-pointer hover:border-teal-600 hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-900
+      className="unstyled space-y-2 rounded-xl border border-gray-200 p-4 transition-all ease-in-out hover:cursor-pointer hover:border-teal-600 hover:bg-gray-50 dark:border-gray-700 dark:hover:bg-gray-900
     "
       href={link}
       rel="noreferrer"
@@ -21,14 +21,14 @@ const AppCard = ({ title, subtitle, image, link }) => {
           alt="Image of the plugin icon"
           quality={50}
         />
-        <ArrowTopRightOnSquareIcon className="h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+        <ArrowTopRightOnSquareIcon className="h-4 w-4 flex-shrink-0 text-gray-500 dark:text-gray-400" />
       </div>
       <div className="flex w-full items-center gap-2">
-        <header className="text-md mr-2 block font-bold text-neutral-700 dark:text-neutral-200">
+        <header className="text-md mr-2 block font-bold text-gray-700 dark:text-gray-200">
           {title}
         </header>
       </div>
-      <span className="block font-mono text-sm text-neutral-500 dark:text-neutral-400">
+      <span className="block font-mono text-sm text-gray-500 dark:text-gray-400">
         {subtitle}
       </span>
     </a>

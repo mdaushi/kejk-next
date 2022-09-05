@@ -140,16 +140,16 @@ export const CommandPalette = ({
                         ? (window.location.href = `${item.metadata.url}`)
                         : (window.location.href = `${item.url}`);
                     }}
-                    className="w-[90vw] transform divide-y divide-neutral-100 overflow-hidden rounded-2xl bg-neutral-50 p-2 text-left align-middle shadow-xl transition-all dark:divide-neutral-800 dark:border dark:border-neutral-700 dark:bg-neutral-900 md:w-[40vw]"
+                    className="w-[90vw] transform divide-y divide-gray-100 overflow-hidden rounded-2xl bg-gray-50 p-2 text-left align-middle shadow-xl transition-all dark:divide-gray-800 dark:border dark:border-gray-700 dark:bg-gray-900 md:w-[40vw]"
                   >
                     <div className="flex items-center">
                       <MagnifyingGlassIcon
                         width={16}
                         height={16}
-                        className="text-neutral-600 dark:text-neutral-300"
+                        className="text-gray-600 dark:text-gray-300"
                       />
                       <Combobox.Input
-                        className="w-full rounded-full bg-transparent p-2 text-neutral-900 focus:outline-none  dark:text-neutral-300 md:rounded-md "
+                        className="w-full rounded-full bg-transparent p-2 text-gray-900 focus:outline-none  dark:text-gray-300 md:rounded-md "
                         placeholder={"Search..."}
                         onChange={(e) => {
                           setQuery(e.target.value);
@@ -174,7 +174,7 @@ export const CommandPalette = ({
                                 <div className="flex w-full items-center justify-start space-x-4">
                                   {item.title}
                                   <span
-                                    className={`ml-1 text-neutral-500 hover:text-teal-800 dark:text-neutral-400 hover:dark:text-teal-200 ${
+                                    className={`ml-1 text-gray-500 hover:text-teal-800 dark:text-gray-400 hover:dark:text-teal-200 ${
                                       active &&
                                       "text-teal-800 dark:text-teal-200"
                                     }`}

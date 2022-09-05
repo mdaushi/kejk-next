@@ -132,14 +132,14 @@ const LazyPDF = ({ lazyPDF, stats }) => {
           <Link href={"#"}>
             <a className="unstyled" onClick={goBack}>
               <TextButton textColor="black" darkTextColor="white">
-                <ArrowLongLeftIcon className="mr-2 h-6 w-6 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
+                <ArrowLongLeftIcon className="mr-2 h-6 w-6 flex-shrink-0 text-gray-500 group-hover:text-teal-500 dark:text-gray-400" />
                 Go back
               </TextButton>
             </a>
           </Link>
         </div>
         <PageHeader>{lazyPDF.title}</PageHeader>
-        <h2 className="mb-4 text-left text-2xl font-medium text-neutral-700 dark:text-neutral-400 md:text-2xl">
+        <h2 className="mb-4 text-left text-2xl font-medium text-gray-700 dark:text-gray-400 md:text-2xl">
           {lazyPDF.metadata.subtitle}
         </h2>
         <div className="h-auto w-full max-w-3xl">
@@ -172,11 +172,11 @@ const LazyPDF = ({ lazyPDF, stats }) => {
             >
               <button
                 className={classNames(
-                  `mb-4 flex items-center justify-center space-x-2 rounded-md border border-neutral-200 bg-neutral-100 py-2 px-4 text-sm font-medium text-black transition ease-in-out hover:border-teal-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white md:w-max md:text-base`
+                  `mb-4 flex items-center justify-center space-x-2 rounded-md border border-gray-200 bg-gray-100 py-2 px-4 text-sm font-medium text-black transition ease-in-out hover:border-teal-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white md:w-max md:text-base`
                 )}
                 id="downloads"
               >
-                <ArrowDownIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+                <ArrowDownIcon className="mr-2 h-4 w-4 flex-shrink-0 text-gray-500 dark:text-gray-400" />
                 Download
               </button>
             </a>
@@ -228,11 +228,11 @@ const LazyPDF = ({ lazyPDF, stats }) => {
           >
             <button
               className={classNames(
-                `mb-4 flex items-center justify-center space-x-2 rounded-md border border-neutral-200 bg-neutral-100 py-2 px-4 text-sm font-medium text-black transition ease-in-out hover:border-teal-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white md:w-max md:text-base`
+                `mb-4 flex items-center justify-center space-x-2 rounded-md border border-gray-200 bg-gray-100 py-2 px-4 text-sm font-medium text-black transition ease-in-out hover:border-teal-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white md:w-max md:text-base`
               )}
               id="downloads"
             >
-              <ArrowDownIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+              <ArrowDownIcon className="mr-2 h-4 w-4 flex-shrink-0 text-gray-500 dark:text-gray-400" />
               Download
             </button>
           </a>
