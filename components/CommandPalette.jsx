@@ -165,7 +165,7 @@ export const CommandPalette = ({
                           <Combobox.Option key={idx} value={item}>
                             {({ active }) => (
                               <div
-                                className={`flex w-full cursor-pointer items-center justify-between rounded p-3 text-sm text-black transition-all duration-75 ease-in hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800 ${
+                                className={`flex w-full cursor-pointer items-center justify-between rounded p-3 tracking-wider text-black transition-all duration-75 ease-in hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800 ${
                                   active
                                     ? "bg-gray-200 dark:bg-gray-700"
                                     : "bg-transparent"

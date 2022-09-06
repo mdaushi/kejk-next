@@ -4,7 +4,7 @@
         <title>KEJK | Writing</title>
         <link>https://kejk.tech</link>
         <description>Thoughts on design, development and career progression</description>
-        <lastBuildDate>Mon, 05 Sep 2022 07:14:16 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 06 Sep 2022 19:37:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -44,8 +44,8 @@
             <title><![CDATA[How to make friends and influence designers]]></title>
             <link>https://kejk.tech/thoughts/how-to-make-friends-and-influence-designers</link>
             <guid>62e2e0f39f26bd0e6c6b2c21</guid>
-            <pubDate>Sun, 31 Jul 2022 10:09:49 GMT</pubDate>
-            <description><![CDATA[Why every design crit should be presented on slides]]></description>
+            <pubDate>Tue, 06 Sep 2022 06:51:20 GMT</pubDate>
+            <description><![CDATA[Why every design crit should be well structured, predictable and facilitated]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/aeb86150-8bea-11ec-ae88-8982447d5ddf-How-to-make-friends-and-influence-designers2x.png" length="0" type="image/png"/>
         </item>
@@ -98,7 +98,7 @@
             <title><![CDATA[Tempo: Designing a product that demands to not be used]]></title>
             <link>https://kejk.tech/thoughts/tempo-designing-a-product-that-demands-to-not-be-used</link>
             <guid>62e2e0f29f26bd0e6c6b2b2b</guid>
-            <pubDate>Sat, 30 Jul 2022 10:54:19 GMT</pubDate>
+            <pubDate>Tue, 06 Sep 2022 07:17:31 GMT</pubDate>
             <description><![CDATA[Tempo is a minimalist email client, making email simple again]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/ab9e5b20-faa2-11eb-a0e3-6dfb85d6dcb4-Tempo-Designing-a-product-that-demands-to-not-be-used2x.png" length="0" type="image/png"/>
@@ -116,7 +116,7 @@
             <title><![CDATA[What I've learnt over the past year]]></title>
             <link>https://kejk.tech/thoughts/what-ive-learnt-over-the-past-year</link>
             <guid>62e2e0f29f26bd0e6c6b2b13</guid>
-            <pubDate>Sun, 31 Jul 2022 10:14:08 GMT</pubDate>
+            <pubDate>Tue, 06 Sep 2022 06:27:55 GMT</pubDate>
             <description><![CDATA[Lessons I’ve learnt over the past year.]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/ff5c95a0-c5f1-11eb-93bc-d7c81bee3189-D7882D40-C6C3-4DBA-ACA2-1CDDCE7EAEE2.png" length="0" type="image/png"/>
@@ -170,7 +170,7 @@
             <title><![CDATA[How music, design and code are all the same]]></title>
             <link>https://kejk.tech/thoughts/how-music-design-and-development-are-all-the-same</link>
             <guid>62e2e0f19f26bd0e6c6b2add</guid>
-            <pubDate>Sat, 05 Feb 2022 12:50:25 GMT</pubDate>
+            <pubDate>Tue, 06 Sep 2022 06:24:35 GMT</pubDate>
             <description><![CDATA[I wouldn't say I believe creativity is a gift we're born with. I don't believe my abilities are.]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/c68fdb50-b580-11eb-b5b6-fd115d17c053-How-music-design-and-code-are-all-the-same2x.png" length="0" type="image/png"/>
@@ -179,7 +179,7 @@
             <title><![CDATA[Designing in the open]]></title>
             <link>https://kejk.tech/thoughts/designing-in-the-open</link>
             <guid>62e2e0f19f26bd0e6c6b2ad1</guid>
-            <pubDate>Tue, 21 Dec 2021 13:43:42 GMT</pubDate>
+            <pubDate>Tue, 06 Sep 2022 06:19:37 GMT</pubDate>
             <description><![CDATA[What I’ve learnt about sharing constantly and live designing with my team.]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/1ea17b00-b581-11eb-b5b6-fd115d17c053-Designing-in-the-open2x.png" length="0" type="image/png"/>
@@ -224,7 +224,7 @@
             <title><![CDATA[Ten Principles for Good Design]]></title>
             <link>https://kejk.tech/thoughts/ten-principles-for-good-design</link>
             <guid>62e2e0f19f26bd0e6c6b2ac5</guid>
-            <pubDate>Mon, 15 Aug 2022 06:18:57 GMT</pubDate>
+            <pubDate>Tue, 06 Sep 2022 06:14:25 GMT</pubDate>
             <description><![CDATA[I decided to put together a free, multi-device, minimal wallpaper of Ram's ten principles. ]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/3c812f80-b581-11eb-b5b6-fd115d17c053-Ten-Principles-for-Good-Design2x.png" length="0" type="image/png"/>
@@ -242,7 +242,7 @@
             <title><![CDATA[Don’t let your role define you]]></title>
             <link>https://kejk.tech/thoughts/dont-let-your-role-define-you</link>
             <guid>62e2e0f19f26bd0e6c6b2ad7</guid>
-            <pubDate>Tue, 21 Dec 2021 13:43:07 GMT</pubDate>
+            <pubDate>Tue, 06 Sep 2022 06:12:35 GMT</pubDate>
             <description><![CDATA[A practical guide on how to navigate your career when the path you're heading down isn't the one you truly want.]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/04668b90-b581-11eb-b5b6-fd115d17c053-Dont-let-your-role-define-you2x.png" length="0" type="image/png"/>

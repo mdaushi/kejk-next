@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kejk.tech</id>
     <title>KEJK | Writing</title>
-    <updated>2022-09-05T07:14:16.802Z</updated>
+    <updated>2022-09-06T19:37:40.784Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Karl Emil James Koch</name>
@@ -70,8 +70,8 @@
         <title type="html"><![CDATA[How to make friends and influence designers]]></title>
         <id>62e2e0f39f26bd0e6c6b2c21</id>
         <link href="https://kejk.tech/thoughts/how-to-make-friends-and-influence-designers"/>
-        <updated>2022-07-31T10:09:49.017Z</updated>
-        <summary type="html"><![CDATA[Why every design crit should be presented on slides]]></summary>
+        <updated>2022-09-06T06:51:20.154Z</updated>
+        <summary type="html"><![CDATA[Why every design crit should be well structured, predictable and facilitated]]></summary>
         <author>
             <name>Karl Emil James Koch</name>
             <email>karl@kejk.tech</email>
@@ -172,7 +172,7 @@
         <title type="html"><![CDATA[Tempo: Designing a product that demands to not be used]]></title>
         <id>62e2e0f29f26bd0e6c6b2b2b</id>
         <link href="https://kejk.tech/thoughts/tempo-designing-a-product-that-demands-to-not-be-used"/>
-        <updated>2022-07-30T10:54:19.307Z</updated>
+        <updated>2022-09-06T07:17:31.161Z</updated>
         <summary type="html"><![CDATA[Tempo is a minimalist email client, making email simple again]]></summary>
         <author>
             <name>Karl Emil James Koch</name>
@@ -206,7 +206,7 @@
         <title type="html"><![CDATA[What I've learnt over the past year]]></title>
         <id>62e2e0f29f26bd0e6c6b2b13</id>
         <link href="https://kejk.tech/thoughts/what-ive-learnt-over-the-past-year"/>
-        <updated>2022-07-31T10:14:08.280Z</updated>
+        <updated>2022-09-06T06:27:55.159Z</updated>
         <summary type="html"><![CDATA[Lessons I’ve learnt over the past year.]]></summary>
         <author>
             <name>Karl Emil James Koch</name>
@@ -308,7 +308,7 @@
         <title type="html"><![CDATA[How music, design and code are all the same]]></title>
         <id>62e2e0f19f26bd0e6c6b2add</id>
         <link href="https://kejk.tech/thoughts/how-music-design-and-development-are-all-the-same"/>
-        <updated>2022-02-05T12:50:25.990Z</updated>
+        <updated>2022-09-06T06:24:35.710Z</updated>
         <summary type="html"><![CDATA[I wouldn't say I believe creativity is a gift we're born with. I don't believe my abilities are.]]></summary>
         <author>
             <name>Karl Emil James Koch</name>
@@ -325,7 +325,7 @@
         <title type="html"><![CDATA[Designing in the open]]></title>
         <id>62e2e0f19f26bd0e6c6b2ad1</id>
         <link href="https://kejk.tech/thoughts/designing-in-the-open"/>
-        <updated>2021-12-21T13:43:42.398Z</updated>
+        <updated>2022-09-06T06:19:37.671Z</updated>
         <summary type="html"><![CDATA[What I’ve learnt about sharing constantly and live designing with my team.]]></summary>
         <author>
             <name>Karl Emil James Koch</name>
@@ -410,7 +410,7 @@
         <title type="html"><![CDATA[Ten Principles for Good Design]]></title>
         <id>62e2e0f19f26bd0e6c6b2ac5</id>
         <link href="https://kejk.tech/thoughts/ten-principles-for-good-design"/>
-        <updated>2022-08-15T06:18:57.213Z</updated>
+        <updated>2022-09-06T06:14:25.139Z</updated>
         <summary type="html"><![CDATA[I decided to put together a free, multi-device, minimal wallpaper of Ram's ten principles. ]]></summary>
         <author>
             <name>Karl Emil James Koch</name>
@@ -444,7 +444,7 @@
         <title type="html"><![CDATA[Don’t let your role define you]]></title>
         <id>62e2e0f19f26bd0e6c6b2ad7</id>
         <link href="https://kejk.tech/thoughts/dont-let-your-role-define-you"/>
-        <updated>2021-12-21T13:43:07.044Z</updated>
+        <updated>2022-09-06T06:12:35.850Z</updated>
         <summary type="html"><![CDATA[A practical guide on how to navigate your career when the path you're heading down isn't the one you truly want.]]></summary>
         <author>
             <name>Karl Emil James Koch</name>
