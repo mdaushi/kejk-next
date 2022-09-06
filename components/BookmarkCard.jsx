@@ -14,7 +14,7 @@ const BookmarkCard = ({ title, subtitle, url, date }) => {
         <ArrowLongRightIcon className="h-6 w-6 flex-shrink-0 text-gray-500 dark:text-gray-400" />
       </div>
       <div className="flex min-h-full w-full flex-1 flex-col justify-between ">
-        <span className="flex text-sm leading-6 text-gray-500 dark:text-gray-400">
+        <span className="flex leading-6 text-gray-500 dark:text-gray-400">
           {subtitle}
         </span>
         <div className="flex pt-4 text-sm leading-6 text-gray-500 dark:text-gray-400">

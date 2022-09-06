@@ -16,7 +16,7 @@ const FeatureCard = ({ title, type, link }) => {
         </header>
         <ArrowLongRightIcon className="h-6 w-6 flex-shrink-0 text-gray-500 dark:text-gray-400" />
       </div>
-      <span className="block text-sm leading-6 text-teal-700 dark:text-teal-400">
+      <span className="block leading-6 text-teal-700 dark:text-teal-400">
         {type}
       </span>
     </a>

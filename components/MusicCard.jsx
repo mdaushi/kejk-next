@@ -28,7 +28,7 @@ const MusicCard = ({ title, subtitle, image, link }) => {
           {title}
         </header>
       </div>
-      <span className="block font-mono text-sm text-gray-500 dark:text-gray-400">
+      <span className="block font-mono text-gray-500 dark:text-gray-400">
         {subtitle}
       </span>
     </a>

@@ -30,7 +30,7 @@ const StackCard = ({ title, subtitle, image, link, tags }) => {
           {title}
         </header>
       </div>
-      <span className="block font-mono text-sm text-gray-500 dark:text-gray-400">
+      <span className="block font-mono text-gray-500 dark:text-gray-400">
         {subtitle}
       </span>
       <div className="flex w-full items-center justify-start space-x-2 pt-4">
