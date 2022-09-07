@@ -140,7 +140,7 @@ export const CommandPalette = ({
                         ? (window.location.href = `${item.metadata.url}`)
                         : (window.location.href = `${item.url}`);
                     }}
-                    className="w-[90vw] transform divide-y divide-gray-100 overflow-hidden rounded-2xl bg-gray-50 p-2 text-left align-middle shadow-xl transition-all dark:divide-gray-800 dark:border dark:border-gray-700 dark:bg-gray-900 md:w-[40vw]"
+                    className="w-[90vw] transform divide-y divide-gray-100 overflow-hidden rounded-2xl bg-gray-50 p-2 text-left align-middle shadow-xl transition-all dark:divide-gray-800 dark:border dark:border-gray-700 dark:bg-gray-900 md:w-[75vw] lg:w-[50vw]"
                   >
                     <div className="flex items-center">
                       <MagnifyingGlassIcon
