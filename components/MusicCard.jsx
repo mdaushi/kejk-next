@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/future/image";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 const MusicCard = ({ title, subtitle, image, link }) => {
@@ -14,11 +14,12 @@ const MusicCard = ({ title, subtitle, image, link }) => {
       <div className="flex w-full items-start justify-between pb-2">
         <Image
           className="rounded"
+          src={image}
           width={50}
           height={50}
           placeholder="blur"
           blurDataURL={`${image}?auto=format,compress&q=1&blur=500&w=2`}
-          alt="Image of the plugin icon"
+          alt="Image of the music album art"
           quality={50}
         />
         <ArrowTopRightOnSquareIcon className="h-4 w-4 flex-shrink-0 text-gray-500 dark:text-gray-400" />

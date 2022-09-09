@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/future/image";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 const AppCard = ({ title, subtitle, image, link }) => {
@@ -13,9 +13,9 @@ const AppCard = ({ title, subtitle, image, link }) => {
       <div className="flex w-full items-start justify-between pb-2">
         <Image
           className="rounded"
+          src={image}
           width={50}
           height={50}
-          src={image}
           placeholder="blur"
           blurDataURL={`${image}?auto=format,compress&q=1&blur=500&w=2`}
           alt="Image of the plugin icon"

@@ -1,7 +1,7 @@
-import Image from "next/image";
+import Image from "next/future/image";
 import Link from "next/link";
 import NavLink from "./NavLink";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 
 const navItems = [
   {
@@ -53,8 +53,8 @@ const Nav = () => {
                 <a className="pt-1">
                   <Image
                     className="rounded-lg"
-                    height="32px"
-                    width="32px"
+                    height={32}
+                    width={32}
                     src="/logo.svg"
                     alt="Logo"
                     quality={50}

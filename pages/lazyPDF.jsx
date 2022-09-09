@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import Image from "next/future/image";
 import PageHeader from "../components/PageHeader";
 import classNames from "classnames";
 import { ArrowLongLeftIcon, HeartIcon } from "@heroicons/react/24/outline";
@@ -146,15 +146,14 @@ const LazyPDF = ({ lazyPDF, stats }) => {
           <Image
             className="rounded-md"
             src={lazyPDF.metadata.hero?.imgix_url}
-            alt="Image of the app icon"
             width={1000}
             height={700}
             quality={100}
-            layout="responsive"
             objectFit="cover"
             objectPosition="center"
             placeholder="blur"
             blurDataURL={`${lazyPDF.metadata.hero?.imgix_url}?auto=format,compress&q=1&blur=500&w=2`}
+            alt="Image of the app icon"
             priority
           />
         </div>
