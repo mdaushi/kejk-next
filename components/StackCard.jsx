@@ -26,11 +26,11 @@ const StackCard = ({ title, subtitle, image, link, tags }) => {
         <ArrowTopRightOnSquareIcon className="h-4 w-4 flex-shrink-0 text-gray-500 dark:text-gray-400" />
       </div>
       <div className="flex w-full items-center gap-2">
-        <header className="mr-2 block text-lg font-bold tracking-wide text-gray-700 dark:text-gray-200">
+        <header className="mr-2 text-lg font-bold tracking-wide text-gray-700 dark:text-gray-200">
           {title}
         </header>
       </div>
-      <span className="block font-mono text-gray-500 dark:text-gray-400">
+      <span className="font-mono tracking-tight text-gray-500 dark:text-gray-400">
         {subtitle}
       </span>
       <div className="flex w-full items-center justify-start space-x-2 pt-4">

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kejk.tech</id>
     <title>KEJK | Writing</title>
-    <updated>2022-09-06T19:37:40.784Z</updated>
+    <updated>2022-09-10T08:21:17.130Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Karl Emil James Koch</name>
@@ -172,7 +172,7 @@
         <title type="html"><![CDATA[Tempo: Designing a product that demands to not be used]]></title>
         <id>62e2e0f29f26bd0e6c6b2b2b</id>
         <link href="https://kejk.tech/thoughts/tempo-designing-a-product-that-demands-to-not-be-used"/>
-        <updated>2022-09-06T07:17:31.161Z</updated>
+        <updated>2022-09-07T07:10:09.767Z</updated>
         <summary type="html"><![CDATA[Tempo is a minimalist email client, making email simple again]]></summary>
         <author>
             <name>Karl Emil James Koch</name>

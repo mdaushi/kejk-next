@@ -4,7 +4,7 @@
         <title>KEJK | Writing</title>
         <link>https://kejk.tech</link>
         <description>Thoughts on design, development and career progression</description>
-        <lastBuildDate>Tue, 06 Sep 2022 19:37:40 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 10 Sep 2022 08:21:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -98,7 +98,7 @@
             <title><![CDATA[Tempo: Designing a product that demands to not be used]]></title>
             <link>https://kejk.tech/thoughts/tempo-designing-a-product-that-demands-to-not-be-used</link>
             <guid>62e2e0f29f26bd0e6c6b2b2b</guid>
-            <pubDate>Tue, 06 Sep 2022 07:17:31 GMT</pubDate>
+            <pubDate>Wed, 07 Sep 2022 07:10:09 GMT</pubDate>
             <description><![CDATA[Tempo is a minimalist email client, making email simple again]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/ab9e5b20-faa2-11eb-a0e3-6dfb85d6dcb4-Tempo-Designing-a-product-that-demands-to-not-be-used2x.png" length="0" type="image/png"/>
