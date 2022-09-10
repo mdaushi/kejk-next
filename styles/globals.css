@@ -20,20 +20,16 @@
     @apply mb-4 pt-8 text-lg font-semibold leading-snug text-black dark:text-white;
   }
 
-  .inline-link a {
-    @apply font-bold tracking-wide text-black underline decoration-teal-500 decoration-2 underline-offset-4 transition ease-in-out hover:text-teal-500 dark:text-white;
-  }
-
   a.inline-link {
     @apply font-bold tracking-wide text-black underline decoration-teal-500 decoration-2 underline-offset-4 transition ease-in-out hover:text-teal-500 dark:text-white;
   }
 
   a.nav {
-    @apply font-normal tracking-wide text-black no-underline transition ease-in-out hover:text-teal-600 hover:underline hover:decoration-teal-500 hover:decoration-4  hover:underline-offset-[20px] dark:text-white dark:hover:text-teal-500 md:py-6;
+    @apply px-4 py-2 font-normal tracking-wide text-black no-underline transition ease-in-out dark:text-white;
   }
 
   a.nav[aria-current] {
-    @apply tracking-wide text-teal-700 underline decoration-teal-500 decoration-4 underline-offset-[20px] active:underline active:decoration-teal-500 active:decoration-4 active:underline-offset-[20px] dark:text-teal-500 md:py-6;
+    @apply rounded-full bg-gray-200 px-4 py-2 tracking-wide text-teal-800 dark:bg-gray-700 dark:text-teal-300 md:bg-gray-100 md:dark:bg-gray-800;
   }
 
   p {

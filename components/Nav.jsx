@@ -26,6 +26,25 @@ const navItems = [
   },
 ];
 
+const mobileNavItems = [
+  {
+    href: "/",
+    label: "Home",
+  },
+  {
+    href: "/writing",
+    label: "Writing",
+  },
+  {
+    href: "/projects",
+    label: "Projects",
+  },
+  {
+    href: "/bookmarks",
+    label: "Bookmarks",
+  },
+];
+
 const Nav = () => {
   const [key, setKey] = useState("");
 
@@ -44,10 +63,10 @@ const Nav = () => {
     <div>
       <div
         as="nav"
-        className="border-neautral-300 md:border-t-none fixed bottom-0 z-50 mx-auto flex h-16 w-full items-center border-t bg-gray-100 duration-500 dark:border-gray-800 dark:bg-gray-900 md:top-0 md:border-none md:bg-white md:dark:bg-[#0D1116]"
+        className="fixed bottom-4 left-0 right-0 z-50 mx-auto flex h-max w-[95vw] items-center rounded-full border border-gray-200 bg-gray-100 py-2 shadow-lg duration-500 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none md:top-0 md:h-16 md:border-none md:bg-white md:py-0 md:shadow-none md:dark:bg-[#0D1116]"
       >
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 md:w-full lg:px-8">
-          <div className="mx-auto flex items-center justify-center md:justify-between">
+        <div className="mx-auto max-w-7xl md:w-full lg:px-8">
+          <div className="mx-auto flex items-center justify-between">
             <div className="hidden h-16 space-x-2 md:flex md:h-full md:w-full md:items-center">
               <Link href="/">
                 <a className="pt-1">
@@ -71,11 +90,20 @@ const Nav = () => {
                 {"to find anything"}
               </p>
             </div>
-            <div className="mx-auto flex w-full items-center justify-center md:mx-0 md:justify-between">
+            <div className="mx-auto flex w-full items-center justify-between md:mx-0">
               <div className="hidden shrink-0 items-center md:flex"></div>
               <div className="block">
-                <div className="flex items-center space-x-4">
+                {/* Desktop nav */}
+                <div className="hidden items-center md:flex">
                   {navItems.map((item, idx) => (
+                    <NavLink href={item.href} key={idx}>
+                      <a className="nav">{item.label}</a>
+                    </NavLink>
+                  ))}
+                </div>
+                {/* Mobile nav */}
+                <div className="flex items-center text-sm md:hidden">
+                  {mobileNavItems.map((item, idx) => (
                     <NavLink href={item.href} key={idx}>
                       <a className="nav">{item.label}</a>
                     </NavLink>

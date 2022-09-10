@@ -77,45 +77,42 @@ export default function Bookmark({ bookmarks }) {
         <meta property="twitter:image" content={metaImage} />
       </Head>
       <main>
-        {router.isFallback ? (
-          <PageHeader>Loading...</PageHeader>
-        ) : (
-          <div className="mx-auto w-full max-w-5xl">
-            <PageHeader>Bookmarks</PageHeader>
-            <SearchInput
-              value={title}
-              onChange={filter}
-              placeholder={"Search bookmarks"}
-            />
-            <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
-              {foundBookmarks && foundBookmarks.length > 0 ? (
-                foundBookmarks.map((bookmark, idx) => {
-                  const trimmedURL = bookmark.metadata.url.replace(regex, "");
-                  return (
-                    <a
-                      key={idx}
-                      href={`${bookmark.metadata.url}`}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="unstyled"
-                    >
-                      <BookmarkCard
-                        title={bookmark.title}
-                        subtitle={bookmark.metadata.snippet}
-                        date={bookmark.metadata.published}
-                        url={trimmedURL}
-                      />
-                    </a>
-                  );
-                })
-              ) : (
-                <p className="w-full justify-center text-center text-gray-600 dark:text-gray-400">
-                  No results for <strong>{title}</strong>. Try searching for{" "}
-                  <em>Code</em>.
-                </p>
-              )}
-            </div>
-            {/* <div className="mt-12 flex w-full justify-center">
+        <div className="mx-auto w-full max-w-5xl">
+          <PageHeader>Bookmarks</PageHeader>
+          <SearchInput
+            value={title}
+            onChange={filter}
+            placeholder={"Search bookmarks"}
+          />
+          <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
+            {foundBookmarks && foundBookmarks.length > 0 ? (
+              foundBookmarks.map((bookmark, idx) => {
+                const trimmedURL = bookmark.metadata.url.replace(regex, "");
+                return (
+                  <a
+                    key={idx}
+                    href={`${bookmark.metadata.url}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="unstyled"
+                  >
+                    <BookmarkCard
+                      title={bookmark.title}
+                      subtitle={bookmark.metadata.snippet}
+                      date={bookmark.metadata.published}
+                      url={trimmedURL}
+                    />
+                  </a>
+                );
+              })
+            ) : (
+              <p className="w-full justify-center text-center text-gray-600 dark:text-gray-400">
+                No results for <strong>{title}</strong>. Try searching for{" "}
+                <em>Code</em>.
+              </p>
+            )}
+          </div>
+          {/* <div className="mt-12 flex w-full justify-center">
               <Button
                 bgColor="bg-white dark:bg-[#0D1116]"
                 textColor="text-black dark:text-white"
@@ -127,8 +124,7 @@ export default function Bookmark({ bookmarks }) {
                 Load more...
               </Button>
             </div> */}
-          </div>
-        )}
+        </div>
       </main>
     </div>
   );
