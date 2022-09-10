@@ -63,7 +63,7 @@ const Nav = () => {
     <div>
       <div
         as="nav"
-        className="fixed bottom-4 left-0 right-0 z-50 mx-auto flex h-max w-[95vw] items-center rounded-full border border-gray-200 bg-gray-100 py-2 shadow-lg duration-500 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none md:top-0 md:h-16 md:border-none md:bg-white md:py-0 md:shadow-none md:dark:bg-[#0D1116]"
+        className="fixed bottom-4 left-0 right-0 z-50 mx-auto flex h-max w-[95vw] items-center rounded-full border border-gray-200 bg-gray-100 py-2 shadow-lg duration-500 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none md:top-0 md:h-16 md:w-full md:rounded-none md:border-none md:bg-white md:py-0 md:shadow-none md:dark:bg-[#0D1116]"
       >
         <div className="mx-auto max-w-7xl md:w-full lg:px-8">
           <div className="mx-auto flex items-center justify-between">

@@ -83,6 +83,7 @@ export default function Bookmark({ bookmarks }) {
             value={title}
             onChange={filter}
             placeholder={"Search bookmarks"}
+            width={"w-full md:w-1/2"}
           />
           <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
             {foundBookmarks && foundBookmarks.length > 0 ? (
@@ -94,7 +95,7 @@ export default function Bookmark({ bookmarks }) {
                     href={`${bookmark.metadata.url}`}
                     target="_blank"
                     rel="noreferrer"
-                    className="unstyled"
+                    className=""
                   >
                     <BookmarkCard
                       title={bookmark.title}
@@ -112,18 +113,6 @@ export default function Bookmark({ bookmarks }) {
               </p>
             )}
           </div>
-          {/* <div className="mt-12 flex w-full justify-center">
-              <Button
-                bgColor="bg-white dark:bg-[#0D1116]"
-                textColor="text-black dark:text-white"
-                borderColor="border-gray-200 dark:border-gray-700"
-                onClick={() => {
-                  loadMorePosts();
-                }}
-              >
-                Load more...
-              </Button>
-            </div> */}
         </div>
       </main>
     </div>

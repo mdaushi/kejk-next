@@ -1,10 +1,11 @@
 import React from "react";
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
+import Tag from "../components/Tag";
 
-const WritingCard = ({ title, subtitle }) => {
+const WritingCard = ({ title, subtitle, tag }) => {
   return (
     <div
-      className="0 unstyled group space-y-2 rounded-xl transition-all ease-in-out hover:cursor-pointer
+      className=" group space-y-2 rounded-xl transition-all ease-in-out hover:cursor-pointer
     "
     >
       <div className="flex w-full items-start justify-between gap-2">
@@ -13,7 +14,10 @@ const WritingCard = ({ title, subtitle }) => {
         </header>
         <ArrowLongRightIcon className="h-6 w-6 flex-shrink-0 text-gray-500 dark:text-gray-400" />
       </div>
-      <span className="block text-gray-500 dark:text-gray-400">{subtitle}</span>
+      <span className="block pb-2 text-gray-500 dark:text-gray-400">
+        {subtitle}
+      </span>
+      <Tag>{tag}</Tag>
     </div>
   );
 };

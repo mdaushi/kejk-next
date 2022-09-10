@@ -14,11 +14,9 @@ const Button = ({
       className={classNames(
         `${bgColor} ${textColor} rounded-md border ${borderColor} flex w-max cursor-pointer items-center justify-center space-x-2 px-4 py-2 text-sm font-medium transition ease-in-out hover:border-teal-500 md:text-base`
       )}
+      onClick={onClick}
     >
-      <button
-        className="flex w-full items-center justify-center space-x-2"
-        onClick={onClick}
-      >
+      <button className="flex w-full items-center justify-center space-x-2">
         {children}
       </button>
     </a>

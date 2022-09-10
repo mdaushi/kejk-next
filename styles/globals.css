@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
   html,
   body {
     @apply m-0 bg-white p-0 dark:bg-[#0D1116];
@@ -83,7 +91,7 @@
 
 @layer components {
   img {
-    @apply rounded dark:border dark:border-gray-700;
+    @apply rounded border border-gray-100 dark:border dark:border-gray-700;
   }
 
   img.inline-image {
@@ -199,7 +207,7 @@ input[type="search"]::-webkit-search-cancel-button {
   background-size: contain;
 }
 
-.invisible-scrollbar::-webkit-scrollbar {
+/* .invisible-scrollbar::-webkit-scrollbar {
   display: none;
 }
 
@@ -213,4 +221,4 @@ input[type="search"]::-webkit-search-cancel-button {
 
 ::-webkit-scrollbar-thumb {
   @apply w-2 rounded-full bg-gray-200 dark:bg-gray-600;
-}
+} */

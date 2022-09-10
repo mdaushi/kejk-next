@@ -130,7 +130,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
       <main>
         <div className="group mb-8 flex w-full justify-start">
           <Link href={"#"}>
-            <a className="unstyled" onClick={goBack}>
+            <a className="" onClick={goBack}>
               <TextButton textColor="black" darkTextColor="white">
                 <ArrowLongLeftIcon className="mr-2 h-6 w-6 flex-shrink-0 text-gray-500 group-hover:text-teal-500 dark:text-gray-400" />
                 Go back
@@ -166,7 +166,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
             <a
               href={downloadURL}
               download
-              className="unstyled"
+              className=""
               onClick={updateDownloads}
             >
               <button
@@ -219,12 +219,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
         </div>
         <div dangerouslySetInnerHTML={{ __html: lazyPDF.content }} />
         <div className="mt-12 inline-flex w-full justify-center">
-          <a
-            href={downloadURL}
-            download
-            className="unstyled"
-            onClick={updateDownloads}
-          >
+          <a href={downloadURL} download className="" onClick={updateDownloads}>
             <button
               className={classNames(
                 `mb-4 flex items-center justify-center space-x-2 rounded-md border border-gray-200 bg-gray-100 py-2 px-4 text-sm font-medium text-black transition ease-in-out hover:border-teal-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white md:w-max md:text-base`

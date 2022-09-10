@@ -7,11 +7,6 @@ module.exports = {
     domains: ["imgix.cosmicjs.com"],
     formats: ["image/avif", "image/webp"],
   },
-  experimental: {
-    images: {
-      allowFutureImage: true,
-    },
-  },
   webpack: (config) => {
     // this will override the experiments
     config.experiments = { ...config.experiments, ...{ topLevelAwait: true } };

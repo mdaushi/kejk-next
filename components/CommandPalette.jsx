@@ -34,8 +34,13 @@ export const CommandPalette = ({
   }, [isOpen]);
 
   const filteredWritingItems = query
-    ? writings.filter((writing) =>
-        writing.title.toLowerCase().includes(query.toLowerCase())
+    ? writings.filter(
+        (writing) =>
+          writing.title.toLowerCase().includes(query.toLowerCase()) ||
+          writing.metadata.snippet
+            .toLowerCase()
+            .includes(query.toLowerCase()) ||
+          writing.metadata.tag.toLowerCase().includes(query.toLowerCase())
       )
     : writings.slice(0, 4);
 
@@ -140,7 +145,7 @@ export const CommandPalette = ({
                         ? (window.location.href = `${item.metadata.url}`)
                         : (window.location.href = `${item.url}`);
                     }}
-                    className="w-[90vw] transform divide-y divide-gray-100 overflow-hidden rounded-2xl bg-gray-50 p-2 text-left align-middle shadow-xl transition-all dark:divide-gray-800 dark:border dark:border-gray-700 dark:bg-gray-900 md:w-[75vw] lg:w-[50vw]"
+                    className="w-[90vw] transform divide-y divide-gray-100 overflow-hidden rounded-2xl bg-gray-50 p-2 text-left align-middle shadow-xl transition-all dark:divide-gray-800 dark:border dark:border-gray-700 dark:bg-gray-900 md:w-[40vw]"
                   >
                     <div className="flex items-center">
                       <MagnifyingGlassIcon
@@ -156,7 +161,7 @@ export const CommandPalette = ({
                         }}
                       />
                     </div>
-                    {
+                    {filteredItemsArray.length > 0 ? (
                       <Combobox.Options
                         static
                         className="ml-0 mb-0 max-h-64 list-none  overflow-y-auto pt-2"
@@ -165,7 +170,7 @@ export const CommandPalette = ({
                           <Combobox.Option key={idx} value={item}>
                             {({ active }) => (
                               <div
-                                className={`flex w-full cursor-pointer items-center justify-between rounded p-3 tracking-wider text-black transition-all duration-75 ease-in hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800 ${
+                                className={`flex w-full cursor-pointer items-center justify-between rounded p-3 text-sm text-black transition-all duration-75 ease-in hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800 ${
                                   active
                                     ? "bg-gray-200 dark:bg-gray-700"
                                     : "bg-transparent"
@@ -202,7 +207,13 @@ export const CommandPalette = ({
                           </Combobox.Option>
                         ))}
                       </Combobox.Options>
-                    }
+                    ) : (
+                      <div className="flex items-center justify-center p-4">
+                        <p className="text-sm text-gray-500 dark:text-gray-400">
+                          No results found
+                        </p>
+                      </div>
+                    )}
                   </Combobox>
                 </Dialog.Panel>
               </Transition.Child>

@@ -126,7 +126,7 @@ export default function Post({ allPosts, post }) {
           <>
             <div className="group mb-8 flex w-full justify-start">
               <Link href={"/writing"}>
-                <a className="unstyled">
+                <a className="">
                   <TextButton textColor="black" darkTextColor="white">
                     <ArrowLongLeftIcon className="mr-2 h-6 w-6 flex-shrink-0 text-gray-500 group-hover:text-teal-500 dark:text-gray-400" />
                     All thoughts
@@ -136,7 +136,7 @@ export default function Post({ allPosts, post }) {
             </div>
             <article>
               <AllCapsHeader marginTop={0} justify={"justify-start"}>
-                Last updated{" "}<Moment fromNow>{post.modified_at}</Moment>
+                Last updated <Moment fromNow>{post.modified_at}</Moment>
               </AllCapsHeader>
               <PageHeader>{post.title}</PageHeader>
               <div
@@ -190,7 +190,7 @@ export default function Post({ allPosts, post }) {
               .filter((nextPost) => nextPost?.id !== post?.id)
               .map((nextPost, idx) => (
                 <Link key={idx} href={`/thoughts/${nextPost.slug}`}>
-                  <a className="unstyled">
+                  <a className="">
                     <WritingCard
                       title={nextPost.title}
                       subtitle={nextPost.metadata.snippet}

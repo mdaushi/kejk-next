@@ -118,10 +118,11 @@ export default function Home({
           {writings.map((writing, idx) => {
             return (
               <Link key={idx} href={`/thoughts/${writing.slug}`}>
-                <a className="unstyled">
+                <a className="">
                   <WritingCard
                     title={writing.title}
                     subtitle={writing.metadata.snippet}
+                    tag={writing.metadata.tag}
                   />
                 </a>
               </Link>
@@ -203,7 +204,7 @@ export default function Home({
                 href={`${bookmark.metadata.url}`}
                 target="_blank"
                 rel="noreferrer"
-                className="unstyled"
+                className=""
               >
                 <WritingCard
                   title={bookmark.title}

@@ -51,16 +51,35 @@ export default function Writing({ writings }) {
       const results = writings.filter((writing) => {
         return (
           writing.title.toLowerCase().includes(keyword.toLowerCase()) ||
-          writing.metadata.snippet.toLowerCase().includes(keyword.toLowerCase())
+          writing.metadata.snippet
+            .toLowerCase()
+            .includes(keyword.toLowerCase()) ||
+          writing.metadata.tag.toLowerCase().includes(keyword.toLowerCase())
         );
       });
       setFoundPosts(results);
     } else {
       setFoundPosts(writings);
     }
-
     setTitle(keyword);
   };
+
+  const tagFilter = (e) => {
+    const tagValue = e.target.innerText;
+
+    const results = writings.filter((writing) => {
+      if (tagValue !== "All") {
+        return writing.metadata.tag.toLowerCase() === tagValue.toLowerCase();
+      } else {
+        return writings;
+      }
+    });
+    setFoundPosts(results);
+  };
+
+  const uniqueTags = [
+    ...new Set(writings.map((writing) => writing.metadata.tag)),
+  ];
 
   return (
     <div className={"mt-12"}>
@@ -189,20 +208,45 @@ export default function Writing({ writings }) {
               </Transition>
             </>
           </div>
-          <SearchInput
-            value={title}
-            onChange={filter}
-            placeholder={"Search articles"}
-          />
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+            <div className="scrollbar-hidden grid grid-flow-col items-center space-x-2 overflow-x-auto">
+              <Button
+                bgColor="bg-gray-100 dark:bg-gray-800 mt-4 !text-sm"
+                textColor="text-black dark:text-white"
+                borderColor="border-none"
+                onClick={tagFilter}
+              >
+                All
+              </Button>
+              {uniqueTags.map((tag, idx) => (
+                <Button
+                  bgColor="bg-gray-100 dark:bg-gray-800 mt-4 !text-sm"
+                  textColor="text-black dark:text-white"
+                  borderColor="border-none"
+                  onClick={tagFilter}
+                  key={idx}
+                >
+                  {tag.charAt(0).toUpperCase() + tag.slice(1)}
+                </Button>
+              ))}
+            </div>
+            <SearchInput
+              value={title}
+              onChange={filter}
+              placeholder={"Search articles"}
+              width={"w-full"}
+            />
+          </div>
           <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
             {foundPosts && foundPosts.length > 0 ? (
               foundPosts.map((writing, idx) => {
                 return (
                   <Link key={idx} href={`/thoughts/${writing.slug}`}>
-                    <a className="unstyled">
+                    <a className="">
                       <WritingCard
                         title={writing.title}
                         subtitle={writing.metadata.snippet}
+                        tag={writing.metadata.tag}
                       />
                     </a>
                   </Link>
