@@ -63,10 +63,10 @@ const Nav = () => {
     <div>
       <div
         as="nav"
-        className="fixed z-50 mx-auto hidden items-center border border-gray-200 bg-gray-100 py-2 shadow-lg duration-500 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none md:top-0 md:flex md:h-16 md:w-full md:rounded-none md:border-none md:bg-white md:py-0 md:shadow-none md:dark:bg-[#0D1116]"
+        className="hidden dark:border-gray-700 md:fixed md:top-0 md:z-50 md:mx-auto md:flex md:h-16 md:w-full md:items-center md:justify-center md:rounded-none md:border md:border-none md:border-gray-200 md:bg-white md:py-0 md:shadow-none md:duration-500 dark:md:bg-[#0D1116] dark:md:shadow-none"
       >
-        <div className="mx-auto w-full lg:px-8">
-          <div className="mx-auto flex items-center justify-between">
+        <div className="mx-auto w-full justify-center lg:px-8">
+          <div className="mx-auto flex max-w-7xl items-center justify-between">
             <div className="flex h-full w-full items-center">
               <Link href="/">
                 <a className="pt-1">
@@ -90,8 +90,7 @@ const Nav = () => {
                 {"to find anything"}
               </p>
             </div>
-            <div className="mx-0 flex w-full items-center justify-center">
-              <div className="flex shrink-0 items-center"></div>
+            <div className="mx-0 flex w-full items-center justify-end">
               <div className="block">
                 {/* Desktop nav */}
                 <div className="flex items-center">
