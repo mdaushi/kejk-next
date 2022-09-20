@@ -17,7 +17,9 @@ const WritingCard = ({ title, subtitle, tag }) => {
       <span className="block pb-2 text-gray-500 dark:text-gray-400">
         {subtitle}
       </span>
+      {tag !== "" && (
       <Tag>{tag}</Tag>
+      )}
     </div>
   );
 };
