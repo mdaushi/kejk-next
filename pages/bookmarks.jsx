@@ -135,6 +135,6 @@ export async function getStaticProps() {
     props: {
       bookmarks,
     },
-    revalidate: 3600,
+    revalidate: 10,
   };
 }

@@ -318,6 +318,6 @@ export async function getStaticProps() {
       bookmarks,
       socials,
     },
-    revalidate: 3600,
+    revalidate: 10,
   };
 }
