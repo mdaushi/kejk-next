@@ -24,7 +24,7 @@ const AppCard = ({ title, subtitle, image, link }) => {
         <ArrowTopRightOnSquareIcon className="h-4 w-4 flex-shrink-0 text-gray-500 dark:text-gray-400" />
       </div>
       <div className="flex w-full items-center gap-2">
-        <header className="mr-2 text-lg font-bold tracking-wide text-gray-700 dark:text-gray-200">
+        <header className="mr-2 text-lg font-bold text-gray-700 dark:text-gray-200">
           {title}
         </header>
       </div>
