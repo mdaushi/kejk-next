@@ -80,13 +80,13 @@ const Nav = () => {
                   />
                 </a>
               </Link>
-              <p className="w-max pl-2 pb-0 text-sm text-gray-500 dark:text-gray-400">
+              <p className="w-max px-2 pb-0 text-sm text-gray-500 dark:text-gray-400">
                 {"Press"}
               </p>
               <code className="w-max font-mono text-sm text-teal-700 dark:text-teal-300">
                 {`${key} + K`}
               </code>
-              <p className="w-max pb-0 text-sm text-gray-500 dark:text-gray-400">
+              <p className="w-max px-2 pb-0 text-sm text-gray-500 dark:text-gray-400">
                 {"to find anything"}
               </p>
             </div>

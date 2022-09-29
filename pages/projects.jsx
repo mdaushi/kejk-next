@@ -1,4 +1,5 @@
 import { EnvelopeIcon } from "@heroicons/react/20/solid";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Head from "next/head";
 import AllCapsHeader from "../components/AllCapsHeader";
 import AppCard from "../components/AppCard";
@@ -90,6 +91,15 @@ export default function Projects({ apps, utilities, clients }) {
           })}
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center space-x-4 md:mt-16">
+          <Button
+            bgColor="bg-gray-100 dark:bg-gray-800"
+            textColor="text-black dark:text-white"
+            borderColor="border-gray-200 dark:border-gray-700"
+            href="/work"
+          >
+            View my in-house work
+            <ArrowRightIcon className="ml-2" width={20} height={20} />
+          </Button>
           <Button
             bgColor="bg-gray-100 dark:bg-gray-800"
             textColor="text-black dark:text-white"
