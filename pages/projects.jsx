@@ -90,7 +90,7 @@ export default function Projects({ apps, utilities, clients }) {
             );
           })}
         </div>
-        <div className="mx-auto mt-8 flex w-full justify-center space-x-4 md:mt-16">
+        <div className="mx-auto mt-8 flex w-full flex-col items-center justify-center space-y-4 md:mt-16 md:flex-row md:space-y-0 md:space-x-4">
           <Button
             bgColor="bg-gray-100 dark:bg-gray-800"
             textColor="text-black dark:text-white"
