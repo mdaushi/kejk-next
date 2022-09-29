@@ -41,19 +41,19 @@
   }
 
   a.nav {
-    @apply px-4 py-2 font-normal tracking-wide text-black no-underline transition ease-in-out dark:text-white;
+    @apply px-4 py-2 font-normal text-black no-underline transition ease-in-out dark:text-white;
   }
 
   a.nav[aria-current] {
-    @apply rounded-full bg-gray-200 px-4 py-2 tracking-wide text-teal-800 dark:bg-gray-700 dark:text-teal-300 md:bg-gray-100 md:dark:bg-gray-800;
+    @apply rounded-full bg-gray-200 px-4 py-2 text-teal-800 dark:bg-gray-700 dark:text-teal-300 md:bg-gray-100 md:dark:bg-gray-800;
   }
 
   p {
-    @apply pb-4 leading-relaxed tracking-wider text-gray-700 dark:text-gray-300;
+    @apply pb-4 leading-relaxed text-gray-700 dark:text-gray-300;
   }
 
   span {
-    @apply font-normal leading-relaxed tracking-wider;
+    @apply font-normal leading-relaxed;
   }
 
   ul {
