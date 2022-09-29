@@ -15,6 +15,7 @@ export const CommandPalette = ({
   stacks,
   features,
   albums,
+  works,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [query, setQuery] = useState("");
@@ -80,6 +81,12 @@ export const CommandPalette = ({
       )
     : albums.slice(0, 4);
 
+  const filteredWorkItems = query
+    ? works.filter((work) =>
+        work.title.toLowerCase().includes(query.toLowerCase())
+      )
+    : works.slice(0, 4);
+
   const filteredItemsArray = [
     ...filteredWritingItems,
     ...filteredAppItems,
@@ -88,6 +95,7 @@ export const CommandPalette = ({
     ...filteredFeatureItems,
     ...filteredAlbumItems,
     ...filteredContactItems,
+    ...filteredWorkItems,
   ];
 
   const typeArray = ["apps", "utilities", "stacks", "features", "albums"];
@@ -98,10 +106,11 @@ export const CommandPalette = ({
     "stacks",
     "features",
     "albums",
+    "works",
     "contact",
   ];
 
-  const singular = ["writings", "stacks"];
+  const singular = ["writings", "stacks", "works"];
 
   function closeModal() {
     setIsOpen(false);
@@ -141,6 +150,8 @@ export const CommandPalette = ({
                       setIsOpen(false);
                       item.type === "writings"
                         ? router.push(`/thoughts/${item.slug}`)
+                        : item.type === "works"
+                        ? router.push(`/work/${item.slug}`)
                         : typeArray.includes(item.type)
                         ? (window.location.href = `${item.metadata.url}`)
                         : (window.location.href = `${item.url}`);

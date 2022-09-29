@@ -61,6 +61,14 @@ const fetchAlbumsData = await bucket.getObjects({
 });
 const albumsData = fetchAlbumsData.objects;
 
+const fetchWorksData = await bucket.getObjects({
+  query: {
+    type: "works",
+  },
+  props: "id,type,slug,title,metadata",
+});
+const worksData = fetchWorksData.objects;
+
 const contactDetails = [
   {
     type: "Contact",
@@ -92,6 +100,7 @@ const Layout = ({
   stacks,
   features,
   albums,
+  works,
   children,
 }) => {
   writings = writingData;
@@ -101,6 +110,7 @@ const Layout = ({
   stacks = stacksData;
   features = featuresData;
   albums = albumsData;
+  works = worksData;
 
   return (
     <>
@@ -113,6 +123,7 @@ const Layout = ({
           stacks={stacks}
           features={features}
           albums={albums}
+          works={works}
         />
         <Nav />
         <main className="mx-auto h-full w-full max-w-5xl justify-center px-4 md:mt-32 md:px-12 lg:px-0">
