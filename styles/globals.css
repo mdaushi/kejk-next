@@ -99,7 +99,7 @@
 
 @layer components {
   img {
-    @apply rounded ring ring-gray-100/50 -ring-offset-1 dark:ring-white/50;
+    @apply rounded outline outline-gray-100/50 -outline-offset-1 dark:outline-white/50;
   }
 
   img.inline-image {
