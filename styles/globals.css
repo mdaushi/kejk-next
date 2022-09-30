@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+
+  * {
+    box-sizing: border-box;
+  }
+
   .scrollbar-hidden::-webkit-scrollbar {
     display: none;
   }
@@ -99,16 +104,14 @@
 
 @layer components {
   img {
-    @apply rounded border border-gray-100 dark:border-gray-700;
+    @apply rounded;
+    /* border border-gray-100 dark:border-gray-700 */
+    box-shadow: -1px 0 rgba(255,255,255,0.5) inset;
   }
 
   img.inline-image {
     @apply inline-flex h-auto w-full;
   }
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .fr-inner {
