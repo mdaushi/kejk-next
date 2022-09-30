@@ -99,7 +99,7 @@
 
 @layer components {
   img {
-    @apply rounded outline outline-gray-100/50 -outline-offset-1 dark:outline-white/50;
+    @apply rounded border border-gray-100 dark:border-gray-700;
   }
 
   img.inline-image {
