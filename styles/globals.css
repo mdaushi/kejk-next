@@ -95,10 +95,6 @@
   figcaption {
     @apply mt-2 italic text-gray-700 dark:text-gray-400;
   }
-
-  * {
-    box-sizing: border-box;
-  }
 }
 
 @layer components {
@@ -109,6 +105,10 @@
   img.inline-image {
     @apply inline-flex h-auto w-full;
   }
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .fr-inner {
