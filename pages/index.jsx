@@ -175,6 +175,19 @@ export default function Home({
             );
           })}
         </div>
+        <div className="mx-auto mt-8 flex w-full justify-center">
+          <Link href={"/features"}>
+            <Button
+              bgColor="bg-white dark:bg-[#0D1116]"
+              textColor="text-black dark:text-white"
+              borderColor="border-gray-200 dark:border-gray-700"
+              href="/features"
+            >
+              All features
+              <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-gray-500 dark:text-gray-400" />
+            </Button>
+          </Link>
+        </div>
         <AllCapsHeader marginTop={16} justify={"justify-start"}>
           <MusicalNoteIcon className="mr-2 h-4 w-4 flex-shrink-0 text-gray-500 dark:text-gray-400" />
           Albums
