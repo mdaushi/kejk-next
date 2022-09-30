@@ -103,7 +103,7 @@
 
 @layer components {
   img {
-    @apply rounded border border-gray-100 dark:border dark:border-gray-700;
+    @apply rounded border border-gray-100/50 dark:border dark:border-white/50;
   }
 
   img.inline-image {
