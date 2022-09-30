@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/future/image";
-import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 const AppCard = ({ title, subtitle, image, link }) => {
@@ -14,16 +13,15 @@ const AppCard = ({ title, subtitle, image, link }) => {
       >
         <div className="flex w-full items-start justify-between pb-2">
           <Image
-            className="rounded"
+            className="h-auto w-full rounded"
             src={image}
-            width={200}
-            height={50}
+            width={400}
+            height={100}
             placeholder="blur"
             blurDataURL={`${image}?auto=format,compress&q=1&blur=500&w=2`}
             alt="Image of the project"
-            quality={50}
+            quality={100}
           />
-          <ArrowTopRightOnSquareIcon className="h-4 w-4 flex-shrink-0 text-gray-500 dark:text-gray-400" />
         </div>
         <div className="flex w-full flex-col items-start gap-2">
           <header className="mr-2 text-lg font-bold text-gray-700 dark:text-gray-200">
