@@ -294,6 +294,7 @@ export async function getStaticProps() {
       type: "features",
     },
     props: "slug,title,metadata",
+    sort: "-created_at",
   });
 
   const bookmarkData = await bookmarksBucket.getObjects({
