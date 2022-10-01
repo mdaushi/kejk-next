@@ -112,7 +112,7 @@
 }
 
 .fr-inner {
-  @apply mt-2 text-sm italic leading-tight text-gray-700 dark:text-gray-400;
+  @apply mt-2 text-sm italic leading-3 text-gray-700 dark:text-gray-400;
 }
 
 code[class*="language-"],
