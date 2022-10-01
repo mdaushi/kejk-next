@@ -72,7 +72,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
     "https://imgix.cosmicjs.com/483f5be0-94eb-11ec-96f2-43bdd99faa64-Lazy-PDF.png";
   const metaDescription =
     "Effortlessly create a PDF from a set of selected images through an interfaceless system with only the Finder selection UI.";
-  const url = "https://kejk.tech/lazyPDF";
+  const url = "https://kejk.tech/lazy-pdf";
   const downloadURL =
     "https://cdn.cosmicjs.com/27efc530-9722-11ec-8bb7-91577e4f4933-Lazy-PDF.zip";
 
