@@ -106,9 +106,9 @@
   img {
     @apply rounded;
     /* border border-gray-100 dark:border-gray-700 */
-    -moz-box-shadow: -1px 0 rgba(255,255,255,0.5) inset;
-    -webkit-box-shadow: -1px 0 rgba(255,255,255,0.5) inset;
-    box-shadow: -1px 0 rgba(255,255,255,0.5) inset;
+    -moz-box-shadow: inset 0 0 1px rgba(255,255,255,0.5);
+    -webkit-box-shadow: inset 0 0 1px rgba(255,255,255,0.5);
+    box-shadow: inset 0 0 1px rgba(255,255,255,0.5);
   }
 
   img.inline-image {
