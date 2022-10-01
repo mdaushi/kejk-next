@@ -79,7 +79,7 @@ const CosmicGo = ({ cosmicGo }) => {
             priority
           />
         </div>
-        <div className="mt-12 flex w-full items-center justify-between">
+        <div className="mt-12 flex w-full items-center justify-between gap-2">
           <div className="flex flex-col space-y-4">
             <div
               className="flex w-full flex-col gap-2 md:w-2/3"
