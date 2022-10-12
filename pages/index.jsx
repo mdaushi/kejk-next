@@ -250,7 +250,7 @@ export default function Home({
               />
             );
           })}
-          <SocialLink href="/rss.xml" title="RSS" />
+          <SocialLink href="/rss/feed.xml" title="RSS" />
           <SocialLink
             href="https://plausible.io/data-policy"
             title="Privacy and Data Policy"
