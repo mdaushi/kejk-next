@@ -240,7 +240,7 @@ export default function Home({
             </Button>
           </Link>
         </div>
-        <div className="mt-8 flex w-full items-center justify-between md:mt-16 md:justify-center md:gap-8">
+        <div className="mt-8 grid w-full grid-cols-3 items-center justify-between gap-4 md:mt-16 md:flex md:grid-cols-none md:justify-center md:gap-8">
           {socials.map((social, idx) => {
             return (
               <SocialLink
@@ -250,6 +250,11 @@ export default function Home({
               />
             );
           })}
+          <SocialLink href="/rss.xml" title="RSS" />
+          <SocialLink
+            href="https://plausible.io/data-policy"
+            title="Privacy and Data Policy"
+          />
         </div>
       </main>
     </div>
