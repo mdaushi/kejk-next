@@ -136,7 +136,7 @@ export default function Post({ allPosts, post }) {
             </div>
             <article>
               <AllCapsHeader marginTop={0} justify={"justify-start"}>
-                Last updated: {" "} <Moment fromNow>{post.modified_at}</Moment>
+                Last updated:<Moment fromNow>{" " + post.modified_at}</Moment>
               </AllCapsHeader>
               <PageHeader>{post.title}</PageHeader>
               <div
