@@ -8,11 +8,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    extend: {
       fontFamily: {
         display: ["Archivo", ...],
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
         mono: ["JetBrains Mono", ...defaultTheme.fontFamily.mono],
       },
+    }, 
   },
   plugins: [],
 };
