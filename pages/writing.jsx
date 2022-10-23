@@ -107,7 +107,7 @@ export default function Writing({ writings }) {
             <Button
               bgColor="bg-white dark:bg-[#0D1116] mb-4 md:mb-0"
               textColor="text-black dark:text-white"
-              borderColor="border-gray-200 dark:border-gray-700"
+              borderColor="border-neutral-200 dark:border-neutral-700"
               onClick={openModal}
             >
               <RssIcon className="mr-2" width={20} height={20} />
@@ -139,12 +139,12 @@ export default function Writing({ writings }) {
                         leaveFrom="opacity-100 scale-100"
                         leaveTo="opacity-0 scale-95"
                       >
-                        <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-gray-50 p-4 text-left align-middle shadow-xl transition-all dark:border dark:border-gray-700 dark:bg-gray-900">
-                          <Dialog.Title className="text-lg font-medium leading-6 text-gray-900 dark:text-gray-50">
+                        <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-neutral-50 p-4 text-left align-middle shadow-xl transition-all dark:border dark:border-neutral-700 dark:bg-neutral-900">
+                          <Dialog.Title className="text-lg font-medium leading-6 text-neutral-900 dark:text-neutral-50">
                             Subscribe
                           </Dialog.Title>
                           <div className="mt-2">
-                            <span className="text-gray-600 dark:text-gray-400">
+                            <span className="text-neutral-600 dark:text-neutral-400">
                               Get an email whenever I publish a new thought.
                             </span>
                             <form
@@ -166,7 +166,7 @@ export default function Writing({ writings }) {
                                   name="email"
                                   id="bd-email"
                                   placeholder="e.g. sly@stallone.com"
-                                  className="w-full rounded-lg border border-gray-200 bg-gray-100 py-3 px-3 text-gray-800 focus:border focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-50"
+                                  className="w-full rounded-lg border border-neutral-200 bg-neutral-100 py-3 px-3 text-neutral-800 focus:border focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-50"
                                   required
                                 />
                               </label>
@@ -186,7 +186,7 @@ export default function Writing({ writings }) {
                             </form>
                             <Link href="https://kejk.tech/rss/feed.xml">
                               <>
-                                <span className=" text-gray-600 dark:text-gray-300">
+                                <span className=" text-neutral-600 dark:text-neutral-300">
                                   Or you can subscribe via{" "}
                                 </span>
                                 <a
@@ -211,7 +211,7 @@ export default function Writing({ writings }) {
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div className="scrollbar-hidden grid grid-flow-col items-center space-x-2 overflow-x-auto">
               <Button
-                bgColor="bg-gray-100 dark:bg-gray-800 mt-4 !text-sm"
+                bgColor="bg-neutral-100 dark:bg-neutral-800 mt-4 !text-sm"
                 textColor="text-black dark:text-white"
                 borderColor="border-none"
                 onClick={tagFilter}
@@ -220,7 +220,7 @@ export default function Writing({ writings }) {
               </Button>
               {uniqueTags.map((tag, idx) => (
                 <Button
-                  bgColor="bg-gray-100 dark:bg-gray-800 mt-4 !text-sm"
+                  bgColor="bg-neutral-100 dark:bg-neutral-800 mt-4 !text-sm"
                   textColor="text-black dark:text-white"
                   borderColor="border-none"
                   onClick={tagFilter}
@@ -253,7 +253,7 @@ export default function Writing({ writings }) {
                 );
               })
             ) : (
-              <p className="w-full justify-center text-center text-gray-600 dark:text-gray-400">
+              <p className="w-full justify-center text-center text-neutral-600 dark:text-neutral-400">
                 No results for <strong>{title}</strong>. Try searching for{" "}
                 <em>Design</em>.
               </p>

@@ -92,18 +92,18 @@ export default function Projects({ apps, utilities, clients }) {
         </div>
         <div className="mx-auto mt-8 flex w-full flex-col items-center justify-center space-y-4 md:mt-16 md:flex-row md:space-y-0 md:space-x-4">
           <Button
-            bgColor="bg-gray-100 dark:bg-gray-800"
+            bgColor="bg-neutral-100 dark:bg-neutral-800"
             textColor="text-black dark:text-white"
-            borderColor="border-gray-200 dark:border-gray-700"
+            borderColor="border-neutral-200 dark:border-neutral-700"
             href="/work"
           >
             View my in-house work
             <ArrowRightIcon className="ml-2" width={20} height={20} />
           </Button>
           <Button
-            bgColor="bg-gray-100 dark:bg-gray-800"
+            bgColor="bg-neutral-100 dark:bg-neutral-800"
             textColor="text-black dark:text-white"
-            borderColor="border-gray-200 dark:border-gray-700"
+            borderColor="border-neutral-200 dark:border-neutral-700"
             href="mailto:karl@kejk.tech?subject=Let's work together!"
           >
             <EnvelopeIcon className="mr-2" width={20} height={20} />

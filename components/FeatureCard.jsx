@@ -11,10 +11,10 @@ const FeatureCard = ({ title, type, link }) => {
       rel="noreferrer"
     >
       <div className="flex w-full items-center justify-between gap-2">
-        <header className="mr-2 block text-lg font-bold text-gray-700 group-hover:underline group-hover:decoration-teal-500 group-hover:decoration-2 group-hover:underline-offset-4 dark:text-gray-200">
+        <header className="mr-2 block text-lg font-bold text-neutral-700 group-hover:underline group-hover:decoration-teal-500 group-hover:decoration-2 group-hover:underline-offset-4 dark:text-neutral-200">
           {title}
         </header>
-        <ArrowLongRightIcon className="h-6 w-6 flex-shrink-0 text-gray-500 dark:text-gray-400" />
+        <ArrowLongRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
       </div>
       <span className="block leading-6 text-teal-700 dark:text-teal-400">
         {type}

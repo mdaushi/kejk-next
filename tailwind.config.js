@@ -11,10 +11,10 @@ module.exports = {
     extend: {
       fontFamily: {
         display: ["Archivo"],
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        sans: ["Switzer", ...defaultTheme.fontFamily.sans],
         mono: ["JetBrains Mono", ...defaultTheme.fontFamily.mono],
       },
-    }, 
+    },
   },
   plugins: [],
 };

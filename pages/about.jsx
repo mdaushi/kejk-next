@@ -55,9 +55,9 @@ export default function About({ about, principles }) {
         <div className="mx-auto mt-8 flex w-full justify-center">
           <Link href="/uses">
             <Button
-              bgColor="bg-gray-100 dark:bg-gray-800"
+              bgColor="bg-neutral-100 dark:bg-neutral-800"
               textColor="text-black dark:text-white"
-              borderColor="border-gray-200 dark:border-gray-700"
+              borderColor="border-neutral-200 dark:border-neutral-700"
               href="/uses"
             >
               <RectangleStackIcon width={20} height={20} className="mr-2" />
@@ -71,9 +71,9 @@ export default function About({ about, principles }) {
             return (
               <div
                 key={idx}
-                className="rounded bg-gray-50 p-3 dark:bg-gray-900"
+                className="rounded bg-neutral-50 p-3 dark:bg-neutral-900"
               >
-                <span className="text-lg font-bold text-gray-700 dark:text-gray-300">
+                <span className="text-lg font-bold text-neutral-700 dark:text-neutral-300">
                   {principle.title}
                 </span>
               </div>
@@ -81,7 +81,7 @@ export default function About({ about, principles }) {
           })}
         </div>
         <div className="flex w-full items-center justify-center px-4 pt-16">
-          <p className="w-full rounded-xl bg-gray-100 p-4 text-center text-black dark:bg-gray-800 dark:text-white md:w-2/3">
+          <p className="w-full rounded-xl bg-neutral-100 p-4 text-center text-black dark:bg-neutral-800 dark:text-white md:w-2/3">
             {text}
           </p>
         </div>

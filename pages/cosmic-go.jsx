@@ -54,14 +54,14 @@ const CosmicGo = ({ cosmicGo }) => {
           <Link href={"#"}>
             <a className="" onClick={goBack}>
               <TextButton textColor="black" darkTextColor="white">
-                <ArrowLongLeftIcon className="mr-2 h-6 w-6 flex-shrink-0 text-gray-500 group-hover:text-teal-500 dark:text-gray-400" />
+                <ArrowLongLeftIcon className="mr-2 h-6 w-6 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
                 Go back
               </TextButton>
             </a>
           </Link>
         </div>
         <PageHeader>{cosmicGo.title}</PageHeader>
-        <h2 className="mb-4 text-left text-2xl font-medium text-gray-700 dark:text-gray-400 md:text-2xl">
+        <h2 className="mb-4 text-left text-2xl font-medium text-neutral-700 dark:text-neutral-400 md:text-2xl">
           {cosmicGo.metadata.subtitle}
         </h2>
         <div className="h-auto w-full max-w-3xl">

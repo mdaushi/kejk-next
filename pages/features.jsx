@@ -93,7 +93,7 @@ export default function Feature({ features }) {
                 );
               })
             ) : (
-              <p className="w-full justify-center text-center text-gray-600 dark:text-gray-400">
+              <p className="w-full justify-center text-center text-neutral-600 dark:text-neutral-400">
                 No results for <strong>{title}</strong>. Try searching for{" "}
                 <em>Code</em>.
               </p>

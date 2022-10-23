@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link
+        {/* <link
           rel={"preconnect"}
           href={"https://fonts.gstatic.com"}
           crossOrigin={"true"}
@@ -31,7 +31,7 @@ export default function Document() {
           "https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:ital@0;1&display=swap"
             }
           />
-        </noscript>
+        </noscript> */}
       </Head>
       <body>
         <Main />

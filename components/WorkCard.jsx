@@ -6,7 +6,7 @@ const AppCard = ({ title, subtitle, image, link }) => {
   return (
     <Link href={link}>
       <a
-        className="flex flex-col space-y-2 rounded-xl border border-gray-200 p-4 transition-all ease-in-out hover:cursor-pointer hover:border-teal-600 hover:bg-gray-50 dark:border-gray-700 dark:hover:bg-gray-900
+        className="flex flex-col space-y-2 rounded-xl border border-neutral-200 p-4 transition-all ease-in-out hover:cursor-pointer hover:border-teal-600 hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-900
     "
         href={link}
         rel="noreferrer"
@@ -24,10 +24,10 @@ const AppCard = ({ title, subtitle, image, link }) => {
           />
         </div>
         <div className="flex w-full flex-col items-start gap-2">
-          <header className="mr-2 text-lg font-bold text-gray-700 dark:text-gray-200">
+          <header className="mr-2 text-lg font-bold text-neutral-700 dark:text-neutral-200">
             {title}
           </header>
-          <span className="font-mono tracking-tight text-gray-500 dark:text-gray-400">
+          <span className="font-mono tracking-tight text-neutral-500 dark:text-neutral-400">
             {subtitle}
           </span>
         </div>

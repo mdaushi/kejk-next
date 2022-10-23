@@ -58,7 +58,7 @@ export default function Project({ work }) {
               <Link href={"/work"}>
                 <a className="">
                   <TextButton textColor="black" darkTextColor="white">
-                    <ArrowLongLeftIcon className="mr-2 h-6 w-6 flex-shrink-0 text-gray-500 group-hover:text-teal-500 dark:text-gray-400" />
+                    <ArrowLongLeftIcon className="mr-2 h-6 w-6 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
                     All work
                   </TextButton>
                 </a>

@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Switzer";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/switzer/switzer-variable.ttf") format("truetype"),
+    url("/fonts/switzer/switzer-variable.ttf") format("ttf-variations");
+}
+
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/fonts/archivo/archivo-variable.ttf") format("truetype"),
+    url("/fonts/archivo/archivo-variable.ttf") format("ttf-variations");
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/jetbrains-mono/jetbrains-mono-variable.ttf")
+      format("truetype"),
+    url("/fonts/jetbrains-mono/jetbrains-mono-variable.ttf")
+      format("ttf-variations");
+}
+
 @layer base {
   * {
     box-sizing: border-box;
@@ -17,7 +46,7 @@
 
   html,
   body {
-    @apply m-0 bg-white p-0 dark:bg-[#0D1116];
+    @apply m-0 bg-white p-0 dark:bg-[#141516];
   }
 
   input,
@@ -53,11 +82,11 @@
   }
 
   a.nav[aria-current] {
-    @apply rounded-full bg-gray-200 px-4 py-2 text-teal-800 dark:bg-gray-700 dark:text-teal-300 md:bg-gray-100 md:dark:bg-gray-800;
+    @apply rounded-full bg-neutral-200 px-4 py-2 text-teal-800 dark:bg-neutral-700 dark:text-teal-300 md:bg-neutral-100 md:dark:bg-neutral-800;
   }
 
   p {
-    @apply pb-4 leading-relaxed text-gray-700 dark:text-gray-300;
+    @apply pb-4 leading-relaxed text-neutral-700 dark:text-neutral-300;
   }
 
   span {
@@ -65,23 +94,23 @@
   }
 
   ul {
-    @apply ml-8 mb-4 list-disc text-gray-700 dark:text-gray-300;
+    @apply ml-8 mb-4 list-disc text-neutral-700 dark:text-neutral-300;
   }
 
   ol {
-    @apply ml-8 mb-4 list-decimal text-gray-700 dark:text-gray-300;
+    @apply ml-8 mb-4 list-decimal text-neutral-700 dark:text-neutral-300;
   }
 
   blockquote {
-    @apply my-4 ml-4 border-l-4 border-gray-200 italic dark:border-gray-800;
+    @apply my-4 ml-4 border-l-4 border-neutral-200 italic dark:border-neutral-800;
   }
 
   blockquote p {
-    @apply ml-4 pb-0 text-gray-500 dark:text-gray-300;
+    @apply ml-4 pb-0 text-neutral-500 dark:text-neutral-300;
   }
 
   pre {
-    @apply mb-4 w-full overflow-x-scroll whitespace-pre rounded-lg bg-gray-100 font-mono dark:bg-gray-800;
+    @apply mb-4 w-full overflow-x-scroll whitespace-pre rounded-lg bg-neutral-100 font-mono dark:bg-neutral-800;
   }
 
   pre > code {
@@ -89,7 +118,7 @@
   }
 
   code {
-    @apply w-max rounded-lg bg-gray-100 py-1 px-2 font-mono text-sm text-black dark:bg-gray-800 dark:text-white;
+    @apply w-max rounded-lg bg-neutral-100 py-1 px-2 font-mono text-sm text-black dark:bg-neutral-800 dark:text-white;
   }
 
   code > span {
@@ -97,13 +126,13 @@
   }
 
   figcaption {
-    @apply mt-2 italic text-gray-700 dark:text-gray-400;
+    @apply mt-2 italic text-neutral-700 dark:text-neutral-400;
   }
 }
 
 @layer components {
   img {
-    @apply rounded border border-gray-100 dark:border-gray-700;
+    @apply rounded border border-neutral-100 dark:border-neutral-700;
   }
 
   img.inline-image {
@@ -112,7 +141,7 @@
 }
 
 .fr-inner {
-  @apply mt-2 text-sm italic !leading-3 text-gray-700 dark:text-gray-400;
+  @apply mt-2 text-sm italic !leading-3 text-neutral-700 dark:text-neutral-400;
 }
 
 code[class*="language-"],
@@ -140,7 +169,7 @@ pre[class*="language-"] {
 }
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  @apply bg-gray-50 dark:bg-gray-900;
+  @apply bg-neutral-50 dark:bg-neutral-900;
 }
 :not(pre) > code[class*="language-"] {
   padding: 0.1em;
@@ -152,7 +181,7 @@ pre[class*="language-"] {
 .token.comment,
 .token.doctype,
 .token.prolog {
-  @apply text-gray-400 dark:text-gray-700;
+  @apply text-neutral-400 dark:text-neutral-700;
 }
 .token.punctuation {
   @apply text-blue-600 dark:text-blue-400;
@@ -236,5 +265,5 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply w-2 rounded-full bg-gray-200 dark:bg-gray-600;
+  @apply w-2 rounded-full bg-neutral-200 dark:bg-neutral-600;
 } */

@@ -86,9 +86,9 @@ export default function Home({
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center space-x-4">
           <Button
-            bgColor="bg-gray-100 dark:bg-gray-800"
+            bgColor="bg-neutral-100 dark:bg-neutral-800"
             textColor="text-black dark:text-white"
-            borderColor="border-gray-200 dark:border-gray-700"
+            borderColor="border-neutral-200 dark:border-neutral-700"
             href="mailto:karl@kejk.tech?subject=Let's chat!"
           >
             <EnvelopeIcon width={20} height={20} className="mr-2" />
@@ -96,9 +96,9 @@ export default function Home({
           </Button>
           <Link href={"/about"}>
             <Button
-              bgColor="bg-gray-100 dark:bg-gray-800"
+              bgColor="bg-neutral-100 dark:bg-neutral-800"
               textColor="text-black dark:text-white"
-              borderColor="border-gray-200 dark:border-gray-700"
+              borderColor="border-neutral-200 dark:border-neutral-700"
               href="/about"
             >
               <UserIcon width={20} height={20} className="mr-2" />
@@ -111,7 +111,7 @@ export default function Home({
           justify={"justify-start"}
           className="items-end"
         >
-          <PencilIcon className="mr-2 h-4 w-4 flex-shrink-0 text-gray-500 dark:text-gray-400" />
+          <PencilIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
           Writing
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -134,16 +134,16 @@ export default function Home({
             <Button
               bgColor="bg-white dark:bg-[#0D1116]"
               textColor="text-black dark:text-white"
-              borderColor="border-gray-200 dark:border-gray-700"
+              borderColor="border-neutral-200 dark:border-neutral-700"
               href="/writing"
             >
               More thoughts
-              <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-gray-500 dark:text-gray-400" />
+              <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
             </Button>
           </Link>
         </div>
         <AllCapsHeader marginTop={16} justify={"justify-start"}>
-          <SquaresPlusIcon className="mr-2 h-4 w-4 flex-shrink-0 text-gray-500 dark:text-gray-400" />
+          <SquaresPlusIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
           Apps and projects
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -160,7 +160,7 @@ export default function Home({
           })}
         </div>
         <AllCapsHeader marginTop={16} justify={"justify-start"}>
-          <FlagIcon className="mr-2 h-4 w-4 flex-shrink-0 text-gray-500 dark:text-gray-400" />
+          <FlagIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
           Recent features
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -180,16 +180,16 @@ export default function Home({
             <Button
               bgColor="bg-white dark:bg-[#0D1116]"
               textColor="text-black dark:text-white"
-              borderColor="border-gray-200 dark:border-gray-700"
+              borderColor="border-neutral-200 dark:border-neutral-700"
               href="/features"
             >
               All features
-              <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-gray-500 dark:text-gray-400" />
+              <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
             </Button>
           </Link>
         </div>
         <AllCapsHeader marginTop={16} justify={"justify-start"}>
-          <MusicalNoteIcon className="mr-2 h-4 w-4 flex-shrink-0 text-gray-500 dark:text-gray-400" />
+          <MusicalNoteIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
           Albums
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -206,7 +206,7 @@ export default function Home({
           })}
         </div>
         <AllCapsHeader marginTop={16} justify={"justify-start"}>
-          <BookmarkIcon className="mr-2 h-4 w-4 flex-shrink-0 text-gray-500 dark:text-gray-400" />
+          <BookmarkIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
           Bookmarks
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -232,11 +232,11 @@ export default function Home({
             <Button
               bgColor="bg-white dark:bg-[#0D1116]"
               textColor="text-black dark:text-white"
-              borderColor="border-gray-200 dark:border-gray-700"
+              borderColor="border-neutral-200 dark:border-neutral-700"
               href="/bookmarks"
             >
               All bookmarks
-              <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-gray-500 dark:text-gray-400" />
+              <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
             </Button>
           </Link>
         </div>

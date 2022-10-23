@@ -63,7 +63,7 @@ const Nav = () => {
     <div>
       <div
         as="nav"
-        className="hidden dark:border-gray-700 md:fixed md:top-0 md:z-50 md:mx-auto md:flex md:h-16 md:w-full md:items-center md:justify-center md:rounded-none md:border md:border-none md:border-gray-200 md:bg-white md:py-0 md:shadow-none md:duration-500 dark:md:bg-[#0D1116] dark:md:shadow-none"
+        className="hidden backdrop-blur-md dark:border-neutral-700 md:fixed md:top-0 md:z-50 md:mx-auto md:flex md:h-16 md:w-full md:items-center md:justify-center md:rounded-none md:border md:border-none md:border-neutral-200 md:bg-white md:py-0 md:shadow-none md:duration-500 dark:md:bg-[#141516]/50 dark:md:shadow-none"
       >
         <div className="mx-auto w-full justify-center lg:px-8">
           <div className="mx-auto flex max-w-7xl items-center justify-between">
@@ -80,13 +80,13 @@ const Nav = () => {
                   />
                 </a>
               </Link>
-              <p className="w-max px-2 pb-0 text-sm text-gray-500 dark:text-gray-400">
+              <p className="w-max px-2 pb-0 text-sm text-neutral-500 dark:text-neutral-400">
                 {"Press"}
               </p>
               <code className="w-max font-mono text-sm text-teal-700 dark:text-teal-300">
                 {`${key} + K`}
               </code>
-              <p className="w-max px-2 pb-0 text-sm text-gray-500 dark:text-gray-400">
+              <p className="w-max px-2 pb-0 text-sm text-neutral-500 dark:text-neutral-400">
                 {"to find anything"}
               </p>
             </div>
@@ -107,7 +107,7 @@ const Nav = () => {
       </div>
       <div
         as="nav"
-        className="fixed bottom-4 left-0 right-0 z-50 mx-auto flex h-max w-[95vw] items-center justify-center rounded-full border border-gray-200 bg-gray-100 py-2 shadow-lg duration-500 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none md:hidden"
+        className="fixed bottom-4 left-0 right-0 z-50 mx-auto flex h-max w-[95vw] items-center justify-center rounded-full border border-neutral-200 bg-neutral-100 py-2 shadow-lg duration-500 dark:border-neutral-700 dark:bg-neutral-800 dark:shadow-none md:hidden"
       >
         {/* Mobile nav */}
         <div className="flex w-full items-center justify-between px-2 text-sm">
