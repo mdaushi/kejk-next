@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 @font-face {
   font-family: "Switzer";
   font-style: normal;
@@ -29,7 +29,7 @@
       format("truetype"),
     url("/fonts/jetbrains-mono/jetbrains-mono-variable.ttf")
       format("ttf-variations");
-}
+} */
 
 @layer base {
   * {

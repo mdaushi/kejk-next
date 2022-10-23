@@ -11,7 +11,7 @@ module.exports = {
     extend: {
       fontFamily: {
         display: ["Archivo"],
-        sans: ["Switzer", ...defaultTheme.fontFamily.sans],
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
         mono: ["JetBrains Mono", ...defaultTheme.fontFamily.mono],
       },
     },
