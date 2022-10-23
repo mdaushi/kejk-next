@@ -1,35 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* 
-@font-face {
-  font-family: "Switzer";
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url("/fonts/switzer/switzer-variable.ttf") format("truetype"),
-    url("/fonts/switzer/switzer-variable.ttf") format("ttf-variations");
-}
-
-@font-face {
-  font-family: "Archivo";
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url("/fonts/archivo/archivo-variable.ttf") format("truetype"),
-    url("/fonts/archivo/archivo-variable.ttf") format("ttf-variations");
-}
-
-@font-face {
-  font-family: "JetBrains Mono";
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url("/fonts/jetbrains-mono/jetbrains-mono-variable.ttf")
-      format("truetype"),
-    url("/fonts/jetbrains-mono/jetbrains-mono-variable.ttf")
-      format("ttf-variations");
-} */
 
 @layer base {
   * {
@@ -169,7 +140,7 @@ pre[class*="language-"] {
 }
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  @apply bg-neutral-50 dark:bg-neutral-900;
+  @apply bg-neutral-50 dark:bg-neutral-800;
 }
 :not(pre) > code[class*="language-"] {
   padding: 0.1em;
