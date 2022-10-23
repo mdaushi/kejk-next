@@ -71,7 +71,7 @@ export default function About({ about, principles }) {
             return (
               <div
                 key={idx}
-                className="rounded bg-neutral-50 p-3 dark:bg-neutral-800"
+                className="rounded-md bg-neutral-50 p-3 dark:bg-neutral-800"
               >
                 <span className="text-lg font-bold text-neutral-700 dark:text-neutral-300">
                   {principle.title}
