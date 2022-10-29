@@ -86,6 +86,7 @@ export default function Projects({ apps, utilities, clients }) {
                 image={client.metadata.cover?.imgix_url}
                 title={client.title}
                 subtitle={client.metadata.subtitle}
+                tags={client.metadata.tags}
               />
             );
           })}

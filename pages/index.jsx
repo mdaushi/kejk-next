@@ -132,7 +132,7 @@ export default function Home({
         <div className="mx-auto mt-8 flex w-full justify-center">
           <Link href={"/writing"}>
             <Button
-              bgColor="bg-white dark:bg-[#0D1116]"
+              bgColor="bg-neutral-100 dark:bg-transparent"
               textColor="text-black dark:text-white"
               borderColor="border-neutral-200 dark:border-neutral-700"
               href="/writing"
@@ -178,7 +178,7 @@ export default function Home({
         <div className="mx-auto mt-8 flex w-full justify-center">
           <Link href={"/features"}>
             <Button
-              bgColor="bg-white dark:bg-[#0D1116]"
+              bgColor="bg-neutral-100 dark:bg-transparent"
               textColor="text-black dark:text-white"
               borderColor="border-neutral-200 dark:border-neutral-700"
               href="/features"
@@ -230,7 +230,7 @@ export default function Home({
         <div className="mx-auto mt-8 flex w-full justify-center">
           <Link href={"/bookmarks"}>
             <Button
-              bgColor="bg-white dark:bg-[#0D1116]"
+              bgColor="bg-neutral-100 dark:bg-transparent"
               textColor="text-black dark:text-white"
               borderColor="border-neutral-200 dark:border-neutral-700"
               href="/bookmarks"

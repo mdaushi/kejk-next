@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/future/image";
 import Link from "next/link";
+import AllCapsHeader from "../components/AllCapsHeader";
 
-const AppCard = ({ title, subtitle, image, link }) => {
+const AppCard = ({ title, subtitle, image, link, year }) => {
   return (
     <Link href={link}>
       <a
@@ -24,8 +25,13 @@ const AppCard = ({ title, subtitle, image, link }) => {
           />
         </div>
         <div className="flex w-full flex-col items-start gap-2">
-          <header className="mr-2 text-lg font-bold text-neutral-700 dark:text-neutral-200">
-            {title}
+          <header className="flex w-full items-center justify-between">
+            <span className="w-full text-lg font-bold text-neutral-700 dark:text-neutral-200">
+              {title}
+            </span>
+            <span className="flex w-1/3 justify-end font-mono text-sm uppercase text-neutral-500 dark:text-neutral-400">
+              {year}
+            </span>
           </header>
           <span className="font-mono tracking-tight text-neutral-500 dark:text-neutral-400">
             {subtitle}

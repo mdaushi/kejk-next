@@ -53,6 +53,7 @@ export default function Work({ works }) {
                 image={work.metadata?.hero.imgix_url}
                 title={work.title}
                 subtitle={work.metadata?.description}
+                year={work.metadata?.year}
               />
             ))}
           </div>

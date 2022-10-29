@@ -105,7 +105,7 @@ export default function Writing({ writings }) {
           <div className="flex w-full items-center justify-between">
             <PageHeader>Writing</PageHeader>
             <Button
-              bgColor="bg-white dark:bg-[#0D1116] mb-4 md:mb-0"
+              bgColor="bg-neutral-100 dark:bg-transparent mb-4 md:mb-0"
               textColor="text-black dark:text-white"
               borderColor="border-neutral-200 dark:border-neutral-700"
               onClick={openModal}
