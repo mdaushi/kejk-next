@@ -286,7 +286,7 @@ export async function getStaticProps() {
   });
 
   const albumData = await bucket.getObjects({
-    limit: 3,
+    limit: 6,
     query: {
       type: "albums",
     },
