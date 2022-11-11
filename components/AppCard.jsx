@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/future/image";
+import Image from "next/image";
 import Tag from "../components/Tag";
 
 const AppCard = ({ title, subtitle, image, link, tags }) => {

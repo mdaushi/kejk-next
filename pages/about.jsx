@@ -53,7 +53,7 @@ export default function About({ about, principles }) {
           <Markdown content={about.metadata.content} />
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center">
-          <Link href="/uses">
+          <Link legacyBehavior href="/uses">
             <Button
               bgColor="bg-neutral-100 dark:bg-neutral-800"
               textColor="text-black dark:text-white"

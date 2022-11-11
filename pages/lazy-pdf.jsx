@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/future/image";
+import Image from "next/image";
 import PageHeader from "../components/PageHeader";
 import classNames from "classnames";
 import { ArrowLongLeftIcon, HeartIcon } from "@heroicons/react/24/outline";
@@ -129,7 +129,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
       </Head>
       <main>
         <div className="group mb-8 flex w-full justify-start">
-          <Link href={"#"}>
+          <Link legacyBehavior href={"#"}>
             <a className="" onClick={goBack}>
               <TextButton textColor="black" darkTextColor="white">
                 <ArrowLongLeftIcon className="mr-2 h-6 w-6 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />

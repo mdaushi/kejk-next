@@ -1,7 +1,7 @@
 import * as React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/future/image";
+import Image from "next/image";
 import PageHeader from "../../components/PageHeader";
 import { useRouter } from "next/router";
 import TextButton from "../../components/TextButton";
@@ -55,7 +55,7 @@ export default function Project({ work }) {
         ) : (
           <>
             <div className="group mb-8 flex w-full justify-start">
-              <Link href={"/work"}>
+              <Link legacyBehavior href={"/work"}>
                 <a className="">
                   <TextButton textColor="black" darkTextColor="white">
                     <ArrowLongLeftIcon className="mr-2 h-6 w-6 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />

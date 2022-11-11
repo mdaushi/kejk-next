@@ -1,4 +1,4 @@
-import Image from "next/future/image";
+import Image from "next/image";
 import Link from "next/link";
 import NavLink from "./NavLink";
 import { useEffect, useState } from "react";
@@ -68,7 +68,7 @@ const Nav = () => {
         <div className="mx-auto w-full justify-center lg:px-8">
           <div className="mx-auto flex max-w-7xl items-center justify-between">
             <div className="flex h-full w-full items-center">
-              <Link href="/">
+              <Link legacyBehavior href="/">
                 <a className="pt-1">
                   <Image
                     className="rounded-lg"
