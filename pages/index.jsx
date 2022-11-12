@@ -117,7 +117,11 @@ export default function Home({
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
           {writings.map((writing, idx) => {
             return (
-              <Link legacyBehavior key={idx} href={`/thoughts/${writing.slug}`}>
+              <Link
+                legacyBehavior
+                key={idx}
+                href={"https://www.kejk.tech/thoughts/" + writing?.slug}
+              >
                 <a className="">
                   <WritingCard
                     title={writing.title}

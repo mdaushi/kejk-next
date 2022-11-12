@@ -243,7 +243,9 @@ export async function getStaticPaths() {
   });
   const allPosts = await data.objects;
   return {
-    paths: allPosts.map((post) => `/thoughts/${post.slug}`),
+    paths: allPosts.map(
+      (post) => "https://www.kejk.tech/thoughts/" + post?.slug
+    ),
     fallback: true,
   };
 }
