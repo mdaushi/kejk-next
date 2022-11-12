@@ -1,6 +1,7 @@
 import { EnvelopeIcon } from "@heroicons/react/20/solid";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Head from "next/head";
+import Link from "next/link";
 import AllCapsHeader from "../components/AllCapsHeader";
 import AppCard from "../components/AppCard";
 import Button from "../components/Button";
@@ -43,7 +44,7 @@ export default function Projects({ apps, utilities, clients }) {
         <meta property="twitter:description" content={metaDescription} />
         <meta property="twitter:image" content={metaImage} />
       </Head>
-      <main>
+      <div>
         <PageHeader>Projects</PageHeader>
         <AllCapsHeader marginTop={8} justify={"justify-start"}>
           Personal
@@ -92,15 +93,16 @@ export default function Projects({ apps, utilities, clients }) {
           })}
         </div>
         <div className="mx-auto mt-8 flex w-full flex-col items-center justify-center space-y-4 md:mt-16 md:flex-row md:space-y-0 md:space-x-4">
-          <Button
-            bgColor="bg-neutral-100 dark:bg-neutral-800"
-            textColor="text-black dark:text-white"
-            borderColor="border-neutral-200 dark:border-neutral-700"
-            href="/work"
-          >
-            View my in-house work
-            <ArrowRightIcon className="ml-2" width={20} height={20} />
-          </Button>
+          <Link href="/work">
+            <Button
+              bgColor="bg-neutral-100 dark:bg-neutral-800"
+              textColor="text-black dark:text-white"
+              borderColor="border-neutral-200 dark:border-neutral-700"
+            >
+              View my in-house work
+              <ArrowRightIcon className="ml-2" width={20} height={20} />
+            </Button>
+          </Link>
           <Button
             bgColor="bg-neutral-100 dark:bg-neutral-800"
             textColor="text-black dark:text-white"
@@ -111,7 +113,7 @@ export default function Projects({ apps, utilities, clients }) {
             Work with me
           </Button>
         </div>
-      </main>
+      </div>
     </div>
   );
 }

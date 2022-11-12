@@ -100,7 +100,7 @@ export default function Writing({ writings }) {
         <meta property="twitter:description" content={metaDescription} />
         <meta property="twitter:image" content={metaImage} />
       </Head>
-      <main>
+      <div>
         <div className="mx-auto w-full max-w-5xl">
           <div className="flex w-full items-center justify-between">
             <PageHeader>Writing</PageHeader>
@@ -184,24 +184,17 @@ export default function Writing({ writings }) {
                                 Subscribe
                               </button>
                             </form>
-                            <Link
-                              legacyBehavior
+                            <span className=" text-neutral-600 dark:text-neutral-300">
+                              Or you can subscribe via{" "}
+                            </span>
+                            <a
                               href="https://kejk.tech/rss/feed.xml"
+                              target={"_blank"}
+                              rel={"noopener noreferrer"}
+                              className="text-teal-700 dark:text-teal-500"
                             >
-                              <>
-                                <span className=" text-neutral-600 dark:text-neutral-300">
-                                  Or you can subscribe via{" "}
-                                </span>
-                                <a
-                                  href="https://kejk.tech/rss/feed.xml"
-                                  target={"_blank"}
-                                  rel={"noopener noreferrer"}
-                                  className="text-teal-700 dark:text-teal-500"
-                                >
-                                  RSS
-                                </a>
-                              </>
-                            </Link>
+                              RSS
+                            </a>
                           </div>
                         </Dialog.Panel>
                       </Transition.Child>
@@ -244,7 +237,7 @@ export default function Writing({ writings }) {
             {foundPosts && foundPosts.length > 0 ? (
               foundPosts.map((writing, idx) => {
                 return (
-                  <Link key={idx} href={`/thoughts/${writing.slug}`}>
+                  <Link key={idx} href={`/thoughts/${writing?.slug}`}>
                     <WritingCard
                       title={writing.title}
                       subtitle={writing.metadata.snippet}
@@ -261,7 +254,7 @@ export default function Writing({ writings }) {
             )}
           </div>
         </div>
-      </main>
+      </div>
     </div>
   );
 }

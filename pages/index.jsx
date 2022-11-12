@@ -73,7 +73,7 @@ export default function Home({
         <meta property="twitter:image" content={metaImage} />
       </Head>
 
-      <main className="mt-12 md:mt-0">
+      <div className="mt-12 md:mt-0">
         <div className="flex w-full flex-col text-left md:mx-auto md:max-w-xl md:justify-center md:text-center">
           <AllCapsHeader
             marginTop={0}
@@ -85,21 +85,21 @@ export default function Home({
           <Markdown content={home.metadata.content} className="-mt-4" />
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center space-x-4">
-          <Button
-            bgColor="bg-neutral-100 dark:bg-neutral-800"
-            textColor="text-black dark:text-white"
-            borderColor="border-neutral-200 dark:border-neutral-700"
-            href="mailto:karl@kejk.tech?subject=Let's chat!"
-          >
-            <EnvelopeIcon width={20} height={20} className="mr-2" />
-            Chat to me
-          </Button>
-          <Link legacyBehavior href={"/about"}>
+          <Link href="mailto:karl@kejk.tech?subject=Let's chat!">
             <Button
               bgColor="bg-neutral-100 dark:bg-neutral-800"
               textColor="text-black dark:text-white"
               borderColor="border-neutral-200 dark:border-neutral-700"
-              href="/about"
+            >
+              <EnvelopeIcon width={20} height={20} className="mr-2" />
+              Chat to me
+            </Button>
+          </Link>
+          <Link href={"/about"}>
+            <Button
+              bgColor="bg-neutral-100 dark:bg-neutral-800"
+              textColor="text-black dark:text-white"
+              borderColor="border-neutral-200 dark:border-neutral-700"
             >
               <UserIcon width={20} height={20} className="mr-2" />
               More about me
@@ -128,12 +128,11 @@ export default function Home({
           })}
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center">
-          <Link legacyBehavior href={"/writing"}>
+          <Link href={"/thoughts"}>
             <Button
               bgColor="bg-neutral-100 dark:bg-transparent"
               textColor="text-black dark:text-white"
               borderColor="border-neutral-200 dark:border-neutral-700"
-              href="/writing"
             >
               More thoughts
               <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
@@ -174,12 +173,11 @@ export default function Home({
           })}
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center">
-          <Link legacyBehavior href={"/features"}>
+          <Link href={"/features"}>
             <Button
               bgColor="bg-neutral-100 dark:bg-transparent"
               textColor="text-black dark:text-white"
               borderColor="border-neutral-200 dark:border-neutral-700"
-              href="/features"
             >
               All features
               <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
@@ -226,12 +224,11 @@ export default function Home({
           })}
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center">
-          <Link legacyBehavior href={"/bookmarks"}>
+          <Link href={"/bookmarks"}>
             <Button
               bgColor="bg-neutral-100 dark:bg-transparent"
               textColor="text-black dark:text-white"
               borderColor="border-neutral-200 dark:border-neutral-700"
-              href="/bookmarks"
             >
               All bookmarks
               <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
@@ -243,7 +240,7 @@ export default function Home({
             return (
               <SocialLink
                 key={idx}
-                href={`${social.metadata.url}`}
+                href={social.metadata.url}
                 title={social.title}
               />
             );
@@ -254,7 +251,7 @@ export default function Home({
             title="Privacy and Data Policy"
           />
         </div>
-      </main>
+      </div>
     </div>
   );
 }

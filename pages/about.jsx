@@ -47,18 +47,17 @@ export default function About({ about, principles }) {
         <meta property="twitter:description" content={metaDescription} />
         <meta property="twitter:image" content={metaImage} />
       </Head>
-      <main className="mx-auto w-full max-w-3xl">
+      <div className="mx-auto w-full max-w-3xl">
         <div>
           <PageHeader>{about.title}</PageHeader>
           <Markdown content={about.metadata.content} />
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center">
-          <Link legacyBehavior href="/uses">
+          <Link href="/uses">
             <Button
               bgColor="bg-neutral-100 dark:bg-neutral-800"
               textColor="text-black dark:text-white"
               borderColor="border-neutral-200 dark:border-neutral-700"
-              href="/uses"
             >
               <RectangleStackIcon width={20} height={20} className="mr-2" />
               My site stack
@@ -85,7 +84,7 @@ export default function About({ about, principles }) {
             {text}
           </p>
         </div>
-      </main>
+      </div>
     </div>
   );
 }

@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import NavLink from "./NavLink";
@@ -9,7 +11,7 @@ const navItems = [
     label: "Home",
   },
   {
-    href: "/writing",
+    href: "/thoughts",
     label: "Writing",
   },
   {
@@ -32,7 +34,7 @@ const mobileNavItems = [
     label: "Home",
   },
   {
-    href: "/writing",
+    href: "/thoughts",
     label: "Writing",
   },
   {
@@ -68,17 +70,15 @@ const Nav = () => {
         <div className="mx-auto w-full justify-center lg:px-8">
           <div className="mx-auto flex max-w-7xl items-center justify-between">
             <div className="flex h-full w-full items-center">
-              <Link legacyBehavior href="/">
-                <a className="pt-1">
-                  <Image
-                    className="rounded-lg"
-                    height={32}
-                    width={32}
-                    src="/logo.svg"
-                    alt="Logo"
-                    quality={50}
-                  />
-                </a>
+              <Link href="/" className="pt-1">
+                <Image
+                  className="rounded-lg"
+                  height={32}
+                  width={32}
+                  src="/logo.svg"
+                  alt="Logo"
+                  quality={50}
+                />
               </Link>
               <p className="w-max px-2 pb-0 text-sm text-neutral-500 dark:text-neutral-400">
                 {"Press"}
@@ -96,7 +96,7 @@ const Nav = () => {
                 <div className="flex items-center">
                   {navItems.map((item, idx) => (
                     <NavLink href={item.href} key={idx}>
-                      <a className="nav">{item.label}</a>
+                      <span className="nav">{item.label}</span>
                     </NavLink>
                   ))}
                 </div>
@@ -110,10 +110,10 @@ const Nav = () => {
         className="fixed bottom-4 left-0 right-0 z-50 mx-auto flex h-max w-[95vw] items-center justify-center rounded-full border border-neutral-200 bg-neutral-100 py-2 shadow-lg duration-500 dark:border-neutral-700 dark:bg-neutral-800 dark:shadow-none md:hidden"
       >
         {/* Mobile nav */}
-        <div className="flex w-full items-center justify-between px-2 text-sm">
+        <div className="flex w-full items-center justify-between px-2 py-1 text-sm">
           {mobileNavItems.map((item, idx) => (
             <NavLink href={item.href} key={idx}>
-              <a className="nav">{item.label}</a>
+              <span className="nav">{item.label}</span>
             </NavLink>
           ))}
         </div>

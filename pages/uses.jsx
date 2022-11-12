@@ -39,7 +39,7 @@ export default function Projects({ stacks }) {
         <meta property="twitter:description" content={metaDescription} />
         <meta property="twitter:image" content={metaImage} />
       </Head>
-      <main>
+      <div>
         <PageHeader>Stack</PageHeader>
         <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {stacks.map((stack, idx) => {
@@ -55,7 +55,7 @@ export default function Projects({ stacks }) {
             );
           })}
         </div>
-      </main>
+      </div>
     </div>
   );
 }

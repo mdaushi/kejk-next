@@ -11,7 +11,6 @@ import {
   ArrowLongLeftIcon,
   CheckCircleIcon,
 } from "@heroicons/react/24/outline";
-import { LinkIcon } from "@heroicons/react/20/solid";
 import { styled, keyframes } from "@stitches/react";
 import * as ToastPrimitive from "@radix-ui/react-toast";
 import Prism from "prismjs";
@@ -125,13 +124,11 @@ export default function Post({ allPosts, post }) {
         ) : (
           <>
             <div className="group mb-8 flex w-full justify-start">
-              <Link legacyBehavior href={"/writing"}>
-                <a className="">
-                  <TextButton textColor="black" darkTextColor="white">
-                    <ArrowLongLeftIcon className="mr-2 h-6 w-6 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
-                    All thoughts
-                  </TextButton>
-                </a>
+              <Link href={"/thoughts"}>
+                <TextButton textColor="black" darkTextColor="white">
+                  <ArrowLongLeftIcon className="mr-2 h-6 w-6 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
+                  All thoughts
+                </TextButton>
               </Link>
             </div>
             <article>
@@ -161,11 +158,9 @@ export default function Post({ allPosts, post }) {
                 `mb-4 flex items-center justify-center space-x-2 rounded-md border border-neutral-200 bg-neutral-100 py-2 px-4 text-sm font-medium text-black transition ease-in-out hover:border-teal-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white md:w-max md:text-base`
               )}
             >
-              <Link
-                legacyBehaviorIcon
-                className="mr-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400"
-              />
-              Copy link to clipboard
+              <span className="mr-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400">
+                Copy link to clipboard
+              </span>
             </button>
             <Toast
               open={open}
@@ -192,11 +187,7 @@ export default function Post({ allPosts, post }) {
             allPosts
               .filter((nextPost) => nextPost?.id !== post?.id)
               .map((nextPost, idx) => (
-                <Link
-                  legacyBehavior
-                  key={idx}
-                  href={`/thoughts/${nextPost.slug}`}
-                >
+                <Link key={idx} href={`/thoughts/${nextPost?.slug}`}>
                   <WritingCard
                     title={nextPost.title}
                     subtitle={nextPost.metadata.snippet}

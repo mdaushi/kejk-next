@@ -49,15 +49,17 @@ const CosmicGo = ({ cosmicGo }) => {
         <meta property="twitter:description" content={metaDescription} />
         <meta property="twitter:image" content={metaImage} />
       </Head>
-      <main>
+      <div>
         <div className="group mb-8 flex w-full justify-start">
-          <Link legacyBehavior href={"#"}>
-            <a className="" onClick={goBack}>
-              <TextButton textColor="black" darkTextColor="white">
-                <ArrowLongLeftIcon className="mr-2 h-6 w-6 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
-                Go back
-              </TextButton>
-            </a>
+          <Link href={"#"}>
+            <TextButton
+              textColor="black"
+              darkTextColor="white"
+              onClick={goBack}
+            >
+              <ArrowLongLeftIcon className="mr-2 h-6 w-6 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
+              Go back
+            </TextButton>
           </Link>
         </div>
         <PageHeader>{cosmicGo.title}</PageHeader>
@@ -100,7 +102,7 @@ const CosmicGo = ({ cosmicGo }) => {
           </div>
         </div>
         <div dangerouslySetInnerHTML={{ __html: cosmicGo.content }} />
-      </main>
+      </div>
     </div>
   );
 };

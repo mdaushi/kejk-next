@@ -7,6 +7,9 @@ module.exports = {
     domains: ["imgix.cosmicjs.com"],
     formats: ["image/avif", "image/webp"],
   },
+  experimental: {
+    appDir: true,
+  },
   webpack: (config) => {
     // this will override the experiments
     config.experiments = { ...config.experiments, ...{ topLevelAwait: true } };
@@ -14,13 +17,13 @@ module.exports = {
     // config.experiments.topLevelAwait = true
     return config;
   },
-  async redirects() {
-    return [
-      {
-        source: "/thoughts",
-        destination: "/writing",
-        permanent: true,
-      },
-    ];
-  },
+  // async redirects() {
+  //   return [
+  //     {
+  //       source: "/thoughts",
+  //       destination: "/writing",
+  //       permanent: true,
+  //     },
+  //   ];
+  // },
 };

@@ -71,7 +71,7 @@ export default function Feature({ features }) {
         <meta property="twitter:description" content={metaDescription} />
         <meta property="twitter:image" content={metaImage} />
       </Head>
-      <main>
+      <div>
         <div className="mx-auto w-full max-w-5xl">
           <PageHeader>Features</PageHeader>
           <SearchInput
@@ -100,7 +100,7 @@ export default function Feature({ features }) {
             )}
           </div>
         </div>
-      </main>
+      </div>
     </div>
   );
 }

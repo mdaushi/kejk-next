@@ -40,7 +40,7 @@ export default function Work({ works }) {
         <meta property="twitter:description" content={metaDescription} />
         <meta property="twitter:image" content={metaImage} />
       </Head>
-      <main>
+      <div>
         <div className="mx-auto w-full max-w-5xl">
           <div className="flex w-full items-center justify-between">
             <PageHeader>Work</PageHeader>
@@ -58,7 +58,7 @@ export default function Work({ works }) {
             ))}
           </div>
         </div>
-      </main>
+      </div>
     </div>
   );
 }

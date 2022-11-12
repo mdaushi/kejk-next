@@ -127,7 +127,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
         <meta property="twitter:description" content={metaDescription} />
         <meta property="twitter:image" content={metaImage} />
       </Head>
-      <main>
+      <div>
         <div className="group mb-8 flex w-full justify-start">
           <Link legacyBehavior href={"#"}>
             <a className="" onClick={goBack}>
@@ -231,7 +231,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
             </button>
           </a>
         </div>
-      </main>
+      </div>
     </div>
   );
 };

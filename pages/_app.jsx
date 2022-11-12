@@ -6,7 +6,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <PlausibleProvider domain="kejk.tech">
       <Layout>
-        <Component {...pageProps} />
+        <main>
+          <Component {...pageProps} />
+        </main>
       </Layout>
     </PlausibleProvider>
   );

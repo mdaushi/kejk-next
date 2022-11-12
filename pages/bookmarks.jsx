@@ -75,7 +75,7 @@ export default function Bookmark({ bookmarks }) {
         <meta property="twitter:description" content={metaDescription} />
         <meta property="twitter:image" content={metaImage} />
       </Head>
-      <main>
+      <div>
         <div className="mx-auto w-full max-w-5xl">
           <PageHeader>Bookmarks</PageHeader>
           <SearchInput
@@ -94,7 +94,6 @@ export default function Bookmark({ bookmarks }) {
                     href={`${bookmark.metadata.url}`}
                     target="_blank"
                     rel="noreferrer"
-                    className=""
                   >
                     <BookmarkCard
                       title={bookmark.title}
@@ -113,7 +112,7 @@ export default function Bookmark({ bookmarks }) {
             )}
           </div>
         </div>
-      </main>
+      </div>
     </div>
   );
 }

@@ -1,12 +1,8 @@
-import Link from "next/link";
-
 const SocialLink = ({ title, href }) => {
   return (
-    <Link legacyBehavior href={href}>
-      <a className="inline-link" href={href} target="_blank" rel="noreferrer">
-        {title}
-      </a>
-    </Link>
+    <a className="inline-link" href={href} target="_blank" rel="noreferrer">
+      {title}
+    </a>
   );
 };
 
