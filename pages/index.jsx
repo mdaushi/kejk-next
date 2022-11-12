@@ -117,18 +117,12 @@ export default function Home({
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
           {writings.map((writing, idx) => {
             return (
-              <Link
-                legacyBehavior
-                key={idx}
-                href={"https://www.kejk.tech/thoughts/" + writing?.slug}
-              >
-                <a className="">
-                  <WritingCard
-                    title={writing.title}
-                    subtitle={writing.metadata.snippet}
-                    tag={writing.metadata.tag}
-                  />
-                </a>
+              <Link key={idx} href={`/thoughts/${writing.slug}`}>
+                <WritingCard
+                  title={writing.title}
+                  subtitle={writing.metadata.snippet}
+                  tag={writing.metadata.tag}
+                />
               </Link>
             );
           })}

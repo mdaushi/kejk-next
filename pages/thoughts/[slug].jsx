@@ -195,14 +195,12 @@ export default function Post({ allPosts, post }) {
                 <Link
                   legacyBehavior
                   key={idx}
-                  href={"https://www.kejk.tech/thoughts/" + nextPost?.slug}
+                  href={`/thoughts/${nextPost.slug}`}
                 >
-                  <a className="">
-                    <WritingCard
-                      title={nextPost.title}
-                      subtitle={nextPost.metadata.snippet}
-                    />
-                  </a>
+                  <WritingCard
+                    title={nextPost.title}
+                    subtitle={nextPost.metadata.snippet}
+                  />
                 </Link>
               ))}
         </div>
@@ -243,9 +241,7 @@ export async function getStaticPaths() {
   });
   const allPosts = await data.objects;
   return {
-    paths: allPosts.map(
-      (post) => "https://www.kejk.tech/thoughts/" + post?.slug
-    ),
+    paths: allPosts.map((post) => `/thoughts/${post.slug}`),
     fallback: true,
   };
 }
