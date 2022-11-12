@@ -195,7 +195,7 @@ export default function Post({ allPosts, post }) {
                 <Link
                   legacyBehavior
                   key={idx}
-                  href={`/thoughts/${nextPost.slug}`}
+                  href={"https://www.kejk.tech/thoughts/" + nextPost?.slug}
                 >
                   <a className="">
                     <WritingCard

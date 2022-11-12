@@ -247,7 +247,7 @@ export default function Writing({ writings }) {
                   <Link
                     legacyBehavior
                     key={idx}
-                    href={`/thoughts/${writing.slug}`}
+                    href={"https://www.kejk.tech/thoughts/" + writing?.slug}
                   >
                     <a className="">
                       <WritingCard
