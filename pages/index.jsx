@@ -132,7 +132,6 @@ export default function Home({
             <Button
               bgColor="bg-neutral-100 dark:bg-neutral-800"
               textColor="text-black dark:text-white"
-              borderColor="border-neutral-200 dark:border-neutral-700"
             >
               More thoughts
               <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
@@ -177,7 +176,6 @@ export default function Home({
             <Button
               bgColor="bg-neutral-100 dark:bg-neutral-800"
               textColor="text-black dark:text-white"
-              borderColor="border-neutral-200 dark:border-neutral-700"
             >
               All features
               <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
@@ -228,7 +226,6 @@ export default function Home({
             <Button
               bgColor="bg-neutral-100 dark:bg-neutral-800"
               textColor="text-black dark:text-white"
-              borderColor="border-neutral-200 dark:border-neutral-700"
             >
               All bookmarks
               <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
