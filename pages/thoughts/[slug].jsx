@@ -158,7 +158,7 @@ export default function Post({ allPosts, post }) {
                 `mb-4 flex items-center justify-center space-x-2 rounded-md border border-neutral-200 bg-neutral-100 py-2 px-4 text-sm font-medium text-black transition ease-in-out hover:border-teal-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white md:w-max md:text-base`
               )}
             >
-              <span className="mr-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400">
+              <span className="w-max text-neutral-500 dark:text-neutral-400">
                 Copy link to clipboard
               </span>
             </button>
