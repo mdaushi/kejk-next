@@ -65,7 +65,7 @@
   }
 
   blockquote {
-    @apply my-4 ml-4 border-l-4 border-teal-200 italic dark:border-teal-800;
+    @apply my-4 ml-4 border-l-4 border-teal-500 italic dark:border-teal-500;
   }
 
   blockquote p {
