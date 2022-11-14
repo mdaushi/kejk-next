@@ -184,7 +184,7 @@ export default function Home({
         </div>
         <AllCapsHeader marginTop={16} justify={"justify-start"}>
           <MusicalNoteIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
-          Albums
+          Releases
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
           {albums.map((album, idx) => {
