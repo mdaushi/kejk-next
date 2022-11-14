@@ -65,7 +65,7 @@
   }
 
   blockquote {
-    @apply my-4 ml-4 border-l-4 border-neutral-200 italic dark:border-neutral-800;
+    @apply my-4 ml-4 border-l-4 border-teal-200 italic dark:border-teal-800;
   }
 
   blockquote p {
@@ -81,7 +81,7 @@
   }
 
   code {
-    @apply w-max rounded-lg bg-neutral-100 py-1 px-2 font-mono text-sm text-black dark:bg-neutral-800 dark:text-white;
+    @apply w-max rounded-lg bg-neutral-100 py-1 px-2 font-mono text-sm text-teal-700 dark:bg-neutral-800 dark:text-teal-400;
   }
 
   code > span {
