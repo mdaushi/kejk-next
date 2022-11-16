@@ -6,6 +6,14 @@ import {
   ArrowTopRightOnSquareIcon,
 } from "@heroicons/react/20/solid";
 import { useRouter } from "next/router";
+import { Archivo } from "@next/font/google";
+
+const archivo = Archivo({
+  subsets: ["latin"],
+  weights: [400, 500, 600, 700, 800, 900],
+  variable: "--font-archivo",
+});
+
 
 export const CommandPalette = ({
   writings,
@@ -175,7 +183,7 @@ export const CommandPalette = ({
                     {filteredItemsArray.length > 0 ? (
                       <Combobox.Options
                         static
-                        className="ml-0 mb-0 max-h-64 list-none  overflow-y-auto pt-2"
+                        className={`ml-0 mb-0 max-h-64 list-none overflow-y-auto pt-2 ${archivo.variable}`}
                       >
                         {filteredItemsArray.map((item, idx) => (
                           <Combobox.Option key={idx} value={item}>

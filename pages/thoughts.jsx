@@ -9,6 +9,14 @@ import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import { EnvelopeIcon, RssIcon } from "@heroicons/react/20/solid";
 import SearchInput from "../components/SearchInput";
+import { Archivo } from "@next/font/google";
+
+const archivo = Archivo({
+  subsets: ["latin"],
+  weights: [400, 500, 600, 700, 800, 900],
+  variable: "--font-archivo",
+});
+
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -100,7 +108,7 @@ export default function Writing({ writings }) {
         <meta property="twitter:description" content={metaDescription} />
         <meta property="twitter:image" content={metaImage} />
       </Head>
-      <div>
+      <div className={`${archivo.variable}`}>
         <div className="mx-auto w-full max-w-5xl">
           <div className="flex w-full items-center justify-between">
             <PageHeader>Writing</PageHeader>
