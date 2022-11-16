@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import PageHeader from "../components/PageHeader";
 import WorkCard from "../components/WorkCard";
 
@@ -17,7 +16,7 @@ const bucket = api.bucket({
 export default function Work({ works }) {
   const metaTitle = "KEJK | Work";
   const metaImage =
-    "https://imgix.cosmicjs.com/85d48f80-9cb0-11ec-b20b-ad2fdaf5e1bc-meta-projects.png";
+    "https://imgix.cosmicjs.com/9aea1b30-65d0-11ed-b20b-e9b674dc18cb-meta-projects.png";
   const metaDescription = "Designer, developer, writer and musician";
   const url = "https://kejk.tech/work";
 
