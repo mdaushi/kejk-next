@@ -4,6 +4,19 @@ import Image from "next/image";
 import Link from "next/link";
 import NavLink from "./NavLink";
 import { useEffect, useState } from "react";
+import { Archivo, JetBrains_Mono } from "@next/font/google";
+
+const archivo = Archivo({
+  subsets: ["latin"],
+  weights: [400, 500, 600, 700, 800, 900],
+  variable: "--font-archivo",
+});
+
+const mono = JetBrains_Mono({
+  subsets: ["latin"],
+  weights: [400, 700],
+  variable: "--font-mono",
+});
 
 const navItems = [
   {
@@ -62,7 +75,7 @@ const Nav = () => {
   }, [key]);
 
   return (
-    <div>
+    <div className={`${archivo.variable}`}>
       <div
         as="nav"
         className="hidden backdrop-blur-md dark:border-neutral-700 md:fixed md:top-0 md:z-50 md:mx-auto md:flex md:h-16 md:w-full md:items-center md:justify-center md:rounded-none md:border md:border-none md:border-neutral-200 md:bg-white md:py-0 md:shadow-none md:duration-500 dark:md:bg-[#141516]/50 dark:md:shadow-none"
@@ -83,7 +96,9 @@ const Nav = () => {
               <p className="w-max px-2 pb-0 text-sm text-neutral-500 dark:text-neutral-400">
                 {"Press"}
               </p>
-              <code className="w-max font-mono text-sm text-teal-700 dark:text-teal-300">
+              <code
+                className={`${mono.variable} w-max font-mono text-sm text-teal-700 dark:text-teal-300`}
+              >
                 {`${key} + K`}
               </code>
               <p className="w-max px-2 pb-0 text-sm text-neutral-500 dark:text-neutral-400">

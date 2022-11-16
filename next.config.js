@@ -7,9 +7,9 @@ module.exports = {
     domains: ["imgix.cosmicjs.com"],
     formats: ["image/avif", "image/webp"],
   },
-  experimental: {
-    appDir: true,
-  },
+  // experimental: {
+  //   appDir: true,
+  // },
   webpack: (config) => {
     // this will override the experiments
     config.experiments = { ...config.experiments, ...{ topLevelAwait: true } };

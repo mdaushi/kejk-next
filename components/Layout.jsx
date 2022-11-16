@@ -126,7 +126,7 @@ const Layout = ({
           works={works}
         />
         <Nav />
-        <main className="mx-auto h-full w-full max-w-5xl justify-center px-4 md:mt-32 md:px-12 lg:px-0">
+        <main className="mx-auto h-full w-full max-w-5xl justify-center px-4 font-sans md:mt-32 md:px-12 lg:px-0">
           {children}
         </main>
       </div>

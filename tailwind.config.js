@@ -10,8 +10,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Archivo", ...defaultTheme.fontFamily.sans],
-        mono: ["JetBrains Mono", ...defaultTheme.fontFamily.mono],
+        sans: ["var(--font-archivo)", ...defaultTheme.fontFamily.sans],
+        mono: ["var(--font-mono)", ...defaultTheme.fontFamily.mono],
       },
     },
   },
