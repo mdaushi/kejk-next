@@ -108,7 +108,7 @@ export default function Writing({ writings }) {
         <meta property="twitter:description" content={metaDescription} />
         <meta property="twitter:image" content={metaImage} />
       </Head>
-      <div className={`${archivo.variable}`}>
+      <div>
         <div className="mx-auto w-full max-w-5xl">
           <div className="flex w-full items-center justify-between">
             <PageHeader>Writing</PageHeader>
@@ -147,7 +147,7 @@ export default function Writing({ writings }) {
                         leaveFrom="opacity-100 scale-100"
                         leaveTo="opacity-0 scale-95"
                       >
-                        <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-neutral-50 p-4 text-left align-middle shadow-xl transition-all dark:border dark:border-neutral-700 dark:bg-neutral-900">
+                        <Dialog.Panel className={`w-full max-w-md transform overflow-hidden rounded-2xl bg-neutral-50 p-4 text-left align-middle shadow-xl transition-all dark:border dark:border-neutral-700 dark:bg-neutral-900 font-sans ${archivo.variable}`}>
                           <Dialog.Title className="text-lg font-medium leading-6 text-neutral-900 dark:text-neutral-50">
                             Subscribe
                           </Dialog.Title>
