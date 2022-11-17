@@ -14,7 +14,6 @@ const archivo = Archivo({
   variable: "--font-archivo",
 });
 
-
 export const CommandPalette = ({
   writings,
   apps,
@@ -173,7 +172,7 @@ export const CommandPalette = ({
                         className="text-neutral-600 dark:text-neutral-300"
                       />
                       <Combobox.Input
-                        className="w-full rounded-full bg-transparent p-2 text-neutral-900 focus:outline-none  dark:text-neutral-300 md:rounded-md "
+                        className={`w-full rounded-full bg-transparent p-2 text-neutral-900 focus:outline-none  dark:text-neutral-300 md:rounded-md ${archivo.variable}`}
                         placeholder={"Search..."}
                         onChange={(e) => {
                           setQuery(e.target.value);
@@ -183,27 +182,35 @@ export const CommandPalette = ({
                     {filteredItemsArray.length > 0 ? (
                       <Combobox.Options
                         static
-                        className={`ml-0 mb-0 max-h-64 list-none overflow-y-auto pt-2 ${archivo.variable}`}
+                        className="ml-0 mb-0 max-h-64 list-none overflow-y-auto pt-2"
                       >
                         {filteredItemsArray.map((item, idx) => (
                           <Combobox.Option key={idx} value={item}>
                             {({ active }) => (
                               <div
-                                className={`flex w-full cursor-pointer items-center justify-between rounded p-3 text-sm text-black transition-all duration-75 ease-in hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800 ${
+                                className={`${
+                                  archivo.variable
+                                } flex w-full cursor-pointer items-center justify-between rounded p-3 text-sm text-black transition-all duration-75 ease-in hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800 ${
                                   active
                                     ? "bg-neutral-200 dark:bg-neutral-700"
                                     : "bg-transparent"
                                 }`}
                               >
-                                <div className="flex w-full items-center justify-start space-x-4">
-                                  {item.title}
+                                <div className="flex w-full items-center justify-start space-x-1">
                                   <span
-                                    className={`ml-1 text-neutral-500 hover:text-teal-800 dark:text-neutral-400 hover:dark:text-teal-200 ${
+                                    className={`${archivo.variable} font-sans`}
+                                  >
+                                    {item.title}
+                                  </span>
+                                  <span
+                                    className={`font-sans text-neutral-500 hover:text-teal-800 dark:text-neutral-400 hover:dark:text-teal-200 ${
+                                      archivo.variable
+                                    } ${
                                       active &&
                                       "text-teal-800 dark:text-teal-200"
                                     }`}
                                   >
-                                    {"in"}{" "}
+                                    {"in "}
                                     {singular.includes(item.type)
                                       ? item.type.charAt(0).toUpperCase() +
                                         item.type.slice(1).replace("s", "")
@@ -228,7 +235,9 @@ export const CommandPalette = ({
                       </Combobox.Options>
                     ) : (
                       <div className="flex items-center justify-center p-4">
-                        <p className="text-sm text-neutral-500 dark:text-neutral-400">
+                        <p
+                          className={`text-sm text-neutral-500 dark:text-neutral-400 ${archivo.variable}`}
+                        >
                           No results found
                         </p>
                       </div>
