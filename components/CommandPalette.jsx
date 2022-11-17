@@ -163,16 +163,16 @@ export const CommandPalette = ({
                         ? (window.location.href = `${item.metadata.url}`)
                         : (window.location.href = `${item.url}`);
                     }}
-                    className="w-[90vw] transform divide-y divide-neutral-100 overflow-hidden rounded-2xl bg-neutral-50 p-2 text-left align-middle shadow-xl transition-all dark:divide-neutral-800 dark:border dark:border-neutral-700 dark:bg-neutral-900 md:w-[40vw]"
+                    className={`w-[90vw] transform divide-y divide-neutral-100 overflow-hidden rounded-2xl bg-neutral-50 p-2 text-left align-middle font-sans shadow-xl transition-all dark:divide-neutral-800 dark:border dark:border-neutral-700 dark:bg-neutral-900 md:w-[40vw] ${archivo.variable}`}
                   >
-                    <div className="flex items-center">
+                    <div className="flex items-center font-sans">
                       <MagnifyingGlassIcon
                         width={16}
                         height={16}
                         className="text-neutral-600 dark:text-neutral-300"
                       />
                       <Combobox.Input
-                        className={`w-full rounded-full bg-transparent p-2 text-neutral-900 focus:outline-none  dark:text-neutral-300 md:rounded-md ${archivo.variable}`}
+                        className={`w-full rounded-full bg-transparent p-2 font-sans text-neutral-900 placeholder:font-sans  focus:outline-none dark:text-neutral-300 md:rounded-md ${archivo.variable}`}
                         placeholder={"Search..."}
                         onChange={(e) => {
                           setQuery(e.target.value);
