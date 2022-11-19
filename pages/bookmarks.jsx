@@ -85,7 +85,9 @@ export default function Bookmark({ bookmarks }) {
             width={"w-full md:w-1/2"}
           />
           <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
-            {foundBookmarks && foundBookmarks.length > 0 ? (
+            {foundBookmarks &&
+            foundBookmarks?.length > 0 &&
+            foundBookmarks !== null ? (
               foundBookmarks.map((bookmark, idx) => {
                 const trimmedURL = bookmark.metadata.url.replace(regex, "");
                 return (
@@ -123,7 +125,7 @@ export async function getStaticProps() {
       type: "bookmarks",
     },
     props: "id,slug,title,metadata,created_at",
-    limit: 63,
+    limit: 42,
     sort: "-created_at",
   });
 

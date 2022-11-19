@@ -254,11 +254,11 @@ export default function Home({
 }
 
 export async function getStaticProps() {
-  const props = ["title", "metadata"];
-
-  const data = await bucket.getObject({
-    id: "62e2e0f39f26bd0e6c6b2bdf",
-    props: props.toString(),
+  const homeData = await bucket.getObjects({
+    query: {
+      slug: "home",
+    },
+    props: "title,metadata",
   });
 
   const writingData = await bucket.getObjects({
@@ -311,7 +311,7 @@ export async function getStaticProps() {
     props: "title,metadata",
   });
 
-  const home = await data.object;
+  const home = await homeData.objects[0];
   const writings = await writingData.objects;
   const apps = await projectData.objects;
   const albums = await albumData.objects;

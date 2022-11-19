@@ -17,7 +17,6 @@ const archivo = Archivo({
   variable: "--font-archivo",
 });
 
-
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
 
@@ -147,7 +146,9 @@ export default function Writing({ writings }) {
                         leaveFrom="opacity-100 scale-100"
                         leaveTo="opacity-0 scale-95"
                       >
-                        <Dialog.Panel className={`w-full max-w-md transform overflow-hidden rounded-2xl bg-neutral-50 p-4 text-left align-middle shadow-xl transition-all dark:border dark:border-neutral-700 dark:bg-neutral-900 font-sans ${archivo.variable}`}>
+                        <Dialog.Panel
+                          className={`w-full max-w-md transform overflow-hidden rounded-2xl bg-neutral-50 p-4 text-left align-middle font-sans shadow-xl transition-all dark:border dark:border-neutral-700 dark:bg-neutral-900 ${archivo.variable}`}
+                        >
                           <Dialog.Title className="text-lg font-medium leading-6 text-neutral-900 dark:text-neutral-50">
                             Subscribe
                           </Dialog.Title>
@@ -242,7 +243,7 @@ export default function Writing({ writings }) {
             />
           </div>
           <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
-            {foundPosts && foundPosts.length > 0 ? (
+            {foundPosts && foundPosts?.length > 0 && foundPosts !== null ? (
               foundPosts.map((writing, idx) => {
                 return (
                   <Link key={idx} href={`/thoughts/${writing?.slug}`}>

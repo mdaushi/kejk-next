@@ -81,7 +81,9 @@ export default function Feature({ features }) {
             width={"w-full md:w-1/2"}
           />
           <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
-            {foundFeatures && foundFeatures.length > 0 ? (
+            {foundFeatures &&
+            foundFeatures?.length > 0 &&
+            foundFeatures !== null ? (
               foundFeatures.map((feature, idx) => {
                 return (
                   <FeatureCard

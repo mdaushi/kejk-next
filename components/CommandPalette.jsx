@@ -179,7 +179,8 @@ export const CommandPalette = ({
                         }}
                       />
                     </div>
-                    {filteredItemsArray.length > 0 ? (
+                    {filteredItemsArray?.length > 0 &&
+                    filteredItemsArray !== null ? (
                       <Combobox.Options
                         static
                         className="ml-0 mb-0 max-h-64 list-none overflow-y-auto pt-2"

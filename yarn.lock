@@ -689,10 +689,10 @@ core-js-pure@^3.25.1:
   resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.26.1.tgz#653f4d7130c427820dcecd3168b594e8bb095a33"
   integrity sha512-VVXcDpp/xJ21KdULRq/lXdLzQAtX7+37LzpyfFM973il0tWSsDEoyzG38G14AjTpK9VTfiNM9jnFauq/CpaWGQ==
 
-cosmicjs@^4.2.10:
-  version "4.2.10"
-  resolved "https://registry.yarnpkg.com/cosmicjs/-/cosmicjs-4.2.10.tgz#4380d23a4c4ee5e318b0c2de7b8e9c6d01dd3a40"
-  integrity sha512-1w4mbyvkm8UNtME2l2UYsPP1/4/ulU1cRJfeFH82onBkuhQnxh1Gy1kfrjVY0to7V8UGL73UtJqwrxwQGCalbw==
+cosmicjs@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/cosmicjs/-/cosmicjs-4.3.1.tgz#d8962caecc6d3d23647f84b0f7d39b72898913d1"
+  integrity sha512-l+6FvVW/SV5cUQ8EKIK1CpimfNKwo8/E5oIdIKseSorL+zxJ+HBsOGqUSk2+1K8bySc4bYGal2L4Q9SsdUrpoQ==
   dependencies:
     axios "^0.21.1"
     form-data "^3.0.0"
