@@ -21,8 +21,7 @@ const PromptAI = ({ promptAI }) => {
   const metaTitle = "KEJK | Prompt AI";
   const metaImage =
     "https://imgix.cosmicjs.com/9bcfeeb0-8cdd-11ed-bac9-7fe1734a16aa-prompt-ai.png";
-  const metaDescription =
-    "Interface directly with the OpenAI beta using SwiftUI.";
+  const metaDescription = "Interface directly with the Open AI beta, natively.";
   const url = "https://kejk.tech/prompt-ai";
 
   const router = useRouter();
