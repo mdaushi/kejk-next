@@ -247,7 +247,7 @@ export default function Home({
             href="https://plausible.io/data-policy"
             title="Privacy and Data Policy"
           />
-          <a rel="me" href="https://mastodon.design/@kejk" class="text-opacity-0 cursor-none">Mastodon</a>
+          <a rel="me" href="https://mastodon.design/@kejk" className="opacity-0 cursor-none">Mastodon</a>
         </div>
       </div>
     </div>
