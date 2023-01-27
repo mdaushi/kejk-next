@@ -231,6 +231,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
             </button>
           </a>
         </div>
+        <a rel="me" href="https://mastodon.design/@kejk" className="opacity-0 cursor-none">Mastodon</a>
       </div>
     </div>
   );
