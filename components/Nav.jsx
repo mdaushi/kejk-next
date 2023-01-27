@@ -128,7 +128,7 @@ const Nav = () => {
         <div className="flex w-full items-center justify-between px-2 py-1 text-sm">
           {mobileNavItems.map((item, idx) => (
             <NavLink href={item.href} key={idx}>
-              <span className="nav">{item.label}</span>
+              <span className="mobileNav">{item.label}</span>
             </NavLink>
           ))}
         </div>
