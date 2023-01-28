@@ -89,7 +89,7 @@
   }
 
   figcaption {
-    @apply mt-2 italic text-neutral-700 dark:text-neutral-400 text-sm pb-2;
+    @apply mt-2 italic text-neutral-700 dark:text-neutral-400 text-sm pb-4;
   }
 }
 
