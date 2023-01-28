@@ -319,8 +319,7 @@ export async function getStaticProps() {
       });
     }); 
 
-    writeFileSync("./public/rss.xml", feed.rss2(), { encoding: "utf-8" })
-  };
+    writeFileSync("./public/rss.xml", feed.rss2(), { encoding: "utf-8" });
 
   return {
     props: {
