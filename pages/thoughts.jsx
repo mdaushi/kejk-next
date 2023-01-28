@@ -298,8 +298,6 @@ export async function getStaticProps() {
       generator: "Feed for Node.js",
       feedLinks: {
         rss2: `${siteURL}/rss/feed.xml`,
-        json: `${siteURL}/rss/feed.json`,
-        atom: `${siteURL}/rss/atom.xml`,
       },
       author,
     });
