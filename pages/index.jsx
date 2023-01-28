@@ -58,6 +58,7 @@ export default function Home({
       <Head>
         <title>{metaTitle}</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="alternate" type="application/rss+xml" title="KEJK | Writing" href="/rss.xml" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="title" content={metaTitle} />
         <meta name="description" content={metaDescription} />

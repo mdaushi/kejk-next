@@ -3,7 +3,7 @@ import Link from "next/link";
 import PageHeader from "../components/PageHeader";
 import WritingCard from "../components/WritingCard";
 import Button from "../components/Button";
-import fs from "fs";
+import { writeFileSync } from "fs";
 import { Feed } from "feed";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
@@ -197,7 +197,7 @@ export default function Writing({ writings }) {
                               Or you can subscribe via{" "}
                             </span>
                             <a
-                              href="https://kejk.tech/rss/feed.xml"
+                              href="https://kejk.tech/feed.xml"
                               target={"_blank"}
                               rel={"noopener noreferrer"}
                               className="text-teal-700 dark:text-teal-500"
@@ -277,9 +277,8 @@ export async function getStaticProps() {
   });
   const writings = await data.objects;
   
-  const generateRssFeed = async () => {
-    const posts = writings;
-    const siteURL = "https://kejk.tech";
+  const posts = writings;
+  const siteURL = "https://kejk.tech";
     const date = new Date();
     const author = {
       name: "Karl Emil James Koch",
@@ -291,6 +290,7 @@ export async function getStaticProps() {
       description: "Thoughts on design, development and career progression",
       id: siteURL,
       link: siteURL,
+      language: "en",
       image: `${siteURL}/logo.svg`,
       favicon: `${siteURL}/favicon.ico`,
       copyright: `All rights reserved ${date.getFullYear()}, Karl Emil James Koch`,
@@ -303,6 +303,7 @@ export async function getStaticProps() {
       },
       author,
     });
+    
     posts.forEach((post) => {
       const url = `${siteURL}/thoughts/${post.slug}`;
       feed.addItem({
@@ -316,16 +317,9 @@ export async function getStaticProps() {
         contributor: [author],
         date: new Date(post.published_at),
       });
-    });
-    fs.writeFileSync("./public/feed.xml", feed.rss2());
-    fs.writeFileSync("./public/atom.xml", feed.atom1());
-    fs.writeFileSync("./public/feed.json", feed.json1());
-  };
-  
-  try {
-      await generateRssFeed()
-  } catch (error) {
-      console.log(error)
+    }); 
+
+    writeFileSync("./public/rss.xml", feed.rss2(), { encoding: "utf-8" })
   };
 
   return {
