@@ -134,7 +134,11 @@ export default function Writing({ writings }) {
     fs.writeFileSync("./public/rss/feed.json", feed.json1());
   };
 
-  await generateRssFeed();
+  try {
+      await generateRssFeed()
+  } catch (error) {
+      console.log(error)
+  }  
 
   return (
     <div className={"mt-12"}>
