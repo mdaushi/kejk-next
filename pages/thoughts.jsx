@@ -114,7 +114,7 @@ export default function Writing({ writings }) {
       },
       author,
     });
-    posts.forEach((post) => {
+    posts.forEach(async (post) => {
       const url = `${siteURL}/thoughts/${post.slug}`;
       feed.addItem({
         title: post.title,
@@ -138,7 +138,7 @@ export default function Writing({ writings }) {
       await generateRssFeed()
   } catch (error) {
       console.log(error)
-  }  
+  };
 
   return (
     <div className={"mt-12"}>
