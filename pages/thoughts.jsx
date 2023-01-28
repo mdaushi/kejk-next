@@ -28,7 +28,7 @@ const bucket = api.bucket({
   read_key: READ_KEY,
 });
 
-export default function Writing({ writings }) {
+export default async function Writing({ writings }) {
   const metaTitle = "KEJK | Writing";
   const metaImage =
     "https://imgix.cosmicjs.com/9aed7690-65d0-11ed-b20b-e9b674dc18cb-meta-thoughts.png";
@@ -87,6 +87,58 @@ export default function Writing({ writings }) {
   const uniqueTags = [
     ...new Set(writings.map((writing) => writing.metadata.tag)),
   ];
+  
+  const generateRssFeed = async () => {
+    const posts = writings;
+    const siteURL = "https://kejk.tech";
+    const date = new Date();
+    const author = {
+      name: "Karl Emil James Koch",
+      email: "karl@kejk.tech",
+      link: "https://twitter.com/_kejk",
+    };
+    const feed = new Feed({
+      title: "KEJK | Writing",
+      description: "Thoughts on design, development and career progression",
+      id: siteURL,
+      link: siteURL,
+      image: `${siteURL}/logo.svg`,
+      favicon: `${siteURL}/favicon.ico`,
+      copyright: `All rights reserved ${date.getFullYear()}, Karl Emil James Koch`,
+      updated: date,
+      generator: "Feed for Node.js",
+      feedLinks: {
+        rss2: `${siteURL}/rss/feed.xml`,
+        json: `${siteURL}/rss/feed.json`,
+        atom: `${siteURL}/rss/atom.xml`,
+      },
+      author,
+    });
+    posts.forEach((post) => {
+      const url = `${siteURL}/thoughts/${post.slug}`;
+      feed.addItem({
+        title: post.title,
+        id: post.id,
+        link: url,
+        description: post.metadata.snippet,
+        image: post.metadata.hero.imgix_url,
+        content: post.content,
+        author: [author],
+        contributor: [author],
+        date: new Date(post.published_at),
+      });
+    });
+    fs.mkdirSync("./public/rss", { recursive: true });
+    fs.writeFileSync("./public/rss/feed.xml", feed.rss2());
+    fs.writeFileSync("./public/rss/atom.xml", feed.atom1());
+    fs.writeFileSync("./public/rss/feed.json", feed.json1());
+  };
+  
+  try {
+      await generateRssFeed()
+  } catch (error) {
+      console.log(error)
+  };
 
   return (
     <div className={"mt-12"}>
@@ -276,58 +328,6 @@ export async function getStaticProps() {
     props: "id,slug,title,metadata,published_at",
   });
   const writings = await data.objects;
-  
-  const generateRssFeed = async () => {
-    const posts = writings;
-    const siteURL = "https://kejk.tech";
-    const date = new Date();
-    const author = {
-      name: "Karl Emil James Koch",
-      email: "karl@kejk.tech",
-      link: "https://twitter.com/_kejk",
-    };
-    const feed = new Feed({
-      title: "KEJK | Writing",
-      description: "Thoughts on design, development and career progression",
-      id: siteURL,
-      link: siteURL,
-      image: `${siteURL}/logo.svg`,
-      favicon: `${siteURL}/favicon.ico`,
-      copyright: `All rights reserved ${date.getFullYear()}, Karl Emil James Koch`,
-      updated: date,
-      generator: "Feed for Node.js",
-      feedLinks: {
-        rss2: `${siteURL}/rss/feed.xml`,
-        json: `${siteURL}/rss/feed.json`,
-        atom: `${siteURL}/rss/atom.xml`,
-      },
-      author,
-    });
-    posts.forEach((post) => {
-      const url = `${siteURL}/thoughts/${post.slug}`;
-      feed.addItem({
-        title: post.title,
-        id: post.id,
-        link: url,
-        description: post.metadata.snippet,
-        image: post.metadata.hero.imgix_url,
-        content: post.content,
-        author: [author],
-        contributor: [author],
-        date: new Date(post.published_at),
-      });
-    });
-    fs.mkdirSync("./public/rss", { recursive: true });
-    fs.writeFileSync("./public/rss/feed.xml", feed.rss2());
-    fs.writeFileSync("./public/rss/atom.xml", feed.atom1());
-    fs.writeFileSync("./public/rss/feed.json", feed.json1());
-  };
-  
-  try {
-      await generateRssFeed()
-  } catch (error) {
-      console.log(error)
-  };
 
   return {
     props: {
