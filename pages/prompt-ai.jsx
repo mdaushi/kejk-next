@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import PageHeader from "../components/PageHeader";
-import { ArrowLongLeftIcon } from "@heroicons/react/24/outline";
+import { ArrowDownIcon, ArrowLongLeftIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import TextButton from "../components/TextButton";
 import { useRouter } from "next/router";
