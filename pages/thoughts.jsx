@@ -134,12 +134,6 @@ export default function Writing({ writings }) {
     fs.writeFileSync("./public/rss/feed.json", feed.json1());
   };
 
-  try {
-      await generateRssFeed()
-  } catch (error) {
-      console.log(error)
-  };
-
   return (
     <div className={"mt-12"}>
       <Head>
@@ -328,6 +322,12 @@ export async function getStaticProps() {
     props: "id,slug,title,metadata,published_at",
   });
   const writings = await data.objects;
+  
+  try {
+      await generateRssFeed()
+  } catch (error) {
+      console.log(error)
+  };
 
   return {
     props: {
