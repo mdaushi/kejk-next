@@ -3,7 +3,7 @@ import Link from "next/link";
 import PageHeader from "../components/PageHeader";
 import WritingCard from "../components/WritingCard";
 import Button from "../components/Button";
-import { writeFileSync } from "fs";
+import fs from "fs";
 import { Feed } from "feed";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
@@ -277,7 +277,7 @@ export async function getStaticProps() {
   });
   const writings = await data.objects;
   
-  const posts = writings;
+  const posts = await data.objects;
   const siteURL = "https://kejk.tech";
     const date = new Date();
     const author = {
@@ -297,7 +297,7 @@ export async function getStaticProps() {
       updated: date,
       generator: "Feed for Node.js",
       feedLinks: {
-        rss2: `${siteURL}/rss/feed.xml`,
+        rss2: `${siteURL}/feed.xml`,
       },
       author,
     });
@@ -317,7 +317,7 @@ export async function getStaticProps() {
       });
     }); 
 
-    writeFileSync("./public/rss.xml", feed.rss2(), { encoding: "utf-8" });
+    fs.writeFileSync("./public/rss.xml", feed.rss2(), { encoding: "utf-8" });
 
   return {
     props: {
