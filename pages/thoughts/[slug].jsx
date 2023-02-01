@@ -1,10 +1,12 @@
 import * as React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import PageHeader from "../../components/PageHeader";
 import { useRouter } from "next/router";
+import PageHeader from "../../components/PageHeader";
 import TextButton from "../../components/TextButton";
 import AllCapsHeader from "../../components/AllCapsHeader";
+import WritingCard from "../../components/WritingCard";
+import Markdown from "../../components/Markdown";
 import Moment from "react-moment";
 import classNames from "classnames";
 import {
@@ -17,7 +19,6 @@ import Prism from "prismjs";
 import "prismjs/components/prism-jsx.min";
 import "prismjs/components/prism-regex.min";
 import "prismjs/components/prism-json.min";
-import WritingCard from "../../components/WritingCard";
 
 const VIEWPORT_PADDING = 24;
 
@@ -136,10 +137,14 @@ export default function Post({ allPosts, post }) {
                 Last updated:&nbsp;<Moment fromNow>{post.modified_at}</Moment>
               </AllCapsHeader>
               <PageHeader>{post.title}</PageHeader>
-              <div
-                className="inline-link text-lg"
-                dangerouslySetInnerHTML={{ __html: post.content }}
-              />
+              {post.metadata.content != "" ? (
+                <Markdown content={post.metadata.content} />
+              ) : (
+                <div
+                  className="inline-link text-lg"
+                  dangerouslySetInnerHTML={{ __html: post.content }}
+                />
+              )}
             </article>
           </>
         )}

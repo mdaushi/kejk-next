@@ -2,10 +2,17 @@
   @apply text-lg leading-relaxed;
 }
 
+.markdown blockquote {
+  @apply text-neutral-500 dark:text-neutral-300;
+}
+
+.markdown blockquote > p {
+  @apply pt-0 text-neutral-500 dark:text-neutral-300;
+}
+
 .markdown p,
 .markdown ul,
-.markdown ol,
-.markdown blockquote {
+.markdown ol {
   @apply pt-4 text-neutral-500 dark:text-neutral-300;
 }
 
@@ -22,9 +29,13 @@
 }
 
 .markdown ul li {
-  @apply mb-2 list-inside list-disc rounded p-2 text-[16px] font-semibold shadow-md md:text-[18px];
+  @apply mb-2 list-disc rounded p-2 text-[16px] shadow-md md:text-[18px];
 }
 
 .markdown ol li {
-  @apply mb-2 list-inside list-decimal rounded p-2 text-[16px] font-semibold md:text-[18px];
+  @apply mb-2 list-decimal rounded p-2 text-[16px] md:text-[18px];
+}
+
+.markdown li > p {
+  @apply pt-0;
 }
