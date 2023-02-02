@@ -43,7 +43,6 @@
 .markdown figcaption {
     @apply mt-2 italic text-neutral-700 dark:text-neutral-400 text-sm pb-4;
   }
-}
 
 .markdown pre {
     @apply mb-4 w-full overflow-x-scroll whitespace-pre rounded-lg bg-neutral-100 font-mono dark:bg-neutral-800;
