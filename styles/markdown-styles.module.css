@@ -29,11 +29,11 @@
 }
 
 .markdown ul li {
-  @apply mb-2 list-disc rounded p-2 text-[16px] shadow-md md:text-[18px];
+  @apply mb-2 list-disc p-2 text-[16px] md:text-[18px];
 }
 
 .markdown ol li {
-  @apply mb-2 list-decimal rounded p-2 text-[16px] md:text-[18px];
+  @apply mb-2 list-decimal p-2 text-[16px] md:text-[18px];
 }
 
 .markdown li > p {
