@@ -19,10 +19,10 @@ const bucket = api.bucket({
 });
 
 const PromptAI = ({ promptAI }) => {
-  const metaTitle = "KEJK | Prompt AI";
+  const metaTitle = "KEJK | PromptAI";
   const metaImage =
     "https://imgix.cosmicjs.com/9bcfeeb0-8cdd-11ed-bac9-7fe1734a16aa-prompt-ai.png";
-  const metaDescription = "Interface directly with the Open AI beta, natively.";
+  const metaDescription = "Interface directly with the OpenAI beta, natively.";
   const url = "https://kejk.tech/prompt-ai";
   const downloadURL = "https://apps.apple.com/us/app/promptai/id1659936985";
 
