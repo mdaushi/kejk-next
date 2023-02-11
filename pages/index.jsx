@@ -17,6 +17,7 @@ import AppCard from "../components/AppCard";
 import FeatureCard from "../components/FeatureCard";
 import AllCapsHeader from "../components/AllCapsHeader";
 import PageHeader from "../components/PageHeader";
+import HomeHeader from "../components/HomeHeader";
 import SocialLink from "../components/SocialLink";
 
 const Cosmic = require("cosmicjs");
