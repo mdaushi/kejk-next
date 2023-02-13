@@ -110,6 +110,7 @@ const PromptAI = ({ promptAI }) => {
           </div>
         </div>
         <div dangerouslySetInnerHTML={{ __html: promptAI.content }} />
+        <a rel="me" href="https://mastodon.design/@kejk" className="opacity-0 cursor-none">Mastodon</a>
       </div>
     </div>
   );
