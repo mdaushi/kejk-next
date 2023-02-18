@@ -16,7 +16,7 @@ import WritingCard from "../components/WritingCard";
 import AppCard from "../components/AppCard";
 import FeatureCard from "../components/FeatureCard";
 import AllCapsHeader from "../components/AllCapsHeader";
-import PageHeader from "../components/PageHeader";
+import HomeHeader from "../components/HomeHeader";
 import SocialLink from "../components/SocialLink";
 
 const Cosmic = require("cosmicjs");
@@ -86,7 +86,7 @@ export default function Home({
           >
             Karl Emil James Koch
           </AllCapsHeader>
-          <PageHeader>{home.title}</PageHeader>
+          <HomeHeader>{home.title}</HomeHeader>
           <Markdown content={home.metadata.content} className="-mt-4" />
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center space-x-4">
