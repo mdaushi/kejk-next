@@ -9,12 +9,12 @@ import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import { EnvelopeIcon, RssIcon } from "@heroicons/react/20/solid";
 import SearchInput from "../components/SearchInput";
-import { Archivo } from "@next/font/google";
+import { Inter } from "@next/font/google";
 
-const archivo = Archivo({
+const inter = Inter({
   subsets: ["latin"],
   weights: [400, 500, 600, 700, 800, 900],
-  variable: "--font-archivo",
+  variable: "--font-inter",
 });
 
 const Cosmic = require("cosmicjs");
@@ -31,7 +31,7 @@ const bucket = api.bucket({
 export default function Writing({ writings }) {
   const metaTitle = "KEJK | Writing";
   const metaImage =
-    "https://imgix.cosmicjs.com/9aed7690-65d0-11ed-b20b-e9b674dc18cb-meta-thoughts.png";
+    "https://imgix.cosmicjs.com/7d47d940-afdc-11ed-a13d-c3e6887fd23f-meta-thoughts.png";
   const metaDescription = "Designer, developer, writer and musician";
   const url = "https://kejk.tech/thoughts";
 
@@ -147,7 +147,7 @@ export default function Writing({ writings }) {
                         leaveTo="opacity-0 scale-95"
                       >
                         <Dialog.Panel
-                          className={`w-full max-w-md transform overflow-hidden rounded-2xl bg-neutral-50 p-4 text-left align-middle font-sans shadow-xl transition-all dark:border dark:border-neutral-700 dark:bg-neutral-900 ${archivo.variable}`}
+                          className={`w-full max-w-md transform overflow-hidden rounded-2xl bg-neutral-50 p-4 text-left align-middle font-sans shadow-xl transition-all dark:border dark:border-neutral-700 dark:bg-neutral-900 ${inter.variable}`}
                         >
                           <Dialog.Title className="text-lg font-medium leading-6 text-neutral-900 dark:text-neutral-50">
                             Subscribe
@@ -276,48 +276,48 @@ export async function getStaticProps() {
     props: "id,slug,title,metadata,published_at",
   });
   const writings = await data.objects;
-  
+
   const posts = await data.objects;
   const siteURL = "https://kejk.tech";
-    const date = new Date();
-    const author = {
-      name: "Karl Emil James Koch",
-      email: "karl@kejk.tech",
-      link: "https://twitter.com/_kejk",
-    };
-    const feed = new Feed({
-      title: "KEJK | Writing",
-      description: "Thoughts on design, development and career progression",
-      id: siteURL,
-      link: siteURL,
-      language: "en",
-      image: `${siteURL}/logo.svg`,
-      favicon: `${siteURL}/favicon.ico`,
-      copyright: `All rights reserved ${date.getFullYear()}, Karl Emil James Koch`,
-      updated: date,
-      generator: "Feed for Node.js",
-      feedLinks: {
-        rss2: `${siteURL}/feed.xml`,
-      },
-      author,
-    });
-    
-    posts.forEach((post) => {
-      const url = `${siteURL}/thoughts/${post.slug}`;
-      feed.addItem({
-        title: post.title,
-        id: post.id,
-        link: url,
-        description: post.metadata.snippet,
-        image: post.metadata.hero.imgix_url,
-        content: post.content,
-        author: [author],
-        contributor: [author],
-        date: new Date(post.published_at),
-      });
-    }); 
+  const date = new Date();
+  const author = {
+    name: "Karl Emil James Koch",
+    email: "karl@kejk.tech",
+    link: "https://twitter.com/_kejk",
+  };
+  const feed = new Feed({
+    title: "KEJK | Writing",
+    description: "Thoughts on design, development and career progression",
+    id: siteURL,
+    link: siteURL,
+    language: "en",
+    image: `${siteURL}/logo.svg`,
+    favicon: `${siteURL}/favicon.ico`,
+    copyright: `All rights reserved ${date.getFullYear()}, Karl Emil James Koch`,
+    updated: date,
+    generator: "Feed for Node.js",
+    feedLinks: {
+      rss2: `${siteURL}/feed.xml`,
+    },
+    author,
+  });
 
-    fs.writeFileSync("./public/rss.xml", feed.rss2(), { encoding: "utf-8" });
+  posts.forEach((post) => {
+    const url = `${siteURL}/thoughts/${post.slug}`;
+    feed.addItem({
+      title: post.title,
+      id: post.id,
+      link: url,
+      description: post.metadata.snippet,
+      image: post.metadata.hero.imgix_url,
+      content: post.metadata.markdown,
+      author: [author],
+      contributor: [author],
+      date: new Date(post.published_at),
+    });
+  });
+
+  fs.writeFileSync("./public/rss.xml", feed.rss2(), { encoding: "utf-8" });
 
   return {
     props: {

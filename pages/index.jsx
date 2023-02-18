@@ -48,8 +48,7 @@ export default function Home({
   socials,
 }) {
   const metaTitle = "KEJK | Home";
-  const metaImage =
-    "https://imgix.cosmicjs.com/c7048ac0-65d0-11ed-b20b-e9b674dc18cb-meta.png";
+  const metaImage = home.metadata.meta;
   const metaDescription = "Designer, developer, writer and musician";
   const url = "https://kejk.tech";
 
@@ -58,7 +57,12 @@ export default function Home({
       <Head>
         <title>{metaTitle}</title>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="alternate" type="application/rss+xml" title="KEJK | Writing" href="/rss.xml" />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="KEJK | Writing"
+          href="/rss.xml"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="title" content={metaTitle} />
         <meta name="description" content={metaDescription} />
@@ -248,7 +252,13 @@ export default function Home({
             href="https://plausible.io/data-policy"
             title="Privacy and Data Policy"
           />
-          <a rel="me" href="https://mastodon.design/@kejk" className="opacity-0 cursor-none">Mastodon</a>
+          <a
+            rel="me"
+            href="https://mastodon.design/@kejk"
+            className="cursor-none opacity-0"
+          >
+            Mastodon
+          </a>
         </div>
       </div>
     </div>

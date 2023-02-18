@@ -6,12 +6,12 @@ import {
   ArrowTopRightOnSquareIcon,
 } from "@heroicons/react/20/solid";
 import { useRouter } from "next/router";
-import { Archivo } from "@next/font/google";
+import { Inter } from "@next/font/google";
 
-const archivo = Archivo({
+const inter = Inter({
   subsets: ["latin"],
   weights: [400, 500, 600, 700, 800, 900],
-  variable: "--font-archivo",
+  variable: "--font-inter",
 });
 
 export const CommandPalette = ({
@@ -163,7 +163,7 @@ export const CommandPalette = ({
                         ? (window.location.href = `${item.metadata.url}`)
                         : (window.location.href = `${item.url}`);
                     }}
-                    className={`w-[90vw] transform divide-y divide-neutral-100 overflow-hidden rounded-2xl bg-neutral-50 p-2 text-left align-middle font-sans shadow-xl transition-all dark:divide-neutral-800 dark:border dark:border-neutral-700 dark:bg-neutral-900 md:w-[40vw] ${archivo.variable}`}
+                    className={`w-[90vw] transform divide-y divide-neutral-100 overflow-hidden rounded-2xl bg-neutral-50 p-2 text-left align-middle font-sans shadow-xl transition-all dark:divide-neutral-800 dark:border dark:border-neutral-700 dark:bg-neutral-900 md:w-[40vw] ${inter.variable}`}
                   >
                     <div className="flex items-center font-sans">
                       <MagnifyingGlassIcon
@@ -172,7 +172,7 @@ export const CommandPalette = ({
                         className="text-neutral-600 dark:text-neutral-300"
                       />
                       <Combobox.Input
-                        className={`w-full rounded-full bg-transparent p-2 font-sans text-neutral-900 placeholder:font-sans  focus:outline-none dark:text-neutral-300 md:rounded-md ${archivo.variable}`}
+                        className={`w-full rounded-full bg-transparent p-2 font-sans text-neutral-900 placeholder:font-sans  focus:outline-none dark:text-neutral-300 md:rounded-md ${inter.variable}`}
                         placeholder={"Search..."}
                         onChange={(e) => {
                           setQuery(e.target.value);
@@ -190,7 +190,7 @@ export const CommandPalette = ({
                             {({ active }) => (
                               <div
                                 className={`${
-                                  archivo.variable
+                                  inter.variable
                                 } flex w-full cursor-pointer items-center justify-between rounded p-3 text-sm text-black transition-all duration-75 ease-in hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800 ${
                                   active
                                     ? "bg-neutral-200 dark:bg-neutral-700"
@@ -199,13 +199,13 @@ export const CommandPalette = ({
                               >
                                 <div className="flex w-full items-center justify-start space-x-1">
                                   <span
-                                    className={`${archivo.variable} font-sans`}
+                                    className={`${inter.variable} font-sans`}
                                   >
                                     {item.title}
                                   </span>
                                   <span
                                     className={`font-sans text-neutral-500 hover:text-teal-800 dark:text-neutral-400 hover:dark:text-teal-200 ${
-                                      archivo.variable
+                                      inter.variable
                                     } ${
                                       active &&
                                       "text-teal-800 dark:text-teal-200"
@@ -237,7 +237,7 @@ export const CommandPalette = ({
                     ) : (
                       <div className="flex items-center justify-center p-4">
                         <p
-                          className={`text-sm text-neutral-500 dark:text-neutral-400 ${archivo.variable}`}
+                          className={`text-sm text-neutral-500 dark:text-neutral-400 ${inter.variable}`}
                         >
                           No results found
                         </p>

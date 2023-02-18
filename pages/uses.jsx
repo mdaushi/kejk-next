@@ -16,7 +16,7 @@ const bucket = api.bucket({
 export default function Projects({ stacks }) {
   const metaTitle = "KEJK | Stack";
   const metaImage =
-    "https://imgix.cosmicjs.com/9aeb2ca0-65d0-11ed-b20b-e9b674dc18cb-meta-uses.png";
+    "https://imgix.cosmicjs.com/7d4fc880-afdc-11ed-a13d-c3e6887fd23f-meta-uses.png";
   const metaDescription = "Designer, developer, writer and musician";
   const url = "https://kejk.tech/uses";
 
