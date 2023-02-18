@@ -48,7 +48,8 @@ export default function Home({
   socials,
 }) {
   const metaTitle = "KEJK | Home";
-  const metaImage = home.metadata.meta;
+  const metaImage =
+    "https://imgix.cosmicjs.com/7d508bd0-afdc-11ed-a13d-c3e6887fd23f-meta.png";
   const metaDescription = "Designer, developer, writer and musician";
   const url = "https://kejk.tech";
 

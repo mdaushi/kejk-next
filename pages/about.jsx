@@ -19,7 +19,8 @@ const bucket = api.bucket({
 
 export default function About({ about, principles }) {
   const metaTitle = "KEJK | About";
-  const metaImage = about.metadata.meta;
+  const metaImage =
+    "https://imgix.cosmicjs.com/7d3cb5b0-afdc-11ed-a13d-c3e6887fd23f-meta-about.png";
   const metaDescription = "Designer, developer, writer and musician";
   const url = "https://kejk.tech/about";
 
