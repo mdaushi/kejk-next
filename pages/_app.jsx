@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import PlausibleProvider from "next-plausible";
 import Layout from "../components/Layout";
 import "../styles/globals.css";
@@ -35,6 +36,7 @@ function MyApp({ Component, pageProps }) {
           className={`${inter.variable} ${mono.variable} ${gambarino.variable} font-sans`}
         >
           <Component {...pageProps} />
+          <Analytics />
         </main>
       </Layout>
     </PlausibleProvider>

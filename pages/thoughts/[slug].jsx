@@ -7,6 +7,7 @@ import TextButton from "../../components/TextButton";
 import AllCapsHeader from "../../components/AllCapsHeader";
 import WritingCard from "../../components/WritingCard";
 import Markdown from "../../components/Markdown";
+import Tag from "../../components/Tag";
 import Moment from "react-moment";
 import classNames from "classnames";
 import {
@@ -133,9 +134,16 @@ export default function Post({ allPosts, post }) {
               </Link>
             </div>
             <article>
-              <AllCapsHeader marginTop={0} justify={"justify-start"}>
-                Last updated:&nbsp;<Moment fromNow>{post.modified_at}</Moment>
-              </AllCapsHeader>
+              <div className="flex flex-row items-center justify-center">
+                <AllCapsHeader marginTop={0} justify={"justify-start"}>
+                  Last updated:&nbsp;<Moment fromNow>{post.modified_at}</Moment>
+                </AllCapsHeader>
+                {post.metadata.tag !== undefined && (
+                  <div className="pb-4 md:mb-1">
+                    <Tag>{post.metadata.tag}</Tag>
+                  </div>
+                )}
+              </div>
               <PageHeader>{post.title}</PageHeader>
               {post.metadata.content != "" ? (
                 <Markdown content={post.metadata.content} />
@@ -145,6 +153,9 @@ export default function Post({ allPosts, post }) {
                   dangerouslySetInnerHTML={{ __html: post.content }}
                 />
               )}
+              <AllCapsHeader marginTop={0} justify={"justify-start"}>
+                First published:&nbsp;<Moment fromNow>{post.created_at}</Moment>
+              </AllCapsHeader>
             </article>
           </>
         )}
@@ -210,7 +221,7 @@ export async function getStaticProps({ params }) {
     query: {
       slug: params.slug,
     },
-    props: "id,slug,content,title,metadata,modified_at",
+    props: "id,slug,content,title,metadata,modified_at,created_at",
   });
   const post = await data.objects[0];
 
