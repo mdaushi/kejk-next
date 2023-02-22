@@ -13,7 +13,7 @@
 .markdown p,
 .markdown ul,
 .markdown ol {
-  @apply pt-4 text-neutral-500 dark:text-neutral-300;
+  @apply pb-4 font-sans leading-relaxed text-neutral-700 dark:text-neutral-300;
 }
 
 .markdown h2 {
