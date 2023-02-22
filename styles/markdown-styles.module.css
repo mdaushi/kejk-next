@@ -3,7 +3,7 @@
 }
 
 .markdown blockquote {
-    @apply my-4 ml-4 border-l-4 border-teal-500 italic dark:border-teal-500;
+    @apply mb-4 ml-4 border-l-4 border-teal-500 italic dark:border-teal-500;
 }
 
 .markdown blockquote p {
