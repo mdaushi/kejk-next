@@ -2,18 +2,9 @@ import Link from "next/link";
 
 const AlertPreview = () => {
   return (
-    <div className="text-fore-subtle bg-back-subtle absolute top-28 left-0 z-20 w-full px-8 md:top-20">
-      <div className="py-2 text-center text-sm">
-        <>
-          You&apos;re in preview mode.{" "}
-          <Link
-            href="/api/exit-preview"
-            className="hover:text-accent cursor-pointer underline transition-colors"
-          >
-            Click here
-          </Link>{" "}
-          to exit.
-        </>
+    <div className="fixed top-0 left-0 z-20 w-full bg-neutral-100 px-8 dark:bg-neutral-800 md:top-16">
+      <div className="py-3 text-center text-sm font-medium text-neutral-900 dark:text-neutral-50">
+        <>Preview mode</>
       </div>
     </div>
   );
