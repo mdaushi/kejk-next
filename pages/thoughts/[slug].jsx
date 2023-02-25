@@ -157,7 +157,7 @@ export default function Post({ allPosts, post }) {
                   dangerouslySetInnerHTML={{ __html: post.content }}
                 />
               )}
-              <AllCapsHeader marginTop={0} justify={"justify-start"}>
+              <AllCapsHeader marginTop={16} justify={"justify-start"}>
                 First published:&nbsp;<Moment fromNow>{post.created_at}</Moment>
               </AllCapsHeader>
             </article>
