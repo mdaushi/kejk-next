@@ -268,12 +268,13 @@ export default function Writing({ writings }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ preview = null }) {
   const data = await bucket.getObjects({
     query: {
       type: "writings",
     },
     props: "id,slug,title,metadata,published_at",
+    preview,
   });
   const writings = await data.objects;
 
@@ -322,6 +323,7 @@ export async function getStaticProps() {
   return {
     props: {
       writings,
+      preview,
     },
   };
 }

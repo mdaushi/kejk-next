@@ -1,25 +1,26 @@
-import * as React from "react";
-import Head from "next/head";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import PageHeader from "../../components/PageHeader";
-import TextButton from "../../components/TextButton";
-import AllCapsHeader from "../../components/AllCapsHeader";
-import WritingCard from "../../components/WritingCard";
-import Markdown from "../../components/Markdown";
-import Tag from "../../components/Tag";
-import Moment from "react-moment";
-import classNames from "classnames";
 import {
   ArrowLongLeftIcon,
   CheckCircleIcon,
 } from "@heroicons/react/24/outline";
-import { styled, keyframes } from "@stitches/react";
 import * as ToastPrimitive from "@radix-ui/react-toast";
+import { keyframes, styled } from "@stitches/react";
+import classNames from "classnames";
+import Head from "next/head";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import Prism from "prismjs";
+import "prismjs/components/prism-json.min";
 import "prismjs/components/prism-jsx.min";
 import "prismjs/components/prism-regex.min";
-import "prismjs/components/prism-json.min";
+import * as React from "react";
+import Moment from "react-moment";
+import AllCapsHeader from "../../components/AllCapsHeader";
+import Markdown from "../../components/Markdown";
+import PageHeader from "../../components/PageHeader";
+import Tag from "../../components/Tag";
+import TextButton from "../../components/TextButton";
+import WritingCard from "../../components/WritingCard";
+import AlertPreview from "../../components/AlertPreview";
 
 const VIEWPORT_PADDING = 24;
 
@@ -126,6 +127,9 @@ export default function Post({ allPosts, post }) {
         ) : (
           <>
             <div className="group mb-8 flex w-full justify-start">
+              {post.status === "draft" ? (
+                <AlertPreview preview={true} />
+              ) : undefined}
               <Link href={"/thoughts"}>
                 <TextButton textColor="black" darkTextColor="white">
                   <ArrowLongLeftIcon className="mr-2 h-6 w-6 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
@@ -216,12 +220,14 @@ export default function Post({ allPosts, post }) {
   );
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params, preview = null }) {
   const data = await bucket.getObjects({
     query: {
       slug: params.slug,
     },
+    status: "any",
     props: "id,slug,content,title,metadata,modified_at,created_at",
+    preview,
   });
   const post = await data.objects[0];
 
@@ -235,7 +241,7 @@ export async function getStaticProps({ params }) {
   const allPosts = await allWritingData.objects;
 
   return {
-    props: { post, allPosts },
+    props: { post, allPosts, preview },
   };
 }
 
