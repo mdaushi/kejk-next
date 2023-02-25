@@ -3,17 +3,17 @@
 }
 
 .markdown blockquote {
-  @apply text-neutral-500 dark:text-neutral-300;
+  @apply mb-4 ml-4 border-l-4 border-teal-500 italic dark:border-teal-500;
 }
 
-.markdown blockquote > p {
-  @apply pt-0 text-neutral-500 dark:text-neutral-300;
+.markdown blockquote p {
+  @apply ml-4 pb-0 text-neutral-500 dark:text-neutral-300;
 }
 
 .markdown p,
 .markdown ul,
 .markdown ol {
-  @apply pt-4 text-neutral-500 dark:text-neutral-300;
+  @apply pb-4 font-sans leading-relaxed text-neutral-700 dark:text-neutral-300;
 }
 
 .markdown h2 {
@@ -41,21 +41,21 @@
 }
 
 .markdown figcaption {
-    @apply mt-2 italic text-neutral-700 dark:text-neutral-400 text-sm pb-4;
-  }
+  @apply mt-2 pb-4 text-sm italic text-neutral-700 dark:text-neutral-400;
+}
 
 .markdown pre {
-    @apply mb-4 w-full overflow-x-scroll whitespace-pre rounded-lg bg-neutral-100 font-mono dark:bg-neutral-800;
-  }
+  @apply mb-4 w-full overflow-x-scroll whitespace-pre rounded-lg bg-neutral-100 font-mono dark:bg-neutral-800;
+}
 
 .markdown pre > code {
-    @apply bg-transparent font-mono;
-  }
+  @apply bg-transparent font-mono;
+}
 
 .markdown code {
-    @apply w-max rounded-lg bg-neutral-100 py-1 px-2 font-mono text-sm text-teal-700 dark:bg-neutral-800 dark:text-teal-400;
-  }
+  @apply w-max rounded-lg bg-neutral-100 py-1 px-2 font-mono text-sm text-teal-700 dark:bg-neutral-800 dark:text-teal-400;
+}
 
 .markdown code > span {
-    @apply font-mono;
-  }
+  @apply font-mono;
+}
