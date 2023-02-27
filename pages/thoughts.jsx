@@ -317,7 +317,7 @@ export async function getStaticProps({ preview = null }) {
       link: url,
       description: post.metadata.snippet,
       image: post.metadata.hero.imgix_url,
-      content: post.metadata.markdown,
+      content: post.metadata.content,
       author: [author],
       contributor: [author],
       date: new Date(post.published_at),
