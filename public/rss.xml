@@ -4,7 +4,7 @@
         <title>KEJK | Writing</title>
         <link>https://kejk.tech</link>
         <description>Thoughts on design, development and career progression</description>
-        <lastBuildDate>Sat, 25 Feb 2023 15:54:09 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 27 Feb 2023 16:00:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <language>en</language>
@@ -14,6 +14,15 @@
             <link>https://kejk.tech</link>
         </image>
         <copyright>All rights reserved 2023, Karl Emil James Koch</copyright>
+        <item>
+            <title><![CDATA[Two weeks and five lessons]]></title>
+            <link>https://kejk.tech/thoughts/two-weeks-and-five-lessons</link>
+            <guid>63f7e122a3d4b7000872fae0</guid>
+            <pubDate>Sun, 26 Feb 2023 08:04:58 GMT</pubDate>
+            <description><![CDATA[Lots of conversations, tasks, research and reading later]]></description>
+            <author>karl@kejk.tech (Karl Emil James Koch)</author>
+            <enclosure url="https://imgix.cosmicjs.com/cac5a210-b44b-11ed-80d4-cdbe55252435-Two-weeks-and-five-lessons2x.png" length="0" type="image/png"/>
+        </item>
         <item>
             <title><![CDATA[On Digital Playgrounds]]></title>
             <link>https://kejk.tech/thoughts/on-digital-playgrounds</link>

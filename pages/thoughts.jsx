@@ -10,11 +10,17 @@ import { Fragment, useState } from "react";
 import { EnvelopeIcon, RssIcon } from "@heroicons/react/20/solid";
 import SearchInput from "../components/SearchInput";
 import { Inter } from "@next/font/google";
+import Telegraf from "@next/font/local";
 
-const inter = Inter({
-  subsets: ["latin"],
-  weights: [400, 500, 600, 700, 800, 900],
-  variable: "--font-inter",
+// const inter = Inter({
+//   subsets: ["latin"],
+//   weights: [400, 500, 600, 700, 800, 900],
+//   variable: "--font-inter",
+// });
+
+const sans = Telegraf({
+  src: "../fonts/PPTelegraf-Regular.woff2",
+  variable: "--font-sans",
 });
 
 const Cosmic = require("cosmicjs");
@@ -147,7 +153,7 @@ export default function Writing({ writings }) {
                         leaveTo="opacity-0 scale-95"
                       >
                         <Dialog.Panel
-                          className={`w-full max-w-md transform overflow-hidden rounded-2xl bg-neutral-50 p-4 text-left align-middle font-sans shadow-xl transition-all dark:border dark:border-neutral-700 dark:bg-neutral-900 ${inter.variable}`}
+                          className={`w-full max-w-md transform overflow-hidden rounded-2xl bg-neutral-50 p-4 text-left align-middle font-sans shadow-xl transition-all dark:border dark:border-neutral-700 dark:bg-neutral-900 ${sans.variable}`}
                         >
                           <Dialog.Title className="text-lg font-medium leading-6 text-neutral-900 dark:text-neutral-50">
                             Subscribe

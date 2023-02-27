@@ -4,12 +4,18 @@ import Image from "next/image";
 import Link from "next/link";
 import NavLink from "./NavLink";
 import { useEffect, useState } from "react";
-import { Archivo, Inter, JetBrains_Mono } from "@next/font/google";
+import { Inter, JetBrains_Mono } from "@next/font/google";
+import Telegraf from "@next/font/local";
 
-const inter = Inter({
-  subsets: ["latin"],
-  weights: [400, 500, 600, 700, 800, 900],
-  variable: "--font-inter",
+// const inter = Inter({
+//   subsets: ["latin"],
+//   weights: [400, 500, 600, 700, 800, 900],
+//   variable: "--font-inter",
+// });
+
+const sans = Telegraf({
+  src: "../fonts/PPTelegraf-Regular.woff2",
+  variable: "--font-sans",
 });
 
 const mono = JetBrains_Mono({
@@ -75,7 +81,7 @@ const Nav = () => {
   }, [key]);
 
   return (
-    <div className={`${inter.variable}`}>
+    <div className={`${sans.variable}`}>
       <div
         as="nav"
         className="hidden backdrop-blur-md dark:border-neutral-700 md:fixed md:top-0 md:z-50 md:mx-auto md:flex md:h-16 md:w-full md:items-center md:justify-center md:rounded-none md:border md:border-none md:border-neutral-200 md:bg-white md:py-0 md:shadow-none md:duration-500 dark:md:bg-[#141516]/50 dark:md:shadow-none"

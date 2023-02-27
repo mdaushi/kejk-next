@@ -6,12 +6,18 @@ import {
   ArrowTopRightOnSquareIcon,
 } from "@heroicons/react/20/solid";
 import { useRouter } from "next/router";
-import { Inter } from "@next/font/google";
+// import { Inter } from "@next/font/google";
+import Telegraf from "@next/font/local";
 
-const inter = Inter({
-  subsets: ["latin"],
-  weights: [400, 500, 600, 700, 800, 900],
-  variable: "--font-inter",
+// const inter = Inter({
+//   subsets: ["latin"],
+//   weights: [400, 500, 600, 700, 800, 900],
+//   variable: "--font-inter",
+// });
+
+const sans = Telegraf({
+  src: "../fonts/PPTelegraf-Regular.woff2",
+  variable: "--font-sans",
 });
 
 export const CommandPalette = ({
@@ -163,7 +169,7 @@ export const CommandPalette = ({
                         ? (window.location.href = `${item.metadata.url}`)
                         : (window.location.href = `${item.url}`);
                     }}
-                    className={`w-[90vw] transform divide-y divide-neutral-100 overflow-hidden rounded-2xl bg-neutral-50 p-2 text-left align-middle font-sans shadow-xl transition-all dark:divide-neutral-800 dark:border dark:border-neutral-700 dark:bg-neutral-900 md:w-[40vw] ${inter.variable}`}
+                    className={`w-[90vw] transform divide-y divide-neutral-100 overflow-hidden rounded-2xl bg-neutral-50 p-2 text-left align-middle font-sans shadow-xl transition-all dark:divide-neutral-800 dark:border dark:border-neutral-700 dark:bg-neutral-900 md:w-[40vw] ${sans.variable}`}
                   >
                     <div className="flex items-center font-sans">
                       <MagnifyingGlassIcon
@@ -172,7 +178,7 @@ export const CommandPalette = ({
                         className="text-neutral-600 dark:text-neutral-300"
                       />
                       <Combobox.Input
-                        className={`w-full rounded-full bg-transparent p-2 font-sans text-neutral-900 placeholder:font-sans  focus:outline-none dark:text-neutral-300 md:rounded-md ${inter.variable}`}
+                        className={`w-full rounded-full bg-transparent p-2 font-sans text-neutral-900 placeholder:font-sans  focus:outline-none dark:text-neutral-300 md:rounded-md ${sans.variable}`}
                         placeholder={"Search..."}
                         onChange={(e) => {
                           setQuery(e.target.value);
@@ -199,13 +205,13 @@ export const CommandPalette = ({
                               >
                                 <div className="flex w-full items-center justify-start space-x-1">
                                   <span
-                                    className={`${inter.variable} font-sans`}
+                                    className={`${sans.variable} font-sans`}
                                   >
                                     {item.title}
                                   </span>
                                   <span
                                     className={`font-sans text-neutral-500 hover:text-teal-800 dark:text-neutral-400 hover:dark:text-teal-200 ${
-                                      inter.variable
+                                      sans.variable
                                     } ${
                                       active &&
                                       "text-teal-800 dark:text-teal-200"
@@ -237,7 +243,7 @@ export const CommandPalette = ({
                     ) : (
                       <div className="flex items-center justify-center p-4">
                         <p
-                          className={`text-sm text-neutral-500 dark:text-neutral-400 ${inter.variable}`}
+                          className={`text-sm text-neutral-500 dark:text-neutral-400 ${sans.variable}`}
                         >
                           No results found
                         </p>
