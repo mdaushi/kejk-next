@@ -4,7 +4,7 @@
         <title>KEJK | Writing</title>
         <link>https://kejk.tech</link>
         <description>Thoughts on design, development and career progression</description>
-        <lastBuildDate>Mon, 27 Feb 2023 16:00:49 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 27 Feb 2023 16:38:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <language>en</language>
@@ -20,6 +20,65 @@
             <guid>63f7e122a3d4b7000872fae0</guid>
             <pubDate>Sun, 26 Feb 2023 08:04:58 GMT</pubDate>
             <description><![CDATA[Lots of conversations, tasks, research and reading later]]></description>
+            <content:encoded><![CDATA[When on the outside looking in during an interview process, you can learn a lot about a company. By reading the docs they send you, looking for Glassdoor reviews or by asking questions at interview stage. But until you’re actually there, you don’t know if you made the right choice. 
+
+DuckDuckGo runs very differently to places I’ve worked before, but the way it runs is incredibly exciting and offers a whole host of opportunities to do your best work. 
+
+Below are the top five things I’ve noticed so far. 
+
+## 1. Levels don’t matter, so don’t bring them up
+
+We have a rule internally that we don’t share our level anywhere except in an external public forum (for example, LinkedIn) and that’s only if we want to. 
+
+By removing our levels from the conversation, the best ideas and best opportunities rise to the top no matter where they came from.
+
+This means that meetings involving C-suite, VP’s and others don’t lead to top down solutions. They create open spaces for discussion. Yes it’s possible to find out people’s level (obviously you’ll know the C-suite) but this approach is disarming and provides space for everyone to have maximum impact.
+
+We still have assigned people who lead specific objectives, but they’re just the directly responsible individual, not necessarily the final decision maker. This approach opens the floor for anyone at any level to have equal or outsized impact, but with ownership falling on the lead for that objective as a point of last resort.
+
+## 2. Salaries are level dependent, not role dependent
+
+It doesn’t matter what you do, whether it’s design, development, data science, social media etc. What you earn is relative to your level. So there’s no fighting over why one team are paid more than another. We all earn the same, because our value to the business is the same. Again, this has a disarming effect, allowing us to focus on doing our best work and not on whether we’re earning the same as the other people in the virtual room we’re in.
+
+This also means it’s really easy to see a path forwards from where you are and to understand what the potential is for levels and roles as they’re globally the same.
+
+Inline with point 1, the fact that all roles earn equal salaries helps with preventing an attitude of passing blame or feeling something is “above your pay-grade” because someone else in the room is "probably" earning more than you.
+
+## 3. We write everything, and I mean everything, down
+
+Writing everything down makes it possible for anyone to go back and see why a decision was made, even if that decision was made in 2015… it’s immense and quite overwhelming to begin with, but makes all the difference as a newbie to the company.
+
+This also means that onboarding is fully self-directed (much like a lot of the work we do here), so it’s possible to onboard in your own time and it doesn’t take people out of their responsibilities to be constantly trying to help you along (although they will if you ask!).
+
+We also ensure that project conversations are captured for all to see and discover. We use Mattermost (an open source Slack alternative) for synchronous text conversations, but Mattermost automatically clears after a week so that we're encouraged to leverage Asana for project conversations.
+
+## 4. Fully remote work creates better work/life boundaries
+
+In our modern world, we have lots to do and the typical 9-5 office model restricts this. Fully remote, and predominantly asynchronous work, enables better work/life balance by allowing you to get your work done when it suits you. 
+
+Those times can shift day to day. If you’ve got an appointment, no need to take half a day off, just go to it and make up the time later or when it suits you. As long as you deliver, it doesn’t matter when you did it or how long it actually took to complete. No-one is watching to see how long you've been online or when you last sent a message.
+
+Obviously the flip side of this is that it can be possible to work different hours to your significant other in order to meet with overseas colleagues and this may create complexity with home routines. It’s important to be able to say no to meetings (and we encourage this!) if they’ll interfere with your personal life regularly.
+
+Most importantly, on Wednesdays and Thursdays we have a rule that no recurring meetings take place. This gives space for deep work and is followed to the letter company-wide without question. Sporadic meetings can take place on these days, but they're not commonplace.
+
+## 5. Anyone can take on any project at any time
+
+You can propose a new project idea or pick up anything in the pool of ideas at any time. There’s no restrictions around a person being tied to one siloed product area. If I want to work on the Mac browser for a project cycle and then shift to the Extension, Search, Mobile apps etc., then I can. 
+
+This flexibility creates an almost agency-like model but tied to a single vision. This also prevents possible boredom or burnout from working on a single part of a product relentlessly.
+
+## Trust matters
+
+Overall, the most important lesson in all of this comes down to trust. In every role I've looked for, and every interview conversation I've had, I've always prioritised asking about trust within the organisation. It's vital to me that I'm given the space and trust to do my best work. I don't want to be micromanaged, especially not at this stage in my career. 
+
+Based on the above observations and many conversations, it's ultimately the most critical part of what makes the company work. Without implicit trust in everything and everyone, the company would simply cease to function at the speed, with the level of quality of polish, that it currently does. 
+
+Our growth has been very intentional, relative to other tech companies out there, our team is still small and nimble. But this means trust is essential and the rewards are there for all to see and benefit from. 
+
+---------
+
+If you’re looking for your next opportunity, check out some of our current [open opportunities](https://duckduckgo.com/hiring). ]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/cac5a210-b44b-11ed-80d4-cdbe55252435-Two-weeks-and-five-lessons2x.png" length="0" type="image/png"/>
         </item>
