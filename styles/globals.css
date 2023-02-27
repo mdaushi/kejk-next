@@ -81,7 +81,7 @@
   }
 
   code {
-    @apply w-max rounded-lg bg-neutral-100 py-1 px-2 font-mono text-sm text-teal-700 dark:bg-neutral-800 dark:text-teal-400;
+    @apply w-max rounded-lg bg-neutral-100 py-1 px-2 font-mono text-sm text-neutral-700 dark:bg-neutral-800 dark:text-neutral-100;
   }
 
   code > span {
@@ -89,7 +89,7 @@
   }
 
   figcaption {
-    @apply mt-2 italic text-neutral-700 dark:text-neutral-400 text-sm pb-4;
+    @apply mt-2 pb-4 text-sm italic text-neutral-700 dark:text-neutral-400;
   }
 }
 
@@ -109,15 +109,14 @@
   .nav[aria-current] {
     @apply rounded-full bg-neutral-200 px-4 py-2 font-sans text-teal-800 dark:bg-neutral-700 dark:text-teal-300 md:bg-neutral-100 md:dark:bg-neutral-800;
   }
-  
-    .mobileNav {
+
+  .mobileNav {
     @apply rounded-full px-4 py-4 font-sans text-black no-underline transition ease-in-out hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800;
   }
-  
+
   .mobileNav[aria-current] {
     @apply rounded-full bg-neutral-200 px-4 py-4 font-sans text-teal-800 dark:bg-neutral-700 dark:text-teal-300 md:bg-neutral-100 md:dark:bg-neutral-800;
   }
-
 }
 
 .fr-inner {
