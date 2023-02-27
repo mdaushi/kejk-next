@@ -6,17 +6,41 @@ import {
   ArrowTopRightOnSquareIcon,
 } from "@heroicons/react/20/solid";
 import { useRouter } from "next/router";
-// import { Inter } from "@next/font/google";
 import Telegraf from "@next/font/local";
 
-// const inter = Inter({
-//   subsets: ["latin"],
-//   weights: [400, 500, 600, 700, 800, 900],
-//   variable: "--font-inter",
-// });
-
 const sans = Telegraf({
-  src: "../fonts/PPTelegraf-Regular.woff2",
+  src: [
+    {
+      path: "../fonts/PPTelegraf-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../fonts/PPTelegraf-RegularSlanted.woff2",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "../fonts/PPTelegraf-Bold.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../fonts/PPTelegraf-BoldSlanted.woff2",
+      weight: "600",
+      style: "italic",
+    },
+    {
+      path: "../fonts/PPTelegraf-Ultrabold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../fonts/PPTelegraf-UltraboldSlanted.woff2",
+      weight: "700",
+      style: "italic",
+    },
+  ],
   variable: "--font-sans",
 });
 

@@ -29,12 +29,12 @@ const sans = Telegraf({
       style: "italic",
     },
     {
-      path: "../fonts/PPTelegraf-UltraBold.woff2",
+      path: "../fonts/PPTelegraf-Ultrabold.woff2",
       weight: "700",
       style: "normal",
     },
     {
-      path: "../fonts/PPTelegraf-UltraBoldSlanted.woff2",
+      path: "../fonts/PPTelegraf-UltraboldSlanted.woff2",
       weight: "700",
       style: "italic",
     },
