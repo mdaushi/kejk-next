@@ -86,8 +86,8 @@ const mobileNavItems = [
     label: "Projects",
   },
   {
-    href: "/bookmarks",
-    label: "Bookmarks",
+    href: "/stack",
+    label: "Stack",
   },
 ];
 
@@ -156,9 +156,9 @@ const Nav = () => {
         className="fixed bottom-4 left-0 right-0 z-50 mx-auto flex h-max w-[95vw] items-center justify-center rounded-full border border-neutral-200 bg-neutral-100 py-4 shadow-lg duration-500 dark:border-neutral-700 dark:bg-neutral-800 dark:shadow-none md:hidden"
       >
         {/* Mobile nav */}
-        <div className="flex w-full items-center justify-between px-2 py-1 text-sm">
+        <div>
           {mobileNavItems.map((item, idx) => (
-            <NavLink href={item.href} key={idx}>
+            <NavLink href={item.href} key={idx}> 
               <span className="mobileNav">{item.label}</span>
             </NavLink>
           ))}
