@@ -4,7 +4,8 @@ import Layout from "../components/Layout";
 import "../styles/globals.css";
 import { JetBrains_Mono } from "@next/font/google";
 import Telegraf from "@next/font/local";
-import Gambarino from "@next/font/local";
+// import Gambarino from "@next/font/local";
+import Migra from "@next/font/local";
 
 const sans = Telegraf({
   src: [
@@ -48,9 +49,14 @@ const mono = JetBrains_Mono({
   variable: "--font-mono",
 });
 
-const gambarino = Gambarino({
-  src: "../fonts/Gambarino-Regular.woff2",
-  variable: "--font-gambarino",
+// const serif = Gambarino({
+//   src: "../fonts/Gambarino-Regular.woff2",
+//   variable: "--font-serif",
+// });
+
+const serif = Migra({
+  src: "../fonts/PPMigra-Regular.woff2",
+  variable: "--font-serif",
 });
 
 function MyApp({ Component, pageProps }) {
@@ -58,7 +64,7 @@ function MyApp({ Component, pageProps }) {
     <PlausibleProvider domain="kejk.tech">
       <Layout>
         <main
-          className={`${sans.variable} ${mono.variable} ${gambarino.variable} font-sans`}
+          className={`${sans.variable} ${mono.variable} ${serif.variable} font-sans`}
         >
           <Component {...pageProps} />
           <Analytics />

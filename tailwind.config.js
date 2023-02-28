@@ -12,7 +12,7 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-sans)", ...defaultTheme.fontFamily.sans],
         mono: ["var(--font-mono)", ...defaultTheme.fontFamily.mono],
-        gambarino: ["var(--font-gambarino)"],
+        serif: ["var(--font-serif)", ...defaultTheme.fontFamily.serif],
       },
     },
   },

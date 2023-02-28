@@ -220,7 +220,7 @@ export const CommandPalette = ({
                             {({ active }) => (
                               <div
                                 className={`${
-                                  inter.variable
+                                  sans.variable
                                 } flex w-full cursor-pointer items-center justify-between rounded p-3 text-sm text-black transition-all duration-75 ease-in hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800 ${
                                   active
                                     ? "bg-neutral-200 dark:bg-neutral-700"
