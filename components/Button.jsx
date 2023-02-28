@@ -5,7 +5,7 @@ const Button = ({ bgColor, textColor, children, href, onClick }) => {
     <div
       href={href}
       className={classNames(
-        `${bgColor} ${textColor} flex w-max cursor-pointer items-center justify-center space-x-2 rounded-full border border-transparent px-4 py-2 text-sm font-medium transition ease-in-out hover:border-teal-500 md:text-base`
+        `${bgColor} ${textColor} flex w-max cursor-pointer items-center justify-center space-x-2 rounded-full border border-transparent px-5 py-3 text-sm font-semibold transition ease-in-out hover:border-teal-500 md:text-base`
       )}
       onClick={onClick}
     >
