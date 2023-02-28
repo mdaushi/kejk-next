@@ -111,11 +111,11 @@
   }
 
   .mobileNav {
-    @apply flex w-full items-center justify-between rounded-full font-semibold items-center justify-between px-4 py-3 font-sans text-black no-underline transition ease-in-out hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800;
+    @apply flex w-full items-center rounded-full font-semibold items-center justify-between px-5 py-3 font-sans text-black no-underline transition ease-in-out hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800;
   }
 
   .mobileNav[aria-current] {
-    @apply flex w-full items-center justify-between rounded-full font-semibold bg-neutral-200 px-4 py-3 font-sans text-teal-800 dark:bg-neutral-700 dark:text-teal-300 md:bg-neutral-100 md:dark:bg-neutral-800;
+    @apply flex w-full items-center rounded-full font-semibold bg-neutral-200 px-5 py-3 font-sans text-teal-800 dark:bg-neutral-700 dark:text-teal-300 md:bg-neutral-100 md:dark:bg-neutral-800;
   }
 }
 
