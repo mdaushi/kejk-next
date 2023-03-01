@@ -25,7 +25,7 @@ const AppCard = ({ title, subtitle, image, link, tags }) => {
           <header className="mr-2 text-lg font-bold text-neutral-700 dark:text-neutral-200">
             {title}
           </header>
-          <span className="font-mono text-sm tracking-tight text-neutral-500 dark:text-neutral-400">
+          <span className="text-sm text-neutral-500 dark:text-neutral-400">
             {subtitle}
           </span>
           {tags && (
