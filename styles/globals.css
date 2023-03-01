@@ -49,7 +49,7 @@
   }
 
   p {
-    @apply pb-4 font-sans leading-relaxed text-neutral-700 dark:text-neutral-300;
+    @apply pb-4 font-sans leading-relaxed text-neutral-600 dark:text-neutral-400;
   }
 
   span {

@@ -13,11 +13,11 @@
 .markdown p,
 .markdown ul,
 .markdown ol {
-  @apply pb-4 font-sans leading-relaxed text-neutral-700 dark:text-neutral-300;
+  @apply pb-4 font-sans leading-relaxed text-neutral-600 dark:text-neutral-400;
 }
 
 .markdown h2 {
-  @apply mt-4 mb-4 text-2xl font-semibold leading-snug text-neutral-500 dark:text-neutral-400;
+  @apply mt-4 mb-4 text-2xl font-semibold leading-snug text-neutral-700 dark:text-neutral-300;
 }
 
 .markdown h3 {
