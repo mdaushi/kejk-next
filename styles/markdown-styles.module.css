@@ -17,7 +17,7 @@
 }
 
 .markdown h2 {
-  @apply mt-4 mb-4 text-2xl font-semibold leading-snug text-white dark:text-black;
+  @apply mt-4 mb-4 text-2xl font-semibold leading-snug text-black dark:text-white;
 }
 
 .markdown h3 {
