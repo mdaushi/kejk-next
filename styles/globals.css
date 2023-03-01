@@ -103,7 +103,7 @@
   }
 
   .nav {
-    @apply rounded-full font-semibold px-4 py-2 font-sans text-black no-underline transition ease-in-out hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800;
+    @apply rounded-full font-semibold px-4 py-2 font-sans text-neutral-600 no-underline transition ease-in-out hover:bg-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-800;
   }
 
   .nav[aria-current] {
@@ -111,7 +111,7 @@
   }
 
   .mobileNav {
-    @apply flex w-full items-center rounded-full font-semibold items-center justify-between px-4 py-3 font-sans text-black no-underline transition ease-in-out hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800;
+    @apply flex w-full items-center rounded-full font-semibold items-center justify-between px-4 py-3 font-sans text-neutral-600 no-underline transition ease-in-out hover:bg-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-800;
   }
 
   .mobileNav[aria-current] {
