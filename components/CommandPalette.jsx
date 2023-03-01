@@ -6,37 +6,37 @@ import {
   ArrowTopRightOnSquareIcon,
 } from "@heroicons/react/20/solid";
 import { useRouter } from "next/router";
-import Telegraf from "@next/font/local";
+import Mori from "@next/font/local";
 
-const sans = Telegraf({
+const sans = Mori({
   src: [
     {
-      path: "../fonts/PPTelegraf-Regular.woff2",
+      path: "../fonts/PPMori-Regular.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../fonts/PPTelegraf-RegularSlanted.woff2",
+      path: "../fonts/PPMori-RegularItalic.woff2",
       weight: "400",
       style: "italic",
     },
     {
-      path: "../fonts/PPTelegraf-Bold.woff2",
+      path: "../fonts/PPMori-SemiBold.woff2",
       weight: "600",
       style: "normal",
     },
     {
-      path: "../fonts/PPTelegraf-BoldSlanted.woff2",
+      path: "../fonts/PPMori-SemiBoldItalic.woff2",
       weight: "600",
       style: "italic",
     },
     {
-      path: "../fonts/PPTelegraf-Ultrabold.woff2",
+      path: "../fonts/PPMori-SemiBold.woff2",
       weight: "700",
       style: "normal",
     },
     {
-      path: "../fonts/PPTelegraf-UltraboldSlanted.woff2",
+      path: "../fonts/PPMori-ExtraBoldItalic.woff2",
       weight: "700",
       style: "italic",
     },

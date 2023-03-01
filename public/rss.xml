@@ -4,7 +4,7 @@
         <title>KEJK | Writing</title>
         <link>https://kejk.tech</link>
         <description>Thoughts on design, development and career progression</description>
-        <lastBuildDate>Wed, 01 Mar 2023 14:48:49 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 Mar 2023 21:31:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <language>en</language>
@@ -310,7 +310,7 @@ I encourage you as a designer to embrace it to shortcut the more tricky part of 
             <title><![CDATA[Getting DRY with Figma plugins]]></title>
             <link>https://kejk.tech/thoughts/getting-dry-with-figma-plugins</link>
             <guid>62e2e0f29f26bd0e6c6b2afc</guid>
-            <pubDate>Mon, 15 Aug 2022 06:45:18 GMT</pubDate>
+            <pubDate>Wed, 01 Mar 2023 16:13:28 GMT</pubDate>
             <description><![CDATA[Solving design problems by building Figma plugins. ]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/aae0c270-b580-11eb-b5b6-fd115d17c053-Getting-DRY-with-Figma-plugins2x.png" length="0" type="image/png"/>
