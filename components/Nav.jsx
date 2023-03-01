@@ -4,8 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import NavLink from "./NavLink";
 import { useEffect, useState } from "react";
-import { JetBrains_Mono } from "@next/font/google";
+// import { JetBrains_Mono } from "@next/font/google";
 import Telegraf from "@next/font/local";
+import SupplyMono from "@next/font/local";
 
 const sans = Telegraf({
   src: [
@@ -43,9 +44,8 @@ const sans = Telegraf({
   variable: "--font-sans",
 });
 
-const mono = JetBrains_Mono({
-  subsets: ["latin"],
-  weights: [400, 700],
+const mono = SupplyMono({
+  src: "../fonts/PPSupplyMono-Regular.woff2",
   variable: "--font-mono",
 });
 
@@ -154,11 +154,11 @@ const Nav = () => {
       {/* Mobile nav */}
       <div
         as="nav"
-        className="fixed bottom-4 left-0 right-0 p-1 z-50 mx-auto flex h-max w-max items-center justify-center rounded-full border border-neutral-200 bg-neutral-100 shadow-lg duration-500 dark:border-neutral-700 dark:bg-neutral-800 dark:shadow-none md:hidden"
+        className="fixed bottom-4 left-0 right-0 z-50 mx-auto flex h-max w-max items-center justify-center rounded-full border border-neutral-200 bg-neutral-100 p-1 shadow-lg duration-500 dark:border-neutral-700 dark:bg-neutral-800 dark:shadow-none md:hidden"
       >
         <div className="flex items-center justify-between">
           {mobileNavItems.map((item, idx) => (
-            <NavLink href={item.href} key={idx}> 
+            <NavLink href={item.href} key={idx}>
               <span className="mobileNav">{item.label}</span>
             </NavLink>
           ))}

@@ -2,10 +2,11 @@ import { Analytics } from "@vercel/analytics/react";
 import PlausibleProvider from "next-plausible";
 import Layout from "../components/Layout";
 import "../styles/globals.css";
-import { JetBrains_Mono } from "@next/font/google";
-import Telegraf from "@next/font/local";
+// import { JetBrains_Mono } from "@next/font/google";
 // import Gambarino from "@next/font/local";
+import Telegraf from "@next/font/local";
 import Migra from "@next/font/local";
+import SupplyMono from "@next/font/local";
 
 const sans = Telegraf({
   src: [
@@ -43,9 +44,14 @@ const sans = Telegraf({
   variable: "--font-sans",
 });
 
-const mono = JetBrains_Mono({
-  subsets: ["latin"],
-  weights: [400, 700],
+// const mono = JetBrains_Mono({
+//   subsets: ["latin"],
+//   weights: [400, 700],
+//   variable: "--font-mono",
+// });
+
+const mono = SupplyMono({
+  src: "../fonts/PPSupplyMono-Regular.woff2",
   variable: "--font-mono",
 });
 
