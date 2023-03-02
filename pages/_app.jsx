@@ -51,7 +51,7 @@ const sans = Mori({
 // });
 
 const mono = SupplyMono({
-  src: "../fonts/PPSupplyMono-Regular.woff2",
+  src: "../fonts/PPFraktionMono-Regular.woff2",
   variable: "--font-mono",
 });
 
