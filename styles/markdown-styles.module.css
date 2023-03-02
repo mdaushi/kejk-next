@@ -167,7 +167,7 @@ pre[class*="language-"] {
   @apply font-bold;
 }
 
-.markdown .token.italic {
+.markdown > .token.italic {
   @apply italic
 }
 
