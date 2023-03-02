@@ -63,3 +63,118 @@
 .markdown hr {
   @apply my-8 border-0 border-b border-neutral-200 dark:border-neutral-700;
 }
+
+.markdown code[class*="language-"],
+pre[class*="language-"] {
+  background: 0 0;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.markdown pre[class*="language-"] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+}
+
+.markdown :not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  @apply bg-neutral-50 dark:bg-neutral-800;
+}
+
+.markdown :not(pre) > code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+.markdown .token.block-comment,
+.token.cdata,
+.token.comment,
+.token.doctype,
+.token.prolog {
+  @apply text-neutral-400 dark:text-neutral-700;
+}
+
+.markdown .token.punctuation {
+  @apply text-blue-600 dark:text-blue-400;
+}
+
+.markdown .token.attr-name,
+.token.deleted,
+.token.namespace {
+  @apply text-red-700 dark:text-red-400;
+}
+
+.markdown .token.tag {
+  @apply text-lime-600 dark:text-lime-400;
+}
+
+.markdown .token.function-name {
+  @apply text-sky-600 dark:text-sky-400;
+}
+
+.markdown .token.boolean,
+.token.function,
+.token.number {
+  @apply text-orange-600 dark:text-orange-400;
+}
+
+.markdown .token.class-name,
+.token.constant,
+.token.property,
+.token.symbol,
+.token.parameter {
+  @apply text-yellow-600 dark:text-yellow-400;
+}
+
+.markdown .token.atrule,
+.token.builtin,
+.token.important,
+.token.keyword,
+.token.selector {
+  @apply text-purple-600 dark:text-purple-400;
+}
+
+.markdown .token.attr-value,
+.token.char,
+.token.regex,
+.token.string,
+.token.variable {
+  @apply text-teal-600 dark:text-teal-400;
+}
+
+.markdown .token.entity,
+.token.operator,
+.token.url {
+  @apply text-cyan-600 dark:text-cyan-400;
+}
+
+.markdown .token.bold,
+.token.important {
+  @apply font-bold;
+}
+
+.markdown .token.italic {
+  font-style: italic;
+}
+
+.markdown .token.entity {
+  @apply cursor-help;
+}
+
+.markdown .token.inserted {
+  @apply text-green-600 dark:text-green-400;
+}
