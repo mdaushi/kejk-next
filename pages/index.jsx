@@ -49,7 +49,7 @@ export default function Home({
 }) {
   const metaTitle = "KEJK | Home";
   const metaImage =
-    "https://imgix.cosmicjs.com/7d508bd0-afdc-11ed-a13d-c3e6887fd23f-meta.png";
+    "https://imgix.cosmicjs.com/0f8791f0-ba01-11ed-9435-5306e8ef93bc-meta.png";
   const metaDescription = "Designer, developer, writer and musician";
   const url = "https://kejk.tech";
 
