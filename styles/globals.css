@@ -57,11 +57,11 @@
   }
 
   ul {
-    @apply ml-8 mb-4 list-disc text-text-neutral-600 dark:text-neutral-400;
+    @apply ml-8 mb-4 list-disc text-neutral-600 dark:text-neutral-400;
   }
 
   ol {
-    @apply ml-8 mb-4 list-decimal text-text-neutral-600 dark:text-neutral-400;
+    @apply ml-8 mb-4 list-decimal text-neutral-600 dark:text-neutral-400;
   }
 
   blockquote {
