@@ -45,7 +45,7 @@
 }
 
 .markdown pre {
-  @apply mb-4 w-full overflow-x-scroll whitespace-pre rounded-lg bg-neutral-100 font-mono dark:bg-neutral-800;
+  @apply mb-4 w-full overflow-x-scroll whitespace-pre rounded-lg bg-transparent font-mono dark:bg-transparent;
 }
 
 .markdown pre > code {
