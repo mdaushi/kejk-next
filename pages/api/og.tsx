@@ -18,7 +18,7 @@ export default async function handler(req: NextRequest) {
     const hasTitle = searchParams.has("title");
     const title = hasTitle
       ? searchParams.get("title")?.slice(0, 100)
-      : "Tempo: Designing a product that demands to not be used";
+      : "KEJK | Thoughts";
 
     return new ImageResponse(
       (
