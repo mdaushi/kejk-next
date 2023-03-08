@@ -17,8 +17,8 @@ export default async function handler(req: NextRequest) {
     // ?title=<title>
     const hasTitle = searchParams.has("title");
     const title = hasTitle
-      ? searchParams.get("title")?.slice(0, 100)
-      : "KEJK | Thoughts";
+      ? searchParams.get("title")?.slice(0, 100).replaceAll(" ", "%20")
+      : "KEJK%20|%20Thoughts";
 
     return new ImageResponse(
       (
