@@ -98,7 +98,8 @@ export default function Post({ allPosts, post }) {
   }
 
   const metaTitle = `KEJK | ${post?.title}`;
-  const metaImage = `${post?.metadata.hero.imgix_url}`;
+  // const metaImage = `${post?.metadata.hero.imgix_url}`;
+  const metaImage = `https://kejk.tech/api/og?title=${post?.title}`;
   const metaDescription = "Designer, developer, writer and musician";
   const url = `https://kejk.tech/${post?.slug}`;
 
