@@ -61,7 +61,7 @@ const bucket = api.bucket({
 export default function Writing({ writings }) {
   const metaTitle = "KEJK | Writing";
   const metaImage =
-    "https://imgix.cosmicjs.com/7d47d940-afdc-11ed-a13d-c3e6887fd23f-meta-thoughts.png";
+    "https://imgix.cosmicjs.com/49f9a0b0-ba80-11ed-9435-5306e8ef93bc-meta-thoughts.png";
   const metaDescription = "Designer, developer, writer and musician";
   const url = "https://kejk.tech/thoughts";
 

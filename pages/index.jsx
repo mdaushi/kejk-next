@@ -49,7 +49,7 @@ export default function Home({
 }) {
   const metaTitle = "KEJK | Home";
   const metaImage =
-    "https://imgix.cosmicjs.com/7d508bd0-afdc-11ed-a13d-c3e6887fd23f-meta.png";
+    "https://imgix.cosmicjs.com/27bc5e70-ba80-11ed-9435-5306e8ef93bc-image.png";
   const metaDescription = "Designer, developer, writer and musician";
   const url = "https://kejk.tech";
 
@@ -160,6 +160,26 @@ export default function Home({
               />
             );
           })}
+        </div>
+        <div className="mx-auto mt-8 flex w-full flex-col items-center justify-center space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+          <Link href={"/playground"}>
+            <Button
+              bgColor="bg-neutral-100 dark:bg-neutral-800"
+              textColor="text-black dark:text-white"
+            >
+              Playground
+              <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+            </Button>
+          </Link>
+          <Link href={"/projects"}>
+            <Button
+              bgColor="bg-neutral-100 dark:bg-neutral-800"
+              textColor="text-black dark:text-white"
+            >
+              Client projects
+              <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+            </Button>
+          </Link>
         </div>
         <AllCapsHeader marginTop={16} justify={"justify-start"}>
           <FlagIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />

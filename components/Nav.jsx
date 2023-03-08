@@ -59,6 +59,10 @@ const navItems = [
     label: "Writing",
   },
   {
+    href: "/playground",
+    label: "Playground",
+  },
+  {
     href: "/projects",
     label: "Projects",
   },
@@ -82,8 +86,8 @@ const mobileNavItems = [
     label: "Writing",
   },
   {
-    href: "/projects",
-    label: "Projects",
+    href: "/playground",
+    label: "Playground",
   },
   {
     href: "/uses",

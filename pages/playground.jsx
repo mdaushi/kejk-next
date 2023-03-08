@@ -1,10 +1,5 @@
-import { EnvelopeIcon } from "@heroicons/react/20/solid";
-import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Head from "next/head";
-import Link from "next/link";
-import AllCapsHeader from "../components/AllCapsHeader";
 import AppCard from "../components/AppCard";
-import Button from "../components/Button";
 import PageHeader from "../components/PageHeader";
 
 const Cosmic = require("cosmicjs");
@@ -18,12 +13,12 @@ const bucket = api.bucket({
   read_key: READ_KEY,
 });
 
-export default function Projects({ apps, utilities, clients }) {
-  const metaTitle = "KEJK | Projects";
+export default function Playground({ apps, utilities, clients }) {
+  const metaTitle = "KEJK | Playground";
   const metaImage =
     "https://imgix.cosmicjs.com/49f4beb0-ba80-11ed-9435-5306e8ef93bc-meta-projects.png";
   const metaDescription = "Designer, developer, writer and musician";
-  const url = "https://kejk.tech/projects";
+  const url = "https://kejk.tech/playground";
 
   return (
     <div className={"mt-12"}>
@@ -45,10 +40,7 @@ export default function Projects({ apps, utilities, clients }) {
         <meta property="twitter:image" content={metaImage} />
       </Head>
       <div>
-        <PageHeader>Projects</PageHeader>
-        {/* <AllCapsHeader marginTop={8} justify={"justify-start"}>
-          Personal
-        </AllCapsHeader>
+        <PageHeader>Playground</PageHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
           {apps.map((app, idx) => {
             return (
@@ -61,8 +53,8 @@ export default function Projects({ apps, utilities, clients }) {
               />
             );
           })}
-        </div> */}
-        {/* <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
+        </div>
+        <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
           {utilities.map((utility, idx) => {
             return (
               <AppCard
@@ -74,44 +66,6 @@ export default function Projects({ apps, utilities, clients }) {
               />
             );
           })}
-        </div> */}
-        {/* <AllCapsHeader marginTop={8} justify={"justify-start"}>
-          Clients
-        </AllCapsHeader> */}
-        <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
-          {clients.map((client, idx) => {
-            return (
-              <AppCard
-                key={idx}
-                link={client.metadata.url}
-                image={client.metadata.cover?.imgix_url}
-                title={client.title}
-                subtitle={client.metadata.subtitle}
-                tags={client.metadata.tags}
-              />
-            );
-          })}
-        </div>
-        <div className="mx-auto mt-8 flex w-full flex-col items-center justify-center space-y-4 md:mt-16 md:flex-row md:space-y-0 md:space-x-4">
-          <Link href="/work">
-            <Button
-              bgColor="bg-neutral-100 dark:bg-neutral-800"
-              textColor="text-black dark:text-white"
-              borderColor="border-neutral-200 dark:border-neutral-700"
-            >
-              View my in-house work
-              <ArrowRightIcon className="ml-2" width={20} height={20} />
-            </Button>
-          </Link>
-          <Button
-            bgColor="bg-neutral-100 dark:bg-neutral-800"
-            textColor="text-black dark:text-white"
-            borderColor="border-neutral-200 dark:border-neutral-700"
-            href="mailto:karl@kejk.tech?subject=Let's work together!"
-          >
-            <EnvelopeIcon className="mr-2" width={20} height={20} />
-            Work with me
-          </Button>
         </div>
       </div>
     </div>
