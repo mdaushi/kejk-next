@@ -161,7 +161,7 @@ export default function Home({
             );
           })}
         </div>
-        <div className="mx-auto mt-8 flex w-full flex-col items-center justify-center space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+        <div className="mx-auto mt-8 flex w-full justify-center space-x-4">
           <Link href={"/playground"}>
             <Button
               bgColor="bg-neutral-100 dark:bg-neutral-800"
