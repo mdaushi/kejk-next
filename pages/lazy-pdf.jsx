@@ -231,7 +231,13 @@ const LazyPDF = ({ lazyPDF, stats }) => {
             </button>
           </a>
         </div>
-        <a rel="me" href="https://mastodon.design/@kejk" className="opacity-0 cursor-none">Mastodon</a>
+        <a
+          rel="me"
+          href="https://mastodon.design/@kejk"
+          className="cursor-none opacity-0"
+        >
+          Mastodon
+        </a>
       </div>
     </div>
   );
@@ -240,22 +246,29 @@ const LazyPDF = ({ lazyPDF, stats }) => {
 export default LazyPDF;
 
 export async function getStaticProps() {
-  const data = await bucket.getObjects({
-    query: {
-      type: "lazy-pdf",
-      slug: "lazy-pdf-page",
-    },
-    props: "title,content,metadata",
-  });
+  // const data = await bucket.getObjects({
+  //   query: {
+  //     type: "lazy-pdf",
+  //     slug: "lazy-pdf-page",
+  //   },
+  //   props: "title,content,metadata",
+  // });
 
-  const getStats = await bucket.getObject({
-    id: "62e2e0f49f26bd0e6c6b2c62",
-    props: "id,title,metadata",
-  });
+  const data = await bucket.objects
+    .findOne({
+      id: "641b3faed0ab1034f2469919",
+    })
+    .props(["title,content,metadata"]);
+
+  const getStats = await bucket.objects
+    .findOne({
+      id: "641b3f98d0ab1034f24698aa",
+    })
+    .props(["title,metadata"]);
 
   const stats = await getStats.object;
 
-  const lazyPDF = await data.objects[0];
+  const lazyPDF = await data.object;
   return {
     props: {
       lazyPDF,

@@ -90,19 +90,15 @@ export default function About({ about, principles }) {
 }
 
 export async function getStaticProps() {
-  const props = ["title", "content", "metadata"];
+  const data = await bucket.objects
+    .findOne({
+      id: "641b3fa0d0ab1034f24698d2",
+    })
+    .props(["title,metadata"]);
 
-  const data = await bucket.getObject({
-    id: "62e2e0f19f26bd0e6c6b2ad8",
-    props: props.toString(),
-  });
-
-  const principlesData = await bucket.getObjects({
-    query: {
-      type: "principles",
-    },
-    props: "title",
-  });
+  const principlesData = await bucket.objects
+    .find({ type: "principles" })
+    .props(["title"]);
 
   const about = await data.object;
   const principles = await principlesData.objects;
