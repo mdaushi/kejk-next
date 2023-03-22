@@ -4,7 +4,7 @@
         <title>KEJK | Writing</title>
         <link>https://kejk.tech</link>
         <description>Thoughts on design, development and career progression</description>
-        <lastBuildDate>Thu, 02 Mar 2023 08:30:06 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 22 Mar 2023 19:43:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <language>en</language>
@@ -15,10 +15,67 @@
         </image>
         <copyright>All rights reserved 2023, Karl Emil James Koch</copyright>
         <item>
+            <title><![CDATA[AI as pair design]]></title>
+            <link>https://kejk.tech/thoughts/ai-as-pair-design</link>
+            <guid>641b3f99d0ab1034f24698ab</guid>
+            <pubDate>Wed, 15 Mar 2023 06:54:40 GMT</pubDate>
+            <description><![CDATA[The ultimate design companion is just around the corner]]></description>
+            <content:encoded><![CDATA[These days, there’s always a constant influx of new things to learn as a designer. We had the great “should designers code” debate; we also had accessible 3D crop up with new Figma-like tools such as [Spline](https://spline.design/) to learn; we had NFTs where you needed to grasp the concept of tokens and fungibility; and finally we have AI, where you need to learn how to integrate it into your workflow to avoid “[losing your job](https://www.theguardian.com/commentisfree/2023/jan/24/chatgpt-artificial-intelligence-jobs-economy)”.
+
+Granted, no, you don’t have to actually learn all these tools or ways of working. But as Designers and Developers, we’re often curious by nature and keen to be on the bleeding edge of technologies. Naturally that means we want to try things out, but importantly we also sometimes have to because our company (or companies we want to work for) expect us to.
+
+Recently there’s been a lot of discussion about how AI could finally be after our [design](https://medium.com/microsoft-design/yes-ai-will-replace-designers-9d90c6e34502) or [development](https://medium.com/geekculture/will-ai-replace-programmers-fb6fcfd70b37) jobs. Like always with AI, it’s seen as an inevitability and that maybe we need to start looking for new things to be good at. [Kyle Lambert](https://indieweb.social/@kylelambert) wrote a [great piece](https://www.imkylelambert.com/articles/will-ai-take-my-design-job) on this recently. 
+
+In reality, yes, AI may soon get good enough to do some of the tasks of a designer. But critically, it’s still very much at the early stage where it simply copies things from the internet and attempts to sometimes create something slightly new, but that normally always has flaws.
+
+The more I’ve been playing with Chat-GPT which is [OpenAI](https://openai.com/)’s playground for its [GPT-3](https://openai.com/blog/gpt-3-apps/) AI model, the more I’ve gotten interested in treating it more like a companion than a threat. More like a pair designer or pair developer, helping me get around thorny problems or simply just kick of a project.
+
+> Instead of assuming AI will take our jobs, we can assume it’ll become the best pair designer/developer to help us get started.
+
+I recently spent some time using it as a copywriting assistant when designing mocks.
+
+I can ask it a quick phrase like “Write a headline that helps explain the importance of investing compared with saving into an interest-bearing account over the long term” which gives me the response “Investing for the Future: A Look at How Smart Investing Beats Out Saving for Retirement”. Not bad really!
+
+![Image of the first copy request and answer inside the PomptAI interface](https://imgix.cosmicjs.com/77d1b720-9ee7-11ed-aca2-37db769eb59f-AEB814E6-2BB5-4EAE-908F-2DFAA9920AF5.jpeg)
+
+What about “Write three bullet points for an app that helps explain the importance of investing compared with saving into an interest-bearing account over the long term” instead? This gives me:
+
+*   Investing in the stock market, mutual funds or other types of investments can result in higher returns than the interest rate on a traditional savings account.
+    
+*   Investing allows your money to grow faster over the long term, allowing you to take advantage of compound interest.
+    
+*   Investing allows you to diversify your portfolio and protect against market fluctuations, providing valuable protection for your savings.
+    
+
+![Image of the second copy request and answer inside the PomptAI interface](https://imgix.cosmicjs.com/77dcb3a0-9ee7-11ed-aca2-37db769eb59f-BEC501B5-CCA8-4722-B465-5E874953C3A7.jpeg)
+
+Also really not bad at all. And if anything, a helpful jumping off point to refine based on our copywriting style.
+
+AI pair design will also provide a great mechanism for fast iterations on an idea. Think of it as the ultimate Crazy 8’s companion. Feed it the initial concept and let it go wild for you. These tools will also be able to quickly evaluate hundreds of design solutions and narrow them down as quickly as possible. This means that the design process can be completed much faster than if it were done by humans. Equally, they can also be programmed to automatically adjust parameters and learn from their mistakes, allowing them to continuously improve the design and produce more reliable results with added accuracy.
+
+But this is more a future thinking concept when tools powered by [DALL-E](https://openai.com/dall-e-2/), [Midjourney](https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F) or other new AI models improve. Right now, the image generation is incredible but it doesn’t really hit the mark for consistently good app ideas, it’s much more useful for fantasy images.
+
+[Diagram](https://diagram.com/) have started to play with some interesting ideas here via their [Magician](https://magician.design/) plugin for Figma. As a way to generate quick icon iterations, UI and marketing copy or image ideas, it’s a fantastic tool to speed up your workflow. But it can’t replace an amazing icon designer, illustrator or copywriter right now.
+
+Ultimately we’ll still need the human in the loop to ensure designs connect well with the people who’ll interact with them. It’s naive to think AI will be capable of human-level empathy any time soon or to make real, “conscious” decisions off the back of internal feedback. But one day we’ll likely get there.
+
+I think we’ll see an entire industry boom around the design of great prompts soon too. Imagine feeding an AI with the perfect prompt to generate amazing outputs. We’re seeing this happen in the form of shared prompt spreadsheets or other [websites](https://prompts.chat/), but there’ll likely be entire businesses that help you generate great prompts that generate great outputs. Then, eventually, we won’t need those anymore and we’ll just skip straight to great outputs from any prompt.
+
+I think it’ll be important for us to embrace this new reality. Eventually every product will be powered in some way by AI, some are even already betting on it as [part of their product strategy](https://www.notion.so/product/ai). So if you’ve not tried out GPT-3 and want to give it a go on iOS or macOS then you can [try out an app](https://testflight.apple.com/join/mXfEcgfv) I built for myself via TestFlight. It’s a simple native companion that uses OpenAIs API to provide responses based on text input. You can read more about [here](https://kejk.tech/prompt-ai).
+
+I encourage you as a designer to embrace it to shortcut the more tricky part of mocking designs—coming up with fake but realistic copy—and let me know if PromptAI proves useful. As a developer, I’d encourage you to play with [GitHub Copilot](https://github.com/features/copilot) again if you’ve not in a while, it’s incredible and powered by Codex from OpenAI (which you can also use in PromptAI’s Code tab).
+
+> Update: a great article from Geoffrey Litt about thinking of ChatGPT as the [ultimate muse](https://www.geoffreylitt.com/2023/02/26/llm-as-muse-not-oracle.html).
+
+> Update: another great take from [Matthew Ström](https://matthewstrom.com/writing/design-by-wire/) comparing AI in design to the notion of flying-by-wire. ]]></content:encoded>
+            <author>karl@kejk.tech (Karl Emil James Koch)</author>
+            <enclosure url="https://imgix.cosmicjs.com/db630760-ba00-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
+        </item>
+        <item>
             <title><![CDATA[Two weeks and five lessons]]></title>
             <link>https://kejk.tech/thoughts/two-weeks-and-five-lessons</link>
-            <guid>63f7e122a3d4b7000872fae0</guid>
-            <pubDate>Sun, 26 Feb 2023 08:04:58 GMT</pubDate>
+            <guid>641b3f99d0ab1034f24698ad</guid>
+            <pubDate>Sat, 04 Mar 2023 10:48:01 GMT</pubDate>
             <description><![CDATA[Lots of conversations, tasks, research and reading later]]></description>
             <content:encoded><![CDATA[When on the outside looking in during an interview process, you can learn a lot about a company. By reading the docs they send you, looking for Glassdoor reviews or by asking questions at interview stage. But until you’re actually there, you don’t know if you made the right choice. 
 
@@ -80,13 +137,13 @@ Our growth has been very intentional, relative to other tech companies out there
 
 If you’re looking for your next opportunity, check out some of our current [open opportunities](https://duckduckgo.com/hiring). ]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/cac5a210-b44b-11ed-80d4-cdbe55252435-Two-weeks-and-five-lessons2x.png" length="0" type="image/png"/>
+            <enclosure url="https://imgix.cosmicjs.com/057abe20-ba7a-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[On Digital Playgrounds]]></title>
             <link>https://kejk.tech/thoughts/on-digital-playgrounds</link>
-            <guid>63db971c8875e30008c1f9b6</guid>
-            <pubDate>Sat, 18 Feb 2023 13:30:54 GMT</pubDate>
+            <guid>641b3f99d0ab1034f24698ae</guid>
+            <pubDate>Sat, 04 Mar 2023 10:47:47 GMT</pubDate>
             <description><![CDATA[Why creating stuff for yourself is the best way to learn a new technology or how something works]]></description>
             <content:encoded><![CDATA[## Building for fun, by solving problems you face
 
@@ -116,303 +173,250 @@ If you use iOS or macOS and are interested in learning, I’d recommend you try 
 
 If you want to check out some great examples of people with digital playgrounds, check out [Rauno Freiburg](https://rauno.me/craft) for example, to see some neat stuff. Or [Julius Koroll](https://www.itsjuko.com/playground) for more design-specific playing around. And finally, [Adrian Mato](https://mastodon.design/@adrianmg/109794115937273202) has been playing around with building a game recently!]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/8c423cd0-a602-11ed-9962-4f6acd02e06b--6-Feb-2023-at-09:42.jpg" length="0" type="image/jpg"/>
-        </item>
-        <item>
-            <title><![CDATA[AI as pair design]]></title>
-            <link>https://kejk.tech/thoughts/ai-as-pair-design</link>
-            <guid>63d4e4aa7ceca3000845f97d</guid>
-            <pubDate>Mon, 20 Feb 2023 14:22:42 GMT</pubDate>
-            <description><![CDATA[The ultimate design companion is just around the corner]]></description>
-            <content:encoded><![CDATA[These days, there’s always a constant influx of new things to learn as a designer. We had the great “should designers code” debate; we also had accessible 3D crop up with new Figma-like tools such as [Spline](https://spline.design/) to learn; we had NFTs where you needed to grasp the concept of tokens and fungibility; and finally we have AI, where you need to learn how to integrate it into your workflow to avoid “[losing your job](https://www.theguardian.com/commentisfree/2023/jan/24/chatgpt-artificial-intelligence-jobs-economy)”.
-
-Granted, no, you don’t have to actually learn all these tools or ways of working. But as Designers and Developers, we’re often curious by nature and keen to be on the bleeding edge of technologies. Naturally that means we want to try things out, but importantly we also sometimes have to because our company (or companies we want to work for) expect us to.
-
-Recently there’s been a lot of discussion about how AI could finally be after our [design](https://medium.com/microsoft-design/yes-ai-will-replace-designers-9d90c6e34502) or [development](https://medium.com/geekculture/will-ai-replace-programmers-fb6fcfd70b37) jobs. Like always with AI, it’s seen as an inevitability and that maybe we need to start looking for new things to be good at. [Kyle Lambert](https://indieweb.social/@kylelambert) wrote a [great piece](https://www.imkylelambert.com/articles/will-ai-take-my-design-job) on this recently. 
-
-In reality, yes, AI may soon get good enough to do some of the tasks of a designer. But critically, it’s still very much at the early stage where it simply copies things from the internet and attempts to sometimes create something slightly new, but that normally always has flaws.
-
-The more I’ve been playing with Chat-GPT which is [OpenAI](https://openai.com/)’s playground for its [GPT-3](https://openai.com/blog/gpt-3-apps/) AI model, the more I’ve gotten interested in treating it more like a companion than a threat. More like a pair designer or pair developer, helping me get around thorny problems or simply just kick of a project.
-
-> Instead of assuming AI will take our jobs, we can assume it’ll become the best pair designer/developer to help us get started.
-
-I recently spent some time using it as a copywriting assistant when designing mocks.
-
-I can ask it a quick phrase like “Write a headline that helps explain the importance of investing compared with saving into an interest-bearing account over the long term” which gives me the response “Investing for the Future: A Look at How Smart Investing Beats Out Saving for Retirement”. Not bad really!
-
-![Image of the first copy request and answer inside the PomptAI interface](https://imgix.cosmicjs.com/77d1b720-9ee7-11ed-aca2-37db769eb59f-AEB814E6-2BB5-4EAE-908F-2DFAA9920AF5.jpeg)
-
-What about “Write three bullet points for an app that helps explain the importance of investing compared with saving into an interest-bearing account over the long term” instead? This gives me:
-
-*   Investing in the stock market, mutual funds or other types of investments can result in higher returns than the interest rate on a traditional savings account.
-    
-*   Investing allows your money to grow faster over the long term, allowing you to take advantage of compound interest.
-    
-*   Investing allows you to diversify your portfolio and protect against market fluctuations, providing valuable protection for your savings.
-    
-
-![Image of the second copy request and answer inside the PomptAI interface](https://imgix.cosmicjs.com/77dcb3a0-9ee7-11ed-aca2-37db769eb59f-BEC501B5-CCA8-4722-B465-5E874953C3A7.jpeg)
-
-Also really not bad at all. And if anything, a helpful jumping off point to refine based on our copywriting style.
-
-AI pair design will also provide a great mechanism for fast iterations on an idea. Think of it as the ultimate Crazy 8’s companion. Feed it the initial concept and let it go wild for you. These tools will also be able to quickly evaluate hundreds of design solutions and narrow them down as quickly as possible. This means that the design process can be completed much faster than if it were done by humans. Equally, they can also be programmed to automatically adjust parameters and learn from their mistakes, allowing them to continuously improve the design and produce more reliable results with added accuracy.
-
-But this is more a future thinking concept when tools powered by [DALL-E](https://openai.com/dall-e-2/), [Midjourney](https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F) or other new AI models improve. Right now, the image generation is incredible but it doesn’t really hit the mark for consistently good app ideas, it’s much more useful for fantasy images.
-
-[Diagram](https://diagram.com/) have started to play with some interesting ideas here via their [Magician](https://magician.design/) plugin for Figma. As a way to generate quick icon iterations, UI and marketing copy or image ideas, it’s a fantastic tool to speed up your workflow. But it can’t replace an amazing icon designer, illustrator or copywriter right now.
-
-Ultimately we’ll still need the human in the loop to ensure designs connect well with the people who’ll interact with them. It’s naive to think AI will be capable of human-level empathy any time soon or to make real, “conscious” decisions off the back of internal feedback. But one day we’ll likely get there.
-
-I think we’ll see an entire industry boom around the design of great prompts soon too. Imagine feeding an AI with the perfect prompt to generate amazing outputs. We’re seeing this happen in the form of shared prompt spreadsheets or other [websites](https://prompts.chat/), but there’ll likely be entire businesses that help you generate great prompts that generate great outputs. Then, eventually, we won’t need those anymore and we’ll just skip straight to great outputs from any prompt.
-
-I think it’ll be important for us to embrace this new reality. Eventually every product will be powered in some way by AI, some are even already betting on it as [part of their product strategy](https://www.notion.so/product/ai). So if you’ve not tried out GPT-3 and want to give it a go on iOS or macOS then you can [try out an app](https://testflight.apple.com/join/mXfEcgfv) I built for myself via TestFlight. It’s a simple native companion that uses OpenAIs API to provide responses based on text input. You can read more about [here](https://kejk.tech/prompt-ai).
-
-I encourage you as a designer to embrace it to shortcut the more tricky part of mocking designs—coming up with fake but realistic copy—and let me know if PromptAI proves useful. As a developer, I’d encourage you to play with [GitHub Copilot](https://github.com/features/copilot) again if you’ve not in a while, it’s incredible and powered by Codex from OpenAI (which you can also use in PromptAI’s Code tab).]]></content:encoded>
-            <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/8da49f40-9eec-11ed-aca2-37db769eb59f-image.png" length="0" type="image/png"/>
+            <enclosure url="https://imgix.cosmicjs.com/fd52e1f0-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Shift gears and switch careers]]></title>
             <link>https://kejk.tech/thoughts/shift-gears-switch-careers</link>
-            <guid>630729e21cc4270009346f04</guid>
-            <pubDate>Sat, 03 Sep 2022 07:11:35 GMT</pubDate>
+            <guid>641b3f99d0ab1034f24698af</guid>
+            <pubDate>Sat, 04 Mar 2023 10:47:31 GMT</pubDate>
             <description><![CDATA[I've talked about my history before, but I haven't provided explicit advice about how to switch careers]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/bffbd240-25ea-11ed-b52d-a3f33977cd87-image.png" length="0" type="image/png"/>
+            <enclosure url="https://imgix.cosmicjs.com/f4021620-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Strip your URLs to super simple domains]]></title>
             <link>https://kejk.tech/thoughts/strip-your-urls-to-super-simple-domains</link>
-            <guid>62f786e97502240009ec4d22</guid>
-            <pubDate>Sat, 18 Feb 2023 20:31:29 GMT</pubDate>
+            <guid>641b3f9ad0ab1034f24698b0</guid>
+            <pubDate>Sat, 04 Mar 2023 10:47:15 GMT</pubDate>
             <description><![CDATA[RegEx has been around since the 50's, and it's still just as unreadable]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/1cbc0130-1afb-11ed-a845-076c64d3ede5-image.png" length="0" type="image/png"/>
-        </item>
-        <item>
-            <title><![CDATA[Designing API-first]]></title>
-            <link>https://kejk.tech/thoughts/designing-api-first</link>
-            <guid>62e2e0f59f26bd0e6c6b2d3e</guid>
-            <pubDate>Mon, 20 Feb 2023 15:34:27 GMT</pubDate>
-            <description><![CDATA[The power of  visualising your API as part of your design process to align the entire team]]></description>
-            <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/6f81a520-0a8c-11ed-b7be-d956591ad437-image.png" length="0" type="image/png"/>
+            <enclosure url="https://imgix.cosmicjs.com/e97a7800-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[How to make friends and influence designers]]></title>
             <link>https://kejk.tech/thoughts/how-to-make-friends-and-influence-designers</link>
-            <guid>62e2e0f39f26bd0e6c6b2c21</guid>
-            <pubDate>Tue, 06 Sep 2022 06:51:20 GMT</pubDate>
+            <guid>641b3f9ad0ab1034f24698b1</guid>
+            <pubDate>Sat, 04 Mar 2023 10:46:59 GMT</pubDate>
             <description><![CDATA[Why every design crit should be well structured, predictable and facilitated]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/aeb86150-8bea-11ec-ae88-8982447d5ddf-How-to-make-friends-and-influence-designers2x.png" length="0" type="image/png"/>
+            <enclosure url="https://imgix.cosmicjs.com/dfc8ee90-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Design for handshakes not handovers]]></title>
             <link>https://kejk.tech/thoughts/design-for-handshakes-not-handovers</link>
-            <guid>62e2e0f39f26bd0e6c6b2bf0</guid>
-            <pubDate>Mon, 15 Aug 2022 06:51:16 GMT</pubDate>
+            <guid>641b3f9ad0ab1034f24698b2</guid>
+            <pubDate>Sat, 04 Mar 2023 10:46:42 GMT</pubDate>
             <description><![CDATA[Why it's better to shake hands with your developers, than throw your designs over the fence]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/ce4e34c0-855c-11ec-8e12-4f611a7927fa-Design-for-handshakes-not-handovers2x.png" length="0" type="image/png"/>
+            <enclosure url="https://imgix.cosmicjs.com/d6020860-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[On creativity as a process for catharsis]]></title>
             <link>https://kejk.tech/thoughts/on-creativity-as-a-process-for-catharsis</link>
-            <guid>62e2e0f39f26bd0e6c6b2b9d</guid>
-            <pubDate>Sat, 05 Feb 2022 13:02:09 GMT</pubDate>
+            <guid>641b3f9ad0ab1034f24698b3</guid>
+            <pubDate>Sat, 04 Mar 2023 10:46:27 GMT</pubDate>
             <description><![CDATA[The more I listen to our third album, the more I recognise the fact that I wrote it as a form of catharsis.]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/d1f54750-7975-11ec-bc8e-0b22aad4e2bd-On-creativity-as-a-process-for-catharsis2x.png" length="0" type="image/png"/>
+            <enclosure url="https://imgix.cosmicjs.com/cd89e950-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Rumination, iteration or procrastination]]></title>
             <link>https://kejk.tech/thoughts/rumination-iteration-or-procrastination</link>
-            <guid>62e2e0f29f26bd0e6c6b2b91</guid>
-            <pubDate>Sun, 31 Jul 2022 10:11:47 GMT</pubDate>
+            <guid>641b3f9ad0ab1034f24698b4</guid>
+            <pubDate>Sat, 04 Mar 2023 10:46:12 GMT</pubDate>
             <description><![CDATA[Knowing when to let an idea go and when to not even go there.]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/6eaeed60-627b-11ec-a8a3-53f360c99be6-Rumination-iteration-or-procrastination2x.png" length="0" type="image/png"/>
-        </item>
-        <item>
-            <title><![CDATA[Relative seniority]]></title>
-            <link>https://kejk.tech/thoughts/relative-seniority</link>
-            <guid>62e2e0f29f26bd0e6c6b2b4c</guid>
-            <pubDate>Sun, 31 Jul 2022 10:12:15 GMT</pubDate>
-            <description><![CDATA[How your title is reflective of your company's stage as well as your level.]]></description>
-            <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/f18308c0-4084-11ec-9580-ebf669758fed-Relative-seniority2x.png" length="0" type="image/png"/>
+            <enclosure url="https://imgix.cosmicjs.com/c4145770-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Polywork: LinkedIn without the Suits]]></title>
             <link>https://kejk.tech/thoughts/polywork-linkedin-without-the-suits</link>
-            <guid>62e2e0f29f26bd0e6c6b2b2c</guid>
-            <pubDate>Sun, 31 Jul 2022 10:12:45 GMT</pubDate>
+            <guid>641b3f9bd0ab1034f24698b5</guid>
+            <pubDate>Sat, 04 Mar 2023 10:45:57 GMT</pubDate>
             <description><![CDATA[The future of networking is being built in the open.]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/a7d2fc40-fa97-11eb-a0e3-6dfb85d6dcb4-Polywork-LinkedIn-without-the-Suits2x.png" length="0" type="image/png"/>
+            <enclosure url="https://imgix.cosmicjs.com/bb110f60-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Tempo: Designing a product that demands to not be used]]></title>
             <link>https://kejk.tech/thoughts/tempo-designing-a-product-that-demands-to-not-be-used</link>
-            <guid>62e2e0f29f26bd0e6c6b2b2b</guid>
-            <pubDate>Wed, 07 Sep 2022 07:10:09 GMT</pubDate>
+            <guid>641b3f9bd0ab1034f24698b6</guid>
+            <pubDate>Sat, 04 Mar 2023 10:45:37 GMT</pubDate>
             <description><![CDATA[Tempo is a minimalist email client, making email simple again]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/ab9e5b20-faa2-11eb-a0e3-6dfb85d6dcb4-Tempo-Designing-a-product-that-demands-to-not-be-used2x.png" length="0" type="image/png"/>
+            <enclosure url="https://imgix.cosmicjs.com/aea8ca60-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Why every designer should experience customer service]]></title>
             <link>https://kejk.tech/thoughts/why-every-designer-should-experience-customer-service</link>
-            <guid>62e2e0f29f26bd0e6c6b2b22</guid>
-            <pubDate>Sun, 18 Jul 2021 16:44:03 GMT</pubDate>
+            <guid>641b3f9bd0ab1034f24698b7</guid>
+            <pubDate>Sat, 04 Mar 2023 10:45:16 GMT</pubDate>
             <description><![CDATA[It's common when joining a new company to get thrown straight in at the deep end. Sometimes, it’s better not to. ]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/28abee30-e7e7-11eb-a375-6937647c8908-Why-every-designer-should-experience-customer-service2x.png" length="0" type="image/png"/>
+            <enclosure url="https://imgix.cosmicjs.com/a2c23880-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[What I've learnt over the past year]]></title>
             <link>https://kejk.tech/thoughts/what-ive-learnt-over-the-past-year</link>
-            <guid>62e2e0f29f26bd0e6c6b2b13</guid>
-            <pubDate>Tue, 06 Sep 2022 06:27:55 GMT</pubDate>
+            <guid>641b3f9bd0ab1034f24698b8</guid>
+            <pubDate>Sat, 04 Mar 2023 10:44:31 GMT</pubDate>
             <description><![CDATA[Lessons I’ve learnt over the past year.]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/ff5c95a0-c5f1-11eb-93bc-d7c81bee3189-D7882D40-C6C3-4DBA-ACA2-1CDDCE7EAEE2.png" length="0" type="image/png"/>
-        </item>
-        <item>
-            <title><![CDATA[Spatial Design]]></title>
-            <link>https://kejk.tech/thoughts/spatial-design</link>
-            <guid>62e2e0f29f26bd0e6c6b2b0f</guid>
-            <pubDate>Fri, 11 Jun 2021 22:05:57 GMT</pubDate>
-            <description><![CDATA[Product Design is a term we use broadly these days to define a designer who creates products.]]></description>
-            <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/890faf80-b580-11eb-b5b6-fd115d17c053-Spatial-Design2x.png" length="0" type="image/png"/>
+            <enclosure url="https://imgix.cosmicjs.com/87eba550-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Why you should reply to automated emails]]></title>
             <link>https://kejk.tech/thoughts/why-you-should-reply-to-automated-emails</link>
-            <guid>62e2e0f29f26bd0e6c6b2b0e</guid>
-            <pubDate>Sat, 18 Feb 2023 13:26:26 GMT</pubDate>
+            <guid>641b3f9bd0ab1034f24698b9</guid>
+            <pubDate>Sat, 04 Mar 2023 10:44:11 GMT</pubDate>
             <description><![CDATA[Reply to those automated emails, you never know what might happen.]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/96c97ac0-b580-11eb-b5b6-fd115d17c053-Why-you-should-reply-to-automated-emails2x.png" length="0" type="image/png"/>
-        </item>
-        <item>
-            <title><![CDATA[The power of Cosmic]]></title>
-            <link>https://kejk.tech/thoughts/the-power-of-cosmic</link>
-            <guid>62e2e0f29f26bd0e6c6b2b0d</guid>
-            <pubDate>Mon, 15 Aug 2022 06:48:18 GMT</pubDate>
-            <description><![CDATA[Not too long ago I decided to set myself a challenge; create and add new content to my website via a CMS.]]></description>
-            <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/9fd7bf50-b580-11eb-b5b6-fd115d17c053-The-power-of-Cosmic2x.png" length="0" type="image/png"/>
+            <enclosure url="https://imgix.cosmicjs.com/7c3c2900-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Getting DRY with Figma plugins]]></title>
             <link>https://kejk.tech/thoughts/getting-dry-with-figma-plugins</link>
-            <guid>62e2e0f29f26bd0e6c6b2afc</guid>
-            <pubDate>Wed, 01 Mar 2023 16:13:28 GMT</pubDate>
+            <guid>641b3f9cd0ab1034f24698ba</guid>
+            <pubDate>Sat, 04 Mar 2023 10:43:56 GMT</pubDate>
             <description><![CDATA[Solving design problems by building Figma plugins. ]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/aae0c270-b580-11eb-b5b6-fd115d17c053-Getting-DRY-with-Figma-plugins2x.png" length="0" type="image/png"/>
-        </item>
-        <item>
-            <title><![CDATA[Designing in the open]]></title>
-            <link>https://kejk.tech/thoughts/designing-in-the-open</link>
-            <guid>62e2e0f19f26bd0e6c6b2ad1</guid>
-            <pubDate>Tue, 06 Sep 2022 06:19:37 GMT</pubDate>
-            <description><![CDATA[What I’ve learnt about sharing constantly and live designing with my team.]]></description>
-            <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/1ea17b00-b581-11eb-b5b6-fd115d17c053-Designing-in-the-open2x.png" length="0" type="image/png"/>
-        </item>
-        <item>
-            <title><![CDATA[Code as Design]]></title>
-            <link>https://kejk.tech/thoughts/code-as-design</link>
-            <guid>62e2e0f19f26bd0e6c6b2ad4</guid>
-            <pubDate>Sat, 26 Feb 2022 21:46:34 GMT</pubDate>
-            <description><![CDATA[How development can be learned through a design lens (and how I've managed to do it). ]]></description>
-            <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/0f334900-b581-11eb-b5b6-fd115d17c053-Code-as-Design2x.png" length="0" type="image/png"/>
+            <enclosure url="https://imgix.cosmicjs.com/732eced0-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Thinking in design-code]]></title>
             <link>https://kejk.tech/thoughts/thinking-in-design-code</link>
-            <guid>62e2e0f19f26bd0e6c6b2ad9</guid>
-            <pubDate>Tue, 21 Dec 2021 13:42:42 GMT</pubDate>
+            <guid>641b3f9cd0ab1034f24698bb</guid>
+            <pubDate>Sat, 04 Mar 2023 10:42:49 GMT</pubDate>
             <description><![CDATA[My personal approach on how to think about code from a design perspective and how to implement those changes.]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/d60a4250-b580-11eb-b5b6-fd115d17c053-Thinking-in-design-code2x.png" length="0" type="image/png"/>
+            <enclosure url="https://imgix.cosmicjs.com/4ac58060-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[What a cult taught me about 'limiting beliefs']]></title>
             <link>https://kejk.tech/thoughts/what-a-cult-taught-me-about-limiting-beliefs</link>
-            <guid>62e2e0f29f26bd0e6c6b2af2</guid>
-            <pubDate>Mon, 15 Aug 2022 06:40:49 GMT</pubDate>
+            <guid>641b3f9cd0ab1034f24698bc</guid>
+            <pubDate>Sat, 04 Mar 2023 10:42:31 GMT</pubDate>
             <description><![CDATA[You should never feel like you have no limiting beliefs, but you should always fight to overcome them.]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/b73dbcd0-b580-11eb-b5b6-fd115d17c053-What-a-cult-taught-me-about-limiting-beliefs2x.png" length="0" type="image/png"/>
-        </item>
-        <item>
-            <title><![CDATA[Getting to yes]]></title>
-            <link>https://kejk.tech/thoughts/getting-to-yes</link>
-            <guid>62e2e0f19f26bd0e6c6b2ac3</guid>
-            <pubDate>Tue, 21 Dec 2021 13:44:38 GMT</pubDate>
-            <description><![CDATA[Why I think designers and developers should learn the basics of sales. ]]></description>
-            <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/53e77b20-b581-11eb-b5b6-fd115d17c053-Getting-to-yes2x.png" length="0" type="image/png"/>
-        </item>
-        <item>
-            <title><![CDATA[Design as Code]]></title>
-            <link>https://kejk.tech/thoughts/designing-in-code</link>
-            <guid>62e2e0f19f26bd0e6c6b2ac4</guid>
-            <pubDate>Tue, 21 Dec 2021 13:44:27 GMT</pubDate>
-            <description><![CDATA[What learning Vue has taught me about the future of design, development and the modern web.]]></description>
-            <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/4897ab00-b581-11eb-b5b6-fd115d17c053-Design-as-Code2x.png" length="0" type="image/png"/>
+            <enclosure url="https://imgix.cosmicjs.com/411f68a0-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Ten Principles for Good Design]]></title>
             <link>https://kejk.tech/thoughts/ten-principles-for-good-design</link>
-            <guid>62e2e0f19f26bd0e6c6b2ac5</guid>
-            <pubDate>Tue, 06 Sep 2022 06:14:25 GMT</pubDate>
+            <guid>641b3f9cd0ab1034f24698bd</guid>
+            <pubDate>Sat, 04 Mar 2023 10:42:16 GMT</pubDate>
             <description><![CDATA[I decided to put together a free, multi-device, minimal wallpaper of Ram's ten principles. ]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/3c812f80-b581-11eb-b5b6-fd115d17c053-Ten-Principles-for-Good-Design2x.png" length="0" type="image/png"/>
+            <enclosure url="https://imgix.cosmicjs.com/37247a20-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[From problem to plugin]]></title>
             <link>https://kejk.tech/thoughts/from-problem-to-plugin</link>
-            <guid>62e2e0f19f26bd0e6c6b2ac6</guid>
-            <pubDate>Mon, 15 Aug 2022 06:36:00 GMT</pubDate>
+            <guid>641b3f9dd0ab1034f24698be</guid>
+            <pubDate>Sat, 04 Mar 2023 10:42:00 GMT</pubDate>
             <description><![CDATA[Learning Typescript, the Figma API and solving a real personal problem.]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/2d2992c0-b581-11eb-b5b6-fd115d17c053-From-problem-to-plugin2x.png" length="0" type="image/png"/>
+            <enclosure url="https://imgix.cosmicjs.com/2de2f090-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Don’t let your role define you]]></title>
             <link>https://kejk.tech/thoughts/dont-let-your-role-define-you</link>
-            <guid>62e2e0f19f26bd0e6c6b2ad7</guid>
-            <pubDate>Tue, 06 Sep 2022 06:12:35 GMT</pubDate>
+            <guid>641b3f9dd0ab1034f24698bf</guid>
+            <pubDate>Sat, 04 Mar 2023 10:41:46 GMT</pubDate>
             <description><![CDATA[A practical guide on how to navigate your career when the path you're heading down isn't the one you truly want.]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/04668b90-b581-11eb-b5b6-fd115d17c053-Dont-let-your-role-define-you2x.png" length="0" type="image/png"/>
+            <enclosure url="https://imgix.cosmicjs.com/2557e5c0-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[How music, design and code are all the same]]></title>
             <link>https://kejk.tech/thoughts/how-music-design-and-development-are-all-the-same</link>
-            <guid>62e2e0f19f26bd0e6c6b2add</guid>
-            <pubDate>Tue, 06 Sep 2022 06:24:35 GMT</pubDate>
+            <guid>641b3f9dd0ab1034f24698c0</guid>
+            <pubDate>Sat, 04 Mar 2023 10:41:32 GMT</pubDate>
             <description><![CDATA[I wouldn't say I believe creativity is a gift we're born with. I don't believe my abilities are.]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/c68fdb50-b580-11eb-b5b6-fd115d17c053-How-music-design-and-code-are-all-the-same2x.png" length="0" type="image/png"/>
+            <enclosure url="https://imgix.cosmicjs.com/1c669f10-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[‘Users’ are humans]]></title>
             <link>https://kejk.tech/thoughts/why-users-are-humans</link>
-            <guid>62e2e0f19f26bd0e6c6b2ac2</guid>
-            <pubDate>Mon, 15 Aug 2022 06:15:55 GMT</pubDate>
+            <guid>641b3f9dd0ab1034f24698c1</guid>
+            <pubDate>Fri, 03 Mar 2023 20:07:19 GMT</pubDate>
             <description><![CDATA[Design is about people, and I've been thinking a lot about the problem of the term 'user'.]]></description>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
-            <enclosure url="https://imgix.cosmicjs.com/5ff62e70-b581-11eb-b5b6-fd115d17c053-Why-users-are-humans2x.png" length="0" type="image/png"/>
+            <enclosure url="https://imgix.cosmicjs.com/f9d0b5f0-b9fe-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[Designing API-first]]></title>
+            <link>https://kejk.tech/thoughts/designing-api-first</link>
+            <guid>641b3f9dd0ab1034f24698c2</guid>
+            <pubDate>Fri, 03 Mar 2023 20:19:41 GMT</pubDate>
+            <description><![CDATA[The power of  visualising your API as part of your design process to align the entire team]]></description>
+            <author>karl@kejk.tech (Karl Emil James Koch)</author>
+            <enclosure url="https://imgix.cosmicjs.com/b70e7de0-ba00-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[Relative seniority]]></title>
+            <link>https://kejk.tech/thoughts/relative-seniority</link>
+            <guid>641b3f9dd0ab1034f24698c3</guid>
+            <pubDate>Fri, 03 Mar 2023 20:18:11 GMT</pubDate>
+            <description><![CDATA[How your title is reflective of your company's stage as well as your level.]]></description>
+            <author>karl@kejk.tech (Karl Emil James Koch)</author>
+            <enclosure url="https://imgix.cosmicjs.com/81e15cf0-ba00-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[Spatial Design]]></title>
+            <link>https://kejk.tech/thoughts/spatial-design</link>
+            <guid>641b3f9ed0ab1034f24698c4</guid>
+            <pubDate>Fri, 03 Mar 2023 20:14:29 GMT</pubDate>
+            <description><![CDATA[Product Design is a term we use broadly these days to define a designer who creates products.]]></description>
+            <author>karl@kejk.tech (Karl Emil James Koch)</author>
+            <enclosure url="https://imgix.cosmicjs.com/fdc1d0d0-b9ff-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[The power of Cosmic]]></title>
+            <link>https://kejk.tech/thoughts/the-power-of-cosmic</link>
+            <guid>641b3f9ed0ab1034f24698c5</guid>
+            <pubDate>Fri, 03 Mar 2023 20:13:45 GMT</pubDate>
+            <description><![CDATA[Not too long ago I decided to set myself a challenge; create and add new content to my website via a CMS.]]></description>
+            <author>karl@kejk.tech (Karl Emil James Koch)</author>
+            <enclosure url="https://imgix.cosmicjs.com/e32427f0-b9ff-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[Designing in the open]]></title>
+            <link>https://kejk.tech/thoughts/designing-in-the-open</link>
+            <guid>641b3f9ed0ab1034f24698c6</guid>
+            <pubDate>Fri, 03 Mar 2023 20:13:07 GMT</pubDate>
+            <description><![CDATA[What I’ve learnt about sharing constantly and live designing with my team.]]></description>
+            <author>karl@kejk.tech (Karl Emil James Koch)</author>
+            <enclosure url="https://imgix.cosmicjs.com/ccf4fcc0-b9ff-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[Code as Design]]></title>
+            <link>https://kejk.tech/thoughts/code-as-design</link>
+            <guid>641b3f9ed0ab1034f24698c7</guid>
+            <pubDate>Fri, 03 Mar 2023 20:12:46 GMT</pubDate>
+            <description><![CDATA[How development can be learned through a design lens (and how I've managed to do it). ]]></description>
+            <author>karl@kejk.tech (Karl Emil James Koch)</author>
+            <enclosure url="https://imgix.cosmicjs.com/bfd94640-b9ff-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[Getting to yes]]></title>
+            <link>https://kejk.tech/thoughts/getting-to-yes</link>
+            <guid>641b3f9ed0ab1034f24698c8</guid>
+            <pubDate>Fri, 03 Mar 2023 20:10:59 GMT</pubDate>
+            <description><![CDATA[Why I think designers and developers should learn the basics of sales. ]]></description>
+            <author>karl@kejk.tech (Karl Emil James Koch)</author>
+            <enclosure url="https://imgix.cosmicjs.com/7fe0a060-b9ff-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[Design as Code]]></title>
+            <link>https://kejk.tech/thoughts/designing-in-code</link>
+            <guid>641b3f9fd0ab1034f24698c9</guid>
+            <pubDate>Fri, 03 Mar 2023 20:10:35 GMT</pubDate>
+            <description><![CDATA[What learning Vue has taught me about the future of design, development and the modern web.]]></description>
+            <author>karl@kejk.tech (Karl Emil James Koch)</author>
+            <enclosure url="https://imgix.cosmicjs.com/718b5870-b9ff-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
     </channel>
 </rss>

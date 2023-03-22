@@ -5,8 +5,8 @@ import Link from "next/link";
 import NavLink from "./NavLink";
 import { useEffect, useState } from "react";
 // import { JetBrains_Mono } from "@next/font/google";
-import Mori from "@next/font/local";
-import SupplyMono from "@next/font/local";
+import Mori from "next/font/local";
+import SupplyMono from "next/font/local";
 
 const sans = Mori({
   src: [

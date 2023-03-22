@@ -18,15 +18,15 @@ import FeatureCard from "../components/FeatureCard";
 import AllCapsHeader from "../components/AllCapsHeader";
 import HomeHeader from "../components/HomeHeader";
 import SocialLink from "../components/SocialLink";
+import Cosmic from "cosmicjs";
 
-const Cosmic = require("cosmicjs");
 const api = Cosmic();
 
 const BUCKET_SLUG = process.env.NEXT_PUBLIC_COSMIC_SLUG;
 const READ_KEY = process.env.NEXT_PUBLIC_COSMIC_READ_KEY;
 
-const BOOKMARKS_SLUG = "kemiljk";
-const BOOKMARKS_READ_KEY = "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK";
+const BOOKMARKS_SLUG = process.env.NEXT_PUBLIC_BOOKMARKS_SLUG;
+const BOOKMARKS_READ_KEY = process.env.NEXT_PUBLIC_BOOKMARKS_READ_KEY;
 
 const bucket = api.bucket({
   slug: BUCKET_SLUG,

@@ -6,7 +6,7 @@ import {
   ArrowTopRightOnSquareIcon,
 } from "@heroicons/react/20/solid";
 import { useRouter } from "next/router";
-import Mori from "@next/font/local";
+import Mori from "next/font/local";
 
 const sans = Mori({
   src: [

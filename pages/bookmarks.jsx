@@ -8,12 +8,12 @@ import SearchInput from "../components/SearchInput";
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
 
-const BUCKET_SLUG = "kemiljk";
-const READ_KEY = "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK";
+const BOOKMARKS_SLUG = process.env.NEXT_PUBLIC_BOOKMARKS_SLUG;
+const BOOKMARKS_READ_KEY = process.env.NEXT_PUBLIC_BOOKMARKS_READ_KEY;
 
 const bucket = api.bucket({
-  slug: BUCKET_SLUG,
-  read_key: READ_KEY,
+  slug: BOOKMARKS_SLUG,
+  read_key: BOOKMARKS_READ_KEY,
 });
 
 export default function Bookmark({ bookmarks }) {

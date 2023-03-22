@@ -9,7 +9,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import { EnvelopeIcon, RssIcon } from "@heroicons/react/20/solid";
 import SearchInput from "../components/SearchInput";
-import Mori from "@next/font/local";
+import Mori from "next/font/local";
 
 const sans = Mori({
   src: [

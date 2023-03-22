@@ -4,9 +4,9 @@ import Layout from "../components/Layout";
 import "../styles/globals.css";
 // import { JetBrains_Mono } from "@next/font/google";
 // import Gambarino from "@next/font/local";
-import Mori from "@next/font/local";
-import Migra from "@next/font/local";
-import SupplyMono from "@next/font/local";
+import Mori from "next/font/local";
+import Migra from "next/font/local";
+import SupplyMono from "next/font/local";
 
 const sans = Mori({
   src: [
