@@ -774,15 +774,14 @@ concat-map@0.0.1:
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==
 
-cosmicjs@^4.3.1:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/cosmicjs/-/cosmicjs-4.3.1.tgz#d8962caecc6d3d23647f84b0f7d39b72898913d1"
-  integrity sha512-l+6FvVW/SV5cUQ8EKIK1CpimfNKwo8/E5oIdIKseSorL+zxJ+HBsOGqUSk2+1K8bySc4bYGal2L4Q9SsdUrpoQ==
+cosmicjs@^5.0.5:
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/cosmicjs/-/cosmicjs-5.0.5.tgz#9c088f40e88f82792715577b32e374f9cb4f96ce"
+  integrity sha512-uEhiukafFheZ9ZT17EMZe+WJbCg6/fe5d+Vd6ZVeyV4X483wsHrT9ZxYTs2CAvWqlHGMfSjwdK1Yj7706XLdEQ==
   dependencies:
     axios "^0.21.1"
     form-data "^3.0.0"
     regenerator-runtime "^0.13.9"
-    typescript "^4.6.3"
 
 cross-spawn@^7.0.2:
   version "7.0.3"
@@ -3238,10 +3237,10 @@ typed-array-length@^1.0.4:
     for-each "^0.3.3"
     is-typed-array "^1.1.9"
 
-typescript@^4.6.3:
-  version "4.9.5"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.5.tgz#095979f9bcc0d09da324d58d03ce8f8374cbe65a"
-  integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
+typescript@5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.0.2.tgz#891e1a90c5189d8506af64b9ef929fca99ba1ee5"
+  integrity sha512-wVORMBGO/FAs/++blGNeAVdbNKtIh1rbBL2EyQ1+J9lClJ93KiiKe8PmFIVdXhHcyv44SL9oglmfeSsndo0jRw==
 
 unbox-primitive@^1.0.2:
   version "1.0.2"
