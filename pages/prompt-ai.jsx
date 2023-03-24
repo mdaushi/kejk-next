@@ -119,12 +119,12 @@ const PromptAI = ({ promptAI }) => {
 export default PromptAI;
 
 export async function getStaticProps() {
-  const data = await bucket.objects.find({
+  const data = await bucket.objects.findOne({
   type: "promptai",
   slug: "prompt-ai"
 }).props("title,content,metadata")
 
-  const promptAI = await data.object;
+  const promptAI = await data.objects;
 
   return {
     props: {
