@@ -235,7 +235,7 @@ export async function getStaticProps({ params, preview = null }) {
 
   const allWritingData = await bucket.object.find({
       type: "writings"
-  }).props(["id,slug,content,title,metadata"])
+  }).props(["id","slug","content","title","metadata"])
     .limit(4);
   const allPosts = await allWritingData.objects;
 
