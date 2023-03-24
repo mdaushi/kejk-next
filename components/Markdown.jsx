@@ -29,7 +29,6 @@ const components = {
     );
   },
   code({ node, inline, className, children, ...props }) {
-    const isDarkTheme = useThemeDetector();
     const match = /language-(\w+)/.exec(className || "");
     const childRegex = String(children).replace(/\n$/, "");
     return !inline && match ? (
@@ -50,6 +49,7 @@ const components = {
 };
 
 const Markdown = ({ content, ...props }) => {
+  const isDarkTheme = useThemeDetector();
   return (
     <ReactMarkdown
       components={components}
