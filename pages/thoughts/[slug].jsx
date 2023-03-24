@@ -223,7 +223,7 @@ export default function Post({ allPosts, post }) {
 }
 
 export async function getStaticProps({ params, preview = null }) {
-  const data = await bucket.objects.find({
+  const data = await bucket.objects.findOne({
       type: "writings",
       slug: params.slug
   }).props("id,slug,content,title,metadata,modified_at,created_at",
@@ -231,11 +231,15 @@ export async function getStaticProps({ params, preview = null }) {
     
   const post = await data.objects;
 
-  const allWritingData = await bucket.objects.find({
-    type: "writings"
-  }).props("slug,title,metadata").limit(4);
-
-  const allPosts = await allWritingData.objects;
+  const data = await bucket.getObjects({
+    query: {
+      type: "writings",
+    },
+    props: "id,slug,title,metadata,published_at",
+    preview,
+    limit: 4
+  });
+  const writings = await data.objects;
 
   return {
     props: { post, allPosts, preview },
