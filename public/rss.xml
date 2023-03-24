@@ -4,7 +4,7 @@
         <title>KEJK | Writing</title>
         <link>https://kejk.tech</link>
         <description>Thoughts on design, development and career progression</description>
-        <lastBuildDate>Wed, 22 Mar 2023 19:43:53 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 24 Mar 2023 09:10:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <language>en</language>
@@ -314,8 +314,52 @@ If you want to check out some great examples of people with digital playgrounds,
             <title><![CDATA[From problem to plugin]]></title>
             <link>https://kejk.tech/thoughts/from-problem-to-plugin</link>
             <guid>641b3f9dd0ab1034f24698be</guid>
-            <pubDate>Sat, 04 Mar 2023 10:42:00 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:10:00 GMT</pubDate>
             <description><![CDATA[Learning Typescript, the Figma API and solving a real personal problem.]]></description>
+            <content:encoded><![CDATA[### Background
+
+As I've mentioned before, I've long had a passion for learning new skills and that's especially true when it comes to picking up new frontend development skills.
+
+When I started learning [Vue](https://www.vuejs.org/), I chose to utilise the [Vuetify](https://www.vuetifyjs.com/) library to speed up the process and allow me to focus less on creating CSS and more on learning the necessary JavaScript and language specifics. Using the Vuetify library taught me the basics of working with APIs to leverage specific behaviour.
+
+When I moved over to using [Figma](https://www.figma.com/) as my main design tool outside of my day job, I wanted to find ways to make the process of handing over to development easier. Although Figma does a great job of handling [developer handoff](https://www.figma.com/best-practices/guide-to-developer-handoff/), it renders the font sizes as pixels much like any other design tool does.
+
+### The solution
+
+I was desperate to have an easier way to provide the relevant Rem or Em values to developers (including myself) so that I didn't have to find an online converter or just make up random values to try and find the closest match. And that's how [Px ›› Em](https://www.figma.com/community/plugin/837070613195594890/Px-%E2%80%BA%E2%80%BA-Em) was born.
+
+Over one evening, I was able to dig into the [Figma API documentation](https://www.figma.com/plugin-docs/api/api-overview), make sense of what was possible and create a basic proof of concept that did what I needed it to do.
+
+### The final output
+
+Over the course of the following few days, I made adjustments and updates to the plugin, enabling some extra functionality for changing the base Px value from the browser default of 16px and also allowing for the conversion ratio to be changed based on some common scales (including the Golden Ratio).
+
+#### The core Px ›› Em functionality is:
+
+*   Open the plugin without selections to convert any number to ems
+*   Select a text node anywhere in your files and open the plugin to see the current pixel value and convert it to ems
+*   Change the current selection to update the input value and enable a new conversion
+*   Change the baseline px value to whatever you want it to be and see the relevant changes in em conversion
+*   Change the scale by which you want to convert based on common scales used
+
+Creating the code wasn't as complex as first anticipated, so here's a snippet of how the actual calculation works as a function.
+
+```javascript
+function pxToEms(px){
+ var baseValue = 
+  document
+   .getElementById('newPx')
+   .value;
+ var scale = 
+  document
+   .getElementById('scale')
+   .value;
+ function calculate(){
+ return(px / baseValue)* scale;
+ }
+ return calculate;
+}
+```]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/2de2f090-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
@@ -323,8 +367,41 @@ If you want to check out some great examples of people with digital playgrounds,
             <title><![CDATA[Don’t let your role define you]]></title>
             <link>https://kejk.tech/thoughts/dont-let-your-role-define-you</link>
             <guid>641b3f9dd0ab1034f24698bf</guid>
-            <pubDate>Sat, 04 Mar 2023 10:41:46 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:06:48 GMT</pubDate>
             <description><![CDATA[A practical guide on how to navigate your career when the path you're heading down isn't the one you truly want.]]></description>
+            <content:encoded><![CDATA[###
+
+This article started off life as an essay on my career. But as I wrote it I realised that as great as that was to me, it'd be more useful for me to provide some key takeaways that you can use in your own career to push to where you want to be. These are my five key things to remember about your career. What you do doesn't define you. You can be whoever and whatever you want to be, just keep believing in yourself, and keep pushing down that path one inch at a time.
+
+### Just because you started down one path, it doesn't mean you can't change to another
+
+###
+
+I started out in retail sales, moved through to account management, then into technical leadership and now into design. None of this was by accident but it certainly wasn't planned. I just kept pushing for and pursuing the path I wanted and felt most comfortable in. You need to do the same. A lot of employers admire people who've trodden a unique path because they bring skills others wouldn't. Be that person.
+
+### Fight the voice inside that tells you that you're not worthy
+
+###
+
+There isn't a day that I don't experience imposter syndrome. I'm constantly in disbelief that I'm actually a designer somewhere. I'm still convinced I "shouldn't be allowed" because I followed an unconventional path. But I am a designer, I do that job and I do it well. It's hard to fight the negative feelings but you have to remember that you were hired for a reason. You didn't lie to get there (hopefully), so just keep doing what you do. Someone will tell you if you're not up to scratch.
+
+### Don't be afraid to learn
+
+###
+
+This one is probably obvious, but seriously, keep learning. I've never stopped trying to get to the bottom of things and become better at the core skills I need to deliver my job. But equally, I keep pushing to learn more. Teaching myself SwiftUI so I can feel closer to engineering's implementation of our designs, teaching myself Javascript frameworks to be able to build my own personal site and understand the basics of APIs. These are all fundamental to the products we ship, as designers we should know how they work too. Speak in the same language as your developers, it'll save you all so much time and build a stronger team. Trust me.
+
+### Be comfortable with being uncomfortable
+
+###
+
+Get uncomfortable. Push yourself to that point. Then sit there, in it, for a while. Get used to that feeling, it'll help massively with that voice that tells you you're not worthy. The more you get used to feeling uncomfortable, the more you'll be comfortable with it. Psychologists often use [exposure therapy](https://www.psychologytools.com/professional/techniques/exposure/) to help people overcome their fears. Slowly introducing them to the thing that makes them uncomfortable for longer and longer times until they eventually become comfortable. Do that to yourself. Offer to do a Lunch and Learn on a topic to the entire team, take on that Webflow project when you've never used it before, offer to man the phones for a couple of hours to deal with customers. Whatever makes you uncomfortable, push yourself to try it, you'll see it's not that bad and you'll grow tenfold because of it.
+
+### Don't give up
+
+###
+
+If you've not had that flip yet and you're still in a role you feel defines you even though it's not the "you" you want to be; don't give up. Seriously. It can feel like it's never going to happen. Trust me, I've been there. But if you focus on the earlier steps and commit to that journey, you'll get there. Seek opportunities in your current business to push into areas you want to be in, even be as bold as to ask your manager if there is any chance. You never know, that career flip might be right in front of you, you just need the courage to ask.]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/2557e5c0-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
@@ -332,8 +409,106 @@ If you want to check out some great examples of people with digital playgrounds,
             <title><![CDATA[How music, design and code are all the same]]></title>
             <link>https://kejk.tech/thoughts/how-music-design-and-development-are-all-the-same</link>
             <guid>641b3f9dd0ab1034f24698c0</guid>
-            <pubDate>Sat, 04 Mar 2023 10:41:32 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:05:31 GMT</pubDate>
             <description><![CDATA[I wouldn't say I believe creativity is a gift we're born with. I don't believe my abilities are.]]></description>
+            <content:encoded><![CDATA[###
+
+I wouldn’t say I believe creativity is a gift we’re born with. I don’t believe my abilities are. But what I think I do have is a natural tendency towards patterns.
+
+The more I’ve look introspectively at myself lately, the more I’ve come to see that the “red thread” through the three things I’m best at and enjoy, is patterns.
+
+The idea that music, design and development are all ultimately the same at their core has occurred to me many times, most recently when I was listening to the radio. The reason? The specific patterns (né: formula) pop songs all stick to.
+
+## Pop songs
+
+###
+
+There’s only so many pop songs in the world, and they’ve already all been written, rewritten and written again. The people who write them are aware they’re not new, they want that to be true, because there’s a set of sequences that work and work well. Why diverge from them? People like familiarity, it’s human nature.
+
+Design and development for that matter are the same. Design patterns are critical for making something pleasing to the eye. Early in most creative classes you’ll learn about the oft touted “Golden Ratio”. This particular number (1.618) when used as a compositional spacing rule, leads to the most pleasing results mathematically which happen to be aesthetically pleasing too. Why? Pattern recognition.
+
+## Understanding this article
+
+###
+
+Littered throughout this article are links to other articles and websites. This is deliberate and not due to laziness. Lots of clever people have written great pieces on the things I’m talking about here, so my goal is to collate a series of these thoughts into an abstract of sorts. Think of this like a meta-analysis of these other thoughts.
+
+### The golden ratio and nature
+
+###
+
+If we break down nature’s patterns, we can find the [golden ratio everywhere](https://www.treehugger.com/how-golden-ratio-manifests-nature-4869736). Its in the snowflakes that fall in winter, the leaves that grow on trees, the scales on a fish, or the way a forest grows.
+
+There’s a reason it exists everywhere, its because it creates aesthetically pleasing results. Nature is an incredible thing and the results are beautiful. If we use those patterns ourselves in music, design and development, we get beautiful results too.
+
+So lets break down some of the similarities between the mediums by picking some core terminology and finding some examples.
+
+### The rule of thirds
+
+###
+
+In photography there’s the concept of the [Rule of Thirds](https://photographylife.com/the-rule-of-thirds), where you aim to create a pleasing proportion to your image by aligning the subject to different thirds within their containing frame. Just like all creative rules though, sometimes breaking them leads to more intriguing results, and this is very common when using the rule of thirds.
+
+In design we can use the rule of thirds when [laying out a website or app](https://designwebkit.com/web-design/rule-of-thirds-web-design/), or when composing an article. It can often help us to pair the notion of the rule of thirds with grid layouts. Pairing the two can lead to interesting and dynamic layouts whilst maintaining logic and legibility.
+
+In music we can use the rule of thirds in many ways, mostly it’s a logical way to think about breaking up a composition. Take a traditional [pop song](https://www.teenstarcompetition.co.uk/advice/how-to-write-a-pop-song): intro, verse, chorus, verse, chorus, bridge, middle eight, chorus. Here, to create the catchy moment people always look forward to in songs, often the end of a pop song leverages the idea of using a bridge, then a middle eight (which is often a stripped down version of the same chorus melody) and then ending with a big final chorus. This use of a triad is one of the major reasons pop songs feel so catchy, they’re predictable.
+
+Design and development layouts should also maintain predictability, this predictability is what makes a design usable and pleasing to look at.
+
+### Grids
+
+###
+
+Depending on who you are, [grid systems](https://www.interaction-design.org/literature/article/the-grid-system-building-a-solid-design-layout) are either a blessing or a curse. If we think about them the same as the rule of thirds then we’re on the right path. Grids can be used as a definitive approach to layout or be used as an element we purposely break to provide a unique aesthetic approach. Either one is acceptable, it’s just up to you and your layout intention.
+
+In music we have a similar principle to grids in instrumental composition. Choosing how to “[arrange](https://youtu.be/S8fZ62FrquQ)” instruments is vital to the feel of a song. We can choose to have all instruments playing at once, or start with just one and build it up. Similar to grids, we can use different structural layouts to create the final song, and those different structural layouts dramatically impact the feel of the piece.
+
+### Colour theory and white space
+
+###
+
+[Colour theory](https://99designs.co.uk/blog/tips/the-7-step-guide-to-understanding-color-theory/), surely there isn’t a corollary to anything in music here? Well, not so fast there champ. We can make a comparison here to the idea of harmony. Colour theory is the idea that selecting colours that are opposites on the colour wheel leads to a pleasing compositional choice as they balance each other out. Why is that? It’s because they contain the opposite values, this fills out the colour spectrum to its whole.
+
+In music we have a similar thing. Have you ever wondered why the majority of songs contain drums, bass, guitars/synths and vocals, for example? It’s not by chance, its because these instruments fill the entire audible spectrum humans can perceive. There are only so many frequencies that we can hear, by filling space in each of them we can create audible balance.
+
+Then, in both cases, we can play on this idea by breaking these rules at certain moments. Think of the famous “[bass drop](https://dj.dancecult.net/index.php/dancecult/article/download/451/457)” in dance music, or dropping to one guitar before all coming back in, or even moments of complete silence. These are tactics musicians use to create space in the composition and therefore generate the drama and anticipation of when it kicks back in.
+
+In design we do this too by using [white space](https://blog.prototypr.io/importance-of-white-space-in-design-5a40c0e65bfd) to create a void between the content and colours, creating impact when we drop back in to the palette. We can also do this by dropping to a single colour for a moment and then bringing back the contrast of our secondary opposite colour to fill the visual out.
+
+### Rhythm
+
+###
+
+You can keep all your instruments together following the same rhythm and harmony. This is pleasing to the ear in the fact that it feels together and its easy to nod your head to. Alternatively, you can mix different rhythms or harmony’s to produce interesting results. In music we have what’s known as a [polyrhythm](https://mathdrumming.com/polyrhythms/). This is a rhythmic device where an instrument maintains a rhythm that falls outside of the time signature of the composition but, thanks to some maths, falls back into time within a later phrase of the other instruments rhythm.
+
+Similarly, in design we can use rhythm and harmony when we think about a layout. When laying out [typography](https://www.jeroenseynhaeve.com/pythagoras-and-vertical-rhythm-in-typography/), rhythm and harmony are words that often come up. That’s because what makes typography often feel pleasing to look at and read is the consistency by which the elements are laid out. If we break this typographic rhythm then it can either have pleasing results (such as for a poster design) or feel unbalanced and terrible because of a lack of visual consistency.
+
+### Time signatures and pacing
+
+###
+
+Much like rhythm, we can use other mathematical devices to play with our composition. Pacing is key to this, it allows us to think about how fast and slow the entire song should be, but also the speed of each section. Is it full time, is it half time. Playing with the pacing is another device we can use to change the feel between sections and drive impact.
+
+If you ever listen to music I’ve written for Echoes, we play on this idea quite often by leveraging the drama of half time. We love dropping to a final half time ending on a lot of our songs. We do this deliberately because it provides the drama and release that the build up to the moment expects.
+
+In design we can do this too by building up different layers of composition. By having sections of your design filled with an image, text and buttons, then dropping to a section with just a single centre-aligned paragraph, then an image, and then back into a full section with all elements. Doing this creates visual drama and dynamism. It also helps to draw attention to the right things at the right time.
+
+Equally, we can play with [time signatures](https://www.musicnotes.com/now/tips/a-complete-guide-to-time-signatures-in-music/) which allow us to create different dynamic rhythms to create more unique feels. Jazz is full of this, but so is a lot of modern metal music.
+
+Rap and hip hop use a very common layering of 4/4 backing rhythms and then rapping in [triplets](https://hellomusictheory.com/learn/triplets/) over the top. This is what makes the vocals feel like they’re running at a faster pace than the lyrics and feel really fluid. You can count 1, 2, 3 in fast succession over the 4 measures to hear how it works.
+
+In design we can use this idea visually by using contrasting grids on top of each other. Think how it would look to have your type laid out evenly over a 4 block grid but spaced as if it was a 3 block grid. It would create interest by adding additional white space between the words, creating a more intriguing rhythm.
+
+### Combining our principles
+
+###
+
+In the below example, the navigation bar at the top and falls on the 4 column grid alongside the company logos at the bottom whereas the title section and hero image sit on a 3 column grid. Just like triplets fall inside a 4/4 rhythm, different grids can work in harmony to create more interesting layouts. This combines our principles of grids, rhythm, pacing, colour theory, white space and time signatures. Almost all of them!
+
+![3x4 text on a 4x4 layout](https://cdn.cosmicjs.com/f6b51b10-8681-11ec-8e12-4f611a7927fa-Example-of-4x4-with-3x4.png)
+
+You’ll likely find that you often combine many of these principles, and if you’ve been designing or developing projects for a while then you may find you naturally use a lot of these techniques. Ultimately, this post aimed to show how similar all of these skills really are and how a common thread of pattern-based logic can lead to aesthetically pleasing results.
+]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/1c669f10-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
@@ -341,8 +516,29 @@ If you want to check out some great examples of people with digital playgrounds,
             <title><![CDATA[‘Users’ are humans]]></title>
             <link>https://kejk.tech/thoughts/why-users-are-humans</link>
             <guid>641b3f9dd0ab1034f24698c1</guid>
-            <pubDate>Fri, 03 Mar 2023 20:07:19 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:02:54 GMT</pubDate>
             <description><![CDATA[Design is about people, and I've been thinking a lot about the problem of the term 'user'.]]></description>
+            <content:encoded><![CDATA[### Design is about people.
+
+##
+
+Working in the healthcare sector, it’s sometimes hard to forget those people that you affect the most through the work you do. It can be right there in front of you, seeing children living longer lives because of the work you and the healthcare company you support do. But it’s also sometimes easy to think about those end individuals as ‘users’.
+
+User Experience is a hot topic and has been for some time. Really, it was birthed in Silicon Valley as a way of thinking about the end person using your product and avoid a narrow focus on delivering a solution that you (as in the company) think is the right thing. The problem with a user focus is that it’s easy to abstract the term user into being a statistic. A user is a term we attribute onto a person that uses our product, but it is far too easy for that to become a percentage on a spreadsheet or a cumulative number that appears on an analytics report. Treating the people we affect most as users can have a negative effect on how we think about our products and lead us to believe that our focus is on increasing that percentage or building up those numbers, only.
+
+### Why we should be Human-centred
+
+##
+
+Human-centered design is a term that's been explored and advocated for by many established designers from David and Tom Kelley, to Donald Norman and even into architecture by way of Mike Cooley.
+
+My argument is for a permanant change, a move away from user-centricity and user experience and towards human-centricity and human-experience. By doing this, we can’t abstract away who we are affecting. Those directly effected are other humans and as such, it helps focus the mind on doing our best work and allows to think more wholly about what we’re creating.
+
+Numbers are important, we need to keep an eye on those analytics reports and the statistics from audience feedback, but that needn’t draw away from the very humans that we are affecting. Sometimes, decisions that may seem bad statistically, are actually right ethically. Making decisions that directly impact on the humans using your product are often some of the hardest and most important. Losing sight of those real people that you’re affecting with every slight change of pixels on a UI, removal of ‘old’ functionality or choice of distribution platform, can have lasting effects on their respect for your company and the values you represent.
+
+So think carefully about every decision you make as a brand and contemplate the impact on the humans you’re working for, because no matter what you believe, the other humans of this earth are the people you’re helping and those humans need you to care about them first. You work for them, whether it feels like it or not.
+
+Humans are not users, users are humans.]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/f9d0b5f0-b9fe-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>

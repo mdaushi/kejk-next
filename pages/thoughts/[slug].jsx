@@ -98,7 +98,6 @@ export default function Post({ allPosts, post }) {
   }
 
   const metaTitle = `KEJK | ${post?.title}`;
-  // const metaImage = `${post?.metadata.hero.imgix_url}`;
   const postTitle = post?.title.replaceAll(" ", "%20");
   const metaImage = `https://kejk.tech/api/og?title=${postTitle}`;
   const metaDescription = "Designer, developer, writer and musician";
