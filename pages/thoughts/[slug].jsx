@@ -223,15 +223,13 @@ export default function Post({ allPosts, post }) {
 }
 
 export async function getStaticProps({ params, preview = null }) {
-  const data = await bucket.getObjects({
-    query: {
+  const data = await bucket.objects
+    .findOne({
       slug: params.slug,
-    },
-    status: "any",
-    props: "id,slug,content,title,metadata,modified_at,created_at",
-    preview,
-  });
-  const post = await data.objects[0];
+  }).props(["id,slug,content,title,metadata,modified_at,created_at",
+    preview]).status("any");
+    
+  const post = await data.objects;
 
   const allWritingData = await bucket.getObjects({
     query: {
@@ -248,12 +246,9 @@ export async function getStaticProps({ params, preview = null }) {
 }
 
 export async function getStaticPaths() {
-  const data = await bucket.getObjects({
-    query: {
+  const data = await bucket.objects.find({
       type: "writings",
-    },
-    props: "id,slug,content,title,metadata",
-  });
+  }).props(["id,slug,content,title,metadata"]);
   const allPosts = await data.objects;
   return {
     paths: allPosts.map((post) => `/thoughts/${post.slug}`),
