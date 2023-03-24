@@ -124,7 +124,7 @@ export async function getStaticProps() {
   slug: "prompt-ai"
 }).props("title,content,metadata")
 
-  const promptAI = await data.objects;
+  const promptAI = await data.object;
 
   return {
     props: {
