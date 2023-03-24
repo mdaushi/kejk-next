@@ -15,4 +15,4 @@ const useThemeDetector = () => {
     return isDarkTheme;
 }
 
-export default useThemeDetector();
+export default useThemeDetector;
