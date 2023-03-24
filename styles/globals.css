@@ -74,10 +74,12 @@
 
   pre {
     @apply mb-4 w-full overflow-x-scroll whitespace-pre rounded-lg bg-neutral-100 font-mono dark:bg-neutral-800;
+          @apply text-neutral-800 dark:text-neutral-200;
   }
 
   pre > code {
     @apply bg-transparent font-mono;
+      @apply text-neutral-800 dark:text-neutral-200;
   }
 
   code {
@@ -86,6 +88,7 @@
 
   code > span {
     @apply font-mono;
+          @apply text-neutral-800 dark:text-neutral-200;
   }
 
   figcaption {
