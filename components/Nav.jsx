@@ -113,7 +113,7 @@ const Nav = () => {
     <div className={`${sans.variable}`}>
       <div
         as="nav"
-        className="hidden backdrop-blur-md dark:border-neutral-700 md:fixed md:top-0 md:z-50 md:mx-auto md:flex md:h-16 md:w-full md:items-center md:justify-center md:rounded-none md:border md:border-none md:border-neutral-200 md:bg-white md:py-0 md:shadow-none md:duration-500 dark:md:bg-[#141516]/50 dark:md:shadow-none"
+        className="hidden backdrop-blur-md dark:border-neutral-700 lg:fixed lg:top-0 lg:z-50 lg:mx-auto lg:flex lg:h-16 lg:w-full lg:items-center lg:justify-center lg:rounded-none lg:border lg:border-none lg:border-neutral-200 lg:bg-white lg:py-0 lg:shadow-none lg:duration-500 dark:lg:bg-[#141516]/50 dark:lg:shadow-none"
       >
         <div className="mx-auto w-full justify-center lg:px-8">
           <div className="mx-auto flex max-w-7xl items-center justify-between">
