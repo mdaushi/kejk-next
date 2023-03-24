@@ -5,15 +5,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { ghcolors, materialDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import classnames from "classnames";
 
-const components = {
-   a: (a) => {
-    return (
-      <a href={a.href} rel="noopener noreferrer" target="_blank">
-        {a.children}
-      </a>
-    );
-  },
-  code({ node, inline, className, children, ...props }) {
+const useThemeDetector = () => {
     const getCurrentTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches;
     const [isDarkTheme, setIsDarkTheme] = useState(getCurrentTheme());  
     const mqListener = (e => {
@@ -26,7 +18,17 @@ const components = {
       return () => darkThemeMq.removeListener(mqListener);
     }, []);
     return isDarkTheme;
-    
+}
+
+const components = {
+   a: (a) => {
+    return (
+      <a href={a.href} rel="noopener noreferrer" target="_blank">
+        {a.children}
+      </a>
+    );
+  },
+  code({ node, inline, className, children, ...props }) {  
     const match = /language-(\w+)/.exec(className || "");
     const childRegex = String(children).replace(/\n$/, "");
     return !inline && match ? (
@@ -47,6 +49,7 @@ const components = {
 };
 
 const Markdown = ({ content, ...props }) => {
+  const isDarkTheme = useThemeDetector();
   return (
     <ReactMarkdown
       components={components}
