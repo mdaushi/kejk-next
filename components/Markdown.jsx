@@ -4,7 +4,9 @@ import remarkGfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { ghcolors, materialDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import classnames from "classnames";
-import { isDarkTheme } from "./themeDetector.jsx";
+// import { isDarkTheme } from "./themeDetector.jsx";
+
+const isDarkTheme = useThemeDetector();
 
 const components = {
    a: (a) => {
