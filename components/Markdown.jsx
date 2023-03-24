@@ -2,7 +2,7 @@ import markdownStyles from "../styles/markdown-styles.module.css";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { materialDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { materialLight, materialDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import classnames from "classnames";
 import { isDarkTheme} from "./themeDetector";
 
