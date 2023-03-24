@@ -5,9 +5,24 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { materialDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import classnames from "classnames";
 
-const isDarkTheme = useThemeDetector();
+const useThemeDetector = () => {
+    const getCurrentTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const [isDarkTheme, setIsDarkTheme] = useState(getCurrentTheme());  
+    const mqListener = (e => {
+        setIsDarkTheme(e.matches);
+    });
+    
+    useEffect(() => {
+      const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+      darkThemeMq.addListener(mqListener);
+      return () => darkThemeMq.removeListener(mqListener);
+    }, []);
+    return isDarkTheme;
+}
 
 const components = {
+  const isDarkTheme = useThemeDetector();
+  
   a: (a) => {
     return (
       <a href={a.href} rel="noopener noreferrer" target="_blank">
@@ -36,21 +51,6 @@ const components = {
 };
 
 const Markdown = ({ content, ...props }) => {
-const useThemeDetector = () => {
-    const getCurrentTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const [isDarkTheme, setIsDarkTheme] = useState(getCurrentTheme());  
-    const mqListener = (e => {
-        setIsDarkTheme(e.matches);
-    });
-    
-    useEffect(() => {
-      const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
-      darkThemeMq.addListener(mqListener);
-      return () => darkThemeMq.removeListener(mqListener);
-    }, []);
-    return isDarkTheme;
-}
-
   return (
     <ReactMarkdown
       components={components}
