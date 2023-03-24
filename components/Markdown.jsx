@@ -5,6 +5,23 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { materialDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import classnames from "classnames";
 
+const useThemeDetector = () => {
+    const getCurrentTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const [isDarkTheme, setIsDarkTheme] = useState(getCurrentTheme());  
+    const mqListener = (e => {
+        setIsDarkTheme(e.matches);
+    });
+    
+    useEffect(() => {
+      const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+      darkThemeMq.addListener(mqListener);
+      return () => darkThemeMq.removeListener(mqListener);
+    }, []);
+    return isDarkTheme;
+}
+
+const isDarkTheme = useThemeDetector();
+
 const components = {
   a: (a) => {
     return (
@@ -18,7 +35,7 @@ const components = {
     const childRegex = String(children).replace(/\n$/, "");
     return !inline && match ? (
       <SyntaxHighlighter
-        style={materialDark}
+        style={isDarkTheme ? materialDark : materialLight}
         language={match[1]}
         wrapLongLines="true"
         {...props}
