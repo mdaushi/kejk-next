@@ -4,22 +4,6 @@ import remarkGfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { ghcolors, materialDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import classnames from "classnames";
-import { useState } from 'react';
-
-const useThemeDetector = () => {
-    const getCurrentTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const [isDarkTheme, setIsDarkTheme] = useState(getCurrentTheme());  
-    const mqListener = (e => {
-        setIsDarkTheme(e.matches);
-    });
-    
-    useEffect(() => {
-      const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
-      darkThemeMq.addListener(mqListener);
-      return () => darkThemeMq.removeListener(mqListener);
-    }, []);
-    return isDarkTheme;
-}
 
 const components = {
    a: (a) => {
@@ -34,7 +18,7 @@ const components = {
     const childRegex = String(children).replace(/\n$/, "");
     return !inline && match ? (
       <SyntaxHighlighter
-        style={isDarkTheme ? materialDark : ghcolors}
+        style={materialDark}
         language={match[1]}
         wrapLongLines="true"
         {...props}
@@ -50,7 +34,6 @@ const components = {
 };
 
 const Markdown = ({ content, ...props }) => {
-  const isDarkTheme = useThemeDetector();
   return (
     <ReactMarkdown
       components={components}
