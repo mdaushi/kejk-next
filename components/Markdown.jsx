@@ -21,9 +21,7 @@ const useThemeDetector = () => {
 }
 
 const components = {
-  const isDarkTheme = useThemeDetector();
-  
-  a: (a) => {
+   a: (a) => {
     return (
       <a href={a.href} rel="noopener noreferrer" target="_blank">
         {a.children}
@@ -31,6 +29,7 @@ const components = {
     );
   },
   code({ node, inline, className, children, ...props }) {
+    const isDarkTheme = useThemeDetector();
     const match = /language-(\w+)/.exec(className || "");
     const childRegex = String(children).replace(/\n$/, "");
     return !inline && match ? (
