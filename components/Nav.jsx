@@ -136,7 +136,7 @@ const Nav = () => {
     <div className={`${sans.variable}`}>
       <div
         as="nav"
-        className="hidden backdrop-blur-md dark:border-neutral-700 md:fixed md:top-0 md:z-50 md:mx-auto md:flex md:h-16 md:items-center md:justify-center md:rounded-none md:border md:border-none md:border-neutral-200 md:bg-white md:py-0 md:shadow-none md:duration-500 dark:md:bg-[#141516]/50 dark:md:shadow-none lg:w-full"
+        className="hidden backdrop-blur-md dark:border-neutral-700 md:fixed md:top-0 md:z-50 md:mx-auto md:flex md:h-16 md:w-full md:items-center md:justify-center md:rounded-none md:border md:border-none md:border-neutral-200 md:bg-white md:py-0 md:shadow-none md:duration-500 dark:md:bg-[#141516]/50 dark:md:shadow-none"
       >
         <div className="mx-auto w-full justify-center lg:px-8">
           <div className="mx-auto flex max-w-7xl items-center justify-between">
@@ -166,7 +166,7 @@ const Nav = () => {
             <div className="mx-0 flex w-full items-center justify-end">
               <div className="block">
                 {/* Desktop nav */}
-                <div className="flex items-center space-x-1 md:hidden">
+                <div className="md:hidden lg:flex lg:items-center lg:space-x-1">
                   {navItems.map((item, idx) => (
                     <NavLink href={item.href} key={idx}>
                       <span className="nav">{item.label}</span>
