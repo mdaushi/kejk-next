@@ -166,7 +166,7 @@ const Nav = () => {
             <div className="mx-0 flex w-full items-center justify-end">
               <div className="block">
                 {/* Desktop nav */}
-                <div className="flex items-center space-x-1">
+                <div className="flex items-center space-x-1 md:hidden">
                   {navItems.map((item, idx) => (
                     <NavLink href={item.href} key={idx}>
                       <span className="nav">{item.label}</span>
