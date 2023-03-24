@@ -4,7 +4,7 @@
         <title>KEJK | Writing</title>
         <link>https://kejk.tech</link>
         <description>Thoughts on design, development and career progression</description>
-        <lastBuildDate>Fri, 24 Mar 2023 09:10:31 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 24 Mar 2023 09:45:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <language>en</language>
@@ -233,8 +233,54 @@ If you want to check out some great examples of people with digital playgrounds,
             <title><![CDATA[Polywork: LinkedIn without the Suits]]></title>
             <link>https://kejk.tech/thoughts/polywork-linkedin-without-the-suits</link>
             <guid>641b3f9bd0ab1034f24698b5</guid>
-            <pubDate>Sat, 04 Mar 2023 10:45:57 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:37:23 GMT</pubDate>
             <description><![CDATA[The future of networking is being built in the open.]]></description>
+            <content:encoded><![CDATA[> Disclaimer: This article is sponsored by Polywork but all opinions are my own and not suggested, influenced or edited by anyone at Polywork.
+
+### What is Polywork
+
+There's a concept of polyamory in life, where people engage in consensual multi-person relationships. It's not for everyone, but the idea that we don't have to be tied to one person is an interesting concept to think about. Now, if you take that concept and apply it to your work and personal life then you start to see where Polywork is coming from.
+
+In our professional lives, we often identify as a specific career or job role: the Product Designer (like me), the Frontend Developer, the Milkman, or the Beautician. The reality though, is we're often a lot more than that, and even very often in our professional careers, we perform more roles than that title we hold.
+
+If you've read my articles for a while, you'll know that I sit in the land of "Product Designer who codes but also writes music". At different points in my career I've been able to take advantage of all these facets but never once could I call myself that as a job title. It'd be weird.
+
+What Polywork encourages is the idea that we can have many skills and do many things, and that we should celebrate that. Whether that be our achievements or our failures. There's plenty of badges for things such as "College Dropout" or "Failed at a job interview". Normalising this is critical to Polyworks differentiation and to its success.
+
+But most important to Polywork's future success is their approach to how they build the platform. And this is where I want to focus.
+
+### Why are they building in the open?
+
+It's become increasingly common for modern startups to build out in the open, willing to ship half-finished ideas and broken flows to gauge customer interest and determine what features to prioritise.
+
+Most famously coined by Facebook's early "Move fast and break things" methodology, young startups taking this approach are finding their strength in being vulnerable.
+
+From when I joined near the beginning (which, in retrospect, wasn't long ago at all so that goes to show how fast they're iterating), the platform simply offered a timeline you could fill out. That timeline hasn't changed much since those days, it's had steady updates but because the team focused on this as the true MVP of the idea, they remained laser-focused on their initial mission of making it easy for people to showcase all that they do without it being confined to a particular job. It was at this point that I set up the custom domain option so I could set up my [changelog](https://changelog.kejk.tech/) (more about this later).
+
+Since then, we saw the first glimpse of what would become the Multiverse, allowing you to see other people's profiles on the platform and now the Space Station for finding people to collaborate with, and basic messaging. In a matter of months, the platform has evolved from a timeline to a pretty full-featured product. And it's safe to say, so much of that has been down to building out in the open. Learning by shipping. Testing, iterating, improving and scrapping. *Being okay with being vulnerable*.
+
+### My personal changelog
+
+I've focused on treating my Polywork profile as a personal, and professional changelog. Whilst my personal website is kept minimal, focused on very specific finished deliverables, there's a host of things I do that live in and around those things and the last thing I want is for my personal site to become littered with it.
+
+That's where treating my Polywork as a changelog of achievements fits in perfectly. It allows me to personally track my successes and failures, but it also allows others to see those things in chronological order. What's not to love!
+
+It can be pretty daunting to go back through your experience and fill in all those key moments but I found that in some ways, it became cathartic. It acted as a reminder of all the things I've achieved over the years and how I've got to be where I am today. It's humbling.
+
+Depending on who you are, what you do, and where you are in your journey, Polywork will do different things for you. Start by adding some basic content like your job history to see the timeline fill out and then begin to add the nuances at whatever level of detail you want. Polywork is flexible enough that you can decide how granular you want your profile timeline to be. Make it an extension of who you are.
+
+### What you can learn from Polywork's shipping strategy?
+
+There are a few key things I think any business can take away from Polywork's approach to shipping their MVP across the web and mobile.
+
+1.  **Don't be afraid to ship a true MVP that offers one feature at the beginning ---** Whilst you're validating your idea and your roadmap, don't get bogged down in waiting to ship all of your features to customers from day one. You can never be 100% certain it will stick. Find your initial niche and ship that first. Then build on top of it.
+2.  **Start with a single platform and build from there ---** Don't try to release a website, iOS app, Android app, and the kitchen sink too. Focus on a single platform first, validate the idea, then build out other platforms from there. Keeping focused reduces the resource you need upfront and allows you to focus on validation, not implementation.
+3.  **If you start with the web, wrap it into a mobile app before going native ---** Learning from Polywork's approach here, the initial iOS beta was a wrapped web-app rather than native iOS and kept implementation simple. It was literally a webview (a PWA essentially) but wrapped to be servable via TestFlight. Since then, the app has evolved into being, even more native feeling (although still a wrapped webview) and provides a much nicer experience. This is the way to ship MVP. Bare minimum and then evolve.
+4.  **Free marketing is the best marketing ---** Being a startup, or even being a larger company, you need to be lean in how you think about shipping things. Whether you're lean with your resource, with your features, or with your marketing strategy; keeping things simple and minimal will get you further for less. You could spend a lot of money on marketing to make a splash, or, you could follow Polywork's approach and generate hype through word of mouth, exclusivity and ambiguity. Whilst they've built a lot of things out in the open, the early days were driven by ambiguity. This ambiguity generated intrigue and as people got brought into the fold, the excitement was shared and drove more waitlist signups. Pair that with exclusive personal codes to skip the queue and you've got a winning marketing strategy. Polywork weren't the first to do this, but as a business, they've executed it perfectly. My Twitter timeline is a constant thread of "I've just joined Polywork, it's amazing, use my code to sign up now". As a company, what more could you ask for?
+
+### Sign yourself up
+
+If you want to get on Polywork yourself (and I highly recommend you do!) then you can use my [personal link](https://www.polywork.com/invite/kejk) to sign up, the first 25 people will skip the queue. Make sure you come and [follow me](https://www.polywork.com/kejk) once you get on there and say hi!]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/bb110f60-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
@@ -242,8 +288,81 @@ If you want to check out some great examples of people with digital playgrounds,
             <title><![CDATA[Tempo: Designing a product that demands to not be used]]></title>
             <link>https://kejk.tech/thoughts/tempo-designing-a-product-that-demands-to-not-be-used</link>
             <guid>641b3f9bd0ab1034f24698b6</guid>
-            <pubDate>Sat, 04 Mar 2023 10:45:37 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:36:17 GMT</pubDate>
             <description><![CDATA[Tempo is a minimalist email client, making email simple again]]></description>
+            <content:encoded><![CDATA[> Disclaimer: This article is sponsored by Tempo, but all opinions are my own and not suggested, influenced or edited by anyone at Tempo.
+
+I've been using Tempo for a while as a way to manage my daily email workflow. I don't actually remember where I first heard about it, but as someone who values the principles of minimalism and essentialism, it suits me down to a tee.
+
+Tempo is a minimalist email client, aimed at reducing the amount you pick it up and avoiding the constant barrage of email noise and distraction of modern personal and business life.
+
+Email clients really are a dime a dozen, it's an area of app stores that is ripe with implementation but mostly misses on true differentiation. Whilst it's very easy to find another email client to test out instead of the default one installed on your device, it's very hard to find one that actually offers something different. Tempo, however, is *this* email client.
+
+As someone in the product design world, I've often been tasked with designing strategies and affordances that encourage product usage. Pulling people in via notifications, including "tasks" for customers to do in order to get them using the app when they might not need to, working with marketing to develop campaigns to encourage upsells. These things are important for business often, but they're at odds with what we as people actually want most of the time.
+
+Tempo, unlike most products, demands to be put down. From its ultra-minimal aesthetic to its approach to email batching, it doesn't want you to open it up and pull to refresh every five minutes.
+
+There's a couple of things about Tempo that I think are super important to its current and future success and some key things I think any brand can learn from them.
+
+### 1\. Batching
+
+Tempo's first unique feature is its approach to informing you about email. Rather than sending you a single notification for every email, you receive, instead, when you set up Tempo (or wish to add additional Batching slots) you define time windows that you want to receive the emails and Tempo holds onto them until that time.
+
+![](https://cdn.cosmicjs.com/750c7ad0-fda7-11eb-aaf9-c7d10ae67fc2-IMG0989.PNG)
+
+If you ever need to see them before then---such as awaiting that important client brief or the outcome of your potential promotion---you can either peek at them or force a new batch to be delivered. If you don't do this, you'll just receive a single notification to declare that a new batch is ready which will then allow you to see what's waiting for your attention.
+
+This focus on batching helps you to focus on what you do best, designing or developing.
+
+> Key takeaway: Spend time thinking about the most important thing you can do for your customer and make that your hallmark feature. Even if it feels at odds with the industry, do it anyway. You can allow overrides where necessary, but don't make them easy.
+
+### 2\. Not being demanding of customer time
+
+Speaking of time, Tempo cares about your time. We all know that async communications often take up lots of our working and personal time. With email, we had our first experience of this, and over time with the introduction of text messages everywhere, Slack, Teams, and more, we have limitless things wanting our limited attention.
+
+Tempo's batching focus allows you to get on with the things that matter most in your day and only care about email when the time comes.
+
+The mobile beta takes this seriously too, limiting the functionality so you're focused on either dealing with the batched email by sorting and replying or pushing emails into 'To Do' for later.
+
+![](https://cdn.cosmicjs.com/a68d0e80-fda7-11eb-aaf9-c7d10ae67fc2-IMG0985.PNG)
+
+This limited functionality is by design. This speaks to Tempo's mission of making email less distracting and their desire to build with love and design with purpose.
+
+> Key takeaway: Think about how much time your customer has and optimise your product to minimise how much of it you ask for. Think about whether you ***really*** need to send that push notification.
+
+### 3\. Thinking people-first
+
+There's a lot of tools designed to "make you more productive" but often they don't actually succeed because instead of removing the noise and simplifying things, they bloat out their offering and encourage you to spend more of your time on their product. That demand for your time is against what Tempo believes in and is in fact a direct opposite of what Tempo expects.
+
+You can look to their domain to think about how they feel about you as a customer. [www.yourtempo.co](https://www.yourtempo.co/) is very explicit that it's about being "yours". This subtleness to the domain is a surprisingly important and significant one. It shows how Tempo feels about you as a customer or prospective customer. They want you to feel as though the product is yours and not the other way around. Tempo works for **you**.
+
+> Key takeaway: Be people-first. It's easy to create a product that achieves your goals but trying to do that whilst also understanding about and caring for your customer is hard. Put yourself in their shoes, would you want what your about to do to happen to you?
+
+### 4\. Beautiful but utilitarian design (function over form)
+
+By design, Tempo is intentionally minimal. The interface and affordances are kept stripped and colourless. There's a few minor moments of colour when it feels useful to explain visually what is happening, such as the green toggles to enable or disable accounts or batching per account, or swipe actions or the tiny blue indicator to show an item is new. These moments are kept for items that afford action. This helps it to be really clear on what elements are interactive versus passive.
+
+The default 'compose' window for new emails or replies utilises markdown by default so you can quickly and easily format emails without having to mess around with rich text buttons or cluttered editing experiences.
+
+|   |   |
+|---|---|
+|  ![](https://cdn.cosmicjs.com/fb960210-fda7-11eb-aaf9-c7d10ae67fc2-IMG1020.PNG) | ![](https://cdn.cosmicjs.com/de325b60-fda7-11eb-aaf9-c7d10ae67fc2-IMG1021.PNG)   |  ![](https://cdn.cosmicjs.com/1bd24430-fda8-11eb-aaf9-c7d10ae67fc2-IMG0987.PNG) | ![](https://cdn.cosmicjs.com/23b3a180-fda8-11eb-aaf9-c7d10ae67fc2-IMG0988.png)  |
+
+Other email apps tend to bloat the editing interface with lots of action bars and abilities to format everything under the sun. Whilst this could be useful, it can lead to spending too much time creating the email and less time focusing on what matters most as a designer or developer.
+
+> Key takeaway: Your interfaces can be simple, it's okay to not fill them with coloured buttons, illustrations, animations or other decorations. Sometimes the simplicity is what brings the true beauty because it allows your product's functions to be key. As Dieter Rams put it, "Good design is as little design as possible"
+
+### 5\. Building with intentionality
+
+Finally, Tempo's compose view on desktop includes a type length indicator that recommends keeping your message to the length of a tweet. Whilst this isn't always useful or correct for your use case, it helps to remind you to be intentional with your messages.
+
+Whether you're replying or writing a brand new message, this indicator is present. It's another moment that introducers colour when you go over that intentional length. The more you use it, the more you'll get comfortable with shortening your emails and think of them more like text messages when the time is right.
+
+Really though, intentionality sums up the entire product and the ethos of the company. And this is demonstrated end to end within Tempo.
+
+> Key takeaway: Intentionality is key. Be intentional with every decision you make from design of the interface, to the stack you're building with, to the customer journeys you focus on and the way you solve your customers' problems. All of this needs to be intentional from the outset. Your product and your customers will benefit in the long run.
+
+I couldn't recommend it enough, and if you want to give it try, you can sign up via [my link](https://www.yourtempo.co/ref?code=JG31WQ) to get a 30-day free trial. After that, it's €10 a month, and it's totally worth it. The time saved alone makes you more than €10 a month more productive with your time. And, if you're like me, you'll feel nothing but more relaxed, and more productive.]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/aea8ca60-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
@@ -251,8 +370,27 @@ If you want to check out some great examples of people with digital playgrounds,
             <title><![CDATA[Why every designer should experience customer service]]></title>
             <link>https://kejk.tech/thoughts/why-every-designer-should-experience-customer-service</link>
             <guid>641b3f9bd0ab1034f24698b7</guid>
-            <pubDate>Sat, 04 Mar 2023 10:45:16 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:30:22 GMT</pubDate>
             <description><![CDATA[It's common when joining a new company to get thrown straight in at the deep end. Sometimes, it’s better not to. ]]></description>
+            <content:encoded><![CDATA[It's common when joining a new company to get thrown straight in at the deep end. Whilst not always true, often the reason for your employment is because the team is currently understaffed and need additional bodies to help get things done or that there's a big new feature/product area that needs work and another colleague is needed to deliver that.
+
+When this is the case, it's easy to overlook the value of ensuring that new employees experience a bit of frontline action. And in the case of my new role as a Product Designer at [Moneybox](https://app.cosmicjs.com/kejk-next-production/edit-object/%22https%3A//www.moneyboxapp.com%22), the experience I've had so far is as a frontline customer service (CS) agent. My first two weeks are being spent alongside the wider CS team, learning about our customers' pain points first-hand, as well as those moments of delight---such as someone being able to buy their first home thanks to our LISA---and providing them with world class customer service.
+
+This is the first time as a designer that I've not been designing something from day one, and honestly, it's the best feeling. Whilst I'm itching to get started on my first design project, easing into a company who's product I've used as a customer for the past 4 years by experiencing the CS role has been one of the most enjoyable onboarding experiences I've had.
+
+So far, I've seen a trend; *things that come up via CS enquiries turn into new product features. Period*. Obviously this can't be true for everything we hear, including many customer feature requests, but for anything that is a clear customer issue that appears regularly, this is 100% the case. And this tells me something important; at Moneybox we care about our customer experience and it is embodied throughout the business.
+
+The common requests that come up often (I can't talk specifics right now due to them being unreleased features) aren't things that we can't resolve already. Two of our new features are really straightforward to handle from our CS admin. But the truth of the matter is, a customer should *just be able to do it themselves*. So that's what we're doing. We're shipping features to make that true. And that embodies for me a culture of customer care and one of shipping necessary features often. It shows a connectedness across the business, from CS to Ops, Design to Development, Insight to Marketing. All of these departments are interconnected, and, woven throughout all of this is a desire to do the best for our customers. That's a place I want to be. Period.
+
+### Key takeaways
+
+1.  **Customers do often know exactly what they want, but they won't always express it.** Look for common pain points amongst the vast base of customers you or your colleagues speak to. Dig into the underlying need, don't take what they say at face value as a feature request.
+2.  **Customer Service is hard.** Even with pre-written responses to the most common questions, it's a repetitive and demanding task to say the same things over and over with a positive attitude. It's also relentless. Take a moment to be grateful for your CS team and maybe have a coffee chat with one of them next week. Thank them for their efforts.
+3.  **Not doing your day job from day one is a really great way to start a new role.** For all you managers out there, not trying to get a new employee to hit the ground running from day one is actually a really good thing. It'll help you to get the most out of them when they do actually start their role officially, and it'll help them to appreciate more of the wider business. Whilst intros to different departments are useful, they're a far cry from actually having to do the job for a bit.
+4.  **Secondments can be really valuable.** Ask your employer for secondments into other areas of the business, even if just for a day, if you feel it'll enhance your role to do so. As a designer, spending time with CS, marketing/insights or development could have a significant positive impact on your day-to-day and allow you to see opportunities to improve your processes or push for a specific feature to be promoted in importance.
+5.  **Build a culture of connectedness.** By encouraging departmental secondments, you ensure that you build a wider respect for different departments and connect your teams through action. A sales colleague may gain great value from spending time with marketing to understand how the product is sold direct to the consumer; a marketing colleague may find value in joining data science for a short time to gather insight about how they think about data; a data scientist may benefit from spending time with insight to see the true impact of the latest feature shipped. Not all secondments are created equal, but there's so much value that can be gained from time spent in another department.
+
+I'm sure I'll have plenty more to say, but for now, these are my immediate raw thoughts on the process of being a CS for my first week. Ultimately, a secondment like this is nothing but a positive experience so if it's possible to do this in your company for new hires, make sure you do!]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/a2c23880-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
@@ -260,8 +398,101 @@ If you want to check out some great examples of people with digital playgrounds,
             <title><![CDATA[What I've learnt over the past year]]></title>
             <link>https://kejk.tech/thoughts/what-ive-learnt-over-the-past-year</link>
             <guid>641b3f9bd0ab1034f24698b8</guid>
-            <pubDate>Sat, 04 Mar 2023 10:44:31 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:29:50 GMT</pubDate>
             <description><![CDATA[Lessons I’ve learnt over the past year.]]></description>
+            <content:encoded><![CDATA[### 2020 — 2021
+
+I didn't want to write a verbose blog post about the past year but the more I got to thinking, the more I felt it necessary to document (mostly for myself) the key lessons I've learned from this past year. These lessons are not necessarily about Covid, they're about other factors that have impacted on my life too such as losing my father and from what my latest startup adventure has taught me.
+
+Below are my observations, maybe you'll be able to learn something from these too.
+
+### 1\. That deeply understanding what you're designing for—by learning to build your idea—is incredibly valuable
+
+This might feel obvious with a cursory glance, but it's true. Lots of people say it, and lots of people have varying opinions on what 'learning to build your idea' truly is. In my mind, it's whatever it takes to realise your vision enough to make sense of it as a true end product, even if that's incredibly MVP.
+
+I took this approach by building out Figma plugins to scratch an itch around weird interface quirks or missing features. I could have not bothered, or I could have asked someone else to build it, or even find the nearest alternative. But the reality is, I spent the time to learn to create them myself, in turn, I better understood how Figma works under the hood, and finally learned lots of valuable TypeScript along the way.
+
+It taught me a lot about shipping products to customers, whether it's free or not, it matters. And it taught me a lot about taking on feedback and improving ideas, but without just doing **everything** someone asks for.
+
+> Pithy takeaway: Learn to build things, no matter how small.
+
+### 2\. The value of building and having a robust design system is not to be ignored
+
+Design systems are complicated, they're time consuming to build well and there's still an enormous gap between the designed design system (in Figma, Sketch or another tool of choice) versus the coded component library (the name difference alone is irritating!).
+
+However, taking the time to build out a robust system makes the world of difference in the long run. If you take the time to create flexible components, and think about their relationship to each other and their scalability, you'll start to reap the rewards pretty fast. If you can keep lesson 1 in mind too and actually try to create any of these in Vue, React, Swift or similar, then you'll also find limitations that allow you to rethink how you designed it in the first place. So you can go back and improve on its flexibility and scalability.
+
+Robust systems also ensure consistency of your brand application across interfaces and other media. I saw a lot of worry previously about design systems being so good that a developer can build content without a design. Great! That should be the goal. If they can build views without Design mocking them up, Design can focus on defining the intention of the work, it's reason for being, the customer value, the stakeholder needs etc. Designing the intention, not designing the mock.
+
+> Pithy takeaway: Design systems create room for more intentional work.
+
+### 3\. The importance of building strong design<>dev relationships
+
+Learning how components are built, giving it a go yourself, that's all useful in ensuring a positive handover experience with Development/Engineering. But if they're not onboard with the design strategy and don't buy in to the use case of components then you're never going to build the best bond for the best end product.
+
+Designers and Developers should be like Ham and Cheese, no matter what they go together. You should be in each other's pockets in a positive way, defining and scoping solutions from the outset, together. If you show willing by trying to prototype a component in real code or just showing that you've considered limitations though good documentation, it'll go a long way. A great engineer will take the time to explain other limitations you may have missed and together you'll build something truly scalable and great.
+
+> Pithy takeaway: Start building that relationship as early as you can. It makes the world of difference.
+
+### 4\. That business needs and product needs are often at odds with each other but that's okay, it's all about compromise
+
+Businesses have needs that can often vary from what the product really requires, for example, when fundraising a business will be focused on optics and future product vision, whereas during a period after fundraising, they'll likely focus more on growth.
+
+It's common for these business needs to clash with product needs. Often VCs will turn down businesses by not ever saying no, and instead, by offering product feedback so they keep an open door in case you suddenly do find the traction they desire. When they do this, it's easy for stakeholders outside of the Product team to prioritise these seemingly "important" features. The reality is, these features are merely an easy out for the investor and will often lead to feature bloat in your product.
+
+It's a tough line to walk, trying to appease VCs or business stakeholders is important, but it can be super hard to do this without straying from your product roadmap.
+
+> Pithy takeaway: Compromise is key, but don't let business requirements derail your product roadmap.
+
+### 5\. That startups are hard, but a strong team and a true bond is enough to get you through it
+
+Never underestimate the power of building strong relationships. Working at startups, or any company for that matter, is incredibly difficult. But in reality, it's just business and businesses have their ups and downs. What gets you through is having strong relationships. Focus on building them and harnessing them to air out your concerns and worries along the way.
+
+Having great friends outside of work is awesome, but they don't know what the day to day feels like. Having great colleagues internally, makes all of the difference. They understand the nuances of the businesses and are often times going through what you are. Don't be afraid to be vulnerable but avoid falling into hearsay and negativity.
+
+> Pithy takeaway: Great relationships at work will see you through the toughest times.
+
+### 6\. That product managers are essential, if you give them the freedom to do their best work!
+
+A good Product Manager (PM) is like a good red wine; let them breathe for a little while and they'll only get better. I've seen situations where Product Managers are essentially just task managers, writing Jira tickets and little more. This isn't good product management or good use of a Product Manager. They should write Jira tickets for definite, but not just that.
+
+A good PM is given the freedom to do what they need to do at any time. To drive the team forwards and push for the best outcome for both the business and product team too. A good PM also works closely with design at the outset, working through user experience documentation and process; helping to define the pain points and intended happy paths, being part of the user research process, supporting the design documentation process and ensuring that there's a solid brief.
+
+In some ways, in the outset of the design process, it should be hard to know which person is the designer and which is the PM, only when it comes to pursuing wireframes and detailed design processes should that split occur.
+
+> Pithy takeaway: Product Managers are essential, but give them room to do their job!
+
+### 7\. That design, development and the intersection of the two are my lifeblood
+
+This is a personal one, but maybe one that is good to share. I've learnt that caring about both design and development, understanding both of those processes and being confident in both are what excites me and keeps me motivated. Knowing that, writing it down and owning it, helps me to stay on course with my passions and guides my life choices accordingly.
+
+> Pithy takeaway: Find your perfect fit. Lean into it. And never let it go.
+
+### 8\. To never underestimate the power of taking chances
+
+Like a Monopoly 'Chance' card, taking a chance can be a risk that either has a reward or a negative consequence. Either way, every chance you take is a lesson learnt and in many ways is a chance to grow and evolve. Chances can either validate your decision making and improve your life or invalidate your decision making, change things and cause you to course correct. No matter which it is, you learn a lot by taking them.
+
+Not all chances are created equal though. Gambling is chance (unless you've got some mad skills) and is more often than not, likely to end badly. Changing careers is a chance that can equally either pay off or lead to a need to flip again. But whatever happens, own the chances you take and look at them from a longer-term perspective. You might find that what once felt like the worst thing that could ever happen, actually ended up changing your life for the better.
+
+> Pithy takeaway: Over the long term, chances are what teach you the most.
+
+### 9\. To live every moment with intention
+
+Those who are close to me will know that I recently lost my father to his battle with cancer. It's been a very tough couple of months but practicing elements of buddhist and stoic ideologies has helped me to work through it all. Equally, channelling my inner "Dad" has helped a lot too.
+
+My Dad was a true stoic, minimalist and intentional human. He believed in living in the present moment always and through his diagnosis and 6 and a half years of dealing with it, he never once complained or let it hold him back. Instead he made the most of every single moment he had on this planet. He explored parts of the country he'd never seen before, spent time with the people he loved most, focused on restoring a forest nearby to where he lived and gave back to the planet more than he ever had before.
+
+I'm now focused on channelling him as much as I can to live my life with the most intention.
+
+> Pithy takeaway: Live every moment with intention, but not like it's your last.
+
+### 10\. To be grateful for all that I have but not be complacent
+
+We've been through a lot as a planet lately, but it's still very easy to live in a bubble of your own individual life and community (online or offline) without really appreciating what you have.
+
+I'll keep this one short and sweet. But now more than ever, I have nothing but gratitude for my life, my family, my friends, and my career.
+
+> Pithy takeaway: Love what and who you have in your life.]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/87eba550-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
@@ -269,8 +500,23 @@ If you want to check out some great examples of people with digital playgrounds,
             <title><![CDATA[Why you should reply to automated emails]]></title>
             <link>https://kejk.tech/thoughts/why-you-should-reply-to-automated-emails</link>
             <guid>641b3f9bd0ab1034f24698b9</guid>
-            <pubDate>Sat, 04 Mar 2023 10:44:11 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:27:33 GMT</pubDate>
             <description><![CDATA[Reply to those automated emails, you never know what might happen.]]></description>
+            <content:encoded><![CDATA[Picture this, it's an all too common scenario, you sign up to something to test it out and then forget about it completely. Weeks later you come back to it and having forgotten you signed up to test it, you sign up again via different creds. Now, without realising it, you've got two accounts.
+
+Eventually you realise this and go back to delete one of those accounts. And, within minutes, you get an automated email about cancelling your account which asks for feedback on why.
+
+This is exactly what happened with me and [Cosmic](https://www.cosmicjs.com/). I'd signed up via Google originally, then forgot and signed up via GitHub only to decide that Google was what I'd prefer to stick with (I'd already put a load of data in by the time I realised). Now, as I'd been using Cosmic for a while at this point, I was actually really bullish on it and sharing my feelings on Twitter and here. I'd also written a [community article](https://www.cosmicjs.com/articles/how-to-post-to-a-cosmic-bucket-directly-from-the-drafts-app-d939e480-3bc8-11eb-a739-b574ca5054de) about how I set up my publishing workflow via [Drafts](https://getdrafts.com/). I was well along my way to being an advocate, so I felt it necessary to reply to this automated email to explain that I, in-fact, was really into Cosmic and had shared so publicly.
+
+I assumed it'd go into a void of darkness like most replies to automated emails, but no, Tony (Cosmic CEO) replied and engaged me in good conversation about my use of Cosmic. I then got introduced to the Slack channel and built a bit more of a relationship before going back to my normal life.
+
+After a month or so, Tony got back in touch and asked if I would be interested in figuring out a graphic for a [blog post](https://www.cosmicjs.com/blog/jamstack-explained-in-5-minutes) being as I'm a designer who uses Cosmic and thus understands how JAMstack works on a technical level. I obliged and, after a little back-and-forth, the visual went live and our professional relationship began.
+
+Tony and I have a mutual love of interfaces void of clutter and noise, and so I couldn't resist mocking up some thoughts on where I felt Cosmic could go. Tony, quite frankly, loved it. So I worked on some more bits including a refresh to the above-the-fold main page design and---cut forward to a few months later---I'm now proud to say that I'm the [Design Lead](https://www.cosmicjs.com/about) at Cosmic, defining our design vision with Tony and building out the interfaces you'll be using day-to-day as a Cosmic user (when we ship our updates!).
+
+So, what does this post ultimately tell you? Well, sometimes the simplest actions can lead to the most unexpected and exciting outcomes. I didn't need to feedback on why I "chose to cancel Cosmic" and I certainly didn't need to advocate online for Cosmic as a random customer. But when everything aligns, great things can happen.
+
+Reply to those automated emails, you never know what might happen.]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/7c3c2900-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
@@ -278,8 +524,163 @@ If you want to check out some great examples of people with digital playgrounds,
             <title><![CDATA[Getting DRY with Figma plugins]]></title>
             <link>https://kejk.tech/thoughts/getting-dry-with-figma-plugins</link>
             <guid>641b3f9cd0ab1034f24698ba</guid>
-            <pubDate>Sat, 04 Mar 2023 10:43:56 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:23:55 GMT</pubDate>
             <description><![CDATA[Solving design problems by building Figma plugins. ]]></description>
+            <content:encoded><![CDATA[There's a concept called DRY in development. It means Don't Repeat Yourself and is all about code reduction through declaring and reusing shared resources. Say for example that I have a simple conditional statement that checks for all the correct node types in a Figma plugin to determine if it can make adjustments. I could do the following to do it:
+
+```javascript
+if (node.type === "FRAME") {  
+  const frame = figma.createRectangle()  
+  frame.width = node.width  
+  frame.height = node.height
+}
+
+if (node.type === "GROUP") {  
+  const frame = figma.createRectangle()  
+  frame.width = node.width  
+  frame.height = node.height
+}
+
+if (node.type === "ELLIPSE") {  
+  const frame = figma.createRectangle()  
+  frame.width = node.width  
+  frame.height = node.height
+}
+```
+
+But what I'm doing there is redeclaring the same information multiple times, what a waste of compute power. So instead I can bundle these into one. It's difficult to use the `!==` declaration because so many things can need exclusion, so the best way is to use our friend `.includes()`.
+
+```javascript
+const nodeTypes = ["FRAME", "GROUP", "ELLIPSE"] 
+  if (nodeTypes.includes(node.type)) {     
+  const frame = figma.createRectangle()     
+  frame.width = node.width     
+  frame.height = node.height 
+}
+```
+In design we can do a similar thing using atomic components, building up reusable assets as Lego blocks to avoid having to keep creating new assets. However, we can also take it a step further into the productivity side of design using Figma plugins.
+
+### Figma Plugins, what's the deal?
+
+Well, you've had a sneak peek at a bit of Figma plugin code above. Figma plugins use Typescript under the hood to allow you to create, modify and elevate your Figma project.
+
+As you probably know, I'm an evangelist for the "Designers should Code" philosophy, at least, I feel Designers should understand some code. And I've taken that further to believe that knowing how to write enough Javascript to build your own Figma plugins is a superpower all Designers should try to harness.
+
+Figma plugins enable Designers to perform at optimum operational capacity without the burden of loads of admin overhead. Now there are tonnes of available plugins in the Figma Community but that doesn't mean you can find one to solve your problem, some issues are just too unique to your use case.
+
+At HomeHero, we're using a bunch of custom Figma plugins that I've written (including the ones I've actually released) to better maintain our files. I'll cover some of these below.
+
+Ultimately, Figma plugins stop us from repeating ourselves with common admin tasks to clean up our files, they allow us to focus on designing the best experience instead of organising our contents.
+
+### The 'Gist' of how plugins work
+
+A couple of these Gists use the Scripter plugin to work as it has its own API to simplify some bits, grab it [here](https://www.figma.com/community/plugin/757836922707087381/Scripter). Of course, you can use the standard Figma API to perform any of this too, it just might be a little more verbose.
+
+### HomeHero TextLint
+
+One of the first plugins I wrote for us was aimed at simplifying text linting. We have a bunch of phrases we write in our designs regularly thanks to our industry, and there are many times that we mistype them and this sometimes makes its way to the product (oh dear!). To avoid that, I've written a super simple linter that parses the document and updates all text characters that match my arrays. It's not the cleanest or best code, but it saves us a bunch of time.
+
+```javascript
+const find = ["Move in", "move in", "Homehero", "wifi", "Wifi", "WiFi"];
+const replace = ["Move-in", "move-in", "HomeHero", "Wi-Fi"];
+
+const layers = figma.currentPage.findAll((node) => node.type === "TEXT");
+figma.currentPage.selection = layers;
+const { selection } = figma.currentPage;
+
+async function lintTextNodes(): Promise {    
+  figma.root.children.flatMap((pageNode) =>        
+  pageNode.selection.forEach(async (node) => {          
+  if (layers.length > 0 && node.type === "TEXT") {              
+    await figma.loadFontAsync(node.fontName as FontName);              
+    node.characters = node.characters.replaceAll(find[0], replace[0]);              
+    node.characters = node.characters.replaceAll(find[1], replace[1]);              
+    node.characters = node.characters.replaceAll(find[2], replace[2]);              
+    node.characters = node.characters.replaceAll(find[3], replace[3]);              
+    node.characters = node.characters.replaceAll(find[4], replace[3]);              
+    node.characters = node.characters.replaceAll(find[5], replace[3]);          
+   }         
+  return Promise.resolve("Done!");       
+  })  
+ );    
+
+if (layers.length === 0) {          
+  return Promise.reject("No layers selected");  
+}}  
+
+lintTextNodes();  
+figma.notify("All linted");  
+figma.closePlugin();
+```
+
+### HomeHero CropAll
+
+The second was a quick way to set all images to `"FILL"` mode and apply a resize constraint on them. It's not full-proof, but it gets all your images to the same basic starting point. We needed to do this because we have a tonne of images we use for our Picks feature and they all need to be set to the same size to reduce bandwidth when served to the app.
+
+When you have over 400 images, you want this!
+
+```javascript
+const layers = figma.currentPage.findAll(isImage);
+figma.currentPage.selection = layers
+
+for (let shape of await find(selection(), n => isImage(n) && n)) {
+shape.fills = shape.fills.map(p =>  isImage(p) ? {...p, scaleMode: "FILL",} : p)  
+shape.resize(375, 375)}
+```
+
+### HomeHero Slide Export
+
+Finally, we work in Figma to create our investor slide decks and other slides to share our design progress or lunch and learns. It's great but it's annoying when you need to then turn these into an exported set of slides.
+
+Luckily, we can use Figma plugins to apply some simple settings to make this happen and then export those Frames for others to use (you can even use my [Lazy PDF](https://www.kejk.tech/lazy-pdf) app to compress it into a lossless PDF afterward).
+
+```javascript
+const layers = figma.currentPage.findAll(); 
+const frames = layers.filter(isFrame);   
+
+async function renameFrames() {     
+ let items = frames; if (items.length > 0) {     
+ for (const node of items) {       
+  if (node.type === "FRAME") {         
+    node.name = ((node.name).substr(0,2) != 'Slide/') ? node.name = "Slide" + "/" + node.name : node.name; }       
+  }     
+ }}         
+
+renameFrames();     
+
+figma.currentPage.selection = layers.filter((n) => n.name.startsWith("Slide/"));     
+const { selection } = figma.currentPage;
+
+function hasValidSelection(nodes) { return !(!nodes || nodes.length === 0); } 
+const settings = [ 
+{ format: "PNG", suffix: "@1x", constraint: { type: "SCALE", value: 1 } }, 
+{ format: "PNG", suffix: "@2x",constraint: { type: "SCALE", value: 2 } }, 
+{ format: "PNG", suffix: "@3x", constraint: { type: "SCALE", value: 3 } }, 
+{ format: "SVG", suffix: "" },]; 
+
+async function main(nodes): Promise {   
+  if (!hasValidSelection(nodes)) return Promise.reject("No valid selection");   
+
+  for (let node of nodes) {     
+    node.exportSettings = settings;   
+  }     
+  
+return Promise.resolve("Done!"); 
+} 
+
+main(selection).then((res) => figma.closePlugin(res));
+```
+### Published plugins
+
+Beyond these, I've written a bunch of small utility plugins to make designer life easier. You'll see them all on my [Plugins.run](https://www.plugins.run/) site, but you can find them all [here](https://www.figma.com/@_kejk) also.
+
+### In the end, it's all about saving time
+
+Ultimately, we all want to save time and not do consistent, repetitive tasks each day. Figma plugins, and having the knowledge to write them, can be that solution for you. I can't count how many countless hours I've saved myself by writing the plugins I have and using plugins others have written too.
+
+If you want to get started with Figma plugins, try out my [Gists](https://gist.github.com/kemiljk), or, follow [this awesome tutorial](https://alcohollick.com/writing/figma-plugin-tutorial-1-6)from [Dan Hollick](https://twitter.com/DanHollick) who shares a lot of my feelings about designers and code.
+
+If you do end up creating anything awesome for your team, please send me a note and share some Gists! I love seeing what people are up to and seeing how I can adapt and utilise what they've done like I hope people do with my shares.]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/732eced0-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
@@ -287,8 +688,113 @@ If you want to check out some great examples of people with digital playgrounds,
             <title><![CDATA[Thinking in design-code]]></title>
             <link>https://kejk.tech/thoughts/thinking-in-design-code</link>
             <guid>641b3f9cd0ab1034f24698bb</guid>
-            <pubDate>Sat, 04 Mar 2023 10:42:49 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:18:07 GMT</pubDate>
             <description><![CDATA[My personal approach on how to think about code from a design perspective and how to implement those changes.]]></description>
+            <content:encoded><![CDATA[I've said before that I've built this personal site three times so far, and in all three cases it was without any design file in site. Now, as a designer this might seem like a really weird approach to building out something that requires design, but I designed it in code. Hear me out.
+
+If you've read any of my other Thoughts before then you'll be familiar with my concept of [Code as Design](https://www.kejk.tech/thoughts/code-as-design) but for this piece I want to take it a little bit further.
+
+### The premise
+
+So to understand why I took this approach---and for those who haven't read my previous articles---you'll need to know that I am a designer but I've had a varied background that grew from learning the basics of HTML and CSS in the early 2000's. So really, I actually learnt the principles of web design through the lens of code.
+
+So below I'm going to outline some practical steps of how to relate code and design. This list won't be exhaustive or complete necessarily (although I may come back and add to it) but it should match pretty well.
+
+Some caveats:
+
+-   All references to design tools will be through the use of Figma's terminology. This is for three reasons:
+    1.  It's a pretty ubiquitous design tool now, used by many
+    2.  It's what I use day to day for my job, so I know it very well
+    3.  Most of Figma's terminology for tools map fairly synonymously with code (particularly the new flex box-inspired auto layout
+-   This is how I think of code and design being linked, it doesn't mean that it's the only way to think about it
+-   I'll do my best to explain any concepts in as much detail as I can, but I can't promise it's exact
+-   This entire piece revolves around the principle of a web project build, you can of course map these same ideas to mobile builds in SwiftUI for example, the exact names will vary slightly (a div for example is more likely to be an Stack or even a Struct depending on how you build your projects, and grids are called LazyVGrid/LazyHGrid respectively)
+
+### Projects == Folders
+
+Where better to start than projects. In Figma, a "Project" is a folder that contains a series of files that you work on. You can have one, several or many. In Code, we use folders (just a regular old computer folder) and inside those folders we keep files which contain our code. Like with a Figma project, a folder can contain one, several or many files.
+
+If you work in modern Javascript-based frameworks, you'll likely have a whole bunch of files. If you're just keeping it minimal you may only use a single HTML file.
+
+### Files == Files
+
+Well this ones easier right? Each Figma file inside your project is essentially synonymous with the file structure of a development project. You can create multiple files within a project and link them all together with Figma's Shared Libraries feature.
+
+For most development projects, especially those that utilise one of the Javascript frameworks, there will be a bunch of files that all play together nicely (hopefully) to build your site. Figma projects are no different if you take full advantage of the Shared Libraries in Figma (and you should). Decentralising files is a key fundamental in modern development and allows for greater reusability and manageability of your code. Thinking of design files like this too will not only make your files more manageable but will also create a wider synergy to your development project when it progresses.
+
+### Frames == Divs
+
+Frames in Figma are your canvases. Frames are where you "paint" the interface of the product or thing you're designing, and in development the notion of "painting" is true too.
+
+> Sidenote: You may see the phrase "Time to first paint" if you ever do a Google Lighthouse review of your site, this is Google telling you the time it takes for your site to load the initial interface and allow first interaction. If it's slow, you'll score low for SEO and with Javascript-based Single Page Apps this can be a problem, so keep an eye on it.
+
+Just like in Figma, Divs act as a container for your code and you can stack as many Divs inside each other as you need (just like Frames). By doing this, you build up a structure for your page. This is where it can start to take life. It's important to stay focused on building out the core Div structure before getting into the details. Use quick "styles" on your Divs to create visual separation---even if it looks garish---such as `class="border-2 border-black bg-red-500". I'd use primary colours to separate the independent elements and stop you from nitpicking the details.
+
+[This Gist](https://gist.github.com/kemiljk/67631887f63e7b3b047364ef5df764f4) is an example of building up the basic structure of my home page container utilising the TailwindCSS library.
+
+### Auto Layout == Flexbox and Grid
+
+In the above code you'll see some examples of 'flex', 'flex-row' and 'grid'. These are all layout mechanisms that help to structure the page content in a more fluid and dynamic way. They're particularly important for when you want to create responsive layouts, such as having a 1 x 4 grid turn from a single row into a single column between desktop and mobile. This is exactly what happens in that first grid line `<divclass="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">`. At the smallest breakpoint (phone) it's a single column, at the next breakpoint (tablet portrait) it's two, and then at the next and up (tablet landscape or desktop) it turns into a four-column row. At each stage I implement a 4-point gap to separate the elements.
+
+If you look at the new Figma Auto Layout and Constraints controls, you'll see a lot of familiarity with these flex principles too.
+
+![An image of the Flexbox-like layout](https://res.cloudinary.com/kejk/image/upload/v1608155456/7BDEFC0F-89CB-4CA5-B93C-1B2A55646CEE_ewz2ye.jpg)
+
+An image of the Flexbox-like layout
+
+In the above we can see the flex direction (the down and right arrow) the spacing between elements (in grid, this is the grid-space-row or grid-space-col or in TailwindCSS, gap-{n}), the overall padding (here it's 16px on every side) and the alignment (in our example this is align-center, justify-center).
+
+You can also set resizing constraints. This defines how the object behaves when resized. We can choose between "Hug contents"---where the frame itself (i.e. the Div) is perfectly connected to the width of the objects inside and maintains the padding and wrapping---or "Fixed width" where the the frame width never changes regardless of changes to the internal components. The same rules can be applied to the height property.
+
+Below is how this looks in practice. Hug Contents is above and Fixed Width below. Notice that because I have the align-center and justify-center properties in place, the objects stay perfectly in the middle with fixed width.
+
+![Image example of the different container options on Figma](https://res.cloudinary.com/kejk/image/upload/v1608155455/F93AD77E-441A-458B-9D80-039C5B97F194_o9tw8w.png)
+
+Image example of the different container options on Figma
+
+### Layer naming == ID or Class
+
+Now let's talk about layers and naming. I know, I know, it's totally boring and it's fine to have 'Rectangle 33201' or 'Frame 1000010' on your projects if the actual designs look cool. I've done it many times too. But there is a really valid reason to think more carefully about layer naming, implementation in code.
+
+If you can handover a file that's name logically from a layering perspective (especially if you've taken all the above steps too) then you'll find your Engineer(s) have a much easier time implementing the code as they can use it as their file architecture or map.
+
+Groups should be given a name that characterises the contents. This is what can relate directly to an 'ID' property or a 'Class'. IDs by their very nature must be unique. In real life you can only have a single form of ID from a single source, the same applies to code. You should use an ID once in your code and not again. If you find yourself repeating them then you should swap these to become classes instead.
+
+An ID gives your particular Div or object a unique identifier which determines what makes it different. You could name a Nav Div, for example, `NAV` as you should only have one implementation of your core Navigation and reuse that component everywhere (more on this later). If that is true, ID it as `NAV` and apply the relevant classes.
+
+Notice the use of uppercase. Everyone has different practices, but one I think is particularly useful is to use UPPERCASE words to represent IDs and kebab-case for classes. But really you can do what you want. The reason for a difference? Scanability.
+
+### Styles == Classes
+
+Now, in Figma, if you find yourself reusing a particular style everywhere then you've probably decided (at least I hope so) to create a Figma Style from it. Doing this allows you to create local Text Styles, Color Styles and Effect Styles for a document. That way, repetition is more easy to do and consistency is more likely to be had.
+
+In code we do this too, they're known as classes. Depending on whether you're using a CSS library (like [TailwindCSS](https://tailwindcss.com/)) or not will likely determine your approach to classes. Tailwind uses what are known as '[Utility Classes](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/)', essentially breaking classes up into atomic parts (see: [Atomic Design](http://atomicdesign.bradfrost.com/)). What this means in practice is, like in my example earlier, there's lots of bitty classes used to build up a base idea.
+
+Just look at this button: `<button type="button"class="flex flex-row w-full justify-center text-center font-medium btn btn-primary rounded-xl px-6 py-3 bg-blue-400 text-white hover:bg-blue-500 focus:outline-none focus:shadow-outline transition duration-500 ease">Button 1</button>`
+
+That's a big ol' lot of classes to get the button behaving how I want. But equally, it behaves how I want. I've have complete control in the place I'm creating the button, instead of relying on styling in a separate CSS file. And, once you learn the notation style, it actually gets pretty fast to write (see: [Brian Lovin on migrating to TailwindCSS](https://brianlovin.com/overthought/tailwind-css-first-impressions)).
+
+The next logical step, of course, is to reduce the amount you do this. And you do this, just like in Figma, through making reusable elements called Components.
+
+### Components == Components
+
+Now on to the final piece of the puzzle. You've written a bunch of stuff, but you find yourself copying and pasting it all the time. Doesn't it seem silly to do that? Couldn't it be easier?
+
+This is where component based design and development comes in. Breaking things up into reusable chunks makes it easier to manage a big build and increases consistency. The beauty of Components too, is that you can decide how atomic you want to make them. Atomic Design (mentioned earlier) is the extreme end of the spectrum, but if you're already using TailwindCSS then you've already got a bunch of atomic elements to play with.
+
+If I dissect my site, I have:
+
+-   Four core unique pages
+-   One subpage (for blog posts)
+-   Fourteen components
+
+I could be much more atomic with my components. If it was a commercial product, I would be, but the reality is that I don't need to be that strict about it. I'm building it to my needs, just like I would a personal Figma file. The most important part of creating a component of anything is thinking about who's going to use it. Think of your website the same way you think of a Figma Design System. If you created icons with their labels as components, do the same, they'll be easier to swap out in a conditional statement. If you created different card component types, do the same, again you can use conditionals to control data differences.
+
+### Conclusion
+
+If you're working with engineers on a project, talk it through with them. Ask them how they're planning to execute at a code level and build your project to match. If they're going atomic, go atomic. It'll feel tough in the beginning but the 1:1 match will be worth it.
+
+Most importantly though, learn to make these connections in your head. If you can map what you think of in design to what the end engineering build case could be, you'll find that the process of documenting design decisions and handing over projects become far easier.]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/4ac58060-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
@@ -296,8 +802,51 @@ If you want to check out some great examples of people with digital playgrounds,
             <title><![CDATA[What a cult taught me about 'limiting beliefs']]></title>
             <link>https://kejk.tech/thoughts/what-a-cult-taught-me-about-limiting-beliefs</link>
             <guid>641b3f9cd0ab1034f24698bc</guid>
-            <pubDate>Sat, 04 Mar 2023 10:42:31 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:16:45 GMT</pubDate>
             <description><![CDATA[You should never feel like you have no limiting beliefs, but you should always fight to overcome them.]]></description>
+            <content:encoded><![CDATA[I've long been fascinated by cults from a psychological perspective. Knowing that particular individuals can be so convinced by someone that a set of beliefs and ideals are true, they are willing to give up their previous life in search of this newfound one, both bewilders and intrigues me.
+
+We could argue for ages about what constitutes a cult, people have varying opinions and I know where my beliefs lie, but that's beside the point.
+
+The purpose of this is to think about the idea of "limiting beliefs".
+
+I first learnt about this concept when I was watching the documentary series [The Vow](https://m.imdb.com/title/tt10222764/) about [NXIVM](https://en.wikipedia.org/wiki/NXIVM), the celebrity-endorsed cult led by a narcissistic, self proclaimed genius, that did unspeakable things to convince women to brand themselves with his initial.
+
+Interestingly though, like with most cults, it actually started out with positively challenging ideas and concepts that made a lot of sense. Limiting Beliefs feature in many self-help books, seminars and even many religions. They're the concept that we convince ourselves that we aren't capable of achieving something or being someone because we "aren't good enough at it" or "don't live in the right city for that kind of job" or "can't do it because there isn't enough time in the day". Understanding and identifying our limiting beliefs and then---to use common cult nomenclature---reprogramming our minds to remove them is a core tenet of how NXIVM started and actually a positive thing I took away.
+
+I've long had limiting beliefs---which will be evident from previous articles---about my ability to be a designer based on my varied job history or that I'm not really a frontend developer because I can't do everything from memory (despite knowing that most developers are this way).
+
+Lately though, I've been training myself out of this mindset. Using this concept of limiting beliefs to reprogram my own brain and I've done this in the following five ways:
+
+### Daily gratitude meditation
+
+I use a gratitude practice to remind myself daily that I'm grateful to be employed as a designer, that I have a network of people who believe in my abilities as a designer and who trust me to do my job. It may seem silly, but that regular reminder to myself helps a lot.
+
+### Regular practice
+
+I never stop practising my skills. Whether it's a paid job or an idea I want to try out, I practice often. I practice design skills, frontend coding skills and writing about the learnings. All of this helps me feel in control of my situation and feel like I know what I'm doing.
+
+I've found that this personal website has become my experimentation ground. I'm not the first person to do this, but it really does make for a safe place to experiment and learn.
+
+### Being open and honest with people in my support network about my fears
+
+I'm not afraid to talk to those around me about these worries. I speak to my manager often about my feelings of dissatisfaction with my work or output that day. I speak about my worries that I don't feel like I'm really a designer. He reminds me regularly that I was hired as one for a reason and that if I was lacking in areas, he'd tell me. Never underestimate the power of being told that.
+
+I also often worry when it feels like what I've produced is disliked by my team or could be a lot better. But then I'm reminded that we're all stronger in different areas so some things take more time for one person to the next.
+
+### Mentoring
+
+I've been practicing being a mentor to junior designers seeking to push their skills forwards, especially within my team. I'm trying to be a voice of experience, imparting the knowledge I've gained about business, stakeholder management, how to manage design-developer handoff. All these things are things I sometimes take for granted but are less well known by junior designers.
+
+### Writing about my worries in the open
+
+Finally, I write out in the open about my feelings more now. You'll notice these articles are often quite personal, and that's important. Sharing my experiences out in the open like this to the people who do choose to read it becomes kind of therapeutic. It's a chance for me to work through how I'm feeling but also to share that it's normal to have doubts and worries.
+
+Not all of these are right for everyone, and please let me know if you have other techniques that could be useful and I'll update this list.
+
+Ultimately though, in this new year, rather than reflecting on the previous year or saying what will be new this time around, I'd rather share some insight from my own personal journey through my limiting beliefs and leave you with this:
+
+> You should never feel like you have no limiting beliefs, but you should always fight to overcome them. The moment you stop being limited or you stop fighting, you've become too comfortable and need to find your next challenge.]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/411f68a0-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
@@ -305,8 +854,21 @@ If you want to check out some great examples of people with digital playgrounds,
             <title><![CDATA[Ten Principles for Good Design]]></title>
             <link>https://kejk.tech/thoughts/ten-principles-for-good-design</link>
             <guid>641b3f9cd0ab1034f24698bd</guid>
-            <pubDate>Sat, 04 Mar 2023 10:42:16 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:13:30 GMT</pubDate>
             <description><![CDATA[I decided to put together a free, multi-device, minimal wallpaper of Ram's ten principles. ]]></description>
+            <content:encoded><![CDATA[### A free minimal wallpaper of Ram's ten principles.
+
+I've long been a huge fan of Dieter Rams and his extensive portfolio of work at Braun and Vitsœ.
+
+When I heard that Gary Hustwit was looking for funding to film a movie about Rams' career, I couldn't resist backing it on [Kickstarter.](https://www.kickstarter.com/projects/1019019367/rams-the-first-feature-documentary-about-dieter-ra)
+
+One of the perks was to get a letterpress of the ten principles on card. This was set in a beautiful font close to [Archia](http://atipofoundry.com/fonts/archia) by Atipo (I believe it might be [Space Mono](https://fonts.google.com/specimen/Space+Mono?query=space+m) by Colophon) that I wanted to reimagine for the digital screen as a reminder of the principles. This allowed me to have a constant reminder to ensure my designs are always refined and focus on delivering maximum value in a minimal form.
+
+I've made this wallpaper available to download in three sizes for mobile, tablet and desktop. You can grab them below. In my version, I've set this in Archia.
+
+[![](https://res.cloudinary.com/kejk/image/upload/v1590345853/Desktop_bwwsio.png)](https://res.cloudinary.com/kejk/image/upload/v1590345853/Desktop_bwwsio.png)
+
+[Download all](https://res.cloudinary.com/kejk/raw/upload/v1590345921/Rams_Ten_Principles_Wallpapers_god3jk.zip)]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/37247a20-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
@@ -409,11 +971,9 @@ If you've not had that flip yet and you're still in a role you feel defines you 
             <title><![CDATA[How music, design and code are all the same]]></title>
             <link>https://kejk.tech/thoughts/how-music-design-and-development-are-all-the-same</link>
             <guid>641b3f9dd0ab1034f24698c0</guid>
-            <pubDate>Fri, 24 Mar 2023 09:05:31 GMT</pubDate>
-            <description><![CDATA[I wouldn't say I believe creativity is a gift we're born with. I don't believe my abilities are.]]></description>
-            <content:encoded><![CDATA[###
-
-I wouldn’t say I believe creativity is a gift we’re born with. I don’t believe my abilities are. But what I think I do have is a natural tendency towards patterns.
+            <pubDate>Fri, 24 Mar 2023 09:11:49 GMT</pubDate>
+            <description><![CDATA[Thinking about creative disciplines and how they intersect]]></description>
+            <content:encoded><![CDATA[I wouldn’t say I believe creativity is a gift we’re born with. I don’t believe my abilities are. But what I think I do have is a natural tendency towards patterns.
 
 The more I’ve look introspectively at myself lately, the more I’ve come to see that the “red thread” through the three things I’m best at and enjoy, is patterns.
 
@@ -421,21 +981,15 @@ The idea that music, design and development are all ultimately the same at their
 
 ## Pop songs
 
-###
-
 There’s only so many pop songs in the world, and they’ve already all been written, rewritten and written again. The people who write them are aware they’re not new, they want that to be true, because there’s a set of sequences that work and work well. Why diverge from them? People like familiarity, it’s human nature.
 
 Design and development for that matter are the same. Design patterns are critical for making something pleasing to the eye. Early in most creative classes you’ll learn about the oft touted “Golden Ratio”. This particular number (1.618) when used as a compositional spacing rule, leads to the most pleasing results mathematically which happen to be aesthetically pleasing too. Why? Pattern recognition.
 
 ## Understanding this article
 
-###
-
 Littered throughout this article are links to other articles and websites. This is deliberate and not due to laziness. Lots of clever people have written great pieces on the things I’m talking about here, so my goal is to collate a series of these thoughts into an abstract of sorts. Think of this like a meta-analysis of these other thoughts.
 
 ### The golden ratio and nature
-
-###
 
 If we break down nature’s patterns, we can find the [golden ratio everywhere](https://www.treehugger.com/how-golden-ratio-manifests-nature-4869736). Its in the snowflakes that fall in winter, the leaves that grow on trees, the scales on a fish, or the way a forest grows.
 
@@ -444,8 +998,6 @@ There’s a reason it exists everywhere, its because it creates aesthetically pl
 So lets break down some of the similarities between the mediums by picking some core terminology and finding some examples.
 
 ### The rule of thirds
-
-###
 
 In photography there’s the concept of the [Rule of Thirds](https://photographylife.com/the-rule-of-thirds), where you aim to create a pleasing proportion to your image by aligning the subject to different thirds within their containing frame. Just like all creative rules though, sometimes breaking them leads to more intriguing results, and this is very common when using the rule of thirds.
 
@@ -457,15 +1009,11 @@ Design and development layouts should also maintain predictability, this predict
 
 ### Grids
 
-###
-
 Depending on who you are, [grid systems](https://www.interaction-design.org/literature/article/the-grid-system-building-a-solid-design-layout) are either a blessing or a curse. If we think about them the same as the rule of thirds then we’re on the right path. Grids can be used as a definitive approach to layout or be used as an element we purposely break to provide a unique aesthetic approach. Either one is acceptable, it’s just up to you and your layout intention.
 
 In music we have a similar principle to grids in instrumental composition. Choosing how to “[arrange](https://youtu.be/S8fZ62FrquQ)” instruments is vital to the feel of a song. We can choose to have all instruments playing at once, or start with just one and build it up. Similar to grids, we can use different structural layouts to create the final song, and those different structural layouts dramatically impact the feel of the piece.
 
 ### Colour theory and white space
-
-###
 
 [Colour theory](https://99designs.co.uk/blog/tips/the-7-step-guide-to-understanding-color-theory/), surely there isn’t a corollary to anything in music here? Well, not so fast there champ. We can make a comparison here to the idea of harmony. Colour theory is the idea that selecting colours that are opposites on the colour wheel leads to a pleasing compositional choice as they balance each other out. Why is that? It’s because they contain the opposite values, this fills out the colour spectrum to its whole.
 
@@ -477,15 +1025,11 @@ In design we do this too by using [white space](https://blog.prototypr.io/impor
 
 ### Rhythm
 
-###
-
 You can keep all your instruments together following the same rhythm and harmony. This is pleasing to the ear in the fact that it feels together and its easy to nod your head to. Alternatively, you can mix different rhythms or harmony’s to produce interesting results. In music we have what’s known as a [polyrhythm](https://mathdrumming.com/polyrhythms/). This is a rhythmic device where an instrument maintains a rhythm that falls outside of the time signature of the composition but, thanks to some maths, falls back into time within a later phrase of the other instruments rhythm.
 
 Similarly, in design we can use rhythm and harmony when we think about a layout. When laying out [typography](https://www.jeroenseynhaeve.com/pythagoras-and-vertical-rhythm-in-typography/), rhythm and harmony are words that often come up. That’s because what makes typography often feel pleasing to look at and read is the consistency by which the elements are laid out. If we break this typographic rhythm then it can either have pleasing results (such as for a poster design) or feel unbalanced and terrible because of a lack of visual consistency.
 
 ### Time signatures and pacing
-
-###
 
 Much like rhythm, we can use other mathematical devices to play with our composition. Pacing is key to this, it allows us to think about how fast and slow the entire song should be, but also the speed of each section. Is it full time, is it half time. Playing with the pacing is another device we can use to change the feel between sections and drive impact.
 
@@ -500,8 +1044,6 @@ Rap and hip hop use a very common layering of 4/4 backing rhythms and then rappi
 In design we can use this idea visually by using contrasting grids on top of each other. Think how it would look to have your type laid out evenly over a 4 block grid but spaced as if it was a 3 block grid. It would create interest by adding additional white space between the words, creating a more intriguing rhythm.
 
 ### Combining our principles
-
-###
 
 In the below example, the navigation bar at the top and falls on the 4 column grid alongside the company logos at the bottom whereas the title section and hero image sit on a 3 column grid. Just like triplets fall inside a 4/4 rhythm, different grids can work in harmony to create more interesting layouts. This combines our principles of grids, rhythm, pacing, colour theory, white space and time signatures. Almost all of them!
 
@@ -564,8 +1106,29 @@ Humans are not users, users are humans.]]></content:encoded>
             <title><![CDATA[Spatial Design]]></title>
             <link>https://kejk.tech/thoughts/spatial-design</link>
             <guid>641b3f9ed0ab1034f24698c4</guid>
-            <pubDate>Fri, 03 Mar 2023 20:14:29 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:28:18 GMT</pubDate>
             <description><![CDATA[Product Design is a term we use broadly these days to define a designer who creates products.]]></description>
+            <content:encoded><![CDATA[Product Design is a term we use broadly these days to define a designer who creates products. This is a term that was often super unclear in my early days as I confused it with the role of an Industrial Designer. In reality, whether the product is digital or physical, designing a product makes you, technically, a product designer.
+
+We've continued to expand the spectrum of what a Product Designer is and what their craft should be; from apps to websites, and virtual reality to audio-only, from physical products to the intangible. Product Design is the art of building something from nothing, but I'm seeing a shift in what that role should encompass, and I think we're going to have to hone our craft to include a new skill: Spatial Design.
+
+Whether it be visual space or auditory space, being able to design for different spatial planes will be critical to the success of the next breed of designers as AR, VR, MR and audio-only platforms take off as the mediums of the future.
+
+With the announcement of [Apple's AirTag](https://www.apple.com/uk/airtag/), playing with the delightful experience of finding a lost tag got me thinking carefully about what this design experience really was. The experience included a physical product, a visual experience (including physics-rendered objects), a sense of spatial plane (vertical and horizontal direction), haptic feedback, and an auditory experience. That's a lot of things to cram into a single, small, $29 product.
+
+The key to the success of the AirTag experience is in the team's sense of spatial planes when designing for it. Navigating the space of a room, understanding if the product is up or down from my current phone's placement, thinking about when audio and haptic feedback play a key role in the finding experience. It's so many layers of complexity that lead to a cohesive and satisfying customer experience.
+
+Comprehending that a single designer could ever create something like this is mind boggling, so its clear that this is a prime example of Apple's commitment to owning the entire stack and having individuals across the org playing a role. Say what you will about the anti-trust element to this, as a customer it's a perfect experience, so there you have it.
+
+No single designer should be expected to think of everything that leads to this product's success, or be capable of delivering upon it, but being able to have even one part of the vision for it and think about how all those world's collide is something I think all designers would benefit from. Being able to think about Spatial Design when putting together a product in Figma that is purely two-dimensional will be critical to being a successful designer in the next few years. Spatial Design doesn't have to mean that you design the spatial experience, but having understanding of the technology at play and the empathy to be in the shoes of the customer in that moment is crucial. And designing an experience that feels in concert with the physical experience will be essential too.
+
+This mindset follows on from my belief that all Product Designers should understand the core concepts of the development stack, even if they don't code [[1](https://www.kejk.tech/thoughts/designing-in-code), [2](https://www.kejk.tech/thoughts/code-as-design), [3](https://www.kejk.tech/thoughts/thinking-in-design-code)]. Knowing how your idea is built is crucial to being able to design optimally for it. With spatial design, it's exactly the same.
+
+As we see the rise of AR, VR, MR and audio-only platforms, we'll see the need for designers to think about the spatial experience increase. There'll become plenty of specific jobs for AR Designer, Audio Designer, Spatial Designer and so on, some of these even exist already if you look in the right places. But we'll also see the need for regular Product Designers to be thinking about the spatial experience alongside the host of other things they think about daily when designing products for customers.
+
+Customers will become increasingly invested in these spatial technologies, and as they do, designers will need to step up to the plate to deliver on those world class experiences. AirTag and Google Maps' [AR directions](https://www.theverge.com/2019/8/8/20776247/google-maps-live-view-ar-walking-directions-ios-android-feature) are just the start.
+
+> Update, at WWDC21, Apple put together an [excellent video](https://developer.apple.com/wwdc21/10245) on how to design for spatial interactions. I highly recommend checking it out!]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/fdc1d0d0-b9ff-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
@@ -573,8 +1136,63 @@ Humans are not users, users are humans.]]></content:encoded>
             <title><![CDATA[The power of Cosmic]]></title>
             <link>https://kejk.tech/thoughts/the-power-of-cosmic</link>
             <guid>641b3f9ed0ab1034f24698c5</guid>
-            <pubDate>Fri, 03 Mar 2023 20:13:45 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:24:58 GMT</pubDate>
             <description><![CDATA[Not too long ago I decided to set myself a challenge; create and add new content to my website via a CMS.]]></description>
+            <content:encoded><![CDATA[> Note: I work for Cosmic but this post is not directly affiliated with them and is my own set of opinions. I found Cosmic and starting using it before I worked with them, and actually its how I ended up working there!
+
+Not too long ago I decided to set myself a challenge; create and add new content to my website via a CMS.
+
+So let's back it up. I'm a designer by trade but I tend to get my feet wet in the development side too. If you've read my posts previously or even looked on my site, you'll notice the distinct 50/50ish split of design and development projects and/or posts. Being in control of the majority of the stack when it comes to projects I work on has proven super useful in terms of creative control and individual learning. But one thing I've always found too abstract and difficult to learn is backend development.
+
+Frontend dev and design go hand in hand. I've spoken vocally before about my belief that Designers should understand [how their work is built](https://www.kejk.tech/thoughts/code-as-design) and should ideally be [comfortable](https://twitter.com/_kejk/status/1380866907377647618?s=21) experimenting in that world themselves too.
+
+Backend has always felt more complex to me, and APIs were a terrifying concept, so I went on the hunt for a headless CMS option to power my website and get my start in implementing API-driven updates to my website. I was looking through a host of different options but specifically trying to get a good free tier that would enable me to power my website fully without having to pay until I was sure it was the right thing for me. This site makes me £0, so keeping it as free as possible to run is ideal (coincidentally this site only costs me about £6 a month to run if you divide up the domain cost per year).
+
+During my hunting I came across [Cosmic](https://www.cosmicjs.com/) and saw that it had a super generous free tier, one that could end up being viable for long-term use. Cosmic is a headless CMS that decouples your content from your frontend. By doing this, it meant I could create content 'buckets' (to use Cosmic's nomenclature) to separate my content into different places and power different projects from it (more on why this is great later!).
+
+Below I've written five pieces of value a headless CMS can bring to your project or projects.
+
+### 1\. Decouple your architecture
+
+By decoupling your backend from your frontend you can live in a world of a "separation of concerns". This is important. By separating your content from your UI, you avoid putting all your eggs in one basket. I use [Nuxt](https://www.nuxtjs.org/)to build this website [edit: this is now built in [Next](https://www.nextjs.org/), so I could have used the `content` module to write markdown and post into my site. That leaves me reliant on Nuxt or another markdown-driven module, it couples me to the architecture. But by using Cosmic, I'm able to write my markdown (like this post for example) in [Drafts](https://www.getdrafts.com/) and then [write a little script](https://www.cosmicjs.com/articles/how-to-post-to-a-cosmic-bucket-directly-from-the-drafts-app-d939e480-3bc8-11eb-a739-b574ca5054de) to publish straight to my Cosmic bucket (and which now also runs a webhook in Vercel to republish my site and posts a draft into my [Buttondown](https://www.buttondown.email/) backend to create a new subscriber post). Now I'm not reliant on Nuxt, so if a new framework shows up, or I decide to go back to vanilla JS again, I can still simply integrate all my content again.
+
+### 2\. Separate your content into Projects or Buckets
+
+Your CMS may use different nomenclature for what Cosmic calls a Project or a Bucket, but essentially, each time you're working on a new project you don't need to spin up a brand new backend necessarily. By having a single Cosmic instance, you can spin up as many Projects or Buckets as you like.
+
+For this site I have a single Project with a single Bucket that contains all the necessary objects I need. I can then also target that Project but a separate Object to power my [Plugins.run](https://www.plugins.run/) site. I could also push that Object into its own Bucket if my needs grow.
+
+But most importantly, it allowed me to spin up a new Project with some collaborators to build an exciting new [Figma plugin](https://twitter.com/_kejk/status/1387739445944782855?s=21) project where all content is powered by Cosmic's backend... how awesome is that!
+
+### 3\. Automate the upload of content
+
+On the topic of that Figma plugin, we have a lot of files to deal with from the outset (541 so far to be precise) which meant that we needed a way to get this content up quickly and easily. My collaborator [Neef](https://neef.co/) put his skills to work and built a rad upload automation that meant we could easily post all of our files to Cosmic via the `add Object` endpoint by just dumping them in a folder locally and running `npm run upload:assets`. This stopped me from manually doing all 541 (I'd already done about 30 manually and that was horrible).
+
+Without a headless CMS with a solid API, this would have been entirely manual and painful when each object has 5 points of metadata that need handling. It doesn't sound like a lot, but that's repetition over 2000 times, and this was just for the first set of data.
+
+### 4\. Power anything
+
+Following on from the above, by being able to power my website projects and also now a Figma plugin, it shows that a headless CMS can actually power anything. You could use one to power a website or app's content, power a plugin or integration or even just as a repository of information you want to store.
+
+My next goal is to start thinking about powering content in a native iOS app with my Cosmic CMS. Not sure on the project for this yet, but if you've got ideas for something, send me an [email](mailto:karl+appIdeaProject@kejk.tech).
+
+### 5\. Teach you about APIs
+
+Finally, learning how to implement your content via a headless CMS teaches you how APIs work and helps you to understand the relationship between content and UI and how this separation of concerns can improve, future-proof and power any project you're working on.
+
+Also, don't forget, you can go back and add a headless CMS solution to an older project. I did this with my pre-Nuxt website which used bare Vue (and thus didn't have the SEO benefits Nuxt brings) and it worked like a charm.
+
+### Time to start something!
+
+Ultimately, a headless CMS offers freedom and power. If you're not sure whether one is the right fit for what you're doing, then I challenge you to try and find a way to make sense of it and do it. Everything you create in Cosmic is just a JSON object that can be returned via the API. So if you're working on anything digital, you can use that JSON to do something. So I'd say, anything is possible!
+
+If you get stuck or want some advice, feel free to get in touch via the form below or head over to the [Cosmic community](https://www.cosmicjs.com/articles) and see what people are building!
+
+> **Update:** I've been working now with SwiftUI for a while and I can say I truly love it. It has flaws, it has missing pieces but it's generally excellent to use. Especially as a designer.
+>
+> I've spent the past few weeks building an app to support my personal bookmarks and blogs so I can easily view, edit and update from my phone, iPad or Mac any time. It's taught me even more about how powerful Cosmic's headless approach to content is and shows you can literally power anything with it.
+>
+> And with dashboard V2 in early preview, I can't wait for what's next.]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/e32427f0-b9ff-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
@@ -582,8 +1200,47 @@ Humans are not users, users are humans.]]></content:encoded>
             <title><![CDATA[Designing in the open]]></title>
             <link>https://kejk.tech/thoughts/designing-in-the-open</link>
             <guid>641b3f9ed0ab1034f24698c6</guid>
-            <pubDate>Fri, 03 Mar 2023 20:13:07 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:19:30 GMT</pubDate>
             <description><![CDATA[What I’ve learnt about sharing constantly and live designing with my team.]]></description>
+            <content:encoded><![CDATA[### What I've learnt about sharing constantly and live designing with my team
+
+Designers are precious people. Arguably, the vast majority of Creatives are precious people. From my own personal experience, observing teammates and generally speaking to other creatives, it's apparent that we seek perfection and are often uncomfortable with sharing works in progress.
+
+If you work in design, you'll be familiar with the WIP abbreviation. You might have used it in file extensions `homepage_redesign-WIP.fig` or within the document itself `homepage_newScreens-WIP`or you may go as far as using more blunt language to try and stop prying eyes `homepage_newScreens-NotReadyYet-DO_NOT_TOUCH`.
+
+When I moved to HomeHero, I was one of two designers. The very nature of having two individuals meant that we were somewhat forced into working in the open. We, in most cases, would be working across the same files because of the needs of the organisation at the time.
+
+One thing we did though, was use Figma. By default, Figma's goal is to enable and encourage working out in the open. Whether that's through the cross-platform, web-based tool's easy sharing options, or the multi-cursor features, it became super easy for us to bring product managers and developers into the fold too. 
+
+As we've grown, we've ensured that we maintain this approach to working. Although we only open access to our files once they're in the right shape, we actively seek product manager and developer input during the early stages of design. Allowing them in to the fold when the file is still a mess of ideas and mistakes ensures that we don't spend too long going down the wrong path or thinking we've understood the brief but we've actually got it hugely wrong.
+
+### Being consistent
+
+This is all well and good, but it's easy to lose consistency with this and retreat back to the WIP-obsessed designer mindset. 
+
+We've done it as a team. We started with really open access in Figma. Anyone with a HomeHero email address could just jump in to any file and have a nose around and have their say. We experienced a few moments where we got some unhelpful feedback on parts of a project that were just experiments. And the problem is, no matter what the page was labelled or what text is included on the page, it's not always clear to an outsider that something is an experiment.
+
+It's not an issue just for us as designers. Receiving unnecessary feedback isn't helpful, and it's also a huge waste of time for the person who spent their precious hours adding comments to something that was a passing idea anyway.
+
+### Finding a happy medium
+
+In order to maintain our openness across the organisation, whilst also ensuring we don't fall into the old traps, we've spent some time crafting a way forwards.
+
+#### Our default position is that only Design have Figma access to our Team now.
+
+This means that only the design team have open access across all the Figma documents we've created. This allows us to be working out in the open within the confines of the Design Team. It stops us from keeping our ideas just to ourselves, obsessing over them until they're "perfect", but it also ensures we don't end up in the land of unnecessary comments.
+
+#### We add the relevant PM, Developer and and others to a singular, specific file.
+
+By only adding the right people to the right file at the right time, we guarantee that we've put the file into the right kind of state to receive the feedback we need, but without resorting to  `homepage_redesign-final_FINAL.fig`.
+
+#### We design together, live.
+
+The main thing we spend a lot of time doing now---beyond collaborating inside the same design files---is actually designing whilst sharing our screen. 
+
+If we're working through a specific problem, we've found that screen sharing-based design sessions work great. In some ways we're trying to mimick the idea of being able to do in-person peer-designing or whiteboard sessions, but we've found that it really increases our ability to take an idea from experimentation through to a more defined execution. 
+
+Oftentimes, one of the team will share their screen whilst designing and we'll all jump into the file too. This means that we can let one person essentially lead the design process whilst still dropping in and adding things we think of in the moment.]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/ccf4fcc0-b9ff-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
@@ -591,8 +1248,57 @@ Humans are not users, users are humans.]]></content:encoded>
             <title><![CDATA[Code as Design]]></title>
             <link>https://kejk.tech/thoughts/code-as-design</link>
             <guid>641b3f9ed0ab1034f24698c7</guid>
-            <pubDate>Fri, 03 Mar 2023 20:12:46 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:18:53 GMT</pubDate>
             <description><![CDATA[How development can be learned through a design lens (and how I've managed to do it). ]]></description>
+            <content:encoded><![CDATA[### How development can be learned through a design lens (and how I managed it)
+
+I've said it before, but I am primarily a designer. From an early age I was always drawing and building things, and always asking "why?", I'm naturally curious I guess. But I've also explored frontend development from the early years too.
+
+I grew up in what I now consider the golden age of the web. I was a pre-teen during the 90's and I got really into modding my Windows 98 and [XP](https://www.instructables.com/Custom-Windows-UI/) interfaces to feel custom to my interests at the time (and let's not forget those [Winamp skins](https://winampheritage.com/skins)). So I guess, although I wasn't coding at the time, I was beginning to appreciate the link between how the interface *looks* and how it *works*.
+
+In those days, you could do a minimal amount of work to change the appearance, but because you had to install a bunch of different patches and programs to make it work, it did require a reasonable amount of logic and computational literacy to get it working.
+
+As I got older and things developed online, I got a [MySpace](https://app.cosmicjs.com/kejk-next-production/edit-object/www.myspace.com) account and learnt about the power of HTML and inline styling of CSS. Using "View Source" I could steal the code other people wrote and modify it to my needs. Again, because I'm visual-first, I started with hunting down the mods I liked the look of the most and then modified their code to suit what I liked. Starting with colours, I then worked my way into sizing and, hiding things I didn't like by targeting their `id` element and hiding them with `display: none`.
+
+After MySpace went down the pan---before Justin Timberlake resurrected it and made it weird---and things moved on, I drifted away from code and moved more towards the creative side of things. But over the years I was exposed more and more to code through my jobs. And whilst working at [Cognite](https://app.cosmicjs.com/kejk-next-production/edit-object/www.cognite.co) I was fortunate to meet a good friend, [Nick Wilkins](https://app.cosmicjs.com/kejk-next-production/edit-object/www.nick-wilkins.com), who helped me (and still does) figure a bunch of things out to make me more comfortable with code. More about that here [Design as Code](https://www.kejk.tech/thoughts/designing-in-code) .
+
+### Back to code
+
+Since then, I've been pushing myself to learn more and more about how to implement my design ideas in code. I started by pushing myself to write my [original personal website](https://kejk.vercel.app/) in pure HTML and CSS. It was clean and simple, but it did the job and refreshed my knowledge. Looking back at it now, it's not that far off where I am now visually, but it's a much more stripped back approach and a far more manual site to update.
+
+The funny thing is, I didn't design this page first. Contrary to the usual approach, I wanted to leverage something I've talked about before [Development-based Design](https://www.kejk.tech/thoughts/designing-in-code).
+
+> I'm not saying you should go away completely from using design tools (I still heavily use Adobe XD and Figma), but I am saying that understanding how to design in code is a superpower that all digital designers should aim to possess.
+
+By manipulating everything in the browser as I went, I learned even more about the power of code, but it felt like something was missing for me. I wanted to find a way to learn the more reactive programming approaches. There'd been all this talk about [React](https://app.cosmicjs.com/kejk-next-production/edit-object/www.reactjs.org) and it just seemed like a really good thing for me to push towards. But then I looked at it...
+
+### The problem with React and why I picked Vue
+
+For me, React just didn't properly click. For developers who understand Javascript it offers really powerful ways to build better, more reactive websites. But as a designer who moved into learning code, it was too hard for me to actually make sense of. The leap from HTML and CSS to React was massive and it put me off.
+
+Welcome [Vue](https://vuejs.org/)! I stumbled across Vue by accident. I knew I wanted to learn something more reactive so I started searching around, found Vue and it just clicked instantly. I dropped the CDN script into a prototype project I was working on at [NeuerEnergy](https://www.neuerenergy.com/) and I was away. I could write the HTML and CSS I knew, and then inject some Javascript in---when I wanted to and had learned to---to power up the site with clever reactivity.
+
+So then my love of Vue began and I decided the best way to learn it better was to rebuild my personal website in Vue. So welcome [KEJK v2](https://kejk.kejk.now.sh/). I decided that because we'd been leveraging the power of Material Design at NeuerEnergy, I wanted to do the same for my personal website (avoiding too much brain overload) and thus found the [Vuetify library](https://vuetifyjs.com/en/) to help me on my journey. This meant I could build in the same way I could design, using a design framework that already made sense to me. If I wanted a card, Vuetify had a `<v-card>`to offer me, if I wanted to break into a grid, I had `<v-row> and <v-col>`to help me out. It all just made sense.
+
+### Vue, Nuxt, Cosmic, Drafts and TailwindCSS
+
+I loved that personal site, it also provided me with a lot of interest from prospective employers when applying for other design roles. Being able to tell them that I'd built the website myself and used Vue to do so gave me a level of skill that other designers weren't always able to offer. This doesn't mean I was *better* in any way, I just offered *different* skills and sometimes those skills are super helpful for the right design team.
+
+I found that exact design team. In my current role at [HomeHero](https://app.cosmicjs.com/kejk-next-production/edit-object/www.homehero.co.uk), I was hired specifically because I could span the breadth of design and development. Connecting Design and Engineering teams is often an overwhelming and complex task. More often than not, projects aren't handed over properly and a lot of important information is either lost in translation or just straight up missed. Usually, this isn't the fault of anyone particularly, better processes could help (I'll be writing about this at some point soon) but also understanding the language of development and being able to understand **what it takes** to deliver on your grand "cross-device isometric animated timeline" can have a massive, lasting impact on the connectedness of your team and the quality of the outcome. Moreover, I'm able to work directly with the Engineering team to style the frontend of some of our projects, lifting a weight off of them and giving Design the power to own the interface from idea to execution.
+
+So what was next for me? Well, as you can see there were two iterations of my previous site but you're reading this on the third. I realised that I had an opportunity to improve things. I wanted to make my content more reactive and allow myself more opportunities to utilise a headless CMS to power a lot of the content that could change regularly. This is when I came across [CosmicJS](https://app.cosmicjs.com/kejk-next-production/edit-object/www.cosmicjs.com). Cosmic is a super flexible, **really well documented** headless CMS (with an unbelievably generous free tier). Cosmic has allowed me to power pages such as my [Thoughts](https://app.cosmicjs.com/kejk-next-production/edit-object/www.kejk.tech/thoughts) (where you're reading this) and [Uses](https://app.cosmicjs.com/kejk-next-production/edit-object/www.kejk.tech/uses). Now I can update content via Cosmic's simple backend, avoiding any need to dive into the code to create a new blog post or update my gear.
+
+Right now, I'm writing this on [Drafts](https://app.cosmicjs.com/kejk-next-production/edit-object/www.getdrafts.com) for iPad and will be posting it to my Cosmic bucket using a custom [POST action](https://actions.getdrafts.com/a/1fP) I wrote. This makes things frictionless for me now.
+
+I've also refactored the site to use [Nuxt.js](https://app.cosmicjs.com/kejk-next-production/edit-object/www.nuxtjs.org) so I can take better advantage of dynamic page routing, SEO meta info and their module system. I even went as far as to ditch my use of Material Design and refactored all of the HTML to use [TailwindCSS](https://app.cosmicjs.com/kejk-next-production/edit-object/www.tailwindcss.com). This means I'm looking up docs less and focusing on writing code in a way my brain already thinks... in CSS.
+
+### So what's the future?
+
+I'm not really sure where I go next with things. I can probably better implement Cosmic into my site, making more content dynamic. I also want to write some more Drafts actions to try and make things like updating a post more straightforward. But other than that, I'm feeling really excited about where things are and what I've managed to teach myself.
+
+I've said it before several times, but I urge you if you're a designer who's working with developers; learn the basics of HTML, CSS and Javascript, try out a framework like Vue + Nuxt (give SwiftUI a try too). They're all becoming so much more accessible to people without programming knowledge already (or a more visually-focused brain like me) and I promise it'll be worth it.
+
+If I can do it, so can you.]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/bfd94640-b9ff-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
@@ -600,8 +1306,33 @@ Humans are not users, users are humans.]]></content:encoded>
             <title><![CDATA[Getting to yes]]></title>
             <link>https://kejk.tech/thoughts/getting-to-yes</link>
             <guid>641b3f9ed0ab1034f24698c8</guid>
-            <pubDate>Fri, 03 Mar 2023 20:10:59 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:16:03 GMT</pubDate>
             <description><![CDATA[Why I think designers and developers should learn the basics of sales. ]]></description>
+            <content:encoded><![CDATA[### Why designers and developers should learn the basics of sales.
+
+It's easy to think that as a designer or developer, you're responsible for the functionality, usability or appearance of the product you're working on. This applies across product design, web design, architecture and even the original meaning of product design (physical product production).
+
+That is true, that is your core responsibility, but what happens when you go over-the-line with the product, when the product is finally ready for your sales team---if you have one---to go out and sell?
+
+If the answer is "I don't know" then there's a serious organisational disconnect and you're doing yourselves a disservice. You worked for months slaving over the minute details, unit testing until you're blue in the face, hunting down that broken *for loop* deep inside a component file; and yet, once that's over you throw it over the fence to sales and start working on the next feature set. 
+
+But how do your team sell what you're working on? What are the things that they say to hook potential or existing customers? And why does this matter?
+
+First, let's start with a story. Early on in my career, I was a sales person. I left University with a Masters in Fine Art but didn't feel I was worthy of a design or development role (despite developing skills in both places for around 10 years prior) so I went from my full-time retail job at Apple to working as an Account Executive in pharmaceutical advertising. My job was to keep projects on track, win new business and keep clients happy. I was solely responsible for selling the vision of our design and development teams and ensure coordination and clarification across the board.
+
+When it came to meetings, I had to work hard to explain how something had been done, why it would take 2 months to build "that" feature and why they couldn't have the "other" feature they wanted. Throughout that process, I learnt the intricacies and nuances of behaviour, of the complexity of communicating something widely understood by designers and developers, but deeply misunderstood by customers. I expanded skills learnt from Apple Retail about how to explain the complex in a simple way, breaking technology down to its simplest form and developing similes and metaphors for different approaches. All of this led to accurate communication and valuable insight into the customer experience.
+
+So, fast forward to now. Now I design and develop the frontend experience of products. From initial idea through to final execution. Throughout this process, I have regular touch points with our sales team to ensure that each feature is developed deeply inline with the requirements of our target market and explain why we've designed it one way, or developed it another. Why it can't be exactly like that thing they showed me that one time that kind of did the same thing. Why it's going to take six months to develop that special graph that takes data from 56 sources, runs a machine learning algorithm to extract the most valuable insights, feeds it back into the UI and generates a personalised graph in real-time with up-to-the-second data.
+
+But I also go to those meetings, sit in on those calls, talk to those potential customers and explain these things myself. Explain our UI decisions in detail. Spend hours in workshops justifying decisions and ensuring our customers see why. And in these workshops, our sales team learn. They learn how we think about design and development decisions, why we push back when we do, and how to communicate this to customers. They learn to not promise the earth and that it'll be delivered in 2 weeks. They learn to speak in a language that is both technical and customer-centric.
+
+What happens, is both sides learn how to communicate better. With each other, with the customer, with their peers. Designers and developers learn how to sell. Sales people learn how to communicate technological ideas and not over promise.
+
+Everyone wins.
+
+Ultimately, by tightly coupling sales with the technology teams, the result is a wonderful world where all parties are working to the same goal and with the same attitudes, understanding and beliefs.
+
+**The** team must be **one** team. It's the only way it'll ever work.]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/7fe0a060-b9ff-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
@@ -609,8 +1340,32 @@ Humans are not users, users are humans.]]></content:encoded>
             <title><![CDATA[Design as Code]]></title>
             <link>https://kejk.tech/thoughts/designing-in-code</link>
             <guid>641b3f9fd0ab1034f24698c9</guid>
-            <pubDate>Fri, 03 Mar 2023 20:10:35 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:15:26 GMT</pubDate>
             <description><![CDATA[What learning Vue has taught me about the future of design, development and the modern web.]]></description>
+            <content:encoded><![CDATA[### What learning Vue has taught me about the future of design. 
+
+So let's start with some background; I've been tinkering with website code since the early 2000s when MySpace was first on the scene and I was trying to customise the look of my personal MySpace page.
+
+At that time, it involved a hell of a lot of inline styling and hacking around to find out what would work and what wouldn't. Thanks to the beauty of 'View Source', it was possible to see the detail of what another person had done, pull that code, and tweak to your heart's content until you broke it again.
+
+After MySpace died and I moved on to other, less emo, things I found myself falling away from programming. That was until I started a job in healthcare leading the digital design and development of projects. This all came about organically but I was kinda out of my depth.
+
+Luckily, I had a great relationship with the core developer on our team and over time started to tinker again, this time though, in production code (mostly because I did the crappy little jobs that he liked not having to do).
+
+What I started to learn, was the magic of development-based design, or frontend design, where I would manipulate the UI (or DOM) inside the browser itself to see how I preferred things. It felt like the old days of tinkering on MySpace again.
+
+The more I did it, the more I enjoyed the experience of designing in the browser. I'm not saying you should go away completely from using design tools (I still heavily use [Adobe XD](https://adobe.com/xd) and [Figma](http://figma.com/)), but I am saying that understanding how to design in code is a superpower that all digital designers should aim to possess. 
+
+Here are the key reasons why:
+
+1.  You can see the direct effect of a decision, in the browser, in real-time
+2.  You can learn the language of development, allowing for better cross-communication between you and your development team
+3.  You can increase your output at your company, enabling developers to focus on the logic and complexities whilst you manipulate the styling in production code
+4.  You can improve your ability to work independently on client projects as a freelancer
+
+The idea of the Frontend Designer [isn't new](https://bradfrost.com/blog/post/frontend-design/) but it certainly isn't widespread either. I strongly believe that this hybrid role is the future of design and, with the flexibility of [Web Components](https://www.webcomponents.org/) and powerful frameworks like Vue, React and Angular enabling better component-driven design, Designers understanding code is going to be more important than ever. 
+
+If you're looking to evolve beyond HTML and CSS as a designer, but find JavaScript scary as hell (like I did) then check out [Vue](https://vuejs.org/) and follow their extremely powerful and easy to follow documentation.]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/718b5870-b9ff-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>

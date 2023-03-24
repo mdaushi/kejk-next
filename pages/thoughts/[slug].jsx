@@ -150,14 +150,7 @@ export default function Post({ allPosts, post }) {
                 )}
               </div>
               <PageHeader>{post.title}</PageHeader>
-              {post.metadata.content != "" ? (
-                <Markdown content={post.metadata.content} />
-              ) : (
-                <div
-                  className="inline-link text-lg"
-                  dangerouslySetInnerHTML={{ __html: post.content }}
-                />
-              )}
+              <Markdown content={post.metadata.content} />
               <AllCapsHeader marginTop={16} justify={"justify-start"}>
                 First published:&nbsp;<Moment fromNow>{post.created_at}</Moment>
               </AllCapsHeader>
@@ -224,10 +217,11 @@ export default function Post({ allPosts, post }) {
 export async function getStaticProps({ params, preview = null }) {
   const data = await bucket.getObjects({
     query: {
+      type: "writings",
       slug: params.slug,
     },
     status: "any",
-    props: "id,slug,content,title,metadata,modified_at,created_at",
+    props: "id,slug,title,metadata,modified_at,created_at",
     preview,
   });
   const post = await data.objects[0];
@@ -236,7 +230,7 @@ export async function getStaticProps({ params, preview = null }) {
     query: {
       type: "writings",
     },
-    props: "id,slug,content,title,metadata",
+    props: "id,slug,title,metadata",
     limit: 4,
   });
   const allPosts = await allWritingData.objects;
@@ -251,9 +245,10 @@ export async function getStaticPaths() {
     query: {
       type: "writings",
     },
-    props: "id,slug,content,title,metadata",
+    props: "id,slug,title,metadata",
   });
   const allPosts = await data.objects;
+
   return {
     paths: allPosts.map((post) => `/thoughts/${post.slug}`),
     fallback: true,
