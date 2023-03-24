@@ -231,7 +231,7 @@ export async function getStaticProps({ params, preview = null }) {
     
   const post = await data.objects;
 
-  const data = await bucket.getObjects({
+  const tryNext = await bucket.getObjects({
     query: {
       type: "writings",
     },
@@ -239,7 +239,7 @@ export async function getStaticProps({ params, preview = null }) {
     preview,
     limit: 4
   });
-  const writings = await data.objects;
+  const writings = await tryNext.objects;
 
   return {
     props: { post, allPosts, preview },
