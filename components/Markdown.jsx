@@ -2,9 +2,9 @@ import markdownStyles from "../styles/markdown-styles.module.css";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { materialLight, materialDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { ghcolors, materialDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import classnames from "classnames";
-import { isDarkTheme} from "./themeDetector";
+import { isDarkTheme} from "./themeDetector.jsx";
 
 const components = {
    a: (a) => {
@@ -19,7 +19,7 @@ const components = {
     const childRegex = String(children).replace(/\n$/, "");
     return !inline && match ? (
       <SyntaxHighlighter
-        style={isDarkTheme ? materialDark : materialLight}
+        style={isDarkTheme ? materialDark : ghcolors}
         language={match[1]}
         wrapLongLines="true"
         {...props}
