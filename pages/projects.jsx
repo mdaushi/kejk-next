@@ -18,7 +18,7 @@ const bucket = api.bucket({
   read_key: READ_KEY,
 });
 
-export default function Projects({ apps, utilities, clients }) {
+export default function Projects({ clients }) {
   const metaTitle = "KEJK | Projects";
   const metaImage =
     "https://imgix.cosmicjs.com/49f4beb0-ba80-11ed-9435-5306e8ef93bc-meta-projects.png";
@@ -46,38 +46,6 @@ export default function Projects({ apps, utilities, clients }) {
       </Head>
       <div>
         <PageHeader>Projects</PageHeader>
-        {/* <AllCapsHeader marginTop={8} justify={"justify-start"}>
-          Personal
-        </AllCapsHeader>
-        <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
-          {apps.map((app, idx) => {
-            return (
-              <AppCard
-                key={idx}
-                link={app.metadata.url}
-                image={app.metadata.cover?.imgix_url}
-                title={app.title}
-                subtitle={app.metadata.subtitle}
-              />
-            );
-          })}
-        </div> */}
-        {/* <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
-          {utilities.map((utility, idx) => {
-            return (
-              <AppCard
-                key={idx}
-                link={utility.metadata.url}
-                image={utility.metadata.cover?.imgix_url}
-                title={utility.title}
-                subtitle={utility.metadata.subtitle}
-              />
-            );
-          })}
-        </div> */}
-        {/* <AllCapsHeader marginTop={8} justify={"justify-start"}>
-          Clients
-        </AllCapsHeader> */}
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
           {clients.map((client, idx) => {
             return (
@@ -119,34 +87,17 @@ export default function Projects({ apps, utilities, clients }) {
 }
 
 export async function getStaticProps() {
-  const data = await bucket.getObjects({
-    query: {
-      type: "apps",
-    },
-    props: "id,title,metadata",
-  });
-
-  const utilitiesData = await bucket.getObjects({
-    query: {
-      type: "utilities",
-    },
-    props: "id,title,metadata",
-  });
-
   const freelancesData = await bucket.getObjects({
     query: {
       type: "freelances",
     },
     props: "id,title,metadata",
+    sort: "-created_at"
   });
 
-  const apps = await data.objects;
-  const utilities = await utilitiesData.objects;
   const clients = await freelancesData.objects;
   return {
     props: {
-      apps,
-      utilities,
       clients,
     },
   };
