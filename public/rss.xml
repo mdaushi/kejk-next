@@ -4,7 +4,7 @@
         <title>KEJK | Writing</title>
         <link>https://kejk.tech</link>
         <description>Thoughts on design, development and career progression</description>
-        <lastBuildDate>Fri, 24 Mar 2023 09:45:28 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 26 Mar 2023 13:46:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <language>en</language>
@@ -179,8 +179,132 @@ If you want to check out some great examples of people with digital playgrounds,
             <title><![CDATA[Shift gears and switch careers]]></title>
             <link>https://kejk.tech/thoughts/shift-gears-switch-careers</link>
             <guid>641b3f99d0ab1034f24698af</guid>
-            <pubDate>Sat, 04 Mar 2023 10:47:31 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:53:18 GMT</pubDate>
             <description><![CDATA[I've talked about my history before, but I haven't provided explicit advice about how to switch careers]]></description>
+            <content:encoded><![CDATA[I've talked about my history before, but I haven't provided explicit advice about how to make a career switch effectively.
+
+Over the past few months, I've been mentoring on [ADPList](https://www.adplist.org/) which has been a really great experience so far. I've managed to learn a lot about my teaching style and also about what value I can bring to people beyond the typical portfolio review or interview advice.
+
+One thing I've been mentoring on and am explicitly asked about is how I was able to successfully switch careers—from account management to design—without spending a single penny on a course from one of the big bootcamp providers. Granted, a few things had to fall in place to allow that, and there's a high element of luck, privilege and persistence that enabled the stars to align, but, I think it's possible for anyone if you look for the right opportunities in front of you.
+
+So below is some of my key advice based on what I did, how I did it and why I think it's important. Try to look for any of these things if you're in a position to switch, and use them to your advantage to get there.
+
+### 1\. Spot the signs
+
+The first thing is deciding when you think it's the right time to transition your career. Maybe you're getting bored in your current role, maybe you've spent your spare time exploring things that you'd like to do more permanently, maybe you find yourself not delivering on what's expected of you.
+
+I noticed the latter one and that was my key trigger. I was an account manager at a startup digital agency in healthcare. I enjoyed the industry (to some extent) because the majority of projects we worked on were outcomes focused, in areas where people were often underserved/undertreated and where we could witness real results.
+
+But I sucked at my job.
+
+I was always forgetting the priority of tasks, I couldn't remember deadlines or manage my time effectively, I was good at client relationships, but fell short on ensuring all the team delivery aligned. Truthfully, I just wasn't cut out to be managing projects full time at that point in my career and I was also just not that into it. After being pulled aside a few times on this (sorry Lee!), I ended up being afforded the opportunity to explore managing just the digital projects, with a key focus on being the face for it in the company.
+
+But why?
+
+The partners saw in me some skills that I'd not really noticed. I'd been coding for many years behind the scenes but fell away from it a few years before I joined, I also had a fine art degree where I'd studied technology-based art, and I'd worked at Apple and developed a love of hardware engineering too. So there was a clear set of skills around technology and creativity that were being underutilised and there was a gap in the business for it. Success!
+
+So rather than floundering around in a role I couldn't do well, causing the business to suffer as a result---and my career too. I was supported and encouraged to flip and start exploring a completely new avenue.
+
+Thanks to Lee and the team, I got to learn on the job. I started coding again (in PHP for the first time, thanks Nick!) and began to learn Javascript again. I started to map out solutions to problems by creating information architecture maps and user journeys more seriously (I'd been doing these before, but had no idea what they all were, it just felt natural) and I had the chance to attend some industry events and learn more about the world of UX. And this was the beginning of my flip. The whole shift took around three and a half years, so it wasn't fast (and don't expect it to be), but that slow burn taught me a lot.
+
+> Pithy takeaway: Look for signs in your current role that you're underperforming or unhappy. This doesn't necessarily mean you suck at your job, it means you could be in the wrong job for you!
+
+### 2\. Find a sponsor internally or externally
+
+Looking for someone to help you transition your role from within could be a great way to make the switch. It won't always make sense, and you won't always find it but it can have a major impact on helping you get to where you want to be.
+
+In reality, there's two paths you can likely look to take:
+
+1.  Find a sponsor within and make your move internally
+2.  Work behind the scenes and make the switch by switching companies and starting fresh
+
+#### A sponsor within
+
+When utilising the sponsor within your organisation, you'll need to share your reasons for wanting to shift and likely in some ways interview for the switch (and possibly have to actually interview if it's an internal job advert).
+
+Importantly, internal sponsors can open doors and unlock opportunity. In my case, one of the business partners gave me the chance to explore the things I appeared to be both better at, and more interested in, as a way to get out of the cycle of underperforming but also as a way to fill a hole that existed in the business but wasn't actively thought about.
+
+Sometimes though, that internal sponsor isn't available, so your next option is to look outside.
+
+#### A sponsor outside
+
+If you need to look outside, scout your available network first before relying on applying for jobs. Remember that at this stage you've got zero track record of actually doing the job you want to, so you'll need to be conscious of how that'd appear to a recruiter.
+
+No-one wants to be in the Nope Pile™ so do everything you can to not end up in it.
+
+Although I found my sponsor within, once I started those new roles I had some very weird titles from our collective lack of understanding what I now did. I was a Digital Innovation Manager (what!?) and then a Digital Lead (🤷🏻‍♂️) and then finally a Lead UX Architect (better!).
+
+Sometimes, when applying for roles later I massaged my titles into what they were in common parlance to make it easier for the interviewer or recruiter to figure me out. So I was a UX Designer and then a Lead UX Architect.
+
+After that I moved to a new job and I ended up as a Senior Solutions Designer (what!?) so I called that a Senior Product Designer initially but have since swapped it to Senior Design Engineer because again, it more accurately reflects what I did.
+
+None of this is lying, it's about making it easier for a recruiter to make sense of what you did if you've worked at companies that have non-traditional job titles.
+
+When considering an external sponsor, look for someone who might be willing to take a punt on you. Search networks such as [ADPList](https://www.adplist.org/) where you can find mentors, and if you impress someone enough, who knows what might happen! Equally, don't be afraid to scout Twitter for people you respect and send them a DM if you can, you'd be surprised how often they'd reply.
+
+> Pithy takeaway: Look for opportunities in your current role to start exploring things that interest you, narrow in on them and start exploring them. Aim to find a sponsor internally or externally that'll afford you the space to do it, and take that leap.
+
+### 3\. Find a mentor outside of your workplace
+
+So on the subject of ADPList and mentorship, there's a lot of options out there. The reality with most mentoring is that it's normally a free service where industry experts dedicate some spare time to helping you, so set your expectations at that level.
+
+You'll potentially gain a lot of useful advice but try to have more than a single mentor. One mentor will be biased on their experience (see above everything I've said about my *very specific story*) so having a couple can help alleviate some of that. Equally, because most mentoring is free and delivered in a mentor's spare hours, be conscious of wasting a mentor's time by not showing up or by being unprepared.
+
+A mentor will be able to give you some generic guidance or offer feedback on work you're producing such as a portfolio review or CV assessment, but I'd urge you to utilise them more as a sort of a shoulder to lean on.
+
+Talk to them about your frustrations, your challenges, your successes, your questions. Get their advice and soak it up. Keep notes, always keep notes. And follow up from previous sessions to keep a thread going.
+
+Importantly, remember that they're to help you but it's you who wants their help. You need to drive the conversations and come ready with questions and requirements otherwise you won't utilise your sessions well.
+
+I'd recommend structuring your sessions like this:
+
+-   Pleasantries ("hello, how are you?" etc)
+-   What happened this/last week?
+-   What's the biggest thing on your mind right now?
+-   What's frustrated you the most this past week?
+-   Next steps
+
+I know it feels really formal, but structure helps with consistency and progress. You don't want to waste yours or their time.
+
+> Pithy takeaway: Looking for support outside of your workplace is key. Internal colleagues will often see you for who you are in the workplace (i.e. your current role/title), external mentors will be free of most bias and focus on helping you get to your next step.
+
+### 4\. Start free, then maybe spend money
+
+This is an easy one. There's a tonne of Bootcamp courses out there that charge extortionate amounts of money. I won't name and shame, but the sums are ridiculous, especially because I've spoken with many mentees that didn't even get roles or any further success after spending $9k on a course from a well known provider.
+
+Lots of people are out there to make side income, and lots of people will charge for the services they offer. That's okay, but be wary. There is so much free content available that can get you to where you want to be, especially in design or development, so always start there first.
+
+Free resources may not always have a certificate, but that's okay, having a certificate isn't everything. The reality is that showing the work you've made is what's most valuable, not having a certificate with a Bootcamp's name on it.
+
+As a hiring manager, I don't really mind what your background is if the work speaks for itself. I'm biased here because I had a non-traditional background, but, I think most hiring managers would be the same.
+
+> Pithy takeaway: There's a wealth of free resources out there for any career, particularly design and development. Take advantage of all of that great thinking and sharing, and build your knowledge from there first. Then, maybe, hit a bootcamp if you absolutely feel you want or have to.
+
+### 5\. Create example work from your own briefs
+
+Something that's always been difficult for me to swallow is portfolios where someone is new to the industry (either junior or switching careers) and it's filled with redesigns of Spotify or Gmail etc.
+
+These projects can be really interesting from a thinking and execution perspective. I can get a clear idea of how you think about a problem you see and how you execute on that. But, your solution has to ignore all of the internal constraints those teams face. So whilst it may look amazing, there are likely many reasons they've not shipped something similar.
+
+Queue the incoming stream of unsolicited redesigns based on [this.](https://twitter.com/desandro/status/1562435848389332993)
+
+What I'd prefer to see is a set of self-initiated briefs. What if you could design/build an app or website from scratch to solve a specific problem you face? How would you tackle that?
+
+There's also great brief generating platforms out there that you can use as thought starters. I'd always prefer a personal problem personally, from both my own perspective and as a hiring manager, because you'll be more personally bought in to the idea. But briefs will feel more like working at an organisation and allow you to test working in an area you might not be as passionate about.
+
+Check out [Good Brief](https://goodbrief.io/) as a great starter. You can use this for development too but focus more on the logic and tech stack than on the actual design itself (use [TailwindUI](https://tailwindui.com/) or other similar things to simplify the UI part for you).
+
+> Pithy takeaway: There's a tonne of free brief generating sites out there, or you can think about a problem you face and create a solution for it. I'd always urge you to avoid popular product redesigns because there's often a tonne of constraints you're unaware of so it doesn't feel realistic to a recruiting manager.
+
+Hopefully some of those insights and tips help you on your switch if you planning to make one.
+
+Remember, most importantly, that all of your experience is relevant and valuable. It doesn't matter where you've switched from and what you're switching to, there will always be valuable skills you can pull over.
+
+When you go to interview, consider these things and really highlight them during the process. If you do what I did, you can emphasise that as an Account Manager you learnt the value and importance of stakeholder management and relationship building. As a designer or developer this is an extremely valuable skill you might otherwise not learn until you hit a more senior level.
+
+So try not to see your past as a crutch but instead as a jet pack for your burgeoning new career.
+
+Send me an [email](mailto:karl@kejk.tech?subject=Switching%20article) if you're interested to chat more about this, or if you want mentoring support you can find me on [ADPList](https://adplist.org/mentors/karl-koch).]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/f4021620-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
@@ -188,8 +312,69 @@ If you want to check out some great examples of people with digital playgrounds,
             <title><![CDATA[Strip your URLs to super simple domains]]></title>
             <link>https://kejk.tech/thoughts/strip-your-urls-to-super-simple-domains</link>
             <guid>641b3f9ad0ab1034f24698b0</guid>
-            <pubDate>Sat, 04 Mar 2023 10:47:15 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 19:43:38 GMT</pubDate>
             <description><![CDATA[RegEx has been around since the 50's, and it's still just as unreadable]]></description>
+            <content:encoded><![CDATA[The hunt for better RegEx
+-------------------------
+
+Since I've been working with frontend code, RegEx (short for Regular Expression) has been a constant and confusing minefield. RegEx has been around since the early 50's, and with it comes a tonne of power but also a tonne of complexity.
+
+The trouble with RegEx is that it's wholly unreadable. So a bunch of different places have cropped up with ways to input expressions and have them [decoded/validated quickly](https://regex101.com/) and simply. This makes thing a lot easier if you know what you're doing, but it's still hard to make sense of it by default.
+
+Dan Eden wrote a great post on [understanding RegEx](https://www.daneden.me/2019/11/23/regex-for-designers-and-writers/) from a designer/UX writer perspective, which offers a great way to make better sense of the complexity, but it still requires a tonne of work to construct a good pattern that works.
+
+### Clipping URLs
+
+I was working on a personal SwiftUI app project to pull all of my [Cosmic bookmarks](https://www.kejk.tech/bookmarks) into a native app so I could browse and enjoy them there, whilst also posting them publicly to my website.
+
+Originally I just had the title and snippet text for each, which was fine (you can see this mirrored on my [homepage](https://kejk.tech/)) but I wanted to enhance this for easy scanning and for searching (using iOS' native search bar) by including the source URL.
+
+The problem I had was clipping that URL. A lot of them came with a tonne of junk after the domain, which was mostly unnecessary, and all of them came with a prefix of `https://www.` or `https://` which was added noise. What I wanted to find was a RegEx pattern that would allow me to clip out that prefix and suffix info, so I'd be left with a simple `kejk.tech` or `docs.cosmicjs.com` for example.
+
+Hunting StackExchange and the web in general gave me loads of expressions but nothing ever quite hit the mark for me. So I decided to try and craft my own expression and provide it below so you can borrow it for your project too.
+
+The great thing about RegEx is that it's platform agnostic. I use the same expression in SwiftUI as I do in JavaScript.
+
+I'm pretty confident that this is more verbose than it needs to be, but, it works every time and cleans things up a treat. So, I present to you, the URL trimmer.
+
+```regex
+const regex = /.*https:\/\/www\.|http:\/\/www\.|https:\/\/|http:\/\/|\/.*$/gm;
+```
+
+Here we look for any character in the URL string using `.` and then match that with unlimited searches through the URL string with `*`. After that, we basically have a bunch of OR matches using pipes:
+
+`https://www.` OR `http://www.` OR `https://` OR `http://`
+
+Then at the end we ask it to look for anything that appears after the first solo `/` by using a `.` to match any character, then `*` to perform this an unlimited number of times (again) and then terminate the search of the string with `$`.
+
+To close it all up, we use `g` to ensure this is a global search and doesn't stop once it makes its first match (just in case), and then use `m` to allow for multi-line searching and matching.
+
+And that's it. It's pretty verbose, but it works across all URLs I've encountered and trims them up real nice. Below is how this appears when set up inside a React map. Here we create a new constant to fetch the URL from Cosmic and replace any occurrence of the regular expression with an empty value.
+
+```jsx
+<div className="mt-4 grid grid-cols-1 gap-8 md:grid-cols-3">    
+   {bookmarks.map((bookmark) => {        
+      const trimmedURL = bookmark.metadata.url.replace(regex, "");        
+      return (            
+          <a              
+            key={bookmark.id}
+            href={`${bookmark.metadata.url}`}
+            target="_blank"              
+            rel="noreferrer"             
+          >               
+           <BookmarkCard                 
+             title={bookmark.title}                 
+             subtitle={bookmark.metadata.snippet}
+             date={bookmark.metadata.published}                 
+             url={trimmedURL}                
+           />             
+         </a>           
+       );       
+    })} 
+</div>;
+```
+
+Hopefully for any of you who do frontend work and might need something like this, you'll be able to take advantage. For everyone else, sorry!]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/e97a7800-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
@@ -197,8 +382,98 @@ If you want to check out some great examples of people with digital playgrounds,
             <title><![CDATA[How to make friends and influence designers]]></title>
             <link>https://kejk.tech/thoughts/how-to-make-friends-and-influence-designers</link>
             <guid>641b3f9ad0ab1034f24698b1</guid>
-            <pubDate>Sat, 04 Mar 2023 10:46:59 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:47:37 GMT</pubDate>
             <description><![CDATA[Why every design crit should be well structured, predictable and facilitated]]></description>
+            <content:encoded><![CDATA[In my career, I've been used to being one of one or one of two designers on the team. It was always a pretty lonely experience but also empowering because I was the sole design decision maker, or, I only had to convince one other designer of why we should take a certain direction.
+
+On the flip side, I ended up missing out on a large chunk of design education. I never had the benefit of learning from my peers or gaining lots of great feedback through structured critiques.
+
+Somewhat arrogantly in the beginning, I told myself that I didn't need that. Not that I knew enough about designing but that I could figure it out on my own. That being part of a bigger team would dilute my influence and I'd be worse off in my career.
+
+The truth is, being part of a larger design team that offers a structured critique process is actually one of the best things you can experience. But only if your team defines a process.
+
+### Never forget Context
+
+When I first joined [Moneybox](https://www.moneyboxapp.com/), we were already actively doing design crits on a Friday afternoon. They were a relatively informal affair and we'd show up, say if we wanted to show some work, then jump into an Overflow file or Sketch file and just zoom around the canvas sharing some relatively unfiltered and unstructured thoughts about our design and open it up to the room to comment.
+
+The problem was, there was little to no context. As a growing company, we're split into separate workstreams which we call missions. This allows us to separate our individual strengths and deliver across the different areas of the business. As a design team, we're no different. We split against these missions too and whilst this makes it a lot easier to focus our individual energy on a specific and consistent area of the business (such as Payments or Retirement), it also means our knowledge of the wider design changes is fragmented.
+
+As such, context is really important when we share our work with each other. Without proper context, we lose any hope of offering great feedback. However, it's very possible to over or under contextualise, and finding the balance can be extremely tough.
+
+#### So how do you create good context?
+
+Firstly, utilising slides is a powerful approach. Much like presenting your portfolio to get a job or sharing a monthly update with the wider business, slides offer a set of constraints that ensure you don't share too much at a time. They act as a container for your explanation and ensure that you must only show the highest clarity visual explanation of your solution.
+
+It also offers a way to create a proper sense of storytelling and setting yourself up for success comes from setting up a great story.
+
+#### Using a design process to build your story
+
+1.  Start with **what** you're going to share
+2.  Set the **business context** / business problem
+3.  Define your **customer problem statement** (if applicable)
+4.  Share any **hypotheses** you have
+5.  Show a **couple of experiments** but never more than three
+6.  Showcase the solution you're **most convinced** solves these problems
+7.  Ask for **specific** feedback on your designs
+
+There's plenty of other approaches to storytelling and lots of great articles on what you can do, but this is the approach I always aim to take.
+
+You may ask "what if my work is still really early stage?" Or "I don't have a problem statement". Well, you're in luck, this process still works.
+
+If you're in the early stages, the only difference should be the fidelity of the work. You can also show three experiments and ask for your team's thoughts on which direction to dig deeper into.
+
+If you're more focused on the earlier stages and don't have a problem statement. Front load a bit more heavily on the context and ask for support in getting to a great problem statement. But, remember that a crit session is aimed at providing feedback, not solving problems. So be careful of converting it into a workshop. Always ensure you have a starting point which you're asking for feedback on, rather than asking your team to help craft it.
+
+### A critique is not a workshop or ideation session
+
+I've seen crits turn into sessions where a designer is essentially trying to solve their problem by getting lots of design heads together. This is important, but it's not the goal of a crit. A crit is intended to receive **feedback **on an approach, idea, solution, not to get the **answers** to your problem.
+
+As a designer, it's your responsibility to bring your ideas to the table and create enough context to get meaningful feedback. Going into a crit expecting your team to solve your problems is like going to a bar and expecting the barman to drink your drink for you.
+
+After a few failed sessions, it became clear to me that slides were necessary. But rather than enforcing that approach on the team we chose to take a "learn by observing" approach.
+
+I went into my next critique armed with a well considered deck that followed the earlier process.
+
+I shared my work, got excellent and actionable feedback, went away and updated my designs and presented them back the following week to high fives all around. The process worked, and worked well. But what I also noticed was that most other designs on the team came to the next session armed with excellent presentations and the process continued.
+
+### A critique is not criticism
+
+Something I struggled with earlier in my career was receiving feedback. Feedback often felt like a criticism of my work, of me.
+
+It's very common in the earlier stages of your career to feel emotionally attached to your work. To think of the design as a little piece of you. But the truth is, it's just an artefact. A fragment of an idea that you've been the one to extract.
+
+It took me several years to learn to detach "me" from the work. Whether that's my [id](https://www.verywellmind.com/what-is-the-id-2795275) complex expecting instant gratification for the work I've put in to everything or just because of the time it took to create, it's been hard.
+
+But detachment is key to getting great results. A critique shouldn't feel like it's harmful or personal. It shouldn't feel like an attack. If it does, there's two things wrong:
+
+1.  Your critique isn't structured well for feedback and the context isn't clear enough
+2.  You've not been able to disconnect yourself from the work
+
+Number 2 is harder to solve, that's something you'll need to take time to work through. But number 1 is the point of this article.
+
+Through a great design process and through structured communication, you can ensure that crits don't fall to criticism. If you feel personally attacked, it is likely unintentional but it's worth discussing with the other designer(s) afterwards to resolve the personal conflict.
+
+The other approach is to be very clear about what you're **not** looking for feedback on. That'll help structure your feedback and help the rest of the team narrow in on what you need.
+
+"I'm looking for feedback on the execution of this new call to action style. What I'm not looking for is feedback on the illustration or customer journey as I'm not able to change this within the project scope".
+
+Being upfront and clear avoids any confusion or misinterpretation. And if someone feeds back on one of those things, politely explain that it wasn't in scope for this session and move the conversation on.
+
+### Continuing a great process
+
+As we onboard new designers to the team, again, we don't explicitly mention that we should follow this process anymore. It's not that we can't, but we just don't need to. By default our team shares in this way and new designers learn by observing when they join.
+
+One of my team mates built a fantastic presentation library in Figma that we leverage for crafting our crit presentations. These have become so admired that our wider business want them for their use too...
+
+Every week now, I look forward to our crit sessions and see them as a valuable opportunity to offer my recommendations or to ask lots of questions. It's a safe place for designers to push each other out of our comfort zones or challenge and approach without it having to feel critical or unreasonable.
+
+Our crits are completely invaluable to our process and our [success](https://twitter.com/_kejk/status/1492098919530172425?s=21).
+
+### Squaring the circle
+
+Ultimately to bring it back to my origins. I thought that joining a bigger team would lead me to have less influence but it goes to show that no matter how small of a change you encourage, it can have a wildly large impact.
+
+Hopefully you've learnt a bit about "how to make friends and influence designers." [Shoot me a message](mailto:karl@kejk.tech?subject=Crit%20process) if you've experienced anything similar and let me know if you disagree with anything I've shared.]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/dfc8ee90-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
@@ -206,8 +481,87 @@ If you want to check out some great examples of people with digital playgrounds,
             <title><![CDATA[Design for handshakes not handovers]]></title>
             <link>https://kejk.tech/thoughts/design-for-handshakes-not-handovers</link>
             <guid>641b3f9ad0ab1034f24698b2</guid>
-            <pubDate>Sat, 04 Mar 2023 10:46:42 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:47:07 GMT</pubDate>
             <description><![CDATA[Why it's better to shake hands with your developers, than throw your designs over the fence]]></description>
+            <content:encoded><![CDATA[If you've followed me for any length of time, you'll know that I'm really bullish on the notion that practitioners of a craft should be able to understand the core principles of their neighbouring crafts in order to produce the best outcomes.
+
+To put that in more clear terms, a designer should *understand* how their designs are built for their end platform but they don't necessarily have to be able to implement it themselves. Understanding the core principles and basic architecture of the platform you're creating for gives your team the best chance of great outcomes.
+
+For the sake of this post, I'll focus on my craft as a designer but you can apply this more broadly to any role. We all have adjacent teams and roles that are impacted directly by our work so understanding them at their core is essential.
+
+One of the first things I ever built and shipped was my initial Figma plugin (then called Px››Em and now [Hand››over](https://www.figma.com/community/plugin/837070613195594890)). The original intention of that plugin was to make it easy to convert Figma design pixels into ems. I later upgraded this to be rem focused so that you could adjust your baseline pixel value and added more canvas detection features. This then evolved into a Mac, iOS and iPadOS [app](https://apps.apple.com/us/app/id1518887590) because I wanted to use it for myself and because I fancied learning SwiftUI.
+
+But now I'm wondering if the name is right...
+
+I've come to realise through my time across multiple startups, moving between design-only and design-engineering hybrid roles that a design is never really handed over. The physical files may be sent via a link or exported and shipped, but the learning and conversation, the heated debates on delivery, the nitpicking over alignment doesn't stop. And as such, the handover never actually happened.
+
+> Handover implies responsibility is passed on. Handshake implies responsibility is shared.
+
+In retrospect, the handover only really happens when it reaches the customer and even then, if you're working in the right way, you iterate and learn, and then subsequently evolve the project further. Rinse and repeat. Handover never happened.
+
+Working with designers at different stages in their careers and different levels of engineering knowledge, it becomes evident that for some, handing over offers a relief. A way to move responsibility off of their shoulders and onto someone else's. Or to feel that their job is done and now it's time to move on to the next thing. As such a handover implies responsibility is passed on, a handshake however, implies responsibility is shared.
+
+In fast paced environments, this is certainly often true. But the best teams work like an organism, harmonious in form and consistently sharing resources and forever communicating. In an environment like that, hard handovers can't ever truly happen.
+
+To give another practical example. If an engineer was delivering a feature but hit a stopping point because something was missing from the original designs, should they a) stop work entirely, hand it back to the designer and wait? Or b) raise the issue with the designer, work to reach a conclusion together, and then carry on?
+
+I'm guessing we'd all pick B. Well, that sounds an awful lot more like a handshake to me. An agreement, a shared understanding, teamwork, partnership.
+
+### So how do you design for Handshakes?
+
+There's five key points that really lead to great handshakes.
+
+1.  Involve your developers early and often
+2.  Share ideas
+3.  Design together
+4.  Keep connected
+5.  Develop a bond￼
+
+### 1\. Involve your developers early and often
+
+Great teams work together throughout the course of a project. Rather than relying on finite touch points, they focus on passing the baton whilst continuing to run alongside their team mates, ready to take the baton again when their time comes.
+
+The earlier and more often you involve developers in your process, the less likely designs are to be handed over and become undeliverable or need iterating.
+
+When you're ready to handshake, grab your developer and walk through the codable iteration of your work. Pass on the files and keep in constant communication as the project develops.
+
+### 2\. Share ideas
+
+Be open to sharing developer thoughts and ideas. Design isn't about gatekeeping so welcome a collaborative and open atmosphere, and let your developer challenge you during the entire process. The more you share, the more you understand each other and the more you'll be able to riff off each other to get to the best result.
+
+If you foster a good enough bond here, you may even be able to be less specific in certain design processes as your developer will know how you think (and visa versa) and as such, can make valid assumptions.
+
+Equally, you'll develop a better understanding of how your product actually works, and as such, learn to make better decisions initially before agreeing on final designs.
+
+### 3\. Design together
+
+This collaborative space should invite co-designing. I challenge you to invite a developer into your file as you work, talk at the same time, design in real time. Getting comfortable with live designing will make a world of difference. You won't get your deepest work done, but you'll ensure the designs are developer friendly from the get go.
+
+Invite questions. Invite challenges. Challenge them back. Think of this as your safe place to thrash ideas out.
+
+### 4\. Keep connected
+
+Once your designs are feeling ready to go, don't lose that connection. Whether you have regular stand ups, async chats, or use Loom to share progress, make sure you stay connected.
+
+As the designer it's your responsibility to encourage this and foster it within your developer. If you want to handshake rather than handover, own this part of the process.
+
+### 5\. Develop a bond
+
+In the end, you should evolve a stronger bond with your developer. This will make a big difference in the long term as they'll feel safer with sharing honest feedback, they'll make better default assumptions or decisions and they'll welcome the idea of working with you again.
+
+This bond is one of the most important in a software development business because it ensures that what ships to customers is the best it can possibly be. Providing the idea is the right one, this execution phase is critical to success so if you can nail this process, you can be confident in the outcomes.
+
+### Finding the nuance
+
+It's all well and good for me to say that handovers aren't right. This is merely my belief based on working with handshakes for most of my design career. Understanding how the development process works develops a deeper empathy for the difficulties these days to do with responsiveness, unpredictable screen sizes, data rates, device themes, accessibility settings and more. There's so much to contend with, and building these great partnerships rather than transactions will leave your product feeling better than it ever did.
+
+Make sure you share your process with your teams too. Be the leader of the handshake within your organisation and upskill other designers, developers and anyone else in the business on this collaborative process.
+
+If you end up trying this handshake approach, let me know how you get on. I'd love to hear about it.
+
+### Further reading
+
+[Turning Handoffs into High-Fives](https://material.io/blog/designtocode)]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/d6020860-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
@@ -215,8 +569,37 @@ If you want to check out some great examples of people with digital playgrounds,
             <title><![CDATA[On creativity as a process for catharsis]]></title>
             <link>https://kejk.tech/thoughts/on-creativity-as-a-process-for-catharsis</link>
             <guid>641b3f9ad0ab1034f24698b3</guid>
-            <pubDate>Sat, 04 Mar 2023 10:46:27 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:46:49 GMT</pubDate>
             <description><![CDATA[The more I listen to our third album, the more I recognise the fact that I wrote it as a form of catharsis.]]></description>
+            <content:encoded><![CDATA[> This one is more about processing emotions and dealing with loss. If that triggers you or isn't interesting, feel free to skip it.
+
+The more I listen to our third album, the more I recognise the fact that I wrote it as a form of catharsis.
+
+[Our music](https://youtube.com/c/Echoesbanduk) has always been an outlet for me to deal with emotions I think, but this latest album more so than any other.
+
+We started writing it whilst my dad was sick with terminal cancer, but having survived 6 years at the time, I wasn't expecting anything final to happen. I'd been feeling in a pretty positive place and so the songs I was writing, whilst heavy, weren't dealing with anything difficult. It's evident when you hear them, they're more upbeat and rotate around a major chord.
+
+When I listen back to [Cornerstone](https://album.link/tqh6ggrq7kcc9), which we re-recorded for it's 2022 vinyl re-release, I can hear the difference in level of positivity. It's dynamically much more upbeat and musically rotates around much more major themes, both musically and thematically.
+
+Although we write as a unit, and I don't contribute lyrically, the main skeleton songs I write at the start tend to have a dramatic impact on the overall final outcome. Thematically I set the scene, and the rest of the guys come in and chop and change things until we're all happy with the final outcome. But regardless of that process, what I define upfront tends to set the stage for what the final form will be. So, if I'm feeling wildly optimistic then that'll be reflective, if I'm feeling concerned or solemn, that'll come through too. Unlike any other medium I work in, be that design or development, music is my catharsis.
+
+Working with design systems and predefined toolsets, design and development don't really offer that same level of catharsis for me. They're much more clinical and definite. Not entirely void of emotion, but not filled with heart like my music is. This is in part because whilst I'm a designer that loves design, and I'm a frontend developer that loves development, music is my passion project and the thing that gives me emotional release.
+
+We decided to re-release Cornerstone in memory of my father. We knew we were going to re-release before I lost my father, but once that happened it became a great opportunity to take a step back and rethink that album again. When we originally recorded it, it was our first attempt at a self recorded album that could be released rather than just demoed. As a result, whilst we knew a lot about music production from all our demoing over the years, we had lots of gaps in our knowledge and skills. Since releasing Cornerstone we'd learned a lot and gotten much better at async recording and production. This meant we could more confidently deliver the album we wished we had the first time around. So we decided to make the version we wished it had been before. And I'm so glad we did.
+
+When it came to our latest record, as I said earlier, it started in a place of optimism and hope. There was a new drug on the horizon that might extend my dad's life, at least for another year or two based on study data. He was desperate for just one last summer and we were desperate for him to have that, and it seemed like it was possible. He wasn't in the best place but he was coming through it like he always did.
+
+Sadly, that day never came to pass. My father collapsed one morning and never recovered. Watching the strongest person you've known, the person who literally and metaphorically gave you your own strength, revert to a state of confusion and have an inability to speak and respond is immeasurably hard to handle.
+
+After that moment we spent a week or so watching him decline. Going through that process is still hard to process and often when I go to sleep those are the moments I see the most. It gets harder and harder to remember those good times and the positive memories, but music becomes my outlet in those moments.
+
+Although the tracks aren't in the order they were written, it'll be evident when I started writing post-passing. The songs have a darker tonality, tend to be much heavier and generally less musically positive. But this is purely part of that catharsis for me.
+
+I'm not writing to be negative, I'm writing to help me process that negativity, that heartbreak, that anguish. Often popular songs are written about the anguish of breakups and in some ways, these songs are my breakup songs. They're a way for me to breakup with the past and look forwards toward the future.
+
+Things will never be the same, but my father was from the school of Stoicism. He didn't believe in hanging on the past or looking too far in the future, he believed in the power of the Now. Living each day for what it is. And that'll be how I continue to move forwards. Living each day doesn't mean doing something of importance every day, it can mean doing nothing too but doing nothing with absolute intention.
+
+And music will continue to be my outlet, my catharsis, my process of grieving. It provides that creative freedom and feeling that I can't get anywhere else. If you're dealing with anything in life, look for your cathartic outlet. It can be anything, and it's often likely to be something you don't try to force into an outlet but just finds itself like that naturally.]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/cd89e950-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
@@ -224,8 +607,75 @@ If you want to check out some great examples of people with digital playgrounds,
             <title><![CDATA[Rumination, iteration or procrastination]]></title>
             <link>https://kejk.tech/thoughts/rumination-iteration-or-procrastination</link>
             <guid>641b3f9ad0ab1034f24698b4</guid>
-            <pubDate>Sat, 04 Mar 2023 10:46:12 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:46:19 GMT</pubDate>
             <description><![CDATA[Knowing when to let an idea go and when to not even go there.]]></description>
+            <content:encoded><![CDATA[I recently saw a [Tweet](https://twitter.com/_kejk/status/1457825554112172032?s=21) from [Kyle Turman](https://twitter.com/kyleturman?s=21) that prompted me to think about the role of ideation in the design process, and when that becomes procrastination rather than rumination.
+
+Many successful people talk deeply about the idea of ruminating on a thought to evolve it into what it needs to become. Steve Jobs famously enjoyed taking long walks to develop an idea he had the seed of and used that uninterrupted time to ideate in his head.
+
+But, as I stated in my reply, I've seen many designers early in their career ruminate on an idea to the point of procrastination. To be clear, I'm using procrastination to cover two thoughts here; that the designer is either wasting time by pushing an idea around without actually developing it, or that they're deliberately exploring every avenue despite knowing that many of them will be unsuccessful so that they can prove they've tried it.
+
+Let's unpack these a bit. For simplicity I'll shorten these to two simple ideas.
+
+1.  Non-iterating procrastination
+2.  Over-iterating procrastination
+
+### Non-iterating procrastination
+
+This is something that affects all designers to some degree but I've tended to notice that it's particularly troublesome early in their career. I struggled with this a lot. I still do some days. Just pushing around rectangles without really making meaningful changes.
+
+It might be that it's unclear what you need to do next. It might be that it's totally clear but seems overwhelming to take the next step, or it might be that you just find the thought simply boring.
+
+This situation is somewhat akin to writer's block. Arguably I think any creative goes through this at some point but when your creativity is boxed into 8-hour time blocks, it's even more likely.
+
+The challenge here is that when you're not making any progress, you'll start iterating on bad ideas. That way, you can demonstrate progress but is it good progress?
+
+Instead, it's important to take a break. Here's a few simple things you can try to get past this all.
+
+-   Take a walk
+-   Ask a colleague to jump in and try some ideas (offer to do a project swap for an hour and iterate each others' ideas)
+-   Throw a few ideas to your team in a group channel and ask for feedback whilst having a ten minute screen break
+-   Switch contexts to a different skill --- if you're comfortable in code then tackle a logic problem, if you're happier with writing, work on a blog post
+-   iA Writer wrote [a bunch](https://ia.net/topics/end-procrastination) of helpful tips for this. Some of these mirror the above, but there's some other handy ideas in there too
+
+Whilst these small ideas won't solve things immediately, they'll help to get you into a habit of switching off when you're not making progress or teach you to switch contexts to use the other side of your brain, unlocking your creative lock.
+
+### Over-iterating procrastination
+
+This second variant is often the killer though. If you're already experiencing a non-iterating procrastination state, it's easy to start falling into a pattern of over-iterating to make up for any shortfall. The issue here---and this seems especially common early in your career---is that you end up iterating on bad ideas to solve the problem.
+
+The challenge here is you then start making poor decisions to feel like you've made any decisions at all. This ends up leading you down bad paths and lots of wasted time.
+
+Another side to this, especially when you're more junior in your career is that you might lack the internal clout to be able to push back on a bad idea suggested by a colleague, manager or leader. In these instances you'll feel like you *have*to explore them because you don't have the ability to push back.
+
+This isn't necessarily procrastination in the usual sense, mostly because it's not self inflicted, but it can end up going that way or have the same effect on your progress.
+
+This is challenging because you can't simply earn internal clout overnight, but having the ability to push back when you know an idea is wrong is key. With seniority and clout comes the ability to push back with little or no justification. That's a privileged position to be in and doesn't come easily, or to, everyone.
+
+If this is the situation your in then I have some suggestions for what to do.
+
+-   Gather a single example of your idea done badly with some simple redlines to point out the issue. Present this when challenged.
+-   Explore one bad idea and present it alongside two better ideas. Don't show more than three ideas as it'll provide too much choice. Get your colleagues to vote on them and use this as extra justification.
+-   Confer with a senior colleague ahead of the meeting and explain you want to push back. Ask them to back you up when you do.
+
+But what happens if you don't realise your over-iterating a bad idea? Or how do you even tell if you are?
+
+There's a few tell tale signs of when a design has gone awry.
+
+1.  You can't justify the reason for your decision to yourself
+2.  You can't convince yourself you'd use it
+3.  You can't see the potential future/long term vision for the idea
+4.  You can't confidently tell what question you're answering or what problem this solution solves
+
+In these situations, again, lean on your team to provide that nudge if you can. If you're a team of one, show someone outside of the project (i.e. a friend or loved one) and see how they'd feel. Without context they can often give the most brutal, honest and helpful feedback.
+
+I've seen people get caught in a context loop many times, I myself have been in that situation, where you justify bad ideas because as part of the wider context you can convince yourself that they make sense.
+
+Try talking to a friend or family member about this work and explain with the context. If it takes too long or is incoherent or messy, take a step back and ask yourself whether this has gotten too complex.
+
+And to really simplify the problem and avoid bad iteration, step away from your designs entirely and revert to pen and paper. Don't use it to sketch designs though, use it to scratch down thoughts and concepts. Think of it like a way to journal your thoughts around the idea you're solving for and let the thoughts flow. It may take a few goes to get into this mindset but it can really help unpack the idea and take you away from designing a bad idea whilst keeping you inside the same headspace. It might not feel like progress but it actually likely will get you further in the end.
+
+As you grow in your career you'll find that your hunches or initial concepts tend to be the ones that stick (most of the time) and you just iterate on that to get to a final solution. That isn't always the case, but you'll learn quickly when something has value or not and whether to push it further or let it go. Earlier in your career though you'll probably find that you get attached to an idea that might not be the right one and find it hard to let go. Hopefully some of the advice above helps you to avoid that trap and the possible procrastination loops that ensue.]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/c4145770-ba79-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
@@ -1088,8 +1538,77 @@ Humans are not users, users are humans.]]></content:encoded>
             <title><![CDATA[Designing API-first]]></title>
             <link>https://kejk.tech/thoughts/designing-api-first</link>
             <guid>641b3f9dd0ab1034f24698c2</guid>
-            <pubDate>Fri, 03 Mar 2023 20:19:41 GMT</pubDate>
+            <pubDate>Fri, 24 Mar 2023 09:49:25 GMT</pubDate>
             <description><![CDATA[The power of  visualising your API as part of your design process to align the entire team]]></description>
+            <content:encoded><![CDATA[All good design processes start by understanding a business or customer problem and then working out the details until you get to a point of confidence through research to actually build the thing.
+
+The truth is, all good development processes start in the same way. You can't define and design an API without understanding the problem it aims to solve. "Do we already have an API that can provide this if we extend it?", "Should we build a lightweight, and new, API to send these data?", "Is this is even the right problem to solve?" and so on.
+
+Whilst I don't work on constructing or crafting the APIs that I design customer solutions with, I do keep a tight eye on how we're designing the API so I can best understand how we might go about designing a frontend solution that takes advantage of these data.
+
+### Building a strong foundation
+
+When I first started working alongside development teams, I found that in most places I worked they operated in a bit of a silo. Design was seen as the paint on top of the technical solution, and whilst we might work closely with mobile engineers to ensure what we designed got built correctly, we didn't really stay close to the backend engineers crafting the APIs.
+
+Over time I got super curious. We send data to our frontends via this mysterious thing call an API, what is that and how can I better understand it to know the impact it might have on my work?
+
+An API, or Application Programming Interface, is a mechanism by which you can send or receive information over a network to update or interact with an interface. There's lots of different methods you can utilise such as POSTing something (sending it), GETting something (receiving it), DELETEing something (deleting it...) or PUT/PATCHing it (modifying it).
+
+As designers, we should care about what data is being sent around because it inherently defines what we might show to a customer or what controls they might be able to interact with.
+
+### Making APIs tangible
+
+Let's say you have a form that you want to allow a customer to enter their name and email into. Understanding that this is an input that allows the customer to **send** data to a server to store this information is super handy. This means that submitting this form would send a `POST` request via the API to your server to append these data to the database.
+
+```javascript
+[  
+  {  
+    "name": "Will Smith",
+    "email": "will@freshprince.com",
+    "weapon": "slap"
+  }
+]
+```
+
+But lets say you decide after the API is built and the success criteria are defined, that you now want a customer to be able to add their phone number. In this case, firstly the API isn't built to handle a number or to send that particular request, so now the backend team will have to modify the API (and also importantly, the database) to understand that a number can also be sent.
+
+Sounds easy right? But imagine if you're making lots of these tiny changes, things like splitting name into `firstName` and `lastName`. In most companies, the backend work will start before the build phase begins. This means that any change has a risk of derailing the approach that was originally conceived by the backend team.
+
+You hopefully already had some thoughts, sketched some ideas and started to ideate, but hadn't finished with your design by the time you raise these changes. This is good, you're working in an agile team, but you're also at a point of increasing project scope and increasing the project risk.
+
+### De-risking design and APIs
+
+One exercise I like to do to prevent as much of this risk as possible is to design API-first. By designing the API in tandem with the backend engineers, you de-risk future problems. You can eek out the edge cases and plan for possible future adaptability together.
+
+> "If I decided to add in the need for a mobile number to be sent too, would that be a lot of extra risk? This idea is still being considered but isn't final"
+
+A great way to do this is to build out your foundation together via early stage workshops. Recently I've introduced the practice of including a representative across each of our respective teams at the very start of the design process, when we're discovering the problem to solve. This means we have Design, Product, Mobile, CloudApps (backend) and QA in the room (sometimes also customer support or ops depending on the project).
+
+Including these teams early means we define edge cases from the outside and design a flexible API and design solution that works for all teams across build, testing and production.
+
+We've started workshopping all of this work inside of [FigJam](https://www.figma.com/figjam/) and it's been game-changing.
+
+Last year, FigJam introduced the ability to include code blocks in your diagramming experience. This opened FigJam up to being super useful for engineering teams who are writing particular code and want to connect the dots. I noticed a few team members were using it to connect their APIs to mobile code which helped them to better visualise how the data would pass down and be rendered.
+
+![An image of a FigJam canvas with API documentation pointing to different Wireframes to show where the data is passed to in each case](https://imgix.cosmicjs.com/59bfb450-0a84-11ed-b7be-d956591ad437-CleanShot-2022-07-23-at-13.36.432x.png)
+
+An image of a FigJam canvas with API documentation pointing to different Wireframes to show where the data is passed to in each case
+
+I decided that it made sense to me, as a designer, to include this type of thinking into my flows too. So I started to get the teams to share their API docs with me so that I could include them as flow starting points for certain wireframe screens. Now, the connection between what data we expect, when we expect to receive it, and how it changes the view was all in one place.
+
+When QA then came to test the edge cases, they knew when we'd expect to have received (or sent) data to or from the API, and in turn how that would impact the user interface. All teams would be on the same page, from the start to the end.
+
+### How this is impacting our shipping process
+
+Since taking this approach, we've seen several cases where the time to delivery has been significantly reduced, that the edge cases we find aren't show stoppers because we knew what to expect from the start, and that our teams could all be aligned from the outset.
+
+Our end-to-end QA process is significantly improved because the data they test with in Postman is aligned to the docs and flows we have in FigJam, and there's very little left to ambiguity.
+
+This is still the exception and not the rule, we've been trialling it in our team because my knowledge of code allows me to suggest and test these approaches whilst understating what the APIs mean and why it's useful. Onboarding other designers and teams to this idea will likely be challenging because the value isn't immediately obvious, and the lack of technical understanding will be a limitation.
+
+But, this is something I see as a great opportunity for teaching. I've been putting more and more energy into teaching my team how to understand the raw basics of coding, focusing initially on basic JavaScript as part of Figma plugin development, but slowly moving into understanding how data passes between platforms and why this matters to their day-to-day.
+
+If you're a designer who's comfortable in the world of code, or who's interested to learn more about it, I'd highly recommend reaching out to your backend engineers to start a discussion around API design and its place in the design process.]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/b70e7de0-ba00-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>

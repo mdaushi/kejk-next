@@ -5,6 +5,7 @@ import PageHeader from "../components/PageHeader";
 import { ArrowDownIcon, ArrowLongLeftIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import TextButton from "../components/TextButton";
+import Markdown from "../components/Markdown";
 import { useRouter } from "next/router";
 
 const Cosmic = require("cosmicjs");
@@ -18,8 +19,8 @@ const bucket = api.bucket({
   read_key: READ_KEY,
 });
 
-const PromptAI = ({ promptAI }) => {
-  const metaTitle = "KEJK | PromptAI";
+export default function Arti({ arti }) {
+  const metaTitle = "KEJK | Arti";
   const metaImage =
     "https://imgix.cosmicjs.com/9bcfeeb0-8cdd-11ed-bac9-7fe1734a16aa-prompt-ai.png";
   const metaDescription = "Interface directly with the OpenAI beta, natively.";
@@ -60,31 +61,28 @@ const PromptAI = ({ promptAI }) => {
             </TextButton>
           </Link>
         </div>
-        <PageHeader>{promptAI.title}</PageHeader>
+        <PageHeader>{arti.title}</PageHeader>
         <h2 className="mb-4 text-left text-2xl font-medium text-neutral-700 dark:text-neutral-400 md:text-2xl">
-          {promptAI.metadata.subtitle}
+          {arti.metadata.subtitle}
         </h2>
         <div className="h-auto w-full max-w-3xl">
           <Image
             className="rounded-md"
-            src={promptAI.metadata.hero?.imgix_url}
+            src={arti.metadata.hero?.imgix_url}
             width={1000}
             height={700}
             quality={100}
-            objectFit="cover"
-            objectPosition="center"
             placeholder="blur"
-            blurDataURL={`${promptAI.metadata.hero?.imgix_url}?auto=format,compress&q=1&blur=500&w=2`}
+            blurDataURL={`${arti.metadata.hero?.imgix_url}?auto=format,compress&q=1&blur=500&w=2`}
             alt="Image of the app icon"
             priority
           />
         </div>
         <div className="mt-12 flex w-full items-center justify-between gap-2">
           <div className="flex flex-col space-y-4">
-            <div
-              className="flex w-full flex-col gap-2 md:w-2/3"
-              dangerouslySetInnerHTML={{ __html: promptAI.metadata.subheader }}
-            />
+            <div className="flex w-full flex-col gap-2 md:w-2/3">
+              <Markdown content={arti.metadata.subheader} />
+            </div>
             <a href={downloadURL} download className="">
               <button
                 className={classNames(
@@ -102,34 +100,39 @@ const PromptAI = ({ promptAI }) => {
                 className="rounded-[28px]"
                 width={150}
                 height={150}
-                src={promptAI.metadata.icon?.imgix_url}
+                src={arti.metadata.icon?.imgix_url}
                 alt="Image of the app icon"
                 quality={100}
               />
             </div>
           </div>
         </div>
-        <div dangerouslySetInnerHTML={{ __html: promptAI.content }} />
-        <a rel="me" href="https://mastodon.design/@kejk" className="opacity-0 cursor-none">Mastodon</a>
+        <div dangerouslySetInnerHTML={{ __html: arti.content }} />
+        <a
+          rel="me"
+          href="https://mastodon.design/@kejk"
+          className="cursor-none opacity-0"
+        >
+          Mastodon
+        </a>
       </div>
     </div>
   );
-};
-
-export default PromptAI;
+}
 
 export async function getStaticProps() {
   const data = await bucket.objects
     .findOne({
-      id: "641b3faed0ab1034f2469919",
+      type: "arti",
+      id: "641b3f98d0ab1034f24698a9",
     })
     .props(["title,content,metadata"]);
 
-  const promptAI = await data.object;
+  const arti = await data.object;
 
   return {
     props: {
-      promptAI,
+      arti,
     },
   };
 }
