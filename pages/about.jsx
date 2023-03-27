@@ -17,7 +17,7 @@ const bucket = api.bucket({
   read_key: READ_KEY,
 });
 
-export default function About({ about, principles }) {
+export default function About({ about, principles, allJobs }) {
   const metaTitle = "KEJK | About";
   const metaImage =
     "https://imgix.cosmicjs.com/3197de10-ba80-11ed-9435-5306e8ef93bc-image.png";
@@ -79,6 +79,22 @@ export default function About({ about, principles }) {
             );
           })}
         </div>
+        <HeaderView className="mt-16">Job history</HeaderView>
+        <div className="mt-8 flex w-full flex-col gap-4">
+          {allJobs.metadata.job.map((job, idx) => {
+            return (
+              <div key={idx} className="flex w-full items-center space-x-4">
+                <span className="w-max whitespace-nowrap text-lg font-bold text-neutral-700 dark:text-neutral-300">
+                  {job.company}
+                </span>
+                <hr className="my-auto w-full border-dashed border-neutral-300 dark:border-neutral-600" />
+                <span className="flex w-max justify-end whitespace-nowrap text-right text-sm text-neutral-600 dark:text-neutral-400">
+                  {job.date_range}
+                </span>
+              </div>
+            );
+          })}
+        </div>
         <div className="flex w-full items-center justify-center px-4 pt-16">
           <p className="w-full rounded-xl bg-neutral-100 p-4 text-center text-black dark:bg-neutral-800 dark:text-white md:w-2/3">
             {text}
@@ -100,12 +116,21 @@ export async function getStaticProps() {
     .find({ type: "principles" })
     .props(["title"]);
 
+  const jobsData = await bucket.objects
+    .find({
+      id: "641b3fa4d0ab1034f24698e6",
+    })
+    .props(["metadata"]);
+
   const about = await data.object;
   const principles = await principlesData.objects;
+  const allJobs = await jobsData.objects[0];
+
   return {
     props: {
       about,
       principles,
+      allJobs,
     },
   };
 }
