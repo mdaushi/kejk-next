@@ -55,7 +55,7 @@ export default function About({ about, principles, allJobs }) {
         <div className="mx-auto mt-8 flex w-full justify-center">
           <Link href="/uses">
             <Button
-              bgColor="bg-neutral-100 dark:bg-neutral-800"
+              bgColor="bg-neutral-100 dark:bg-neutral-900"
               textColor="text-black dark:text-white"
               borderColor="border-neutral-200 dark:border-neutral-700"
             >
@@ -70,7 +70,7 @@ export default function About({ about, principles, allJobs }) {
             return (
               <div
                 key={idx}
-                className="rounded-md bg-neutral-50 p-3 dark:bg-neutral-800"
+                className="rounded-md bg-neutral-50 p-3 dark:bg-neutral-900"
               >
                 <span className="text-lg font-bold text-neutral-700 dark:text-neutral-300">
                   {principle.title}
@@ -96,7 +96,7 @@ export default function About({ about, principles, allJobs }) {
           })}
         </div>
         <div className="flex w-full items-center justify-center px-4 pt-16">
-          <p className="w-full rounded-xl bg-neutral-100 p-4 text-center text-black dark:bg-neutral-800 dark:text-white md:w-2/3">
+          <p className="w-full rounded-xl bg-neutral-100 p-4 text-center text-black dark:bg-neutral-900 dark:text-white md:w-2/3">
             {text}
           </p>
         </div>

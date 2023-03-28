@@ -17,11 +17,11 @@
 }
 
 .markdown h2 {
-  @apply mt-4 mb-4 text-2xl font-semibold leading-snug text-neutral-700 dark:text-neutral-300;
+  @apply mb-4 mt-4 text-2xl font-semibold leading-snug text-neutral-700 dark:text-neutral-300;
 }
 
 .markdown h3 {
-  @apply mt-4 mb-2 text-xl font-semibold leading-snug text-neutral-800 dark:text-neutral-200;
+  @apply mb-2 mt-4 text-xl font-semibold leading-snug text-neutral-800 dark:text-neutral-200;
 }
 
 .markdown a {
@@ -45,15 +45,15 @@
 }
 
 .markdown pre {
-  @apply mb-4 w-full overflow-x-scroll whitespace-pre rounded-lg !font-mono !bg-neutral-50 dark:!bg-neutral-800;
+  @apply mb-4 w-full overflow-x-scroll whitespace-pre rounded-lg !bg-neutral-50 !font-mono dark:!bg-neutral-800;
 }
 
 .markdown pre > code {
-  @apply !bg-transparent !font-mono !border-transparent;
+  @apply !border-transparent !bg-transparent !font-mono;
 }
 
 .markdown code {
-  @apply w-max rounded-lg bg-neutral-50 border border-neutral-100 py-1 px-2 font-mono text-sm text-neutral-700 dark:bg-neutral-800/50 dark:border dark:border-neutral-800 dark:text-neutral-300;
+  @apply w-max rounded-lg border border-neutral-100 bg-neutral-50 px-2 py-1 font-mono text-sm text-neutral-700 dark:border dark:border-neutral-800 dark:bg-neutral-900/50 dark:text-neutral-300;
 }
 
 .markdown code > span {

@@ -93,7 +93,7 @@ export default function Home({
         <div className="mx-auto mt-8 flex w-full justify-center space-x-4">
           <Link href="mailto:karl@kejk.tech?subject=Let's chat!">
             <Button
-              bgColor="bg-neutral-100 dark:bg-neutral-800"
+              bgColor="bg-neutral-100 dark:bg-neutral-900"
               textColor="text-black dark:text-white"
               borderColor="border-neutral-200 dark:border-neutral-700"
             >
@@ -103,7 +103,7 @@ export default function Home({
           </Link>
           <Link href={"/about"}>
             <Button
-              bgColor="bg-neutral-100 dark:bg-neutral-800"
+              bgColor="bg-neutral-100 dark:bg-neutral-900"
               textColor="text-black dark:text-white"
               borderColor="border-neutral-200 dark:border-neutral-700"
             >
@@ -136,7 +136,7 @@ export default function Home({
         <div className="mx-auto mt-8 flex w-full justify-center">
           <Link href={"/thoughts"}>
             <Button
-              bgColor="bg-neutral-100 dark:bg-neutral-800"
+              bgColor="bg-neutral-100 dark:bg-neutral-900"
               textColor="text-black dark:text-white"
             >
               More thoughts
@@ -164,7 +164,7 @@ export default function Home({
         <div className="mx-auto mt-8 flex w-full justify-center space-x-4">
           <Link href={"/playground"}>
             <Button
-              bgColor="bg-neutral-100 dark:bg-neutral-800"
+              bgColor="bg-neutral-100 dark:bg-neutral-900"
               textColor="text-black dark:text-white"
             >
               Playground
@@ -173,7 +173,7 @@ export default function Home({
           </Link>
           <Link href={"/projects"}>
             <Button
-              bgColor="bg-neutral-100 dark:bg-neutral-800"
+              bgColor="bg-neutral-100 dark:bg-neutral-900"
               textColor="text-black dark:text-white"
             >
               Client projects
@@ -200,7 +200,7 @@ export default function Home({
         <div className="mx-auto mt-8 flex w-full justify-center">
           <Link href={"/features"}>
             <Button
-              bgColor="bg-neutral-100 dark:bg-neutral-800"
+              bgColor="bg-neutral-100 dark:bg-neutral-900"
               textColor="text-black dark:text-white"
             >
               All features
@@ -250,7 +250,7 @@ export default function Home({
         <div className="mx-auto mt-8 flex w-full justify-center">
           <Link href={"/bookmarks"}>
             <Button
-              bgColor="bg-neutral-100 dark:bg-neutral-800"
+              bgColor="bg-neutral-100 dark:bg-neutral-900"
               textColor="text-black dark:text-white"
             >
               All bookmarks

@@ -169,7 +169,7 @@ export default function Post({ allPosts, post }) {
                 }, 100);
               }}
               className={classNames(
-                `mb-4 flex items-center justify-center space-x-2 rounded-md border border-neutral-200 bg-neutral-100 py-2 px-4 text-sm font-medium text-black transition ease-in-out hover:border-teal-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white md:w-max md:text-base`
+                `mb-4 flex items-center justify-center space-x-2 rounded-md border border-neutral-200 bg-neutral-100 px-4 py-2 text-sm font-medium text-black transition ease-in-out hover:border-teal-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-white md:w-max md:text-base`
               )}
             >
               <span className="w-max text-neutral-500 dark:text-neutral-400">
@@ -179,7 +179,7 @@ export default function Post({ allPosts, post }) {
             <Toast
               open={open}
               onOpenChange={setOpen}
-              className="space-y-2 rounded-lg border border-neutral-200 bg-neutral-100 p-4 shadow-lg dark:border-neutral-700 dark:bg-neutral-800"
+              className="space-y-2 rounded-lg border border-neutral-200 bg-neutral-100 p-4 shadow-lg dark:border-neutral-700 dark:bg-neutral-900"
             >
               <ToastTitle className="flex items-center text-black dark:text-white">
                 <CheckCircleIcon className="mr-2 h-6 w-6 flex-shrink-0 text-teal-500 dark:text-teal-400" />

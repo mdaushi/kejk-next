@@ -142,7 +142,7 @@ export default function Writing({ writings }) {
           <div className="flex w-full items-center justify-between">
             <PageHeader>Writing</PageHeader>
             <Button
-              bgColor="bg-neutral-100 dark:bg-neutral-800 mb-4 md:mb-0"
+              bgColor="bg-neutral-100 dark:bg-neutral-900 mb-4 md:mb-0"
               textColor="text-black dark:text-white"
               borderColor="border-neutral-200 dark:border-neutral-700"
               onClick={openModal}
@@ -205,7 +205,7 @@ export default function Writing({ writings }) {
                                   name="email"
                                   id="bd-email"
                                   placeholder="e.g. sly@stallone.com"
-                                  className="w-full rounded-lg border border-neutral-200 bg-neutral-100 py-3 px-3 text-neutral-800 focus:border focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-50"
+                                  className="w-full rounded-lg border border-neutral-200 bg-neutral-100 px-3 py-3 text-neutral-800 focus:border focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-50"
                                   required
                                 />
                               </label>
@@ -246,7 +246,7 @@ export default function Writing({ writings }) {
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div className="scrollbar-hidden grid grid-flow-col items-center space-x-2 overflow-x-auto">
               <Button
-                bgColor="bg-neutral-100 dark:bg-neutral-800 mt-4 !text-sm"
+                bgColor="bg-neutral-100 dark:bg-neutral-900 mt-4 !text-sm"
                 textColor="text-black dark:text-white"
                 borderColor="border-none"
                 onClick={tagFilter}
@@ -255,7 +255,7 @@ export default function Writing({ writings }) {
               </Button>
               {uniqueTags.map((tag, idx) => (
                 <Button
-                  bgColor="bg-neutral-100 dark:bg-neutral-800 mt-4 !text-sm"
+                  bgColor="bg-neutral-100 dark:bg-neutral-900 mt-4 !text-sm"
                   textColor="text-black dark:text-white"
                   borderColor="border-none"
                   onClick={tagFilter}

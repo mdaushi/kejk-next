@@ -60,10 +60,10 @@ export default function Projects({ clients }) {
             );
           })}
         </div>
-        <div className="mx-auto mt-8 flex w-full flex-col items-center justify-center space-y-4 md:mt-16 md:flex-row md:space-y-0 md:space-x-4">
+        <div className="mx-auto mt-8 flex w-full flex-col items-center justify-center space-y-4 md:mt-16 md:flex-row md:space-x-4 md:space-y-0">
           <Link href="/work">
             <Button
-              bgColor="bg-neutral-100 dark:bg-neutral-800"
+              bgColor="bg-neutral-100 dark:bg-neutral-900"
               textColor="text-black dark:text-white"
               borderColor="border-neutral-200 dark:border-neutral-700"
             >
@@ -72,7 +72,7 @@ export default function Projects({ clients }) {
             </Button>
           </Link>
           <Button
-            bgColor="bg-neutral-100 dark:bg-neutral-800"
+            bgColor="bg-neutral-100 dark:bg-neutral-900"
             textColor="text-black dark:text-white"
             borderColor="border-neutral-200 dark:border-neutral-700"
             href="mailto:karl@kejk.tech?subject=Let's work together!"
@@ -92,7 +92,7 @@ export async function getStaticProps() {
       type: "freelances",
     },
     props: "id,title,metadata",
-    sort: "-created_at"
+    sort: "-created_at",
   });
 
   const clients = await freelancesData.objects;
