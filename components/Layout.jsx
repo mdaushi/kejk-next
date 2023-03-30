@@ -2,71 +2,63 @@ import React from "react";
 import Nav from "./Nav";
 import { CommandPalette } from "../components/CommandPalette";
 
-const Cosmic = require("cosmicjs");
-const api = Cosmic();
+const { createBucketClient } = require("@cosmicjs/sdk");
 
 const BUCKET_SLUG = process.env.NEXT_PUBLIC_COSMIC_SLUG;
 const READ_KEY = process.env.NEXT_PUBLIC_COSMIC_READ_KEY;
 
-const bucket = await api.bucket({
-  slug: BUCKET_SLUG,
-  read_key: READ_KEY,
+const cosmic = createBucketClient({
+  bucketSlug: BUCKET_SLUG,
+  readKey: READ_KEY,
 });
 
-const fetchWritingData = await bucket.getObjects({
-  query: {
+const fetchWritingData = await cosmic.objects
+  .find({
     type: "writings",
-  },
-  props: "id,type,slug,title,metadata",
-});
+  })
+  .props("id,type,slug,title,metadata");
 const writingData = fetchWritingData.objects;
 
-const fetchAppData = await bucket.getObjects({
-  query: {
+const fetchAppData = await cosmic.objects
+  .find({
     type: "apps",
-  },
-  props: "id,type,slug,title,metadata",
-});
+  })
+  .props("id,type,slug,title,metadata");
 const appData = fetchAppData.objects;
 
-const fetchUtilitiesData = await bucket.getObjects({
-  query: {
+const fetchUtilitiesData = await cosmic.objects
+  .find({
     type: "utilities",
-  },
-  props: "id,type,slug,title,metadata",
-});
+  })
+  .props("id,type,slug,title,metadata");
 const utilitiesData = fetchUtilitiesData.objects;
 
-const fetchStacksData = await bucket.getObjects({
-  query: {
+const fetchStacksData = await cosmic.objects
+  .find({
     type: "stacks",
-  },
-  props: "id,type,slug,title,metadata",
-});
+  })
+  .props("id,type,slug,title,metadata");
 const stacksData = fetchStacksData.objects;
 
-const fetchFeaturesData = await bucket.getObjects({
-  query: {
+const fetchFeaturesData = await cosmic.objects
+  .find({
     type: "features",
-  },
-  props: "id,type,slug,title,metadata",
-});
+  })
+  .props("id,type,slug,title,metadata");
 const featuresData = fetchFeaturesData.objects;
 
-const fetchAlbumsData = await bucket.getObjects({
-  query: {
+const fetchAlbumsData = await cosmic.objects
+  .find({
     type: "albums",
-  },
-  props: "id,type,slug,title,metadata",
-});
+  })
+  .props("id,type,slug,title,metadata");
 const albumsData = fetchAlbumsData.objects;
 
-const fetchWorksData = await bucket.getObjects({
-  query: {
+const fetchWorksData = await cosmic.objects
+  .find({
     type: "works",
-  },
-  props: "id,type,slug,title,metadata",
-});
+  })
+  .props("id,type,slug,title,metadata");
 const worksData = fetchWorksData.objects;
 
 const contactDetails = [

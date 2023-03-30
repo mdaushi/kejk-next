@@ -33,7 +33,6 @@
     "@types/node": "18.14.6",
     "@types/react": "18.0.28",
     "autoprefixer": "^10.4.13",
-    "cosmicjs": "^5.0.5",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.3",
     "postcss": "^8.4.19",
