@@ -67,15 +67,14 @@ export const ToastTitle = ToastPrimitive.Title;
 export const ToastDescription = ToastPrimitive.Description;
 export const ToastClose = ToastPrimitive.Close;
 
-const Cosmic = require("cosmicjs");
-const api = Cosmic();
+const { createBucketClient } = require("@cosmicjs/sdk");
 
 const BUCKET_SLUG = process.env.NEXT_PUBLIC_COSMIC_SLUG;
 const READ_KEY = process.env.NEXT_PUBLIC_COSMIC_READ_KEY;
 
-const bucket = api.bucket({
-  slug: BUCKET_SLUG,
-  read_key: READ_KEY,
+const cosmic = createBucketClient({
+  bucketSlug: BUCKET_SLUG,
+  readKey: READ_KEY,
 });
 
 export default function Post({ allPosts, post }) {
@@ -215,24 +214,23 @@ export default function Post({ allPosts, post }) {
 }
 
 export async function getStaticProps({ params, preview = null }) {
-  const data = await bucket.getObjects({
-    query: {
+  const data = await cosmic.objects
+    .findOne({
       type: "writings",
       slug: params.slug,
-    },
-    status: "any",
-    props: "id,slug,title,metadata,modified_at,created_at",
-    preview,
-  });
-  const post = await data.objects[0];
+    })
+    .status("any")
+    .props(["id,slug,title,metadata,modified_at,created_at", preview]);
 
-  const allWritingData = await bucket.getObjects({
-    query: {
+  const post = await data.object;
+
+  const allWritingData = await cosmic.objects
+    .find({
       type: "writings",
-    },
-    props: "id,slug,title,metadata",
-    limit: 4,
-  });
+    })
+    .props("id,slug,title,metadata")
+    .limit(4);
+
   const allPosts = await allWritingData.objects;
 
   return {
@@ -241,12 +239,12 @@ export async function getStaticProps({ params, preview = null }) {
 }
 
 export async function getStaticPaths() {
-  const data = await bucket.getObjects({
-    query: {
+  const data = await cosmic.objects
+    .find({
       type: "writings",
-    },
-    props: "id,slug,title,metadata",
-  });
+    })
+    .props("id,slug,title,metadata");
+
   const allPosts = await data.objects;
 
   return {

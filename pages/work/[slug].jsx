@@ -8,15 +8,14 @@ import TextButton from "../../components/TextButton";
 import AllCapsHeader from "../../components/AllCapsHeader";
 import { ArrowLongLeftIcon } from "@heroicons/react/24/outline";
 
-const Cosmic = require("cosmicjs");
-const api = Cosmic();
+const { createBucketClient } = require("@cosmicjs/sdk");
 
 const BUCKET_SLUG = process.env.NEXT_PUBLIC_COSMIC_SLUG;
 const READ_KEY = process.env.NEXT_PUBLIC_COSMIC_READ_KEY;
 
-const bucket = api.bucket({
-  slug: BUCKET_SLUG,
-  read_key: READ_KEY,
+const cosmic = createBucketClient({
+  bucketSlug: BUCKET_SLUG,
+  readKey: READ_KEY,
 });
 
 export default function Project({ work }) {
@@ -88,13 +87,14 @@ export default function Project({ work }) {
 }
 
 export async function getStaticProps({ params }) {
-  const data = await bucket.getObjects({
-    query: {
+  const data = await cosmic.objects
+    .findOne({
+      type: "works",
       slug: params.slug,
-    },
-    props: "id,slug,content,title,metadata,modified_at",
-  });
-  const work = await data.objects[0];
+    })
+    .props("id,slug,content,title,metadata,modified_at");
+
+  const work = await data.object;
 
   return {
     props: { work },
@@ -102,13 +102,13 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const data = await bucket.getObjects({
-    query: {
+  const data = await cosmic.objects
+    .find({
       type: "works",
-    },
-    props: "id,slug,content,title,metadata",
-  });
+    })
+    .props("id,slug,content,title,metadata");
   const allWorks = await data.objects;
+
   return {
     paths: allWorks.map((work) => `/work/${work.slug}`),
     fallback: true,

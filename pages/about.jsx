@@ -4,17 +4,19 @@ import HeaderView from "../components/HeaderView";
 import Markdown from "../components/Markdown";
 import PageHeader from "../components/PageHeader";
 import Button from "../components/Button";
-import { RectangleStackIcon } from "@heroicons/react/20/solid";
+import {
+  RectangleStackIcon,
+  ArrowUpRightIcon,
+} from "@heroicons/react/20/solid";
 
-const Cosmic = require("cosmicjs");
-const api = Cosmic();
+const { createBucketClient } = require("@cosmicjs/sdk");
 
 const BUCKET_SLUG = process.env.NEXT_PUBLIC_COSMIC_SLUG;
 const READ_KEY = process.env.NEXT_PUBLIC_COSMIC_READ_KEY;
 
-const bucket = api.bucket({
-  slug: BUCKET_SLUG,
-  read_key: READ_KEY,
+const cosmic = createBucketClient({
+  bucketSlug: BUCKET_SLUG,
+  readKey: READ_KEY,
 });
 
 export default function About({ about, principles, allJobs }) {
@@ -86,6 +88,16 @@ export default function About({ about, principles, allJobs }) {
               <div key={idx} className="flex w-full items-center space-x-4">
                 <span className="w-max whitespace-nowrap text-lg font-bold text-neutral-700 dark:text-neutral-300">
                   {job.company}
+                  {job.url != null && (
+                    <a
+                      href={job.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-link cursor-pointer pl-2"
+                    >
+                      ⤴
+                    </a>
+                  )}
                 </span>
                 <hr className="my-auto w-full border-dashed border-neutral-300 dark:border-neutral-600" />
                 <span className="flex w-max justify-end whitespace-nowrap text-right text-sm text-neutral-600 dark:text-neutral-400">
@@ -106,21 +118,21 @@ export default function About({ about, principles, allJobs }) {
 }
 
 export async function getStaticProps() {
-  const data = await bucket.objects
+  const data = await cosmic.objects
     .findOne({
       id: "641b3fa0d0ab1034f24698d2",
     })
-    .props(["title,metadata"]);
+    .props("title,metadata");
 
-  const principlesData = await bucket.objects
+  const principlesData = await cosmic.objects
     .find({ type: "principles" })
-    .props(["title"]);
+    .props("title");
 
-  const jobsData = await bucket.objects
+  const jobsData = await cosmic.objects
     .find({
       id: "641b3fa4d0ab1034f24698e6",
     })
-    .props(["metadata"]);
+    .props("metadata");
 
   const about = await data.object;
   const principles = await principlesData.objects;

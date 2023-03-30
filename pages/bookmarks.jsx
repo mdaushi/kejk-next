@@ -5,15 +5,14 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import SearchInput from "../components/SearchInput";
 
-const Cosmic = require("cosmicjs");
-const api = Cosmic();
+const { createBucketClient } = require("@cosmicjs/sdk");
 
 const BOOKMARKS_SLUG = process.env.NEXT_PUBLIC_BOOKMARKS_SLUG;
 const BOOKMARKS_READ_KEY = process.env.NEXT_PUBLIC_BOOKMARKS_READ_KEY;
 
-const bucket = api.bucket({
-  slug: BOOKMARKS_SLUG,
-  read_key: BOOKMARKS_READ_KEY,
+const cosmic = createBucketClient({
+  bucketSlug: BOOKMARKS_SLUG,
+  readKey: BOOKMARKS_READ_KEY,
 });
 
 export default function Bookmark({ bookmarks }) {
@@ -120,14 +119,13 @@ export default function Bookmark({ bookmarks }) {
 }
 
 export async function getStaticProps() {
-  const data = await bucket.getObjects({
-    query: {
+  const data = await cosmic.objects
+    .find({
       type: "bookmarks",
-    },
-    props: "id,slug,title,metadata,created_at",
-    limit: 42,
-    sort: "-created_at",
-  });
+    })
+    .props("id,slug,title,metadata,created_at")
+    .limit(42)
+    .sort("-created_at");
 
   const bookmarks = await data.objects;
 

@@ -13,17 +13,16 @@ import TextButton from "../components/TextButton";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
-const Cosmic = require("cosmicjs");
-const api = Cosmic();
+const { createBucketClient } = require("@cosmicjs/sdk");
 
 const BUCKET_SLUG = process.env.NEXT_PUBLIC_COSMIC_SLUG;
 const READ_KEY = process.env.NEXT_PUBLIC_COSMIC_READ_KEY;
 const WRITE_KEY = process.env.NEXT_PUBLIC_COSMIC_WRITE_KEY;
 
-const bucket = api.bucket({
-  slug: BUCKET_SLUG,
-  read_key: READ_KEY,
-  write_key: WRITE_KEY,
+const cosmic = createBucketClient({
+  bucketSlug: BUCKET_SLUG,
+  readKey: READ_KEY,
+  writeKey: WRITE_KEY,
 });
 
 const LazyPDF = ({ lazyPDF, stats }) => {
@@ -35,30 +34,27 @@ const LazyPDF = ({ lazyPDF, stats }) => {
   const [isDownloaded, setIsDownloaded] = useState(false);
 
   useEffect(() => {
-    const params = {
-      id: `62e2e0f49f26bd0e6c6b2c62`,
-      key: `likes`,
-      value: likes,
-    };
-    bucket
-      .editObjectMetafield(params)
+    cosmic.objects
+      .updateOne("641b3f98d0ab1034f24698aa", {
+        metadata: {
+          likes: likes,
+        },
+      })
       .then((data) => {
         console.log(data);
       })
       .catch((err) => {
         console.error(err);
       });
-    console.log(params.value);
   }, [likes, isLiked]);
 
   useEffect(() => {
-    const params = {
-      id: `62e2e0f49f26bd0e6c6b2c62`,
-      key: `downloads`,
-      value: downloads,
-    };
-    bucket
-      .editObjectMetafield(params)
+    cosmic.objects
+      .updateOne("641b3f98d0ab1034f24698aa", {
+        metadata: {
+          downloads: downloads,
+        },
+      })
       .then((data) => {
         console.log(data);
       })
@@ -149,8 +145,6 @@ const LazyPDF = ({ lazyPDF, stats }) => {
             width={1000}
             height={700}
             quality={100}
-            objectFit="cover"
-            objectPosition="center"
             placeholder="blur"
             blurDataURL={`${lazyPDF.metadata.hero?.imgix_url}?auto=format,compress&q=1&blur=500&w=2`}
             alt="Image of the app icon"
@@ -246,25 +240,17 @@ const LazyPDF = ({ lazyPDF, stats }) => {
 export default LazyPDF;
 
 export async function getStaticProps() {
-  // const data = await bucket.getObjects({
-  //   query: {
-  //     type: "lazy-pdf",
-  //     slug: "lazy-pdf-page",
-  //   },
-  //   props: "title,content,metadata",
-  // });
-
-  const data = await bucket.objects
+  const data = await cosmic.objects
     .findOne({
       id: "641b3faed0ab1034f2469919",
     })
-    .props(["title,content,metadata"]);
+    .props("title,content,metadata");
 
-  const getStats = await bucket.objects
+  const getStats = await cosmic.objects
     .findOne({
       id: "641b3f98d0ab1034f24698aa",
     })
-    .props(["title,metadata"]);
+    .props("title,metadata");
 
   const stats = await getStats.object;
 

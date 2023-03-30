@@ -8,15 +8,14 @@ import TextButton from "../components/TextButton";
 import Markdown from "../components/Markdown";
 import { useRouter } from "next/router";
 
-const Cosmic = require("cosmicjs");
-const api = Cosmic();
+const { createBucketClient } = require("@cosmicjs/sdk");
 
 const BUCKET_SLUG = process.env.NEXT_PUBLIC_COSMIC_SLUG;
 const READ_KEY = process.env.NEXT_PUBLIC_COSMIC_READ_KEY;
 
-const bucket = api.bucket({
-  slug: BUCKET_SLUG,
-  read_key: READ_KEY,
+const cosmic = createBucketClient({
+  bucketSlug: BUCKET_SLUG,
+  readKey: READ_KEY,
 });
 
 export default function Arti({ arti }) {
@@ -121,12 +120,12 @@ export default function Arti({ arti }) {
 }
 
 export async function getStaticProps() {
-  const data = await bucket.objects
+  const data = await cosmic.objects
     .findOne({
       type: "arti",
       id: "641b3f98d0ab1034f24698a9",
     })
-    .props(["title,content,metadata"]);
+    .props("title,content,metadata");
 
   const arti = await data.object;
 

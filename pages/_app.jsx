@@ -2,8 +2,6 @@ import { Analytics } from "@vercel/analytics/react";
 import PlausibleProvider from "next-plausible";
 import Layout from "../components/Layout";
 import "../styles/globals.css";
-// import { JetBrains_Mono } from "@next/font/google";
-// import Gambarino from "@next/font/local";
 import Mori from "next/font/local";
 import Migra from "next/font/local";
 import SupplyMono from "next/font/local";
@@ -44,21 +42,10 @@ const sans = Mori({
   variable: "--font-sans",
 });
 
-// const mono = JetBrains_Mono({
-//   subsets: ["latin"],
-//   weights: [400, 700],
-//   variable: "--font-mono",
-// });
-
 const mono = SupplyMono({
   src: "../fonts/PPFraktionMono-Regular.woff2",
   variable: "--font-mono",
 });
-
-// const serif = Gambarino({
-//   src: "../fonts/Gambarino-Regular.woff2",
-//   variable: "--font-serif",
-// });
 
 const serif = Migra({
   src: "../fonts/PPMigra-Regular.woff2",

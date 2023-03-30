@@ -7,15 +7,14 @@ import AppCard from "../components/AppCard";
 import Button from "../components/Button";
 import PageHeader from "../components/PageHeader";
 
-const Cosmic = require("cosmicjs");
-const api = Cosmic();
+const { createBucketClient } = require("@cosmicjs/sdk");
 
 const BUCKET_SLUG = process.env.NEXT_PUBLIC_COSMIC_SLUG;
 const READ_KEY = process.env.NEXT_PUBLIC_COSMIC_READ_KEY;
 
-const bucket = api.bucket({
-  slug: BUCKET_SLUG,
-  read_key: READ_KEY,
+const cosmic = createBucketClient({
+  bucketSlug: BUCKET_SLUG,
+  readKey: READ_KEY,
 });
 
 export default function Projects({ clients }) {
@@ -87,13 +86,12 @@ export default function Projects({ clients }) {
 }
 
 export async function getStaticProps() {
-  const freelancesData = await bucket.getObjects({
-    query: {
+  const freelancesData = await cosmic.objects
+    .find({
       type: "freelances",
-    },
-    props: "id,title,metadata",
-    sort: "-created_at",
-  });
+    })
+    .props("id,title,metadata")
+    .sort("-created_at");
 
   const clients = await freelancesData.objects;
   return {

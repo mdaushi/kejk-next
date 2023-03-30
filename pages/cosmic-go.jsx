@@ -6,15 +6,14 @@ import Link from "next/link";
 import TextButton from "../components/TextButton";
 import { useRouter } from "next/router";
 
-const Cosmic = require("cosmicjs");
-const api = Cosmic();
+const { createBucketClient } = require("@cosmicjs/sdk");
 
 const BUCKET_SLUG = process.env.NEXT_PUBLIC_COSMIC_SLUG;
 const READ_KEY = process.env.NEXT_PUBLIC_COSMIC_READ_KEY;
 
-const bucket = api.bucket({
-  slug: BUCKET_SLUG,
-  read_key: READ_KEY,
+const cosmic = createBucketClient({
+  bucketSlug: BUCKET_SLUG,
+  readKey: READ_KEY,
 });
 
 const CosmicGo = ({ cosmicGo }) => {
@@ -69,8 +68,6 @@ const CosmicGo = ({ cosmicGo }) => {
             width={1000}
             height={700}
             quality={100}
-            objectFit="cover"
-            objectPosition="center"
             placeholder="blur"
             blurDataURL={`${cosmicGo.metadata.hero?.imgix_url}?auto=format,compress&q=1&blur=500&w=2`}
             alt="Image of the app icon"
@@ -106,15 +103,14 @@ const CosmicGo = ({ cosmicGo }) => {
 export default CosmicGo;
 
 export async function getStaticProps() {
-  const data = await bucket.getObjects({
-    query: {
+  const data = await cosmic.objects
+    .findOne({
       type: "cosmic-go",
       slug: "cosmic-go",
-    },
-    props: "title,content,metadata",
-  });
+    })
+    .props("title,content,metadata");
 
-  const cosmicGo = await data.objects[0];
+  const cosmicGo = await data.object;
   return {
     props: {
       cosmicGo,

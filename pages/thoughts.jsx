@@ -47,15 +47,14 @@ const sans = Mori({
   variable: "--font-sans",
 });
 
-const Cosmic = require("cosmicjs");
-const api = Cosmic();
+const { createBucketClient } = require("@cosmicjs/sdk");
 
 const BUCKET_SLUG = process.env.NEXT_PUBLIC_COSMIC_SLUG;
 const READ_KEY = process.env.NEXT_PUBLIC_COSMIC_READ_KEY;
 
-const bucket = api.bucket({
-  slug: BUCKET_SLUG,
-  read_key: READ_KEY,
+const cosmic = createBucketClient({
+  bucketSlug: BUCKET_SLUG,
+  readKey: READ_KEY,
 });
 
 export default function Writing({ writings }) {
@@ -299,13 +298,13 @@ export default function Writing({ writings }) {
 }
 
 export async function getStaticProps({ preview = null }) {
-  const data = await bucket.getObjects({
-    query: {
+  const data = await cosmic.objects
+    .find({
       type: "writings",
-    },
-    props: "id,slug,title,metadata,published_at",
-    preview,
-  });
+    })
+    .status("any")
+    .props(["id,slug,title,metadata,published_at", preview]);
+
   const writings = await data.objects;
 
   const posts = await data.objects;

@@ -18,9 +18,8 @@ import FeatureCard from "../components/FeatureCard";
 import AllCapsHeader from "../components/AllCapsHeader";
 import HomeHeader from "../components/HomeHeader";
 import SocialLink from "../components/SocialLink";
-import Cosmic from "cosmicjs";
 
-const api = Cosmic();
+const { createBucketClient } = require("@cosmicjs/sdk");
 
 const BUCKET_SLUG = process.env.NEXT_PUBLIC_COSMIC_SLUG;
 const READ_KEY = process.env.NEXT_PUBLIC_COSMIC_READ_KEY;
@@ -28,14 +27,14 @@ const READ_KEY = process.env.NEXT_PUBLIC_COSMIC_READ_KEY;
 const BOOKMARKS_SLUG = process.env.NEXT_PUBLIC_BOOKMARKS_SLUG;
 const BOOKMARKS_READ_KEY = process.env.NEXT_PUBLIC_BOOKMARKS_READ_KEY;
 
-const bucket = api.bucket({
-  slug: BUCKET_SLUG,
-  read_key: READ_KEY,
+const cosmic = createBucketClient({
+  bucketSlug: BUCKET_SLUG,
+  readKey: READ_KEY,
 });
 
-const bookmarksBucket = api.bucket({
-  slug: BOOKMARKS_SLUG,
-  read_key: BOOKMARKS_READ_KEY,
+const bookmarksBucket = createBucketClient({
+  bucketSlug: BOOKMARKS_SLUG,
+  readKey: BOOKMARKS_READ_KEY,
 });
 
 export default function Home({
@@ -287,63 +286,56 @@ export default function Home({
 }
 
 export async function getStaticProps() {
-  const homeData = await bucket.getObjects({
-    query: {
+  const homeData = await cosmic.objects
+    .findOne({
       slug: "home",
-    },
-    props: "title,metadata",
-  });
+    })
+    .props("title,metadata");
 
-  const writingData = await bucket.getObjects({
-    limit: 3,
-    query: {
+  const writingData = await cosmic.objects
+    .find({
       type: "writings",
-    },
-    props: "slug,title,metadata",
-  });
+    })
+    .props("slug,title,metadata")
+    .limit(3);
 
-  const projectData = await bucket.getObjects({
-    limit: 3,
-    query: {
+  const projectData = await cosmic.objects
+    .find({
       type: "apps",
-    },
-    props: "title,content,metadata",
-  });
+    })
+    .props("title,content,metadata")
+    .limit(3);
 
-  const albumData = await bucket.getObjects({
-    query: {
+  const albumData = await cosmic.objects
+    .find({
       type: "albums",
-    },
-    props: "title,content,metadata",
-  });
+    })
+    .props("title,content,metadata");
 
-  const featureData = await bucket.getObjects({
-    limit: 3,
-    query: {
+  const featureData = await cosmic.objects
+    .find({
       type: "features",
-    },
-    props: "slug,title,metadata",
-    sort: "-created_at",
-  });
+    })
+    .props("slug,title,metadata")
+    .sort("-created_at")
+    .limit(3);
 
-  const bookmarkData = await bookmarksBucket.getObjects({
-    limit: 3,
-    query: {
+  const bookmarkData = await bookmarksBucket.objects
+    .find({
       type: "bookmarks",
-    },
-    props: "slug,title,metadata,created_at",
-    sort: "-created_at",
-  });
+    })
+    .props("slug,title,metadata,created_at")
+    .sort("-created_at")
+    .limit(3);
 
-  const socialData = await bucket.getObjects({
-    limit: 4,
-    query: {
+  const socialData = await cosmic.objects
+    .find({
       type: "socials",
-    },
-    props: "title,metadata",
-  });
+    })
+    .props("title,metadata")
+    .limit(4);
 
-  const home = await homeData.objects[0];
+  const home = await homeData.object;
   const writings = await writingData.objects;
   const apps = await projectData.objects;
   const albums = await albumData.objects;

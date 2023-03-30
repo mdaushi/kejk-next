@@ -2,15 +2,14 @@ import Head from "next/head";
 import AppCard from "../components/AppCard";
 import PageHeader from "../components/PageHeader";
 
-const Cosmic = require("cosmicjs");
-const api = Cosmic();
+const { createBucketClient } = require("@cosmicjs/sdk");
 
 const BUCKET_SLUG = process.env.NEXT_PUBLIC_COSMIC_SLUG;
 const READ_KEY = process.env.NEXT_PUBLIC_COSMIC_READ_KEY;
 
-const bucket = api.bucket({
-  slug: BUCKET_SLUG,
-  read_key: READ_KEY,
+const cosmic = createBucketClient({
+  bucketSlug: BUCKET_SLUG,
+  readKey: READ_KEY,
 });
 
 export default function Playground({ apps, utilities, clients }) {
@@ -73,26 +72,23 @@ export default function Playground({ apps, utilities, clients }) {
 }
 
 export async function getStaticProps() {
-  const data = await bucket.getObjects({
-    query: {
+  const data = await cosmic.objects
+    .find({
       type: "apps",
-    },
-    props: "id,title,metadata",
-  });
+    })
+    .props("id,title,metadata");
 
-  const utilitiesData = await bucket.getObjects({
-    query: {
+  const utilitiesData = await cosmic.objects
+    .find({
       type: "utilities",
-    },
-    props: "id,title,metadata",
-  });
+    })
+    .props("id,title,metadata");
 
-  const freelancesData = await bucket.getObjects({
-    query: {
+  const freelancesData = await cosmic.objects
+    .find({
       type: "freelances",
-    },
-    props: "id,title,metadata",
-  });
+    })
+    .props("id,title,metadata");
 
   const apps = await data.objects;
   const utilities = await utilitiesData.objects;

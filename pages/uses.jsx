@@ -2,15 +2,14 @@ import Head from "next/head";
 import StackCard from "../components/StackCard";
 import PageHeader from "../components/PageHeader";
 
-const Cosmic = require("cosmicjs");
-const api = Cosmic();
+const { createBucketClient } = require("@cosmicjs/sdk");
 
 const BUCKET_SLUG = process.env.NEXT_PUBLIC_COSMIC_SLUG;
 const READ_KEY = process.env.NEXT_PUBLIC_COSMIC_READ_KEY;
 
-const bucket = api.bucket({
-  slug: BUCKET_SLUG,
-  read_key: READ_KEY,
+const cosmic = createBucketClient({
+  bucketSlug: BUCKET_SLUG,
+  readKey: READ_KEY,
 });
 
 export default function Projects({ stacks }) {
@@ -61,14 +60,14 @@ export default function Projects({ stacks }) {
 }
 
 export async function getStaticProps() {
-  const data = await bucket.getObjects({
-    query: {
+  const data = await cosmic.objects
+    .find({
       type: "stacks",
-    },
-    props: "title,content,metadata",
-  });
+    })
+    .props("title,content,metadata");
 
   const stacks = await data.objects;
+
   return {
     props: {
       stacks,

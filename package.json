@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@cosmicjs/sdk": "^1.0.5",
     "@headlessui/react": "^1.7.4",
     "@heroicons/react": "^2.0.13",
     "@radix-ui/react-toast": "^1.1.1",
