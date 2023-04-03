@@ -302,7 +302,6 @@ export async function getStaticProps({ preview = null }) {
     .find({
       type: "writings",
     })
-    .status("any")
     .props(["id,slug,title,metadata,published_at", preview]);
 
   const writings = await data.objects;

@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
+import Tag from "./Tag";
 
 const FeatureCard = ({ title, type, link }) => {
   return (
@@ -16,9 +17,7 @@ const FeatureCard = ({ title, type, link }) => {
         </header>
         <ArrowLongRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
       </div>
-      <span className="block font-mono text-sm leading-6 text-teal-700 dark:text-teal-400">
-        {type}
-      </span>
+      <Tag>{type}</Tag>
     </a>
   );
 };

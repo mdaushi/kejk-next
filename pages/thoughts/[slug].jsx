@@ -1,9 +1,9 @@
+import * as React from "react";
+import * as Toast from "@radix-ui/react-toast";
 import {
   ArrowLongLeftIcon,
   CheckCircleIcon,
 } from "@heroicons/react/24/outline";
-import * as ToastPrimitive from "@radix-ui/react-toast";
-import { keyframes, styled } from "@stitches/react";
 import classNames from "classnames";
 import Head from "next/head";
 import Link from "next/link";
@@ -12,7 +12,6 @@ import Prism from "prismjs";
 import "prismjs/components/prism-json.min";
 import "prismjs/components/prism-jsx.min";
 import "prismjs/components/prism-regex.min";
-import * as React from "react";
 import Moment from "react-moment";
 import AllCapsHeader from "../../components/AllCapsHeader";
 import Markdown from "../../components/Markdown";
@@ -21,51 +20,6 @@ import Tag from "../../components/Tag";
 import TextButton from "../../components/TextButton";
 import WritingCard from "../../components/WritingCard";
 import AlertPreview from "../../components/AlertPreview";
-
-const VIEWPORT_PADDING = 24;
-
-const slideIn = keyframes({
-  from: { transform: `trangrayX(calc(100% + ${VIEWPORT_PADDING}px))` },
-  to: { transform: "trangrayX(0)" },
-});
-
-const slideOut = keyframes({
-  from: { transform: "trangrayX(0)" },
-  to: { transform: `trangrayX(calc(100% + ${VIEWPORT_PADDING}px))` },
-});
-
-const swipeOut = keyframes({
-  from: { transform: "trangrayX(var(--radix-toast-swipe-end-x))" },
-  to: { transform: `trangrayX(calc(100% + ${VIEWPORT_PADDING}px))` },
-});
-
-const StyledToast = styled(ToastPrimitive.Root, {
-  "@media (prefers-reduced-motion: no-preference)": {
-    '&[data-state="open"]': {
-      animation: `${slideIn} 150ms cubic-bezier(0.16, 1, 0.3, 1)`,
-    },
-    '&[data-state="closed"]': {
-      animation: `${slideOut} 100ms ease-in`,
-    },
-    '&[data-swipe="move"]': {
-      transform: "trangrayX(var(--radix-toast-swipe-move-x))",
-    },
-    '&[data-swipe="cancel"]': {
-      transform: "trangrayX(0)",
-      transition: "transform 200ms ease-out",
-    },
-    '&[data-swipe="end"]': {
-      animation: `${swipeOut} 100ms ease-out`,
-    },
-  },
-});
-
-export const ToastProvider = ToastPrimitive.Provider;
-export const ToastViewport = ToastPrimitive.Viewport;
-export const Toast = StyledToast;
-export const ToastTitle = ToastPrimitive.Title;
-export const ToastDescription = ToastPrimitive.Description;
-export const ToastClose = ToastPrimitive.Close;
 
 const { createBucketClient } = require("@cosmicjs/sdk");
 
@@ -157,39 +111,40 @@ export default function Post({ allPosts, post }) {
           </>
         )}
         <div className="mt-12 flex w-full justify-center">
-          <ToastProvider swipeDirection="right">
+          <Toast.Provider swipeDirection="right">
             <button
+              className={classNames(
+                `mb-4 flex items-center justify-center space-x-2 rounded-md border border-neutral-200 bg-neutral-100 px-4 py-2 text-sm font-medium text-black transition ease-in-out hover:border-teal-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-white md:w-max md:text-base`
+              )}
               onClick={() => {
                 setOpen(false);
                 window.clearTimeout(timerRef.current);
                 timerRef.current = window.setTimeout(() => {
-                  navigator.clipboard.writeText(window.location.href);
                   setOpen(true);
                 }, 100);
               }}
-              className={classNames(
-                `mb-4 flex items-center justify-center space-x-2 rounded-md border border-neutral-200 bg-neutral-100 px-4 py-2 text-sm font-medium text-black transition ease-in-out hover:border-teal-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-white md:w-max md:text-base`
-              )}
             >
               <span className="w-max text-neutral-500 dark:text-neutral-400">
                 Copy link to clipboard
               </span>
             </button>
-            <Toast
+            <Toast.Root
               open={open}
               onOpenChange={setOpen}
               className="space-y-2 rounded-lg border border-neutral-200 bg-neutral-100 p-4 shadow-lg dark:border-neutral-700 dark:bg-neutral-900"
             >
-              <ToastTitle className="flex items-center text-black dark:text-white">
+              <Toast.Title className="flex items-center text-black dark:text-white">
                 <CheckCircleIcon className="mr-2 h-6 w-6 flex-shrink-0 text-teal-500 dark:text-teal-400" />
                 {"Copied to clipboard!"}
-              </ToastTitle>
-              <ToastDescription className="font-mono text-xs text-neutral-600 dark:text-neutral-400">
-                {"https://www.kejk.tech/thoughts/" + post?.slug}
-              </ToastDescription>
-            </Toast>
-            <ToastViewport className="felx-col w- fixed bottom-0 right-0 z-50 m-0 flex w-auto max-w-screen-sm list-none gap-4 p-6 outline-none" />
-          </ToastProvider>
+              </Toast.Title>
+              <Toast.Description asChild>
+                <span className="font-mono text-xs text-neutral-600 dark:text-neutral-400">
+                  {"https://www.kejk.tech/thoughts/" + post?.slug}
+                </span>
+              </Toast.Description>
+            </Toast.Root>
+            <Toast.Viewport className="felx-col w- fixed bottom-0 right-0 z-50 m-0 flex w-auto max-w-screen-sm list-none gap-4 p-6 outline-none" />
+          </Toast.Provider>
         </div>
         <hr className="my-4 border-neutral-300 dark:border-neutral-700" />
         <AllCapsHeader marginTop={0} justify={"justify-start"}>
