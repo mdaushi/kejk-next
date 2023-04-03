@@ -264,6 +264,9 @@ export default function Home({
                 key={idx}
                 href={social.metadata.url}
                 title={social.title}
+                icon={social.metadata.icon.imgix_url}
+                snippet={social.metadata.snippet}
+                handle={social.metadata.handle}
               />
             );
           })}

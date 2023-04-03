@@ -131,7 +131,7 @@ export default function Post({ allPosts, post }) {
             <Toast.Root
               open={open}
               onOpenChange={setOpen}
-              className="space-y-2 rounded-lg border border-neutral-200 bg-neutral-100 p-4 shadow-lg dark:border-neutral-700 dark:bg-neutral-900"
+              className="space-y-2 rounded-lg border border-neutral-200 bg-neutral-100 p-4 shadow-lg data-[swipe=cancel]:translate-x-0 data-[swipe=move]:translate-x-[var(--radix-toast-swipe-move-x)] data-[state=closed]:animate-hide data-[state=open]:animate-slideIn data-[swipe=end]:animate-swipeOut data-[swipe=cancel]:transition-[transform_200ms_ease-out] dark:border-neutral-700 dark:bg-neutral-900"
             >
               <Toast.Title className="flex items-center text-black dark:text-white">
                 <CheckCircleIcon className="mr-2 h-6 w-6 flex-shrink-0 text-teal-500 dark:text-teal-400" />
@@ -143,7 +143,7 @@ export default function Post({ allPosts, post }) {
                 </span>
               </Toast.Description>
             </Toast.Root>
-            <Toast.Viewport className="felx-col w- fixed bottom-0 right-0 z-50 m-0 flex w-auto max-w-screen-sm list-none gap-4 p-6 outline-none" />
+            <Toast.Viewport className="fixed bottom-0 right-0 z-[2147483647] m-0 flex w-[390px] max-w-[100vw] list-none flex-col gap-[12px] p-[var(--viewport-padding)] outline-none [--viewport-padding:_24px]" />
           </Toast.Provider>
         </div>
         <hr className="my-4 border-neutral-300 dark:border-neutral-700" />
