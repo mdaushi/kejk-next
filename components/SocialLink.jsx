@@ -50,12 +50,12 @@ const SocialLink = ({ title, icon, handle, snippet, href }) => {
       {icon && (
         <HoverCard.Portal>
           <HoverCard.Content
-            className={`data-[side=bottom]:animate-slideUpAndFade data-[side=right]:animate-slideLeftAndFade data-[side=left]:animate-slideRightAndFade data-[side=top]:animate-slideDownAndFade w-[300px] rounded-md bg-white p-4 shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,hsl(206_22%_7%_/_20%)_0px_10px_20px_-16px] data-[state=open]:transition-all dark:border dark:border-neutral-800 dark:bg-neutral-900 ${sans.variable}`}
+            className={`data-[side=bottom]:animate-slideUpAndFade data-[side=right]:animate-slideLeftAndFade data-[side=left]:animate-slideRightAndFade data-[side=top]:animate-slideDownAndFade w-[300px] rounded-lg bg-white p-4 shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,hsl(206_22%_7%_/_20%)_0px_10px_20px_-16px] data-[state=open]:transition-all dark:border dark:border-neutral-800 dark:bg-neutral-900 ${sans.variable}`}
             sideOffset={4}
           >
             <div className="flex flex-col gap-[8px]">
               <Image
-                className="rounded-full border-2 border-neutral-200 bg-white dark:border-neutral-800"
+                className="rounded-full"
                 src={icon}
                 width={50}
                 height={50}

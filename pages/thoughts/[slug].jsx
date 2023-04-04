@@ -75,7 +75,7 @@ export default function Post({ allPosts, post }) {
         <meta property="twitter:description" content={metaDescription} />
         <meta property="twitter:image" content={metaImage} />
       </Head>
-      <main className="mx-auto max-w-3xl">
+      <div className="mx-auto max-w-3xl">
         {router.isFallback ? (
           <PageHeader>Loading...</PageHeader>
         ) : (
@@ -110,42 +110,44 @@ export default function Post({ allPosts, post }) {
             </article>
           </>
         )}
-        <div className="mt-12 flex w-full justify-center">
-          <Toast.Provider swipeDirection="right">
-            <button
-              className={classNames(
-                `mb-4 flex items-center justify-center space-x-2 rounded-md border border-neutral-200 bg-neutral-100 px-4 py-2 text-sm font-medium text-black transition ease-in-out hover:border-teal-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-white md:w-max md:text-base`
-              )}
-              onClick={() => {
-                setOpen(false);
-                window.clearTimeout(timerRef.current);
-                timerRef.current = window.setTimeout(() => {
-                  setOpen(true);
-                }, 100);
-              }}
+        <Toast.Provider
+          swipeDirection="right"
+          className="mt-12 flex w-full justify-center"
+        >
+          <button
+            className={classNames(
+              `mb-4 flex items-center justify-center space-x-2 rounded-md border border-neutral-200 bg-neutral-100 px-4 py-2 text-sm font-medium text-black transition ease-in-out hover:border-teal-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-white md:w-max md:text-base`
+            )}
+            onClick={() => {
+              setOpen(false);
+              window.clearTimeout(timerRef.current);
+              timerRef.current = window.setTimeout(() => {
+                setOpen(true);
+              }, 100);
+            }}
+          >
+            <span className="w-max text-neutral-500 dark:text-neutral-400">
+              Copy link to clipboard
+            </span>
+          </button>
+          <Toast.Root
+            open={open}
+            onOpenChange={setOpen}
+            className="space-y-2 rounded-lg border border-neutral-200 bg-neutral-100 p-4 shadow-lg data-[swipe=cancel]:translate-x-0 data-[swipe=move]:translate-x-[var(--radix-toast-swipe-move-x)] data-[state=closed]:animate-hide data-[state=open]:animate-slideIn data-[swipe=end]:animate-swipeOut data-[swipe=cancel]:transition-[transform_200ms_ease-out] dark:border-neutral-700 dark:bg-neutral-900"
+          >
+            <Toast.Title className="flex items-center text-black dark:text-white">
+              <CheckCircleIcon className="mr-2 h-6 w-6 flex-shrink-0 text-teal-500 dark:text-teal-400" />
+              Copied to clipboard!
+            </Toast.Title>
+            <Toast.Description
+              asChild
+              className="font-mono text-xs text-neutral-600 dark:text-neutral-400"
             >
-              <span className="w-max text-neutral-500 dark:text-neutral-400">
-                Copy link to clipboard
-              </span>
-            </button>
-            <Toast.Root
-              open={open}
-              onOpenChange={setOpen}
-              className="space-y-2 rounded-lg border border-neutral-200 bg-neutral-100 p-4 shadow-lg data-[swipe=cancel]:translate-x-0 data-[swipe=move]:translate-x-[var(--radix-toast-swipe-move-x)] data-[state=closed]:animate-hide data-[state=open]:animate-slideIn data-[swipe=end]:animate-swipeOut data-[swipe=cancel]:transition-[transform_200ms_ease-out] dark:border-neutral-700 dark:bg-neutral-900"
-            >
-              <Toast.Title className="flex items-center text-black dark:text-white">
-                <CheckCircleIcon className="mr-2 h-6 w-6 flex-shrink-0 text-teal-500 dark:text-teal-400" />
-                {"Copied to clipboard!"}
-              </Toast.Title>
-              <Toast.Description asChild>
-                <span className="font-mono text-xs text-neutral-600 dark:text-neutral-400">
-                  {"https://www.kejk.tech/thoughts/" + post?.slug}
-                </span>
-              </Toast.Description>
-            </Toast.Root>
-            <Toast.Viewport className="fixed bottom-0 right-0 z-[2147483647] m-0 flex w-[390px] max-w-[100vw] list-none flex-col gap-[12px] p-[var(--viewport-padding)] outline-none [--viewport-padding:_24px]" />
-          </Toast.Provider>
-        </div>
+              {"https://www.kejk.tech/thoughts/" + post?.slug}
+            </Toast.Description>
+          </Toast.Root>
+          <Toast.Viewport className="fixed bottom-0 right-0 z-[2147483647] m-0 flex w-[390px] max-w-[100vw] list-none flex-col gap-[12px] p-[var(--viewport-padding)] outline-none [--viewport-padding:_24px]" />
+        </Toast.Provider>
         <hr className="my-4 border-neutral-300 dark:border-neutral-700" />
         <AllCapsHeader marginTop={0} justify={"justify-start"}>
           More to explore
@@ -163,7 +165,7 @@ export default function Post({ allPosts, post }) {
                 </Link>
               ))}
         </div>
-      </main>
+      </div>
     </div>
   );
 }

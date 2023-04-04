@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import Button from "../components/Button";
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 import {
@@ -90,26 +89,22 @@ export default function Home({
           <Markdown content={home.metadata.content} className="-mt-4" />
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center space-x-4">
-          <Link href="mailto:karl@kejk.tech?subject=Let's chat!">
-            <Button
-              bgColor="bg-neutral-100 dark:bg-neutral-900"
-              textColor="text-black dark:text-white"
-              borderColor="border-neutral-200 dark:border-neutral-700"
-            >
-              <EnvelopeIcon width={20} height={20} className="mr-2" />
-              Chat to me
-            </Button>
-          </Link>
-          <Link href={"/about"}>
-            <Button
-              bgColor="bg-neutral-100 dark:bg-neutral-900"
-              textColor="text-black dark:text-white"
-              borderColor="border-neutral-200 dark:border-neutral-700"
-            >
-              <UserIcon width={20} height={20} className="mr-2" />
-              More about me
-            </Button>
-          </Link>
+          <Button
+            bgColor="bg-neutral-100 dark:bg-neutral-900"
+            textColor="text-black dark:text-white"
+            borderColor="border-neutral-200 dark:border-neutral-700"
+          >
+            <EnvelopeIcon width={20} height={20} className="mr-2" />
+            Chat to me
+          </Button>
+          <Button
+            bgColor="bg-neutral-100 dark:bg-neutral-900"
+            textColor="text-black dark:text-white"
+            borderColor="border-neutral-200 dark:border-neutral-700"
+          >
+            <UserIcon width={20} height={20} className="mr-2" />
+            More about me
+          </Button>
         </div>
         <AllCapsHeader
           marginTop={16}
@@ -122,26 +117,24 @@ export default function Home({
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
           {writings.map((writing, idx) => {
             return (
-              <Link key={idx} href={`/thoughts/${writing.slug}`}>
-                <WritingCard
-                  title={writing.title}
-                  subtitle={writing.metadata.snippet}
-                  tag={writing.metadata.tag}
-                />
-              </Link>
+              <WritingCard
+                key={idx}
+                title={writing.title}
+                subtitle={writing.metadata.snippet}
+                tag={writing.metadata.tag}
+              />
             );
           })}
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center">
-          <Link href={"/thoughts"}>
-            <Button
-              bgColor="bg-neutral-100 dark:bg-neutral-900"
-              textColor="text-black dark:text-white"
-            >
-              More thoughts
-              <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
-            </Button>
-          </Link>
+          <Button
+            bgColor="bg-neutral-100 dark:bg-neutral-900"
+            textColor="text-black dark:text-white"
+            href={"/thoughts"}
+          >
+            More thoughts
+            <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+          </Button>
         </div>
         <AllCapsHeader marginTop={16} justify={"justify-start"}>
           <SquaresPlusIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
@@ -161,24 +154,22 @@ export default function Home({
           })}
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center space-x-4">
-          <Link href={"/playground"}>
-            <Button
-              bgColor="bg-neutral-100 dark:bg-neutral-900"
-              textColor="text-black dark:text-white"
-            >
-              Playground
-              <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
-            </Button>
-          </Link>
-          <Link href={"/projects"}>
-            <Button
-              bgColor="bg-neutral-100 dark:bg-neutral-900"
-              textColor="text-black dark:text-white"
-            >
-              Client projects
-              <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
-            </Button>
-          </Link>
+          <Button
+            bgColor="bg-neutral-100 dark:bg-neutral-900"
+            textColor="text-black dark:text-white"
+            href={"/playground"}
+          >
+            Playground
+            <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+          </Button>
+          <Button
+            bgColor="bg-neutral-100 dark:bg-neutral-900"
+            textColor="text-black dark:text-white"
+            href={"/projects"}
+          >
+            Client projects
+            <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+          </Button>
         </div>
         <AllCapsHeader marginTop={16} justify={"justify-start"}>
           <FlagIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
@@ -197,15 +188,14 @@ export default function Home({
           })}
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center">
-          <Link href={"/features"}>
-            <Button
-              bgColor="bg-neutral-100 dark:bg-neutral-900"
-              textColor="text-black dark:text-white"
-            >
-              All features
-              <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
-            </Button>
-          </Link>
+          <Button
+            bgColor="bg-neutral-100 dark:bg-neutral-900"
+            textColor="text-black dark:text-white"
+            href={"/features"}
+          >
+            All features
+            <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+          </Button>
         </div>
         <AllCapsHeader marginTop={16} justify={"justify-start"}>
           <MusicalNoteIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
@@ -247,15 +237,13 @@ export default function Home({
           })}
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center">
-          <Link href={"/bookmarks"}>
-            <Button
-              bgColor="bg-neutral-100 dark:bg-neutral-900"
-              textColor="text-black dark:text-white"
-            >
-              All bookmarks
-              <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
-            </Button>
-          </Link>
+          <Button
+            bgColor="bg-neutral-100 dark:bg-neutral-900"
+            textColor="text-black dark:text-white"
+          >
+            All bookmarks
+            <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+          </Button>
         </div>
         <div className="mt-8 grid w-full grid-cols-3 items-center justify-between gap-4 md:mt-16 md:flex md:grid-cols-none md:justify-center md:gap-8">
           {socials.map((social, idx) => {

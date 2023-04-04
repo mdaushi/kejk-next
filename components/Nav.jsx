@@ -1,12 +1,15 @@
 "use client";
 
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import NavLink from "./NavLink";
 import { useEffect, useState } from "react";
-// import { JetBrains_Mono } from "@next/font/google";
 import Mori from "next/font/local";
-import SupplyMono from "next/font/local";
+import FraktionMono from "next/font/local";
+import * as NavigationMenu from "@radix-ui/react-navigation-menu";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import classNames from "classnames";
 
 const sans = Mori({
   src: [
@@ -44,58 +47,74 @@ const sans = Mori({
   variable: "--font-sans",
 });
 
-const mono = SupplyMono({
+const mono = FraktionMono({
   src: "../fonts/PPFraktionMono-Regular.woff2",
   variable: "--font-mono",
 });
 
 const navItems = [
   {
-    href: "/",
     label: "Home",
+    hasMultiple: false,
+    href: "/",
   },
   {
-    href: "/thoughts",
     label: "Writing",
+    hasMultiple: false,
+    href: "/thoughts",
   },
   {
-    href: "/playground",
-    label: "Playground",
+    label: "Work",
+    hasMultiple: true,
+    links: [
+      {
+        href: "/playground",
+        label: "Playground",
+        description: "A collection of my experiments and side projects.",
+      },
+      {
+        href: "/projects",
+        label: "Projects",
+        description: "A collection of my client and in-house work.",
+      },
+    ],
   },
   {
-    href: "/projects",
-    label: "Projects",
-  },
-  {
-    href: "/bookmarks",
     label: "Bookmarks",
+    hasMultiple: false,
+    href: "/bookmarks",
   },
   {
-    href: "/uses",
-    label: "Stack",
-  },
-];
-
-const portraitNavItems = [
-  {
-    href: "/",
-    label: "Home",
-  },
-  {
-    href: "/thoughts",
-    label: "Writing",
-  },
-  {
-    href: "/playground",
-    label: "Playground",
-  },
-  {
-    href: "/projects",
-    label: "Projects",
-  },
-  {
-    href: "/uses",
-    label: "Stack",
+    label: "•••",
+    hasMultiple: true,
+    links: [
+      {
+        href: "/features",
+        label: "Features",
+        description:
+          "Places I've talked to, written for, or been showcased by.",
+      },
+      {
+        href: "/uses",
+        label: "Stack",
+        description: "The teach that I use to build and power this site.",
+      },
+      {
+        href: "/arti",
+        label: "Arti",
+        description: "Interface directly with the OpenAI beta, natively..",
+      },
+      {
+        href: "/cosmic-go",
+        label: "Cosmic Go",
+        description: "Powering a personal SwiftUI app with Cosmic.",
+      },
+      {
+        href: "/lazy-pdf",
+        label: "Lazy PDF",
+        description: "Effortlessly create a PDF from a set of selected images.",
+      },
+    ],
   },
 ];
 
@@ -134,10 +153,8 @@ const Nav = () => {
 
   return (
     <div className={`${sans.variable}`}>
-      <div
-        as="nav"
-        className="hidden backdrop-blur-md dark:border-neutral-700 md:fixed md:top-0 md:z-50 md:mx-auto md:flex md:h-16 md:w-full md:items-center md:justify-center md:rounded-none md:border md:border-none md:border-neutral-200 md:bg-white md:py-0 md:shadow-none md:duration-500 dark:md:bg-neutral-950/50 dark:md:shadow-none"
-      >
+      {/* Desktop nav */}
+      <NavigationMenu.Root className="hidden backdrop-blur-md dark:border-neutral-700 md:fixed md:top-0 md:z-50 md:mx-auto md:flex md:h-16 md:w-full md:items-center md:justify-center md:rounded-none md:border md:border-none md:border-neutral-200 md:bg-white md:px-4 md:py-0 md:shadow-none md:duration-500 dark:md:bg-neutral-950/50 dark:md:shadow-none lg:px-0">
         <div className="mx-auto w-full justify-center lg:px-8">
           <div className="mx-auto flex max-w-7xl items-center justify-between">
             <div className="flex h-full w-full items-center">
@@ -163,29 +180,55 @@ const Nav = () => {
                 {"to find anything"}
               </p>
             </div>
-            <div className="mx-0 flex w-full items-center justify-end">
-              <div className="block">
-                {/* Desktop nav */}
-                <div className="md:hidden lg:flex lg:items-center lg:space-x-1">
-                  {navItems.map((item, idx) => (
-                    <NavLink href={item.href} key={idx}>
-                      <span className="nav">{item.label}</span>
-                    </NavLink>
-                  ))}
-                </div>
-                {/* Tablet Portrait nav */}
-                <div className="md:flex md:items-center md:space-x-1 lg:hidden">
-                  {portraitNavItems.map((item, idx) => (
-                    <NavLink href={item.href} key={idx}>
-                      <span className="nav">{item.label}</span>
-                    </NavLink>
-                  ))}
-                </div>
-              </div>
-            </div>
+            <NavigationMenu.List
+              className={`space-between m-0 flex w-full list-none  ${sans.variable}`}
+            >
+              {navItems.map((item, idx) => (
+                <NavigationMenu.Item key={idx}>
+                  <NavigationMenu.Trigger>
+                    {!item.hasMultiple && (
+                      <NavLink href={item.href}>
+                        <span className="nav">{item.label}</span>
+                      </NavLink>
+                    )}
+                    {item.hasMultiple && (
+                      <>
+                        <span className="nav">
+                          {item.label}
+                          <ChevronDownIcon
+                            className="ml-2 h-4 w-4 flex-shrink-0 text-neutral-500 transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180 dark:text-neutral-400"
+                            aria-hidden
+                          />
+                        </span>
+                      </>
+                    )}
+                  </NavigationMenu.Trigger>
+                  {item.hasMultiple && (
+                    <NavigationMenu.Content className="absolute left-0 top-0 w-auto data-[motion=from-end]:animate-enterFromRight data-[motion=from-start]:animate-enterFromLeft data-[motion=to-end]:animate-exitToRight data-[motion=to-start]:animate-exitToLeft sm:w-auto">
+                      <ul className="m-0 grid w-[400px] list-none grid-cols-2 gap-2 p-2">
+                        {item.links.map((link, idx) => (
+                          <ListItem
+                            href={link.href}
+                            title={link.label}
+                            key={idx}
+                          >
+                            {link.description}
+                          </ListItem>
+                        ))}
+                      </ul>
+                    </NavigationMenu.Content>
+                  )}
+                </NavigationMenu.Item>
+              ))}
+            </NavigationMenu.List>
           </div>
         </div>
-      </div>
+
+        <div className="absolute top-full mr-16 flex w-full max-w-7xl justify-end perspective-[2000px]">
+          <NavigationMenu.Viewport className="relative mt-4 h-[var(--radix-navigation-menu-viewport-height)] w-full origin-[top_right] overflow-hidden rounded-lg bg-white transition-[width,_height] duration-300 data-[state=closed]:animate-scaleOut data-[state=open]:animate-scaleIn dark:border dark:border-neutral-800 dark:bg-neutral-900 sm:w-[var(--radix-navigation-menu-viewport-width)]" />
+        </div>
+      </NavigationMenu.Root>
+
       {/* Mobile nav */}
       <div
         as="nav"
@@ -202,5 +245,28 @@ const Nav = () => {
     </div>
   );
 };
+
+// eslint-disable-next-line react/display-name
+const ListItem = React.forwardRef(
+  ({ className, children, title, ...props }, forwardedRef) => (
+    <li>
+      <NavigationMenu.Link asChild>
+        <Link
+          className={classNames(
+            "block h-full w-full select-none rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-neutral-200 focus:shadow-[0_0_0_2px] focus:shadow-neutral-300 dark:hover:bg-neutral-800",
+            className
+          )}
+          {...props}
+          ref={forwardedRef}
+        >
+          <div className="mb-2 font-sans font-bold leading-[1.2] text-neutral-800 dark:text-neutral-200">
+            {title}
+          </div>
+          <p className="mb-0 pb-0 text-sm leading-[1.4]">{children}</p>
+        </Link>
+      </NavigationMenu.Link>
+    </li>
+  )
+);
 
 export default Nav;
