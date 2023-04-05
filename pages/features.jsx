@@ -47,7 +47,7 @@ export default function Feature({ features }) {
 
   const metaTitle = "KEJK | Features";
   const metaImage =
-    "https://imgix.cosmicjs.com/49f33810-ba80-11ed-9435-5306e8ef93bc-meta-features.png";
+    "https://imgix.cosmicjs.com/231db250-d395-11ed-9cfc-8fe1cfdcf0b7-meta-features.png";
   const metaDescription = "Designer, developer, writer and musician";
   const url = "https://kejk.tech/features";
 

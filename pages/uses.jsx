@@ -15,7 +15,7 @@ const cosmic = createBucketClient({
 export default function Projects({ stacks }) {
   const metaTitle = "KEJK | Stack";
   const metaImage =
-    "https://imgix.cosmicjs.com/4a011ac0-ba80-11ed-9435-5306e8ef93bc-meta-uses.png";
+    "https://imgix.cosmicjs.com/284fce20-d395-11ed-9cfc-8fe1cfdcf0b7-meta-uses.png";
   const metaDescription = "Designer, developer, writer and musician";
   const url = "https://kejk.tech/uses";
 

@@ -51,7 +51,7 @@ export default function Bookmark({ bookmarks }) {
 
   const metaTitle = "KEJK | Bookmarks";
   const metaImage =
-    "https://imgix.cosmicjs.com/49ee2f00-ba80-11ed-9435-5306e8ef93bc-meta-bookmarks.png";
+    "https://imgix.cosmicjs.com/23449b40-d395-11ed-9cfc-8fe1cfdcf0b7-meta-bookmarks.png";
   const metaDescription = "A collection of Karl's bookmarks";
   const url = "https://kejk.tech/bookmarks";
 
