@@ -1,11 +1,11 @@
 import React from "react";
-import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
+import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 import Tag from "./Tag";
 
 const FeatureCard = ({ title, type, link }) => {
   return (
     <a
-      className="0  group space-y-2 rounded-xl transition-all ease-in-out hover:cursor-pointer
+      className="group space-y-2 rounded-xl transition-all ease-in-out hover:cursor-pointer
     "
       href={link}
       target="_blank"
@@ -15,7 +15,7 @@ const FeatureCard = ({ title, type, link }) => {
         <header className="mr-2 block text-lg font-bold text-neutral-700 group-hover:underline group-hover:decoration-teal-500 group-hover:decoration-2 group-hover:underline-offset-4 dark:text-neutral-200">
           {title}
         </header>
-        <ArrowLongRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+        <ArrowUpRightIcon className="h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
       </div>
       <Tag>{type}</Tag>
     </a>
