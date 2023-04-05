@@ -69,7 +69,7 @@ export default function About({ about, principles, allJobs }) {
                 key={idx}
                 className="rounded-md bg-neutral-50 p-3 dark:bg-neutral-900"
               >
-                <span className="text-lg font-bold text-neutral-700 dark:text-neutral-300">
+                <span className="text-lg font-semibold text-neutral-700 dark:text-neutral-300">
                   {principle.title}
                 </span>
               </div>
@@ -81,7 +81,7 @@ export default function About({ about, principles, allJobs }) {
           {allJobs.metadata.job.map((job, idx) => {
             return (
               <div key={idx} className="flex w-full items-center space-x-4">
-                <span className="w-max whitespace-nowrap text-lg font-bold text-neutral-700 dark:text-neutral-300">
+                <span className="w-max whitespace-nowrap text-lg font-semibold text-neutral-700 dark:text-neutral-300">
                   {job.company}
                   {job.url != null && (
                     <a

@@ -124,16 +124,16 @@ const mobileNavItems = [
     label: "Home",
   },
   {
+    href: "/about",
+    label: "About",
+  },
+  {
     href: "/thoughts",
     label: "Writing",
   },
   {
     href: "/playground",
     label: "Playground",
-  },
-  {
-    href: "/uses",
-    label: "Stack",
   },
 ];
 
@@ -204,7 +204,7 @@ const Nav = () => {
                     )}
                   </NavigationMenu.Trigger>
                   {item.hasMultiple && (
-                    <NavigationMenu.Content className="absolute left-0 top-0 w-auto data-[motion=from-end]:animate-enterFromRight data-[motion=from-start]:animate-enterFromLeft data-[motion=to-end]:animate-exitToRight data-[motion=to-start]:animate-exitToLeft sm:w-auto">
+                    <NavigationMenu.Content className="absolute left-0 top-0 w-auto data-[motion=from-end]:animate-enterFromRight data-[motion=from-start]:animate-enterFromLeft data-[motion=to-end]:animate-exitToRight data-[motion=to-start]:animate-exitToLeft">
                       <ul className="m-0 grid w-[600px] list-none grid-cols-2 gap-2 p-2">
                         {item.links.map((link, idx) => (
                           <ListItem
@@ -224,7 +224,7 @@ const Nav = () => {
           </div>
         </div>
 
-        <div className="absolute top-full mr-16 flex w-full max-w-7xl justify-end perspective-[2000px]">
+        <div className="absolute top-full mr-4 flex w-full max-w-7xl justify-end perspective-[2000px]">
           <NavigationMenu.Viewport className="relative mt-4 h-[var(--radix-navigation-menu-viewport-height)] w-full origin-[top_right] overflow-hidden rounded-lg bg-white transition-[width,_height] duration-300 data-[state=closed]:animate-scaleOut data-[state=open]:animate-scaleIn dark:border dark:border-neutral-800 dark:bg-neutral-900 sm:w-[var(--radix-navigation-menu-viewport-width)]" />
         </div>
       </NavigationMenu.Root>
