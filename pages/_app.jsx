@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import "../styles/globals.css";
 import Mori from "next/font/local";
 import Migra from "next/font/local";
-import SupplyMono from "next/font/local";
+import FraktionMono from "next/font/local";
 
 const sans = Mori({
   src: [
@@ -29,7 +29,7 @@ const sans = Mori({
       style: "italic",
     },
     {
-      path: "../fonts/PPMori-SemiBold.woff2",
+      path: "../fonts/PPMori-ExtraBold.woff2",
       weight: "700",
       style: "normal",
     },
@@ -42,7 +42,7 @@ const sans = Mori({
   variable: "--font-sans",
 });
 
-const mono = SupplyMono({
+const mono = FraktionMono({
   src: "../fonts/PPFraktionMono-Regular.woff2",
   variable: "--font-mono",
 });
