@@ -138,7 +138,7 @@ export default function Writing({ writings }) {
               </Dialog.Trigger>
               <Dialog.Portal>
                 <Dialog.Overlay className="fixed inset-0 bg-black/20 backdrop-blur-sm data-[state=open]:animate-overlayShow" />
-                <Dialog.Content className="fixed left-[50%] top-[50%] max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-50%] rounded-lg bg-white p-4 shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none data-[state=open]:animate-contentShow dark:border dark:border-neutral-700 dark:bg-neutral-800">
+                <Dialog.Content className="fixed left-[50%] top-[25%] md:top-[50%] max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-25%] md:translate-y-[-50%] rounded-lg bg-white p-4 shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none data-[state=open]:animate-contentShow dark:border dark:border-neutral-700 dark:bg-neutral-800">
                   <Dialog.Title
                     className={`m-0 text-lg font-bold text-black dark:text-white ${sans.variable}`}
                   >
@@ -169,7 +169,7 @@ export default function Writing({ writings }) {
                       </label>
                       <div className="flex w-full items-center gap-4">
                         <input
-                          className={`inline-flex h-10 w-full flex-1 items-center justify-center rounded-[4px] bg-neutral-50 px-[10px] font-sans text-[15px] leading-none text-neutral-800 shadow-[0_0_0_1px] shadow-neutral-500 outline-none focus:shadow-[0_0_0_2px] focus:shadow-teal-500 dark:bg-neutral-900 dark:text-neutral-200 ${sans.variable}`}
+                          className={`inline-flex h-10 w-full flex-1 items-center justify-center rounded-md bg-neutral-50 px-2 font-sans leading-none text-neutral-800 shadow-[0_0_0_1px] shadow-neutral-500 outline-none focus:shadow-[0_0_0_2px] focus:shadow-teal-500 dark:bg-neutral-900 dark:text-neutral-200 ${sans.variable}`}
                           type="email"
                           name="email"
                           id="bd-email"
