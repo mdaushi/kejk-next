@@ -141,9 +141,10 @@ export default function Post({ allPosts, post }) {
             </Toast.Title>
             <Toast.Description
               asChild
-              className="font-mono text-xs text-neutral-600 dark:text-neutral-400"
             >
+            <span className="font-mono text-xs text-neutral-600 dark:text-neutral-400">
               {"https://www.kejk.tech/thoughts/" + post?.slug}
+              </span>
             </Toast.Description>
           </Toast.Root>
           <Toast.Viewport className="fixed bottom-0 right-0 z-[2147483647] m-0 flex w-[390px] max-w-[100vw] list-none flex-col gap-[12px] p-[var(--viewport-padding)] outline-none [--viewport-padding:_24px]" />
