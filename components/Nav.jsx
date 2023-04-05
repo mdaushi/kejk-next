@@ -181,7 +181,7 @@ const Nav = () => {
               </p>
             </div>
             <NavigationMenu.List
-              className={`space-between m-0 flex w-full list-none  ${sans.variable}`}
+              className={`m-0 flex w-full list-none space-x-2  ${sans.variable}`}
             >
               {navItems.map((item, idx) => (
                 <NavigationMenu.Item key={idx}>

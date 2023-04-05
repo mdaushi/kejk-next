@@ -3,7 +3,7 @@ import PlausibleProvider from "next-plausible";
 import Layout from "../components/Layout";
 import "../styles/globals.css";
 import Mori from "next/font/local";
-import Migra from "next/font/local";
+import Rader from "next/font/local";
 import FraktionMono from "next/font/local";
 
 const sans = Mori({
@@ -47,8 +47,8 @@ const mono = FraktionMono({
   variable: "--font-mono",
 });
 
-const serif = Migra({
-  src: "../fonts/PPMigra-Regular.woff2",
+const serif = Rader({
+  src: "../fonts/PPRader-BoldItalic.woff2",
   variable: "--font-serif",
 });
 
