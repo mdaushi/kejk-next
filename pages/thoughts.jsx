@@ -125,7 +125,7 @@ export default function Writing({ writings }) {
         <div className="mx-auto w-full max-w-5xl">
           <div className="flex w-full items-center justify-between">
             <PageHeader>Writing</PageHeader>
-            <Dialog.Root className="z-50">
+            <Dialog.Root>
               <Dialog.Trigger asChild>
                 <Button
                   bgColor="bg-neutral-100 dark:bg-neutral-900 mb-4 md:mb-0"
@@ -137,8 +137,8 @@ export default function Writing({ writings }) {
                 </Button>
               </Dialog.Trigger>
               <Dialog.Portal>
-                <Dialog.Overlay className="fixed inset-0 bg-black/20 backdrop-blur-sm data-[state=open]:animate-overlayShow" />
-                <Dialog.Content className="fixed left-[50%] top-[25%] md:top-[50%] max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-25%] md:translate-y-[-50%] rounded-lg bg-white p-4 shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none data-[state=open]:animate-contentShow dark:border dark:border-neutral-700 dark:bg-neutral-800">
+                <Dialog.Overlay className="fixed z-40 inset-0 bg-black/20 backdrop-blur-sm data-[state=open]:animate-overlayShow" />
+                <Dialog.Content className="fixed z-50 left-[50%] top-[25%] md:top-[50%] max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-25%] md:translate-y-[-50%] rounded-lg bg-white p-4 shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none data-[state=open]:animate-contentShow dark:border dark:border-neutral-700 dark:bg-neutral-800">
                   <Dialog.Title
                     className={`m-0 text-lg font-bold text-black dark:text-white ${sans.variable}`}
                   >
