@@ -14,6 +14,7 @@ import Markdown from "../components/Markdown";
 import WritingCard from "../components/WritingCard";
 import AppCard from "../components/AppCard";
 import FeatureCard from "../components/FeatureCard";
+import BookmarkCard from "../components/BookmarkCard";
 import AllCapsHeader from "../components/AllCapsHeader";
 import HomeHeader from "../components/HomeHeader";
 import SocialLink from "../components/SocialLink";
@@ -229,7 +230,7 @@ export default function Home({
                 rel="noreferrer"
                 className=""
               >
-                <WritingCard
+                <BookmarkCard
                   title={bookmark.title}
                   subtitle={bookmark.metadata.snippet}
                 />

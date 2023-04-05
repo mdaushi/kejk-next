@@ -205,7 +205,7 @@ const Nav = () => {
                   </NavigationMenu.Trigger>
                   {item.hasMultiple && (
                     <NavigationMenu.Content className="absolute left-0 top-0 w-auto data-[motion=from-end]:animate-enterFromRight data-[motion=from-start]:animate-enterFromLeft data-[motion=to-end]:animate-exitToRight data-[motion=to-start]:animate-exitToLeft sm:w-auto">
-                      <ul className="m-0 grid w-[400px] list-none grid-cols-2 gap-2 p-2">
+                      <ul className="m-0 grid w-[600px] list-none grid-cols-2 gap-2 p-2">
                         {item.links.map((link, idx) => (
                           <ListItem
                             href={link.href}

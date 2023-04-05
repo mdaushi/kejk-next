@@ -5,9 +5,9 @@ import WritingCard from "../components/WritingCard";
 import Button from "../components/Button";
 import fs from "fs";
 import { Feed } from "feed";
-import { Dialog, Transition } from "@headlessui/react";
-import { Fragment, useState } from "react";
-import { EnvelopeIcon, RssIcon } from "@heroicons/react/20/solid";
+import * as Dialog from "@radix-ui/react-dialog";
+import { useState } from "react";
+import { RssIcon, XMarkIcon } from "@heroicons/react/20/solid";
 import SearchInput from "../components/SearchInput";
 import Mori from "next/font/local";
 
@@ -34,11 +34,6 @@ const sans = Mori({
       style: "italic",
     },
     {
-      path: "../fonts/PPMori-SemiBold.woff2",
-      weight: "700",
-      style: "normal",
-    },
-    {
       path: "../fonts/PPMori-ExtraBoldItalic.woff2",
       weight: "700",
       style: "italic",
@@ -63,16 +58,6 @@ export default function Writing({ writings }) {
     "https://imgix.cosmicjs.com/49f9a0b0-ba80-11ed-9435-5306e8ef93bc-meta-thoughts.png";
   const metaDescription = "Designer, developer, writer and musician";
   const url = "https://kejk.tech/thoughts";
-
-  const [isOpen, setIsOpen] = useState(false);
-
-  function closeModal() {
-    setIsOpen(false);
-  }
-
-  function openModal() {
-    setIsOpen(true);
-  }
 
   // the value of the search field
   const [title, setTitle] = useState("");
@@ -140,107 +125,99 @@ export default function Writing({ writings }) {
         <div className="mx-auto w-full max-w-5xl">
           <div className="flex w-full items-center justify-between">
             <PageHeader>Writing</PageHeader>
-            <Button
-              bgColor="bg-neutral-100 dark:bg-neutral-900 mb-4 md:mb-0"
-              textColor="text-black dark:text-white"
-              borderColor="border-neutral-200 dark:border-neutral-700"
-              onClick={openModal}
-            >
-              <RssIcon className="mr-2" width={20} height={20} />
-              Subscribe
-            </Button>
-            <>
-              <Transition appear show={isOpen} as={Fragment}>
-                <Dialog as="div" className="relative z-10" onClose={closeModal}>
-                  <Transition.Child
-                    as={Fragment}
-                    enter="ease-out duration-300"
-                    enterFrom="opacity-0"
-                    enterTo="opacity-100"
-                    leave="ease-in duration-200"
-                    leaveFrom="opacity-100"
-                    leaveTo="opacity-0"
+            <Dialog.Root>
+              <Dialog.Trigger asChild>
+                <Button
+                  bgColor="bg-neutral-100 dark:bg-neutral-900 mb-4 md:mb-0"
+                  textColor="text-black dark:text-white"
+                  borderColor="border-neutral-200 dark:border-neutral-700"
+                >
+                  <RssIcon className="mr-2" width={20} height={20} />
+                  Subscribe
+                </Button>
+              </Dialog.Trigger>
+              <Dialog.Portal>
+                <Dialog.Overlay className="fixed inset-0 bg-black/20 backdrop-blur-sm data-[state=open]:animate-overlayShow" />
+                <Dialog.Content className="fixed left-[50%] top-[50%] max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-50%] rounded-lg bg-white p-4 shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none data-[state=open]:animate-contentShow dark:border dark:border-neutral-700 dark:bg-neutral-800">
+                  <Dialog.Title
+                    className={`m-0 text-lg font-bold text-black dark:text-white ${sans.variable}`}
                   >
-                    <div className="fixed inset-0 bg-black bg-opacity-50" />
-                  </Transition.Child>
-
-                  <div className="fixed inset-0 overflow-y-auto">
-                    <div className="flex min-h-full items-center justify-center p-4 text-center">
-                      <Transition.Child
-                        as={Fragment}
-                        enter="ease-out duration-300"
-                        enterFrom="opacity-0 scale-95"
-                        enterTo="opacity-100 scale-100"
-                        leave="ease-in duration-200"
-                        leaveFrom="opacity-100 scale-100"
-                        leaveTo="opacity-0 scale-95"
+                    Subscribe
+                  </Dialog.Title>
+                  <Dialog.Description
+                    className={`mb-2 mt-2 text-sm leading-normal text-neutral-500 dark:text-neutral-300 ${sans.variable}`}
+                  >
+                    Get an email whenever I publish a new thought.
+                  </Dialog.Description>
+                  <form
+                    action="https://buttondown.email/api/emails/embed-subscribe/karl"
+                    method="post"
+                    target="popupwindow"
+                    onSubmit="window.open(
+                      'https://buttondown.email/karl',
+                      'popupwindow')"
+                    className="embeddable-buttondown-form"
+                  >
+                    <fieldset
+                      className={`mb-4 flex flex-col items-start gap-2 ${sans.variable}`}
+                    >
+                      <label
+                        className={`text-right font-sans text-sm text-neutral-500 dark:text-neutral-400 ${sans.variable}`}
+                        htmlFor="bd-email"
                       >
-                        <Dialog.Panel
-                          className={`w-full max-w-md transform overflow-hidden rounded-2xl bg-neutral-50 p-4 text-left align-middle font-sans shadow-xl transition-all dark:border dark:border-neutral-700 dark:bg-neutral-900 ${sans.variable}`}
+                        Your email
+                      </label>
+                      <div className="flex w-full items-center gap-4">
+                        <input
+                          className={`inline-flex h-10 w-full flex-1 items-center justify-center rounded-[4px] bg-neutral-50 px-[10px] font-sans text-[15px] leading-none text-neutral-800 shadow-[0_0_0_1px] shadow-neutral-500 outline-none focus:shadow-[0_0_0_2px] focus:shadow-teal-500 dark:bg-neutral-900 dark:text-neutral-200 ${sans.variable}`}
+                          type="email"
+                          name="email"
+                          id="bd-email"
+                          placeholder="e.g. hello@email.com"
+                          required
+                        />
+                        <input type="hidden" value="1" name="embed" />
+                        <button
+                          type="submit"
+                          className={`inline-flex h-10 items-center justify-center rounded-full bg-teal-500 px-[15px] font-sans font-medium leading-none text-teal-50 hover:bg-teal-600 focus:shadow-[0_0_0_2px] focus:shadow-teal-800 focus:outline-none ${sans.variable}`}
                         >
-                          <Dialog.Title className="text-lg font-medium leading-6 text-neutral-900 dark:text-neutral-50">
-                            Subscribe
-                          </Dialog.Title>
-                          <div className="mt-2">
-                            <span className="text-neutral-600 dark:text-neutral-400">
-                              Get an email whenever I publish a new thought.
-                            </span>
-                            <form
-                              action="https://buttondown.email/api/emails/embed-subscribe/karl"
-                              method="post"
-                              target="popupwindow"
-                              onSubmit="window.open('https://buttondown.email/karl', 'popupwindow')"
-                              className="embeddable-buttondown-form mt-4 grid grid-cols-1 gap-2 pb-4 md:grid-cols-3"
-                            >
-                              <label
-                                htmlFor="bd-email"
-                                className="md:col-span-2"
-                              >
-                                <span className="sr-only">
-                                  Enter your email
-                                </span>
-                                <input
-                                  type="email"
-                                  name="email"
-                                  id="bd-email"
-                                  placeholder="e.g. sly@stallone.com"
-                                  className="w-full rounded-lg border border-neutral-200 bg-neutral-100 px-3 py-3 text-neutral-800 focus:border focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-50"
-                                  required
-                                />
-                              </label>
-                              <input type="hidden" value="1" name="embed" />
-                              <button
-                                type="submit"
-                                className="inline-flex items-center justify-center rounded-md border border-transparent bg-teal-600 px-4 py-2 text-sm font-medium text-teal-100 hover:bg-teal-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
-                                onClick={closeModal}
-                              >
-                                <EnvelopeIcon
-                                  width={20}
-                                  height={20}
-                                  className="mr-2 inline-block text-teal-50"
-                                />
-                                Subscribe
-                              </button>
-                            </form>
-                            <span className=" text-neutral-600 dark:text-neutral-300">
-                              Or you can subscribe via{" "}
-                            </span>
-                            <a
-                              href="https://kejk.tech/feed.xml"
-                              target={"_blank"}
-                              rel={"noopener noreferrer"}
-                              className="text-teal-700 dark:text-teal-500"
-                            >
-                              RSS
-                            </a>
-                          </div>
-                        </Dialog.Panel>
-                      </Transition.Child>
+                          Subscribe
+                        </button>
+                      </div>
+                    </fieldset>
+                    <div
+                      className={`mt-4 flex items-center justify-between font-sans ${sans.variable}`}
+                    >
+                      <div>
+                        <span className=" text-neutral-600 dark:text-neutral-300">
+                          Or you can subscribe via{" "}
+                        </span>
+                        <a
+                          href="https://kejk.tech/feed.xml"
+                          target={"_blank"}
+                          rel={"noopener noreferrer"}
+                          className="font-bold text-teal-700 underline decoration-2 underline-offset-2 dark:text-teal-500"
+                        >
+                          RSS
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                </Dialog>
-              </Transition>
-            </>
+                  </form>
+                  <Dialog.Close asChild>
+                    <button
+                      className="absolute right-2 top-2 inline-flex h-6 w-6 appearance-none items-center justify-center rounded-full  hover:bg-teal-400 focus:shadow-[0_0_0_2px] focus:shadow-teal-500 focus:outline-none dark:hover:bg-teal-800"
+                      aria-label="Close"
+                    >
+                      <XMarkIcon
+                        height={16}
+                        width={16}
+                        className="text-neutral-600 hover:text-teal-500 dark:text-neutral-400 dark:hover:text-teal-50"
+                      />
+                    </button>
+                  </Dialog.Close>
+                </Dialog.Content>
+              </Dialog.Portal>
+            </Dialog.Root>
           </div>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div className="scrollbar-hidden grid grid-flow-col items-center space-x-2 overflow-x-auto">
