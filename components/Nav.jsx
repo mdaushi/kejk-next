@@ -97,12 +97,12 @@ const navItems = [
       {
         href: "/uses",
         label: "Stack",
-        description: "The teach that I use to build and power this site.",
+        description: "The tech that I use to build and power this site.",
       },
       {
         href: "/arti",
         label: "Arti",
-        description: "Interface directly with the OpenAI beta, natively..",
+        description: "Interface directly with the OpenAI beta, natively.",
       },
       {
         href: "/cosmic-go",
