@@ -46,8 +46,7 @@ export default function Home({
   socials,
 }) {
   const metaTitle = "KEJK | Home";
-  const metaImage =
-    "https://imgix.cosmicjs.com/27bc5e70-ba80-11ed-9435-5306e8ef93bc-image.png";
+  const metaImage = `${home.metadata.meta.imgix_url}`;
   const metaDescription = "Designer, developer, writer and musician";
   const url = "https://kejk.tech";
 
@@ -93,6 +92,7 @@ export default function Home({
             bgColor="bg-neutral-100 dark:bg-neutral-900"
             textColor="text-black dark:text-white"
             borderColor="border-neutral-200 dark:border-neutral-700"
+            href="mailto:karl@kejk.tech?subject=Let's chat!"
           >
             <EnvelopeIcon width={20} height={20} className="mr-2" />
             Chat to me
@@ -101,6 +101,7 @@ export default function Home({
             bgColor="bg-neutral-100 dark:bg-neutral-900"
             textColor="text-black dark:text-white"
             borderColor="border-neutral-200 dark:border-neutral-700"
+            href="/about"
           >
             <UserIcon width={20} height={20} className="mr-2" />
             More about me

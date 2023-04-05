@@ -4,10 +4,7 @@ import HeaderView from "../components/HeaderView";
 import Markdown from "../components/Markdown";
 import PageHeader from "../components/PageHeader";
 import Button from "../components/Button";
-import {
-  RectangleStackIcon,
-  ArrowUpRightIcon,
-} from "@heroicons/react/20/solid";
+import { RectangleStackIcon } from "@heroicons/react/20/solid";
 
 const { createBucketClient } = require("@cosmicjs/sdk");
 
@@ -21,8 +18,7 @@ const cosmic = createBucketClient({
 
 export default function About({ about, principles, allJobs }) {
   const metaTitle = "KEJK | About";
-  const metaImage =
-    "https://imgix.cosmicjs.com/3197de10-ba80-11ed-9435-5306e8ef93bc-image.png";
+  const metaImage = `${about.metadata.meta.imgix_url}`;
   const metaDescription = "Designer, developer, writer and musician";
   const url = "https://kejk.tech/about";
 
@@ -55,16 +51,15 @@ export default function About({ about, principles, allJobs }) {
           <Markdown content={about.metadata.content} />
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center">
-          <Link href="/uses">
-            <Button
-              bgColor="bg-neutral-100 dark:bg-neutral-900"
-              textColor="text-black dark:text-white"
-              borderColor="border-neutral-200 dark:border-neutral-700"
-            >
-              <RectangleStackIcon width={20} height={20} className="mr-2" />
-              My site stack
-            </Button>
-          </Link>
+          <Button
+            bgColor="bg-neutral-100 dark:bg-neutral-900"
+            textColor="text-black dark:text-white"
+            borderColor="border-neutral-200 dark:border-neutral-700"
+            href="/uses"
+          >
+            <RectangleStackIcon width={20} height={20} className="mr-2" />
+            My site stack
+          </Button>
         </div>
         <HeaderView className="mt-16">Principles</HeaderView>
         <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
