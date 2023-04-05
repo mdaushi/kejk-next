@@ -142,7 +142,7 @@ export default function Post({ allPosts, post }) {
             <Toast.Description
               asChild
             >
-            <span className="font-mono text-xs text-neutral-600 dark:text-neutral-400">
+            <span className="font-mono text-xs text-neutral-600 dark:text-neutral-400 leading-tight pt-1">
               {"https://www.kejk.tech/thoughts/" + post?.slug}
               </span>
             </Toast.Description>
