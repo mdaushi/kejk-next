@@ -80,14 +80,14 @@ const navItems = [
     ],
   },
   {
-    label: "Bookmarks",
-    hasMultiple: false,
-    href: "/bookmarks",
-  },
-  {
     label: "•••",
     hasMultiple: true,
     links: [
+      {
+        href: "/bookmarks",
+        label: "Bookmarks",
+        description: "A collection of my bookmarks from around the web.",
+      },
       {
         href: "/features",
         label: "Features",
@@ -154,7 +154,7 @@ const Nav = () => {
   return (
     <div className={`${sans.variable}`}>
       {/* Desktop nav */}
-      <NavigationMenu.Root className="hidden backdrop-blur-md dark:border-neutral-700 md:fixed md:top-0 md:z-50 md:mx-auto md:flex md:h-16 md:w-full md:items-center md:justify-center md:rounded-none md:border md:border-none md:border-neutral-200 md:bg-white md:px-4 md:py-0 md:shadow-none md:duration-500 dark:md:bg-neutral-950/50 dark:md:shadow-none lg:px-0">
+      <NavigationMenu.Root className="hidden backdrop-blur-md dark:border-neutral-700 md:fixed md:top-0 md:z-50 md:mx-auto md:flex md:h-16 md:w-full md:items-center md:justify-center md:rounded-none md:border md:border-none md:border-neutral-200 md:bg-white md:px-4 md:py-0 md:shadow-none md:duration-500 dark:md:bg-black/50 dark:md:shadow-none lg:px-0">
         <div className="mx-auto w-full justify-center lg:px-8">
           <div className="mx-auto flex max-w-7xl items-center justify-between">
             <div className="flex h-full w-full items-center">

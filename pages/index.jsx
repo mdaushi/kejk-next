@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Button from "../components/Button";
-import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import {
   EnvelopeIcon,
   UserIcon,
@@ -135,7 +135,7 @@ export default function Home({
             href={"/thoughts"}
           >
             More thoughts
-            <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+            <ArrowRightIcon className="ml-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
           </Button>
         </div>
         <AllCapsHeader marginTop={16} justify={"justify-start"}>
@@ -162,7 +162,7 @@ export default function Home({
             href={"/playground"}
           >
             Playground
-            <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+            <ArrowRightIcon className="ml-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
           </Button>
           <Button
             bgColor="bg-neutral-100 dark:bg-neutral-900"
@@ -170,7 +170,7 @@ export default function Home({
             href={"/projects"}
           >
             Client projects
-            <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+            <ArrowRightIcon className="ml-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
           </Button>
         </div>
         <AllCapsHeader marginTop={16} justify={"justify-start"}>
@@ -196,7 +196,7 @@ export default function Home({
             href={"/features"}
           >
             All features
-            <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+            <ArrowRightIcon className="ml-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
           </Button>
         </div>
         <AllCapsHeader marginTop={16} justify={"justify-start"}>
@@ -244,7 +244,7 @@ export default function Home({
             textColor="text-black dark:text-white"
           >
             All bookmarks
-            <ArrowLongRightIcon className="ml-2 h-6 w-6 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+            <ArrowRightIcon className="ml-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
           </Button>
         </div>
         <div className="mt-8 grid w-full grid-cols-3 items-center justify-between gap-4 md:mt-16 md:flex md:grid-cols-none md:justify-center md:gap-8">

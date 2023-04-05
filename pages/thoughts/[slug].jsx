@@ -86,7 +86,7 @@ export default function Post({ allPosts, post }) {
               ) : undefined}
               <Link href={"/thoughts"}>
                 <TextButton textColor="black" darkTextColor="white">
-                  <ArrowLongLeftIcon className="mr-2 h-6 w-6 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
+                  <ArrowLongLeftIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
                   All thoughts
                 </TextButton>
               </Link>
@@ -139,11 +139,9 @@ export default function Post({ allPosts, post }) {
               <CheckCircleIcon className="mr-2 h-6 w-6 flex-shrink-0 text-teal-500 dark:text-teal-400" />
               Copied to clipboard!
             </Toast.Title>
-            <Toast.Description
-              asChild
-            >
-            <span className="font-mono text-xs text-neutral-600 dark:text-neutral-400 leading-tight pt-1">
-              {"https://www.kejk.tech/thoughts/" + post?.slug}
+            <Toast.Description asChild>
+              <span className="pt-1 font-mono text-xs leading-tight text-neutral-600 dark:text-neutral-400">
+                {"https://www.kejk.tech/thoughts/" + post?.slug}
               </span>
             </Toast.Description>
           </Toast.Root>

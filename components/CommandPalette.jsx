@@ -1,7 +1,7 @@
 import { Dialog, Transition, Combobox } from "@headlessui/react";
 import { Fragment, useState, useEffect } from "react";
 import {
-  ArrowLongRightIcon,
+  ArrowRightIcon,
   MagnifyingGlassIcon,
   ArrowTopRightOnSquareIcon,
 } from "@heroicons/react/20/solid";
@@ -143,7 +143,6 @@ export const CommandPalette = ({
     "stacks",
     "features",
     "albums",
-    "works",
     "contact",
   ];
 
@@ -213,7 +212,7 @@ export const CommandPalette = ({
                     filteredItemsArray !== null ? (
                       <Combobox.Options
                         static
-                        className="ml-0 mb-0 max-h-64 list-none overflow-y-auto pt-2"
+                        className="mb-0 ml-0 max-h-64 list-none overflow-y-auto pt-2"
                       >
                         {filteredItemsArray.map((item, idx) => (
                           <Combobox.Option key={idx} value={item}>
@@ -257,7 +256,7 @@ export const CommandPalette = ({
                                     height={16}
                                   />
                                 ) : (
-                                  <ArrowLongRightIcon width={16} height={16} />
+                                  <ArrowRightIcon width={16} height={16} />
                                 )}
                               </div>
                             )}
