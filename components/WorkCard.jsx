@@ -30,7 +30,7 @@ const AppCard = ({ title, subtitle, image, link, year }) => {
             {year}
           </span>
         </header>
-        <span className="font-mono tracking-tight text-neutral-500 dark:text-neutral-400">
+        <span className="tracking-tight text-neutral-500 dark:text-neutral-400">
           {subtitle}
         </span>
       </div>

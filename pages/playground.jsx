@@ -1,6 +1,7 @@
 import Head from "next/head";
-import AppCard from "../components/AppCard";
+import WorkCard from "../components/WorkCard";
 import PageHeader from "../components/PageHeader";
+import SubHeader from "../components/SubHeader";
 
 const { createBucketClient } = require("@cosmicjs/sdk");
 
@@ -12,7 +13,7 @@ const cosmic = createBucketClient({
   readKey: READ_KEY,
 });
 
-export default function Playground({ apps, utilities, clients }) {
+export default function Playground({ apps, utilities }) {
   const metaTitle = "KEJK | Playground";
   const metaImage =
     "https://imgix.cosmicjs.com/232ec950-d395-11ed-9cfc-8fe1cfdcf0b7-meta-projects.png";
@@ -40,10 +41,13 @@ export default function Playground({ apps, utilities, clients }) {
       </Head>
       <div>
         <PageHeader>Playground</PageHeader>
+        <SubHeader>
+          Apps and utilities I&apos;ve been playing around with for fun.
+        </SubHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
           {apps.map((app, idx) => {
             return (
-              <AppCard
+              <WorkCard
                 key={idx}
                 link={app.metadata.url}
                 image={app.metadata.cover?.imgix_url}
@@ -56,7 +60,7 @@ export default function Playground({ apps, utilities, clients }) {
         <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
           {utilities.map((utility, idx) => {
             return (
-              <AppCard
+              <WorkCard
                 key={idx}
                 link={utility.metadata.url}
                 image={utility.metadata.cover?.imgix_url}

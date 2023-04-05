@@ -2,10 +2,10 @@ import { EnvelopeIcon } from "@heroicons/react/20/solid";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Head from "next/head";
 import Link from "next/link";
-import AllCapsHeader from "../components/AllCapsHeader";
 import AppCard from "../components/AppCard";
 import Button from "../components/Button";
 import PageHeader from "../components/PageHeader";
+import SubHeader from "../components/SubHeader";
 
 const { createBucketClient } = require("@cosmicjs/sdk");
 
@@ -45,6 +45,10 @@ export default function Projects({ clients }) {
       </Head>
       <div>
         <PageHeader>Projects</PageHeader>
+        <SubHeader>
+          Design, development, brand, and advisory projects I&apos;ve been
+          fortunate to work on.
+        </SubHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
           {clients.map((client, idx) => {
             return (
