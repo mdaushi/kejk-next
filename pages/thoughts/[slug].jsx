@@ -23,33 +23,32 @@ import Tag from "../../components/Tag";
 import TextButton from "../../components/TextButton";
 import WritingCard from "../../components/WritingCard";
 import AlertPreview from "../../components/AlertPreview";
-
 import Mori from "next/font/local";
 
 const sans = Mori({
   src: [
     {
-      path: "../fonts/PPMori-Regular.woff2",
+      path: "../../fonts/PPMori-Regular.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../fonts/PPMori-RegularItalic.woff2",
+      path: "../../fonts/PPMori-RegularItalic.woff2",
       weight: "400",
       style: "italic",
     },
     {
-      path: "../fonts/PPMori-SemiBold.woff2",
+      path: "../../fonts/PPMori-SemiBold.woff2",
       weight: "600",
       style: "normal",
     },
     {
-      path: "../fonts/PPMori-SemiBoldItalic.woff2",
+      path: "../../fonts/PPMori-SemiBoldItalic.woff2",
       weight: "600",
       style: "italic",
     },
     {
-      path: "../fonts/PPMori-ExtraBoldItalic.woff2",
+      path: "../../fonts/PPMori-ExtraBoldItalic.woff2",
       weight: "700",
       style: "italic",
     },
