@@ -1,5 +1,6 @@
 import * as React from "react";
 import * as Toast from "@radix-ui/react-toast";
+import * as Dialog from "@radix-ui/react-dialog";
 import {
   ArrowLongLeftIcon,
   CheckCircleIcon,
@@ -110,6 +111,7 @@ export default function Post({ allPosts, post }) {
             </article>
           </>
         )}
+        <div className="flex w-full justify-center space-x-2 items-center">
         <Toast.Provider
           swipeDirection="right"
           className="mt-12 flex w-full justify-center"
@@ -147,6 +149,100 @@ export default function Post({ allPosts, post }) {
           </Toast.Root>
           <Toast.Viewport className="fixed bottom-0 right-0 z-[2147483647] m-0 flex w-[390px] max-w-[100vw] list-none flex-col gap-[12px] p-[var(--viewport-padding)] outline-none [--viewport-padding:_24px]" />
         </Toast.Provider>
+        <Dialog.Root>
+              <Dialog.Trigger asChild>
+                <Button
+                  bgColor="bg-neutral-100 dark:bg-neutral-900 mb-4 md:mb-0"
+                  textColor="text-black dark:text-white"
+                  borderColor="border-neutral-200 dark:border-neutral-700"
+                >
+                  <RssIcon className="mr-2" width={20} height={20} />
+                  Subscribe
+                </Button>
+              </Dialog.Trigger>
+              <Dialog.Portal>
+                <Dialog.Overlay className="fixed z-40 inset-0 bg-black/20 backdrop-blur-sm data-[state=open]:animate-overlayShow" />
+                <Dialog.Content className="fixed z-50 left-[50%] top-[25%] md:top-[50%] max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-25%] md:translate-y-[-50%] rounded-lg bg-white p-4 shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none data-[state=open]:animate-contentShow dark:border dark:border-neutral-700 dark:bg-neutral-800">
+                  <Dialog.Title
+                    className={`m-0 text-lg font-bold text-black dark:text-white ${sans.variable}`}
+                  >
+                    Subscribe
+                  </Dialog.Title>
+                  <Dialog.Description
+                    className={`mb-2 mt-2 text-sm leading-normal text-neutral-500 dark:text-neutral-300 ${sans.variable}`}
+                  >
+                    Get an email whenever I publish a new thought.
+                  </Dialog.Description>
+                  <form
+                    action="https://buttondown.email/api/emails/embed-subscribe/karl"
+                    method="post"
+                    target="popupwindow"
+                    onSubmit="window.open(
+                      'https://buttondown.email/karl',
+                      'popupwindow')"
+                    className="embeddable-buttondown-form"
+                  >
+                    <fieldset
+                      className={`mb-4 flex flex-col items-start gap-2 ${sans.variable}`}
+                    >
+                      <label
+                        className={`text-right font-sans text-sm text-neutral-500 dark:text-neutral-400 ${sans.variable}`}
+                        htmlFor="bd-email"
+                      >
+                        Your email
+                      </label>
+                      <div className="flex w-full items-center gap-4">
+                        <input
+                          className={`inline-flex h-10 w-full flex-1 items-center justify-center rounded-md bg-neutral-50 px-2 font-sans leading-none text-neutral-800 shadow-[0_0_0_1px] shadow-neutral-500 outline-none focus:shadow-[0_0_0_2px] focus:shadow-teal-500 dark:bg-neutral-900 dark:text-neutral-200 ${sans.variable}`}
+                          type="email"
+                          name="email"
+                          id="bd-email"
+                          placeholder="e.g. hello@email.com"
+                          required
+                        />
+                        <input type="hidden" value="1" name="embed" />
+                        <button
+                          type="submit"
+                          className={`inline-flex h-10 items-center justify-center rounded-md bg-teal-500 px-[15px] font-sans font-medium leading-none text-teal-50 hover:bg-teal-600 focus:shadow-[0_0_0_2px] focus:shadow-teal-800 focus:outline-none ${sans.variable}`}
+                        >
+                          Subscribe
+                        </button>
+                      </div>
+                    </fieldset>
+                    <div
+                      className={`mt-4 flex items-center justify-between font-sans ${sans.variable}`}
+                    >
+                      <div>
+                        <span className=" text-neutral-600 dark:text-neutral-300">
+                          Or you can subscribe via{" "}
+                        </span>
+                        <a
+                          href="https://kejk.tech/rss.xml"
+                          target={"_blank"}
+                          rel={"noopener noreferrer"}
+                          className="font-bold text-teal-700 underline decoration-2 underline-offset-2 dark:text-teal-500"
+                        >
+                          RSS
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                  <Dialog.Close asChild>
+                    <button
+                      className="absolute right-2 top-2 inline-flex h-6 w-6 appearance-none items-center justify-center rounded-full  hover:bg-teal-400 focus:shadow-[0_0_0_2px] focus:shadow-teal-500 focus:outline-none dark:hover:bg-teal-800"
+                      aria-label="Close"
+                    >
+                      <XMarkIcon
+                        height={16}
+                        width={16}
+                        className="text-neutral-600 hover:text-teal-500 dark:text-neutral-400 dark:hover:text-teal-50"
+                      />
+                    </button>
+                  </Dialog.Close>
+                </Dialog.Content>
+              </Dialog.Portal>
+            </Dialog.Root>
+            </div>
         <hr className="my-4 border-neutral-300 dark:border-neutral-700" />
         <AllCapsHeader marginTop={0} justify={"justify-start"}>
           More to explore
