@@ -60,9 +60,21 @@ const navItems = [
   },
   {
     label: "About",
-    hasMultiple: false,
-    href: "/about",  
-  },
+    hasMultiple: true,
+    links: [
+      { 
+      href: "/about",
+      label: "Me",
+      description: "My story, core principles and work history."
+      },
+     {
+        href: "/features",
+        label: "Features",
+        description:
+          "Places I've talked to, written for, or been showcased by.",
+      },
+    ],
+  }, 
   {
     label: "Writing",
     hasMultiple: false,
@@ -92,12 +104,6 @@ const navItems = [
         href: "/bookmarks",
         label: "Bookmarks",
         description: "A collection of my bookmarks from around the web.",
-      },
-      {
-        href: "/features",
-        label: "Features",
-        description:
-          "Places I've talked to, written for, or been showcased by.",
       },
       {
         href: "/uses",
