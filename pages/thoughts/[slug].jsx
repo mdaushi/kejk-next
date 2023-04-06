@@ -5,6 +5,8 @@ import {
   ArrowLongLeftIcon,
   CheckCircleIcon,
 } from "@heroicons/react/24/outline";
+import { RssIcon, XMarkIcon } from "@heroicons/react/20/solid";
+import Button from "../../components/Button";
 import classNames from "classnames";
 import Head from "next/head";
 import Link from "next/link";
