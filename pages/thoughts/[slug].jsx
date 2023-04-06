@@ -160,7 +160,7 @@ export default function Post({ allPosts, post, output }) {
                   </p>
                 </div>
               ) : (
-                "Could not load a summary"
+                <p>{"Could not load a summary"}</p>
               )}
             </div>
             <article>
