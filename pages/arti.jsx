@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import classNames from "classnames";
 import PageHeader from "../components/PageHeader";
-import { ArrowDownIcon, ArrowLongLeftIcon } from "@heroicons/react/24/outline";
+import { ArrowDownIcon, ArrowLeftIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import TextButton from "../components/TextButton";
 import Markdown from "../components/Markdown";
@@ -55,7 +55,7 @@ export default function Arti({ arti }) {
         <div className="group mb-8 flex w-full justify-start">
           <Link href={"#"} onClick={goBack}>
             <TextButton textColor="black" darkTextColor="white">
-              <ArrowLongLeftIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
+              <ArrowLeftIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
               Go back
             </TextButton>
           </Link>

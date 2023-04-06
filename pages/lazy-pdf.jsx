@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import PageHeader from "../components/PageHeader";
 import classNames from "classnames";
-import { ArrowLongLeftIcon, HeartIcon } from "@heroicons/react/24/outline";
+import { ArrowLeftIcon, HeartIcon } from "@heroicons/react/24/outline";
 import {
   ArrowDownIcon,
   HeartIcon as SolidHeartIcon,
@@ -128,7 +128,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
           <Link legacyBehavior href={"#"}>
             <a className="" onClick={goBack}>
               <TextButton textColor="black" darkTextColor="white">
-                <ArrowLongLeftIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
+                <ArrowLeftIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
                 Go back
               </TextButton>
             </a>

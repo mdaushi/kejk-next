@@ -62,19 +62,19 @@ const navItems = [
     label: "About",
     hasMultiple: true,
     links: [
-      { 
-      href: "/about",
-      label: "Me",
-      description: "My story, core principles and work history."
+      {
+        href: "/about",
+        label: "Me",
+        description: "My story, core principles and work history.",
       },
-     {
+      {
         href: "/features",
         label: "Features",
         description:
           "Places I've talked to, written for, or been showcased by.",
       },
     ],
-  }, 
+  },
   {
     label: "Writing",
     hasMultiple: false,
@@ -236,7 +236,7 @@ const Nav = () => {
         </div>
 
         <div className="absolute top-full mr-4 flex w-full max-w-7xl justify-end perspective-[2000px]">
-          <NavigationMenu.Viewport className="relative mt-4 h-[var(--radix-navigation-menu-viewport-height)] w-full origin-[top_right] overflow-hidden rounded-lg bg-white transition-[width,_height] duration-300 data-[state=closed]:animate-scaleOut data-[state=open]:animate-scaleIn dark:border dark:border-neutral-800 dark:bg-neutral-900 sm:w-[var(--radix-navigation-menu-viewport-width)]" />
+          <NavigationMenu.Viewport className="relative mt-4 h-[var(--radix-navigation-menu-viewport-height)] w-full origin-[top_center] overflow-hidden rounded-lg bg-white transition-[width,_height] duration-300 data-[state=closed]:animate-scaleOut data-[state=open]:animate-scaleIn dark:border dark:border-neutral-800 dark:bg-neutral-900 sm:w-[var(--radix-navigation-menu-viewport-width)]" />
         </div>
       </NavigationMenu.Root>
 

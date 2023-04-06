@@ -6,7 +6,7 @@ import PageHeader from "../../components/PageHeader";
 import { useRouter } from "next/router";
 import TextButton from "../../components/TextButton";
 import AllCapsHeader from "../../components/AllCapsHeader";
-import { ArrowLongLeftIcon } from "@heroicons/react/24/outline";
+import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 
 const { createBucketClient } = require("@cosmicjs/sdk");
 
@@ -56,7 +56,7 @@ export default function Project({ work }) {
             <div className="group mb-8 flex w-full justify-start">
               <Link href={"/work"}>
                 <TextButton textColor="black" darkTextColor="white">
-                  <ArrowLongLeftIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
+                  <ArrowLeftIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
                   All work
                 </TextButton>
               </Link>
