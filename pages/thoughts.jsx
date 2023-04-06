@@ -283,8 +283,7 @@ export async function getStaticProps({ preview = null }) {
 
   const writings = await data.objects;
   
-  var converter = new showdown.Converter(),
-
+  const converter = new showdown.Converter(); 
   const posts = await data.objects;
   const siteURL = "https://kejk.tech";
   const date = new Date();
