@@ -146,7 +146,7 @@ export default function Post({ allPosts, post, output }) {
             </div>
             <div>
               {response ? (
-                <div className="mb-4 flex flex-col items-start justify-start italic text-neutral-600 dark:text-neutral-300">
+                <div className="mb-8 flex flex-col items-start justify-start italic text-neutral-600 dark:text-neutral-300">
                   <div className="flex items-center justify-start space-x-2">
                     <div className="mb-2 flex h-8 w-8 items-center justify-center  rounded-full bg-gradient-to-tr from-blue-400 to-teal-400 dark:from-blue-500 dark:to-teal-600">
                       <SparklesIcon
@@ -160,6 +160,7 @@ export default function Post({ allPosts, post, output }) {
                     </p>
                   </div>
                   {output}
+                  <hr className="mt-8 w-full border-neutral-300 dark:border-neutral-700" />
                 </div>
               ) : undefined}
             </div>
