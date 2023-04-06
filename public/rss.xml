@@ -4,7 +4,7 @@
         <title>KEJK | Writing</title>
         <link>https://kejk.tech</link>
         <description>Thoughts on design, development and career progression</description>
-        <lastBuildDate>Thu, 06 Apr 2023 09:37:11 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 06 Apr 2023 17:56:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <language>en</language>
@@ -1508,19 +1508,15 @@ You’ll likely find that you often combine many of these principles, and if you
             <title><![CDATA[‘Users’ are humans]]></title>
             <link>https://kejk.tech/thoughts/why-users-are-humans</link>
             <guid>641b3f9dd0ab1034f24698c1</guid>
-            <pubDate>Fri, 24 Mar 2023 09:02:54 GMT</pubDate>
+            <pubDate>Thu, 06 Apr 2023 17:55:42 GMT</pubDate>
             <description><![CDATA[Design is about people, and I've been thinking a lot about the problem of the term 'user'.]]></description>
             <content:encoded><![CDATA[### Design is about people.
-
-##
 
 Working in the healthcare sector, it’s sometimes hard to forget those people that you affect the most through the work you do. It can be right there in front of you, seeing children living longer lives because of the work you and the healthcare company you support do. But it’s also sometimes easy to think about those end individuals as ‘users’.
 
 User Experience is a hot topic and has been for some time. Really, it was birthed in Silicon Valley as a way of thinking about the end person using your product and avoid a narrow focus on delivering a solution that you (as in the company) think is the right thing. The problem with a user focus is that it’s easy to abstract the term user into being a statistic. A user is a term we attribute onto a person that uses our product, but it is far too easy for that to become a percentage on a spreadsheet or a cumulative number that appears on an analytics report. Treating the people we affect most as users can have a negative effect on how we think about our products and lead us to believe that our focus is on increasing that percentage or building up those numbers, only.
 
 ### Why we should be Human-centred
-
-##
 
 Human-centered design is a term that's been explored and advocated for by many established designers from David and Tom Kelley, to Donald Norman and even into architecture by way of Mike Cooley.
 
@@ -1616,8 +1612,29 @@ If you're a designer who's comfortable in the world of code, or who's interested
             <title><![CDATA[Relative seniority]]></title>
             <link>https://kejk.tech/thoughts/relative-seniority</link>
             <guid>641b3f9dd0ab1034f24698c3</guid>
-            <pubDate>Fri, 03 Mar 2023 20:18:11 GMT</pubDate>
+            <pubDate>Thu, 06 Apr 2023 17:53:33 GMT</pubDate>
             <description><![CDATA[How your title is reflective of your company's stage as well as your level.]]></description>
+            <content:encoded><![CDATA[I recently saw a [tweet](https://twitter.com/brian_lovin/status/1456665626802458624?s=20) from Brian Lovin that talked about salaries some of the Senior++ designers were being offered by startups he's been talking to lately.
+
+If I'm honest, I was shocked and surprised because here in the UK, demanding that level of salary for a non-Director level position is unheard of. Aside from the debate about these ridiculous figures, it also got me thinking about the series he ran on [staff.design](https://staff.design/) around being a senior IC and what that meant.
+
+Over the years I've had roles that took me up and then back down and now on the up again in terms of seniority and it got me thinking; **seniority is always relative**.
+
+If like me you've worked for startups at any point in your career you'll know that it's common to find yourself (or to see other teammates) be---or become---super senior, super quickly because the team size is small and your relative impact is large. I, for example, managed to move from a mid-senior level Account Manager to being a Lead UX Architect in a matter of 2-ish years at an org that started at 3 and ended up at 40... that would be unheard of at a larger org and in reality wasn't reflective of my actual skill level.
+
+Whilst I wouldn't want to talk down my abilities, I know that in reality, I was what I've now come to coin: "Lead(Senior/Director) by Default". Because there was no one in the business with more knowledge than I had around user experience and information architecture, I was accelerated to a more senior position to anchor me relative to the business. However, as the company grew that became hard for them to handle. What was next for me? I thought it was Digital Director or Head of UX, but at 28, did that make business sense? Not really. Did I have the amount of skill to lead an org as it grew? Probably not.
+
+The business growth immediately impacts whether you're truly at that defined level or not, but when you've been assigned such a senior role already, how then can someone more senior be brought in above you? I heard mutterings that this might happen whilst I was in the aforementioned role, and despite it being logical I was obviously frustrated and ultimately decided it was one of several factors that led to me leaving the company. Was that right? In hindsight yes as I've grown even more as a result, but it meant that I had to find my next role, and work out what my relative seniority was to the next org I was joining.
+
+I applied for a bunch of roles at that Lead/Director level because I thought to myself, *how can I leave and join at the same or lower level, that doesn't look good*. In the end, I found another role where I could join at a senior level but due to the Pandemic that didn't work out. Following this, I joined [HomeHero](https://www.homehero.co.uk/), another startup but at a non-defined level. I was simply a Product Designer and my seniority was known through skill, knowledge and my ability to provide the Design Ops skills missing in the business. So I was senior in all but title, and that was fine.
+
+After joining [Moneybox](https://www.moneyboxapp.com/) at a mid-senior level, I realised very quickly that title is relative to the company size. We have a 10-person design team with a range of experience, and again my seniority is relative to that. I'll be pushing for senior in my next performance review, and that'll suit where I am in the org skill and influence-wise, but it could seem like a long way down from where I "was" before.
+
+I've learnt to accept that titles are relative and I think it's an important lesson for us all to take away. Joining an org at whatever title may just be reflective of your skill-level relative to that org's incumbent skills. It doesn't mean you're moving down in your career and in fact that opportunity might afford your more growth in the end. Look at yourself relative to those in the team around you, be accepting of the opportunity to learn from others and think about what this will mean for your future career.
+
+My pithy advice to anyone reading this is to take a new role based on the opportunity for growth and happiness. **Don't chase titles**.
+
+> Update: Brian pointed me to a [great article](https://medium.com/@gokulrajaram/the-one-thing-ceos-should-delay-as-long-as-possible-ea28347714b0) by [Gokul Rajaram](https://twitter.com/gokulr) that talks about this in detail. It's from 2017 and yet we're still stuck in this old way of thinking. If Square can manage it, so many more organisations can too.]]></content:encoded>
             <author>karl@kejk.tech (Karl Emil James Koch)</author>
             <enclosure url="https://imgix.cosmicjs.com/81e15cf0-ba00-11ed-9435-5306e8ef93bc-image.png" length="0" type="image/png"/>
         </item>
