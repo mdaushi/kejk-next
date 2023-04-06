@@ -219,10 +219,10 @@ export default function Writing({ writings }) {
               </Dialog.Portal>
             </Dialog.Root>
           </div>
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-            <div className="scrollbar-hidden grid grid-flow-col items-center space-x-2 overflow-x-auto">
+          <div className="mt-4 grid grid-cols-1 items-center gap-4 md:grid-cols-2">
+            <div className="scrollbar-hidden flex items-center justify-between space-x-2 overflow-x-auto">
               <Button
-                bgColor="bg-neutral-100 dark:bg-neutral-900 mt-4 !text-sm !rounded-full"
+                bgColor="bg-neutral-100 dark:bg-neutral-900 !text-sm !rounded-full !mb-0"
                 textColor="text-black dark:text-white"
                 borderColor="border-none"
                 onClick={tagFilter}
@@ -231,7 +231,7 @@ export default function Writing({ writings }) {
               </Button>
               {uniqueTags.map((tag, idx) => (
                 <Button
-                  bgColor="bg-neutral-100 dark:bg-neutral-900 mt-4 !text-sm !rounded-full"
+                  bgColor="bg-neutral-100 dark:bg-neutral-900 !mt-0 !text-sm !rounded-full !mb-0"
                   textColor="text-black dark:text-white"
                   borderColor="border-none"
                   onClick={tagFilter}
