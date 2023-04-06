@@ -179,7 +179,7 @@ export default function Writing({ writings }) {
                         <input type="hidden" value="1" name="embed" />
                         <button
                           type="submit"
-                          className={`inline-flex h-10 items-center justify-center rounded-full bg-teal-500 px-[15px] font-sans font-medium leading-none text-teal-50 hover:bg-teal-600 focus:shadow-[0_0_0_2px] focus:shadow-teal-800 focus:outline-none ${sans.variable}`}
+                          className={`inline-flex h-10 items-center justify-center rounded-md bg-teal-500 px-[15px] font-sans font-medium leading-none text-teal-50 hover:bg-teal-600 focus:shadow-[0_0_0_2px] focus:shadow-teal-800 focus:outline-none ${sans.variable}`}
                         >
                           Subscribe
                         </button>
