@@ -59,6 +59,11 @@ const navItems = [
     href: "/",
   },
   {
+    label: "About",
+    hasMultiple: false,
+    href: "/about",  
+  },
+  {
     label: "Writing",
     hasMultiple: false,
     href: "/thoughts",
