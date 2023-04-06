@@ -282,6 +282,8 @@ export async function getStaticProps({ preview = null }) {
     .props(["id,slug,title,metadata,published_at", preview]);
 
   const writings = await data.objects;
+  
+  var converter = new showdown.Converter(),
 
   const posts = await data.objects;
   const siteURL = "https://kejk.tech";
@@ -309,6 +311,8 @@ export async function getStaticProps({ preview = null }) {
   });
 
   posts.forEach((post) => {
+    const text = post.metadata.content;
+    const content = converter.makeHtml(text);
     const url = `${siteURL}/thoughts/${post.slug}`;
     feed.addItem({
       title: post.title,
@@ -316,7 +320,7 @@ export async function getStaticProps({ preview = null }) {
       link: url,
       description: post.metadata.snippet,
       image: post.metadata.hero.imgix_url,
-      content: post.metadata.content,
+      content: content,
       author: [author],
       contributor: [author],
       date: new Date(post.published_at),
