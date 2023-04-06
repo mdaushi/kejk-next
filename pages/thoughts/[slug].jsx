@@ -24,6 +24,39 @@ import TextButton from "../../components/TextButton";
 import WritingCard from "../../components/WritingCard";
 import AlertPreview from "../../components/AlertPreview";
 
+import Mori from "next/font/local";
+
+const sans = Mori({
+  src: [
+    {
+      path: "../fonts/PPMori-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../fonts/PPMori-RegularItalic.woff2",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "../fonts/PPMori-SemiBold.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../fonts/PPMori-SemiBoldItalic.woff2",
+      weight: "600",
+      style: "italic",
+    },
+    {
+      path: "../fonts/PPMori-ExtraBoldItalic.woff2",
+      weight: "700",
+      style: "italic",
+    },
+  ],
+  variable: "--font-sans",
+});
+
 const { createBucketClient } = require("@cosmicjs/sdk");
 
 const BUCKET_SLUG = process.env.NEXT_PUBLIC_COSMIC_SLUG;
