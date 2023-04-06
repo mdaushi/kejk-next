@@ -193,7 +193,7 @@ export default function Writing({ writings }) {
                           Or you can subscribe via{" "}
                         </span>
                         <a
-                          href="https://kejk.tech/feed.xml"
+                          href="https://kejk.tech/rss.xml"
                           target={"_blank"}
                           rel={"noopener noreferrer"}
                           className="font-bold text-teal-700 underline decoration-2 underline-offset-2 dark:text-teal-500"
