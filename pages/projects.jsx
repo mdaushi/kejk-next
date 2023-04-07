@@ -68,7 +68,6 @@ export default function Projects({ clients }) {
             <Button
               bgColor="bg-zinc-100 dark:bg-zinc-900"
               textColor="text-black dark:text-white"
-              borderColor="border-zinc-200 dark:border-zinc-700"
             >
               View my in-house work
               <ArrowRightIcon className="ml-2" width={20} height={20} />
@@ -77,7 +76,6 @@ export default function Projects({ clients }) {
           <Button
             bgColor="bg-zinc-100 dark:bg-zinc-900"
             textColor="text-black dark:text-white"
-            borderColor="border-zinc-200 dark:border-zinc-700"
             href="mailto:karl@kejk.tech?subject=Let's work together!"
           >
             <EnvelopeIcon className="mr-2" width={20} height={20} />
