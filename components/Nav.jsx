@@ -236,7 +236,7 @@ const Nav = () => {
         </div>
 
         <div className="absolute top-full mr-4 flex w-full max-w-7xl justify-end perspective-[2000px]">
-          <NavigationMenu.Viewport className="relative mt-4 h-[var(--radix-navigation-menu-viewport-height)] w-full origin-[top_center] overflow-hidden rounded-lg bg-white transition-[width,_height] duration-300 data-[state=closed]:animate-scaleOut data-[state=open]:animate-scaleIn dark:border dark:border-zinc-800 dark:bg-zinc-900 sm:w-[var(--radix-navigation-menu-viewport-width)]" />
+          <NavigationMenu.Viewport className="relative mt-2 h-[var(--radix-navigation-menu-viewport-height)] w-full origin-[top_center] overflow-hidden rounded-lg border border-zinc-100 bg-white shadow-xl transition-[width,_height] duration-300 data-[state=closed]:animate-scaleOut data-[state=open]:animate-scaleIn dark:border-zinc-800 dark:bg-zinc-900 sm:w-[var(--radix-navigation-menu-viewport-width)]" />
         </div>
       </NavigationMenu.Root>
 

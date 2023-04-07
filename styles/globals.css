@@ -110,7 +110,7 @@
   }
 
   .nav[aria-current] {
-    @apply rounded-full bg-zinc-200 px-4 py-2 font-sans font-semibold text-lime-900 dark:bg-zinc-700 dark:text-lime-500 md:bg-zinc-200 md:dark:bg-zinc-800;
+    @apply rounded-full bg-zinc-200 px-4 py-2 font-sans font-semibold text-lime-950 dark:bg-zinc-700 dark:text-lime-500 md:bg-lime-200 md:dark:bg-zinc-800;
   }
 
   .mobileNav {
