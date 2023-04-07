@@ -5,7 +5,7 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 const MusicCard = ({ title, subtitle, image, link }) => {
   return (
     <a
-      className=" space-y-2 rounded-xl border border-zinc-200 p-4 transition-all ease-in-out hover:cursor-pointer hover:border-lime-600 hover:bg-zinc-50 dark:border-zinc-700 dark:hover:bg-zinc-900
+      className=" space-y-2 rounded-xl border border-zinc-200 p-4 transition-all ease-in-out hover:cursor-pointer hover:border-lime-500 hover:bg-zinc-50 dark:border-zinc-700 dark:hover:bg-zinc-900
     "
       href={link}
       target="_blank"

@@ -7,7 +7,7 @@ const AppCard = ({ title, subtitle, image, link, year }) => {
   return (
     <Link
       href={link}
-      className="flex flex-col space-y-2 rounded-xl border border-zinc-200 p-4 transition-all ease-in-out hover:cursor-pointer hover:border-lime-600 hover:bg-zinc-50 dark:border-zinc-700 dark:hover:bg-zinc-900"
+      className="flex flex-col space-y-2 rounded-xl border border-zinc-200 p-4 transition-all ease-in-out hover:cursor-pointer hover:border-lime-500 hover:bg-zinc-50 dark:border-zinc-700 dark:hover:bg-zinc-900"
     >
       <div className="flex w-full items-start justify-between pb-2">
         <Image

@@ -5,7 +5,7 @@ import Tag from "../components/Tag";
 const AppCard = ({ title, subtitle, image, link, tags }) => {
   return (
     <a
-      className=" space-y-2 rounded-xl border border-zinc-200 p-4 transition-all ease-in-out hover:cursor-pointer hover:border-lime-600 hover:bg-zinc-50 dark:border-zinc-800 dark:hover:bg-zinc-900
+      className=" space-y-2 rounded-xl border border-zinc-200 p-4 transition-all ease-in-out hover:cursor-pointer hover:border-lime-500 hover:bg-zinc-50 dark:border-zinc-800 dark:hover:bg-zinc-900
     "
       href={link}
       rel="noreferrer"
