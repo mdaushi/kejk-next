@@ -117,14 +117,16 @@ export default function Home({
           Writing
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
-          {writings.map((writing, idx) => {
+          {writings.map((writing, idx) => { 
             return (
+            <Link key={idx} href={`/thoughts/${writing?.slug}`}>
               <WritingCard
                 key={idx}
                 title={writing.title}
                 subtitle={writing.metadata.snippet}
                 tag={writing.metadata.tag}
               />
+              </Link>
             );
           })}
         </div>
