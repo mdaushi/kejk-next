@@ -135,7 +135,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
           </Link>
         </div>
         <PageHeader>{lazyPDF.title}</PageHeader>
-        <h2 className="mb-4 text-left text-2xl font-medium text-zinc-700 dark:text-zinc-400 md:text-2xl">
+        <h2 className="mb-4 text-left text-2xl font-semibold text-zinc-700 dark:text-zinc-400 md:text-2xl">
           {lazyPDF.metadata.subtitle}
         </h2>
         <div className="h-auto w-full max-w-3xl">
@@ -165,7 +165,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
             >
               <button
                 className={classNames(
-                  `mb-4 flex items-center justify-center space-x-2 rounded-md border border-zinc-200 bg-zinc-100 px-4 py-2 text-sm font-medium text-black transition ease-in-out hover:border-lime-500 dark:border-zinc-700 dark:bg-zinc-900 dark:text-white md:w-max md:text-base`
+                  `mb-4 flex items-center justify-center space-x-2 rounded-md border border-zinc-200 bg-zinc-100 px-4 py-2 text-sm font-semibold text-black transition ease-in-out hover:border-lime-500 dark:border-zinc-700 dark:bg-zinc-900 dark:text-white md:w-max md:text-base`
                 )}
                 id="downloads"
               >
@@ -216,7 +216,7 @@ const LazyPDF = ({ lazyPDF, stats }) => {
           <a href={downloadURL} download className="" onClick={updateDownloads}>
             <button
               className={classNames(
-                `mb-4 flex items-center justify-center space-x-2 rounded-md border border-zinc-200 bg-zinc-100 px-4 py-2 text-sm font-medium text-black transition ease-in-out hover:border-lime-500 dark:border-zinc-700 dark:bg-zinc-900 dark:text-white md:w-max md:text-base`
+                `mb-4 flex items-center justify-center space-x-2 rounded-md border border-zinc-200 bg-zinc-100 px-4 py-2 text-sm font-semibold text-black transition ease-in-out hover:border-lime-500 dark:border-zinc-700 dark:bg-zinc-900 dark:text-white md:w-max md:text-base`
               )}
               id="downloads"
             >

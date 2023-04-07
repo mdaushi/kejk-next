@@ -58,7 +58,7 @@ const CosmicGo = ({ cosmicGo }) => {
           </Link>
         </div>
         <PageHeader>{cosmicGo.title}</PageHeader>
-        <h2 className="mb-4 text-left text-2xl font-medium text-zinc-700 dark:text-zinc-400 md:text-2xl">
+        <h2 className="mb-4 text-left text-2xl font-semibold text-zinc-700 dark:text-zinc-400 md:text-2xl">
           {cosmicGo.metadata.subtitle}
         </h2>
         <div className="h-auto w-full max-w-3xl">
