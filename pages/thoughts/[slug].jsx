@@ -159,7 +159,7 @@ export default function Post({ allPosts, post, output }) {
               {response ? (
                 <div className="mb-8 flex flex-col items-start justify-start italic text-zinc-600 dark:text-zinc-300">
                   <div className="flex items-center justify-start space-x-2">
-                    <div className="mb-2 flex h-8 w-8 items-center justify-center  rounded-full bg-gradient-to-tr from-blue-400 to-teal-400 dark:from-blue-500 dark:to-teal-600">
+                    <div className="mb-2 flex h-8 w-8 items-center justify-center  rounded-full bg-gradient-to-tr from-purple-600 to-cyan-600 dark:from-purple-200 dark:to-cyan-300">
                       <SparklesIcon
                         width={20}
                         height={20}
