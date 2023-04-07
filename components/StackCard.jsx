@@ -6,7 +6,7 @@ import Tag from "../components/Tag";
 const StackCard = ({ title, subtitle, image, link, tags }) => {
   return (
     <a
-      className="flex flex-col justify-between space-y-2 rounded-xl border border-neutral-200 p-4 transition-all ease-in-out hover:cursor-pointer hover:border-teal-600 hover:bg-neutral-50 dark:border-neutral-800 dark:hover:bg-neutral-900
+      className="flex flex-col justify-between space-y-2 rounded-xl border border-zinc-200 p-4 transition-all ease-in-out hover:cursor-pointer hover:border-lime-600 hover:bg-zinc-50 dark:border-zinc-800 dark:hover:bg-zinc-900
     "
       href={link}
       target="_blank"
@@ -24,14 +24,14 @@ const StackCard = ({ title, subtitle, image, link, tags }) => {
             alt="Image of the software icon"
             quality={50}
           />
-          <ArrowTopRightOnSquareIcon className="h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+          <ArrowTopRightOnSquareIcon className="h-4 w-4 flex-shrink-0 text-zinc-500 dark:text-zinc-400" />
         </div>
         <div className="items-top flex w-full gap-2">
-          <header className="mr-2 pb-2 text-lg font-bold text-neutral-700 dark:text-neutral-200">
+          <header className="mr-2 pb-2 text-lg font-bold text-zinc-700 dark:text-zinc-200">
             {title}
           </header>
         </div>
-        <span className="text-sm text-neutral-500 dark:text-neutral-400">
+        <span className="text-sm text-zinc-500 dark:text-zinc-400">
           {subtitle}
         </span>
       </div>

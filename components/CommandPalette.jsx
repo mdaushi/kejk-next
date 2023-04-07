@@ -192,16 +192,16 @@ export const CommandPalette = ({
                         ? (window.location.href = `${item.metadata.url}`)
                         : (window.location.href = `${item.url}`);
                     }}
-                    className={`w-[90vw] transform divide-y divide-neutral-100 overflow-hidden rounded-2xl bg-neutral-50 p-2 text-left align-middle font-sans shadow-xl transition-all dark:divide-neutral-800 dark:border dark:border-neutral-700 dark:bg-neutral-900 md:w-[40vw] ${sans.variable}`}
+                    className={`w-[90vw] transform divide-y divide-zinc-100 overflow-hidden rounded-2xl bg-zinc-50 p-2 text-left align-middle font-sans shadow-xl transition-all dark:divide-zinc-800 dark:border dark:border-zinc-700 dark:bg-zinc-900 md:w-[40vw] ${sans.variable}`}
                   >
                     <div className="flex items-center font-sans">
                       <MagnifyingGlassIcon
                         width={16}
                         height={16}
-                        className="text-neutral-600 dark:text-neutral-300"
+                        className="text-zinc-600 dark:text-zinc-300"
                       />
                       <Combobox.Input
-                        className={`w-full rounded-full bg-transparent p-2 font-sans text-neutral-900 placeholder:font-sans  focus:outline-none dark:text-neutral-300 md:rounded-md ${sans.variable}`}
+                        className={`w-full rounded-full bg-transparent p-2 font-sans text-zinc-900 placeholder:font-sans  focus:outline-none dark:text-zinc-300 md:rounded-md ${sans.variable}`}
                         placeholder={"Search..."}
                         onChange={(e) => {
                           setQuery(e.target.value);
@@ -220,9 +220,9 @@ export const CommandPalette = ({
                               <div
                                 className={`${
                                   sans.variable
-                                } flex w-full cursor-pointer items-center justify-between rounded p-3 text-sm text-black transition-all duration-75 ease-in hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800 ${
+                                } flex w-full cursor-pointer items-center justify-between rounded p-3 text-sm text-black transition-all duration-75 ease-in hover:bg-zinc-100 dark:text-white dark:hover:bg-zinc-800 ${
                                   active
-                                    ? "bg-neutral-200 dark:bg-neutral-700"
+                                    ? "bg-zinc-200 dark:bg-zinc-700"
                                     : "bg-transparent"
                                 }`}
                               >
@@ -233,11 +233,11 @@ export const CommandPalette = ({
                                     {item.title}
                                   </span>
                                   <span
-                                    className={`font-sans text-neutral-500 hover:text-teal-800 dark:text-neutral-400 hover:dark:text-teal-200 ${
+                                    className={`font-sans text-zinc-500 hover:text-lime-800 dark:text-zinc-400 hover:dark:text-lime-300 ${
                                       sans.variable
                                     } ${
                                       active &&
-                                      "text-teal-800 dark:text-teal-200"
+                                      "text-lime-800 dark:text-lime-300"
                                     }`}
                                   >
                                     {"in "}
@@ -266,7 +266,7 @@ export const CommandPalette = ({
                     ) : (
                       <div className="flex items-center justify-center p-4">
                         <p
-                          className={`text-sm text-neutral-500 dark:text-neutral-400 ${sans.variable}`}
+                          className={`text-sm text-zinc-500 dark:text-zinc-400 ${sans.variable}`}
                         >
                           No results found
                         </p>

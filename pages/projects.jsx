@@ -20,7 +20,7 @@ const cosmic = createBucketClient({
 export default function Projects({ clients }) {
   const metaTitle = "KEJK | Projects";
   const metaImage =
-    "https://imgix.cosmicjs.com/232ec950-d395-11ed-9cfc-8fe1cfdcf0b7-meta-projects.png";
+    "https://imgix.cosmicjs.com/e6be96e0-d555-11ed-9cfc-8fe1cfdcf0b7-meta-playground.png";
   const metaDescription = "Designer, developer, writer and musician";
   const url = "https://kejk.tech/projects";
 
@@ -66,18 +66,18 @@ export default function Projects({ clients }) {
         <div className="mx-auto mt-8 flex w-full flex-col items-center justify-center space-y-4 md:mt-16 md:flex-row md:space-x-4 md:space-y-0">
           <Link href="/work">
             <Button
-              bgColor="bg-neutral-100 dark:bg-neutral-900"
+              bgColor="bg-zinc-100 dark:bg-zinc-900"
               textColor="text-black dark:text-white"
-              borderColor="border-neutral-200 dark:border-neutral-700"
+              borderColor="border-zinc-200 dark:border-zinc-700"
             >
               View my in-house work
               <ArrowRightIcon className="ml-2" width={20} height={20} />
             </Button>
           </Link>
           <Button
-            bgColor="bg-neutral-100 dark:bg-neutral-900"
+            bgColor="bg-zinc-100 dark:bg-zinc-900"
             textColor="text-black dark:text-white"
-            borderColor="border-neutral-200 dark:border-neutral-700"
+            borderColor="border-zinc-200 dark:border-zinc-700"
             href="mailto:karl@kejk.tech?subject=Let's work together!"
           >
             <EnvelopeIcon className="mr-2" width={20} height={20} />

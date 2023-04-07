@@ -128,14 +128,14 @@ const LazyPDF = ({ lazyPDF, stats }) => {
           <Link legacyBehavior href={"#"}>
             <a className="" onClick={goBack}>
               <TextButton textColor="black" darkTextColor="white">
-                <ArrowLeftIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 group-hover:text-teal-500 dark:text-neutral-400" />
+                <ArrowLeftIcon className="mr-2 h-4 w-4 flex-shrink-0 text-zinc-500 group-hover:text-lime-500 dark:text-zinc-400" />
                 Go back
               </TextButton>
             </a>
           </Link>
         </div>
         <PageHeader>{lazyPDF.title}</PageHeader>
-        <h2 className="mb-4 text-left text-2xl font-medium text-neutral-700 dark:text-neutral-400 md:text-2xl">
+        <h2 className="mb-4 text-left text-2xl font-medium text-zinc-700 dark:text-zinc-400 md:text-2xl">
           {lazyPDF.metadata.subtitle}
         </h2>
         <div className="h-auto w-full max-w-3xl">
@@ -165,11 +165,11 @@ const LazyPDF = ({ lazyPDF, stats }) => {
             >
               <button
                 className={classNames(
-                  `mb-4 flex items-center justify-center space-x-2 rounded-md border border-neutral-200 bg-neutral-100 px-4 py-2 text-sm font-medium text-black transition ease-in-out hover:border-teal-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-white md:w-max md:text-base`
+                  `mb-4 flex items-center justify-center space-x-2 rounded-md border border-zinc-200 bg-zinc-100 px-4 py-2 text-sm font-medium text-black transition ease-in-out hover:border-lime-500 dark:border-zinc-700 dark:bg-zinc-900 dark:text-white md:w-max md:text-base`
                 )}
                 id="downloads"
               >
-                <ArrowDownIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+                <ArrowDownIcon className="mr-2 h-4 w-4 flex-shrink-0 text-zinc-500 dark:text-zinc-400" />
                 Download
               </button>
             </a>
@@ -177,13 +177,13 @@ const LazyPDF = ({ lazyPDF, stats }) => {
           <div className="flex flex-col items-center space-y-4">
             <div className="flex items-center space-x-2">
               <div
-                className="flex w-max items-center justify-center rounded-full border border-teal-200 bg-teal-50 px-3 py-1 font-mono text-xs font-normal uppercase leading-tight text-teal-700 hover:cursor-pointer dark:border-teal-900 dark:bg-teal-900/30 dark:text-teal-200"
+                className="flex w-max items-center justify-center rounded-full border border-lime-300 bg-lime-50 px-3 py-1 font-mono text-xs font-normal uppercase leading-tight text-lime-700 hover:cursor-pointer dark:border-lime-900 dark:bg-lime-900/30 dark:text-lime-300"
                 onClick={updateDownloads}
               >
                 {!isDownloaded ? (
-                  <ArrowDownIcon className="mr-2 h-3 w-3 text-teal-700  dark:text-teal-200" />
+                  <ArrowDownIcon className="mr-2 h-3 w-3 text-lime-700  dark:text-lime-300" />
                 ) : (
-                  <SolidArrowDownIcon className="mr-2 h-3 w-3 text-teal-700  dark:text-teal-200" />
+                  <SolidArrowDownIcon className="mr-2 h-3 w-3 text-lime-700  dark:text-lime-300" />
                 )}
                 {kFormatter(downloads)}
               </div>
@@ -216,11 +216,11 @@ const LazyPDF = ({ lazyPDF, stats }) => {
           <a href={downloadURL} download className="" onClick={updateDownloads}>
             <button
               className={classNames(
-                `mb-4 flex items-center justify-center space-x-2 rounded-md border border-neutral-200 bg-neutral-100 px-4 py-2 text-sm font-medium text-black transition ease-in-out hover:border-teal-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-white md:w-max md:text-base`
+                `mb-4 flex items-center justify-center space-x-2 rounded-md border border-zinc-200 bg-zinc-100 px-4 py-2 text-sm font-medium text-black transition ease-in-out hover:border-lime-500 dark:border-zinc-700 dark:bg-zinc-900 dark:text-white md:w-max md:text-base`
               )}
               id="downloads"
             >
-              <ArrowDownIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+              <ArrowDownIcon className="mr-2 h-4 w-4 flex-shrink-0 text-zinc-500 dark:text-zinc-400" />
               Download
             </button>
           </a>

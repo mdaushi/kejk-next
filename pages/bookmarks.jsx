@@ -51,7 +51,7 @@ export default function Bookmark({ bookmarks }) {
 
   const metaTitle = "KEJK | Bookmarks";
   const metaImage =
-    "https://imgix.cosmicjs.com/23449b40-d395-11ed-9cfc-8fe1cfdcf0b7-meta-bookmarks.png";
+    "https://imgix.cosmicjs.com/e6ba0300-d555-11ed-9cfc-8fe1cfdcf0b7-meta-bookmarks.png";
   const metaDescription = "A collection of Karl's bookmarks";
   const url = "https://kejk.tech/bookmarks";
 
@@ -106,7 +106,7 @@ export default function Bookmark({ bookmarks }) {
                 );
               })
             ) : (
-              <p className="w-full justify-center text-center text-neutral-600 dark:text-neutral-400">
+              <p className="w-full justify-center text-center text-zinc-600 dark:text-zinc-400">
                 No results for <strong>{title}</strong>. Try searching for{" "}
                 <em>Code</em>.
               </p>

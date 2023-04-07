@@ -47,7 +47,7 @@ export default function Feature({ features }) {
 
   const metaTitle = "KEJK | Features";
   const metaImage =
-    "https://imgix.cosmicjs.com/231db250-d395-11ed-9cfc-8fe1cfdcf0b7-meta-features.png";
+    "https://imgix.cosmicjs.com/e6b76af0-d555-11ed-9cfc-8fe1cfdcf0b7-meta-features.png";
   const metaDescription = "Designer, developer, writer and musician";
   const url = "https://kejk.tech/features";
 
@@ -94,7 +94,7 @@ export default function Feature({ features }) {
                 );
               })
             ) : (
-              <p className="w-full justify-center text-center text-neutral-600 dark:text-neutral-400">
+              <p className="w-full justify-center text-center text-zinc-600 dark:text-zinc-400">
                 No results for <strong>{title}</strong>. Try searching for{" "}
                 <em>Code</em>.
               </p>

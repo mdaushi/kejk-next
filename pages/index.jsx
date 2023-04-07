@@ -91,18 +91,18 @@ export default function Home({
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center space-x-4">
           <Button
-            bgColor="bg-neutral-100 dark:bg-neutral-900"
+            bgColor="bg-zinc-100 dark:bg-zinc-900"
             textColor="text-black dark:text-white"
-            borderColor="border-neutral-200 dark:border-neutral-700"
+            borderColor="border-zinc-200 dark:border-zinc-700"
             href="mailto:karl@kejk.tech?subject=Let's chat!"
           >
             <EnvelopeIcon width={20} height={20} className="mr-2" />
             Chat to me
           </Button>
           <Button
-            bgColor="bg-neutral-100 dark:bg-neutral-900"
+            bgColor="bg-zinc-100 dark:bg-zinc-900"
             textColor="text-black dark:text-white"
-            borderColor="border-neutral-200 dark:border-neutral-700"
+            borderColor="border-zinc-200 dark:border-zinc-700"
             href="/about"
           >
             <UserIcon width={20} height={20} className="mr-2" />
@@ -114,35 +114,35 @@ export default function Home({
           justify={"justify-start"}
           className="items-end"
         >
-          <PencilIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+          <PencilIcon className="mr-2 h-4 w-4 flex-shrink-0 text-zinc-500 dark:text-zinc-400" />
           Writing
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
-          {writings.map((writing, idx) => { 
+          {writings.map((writing, idx) => {
             return (
-            <Link key={idx} href={`/thoughts/${writing?.slug}`}>
-              <WritingCard
-                key={idx}
-                title={writing.title}
-                subtitle={writing.metadata.snippet}
-                tag={writing.metadata.tag}
-              />
+              <Link key={idx} href={`/thoughts/${writing?.slug}`}>
+                <WritingCard
+                  key={idx}
+                  title={writing.title}
+                  subtitle={writing.metadata.snippet}
+                  tag={writing.metadata.tag}
+                />
               </Link>
             );
           })}
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center">
           <Button
-            bgColor="bg-neutral-100 dark:bg-neutral-900"
+            bgColor="bg-zinc-100 dark:bg-zinc-900"
             textColor="text-black dark:text-white"
             href={"/thoughts"}
           >
             More thoughts
-            <ArrowRightIcon className="ml-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+            <ArrowRightIcon className="ml-2 h-4 w-4 flex-shrink-0 text-zinc-500 dark:text-zinc-400" />
           </Button>
         </div>
         <AllCapsHeader marginTop={16} justify={"justify-start"}>
-          <SquaresPlusIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+          <SquaresPlusIcon className="mr-2 h-4 w-4 flex-shrink-0 text-zinc-500 dark:text-zinc-400" />
           Apps and projects
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -151,7 +151,7 @@ export default function Home({
               <AppCard
                 key={idx}
                 link={app.metadata.url}
-                image={app.metadata.cover.imgix_url}
+                image={app.metadata.icon.imgix_url}
                 title={app.title}
                 subtitle={app.metadata.subtitle}
               />
@@ -160,24 +160,24 @@ export default function Home({
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center space-x-4">
           <Button
-            bgColor="bg-neutral-100 dark:bg-neutral-900"
+            bgColor="bg-zinc-100 dark:bg-zinc-900"
             textColor="text-black dark:text-white"
             href={"/playground"}
           >
             Playground
-            <ArrowRightIcon className="ml-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+            <ArrowRightIcon className="ml-2 h-4 w-4 flex-shrink-0 text-zinc-500 dark:text-zinc-400" />
           </Button>
           <Button
-            bgColor="bg-neutral-100 dark:bg-neutral-900"
+            bgColor="bg-zinc-100 dark:bg-zinc-900"
             textColor="text-black dark:text-white"
             href={"/projects"}
           >
             Client projects
-            <ArrowRightIcon className="ml-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+            <ArrowRightIcon className="ml-2 h-4 w-4 flex-shrink-0 text-zinc-500 dark:text-zinc-400" />
           </Button>
         </div>
         <AllCapsHeader marginTop={16} justify={"justify-start"}>
-          <FlagIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+          <FlagIcon className="mr-2 h-4 w-4 flex-shrink-0 text-zinc-500 dark:text-zinc-400" />
           Recent features
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -194,16 +194,16 @@ export default function Home({
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center">
           <Button
-            bgColor="bg-neutral-100 dark:bg-neutral-900"
+            bgColor="bg-zinc-100 dark:bg-zinc-900"
             textColor="text-black dark:text-white"
             href={"/features"}
           >
             All features
-            <ArrowRightIcon className="ml-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+            <ArrowRightIcon className="ml-2 h-4 w-4 flex-shrink-0 text-zinc-500 dark:text-zinc-400" />
           </Button>
         </div>
         <AllCapsHeader marginTop={16} justify={"justify-start"}>
-          <MusicalNoteIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+          <MusicalNoteIcon className="mr-2 h-4 w-4 flex-shrink-0 text-zinc-500 dark:text-zinc-400" />
           Releases
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -220,7 +220,7 @@ export default function Home({
           })}
         </div>
         <AllCapsHeader marginTop={16} justify={"justify-start"}>
-          <BookmarkIcon className="mr-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+          <BookmarkIcon className="mr-2 h-4 w-4 flex-shrink-0 text-zinc-500 dark:text-zinc-400" />
           Bookmarks
         </AllCapsHeader>
         <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -243,11 +243,11 @@ export default function Home({
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center">
           <Button
-            bgColor="bg-neutral-100 dark:bg-neutral-900"
+            bgColor="bg-zinc-100 dark:bg-zinc-900"
             textColor="text-black dark:text-white"
           >
             All bookmarks
-            <ArrowRightIcon className="ml-2 h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+            <ArrowRightIcon className="ml-2 h-4 w-4 flex-shrink-0 text-zinc-500 dark:text-zinc-400" />
           </Button>
         </div>
         <div className="mt-8 grid w-full grid-cols-3 items-center justify-between gap-4 md:mt-16 md:flex md:grid-cols-none md:justify-center md:gap-8">

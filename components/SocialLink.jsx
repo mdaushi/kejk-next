@@ -50,7 +50,7 @@ const SocialLink = ({ title, icon, handle, snippet, href }) => {
       {icon && (
         <HoverCard.Portal>
           <HoverCard.Content
-            className={`data-[side=bottom]:animate-slideUpAndFade data-[side=right]:animate-slideLeftAndFade data-[side=left]:animate-slideRightAndFade data-[side=top]:animate-slideDownAndFade w-[300px] rounded-lg bg-white p-4 shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,hsl(206_22%_7%_/_20%)_0px_10px_20px_-16px] data-[state=open]:transition-all dark:border dark:border-neutral-800 dark:bg-neutral-900 ${sans.variable}`}
+            className={`data-[side=bottom]:animate-slideUpAndFade data-[side=right]:animate-slideLeftAndFade data-[side=left]:animate-slideRightAndFade data-[side=top]:animate-slideDownAndFade w-[300px] rounded-lg bg-white p-4 shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,hsl(206_22%_7%_/_20%)_0px_10px_20px_-16px] data-[state=open]:transition-all dark:border dark:border-zinc-800 dark:bg-zinc-900 ${sans.variable}`}
             sideOffset={4}
           >
             <div className="flex flex-col gap-[8px]">
@@ -66,22 +66,22 @@ const SocialLink = ({ title, icon, handle, snippet, href }) => {
               />
               <div className="flex flex-col gap-[16px] font-sans">
                 <div>
-                  <div className="font-bold leading-[1.5] text-neutral-800 dark:text-neutral-100">
+                  <div className="font-bold leading-[1.5] text-zinc-800 dark:text-zinc-100">
                     {title}
                   </div>
-                  <div className="leading-[1.5] text-neutral-600 dark:text-neutral-400">
+                  <div className="leading-[1.5] text-zinc-600 dark:text-zinc-400">
                     {handle}
                   </div>
                 </div>
                 <div className="m-0">
-                  <p className="leading-[1.5] text-neutral-800 dark:text-neutral-100">
+                  <p className="leading-[1.5] text-zinc-800 dark:text-zinc-100">
                     {snippet}
                   </p>
                 </div>
                 <div className="m-0">
                   <Button
-                    textColor={"text-neutral-800 dark:text-neutral-200"}
-                    bgColor={"bg-neutral-200 dark:bg-neutral-800"}
+                    textColor={"text-zinc-800 dark:text-zinc-200"}
+                    bgColor={"bg-zinc-200 dark:bg-zinc-800"}
                     href={href}
                   >
                     Go
@@ -89,7 +89,7 @@ const SocialLink = ({ title, icon, handle, snippet, href }) => {
                 </div>
               </div>
             </div>
-            <HoverCard.Arrow className="fill-white dark:fill-neutral-800" />
+            <HoverCard.Arrow className="fill-white dark:fill-zinc-800" />
           </HoverCard.Content>
         </HoverCard.Portal>
       )}

@@ -16,7 +16,7 @@ const cosmic = createBucketClient({
 export default function Playground({ apps, utilities }) {
   const metaTitle = "KEJK | Playground";
   const metaImage =
-    "https://imgix.cosmicjs.com/232ec950-d395-11ed-9cfc-8fe1cfdcf0b7-meta-projects.png";
+    "https://imgix.cosmicjs.com/e6be96e0-d555-11ed-9cfc-8fe1cfdcf0b7-meta-playground.png";
   const metaDescription = "Designer, developer, writer and musician";
   const url = "https://kejk.tech/playground";
 

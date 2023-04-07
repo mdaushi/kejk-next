@@ -41,15 +41,15 @@
   }
 
   a.inline-link {
-    @apply font-sans font-bold text-black underline decoration-teal-500 decoration-2 underline-offset-4 transition ease-in-out hover:text-teal-500 dark:text-white;
+    @apply font-sans font-bold text-black underline decoration-lime-500 decoration-2 underline-offset-4 transition ease-in-out hover:text-lime-500 dark:text-white;
   }
 
   .inline-link a {
-    @apply font-sans font-bold text-black underline decoration-teal-500 decoration-2 underline-offset-4 transition ease-in-out hover:text-teal-500 dark:text-white;
+    @apply font-sans font-bold text-black underline decoration-lime-500 decoration-2 underline-offset-4 transition ease-in-out hover:text-lime-500 dark:text-white;
   }
 
   p {
-    @apply pb-4 font-sans leading-relaxed text-neutral-600 dark:text-neutral-400;
+    @apply pb-4 font-sans leading-relaxed text-zinc-600 dark:text-zinc-400;
   }
 
   span {
@@ -57,48 +57,48 @@
   }
 
   ul {
-    @apply mb-4 ml-8 list-disc text-neutral-600 dark:text-neutral-400;
+    @apply mb-4 ml-8 list-disc text-zinc-600 dark:text-zinc-400;
   }
 
   ol {
-    @apply mb-4 ml-8 list-decimal text-neutral-600 dark:text-neutral-400;
+    @apply mb-4 ml-8 list-decimal text-zinc-600 dark:text-zinc-400;
   }
 
   blockquote {
-    @apply my-4 border-l-4 border-teal-500 italic dark:border-teal-500;
+    @apply my-4 border-l-4 border-lime-500 italic dark:border-lime-500;
   }
 
   blockquote p {
-    @apply ml-8 pb-0 text-neutral-500 dark:text-neutral-300;
+    @apply ml-8 pb-0 text-zinc-500 dark:text-zinc-300;
   }
 
   pre {
-    @apply mb-4 w-full overflow-x-scroll whitespace-pre rounded-lg bg-neutral-100 font-mono dark:bg-neutral-900;
-    @apply text-neutral-800 dark:text-neutral-200;
+    @apply mb-4 w-full overflow-x-scroll whitespace-pre rounded-lg bg-zinc-100 font-mono dark:bg-zinc-900;
+    @apply text-zinc-800 dark:text-zinc-200;
   }
 
   pre > code {
     @apply bg-transparent font-mono;
-    @apply !text-neutral-800 dark:!text-neutral-200;
+    @apply !text-zinc-800 dark:!text-zinc-200;
   }
 
   code {
-    @apply w-max rounded-lg bg-neutral-100 px-2 py-1 font-mono text-sm text-neutral-700 dark:bg-neutral-800 dark:text-neutral-100;
+    @apply w-max rounded-lg bg-zinc-100 px-2 py-1 font-mono text-sm text-zinc-700 dark:bg-zinc-800 dark:text-zinc-100;
   }
 
   code > span {
     @apply font-mono;
-    @apply text-neutral-800 dark:text-neutral-200;
+    @apply text-zinc-800 dark:text-zinc-200;
   }
 
   figcaption {
-    @apply mt-2 pb-4 text-sm italic text-neutral-700 dark:text-neutral-400;
+    @apply mt-2 pb-4 text-sm italic text-zinc-700 dark:text-zinc-400;
   }
 }
 
 @layer components {
   img {
-    @apply rounded border border-neutral-100 dark:border-neutral-800;
+    @apply rounded border border-zinc-100 dark:border-zinc-800;
   }
 
   img.inline-image {
@@ -106,24 +106,24 @@
   }
 
   .nav {
-    @apply flex items-center justify-between rounded-full px-4 py-2 font-sans font-semibold text-neutral-600 no-underline transition ease-in-out hover:bg-neutral-200 hover:text-neutral-800 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200;
+    @apply flex items-center justify-between rounded-full px-4 py-2 font-sans font-semibold text-zinc-600 no-underline transition ease-in-out hover:bg-zinc-200 hover:text-zinc-800 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-200;
   }
 
   .nav[aria-current] {
-    @apply rounded-full bg-neutral-200 px-4 py-2 font-sans font-semibold text-teal-900 dark:bg-neutral-700 dark:text-teal-300 md:bg-neutral-200 md:dark:bg-neutral-800;
+    @apply rounded-full bg-zinc-200 px-4 py-2 font-sans font-semibold text-lime-900 dark:bg-zinc-700 dark:text-lime-500 md:bg-zinc-200 md:dark:bg-zinc-800;
   }
 
   .mobileNav {
-    @apply flex w-full items-center justify-between rounded-full border border-transparent px-4 py-3 font-sans font-semibold text-neutral-600 no-underline transition ease-in-out dark:text-neutral-400;
+    @apply flex w-full items-center justify-between rounded-full border border-transparent px-4 py-3 font-sans font-semibold text-zinc-600 no-underline transition ease-in-out dark:text-zinc-400;
   }
 
   .mobileNav[aria-current] {
-    @apply flex w-full items-center rounded-full bg-neutral-200 px-4 py-3 font-sans font-semibold text-teal-800 dark:border dark:border-neutral-800/50 dark:bg-neutral-900 dark:text-teal-300;
+    @apply flex w-full items-center rounded-full bg-zinc-200 px-4 py-3 font-sans font-semibold text-lime-800 dark:border dark:border-zinc-800/50 dark:bg-zinc-900 dark:text-lime-500;
   }
 }
 
 .fr-inner {
-  @apply mt-2 text-sm italic !leading-3 text-neutral-700 dark:text-neutral-400;
+  @apply mt-2 text-sm italic !leading-3 text-zinc-700 dark:text-zinc-400;
 }
 
 code[class*="language-"],
@@ -143,7 +143,7 @@ pre[class*="language-"] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-  @apply !text-neutral-800 dark:!text-neutral-200;
+  @apply !text-zinc-800 dark:!text-zinc-200;
 }
 pre[class*="language-"] {
   padding: 1em;
@@ -152,20 +152,20 @@ pre[class*="language-"] {
 }
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  @apply bg-neutral-50 dark:bg-neutral-900;
+  @apply bg-zinc-50 dark:bg-zinc-900;
 }
 :not(pre) > code[class*="language-"] {
   padding: 0.1em;
   border-radius: 0.3em;
   white-space: normal;
-  @apply text-neutral-800 dark:text-neutral-200;
+  @apply text-zinc-800 dark:text-zinc-200;
 }
 .token.block-comment,
 .token.cdata,
 .token.comment,
 .token.doctype,
 .token.prolog {
-  @apply text-neutral-400 dark:text-neutral-700;
+  @apply text-zinc-400 dark:text-zinc-700;
 }
 .token.punctuation {
   @apply text-blue-600 dark:text-blue-400;
@@ -205,7 +205,7 @@ pre[class*="language-"] {
 .token.regex,
 .token.string,
 .token.variable {
-  @apply text-teal-600 dark:text-teal-400;
+  @apply text-lime-600 dark:text-lime-400;
 }
 .token.entity,
 .token.operator,
@@ -249,5 +249,5 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply w-2 rounded-full bg-neutral-200 dark:bg-neutral-600;
+  @apply w-2 rounded-full bg-zinc-200 dark:bg-zinc-600;
 } */

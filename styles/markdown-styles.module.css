@@ -3,29 +3,29 @@
 }
 
 .markdown blockquote {
-  @apply mb-4 border-l-4 border-teal-500 italic dark:border-teal-500;
+  @apply mb-4 border-l-4 border-lime-500 italic dark:border-lime-500;
 }
 
 .markdown blockquote p {
-  @apply ml-8 pb-0 text-neutral-500 dark:text-neutral-300;
+  @apply ml-8 pb-0 text-zinc-500 dark:text-zinc-300;
 }
 
 .markdown p,
 .markdown ul,
 .markdown ol {
-  @apply pb-4 font-sans leading-relaxed text-neutral-600 dark:text-neutral-400;
+  @apply pb-4 font-sans leading-relaxed text-zinc-600 dark:text-zinc-400;
 }
 
 .markdown h2 {
-  @apply mb-4 mt-4 text-2xl font-semibold leading-snug text-neutral-700 dark:text-neutral-300;
+  @apply mb-4 mt-4 text-2xl font-semibold leading-snug text-zinc-700 dark:text-zinc-300;
 }
 
 .markdown h3 {
-  @apply mb-2 mt-4 text-xl font-semibold leading-snug text-neutral-800 dark:text-neutral-200;
+  @apply mb-2 mt-4 text-xl font-semibold leading-snug text-zinc-800 dark:text-zinc-200;
 }
 
 .markdown a {
-  @apply font-bold text-black underline decoration-teal-500 decoration-2 underline-offset-4 transition ease-in-out hover:text-teal-500 dark:text-white;
+  @apply font-bold text-black underline decoration-lime-500 decoration-2 underline-offset-4 transition ease-in-out hover:text-lime-500 dark:text-white;
 }
 
 .markdown ul li {
@@ -41,11 +41,11 @@
 }
 
 .markdown figcaption {
-  @apply mt-2 pb-4 text-sm italic text-neutral-700 dark:text-neutral-400;
+  @apply mt-2 pb-4 text-sm italic text-zinc-700 dark:text-zinc-400;
 }
 
 .markdown pre {
-  @apply mb-4 w-full overflow-x-scroll whitespace-pre rounded-lg !bg-neutral-50 !font-mono dark:!bg-neutral-800;
+  @apply mb-4 w-full overflow-x-scroll whitespace-pre rounded-lg !bg-zinc-50 !font-mono dark:!bg-zinc-800;
 }
 
 .markdown pre > code {
@@ -53,7 +53,7 @@
 }
 
 .markdown code {
-  @apply w-max rounded-lg border border-neutral-100 bg-neutral-50 px-2 py-1 font-mono text-sm text-neutral-700 dark:border dark:border-neutral-800 dark:bg-neutral-900/50 dark:text-neutral-300;
+  @apply w-max rounded-lg border border-zinc-100 bg-zinc-50 px-2 py-1 font-mono text-sm text-zinc-700 dark:border dark:border-zinc-800 dark:bg-zinc-900/50 dark:text-zinc-300;
 }
 
 .markdown code > span {
@@ -61,5 +61,5 @@
 }
 
 .markdown hr {
-  @apply my-8 border-0 border-b border-neutral-200 dark:border-neutral-700;
+  @apply my-8 border-0 border-b border-zinc-200 dark:border-zinc-700;
 }

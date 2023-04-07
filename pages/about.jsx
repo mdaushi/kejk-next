@@ -52,9 +52,9 @@ export default function About({ about, principles, allJobs }) {
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center">
           <Button
-            bgColor="bg-neutral-100 dark:bg-neutral-900"
+            bgColor="bg-zinc-100 dark:bg-zinc-900"
             textColor="text-black dark:text-white"
-            borderColor="border-neutral-200 dark:border-neutral-700"
+            borderColor="border-zinc-200 dark:border-zinc-700"
             href="/uses"
           >
             <RectangleStackIcon width={20} height={20} className="mr-2" />
@@ -67,9 +67,9 @@ export default function About({ about, principles, allJobs }) {
             return (
               <div
                 key={idx}
-                className="rounded-md bg-neutral-50 p-3 dark:bg-neutral-900"
+                className="rounded-md bg-zinc-50 p-3 dark:bg-zinc-900"
               >
-                <span className="text-lg font-semibold text-neutral-700 dark:text-neutral-300">
+                <span className="text-lg font-semibold text-zinc-700 dark:text-zinc-300">
                   {principle.title}
                 </span>
               </div>
@@ -81,7 +81,7 @@ export default function About({ about, principles, allJobs }) {
           {allJobs.metadata.job.map((job, idx) => {
             return (
               <div key={idx} className="flex w-full items-center space-x-4">
-                <span className="w-max whitespace-nowrap text-lg font-semibold text-neutral-700 dark:text-neutral-300">
+                <span className="w-max whitespace-nowrap text-lg font-semibold text-zinc-700 dark:text-zinc-300">
                   {job.company}
                   {job.url != null && (
                     <a
@@ -94,8 +94,8 @@ export default function About({ about, principles, allJobs }) {
                     </a>
                   )}
                 </span>
-                <hr className="my-auto w-full border-dashed border-neutral-300 dark:border-neutral-600" />
-                <span className="flex w-max justify-end whitespace-nowrap text-right text-sm text-neutral-600 dark:text-neutral-400">
+                <hr className="my-auto w-full border-dashed border-zinc-300 dark:border-zinc-600" />
+                <span className="flex w-max justify-end whitespace-nowrap text-right text-sm text-zinc-600 dark:text-zinc-400">
                   {job.date_range}
                 </span>
               </div>
@@ -103,7 +103,7 @@ export default function About({ about, principles, allJobs }) {
           })}
         </div>
         <div className="flex w-full items-center justify-center px-4 pt-16">
-          <p className="w-full rounded-xl bg-neutral-100 p-4 text-center text-black dark:bg-neutral-900 dark:text-white md:w-2/3">
+          <p className="w-full rounded-xl bg-zinc-100 p-4 text-center text-black dark:bg-zinc-900 dark:text-white md:w-2/3">
             {text}
           </p>
         </div>

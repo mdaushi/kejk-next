@@ -56,7 +56,7 @@ const cosmic = createBucketClient({
 export default function Writing({ writings }) {
   const metaTitle = "KEJK | Writing";
   const metaImage =
-    "https://imgix.cosmicjs.com/49f9a0b0-ba80-11ed-9435-5306e8ef93bc-meta-thoughts.png";
+    "https://imgix.cosmicjs.com/e6c72260-d555-11ed-9cfc-8fe1cfdcf0b7-meta-thoughts.png";
   const metaDescription = "Designer, developer, writer and musician";
   const url = "https://kejk.tech/thoughts";
 
@@ -129,9 +129,9 @@ export default function Writing({ writings }) {
             <Dialog.Root>
               <Dialog.Trigger asChild>
                 <Button
-                  bgColor="bg-neutral-100 dark:bg-neutral-900 mb-4 md:mb-0"
+                  bgColor="bg-zinc-100 dark:bg-zinc-900 mb-4 md:mb-0"
                   textColor="text-black dark:text-white"
-                  borderColor="border-neutral-200 dark:border-neutral-700"
+                  borderColor="border-zinc-200 dark:border-zinc-700"
                 >
                   <RssIcon className="mr-2" width={20} height={20} />
                   Subscribe
@@ -139,14 +139,14 @@ export default function Writing({ writings }) {
               </Dialog.Trigger>
               <Dialog.Portal>
                 <Dialog.Overlay className="fixed inset-0 z-40 bg-black/20 backdrop-blur-sm data-[state=open]:animate-overlayShow" />
-                <Dialog.Content className="fixed left-[50%] top-[25%] z-50 max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-25%] rounded-lg bg-white p-4 shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none data-[state=open]:animate-contentShow dark:border dark:border-neutral-700 dark:bg-neutral-800 md:top-[50%] md:translate-y-[-50%]">
+                <Dialog.Content className="fixed left-[50%] top-[25%] z-50 max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-25%] rounded-lg bg-white p-4 shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none data-[state=open]:animate-contentShow dark:border dark:border-zinc-700 dark:bg-zinc-800 md:top-[50%] md:translate-y-[-50%]">
                   <Dialog.Title
                     className={`m-0 text-lg font-bold text-black dark:text-white ${sans.variable}`}
                   >
                     Subscribe
                   </Dialog.Title>
                   <Dialog.Description
-                    className={`mb-2 mt-2 text-sm leading-normal text-neutral-500 dark:text-neutral-300 ${sans.variable}`}
+                    className={`mb-2 mt-2 text-sm leading-normal text-zinc-500 dark:text-zinc-300 ${sans.variable}`}
                   >
                     Get an email whenever I publish a new thought.
                   </Dialog.Description>
@@ -163,14 +163,14 @@ export default function Writing({ writings }) {
                       className={`mb-4 flex flex-col items-start gap-2 ${sans.variable}`}
                     >
                       <label
-                        className={`text-right font-sans text-sm text-neutral-500 dark:text-neutral-400 ${sans.variable}`}
+                        className={`text-right font-sans text-sm text-zinc-500 dark:text-zinc-400 ${sans.variable}`}
                         htmlFor="bd-email"
                       >
                         Your email
                       </label>
                       <div className="flex w-full items-center gap-4">
                         <input
-                          className={`inline-flex h-10 w-full flex-1 items-center justify-center rounded-md bg-neutral-50 px-2 font-sans leading-none text-neutral-800 shadow-[0_0_0_1px] shadow-neutral-500 outline-none focus:shadow-[0_0_0_2px] focus:shadow-teal-500 dark:bg-neutral-900 dark:text-neutral-200 ${sans.variable}`}
+                          className={`inline-flex h-10 w-full flex-1 items-center justify-center rounded-md bg-zinc-50 px-2 font-sans leading-none text-zinc-800 shadow-[0_0_0_1px] shadow-zinc-500 outline-none focus:shadow-[0_0_0_2px] focus:shadow-lime-500 dark:bg-zinc-900 dark:text-zinc-200 ${sans.variable}`}
                           type="email"
                           name="email"
                           id="bd-email"
@@ -180,7 +180,7 @@ export default function Writing({ writings }) {
                         <input type="hidden" value="1" name="embed" />
                         <button
                           type="submit"
-                          className={`inline-flex h-10 items-center justify-center rounded-md bg-teal-500 px-[15px] font-sans font-medium leading-none text-teal-50 hover:bg-teal-600 focus:shadow-[0_0_0_2px] focus:shadow-teal-800 focus:outline-none ${sans.variable}`}
+                          className={`inline-flex h-10 items-center justify-center rounded-md bg-lime-500 px-[15px] font-sans font-medium leading-none text-lime-50 hover:bg-lime-600 focus:shadow-[0_0_0_2px] focus:shadow-lime-800 focus:outline-none ${sans.variable}`}
                         >
                           Subscribe
                         </button>
@@ -190,14 +190,14 @@ export default function Writing({ writings }) {
                       className={`mt-4 flex items-center justify-between font-sans ${sans.variable}`}
                     >
                       <div>
-                        <span className=" text-neutral-600 dark:text-neutral-300">
+                        <span className=" text-zinc-600 dark:text-zinc-300">
                           Or you can subscribe via{" "}
                         </span>
                         <a
                           href="https://kejk.tech/rss.xml"
                           target={"_blank"}
                           rel={"noopener noreferrer"}
-                          className="font-bold text-teal-700 underline decoration-2 underline-offset-2 dark:text-teal-500"
+                          className="font-bold text-lime-700 underline decoration-2 underline-offset-2 dark:text-lime-500"
                         >
                           RSS
                         </a>
@@ -206,13 +206,13 @@ export default function Writing({ writings }) {
                   </form>
                   <Dialog.Close asChild>
                     <button
-                      className="absolute right-2 top-2 inline-flex h-6 w-6 appearance-none items-center justify-center rounded-full  hover:bg-teal-400 focus:shadow-[0_0_0_2px] focus:shadow-teal-500 focus:outline-none dark:hover:bg-teal-800"
+                      className="absolute right-2 top-2 inline-flex h-6 w-6 appearance-none items-center justify-center rounded-full  hover:bg-lime-400 focus:shadow-[0_0_0_2px] focus:shadow-lime-500 focus:outline-none dark:hover:bg-lime-800"
                       aria-label="Close"
                     >
                       <XMarkIcon
                         height={16}
                         width={16}
-                        className="text-neutral-600 hover:text-teal-500 dark:text-neutral-400 dark:hover:text-teal-50"
+                        className="text-zinc-600 hover:text-lime-500 dark:text-zinc-400 dark:hover:text-lime-50"
                       />
                     </button>
                   </Dialog.Close>
@@ -223,7 +223,7 @@ export default function Writing({ writings }) {
           <div className="mt-4 grid grid-cols-1 items-center gap-4 md:grid-cols-2">
             <div className="scrollbar-hidden flex items-center justify-between space-x-2 overflow-x-auto">
               <Button
-                bgColor="bg-neutral-100 dark:bg-neutral-900 !text-sm !rounded-full !mb-0"
+                bgColor="bg-zinc-100 dark:bg-zinc-900 !text-sm !rounded-full !mb-0"
                 textColor="text-black dark:text-white"
                 borderColor="border-none"
                 onClick={tagFilter}
@@ -232,7 +232,7 @@ export default function Writing({ writings }) {
               </Button>
               {uniqueTags.map((tag, idx) => (
                 <Button
-                  bgColor="bg-neutral-100 dark:bg-neutral-900 !mt-0 !text-sm !rounded-full !mb-0"
+                  bgColor="bg-zinc-100 dark:bg-zinc-900 !mt-0 !text-sm !rounded-full !mb-0"
                   textColor="text-black dark:text-white"
                   borderColor="border-none"
                   onClick={tagFilter}
@@ -263,7 +263,7 @@ export default function Writing({ writings }) {
                 );
               })
             ) : (
-              <p className="w-full justify-center text-center text-neutral-600 dark:text-neutral-400">
+              <p className="w-full justify-center text-center text-zinc-600 dark:text-zinc-400">
                 No results for <strong>{title}</strong>. Try searching for{" "}
                 <em>Design</em>.
               </p>
@@ -283,8 +283,8 @@ export async function getStaticProps({ preview = null }) {
     .props(["id,slug,title,metadata,published_at", preview]);
 
   const writings = await data.objects;
-  
-  const converter = new showdown.Converter(); 
+
+  const converter = new showdown.Converter();
   const posts = await data.objects;
   const siteURL = "https://kejk.tech";
   const date = new Date();

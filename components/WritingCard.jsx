@@ -9,12 +9,12 @@ const WritingCard = ({ title, subtitle, tag }) => {
     "
     >
       <div className="flex w-full items-start justify-between gap-2">
-        <header className="mr-2 block text-lg font-bold text-neutral-700 group-hover:underline group-hover:decoration-teal-500 group-hover:decoration-2 group-hover:underline-offset-4 dark:text-neutral-200">
+        <header className="mr-2 block text-lg font-bold text-zinc-700 group-hover:underline group-hover:decoration-lime-500 group-hover:decoration-2 group-hover:underline-offset-4 dark:text-zinc-200">
           {title}
         </header>
-        <ArrowRightIcon className="h-4 w-4 flex-shrink-0 text-neutral-500 dark:text-neutral-400" />
+        <ArrowRightIcon className="h-4 w-4 flex-shrink-0 text-zinc-500 dark:text-zinc-400" />
       </div>
-      <span className="block pb-2 text-neutral-500 dark:text-neutral-400">
+      <span className="block pb-2 text-zinc-500 dark:text-zinc-400">
         {subtitle}
       </span>
       {tag !== undefined && <Tag>{tag}</Tag>}

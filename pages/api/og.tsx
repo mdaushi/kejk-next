@@ -14,7 +14,6 @@ export default async function handler(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
     const fontData = await font;
-    // ?title=<title>
     const hasTitle = searchParams.has("title");
     const title = hasTitle
       ? searchParams.get("title")?.slice(0, 100)
@@ -46,7 +45,7 @@ export default async function handler(req: NextRequest) {
           >
             <img
               alt="KEJK"
-              src="https://imgix.cosmicjs.com/e14553d0-b7a4-11ed-80d4-cdbe55252435-logo.svg"
+              src="https://imgix.cosmicjs.com/3b936d00-d554-11ed-9cfc-8fe1cfdcf0b7-Logo.svg"
               height={100}
               width={100}
             />
