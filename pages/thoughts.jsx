@@ -170,7 +170,7 @@ export default function Writing({ writings }) {
                       </label>
                       <div className="flex w-full items-center gap-4">
                         <input
-                          className={`inline-flex h-10 w-full flex-1 items-center justify-center rounded-md bg-zinc-50 px-2 font-sans leading-none text-zinc-800 shadow-[0_0_0_1px] shadow-zinc-500 outline-none focus:shadow-[0_0_0_2px] focus:shadow-lime-500 dark:bg-zinc-900 dark:text-zinc-200 ${sans.variable}`}
+                          className={`inline-flex h-10 w-full flex-1 items-center justify-center rounded-xl bg-zinc-50 px-2 font-sans leading-none text-zinc-800 shadow-[0_0_0_1px] shadow-zinc-500 outline-none focus:shadow-[0_0_0_2px] focus:shadow-lime-500 dark:bg-zinc-900 dark:text-zinc-200 ${sans.variable}`}
                           type="email"
                           name="email"
                           id="bd-email"
@@ -180,7 +180,7 @@ export default function Writing({ writings }) {
                         <input type="hidden" value="1" name="embed" />
                         <button
                           type="submit"
-                          className={`inline-flex h-10 items-center justify-center rounded-md bg-lime-500 px-[15px] font-sans font-semibold leading-none text-lime-50 hover:bg-lime-600 focus:shadow-[0_0_0_2px] focus:shadow-lime-800 focus:outline-none ${sans.variable}`}
+                          className={`inline-flex h-10 items-center justify-center rounded-xl bg-lime-500 px-4 font-sans font-semibold leading-none text-lime-950 hover:bg-lime-400 focus:shadow-[0_0_0_2px] focus:shadow-lime-500 focus:outline-none ${sans.variable}`}
                         >
                           Subscribe
                         </button>
