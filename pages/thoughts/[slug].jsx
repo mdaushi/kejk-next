@@ -2,7 +2,7 @@ import * as React from "react";
 import * as Toast from "@radix-ui/react-toast";
 import * as Dialog from "@radix-ui/react-dialog";
 import { ArrowLeftIcon, CheckCircleIcon } from "@heroicons/react/24/outline";
-import { RssIcon, SparklesIcon, XMarkIcon } from "@heroicons/react/20/solid";
+import { RssIcon, SparklesIcon, XMarkIcon, ChevronDownIcon } from "@heroicons/react/20/solid";
 import Button from "../../components/Button";
 import Head from "next/head";
 import Link from "next/link";
@@ -141,7 +141,8 @@ export default function Post({ allPosts, post, output }) {
                   setResponse(!response);
                 }}
               >
-                Summarise content
+                View summary
+                <ChevronDownIcon width={16} height={16} />
               </Button>
             </div>
             <div>
