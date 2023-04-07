@@ -91,7 +91,7 @@ export default function Home({
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center space-x-4">
           <Button
-            bgColor="border-lime-500 bg-lime-400 dark:bg-lime-500 hover:bg-lime-400"
+            bgColor="!border-lime-500 bg-lime-400 dark:bg-lime-500 hover:bg-lime-400"
             textColor="text-black"
             href="mailto:karl@kejk.tech?subject=Let's chat!"
           >
@@ -99,7 +99,7 @@ export default function Home({
             Chat to me
           </Button>
           <Button
-            bgColor="border-lime-500 bg-lime-400 dark:bg-lime-500 hover:bg-lime-400"
+            bgColor="!border-lime-500 bg-lime-400 dark:bg-lime-500 hover:bg-lime-400"
             textColor="text-black"
             href="/about"
           >
