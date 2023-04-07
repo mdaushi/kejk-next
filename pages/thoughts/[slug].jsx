@@ -142,7 +142,7 @@ export default function Post({ allPosts, post, output }) {
                 }}
               >
                 View summary
-                {response ? <ChevronUpIcon width={16} height={16} /> : <ChevronDownIcon width={16} height={16} />
+                {response ? (<ChevronUpIcon width={16} height={16} />) : (<ChevronDownIcon width={16} height={16} />)}
               </Button>
             </div>
             <div>
