@@ -243,7 +243,7 @@ const Nav = () => {
       {/* Mobile nav */}
       <div
         as="nav"
-        className="fixed bottom-4 left-0 right-0 z-10 mx-auto flex h-max w-max items-center justify-center rounded-full border border-zinc-200 bg-white/20 backdrop-blur-xl p-1 shadow-lg duration-500 dark:border-zinc-800 dark:bg-zinc-900/20 dark:shadow-none md:hidden"
+        className="fixed bottom-4 left-0 right-0 z-10 mx-auto flex h-max w-max items-center justify-center rounded-full border border-zinc-200 bg-white/20 backdrop-blur-xl p-1 shadow-lg duration-500 dark:border-zinc-800 dark:bg-zinc-900/40 dark:shadow-none md:hidden"
       >
         <div className="flex items-center justify-between">
           {mobileNavItems.map((item, idx) => (
