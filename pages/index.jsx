@@ -93,6 +93,7 @@ export default function Home({
           <Button
             bgColor="bg-lime-500 hover:bg-lime-400"
             textColor="text-black"
+            borderColor="border-lime-500"
             href="mailto:karl@kejk.tech?subject=Let's chat!"
           >
             <EnvelopeIcon width={20} height={20} className="mr-2" />
@@ -101,6 +102,7 @@ export default function Home({
           <Button
             bgColor="bg-lime-500 hover:bg-lime-400"
             textColor="text-black"
+            borderColor="border-lime-500"
             href="/about"
           >
             <UserIcon width={20} height={20} className="mr-2" />
