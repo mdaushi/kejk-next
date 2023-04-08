@@ -91,16 +91,16 @@ export default function Home({
         </div>
         <div className="mx-auto mt-8 flex w-full justify-center space-x-4">
           <Button
-            bgColor="!border-lime-500 bg-lime-400 dark:bg-lime-500 hover:bg-lime-400"
-            textColor="text-black"
+            bgColor="!border-transparent bg-lime-400 hover:bg-lime-500"
+            textColor="text-lime-950"
             href="mailto:karl@kejk.tech?subject=Let's chat!"
           >
             <EnvelopeIcon width={20} height={20} className="mr-2" />
             Chat to me
           </Button>
           <Button
-            bgColor="!border-lime-500 bg-lime-400 dark:bg-lime-500 hover:bg-lime-400"
-            textColor="text-black"
+            bgColor="!border-transparent bg-lime-400 hover:bg-lime-500"
+            textColor="text-lime-950"
             href="/about"
           >
             <UserIcon width={20} height={20} className="mr-2" />
