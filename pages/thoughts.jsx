@@ -225,7 +225,6 @@ export default function Writing({ writings }) {
               <Button
                 bgColor={`bg-zinc-100 dark:bg-zinc-900 !text-sm !rounded-full !mb-0 ${tagFilter && 'bg-lime-200 border border-lime-300 font-bold'}`}
                 textColor="text-black dark:text-white"
-                borderColor="border-none"
                 onClick={tagFilter}
               >
                 All
@@ -234,7 +233,6 @@ export default function Writing({ writings }) {
                 <Button
                   bgColor={`bg-zinc-100 dark:bg-zinc-900 !text-sm !rounded-full !mb-0 ${tagFilter && 'bg-lime-200 border border-lime-300 font-bold'}`}
                   textColor="text-black dark:text-white"
-                  borderColor="border-none"
                   onClick={tagFilter}
                   key={idx}
                 >

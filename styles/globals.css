@@ -118,7 +118,7 @@
   }
 
   .mobileNav[aria-current] {
-    @apply flex w-full items-center rounded-full bg-lime-200 border border-lime-300 px-4 py-3 font-sans font-bold text-lime-400 dark:border-zinc-800/50 dark:bg-zinc-900 dark:text-lime-500;
+    @apply flex w-full items-center rounded-full bg-lime-200 border border-lime-300 px-4 py-3 font-sans font-bold text-lime-950 dark:border-zinc-800/50 dark:bg-zinc-900 dark:text-lime-500;
   }
 }
 
