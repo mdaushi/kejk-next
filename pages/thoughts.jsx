@@ -223,7 +223,7 @@ export default function Writing({ writings }) {
           <div className="mt-4 grid grid-cols-1 items-center gap-4 md:grid-cols-2">
             <div className="scrollbar-hidden flex items-center justify-between space-x-2 overflow-x-auto">
               <Button
-                bgColor={`bg-zinc-100 dark:bg-zinc-900 !text-sm !rounded-full !mb-0 ${foundPosts == "All" && 'bg-lime-200 border border-lime-300 font-bold'}`}
+                bgColor={`bg-zinc-100 dark:bg-zinc-900 !text-sm !rounded-full !mb-0 ${foundPosts == "All" && '!bg-lime-200 !border border-lime-300 !font-bold'}`}
                 textColor="text-black dark:text-white"
                 onClick={tagFilter}
               >
@@ -231,7 +231,7 @@ export default function Writing({ writings }) {
               </Button>
               {uniqueTags.map((tag, idx) => (
                 <Button
-                  bgColor={`bg-zinc-100 dark:bg-zinc-900 !text-sm !rounded-full !mb-0 ${foundPosts == tag && 'bg-lime-200 border border-lime-300 font-bold'}`}
+                  bgColor={`bg-zinc-100 dark:bg-zinc-900 !text-sm !rounded-full !mb-0 ${foundPosts == tag && '!bg-lime-200 !border border-lime-300 !font-bold'}`}
                   textColor="text-black dark:text-white"
                   onClick={tagFilter}
                   key={idx}
