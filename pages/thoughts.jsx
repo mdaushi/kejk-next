@@ -4,6 +4,7 @@ import showdown from "showdown";
 import PageHeader from "../components/PageHeader";
 import WritingCard from "../components/WritingCard";
 import Button from "../components/Button";
+import classNames from "classnames";
 import fs from "fs";
 import { Feed } from "feed";
 import * as Dialog from "@radix-ui/react-dialog";
@@ -60,6 +61,9 @@ export default function Writing({ writings }) {
   const metaDescription = "Designer, developer, writer and musician";
   const url = "https://kejk.tech/thoughts";
 
+  // Tab active state
+  const [activeTab, setActiveTab] = useState("All");
+
   // the value of the search field
   const [title, setTitle] = useState("");
 
@@ -97,6 +101,7 @@ export default function Writing({ writings }) {
       }
     });
     setFoundPosts(results);
+    setActiveTab(tagValue);
   };
 
   const uniqueTags = [
@@ -180,7 +185,7 @@ export default function Writing({ writings }) {
                         <input type="hidden" value="1" name="embed" />
                         <button
                           type="submit"
-                          className={`inline-flex h-10 items-center justify-center rounded-xl bg-lime-400 dark:bg-lime-500 px-4 font-sans font-semibold leading-none text-lime-950 hover:bg-lime-400 focus:shadow-[0_0_0_2px] focus:shadow-lime-500 focus:outline-none ${sans.variable}`}
+                          className={`inline-flex h-10 items-center justify-center rounded-xl bg-lime-400 px-4 font-sans font-semibold leading-none text-lime-950 hover:bg-lime-400 focus:shadow-[0_0_0_2px] focus:shadow-lime-500 focus:outline-none dark:bg-lime-500 ${sans.variable}`}
                         >
                           Subscribe
                         </button>
@@ -222,22 +227,29 @@ export default function Writing({ writings }) {
           </div>
           <div className="mt-4 grid grid-cols-1 items-center gap-4 md:grid-cols-2">
             <div className="scrollbar-hidden flex items-center justify-between space-x-2 overflow-x-auto">
-              <Button
-                bgColor="tab"
-                textColor="text-black dark:text-white"
+              <button
+                className={classNames(
+                  "rounded-full border border-zinc-200 bg-zinc-100 px-4 py-2 text-sm text-black dark:border-zinc-800 dark:bg-zinc-900 dark:text-white",
+                  activeTab === "All" &&
+                    "!border !border-lime-300 !bg-lime-100  dark:!border-lime-500 dark:!bg-lime-950"
+                )}
                 onClick={tagFilter}
               >
                 All
-              </Button>
+              </button>
               {uniqueTags.map((tag, idx) => (
-                <Button
-                  bgColor="tab"
-                  textColor="text-black dark:text-white"
+                <button
+                  className={classNames(
+                    "rounded-full border border-zinc-200 bg-zinc-100 px-4 py-2 text-sm text-black dark:border-zinc-800 dark:bg-zinc-900 dark:text-white",
+                    activeTab ===
+                      `${tag.charAt(0).toUpperCase() + tag.slice(1)}` &&
+                      "!border !border-lime-300 !bg-lime-100 dark:!border-lime-500 dark:!bg-lime-950"
+                  )}
                   onClick={tagFilter}
                   key={idx}
                 >
                   {tag.charAt(0).toUpperCase() + tag.slice(1)}
-                </Button>
+                </button>
               ))}
             </div>
             <SearchInput
