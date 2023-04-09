@@ -284,7 +284,7 @@ export default function Post({ allPosts, post, output }) {
                       <input type="hidden" value="1" name="embed" />
                       <button
                         type="submit"
-                        className={`inline-flex h-10 items-center justify-center rounded-xl bg-lime-500 px-4 font-sans font-semibold leading-none text-lime-950 hover:bg-lime-400 focus:shadow-[0_0_0_2px] focus:shadow-lime-500 focus:outline-none ${sans.variable}`}
+                        className={`inline-flex h-10 items-center justify-center rounded-xl bg-lime-400 dark:bg-lime-500 px-4 font-sans font-semibold leading-none text-lime-950 hover:bg-lime-400 focus:shadow-[0_0_0_2px] focus:shadow-lime-500 focus:outline-none ${sans.variable}`}
                       >
                         Subscribe
                       </button>
