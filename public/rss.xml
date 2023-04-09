@@ -4,7 +4,7 @@
         <title>KEJK | Writing</title>
         <link>https://kejk.tech</link>
         <description>Thoughts on design, development and career progression</description>
-        <lastBuildDate>Sun, 09 Apr 2023 08:28:13 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 09 Apr 2023 18:05:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <language>en</language>
@@ -14,6 +14,27 @@
             <link>https://kejk.tech</link>
         </image>
         <copyright>All rights reserved 2023, Karl Emil James Koch</copyright>
+        <item>
+            <title><![CDATA[Why I don’t charge for my side projects]]></title>
+            <link>https://kejk.tech/thoughts/why-i-dont-charge-for-my-side-projects</link>
+            <guid>641b3f99d0ab1034f24698ac</guid>
+            <pubDate>Sun, 09 Apr 2023 11:32:58 GMT</pubDate>
+            <description><![CDATA[The minute money exchanges hands, the relationship changes drastically]]></description>
+            <content:encoded><![CDATA[<p>The minute money exchanges hands, the relationship becomes one of customer and seller. And that implicit relationship makes a huge difference in what your customer perceives you’ll do, and what you actually should do. </p>
+<p>Providing the tools you build for yourself, to others, for free, is a way to give back to a community that likely gave you free things during your early career and helped you to move forwards. </p>
+<p>Capitalist society encourages us to sell everything because that’s how we “must progress as a nation”. But providing tools to help other people in your industry or profession for free, if you can, provides a way to give back and open up access to those less fortunate and in need of a good start. </p>
+<p>Figma recently opened up <a href="https://www.figma.com/blog/figma-creator-tools/">paid community assets</a>. I’ve been vocal with people I know there about my worries with this move. Understandably, with the sale to Adobe possibly still happening (<a href="https://www.reuters.com/legal/us-preparing-antitrust-suit-block-adobe-plan-buy-figma-bloomberg-news-2023-02-23/">or not</a>), there needs to be other revenue streams beyond just subscriptions to the service but I’m not sure this is it.</p>
+<p>I’m a huge fan of Figma and what their platform opened up for me. Building plugins got me more interested in learning how to better code for other platforms via APIs and how to think about making ideas work for people other than myself. But this idea of paid community resources worries me.</p>
+<p>In reality, I understand why it’s the move they took and I can see the value if it works well. But if we look at the two major mobile App Store’s and their levels of app <a href="https://www.theregister.com/2022/05/10/ios_android_stores_host_more/">abandonware</a>, it’s shocking and worrying that the same will become true for Figma. Equally, making payment integration <em>easier</em> opens up even more opportunity for abuse by people looking to make a quick load of money and then bail.</p>
+<p>Now that it’s easy to integrate first-party payments, I think we’ll see a wave of people building shitty experiences and charging for them in the hope of making a quick buck. It’s possible that the opposite will happen, and that we’ll actually see higher quality resources put together, and I really hope that's true. But with that we’ll see a barrier to access by default. Paid resources are inherently inaccessible for those on lower incomes or new to their career.</p>
+<p>I’m also massively concerned about customer support. What happens when people have a bad experience with a lax developer? Is Figma responsible for handling all of the refunds and support? Or are developers doing it like they do now? That relationship changes vastly once things become chargeable. Just look at the Apple App Store.</p>
+<p>I’ve said vocally before that I produce my plugins in the hope they get <a href="https://www.plugins.run/about">integrated to Figma</a> by default. And this happened for both find and replace, and, better native scaling. But, how does that work in a world where I’m charging for these features? Would Figma pay me for lost revenue because I solved a problem in their product? I doubt it.</p>
+<p>We’ll see how things go on this front, and despite the tone of this article I am optimistic that people are inherently good. I'm also optimistic that this move from Figma <em>wasn't</em> just about additional revenue and was instead a way to pay back developers for building an insanely big pool of resources mostly for free.</p>
+<p>I understand that this is absolutely a very one-sided view, and I’m not opposed to people making money. But from what I’ve seen of people charging money via awkward payment processes and providing subpar and underdeveloped products so far, it doesn’t give me much hope just now. </p>
+<p>The more the world becomes paywalled, the more we lock people out who need help the most.</p>]]></content:encoded>
+            <author>karl@kejk.tech (Karl Emil James Koch)</author>
+            <enclosure url="https://imgix.cosmicjs.com/00f906c0-6262-11ec-a8a3-53f360c99be6-placeholder2x.png" length="0" type="image/png"/>
+        </item>
         <item>
             <title><![CDATA[AI as pair design]]></title>
             <link>https://kejk.tech/thoughts/ai-as-pair-design</link>
