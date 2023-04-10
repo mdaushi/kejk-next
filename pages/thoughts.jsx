@@ -159,9 +159,13 @@ export default function Writing({ writings }) {
                     action="https://buttondown.email/api/emails/embed-subscribe/karl"
                     method="post"
                     target="popupwindow"
-                    onSubmit="window.open(
-                      'https://buttondown.email/karl',
-                      'popupwindow')"
+                    onSubmit={() => {
+                      window.open(
+                        "https://buttondown.email/karl",
+                        "popupwindow"
+                      );
+                      return true;
+                    }}
                     className="embeddable-buttondown-form"
                   >
                     <fieldset

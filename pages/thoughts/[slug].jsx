@@ -130,11 +130,7 @@ export default function Post({ allPosts, post, output }) {
                 response ? "mb-4" : "mb-8"
               } flex w-full items-center justify-between`}
             >
-              {post.status !== "published" ? (
-                <AlertPreview />
-              ) : (
-                console.log("ARGH")
-              )}
+              {post.status !== "published" ? <AlertPreview /> : null}
               <Link href={"/thoughts"}>
                 <TextButton textColor="black" darkTextColor="white">
                   <ArrowLeftIcon className="mr-2 h-4 w-4 flex-shrink-0 text-zinc-500 group-hover:text-lime-500 dark:text-zinc-400" />
@@ -268,9 +264,10 @@ export default function Post({ allPosts, post, output }) {
                   action="https://buttondown.email/api/emails/embed-subscribe/karl"
                   method="post"
                   target="popupwindow"
-                  onSubmit="window.open(
-                      'https://buttondown.email/karl',
-                      'popupwindow')"
+                  onSubmit={() => {
+                    window.open("https://buttondown.email/karl", "popupwindow");
+                    return true;
+                  }}
                   className="embeddable-buttondown-form"
                 >
                   <fieldset
